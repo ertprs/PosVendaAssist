@@ -1,0 +1,8 @@
+{
+    "condicao_auditoria_produto_serie": true,
+	"nao_valida_lb" : true,
+	"solucao_os" : true,
+	"solucao_os_multiplo" : true,
+	"os_com_credito_nao_gera_pedido" : true,
+	"tipo_atendimento_outros":76977
+}

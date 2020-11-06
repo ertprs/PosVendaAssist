@@ -1,0 +1,91 @@
+chamados_distrib_imprimir.php:				tbl_posto_estoque_localizacao.localizacao AS localizacao
+chamados_distrib_imprimir.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+consulta_pendencia_postos.php:				tbl_posto_estoque_localizacao.localizacao AS localizacao
+consulta_pendencia_postos.php:		LEFT JOIN tbl_posto_estoque_localizacao on tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+consulta_pendencia_postos.php:		if ($ordem =='localizacao'){$sql .= " ORDER BY tbl_posto_estoque_localizacao.localizacao ASC";}
+de_para.php:		JOIN      (SELECT tbl_peca.peca, tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, tbl_posto_estoque_localizacao.localizacao FROM tbl_peca JOIN tbl_depara ON tbl_peca.peca = tbl_depara.peca_de   LEFT JOIN tbl_posto_estoque ON tbl_peca.peca = tbl_posto_estoque.peca AND tbl_posto_estoque.posto = $login_posto LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.peca = tbl_peca.peca AND tbl_posto_estoque_localizacao.posto = $login_posto) de   ON tbl_depara.peca_de   = de.peca
+de_para.php:		LEFT JOIN (SELECT tbl_peca.peca, tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, tbl_posto_estoque_localizacao.localizacao FROM tbl_peca JOIN tbl_depara ON tbl_peca.peca = tbl_depara.peca_para LEFT JOIN tbl_posto_estoque ON tbl_peca.peca = tbl_posto_estoque.peca AND tbl_posto_estoque.posto = $login_posto LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.peca = tbl_peca.peca AND tbl_posto_estoque_localizacao.posto = $login_posto) para ON tbl_depara.peca_para = para.peca
+embarque_conferencia.php:					tbl_posto_estoque_localizacao.localizacao ,
+embarque_conferencia.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_embarque_item.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+embarque_conferencia.php:			GROUP BY fat_gar, tbl_peca.peca, tbl_peca.referencia, tbl_peca.descricao, tbl_peca.ipi, preco, tbl_posto_estoque_localizacao.localizacao
+embarque_conferencia.php:			ORDER BY fat_gar, tbl_peca.referencia , tbl_posto_estoque_localizacao.localizacao ";
+embarque_geral_conferencia_novo.php:					tbl_posto_estoque_localizacao.localizacao,
+embarque_geral_conferencia_novo.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.posto = tbl_embarque.distribuidor AND tbl_posto_estoque_localizacao.peca = emb.peca
+embarque_geral_conferencia_novo.php:						tbl_posto_estoque_localizacao.localizacao,
+embarque_geral_conferencia_novo.php:					LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.posto = tbl_embarque.distribuidor AND tbl_posto_estoque_localizacao.peca = emb.peca
+embarque_geral_conferencia.php:				tbl_posto_estoque_localizacao.localizacao, 
+embarque_geral_conferencia.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.posto = tbl_embarque.distribuidor AND tbl_posto_estoque_localizacao.peca = emb.peca
+embarque_juntar.php:			$sql = "SELECT localizacao FROM tbl_posto_estoque_localizacao WHERE peca = $peca AND posto = $login_posto";
+embarque_juntar.php:$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, SUM (tbl_embarque_item.qtde) AS qtde , tbl_posto_estoque_localizacao.localizacao , tbl_os.sua_os, tbl_pedido_item.pedido
+embarque_juntar.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_embarque_item.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+embarque_juntar.php:		GROUP BY tbl_os.sua_os, tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque_localizacao.localizacao, tbl_pedido_item.pedido
+embarque_juntar.php:$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, SUM (tbl_embarque_item.qtde) AS qtde , tbl_posto_estoque_localizacao.localizacao, tbl_os.sua_os, tbl_pedido_item.pedido
+embarque_juntar.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_embarque_item.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+embarque_juntar.php:		GROUP BY tbl_os.sua_os, tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque_localizacao.localizacao
+embarque_juntar.php:				tbl_posto_estoque_localizacao.localizacao
+embarque_juntar.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.posto = $login_posto AND tbl_posto_estoque_localizacao.peca = ped.peca
+embarque_juntar.php:				tbl_posto_estoque_localizacao.localizacao
+embarque_juntar.php:				tbl_posto_estoque_localizacao.localizacao
+embarque_juntar.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_posto_estoque_localizacao.posto = $login_posto  AND tbl_posto_estoque_localizacao.peca = ped.peca
+embarque_juntar.php:				tbl_posto_estoque_localizacao.localizacao
+estoque_acerto.php:			$sql = "SELECT * FROM tbl_posto_estoque_localizacao WHERE posto = $login_posto AND peca = $peca";
+estoque_acerto.php:				$sql = "INSERT INTO tbl_posto_estoque_localizacao (posto,peca,localizacao) VALUES ($login_posto, $peca, '$localizacao')";
+estoque_acerto.php:					$sql = "SELECT * FROM tbl_posto_estoque_localizacao WHERE posto = $login_posto AND peca = $peca ";
+estoque_acerto.php:						$sql = "UPDATE tbl_posto_estoque_localizacao SET localizacao = '$localizacao' WHERE posto = $login_posto AND peca = $peca ";
+estoque_acerto.php:						$sql = "INSERT INTO tbl_posto_estoque_localizacao (posto, peca, localizacao) VALUES ($login_posto, $peca, '$localizacao')";
+estoque_consulta_imprimir.php:					tbl_posto_estoque_localizacao.localizacao, 
+estoque_consulta_imprimir.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta_imprimir.php:			ORDER BY tbl_posto_estoque_localizacao.localizacao";
+estoque_consulta.php:					tbl_posto_estoque_localizacao.localizacao         ,
+estoque_consulta.php:			LEFT JOIN tbl_posto_estoque_localizacao   ON tbl_peca.peca        = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta.php:					tbl_posto_estoque_localizacao.localizacao         ,
+estoque_consulta.php:			LEFT JOIN tbl_posto_estoque_localizacao   ON tbl_peca.peca        = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta.php:			tbl_posto_estoque_localizacao.localizacao,
+estoque_consulta.php:		LEFT JOIN tbl_posto_estoque_localizacao ON PE.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta.php:				tbl_posto_estoque_localizacao.localizacao,
+estoque_consulta.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca        = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta.php:					tbl_posto_estoque_localizacao.localizacao,
+estoque_consulta.php:		LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_consulta.php:		WHERE  (tbl_posto_estoque_localizacao.localizacao ILIKE '$localizacao')
+estoque_contagem.php:		$sql = "UPDATE tbl_posto_estoque_localizacao SET localizacao = '$localizacao' WHERE posto = $login_posto AND peca = $peca ";
+estoque_contagem.php:	$sql = "SELECT tbl_posto_estoque_localizacao.localizacao, 
+estoque_contagem.php:			JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+estoque_contagem.php:				$sql .=" AND tbl_posto_estoque_localizacao.localizacao >= '$local_inicial' AND tbl_posto_estoque_localizacao.localizacao <= '$local_final' ";
+estoque_contagem.php:					$sql .= " ORDER BY tbl_peca.fabrica,tbl_posto_estoque_localizacao.localizacao, tbl_peca.referencia";
+estoque_contagem.php:					$sql .= " ORDER BY tbl_peca.fabrica, tbl_peca.referencia, tbl_posto_estoque_localizacao.localizacao";
+estoque_contagem.php:				$sql .= " ORDER BY tbl_peca.fabrica,tbl_posto_estoque_localizacao.localizacao, tbl_peca.referencia";
+estoque_previsao.php:	tbl_posto_estoque_localizacao.localizacao
+estoque_previsao.php:	JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca=tbl_posto_estoque_localizacao.peca
+estoque_previsao.php:										  AND tbl_posto_estoque_localizacao.posto=$login_posto
+estoque_previsao.php:	tbl_posto_estoque_localizacao.localizacao
+movimento_pecas.php:		$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao
+movimento_pecas.php:				LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+nf_britania.php:			tbl_posto_estoque_localizacao.localizacao, 
+nf_britania.php:		LEFT JOIN tbl_posto_estoque_localizacao ON fat.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+nf_entrada_item_ebano.php:		$sql = "UPDATE tbl_posto_estoque_localizacao SET
+nf_entrada_item_ebano.php:				tbl_posto_estoque_localizacao.localizacao,
+nf_entrada_item_ebano.php:		LEFT JOIN tbl_posto_estoque_localizacao ON fat.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+nf_entrada_item.php:		$sql = "UPDATE tbl_posto_estoque_localizacao SET
+nf_entrada_item.php:				tbl_posto_estoque_localizacao.localizacao,
+nf_entrada_item.php:		LEFT JOIN tbl_posto_estoque_localizacao ON fat.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+nf_entrada_itemt.php:		$sql = "UPDATE tbl_posto_estoque_localizacao SET
+nf_entrada_itemt.php:				tbl_posto_estoque_localizacao.localizacao,
+nf_entrada_itemt.php:		LEFT JOIN tbl_posto_estoque_localizacao ON fat.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+peca_localizacao.php:		$sql = "UPDATE tbl_posto_estoque_localizacao 
+peca_localizacao.php:		$sql = "SELECT localizacao FROM tbl_posto_estoque_localizacao JOIN tbl_peca USING (peca) WHERE tbl_posto_estoque_localizacao.posto = $login_posto AND tbl_peca.referencia = '$referencia'";
+pedido_pendente.php:		$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao, pendente.qtde_pendente
+pedido_pendente.php:				LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pedido_pendente.php:		$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao, pendente.qtde_pendente
+pedido_pendente.php:				LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pedido_pendente.php:		$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao, pendente.qtde_pendente
+pedido_pendente.php:				LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pedido_pendente.php:		$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao, pendente.qtde_pendente
+pedido_pendente.php:				LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pedidos_nao_atendidos.php:	$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao
+pedidos_nao_atendidos.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pedidos_nao_atendidos.php:	$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao
+pedidos_nao_atendidos.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pendencia_posto.php:	$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao
+pendencia_posto.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto
+pendencia_posto.php:	$sql = "SELECT tbl_peca.referencia, tbl_peca.descricao, tbl_posto_estoque.qtde, fabrica.qtde_fabrica, transp.qtde_transp, para.referencia AS para_referencia, para.descricao AS para_descricao, tbl_posto_estoque_localizacao.localizacao
+pendencia_posto.php:			LEFT JOIN tbl_posto_estoque_localizacao ON tbl_peca.peca = tbl_posto_estoque_localizacao.peca AND tbl_posto_estoque_localizacao.posto = $login_posto

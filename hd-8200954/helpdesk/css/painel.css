@@ -1,0 +1,196 @@
+*{
+	font-family: Arial, Verdana, sans-serif;
+}
+body {
+	font-size: 11px;
+	color: #333333;
+	background-color: #ffffff;
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+.board-table {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 1920px;
+	z-index:9;
+}
+	.board-table td {
+		border: 1px solid #eee;
+		vertical-align: top;
+	}
+		.board-table .col {
+			text-align: center;
+			vertical-align: top;
+		}
+		.board-table .first {
+			text-align: center;
+			vertical-align: top;
+		}
+		.board-table .colSub {
+			width: 6.25%;
+			text-align: center;
+			vertical-align: top;
+			background-color: #FFFFFF;
+		}
+		.board-table .colSubContent {
+			text-align: center;
+			vertical-align: top;
+		}
+
+.bg			{ background-color: #FFFFFF; }
+.bgRequisito{ background-color: #85C940; }
+.bgAnalise   	{ background-color: #C9C940; }
+.bgExecucao  { background-color: #C98540; }
+.bgTeste     	{ background-color: #C94040; }
+.bgCommit    	{ background-color: #88B3DD; }
+.bgDeploy    	{ background-color: #DDDDDD; }
+
+h2 {
+	font-size: 17px;
+	padding: 8px;
+	margin: 0;
+}
+h3 {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 11px;
+	padding:  5px;
+	margin: 0;
+}
+
+.card {
+    display: block;
+    float: left;
+	width:  105px;
+    height: 105px;
+	margin: 6px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+.card-mine {
+    display: block;
+    float: left;
+	width:  105px;
+    height: 105px;
+	margin: 6px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+	cursor: pointer;
+}
+.card-mine-return {
+    display: block;
+    float: left;
+	width:  105px;
+    height: 105px;
+	margin: 6px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+	cursor: pointer;
+}
+
+.card-image {
+    height: 100%;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1000;
+}
+.content {
+    color: black;
+    display: block;
+    font-size:   11px;
+	line-height: 11px;
+    /*letter-spacing: 1px;*/
+    width:   103px;
+    height:  105px;
+    margin:  5px 0 0;
+    opacity: 1;
+    overflow:    hidden;
+    padding-top: 0px;
+    /*text-align:  center;*/
+}
+
+h4 {
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 9px;
+	margin: 0 5px 0;
+	text-align: left;
+	width: 99%;
+	height: 20px;
+}
+	h4 .num {
+		font-size: 11px;
+	}
+
+h6 {
+	font-size: 7px;
+	font-weight: normal;
+	color: #999999;
+    float: left;
+    display: block;
+	line-height: 5px;
+	margin: 3px 0 0;
+}
+
+.content p {
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	letter-spacing: -1px;
+    display: block;
+    float: left;
+	margin: 1px 0 0;
+	height: 7px;
+}
+p.atrasado {
+	color: #ff0000;
+}
+p.top {
+    padding-left: 5px;
+    text-align: left;
+    width: 65px;
+	height: 11px;
+}
+.gravatar {
+	margin-right: 2px;
+	margin-top: -13px;
+	float: right;
+}
+
+.tblData {
+	width:100%;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+	.tblData td {
+		border: 0 none;
+		line-height: 5px;
+		width: 50%;
+	}
+
+span.alerta {
+
+	color: #e60000;
+       font-weight: bold;
+
+}
+
+div.qtdTickets {
+	font-size:8px;
+	color:#cccccc;
+	text-align:center;
+}
+
+/* do div jquery-ui */
+fieldset {
+	border: 0px;
+}

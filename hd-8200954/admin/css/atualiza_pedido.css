@@ -1,0 +1,28 @@
+.td_desc {
+	width: 150px;
+}
+
+.td_desc * {
+	margin-left: 10px;
+}
+
+.table_line {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	border: 0px solid;
+	background-color: #D9E2EF
+}
+
+textarea {
+	max-width: 418px; 
+	width: 418px;
+}
+
+.success {
+  color: white;
+  text-align: center;
+  font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+  background-color: green;
+}

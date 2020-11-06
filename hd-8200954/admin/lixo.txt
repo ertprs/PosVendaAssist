@@ -1,0 +1,1504 @@
+ajax_atendimento_tecnico.php:						  AND excluida IS NOT TRUE AND posto=$posto; ";
+aprova_auditoria.php:					$sqlx = "UPDATE tbl_os SET excluida = 't' WHERE os = $xxos";
+aprova_auditoria.php:					$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_exclusao.php:						$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_exclusao.php:				$sqly = " SELECT DISTINCT tbl_os_excluida.os ,
+aprova_exclusao.php:						tbl_os_excluida.sua_os ,
+aprova_exclusao.php:						tbl_os_excluida.consumidor_nome ,
+aprova_exclusao.php:						TO_CHAR(tbl_os_excluida.data_abertura,'DD/MM/YYYY') AS data_abertura,
+aprova_exclusao.php:						TO_CHAR(tbl_os_excluida.data_digitacao,'DD/MM/YYYY') AS data_digitacao,
+aprova_exclusao.php:						tbl_os_excluida.fabrica ,
+aprova_exclusao.php:						tbl_os_excluida.consumidor_nome ,
+aprova_exclusao.php:						tbl_os_excluida.serie AS produto_serie ,
+aprova_exclusao.php:						(SELECT status_os FROM tbl_os_status WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_os ,
+aprova_exclusao.php:						(SELECT observacao FROM tbl_os_status WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_observacao,
+aprova_exclusao.php:						(SELECT tbl_status_os.descricao FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_descricao,
+aprova_exclusao.php:						(SELECT tbl_admin.login FROM tbl_os_status JOIN tbl_admin USING(admin) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS admin_exclusao,
+aprova_exclusao.php:						(SELECT TO_CHAR(tbl_os_status.data,'DD/MM/YYYY') FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data,
+aprova_exclusao.php:						(SELECT tbl_os_status.data FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data2
+aprova_exclusao.php:					JOIN tbl_os_excluida ON tbl_os_excluida.os = X.os
+aprova_exclusao.php:					JOIN tbl_produto ON tbl_produto.produto = tbl_os_excluida.produto
+aprova_exclusao.php:					JOIN tbl_posto ON tbl_os_excluida.posto = tbl_posto.posto
+aprova_exclusao.php:					WHERE tbl_os_excluida.fabrica = $login_fabrica
+aprova_exclusao.php:						$sqly .= " AND tbl_os_excluida.data_digitacao BETWEEN '$xdata_inicial' AND '$xdata_final' ";
+aprova_exclusao.php:						(SELECT tbl_os_status.data FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data2
+aprova_exclusao.php:					AND   tbl_os.excluida IS NOT TRUE /* hd 52463 */
+aprova_garantia_estendida.php:							$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,null);";
+aprova_km.php:		$cond_excluidas = "AND tbl_os.excluida is not true "; 
+aprova_km.php:				$cond_excluidas
+aprova_os_cortesia.php:									excluida  = 't'
+aprova_os_reincidente_intelbras.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_intelbras.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_intelbras.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_intelbras.php:		AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_intelbras_teste.php:							AND tbl_os.excluida IS NOT TRUE
+aprova_os_reincidente_intelbras_test.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_intelbras_test.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_intelbras_test.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_intelbras_test.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_intelbras_test.php:		AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_marisa.php:							$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_marisa.php:							$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente_marisa.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_marisa.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente_marisa.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE ";
+aprova_os_reincidente_marisa.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_marisa.php:		AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente.php:							$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente.php:							$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE ";
+aprova_os_reincidente.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente.php:		AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_teste.php:							$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_teste.php:							$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente_teste.php:						$sql = "UPDATE tbl_os set excluida = 't' where os = $xxos";
+aprova_os_reincidente_teste.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+aprova_os_reincidente_teste.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE ";
+aprova_os_reincidente_teste.php:		$sql_add2 = " AND tbl_os.excluida IS NOT TRUE";
+aprova_os_reincidente_teste.php:		AND tbl_os.excluida IS NOT TRUE";
+aprova_os_troca_adicional.php:				tbl_os.excluida                                                   ,
+aprova_os_troca_adicional.php:	$excluida                    = pg_result ($res,0,excluida);
+aprova_os_troca_adicional.php:<? if ($excluida == "t") { ?>
+aprova_os_troca_ebano.php:						$sql = "UPDATE tbl_os SET excluida = true,admin_excluida=$login_admin
+aprova_os_troca_ebano.php:						$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_os_troca_ebano.php:		<INPUT TYPE="radio" NAME="aprova" value='excluida' <? 
+aprova_os_troca_ebano.php:		if(trim($aprova) == 'excluida') echo "checked='checked'"; ?>>Excluída
+aprova_os_troca_ebano.php:					tbl_os.excluida                                              ,
+aprova_os_troca_ebano.php:		if($aprova <> "excluida"){
+aprova_os_troca_ebano.php:			$sql .= " AND   tbl_os.excluida IS NOT TRUE ";
+aprova_os_troca_ebano.php:		//hd 45281, incluído os excluida is true
+aprova_os_troca_ebano.php:		if($aprova == "excluida"){
+aprova_os_troca_ebano.php:			$sql .=" AND (tbl_os_troca.status_os = 15 or tbl_os_troca.status_os=96 or tbl_os.excluida IS TRUE)";
+aprova_os_troca_ebano.php:	if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca_ebano.php:	if(trim($aprova) =='excluida'){
+aprova_os_troca_ebano.php:			$excluida				= pg_fetch_result($res, $x, excluida);
+aprova_os_troca_ebano.php:			if($excluida=='t' and trim($aprova) =='excluida'){
+aprova_os_troca_ebano.php:				$xsql = "SELECT tbl_admin.login from tbl_admin JOIN tbl_os ON tbl_os.admin_excluida=tbl_admin.admin where os=$os";
+aprova_os_troca_ebano.php:					$admin_excluida = pg_fetch_result($xres,0,0);
+aprova_os_troca_ebano.php:					$admin_excluida="POSTO";
+aprova_os_troca_ebano.php:			if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca_ebano.php:			if($aprova<>'excluida'){
+aprova_os_troca_ebano.php:			if($aprova<>'excluida'){
+aprova_os_troca_ebano.php:			if(trim($aprova) =='excluida'){
+aprova_os_troca_ebano.php:				echo "<td style='font-size: 9px; font-family: verdana'>".$admin_excluida. "</td>";
+aprova_os_troca_ebano.php:		if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca_final.php:						$sql = "UPDATE tbl_os SET excluida = true,admin_excluida=$login_admin
+aprova_os_troca_final.php:						$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_os_troca_final.php:	<td class="table_line" style="size: 10px" align='center' ><INPUT TYPE="radio" NAME="aprova" value='excluida' <? if(trim($aprova) == 'excluida') echo "checked='checked'"; ?>>Excluída</td>
+aprova_os_troca_final.php:					tbl_os.excluida                                              ,
+aprova_os_troca_final.php:	if($aprova <> "excluida"){
+aprova_os_troca_final.php:		$sql .= " AND   tbl_os.excluida IS NOT TRUE ";
+aprova_os_troca_final.php:	//hd 45281, incluído os excluida is true
+aprova_os_troca_final.php:	if($aprova == "excluida"){
+aprova_os_troca_final.php:		$sql .=" AND (tbl_os_troca.status_os = 15 or tbl_os_troca.status_os=96 or tbl_os.excluida IS TRUE)";
+aprova_os_troca_final.php:		if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca_final.php:	if(trim($aprova) =='excluida'){
+aprova_os_troca_final.php:			$excluida				= pg_fetch_result($res, $x, excluida);
+aprova_os_troca_final.php:			if($excluida=='t' and trim($aprova) =='excluida'){
+aprova_os_troca_final.php:				$xsql = "SELECT tbl_admin.login from tbl_admin JOIN tbl_os ON tbl_os.admin_excluida=tbl_admin.admin where os=$os";
+aprova_os_troca_final.php:					$admin_excluida = pg_fetch_result($xres,0,0);
+aprova_os_troca_final.php:					$admin_excluida="POSTO";
+aprova_os_troca_final.php:			if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca_final.php:			if($aprova<>'excluida'){
+aprova_os_troca_final.php:			if($aprova<>'excluida'){
+aprova_os_troca_final.php:			if(trim($aprova) =='excluida'){
+aprova_os_troca_final.php:				echo "<td style='font-size: 9px; font-family: verdana'>".$admin_excluida. "</td>";
+aprova_os_troca_final.php:		if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca.php:						$sql = "UPDATE tbl_os SET excluida = true,admin_excluida=$login_admin
+aprova_os_troca.php:						$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_os_troca.php:		<INPUT TYPE="radio" NAME="aprova" value='excluida' <? 
+aprova_os_troca.php:		if(trim($aprova) == 'excluida') echo "checked='checked'"; ?>>Excluída
+aprova_os_troca.php:					tbl_os.excluida                                              ,
+aprova_os_troca.php:		if($aprova <> "excluida"){
+aprova_os_troca.php:			$sql .= " AND   tbl_os.excluida IS NOT TRUE ";
+aprova_os_troca.php:		//hd 45281, incluído os excluida is true
+aprova_os_troca.php:		if($aprova == "excluida"){
+aprova_os_troca.php:			$sql .=" AND (tbl_os_troca.status_os = 15 or tbl_os_troca.status_os=96 or tbl_os.excluida IS TRUE)";
+aprova_os_troca.php:	if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca.php:	if(trim($aprova) =='excluida'){
+aprova_os_troca.php:			$excluida				= pg_fetch_result($res, $x, excluida);
+aprova_os_troca.php:			if($excluida=='t' and trim($aprova) =='excluida'){
+aprova_os_troca.php:				$xsql = "SELECT tbl_admin.login from tbl_admin JOIN tbl_os ON tbl_os.admin_excluida=tbl_admin.admin where os=$os";
+aprova_os_troca.php:					$admin_excluida = pg_fetch_result($xres,0,0);
+aprova_os_troca.php:					$admin_excluida="POSTO";
+aprova_os_troca.php:			if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_os_troca.php:			if($aprova<>'excluida'){
+aprova_os_troca.php:			if($aprova<>'excluida'){
+aprova_os_troca.php:			if(trim($aprova) =='excluida'){
+aprova_os_troca.php:				echo "<td style='font-size: 9px; font-family: verdana'>".$admin_excluida. "</td>";
+aprova_os_troca.php:		if($aprova !='aprovadas_com_nf' and $aprova <> 'excluida'){
+aprova_reincidencia_nf.php:							$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_reincidencia_nf.php:				AND   tbl_os.excluida IS NOT TRUE";
+aprova_reincidencia_nf_test.php:							$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_reincidencia_nf_test.php:				AND   tbl_os.excluida IS NOT TRUE";
+aprova_reincidencia_nf_waldir.php:							$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_reincidencia_nf_waldir.php:				AND   tbl_os.excluida IS NOT TRUE
+aprova_sem_peca_e_reincidente.php:		$cond_excluidas = "AND tbl_os.excluida is not true "; 
+aprova_sem_peca_e_reincidente.php:		$sql.=" $cond_excluidas 
+aprova_serie.php:									excluida  = 't'
+aprova_serie.php:								$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_serie.php:									excluida  = 't'
+aprova_serie.php:		$cond_excluidas = "AND tbl_os.excluida is not true "; 
+aprova_serie.php:			$sql .= " JOIN tbl_os_excluida on X.os = tbl_os_excluida.os and tbl_os_excluida.fabrica=$login_fabrica
+aprova_serie.php:				$cond_excluidas
+aprova_serie_test.php:									excluida  = 't'
+aprova_serie_test.php:								$sql = "SELECT fn_os_excluida($xxos,$login_fabrica,$login_admin);";
+aprova_serie_test.php:									excluida  = 't'
+aprova_serie_test.php:		$cond_excluidas = "AND tbl_os.excluida is not true "; 
+aprova_serie_test.php:			$sql .= " JOIN tbl_os_excluida on X.os = tbl_os_excluida.os and tbl_os_excluida.fabrica=$login_fabrica
+aprova_serie_test.php:				$cond_excluidas
+aprova_troca_os.php:									excluida  = 't'
+aprova_troca_os_teste.php:									excluida  = 't'
+aprova_troca_os_test.php:									excluida  = 't'
+auditoria_os_aberta_90_aprova.php:			AND excluida is not true 
+auditoria_os_aberta_90_aprova_test.php:			AND excluida is not true 
+auditoria_os_aberta_90_britania_andreus.php:	AND excluida IS NOT TRUE
+auditoria_os_aberta_90_britania_andreus.php:								AND excluida is not true
+auditoria_os_aberta_90_britania_andreus.php:					AND excluida is not true
+auditoria_os_aberta_90_britania_andreus.php:							AND excluida is not true
+auditoria_os_aberta_90_britania_andreus.php:				AND excluida is not true
+auditoria_os_aberta_90_britania.php:	AND excluida IS NOT TRUE
+auditoria_os_aberta_90_britania.php:								AND excluida is not true
+auditoria_os_aberta_90_britania.php:					AND excluida is not true
+auditoria_os_aberta_90_britania.php:							AND excluida is not true
+auditoria_os_aberta_90_britania.php:				AND excluida is not true
+auditoria_os_aberta_90_download.php:		AND excluida is not true
+auditoria_os_aberta_90_download.php:			AND excluida is not true
+auditoria_os_aberta_90_download_test.php:		AND excluida is not true
+auditoria_os_aberta_90_download_test.php:			AND excluida is not true
+auditoria_os_aberta_90.php:	AND excluida IS NOT TRUE
+auditoria_os_com_peca.php:		AND   tbl_os.excluida    IS NOT TRUE
+auditoria_os_com_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_com_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_com_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_com_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:					AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:		AND   tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:			AND   tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:		AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:			AND tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:			AND   tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:			AND   tbl_os.excluida    IS NOT TRUE
+auditoria_os_sem_peca.php:			AND tbl_os.excluida    IS NOT TRUE
+callcenter_cadastro_3.php:					excluida = 't',solucao=solucao||'$cancelar_motivo'
+callcenter_cadastro_3.php:			AND		tbl_callcenter.excluida IS NOT TRUE";
+callcenter_consulta_lite.php:			AND tbl_callcenter.excluida IS NOT TRUE	 
+callcenter_consulta_lite.php:			WHERE	tbl_callcenter.fabrica = $login_fabrica AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_consulta_lite.php:				AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_consulta_lite.php:			AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_consulta.php:				AND tbl_callcenter.excluida IS NOT TRUE	 AND (1=2 ";
+callcenter_consulta.php:			WHERE	tbl_callcenter.fabrica = $login_fabrica AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_consulta.php:				AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_consulta.php:				AND tbl_callcenter.excluida IS NOT TRUE AND (1=2 ";
+callcenter_interativo.php:	$sqlp = "SELECT os FROM tbl_os WHERE serie = '$pesquisa_serie' AND fabrica = $login_fabrica AND excluida IS NOT TRUE";
+callcenter_pendencias.php:		AND    tbl_callcenter.excluida IS NOT TRUE
+consulta_conta_pagar.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+consulta_os_aberto_ajax.php:				    AND tbl_os.excluida IS NOT TRUE
+conta_os_auditoria_ajax.php:<?include 'dbconfig.php';include 'includes/dbconnect-inc.php';include "autentica_admin.php";if ($_GET["posto"]){		$posto = $_GET["posto"];	$sql_tipo = " 120, 122, 123, 126 ";	$aprovacao = " 120, 122 ";	$sql = "SELECT DISTINCT os					INTO TEMP tmp_interv_90_2$login_admin					FROM tbl_os_status					WHERE status_os IN ($sql_tipo);					SELECT						interv.os						INTO TEMP tmp_interv_90_$login_admin					FROM (						SELECT						ultima.os,						(							SELECT status_os							FROM tbl_os_status							WHERE status_os IN ($sql_tipo)								AND tbl_os_status.os = ultima.os							ORDER BY data							DESC LIMIT 1						) AS ultimo_status						FROM (								SELECT os FROM tmp_interv_90_2$login_admin						) ultima					) interv					WHERE interv.ultimo_status IN ($aprovacao)					$Xos					;					CREATE INDEX tmp_interv_OS_90_$login_admin ON tmp_interv_90_$login_admin(os);					SELECT	count(tbl_os.os) as qtde_os					FROM tmp_interv_90_$login_admin X					JOIN tbl_os ON tbl_os.os = X.os					WHERE tbl_os.fabrica = $login_fabrica					AND data_abertura < (current_date - interval '90 days')					AND excluida IS NOT TRUE					AND finalizada IS NULL					AND posto = $posto";					$res = pg_exec($con,$sql);//		echo nl2br($sql);			if(pg_numrows($res)>0){							$qtde_os = pg_result($res,0,qtde_os);						}		$sql_sem = "SELECT count(*) AS qtde_sem					FROM (						SELECT						ultima.os,						(							SELECT status_os							FROM tbl_os_status							WHERE status_os IN ($aprovacao)								AND tbl_os_status.os = ultima.os							ORDER BY data							DESC LIMIT 1						) AS ultimo_status						FROM (								SELECT DISTINCT os								FROM tmp_interv_90_$login_admin								JOIN tbl_os USING(os)								WHERE posto   = $posto								AND   fabrica = $login_fabrica								AND data_abertura < (current_date - interval '90 days')								AND excluida is not true								AND finalizada is null						) ultima					) interv					JOIN tbl_os USING(os)					WHERE interv.ultimo_status IN (120)					AND   tbl_os.posto = $posto					AND data_abertura < (current_date - interval '90 days')					AND excluida is not true					AND finalizada is null					AND fabrica  = $login_fabrica";		//if($ip == '201.76.71.206') echo nl2br($sql_sem);		$res_sem = pg_exec($con,$sql_sem);			if (pg_numrows($res_sem) > 0) $qtde_sem = pg_result($res_sem,0,qtde_sem);		else                          $qtde_sem = 0;		$sql_com = "SELECT count(*) as qtde_com					FROM (					SELECT					ultima.os,					(						SELECT status_os						FROM tbl_os_status						WHERE status_os IN ($aprovacao)							AND tbl_os_status.os = ultima.os						ORDER BY data						DESC LIMIT 1					) AS ultimo_status					FROM (							SELECT DISTINCT os							FROM tmp_interv_90_$login_admin							JOIN tbl_os USING(os)							WHERE posto   = $posto							AND   fabrica = $login_fabrica							AND data_abertura < (current_date - interval '90 days')							AND excluida is not true							AND finalizada is null					) ultima				) interv				JOIN tbl_os USING(os)				WHERE interv.ultimo_status IN (122)				AND   tbl_os.posto = $posto				AND data_abertura < (current_date - interval '90 days')				AND excluida is not true				AND finalizada is null				AND fabrica  = $login_fabrica";		$res_com = pg_exec($con,$sql_com);		if (pg_numrows($res_com) > 0) $qtde_com = pg_result($res_com,0,qtde_com);		else                          $qtde_com = 0;			echo "$qtde_os|$qtde_sem|$qtde_com";}	?>
+defeito_os_consulta_ant.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta_ant.php:				AND         tbl_os.excluida IS NOT TRUE
+defeito_os_consulta_ant.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta_ant.php:							't'                                                   AS excluida           ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta_ant.php:				FROM		tbl_os_excluida
+defeito_os_consulta_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+defeito_os_consulta_ant.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta_duplic.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";	
+defeito_os_consulta_duplic.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta_duplic.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta_duplic.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta_duplic.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta_duplic.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta_duplic.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta_duplic.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '0$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '00$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '000$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR 
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta_duplic.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta_duplic.php:				AND         tbl_os.excluida IS NOT TRUE
+defeito_os_consulta_duplic.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta_duplic.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta_duplic.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta_duplic.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta_duplic.php:							't'                                                   AS excluida           ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta_duplic.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta_duplic.php:				FROM		tbl_os_excluida
+defeito_os_consulta_duplic.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta_duplic.php:			$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";	
+defeito_os_consulta.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta.php:				AND         tbl_os.excluida IS NOT TRUE";
+defeito_os_consulta.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta.php:							't'                                                   AS excluida           ,
+defeito_os_consulta.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta.php:				FROM		tbl_os_excluida
+defeito_os_consulta.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta.php:			$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta-xls_ant.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta-xls_ant.php:				AND         tbl_os.excluida IS NOT TRUE
+defeito_os_consulta-xls_ant.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls_ant.php:							't'                                                   AS excluida           ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls_ant.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+defeito_os_consulta-xls_ant.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta-xls_duplic.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";
+defeito_os_consulta-xls_duplic.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta-xls_duplic.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta-xls_duplic.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta-xls_duplic.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta-xls_duplic.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta-xls_duplic.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta-xls_duplic.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '0$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '00$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta-xls_duplic.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta-xls_duplic.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta-xls_duplic.php:				AND         tbl_os.excluida IS NOT TRUE
+defeito_os_consulta-xls_duplic.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls_duplic.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls_duplic.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls_duplic.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls_duplic.php:							't'                                                   AS excluida           ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls_duplic.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls_duplic.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls_duplic.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta-xls_duplic.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta-xls.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";
+defeito_os_consulta-xls.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta-xls.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta-xls.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta-xls.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta-xls.php:				AND         tbl_os.excluida IS NOT TRUE";
+defeito_os_consulta-xls.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls.php:							't'                                                   AS excluida           ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta-xls.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+defeito_os_consulta-xls_test.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";
+defeito_os_consulta-xls_test.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta-xls_test.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta-xls_test.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta-xls_test.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta-xls_test.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta-xls_test.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta-xls_test.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '0$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '00$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta-xls_test.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta-xls_test.php:							tbl_os.excluida                                                      ,
+defeito_os_consulta-xls_test.php:				AND         tbl_os.excluida IS NOT TRUE
+defeito_os_consulta-xls_test.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls_test.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls_test.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls_test.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls_test.php:							't'                                                   AS excluida           ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls_test.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls_test.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls_test.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta-xls_test.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+detalhe_ordem_servico.php:		$res = pg_exec($con,$sql);// verifica se a peca ja foi excluida.
+detalhe_ordem_servico.php:		$msg_erro = "Peca já foi excluida.";
+detalhe_ordem_servico.php:		echo "<td width='100%' align='left' style='font-size: 12px'>Peças excluidas</td>";
+estoque_posto_movimento.php:						tbl_os_excluida.sua_os as sua_os_excluida                     ,
+estoque_posto_movimento.php:				LEFT  JOIN tbl_os_excluida ON tbl_os_excluida.os = tbl_estoque_posto_movimento.os
+estoque_posto_movimento.php:				$sua_os_excluida = pg_result ($res,$i,sua_os_excluida);
+estoque_posto_movimento.php:					echo "<td>$sua_os_excluida</td>";
+estoque_posto_movimento.php:					echo "<td align='left'>Esta OS foi excluida pelo posto.</td>";
+extrato_consulta20090617marisa117920.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_consulta_ant2.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_consulta_ebano.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_consulta_os_intelbras_andreus.php:						$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras_andreus.php:					$sql = "SELECT fn_os_excluida_reincidente($os[$k],$login_fabrica)";
+extrato_consulta_os_intelbras_andreus.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras_andreus.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os_intelbras_ebano.php:						$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras_ebano.php:					$sql = "SELECT fn_os_excluida_reincidente($os[$k],$login_fabrica)";
+extrato_consulta_os_intelbras_ebano.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras_ebano.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os_intelbras.php:						$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras.php:					$sql = "SELECT fn_os_excluida_reincidente($os[$k],$login_fabrica)";
+extrato_consulta_os_intelbras.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os_intelbras_samuel.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_intelbras_samuel.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_novo.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_novo.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os_novo_test.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_novo_test.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os.php:			# HD 148341 - A movimentação de estoque deve ser retirada quando uma OS é excluida
+extrato_consulta_os.php:			$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+extrato_consulta_os_teste.php:			# HD 148341 - A movimentação de estoque deve ser retirada quando uma OS é excluida
+extrato_consulta_os_teste.php:			$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_teste.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os_teste.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_test.php:			# HD 148341 - A movimentação de estoque deve ser retirada quando uma OS é excluida
+extrato_consulta_os_test.php:			$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_test.php:			$sql = "SELECT fn_os_excluida_reincidente($x_os,$login_fabrica)";
+extrato_consulta_os_test.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os_test.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_test.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+extrato_consulta_os_waldir.php:			# HD 148341 - A movimentação de estoque deve ser retirada quando uma OS é excluida
+extrato_consulta_os_waldir.php:			$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os_waldir.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os_waldir.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_pesquisa_os.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_pesquisa_os.php:			$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+extrato_consulta_pesquisa_os.php:							$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_pesquisa_os.php:						$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+extrato_consulta.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_consulta_teste.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_consultatp.php:		echo "<br><div name='os_excluidas' style='border:1px solid #00ffff'><h4>OS excluidas</h4>$msg_os_deletadas;</div>";
+extrato_distribuidor_retornaveis_os.php:			AND		tbl_os.excluida IS NOT TRUE;";
+extrato_distribuidor_retornaveis.php:			WHERE tbl_os.excluida IS NOT TRUE
+extrato_os_aprova.php:					tbl_os.excluida                                                   ,
+extrato_os_aprova.php:			$excluida                    = pg_result ($res,0,excluida);
+extrato_posto_mao_obra_impressao.php:	$conferencia_excluida = 1;
+extrato_posto_mao_obra_novo_britania_print.php:					AND   excluida IS NOT TRUE
+extrato_posto_mao_obra_novo_britania_print.php:					AND   excluida IS NOT TRUE
+extrato_posto_mao_obra_novo_britania_print_teste.php:	$conferencia_excluida = 1;
+extrato_posto_mao_obra.php:		#$sql = "UPDATE tbl_extrato_conferencia SET extrato = 367205, justificativa_cancelamento = justificativa_cancelamento || ' ->Conferencia excluida em '||CURRENT_TIMESTAMP||' pelo admin $login_admin . Referencia extrato: $extrato'
+extrato_posto_mao_obra.php:	$conferencia_excluida = 1;
+extrato_posto_mao_obra_teste2.php:		#$sql = "UPDATE tbl_extrato_conferencia SET extrato = 367205, justificativa_cancelamento = justificativa_cancelamento || ' ->Conferencia excluida em '||CURRENT_TIMESTAMP||' pelo admin $login_admin . Referencia extrato: $extrato'
+extrato_posto_mao_obra_teste2.php:	$conferencia_excluida = 1;
+extrato_posto_mao_obra_test.php:		#$sql = "UPDATE tbl_extrato_conferencia SET extrato = 367205, justificativa_cancelamento = justificativa_cancelamento || ' ->Conferencia excluida em '||CURRENT_TIMESTAMP||' pelo admin $login_admin . Referencia extrato: $extrato'
+extrato_posto_mao_obra_test.php:	$conferencia_excluida = 1;
+familia_cadastro.php:			$msg_erro = "Esta familia já possui 'Relacionamento de Integridade' cadastrada, e não pode ser excluida";
+familia_cadastro.php:			$msg_erro = "Esta familia já possui produtos cadastrados, e não pode ser excluida";
+gera_excel_com_sql_gus.php:where fabrica=19 and excluida is not true and data_digitacao between '2009-07-01 00:00:00' and '2009-11-26 23:59:59'";
+gera_excel_com_sql_marisa.php:where fabrica=19 and excluida is not true and data_digitacao between '2009-07-01 00:00:00' and '2009-11-26 23:59:59'";
+grava_obs_excluida.php:				$sql = "UPDATE tbl_os SET excluida = 't' WHERE os = $os AND fabrica = $login_fabrica";
+grava_obs_excluida.php:				$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+grava_obs_excluida.php:				$sql = "SELECT fn_os_excluida($os,$login_fabrica,null);";
+imagem_relatorio_callcenter2.php:			AND excluida IS NOT TRUE
+imagem_relatorio_callcenter2.php:			AND excluida IS NOT TRUE
+imagem_relatorio_callcenter.php:			AND excluida IS NOT TRUE
+imagem_relatorio_callcenter.php:		AND tbl_callcenter.excluida IS NOT TRUE ";
+libera_os_item_pedido.php:		AND   tbl_os.excluida IS NOT TRUE
+libera_os_item_pedido_test.php:		AND   tbl_os.excluida IS NOT TRUE
+libera_os_pedido.php:		AND   tbl_os.excluida       IS NOT TRUE
+linha_cadastro_francisco.php:	if (strpos ($msg_erro,'linha_fk') > 0)              $msg_erro = "Esta linha já possui produtos cadastrados, e não pode ser excluida";
+linha_cadastro_francisco.php:	if (strpos ($msg_erro,'tbl_defeito_reclamado') > 0) $msg_erro = "Esta linha já possui 'Defeitos Reclamados' cadastrados, e não pode ser excluida";
+linha_cadastro_new.php:	if (strpos ($msg_erro,'linha_fk') > 0)              $msg_erro = "Esta linha já possui produtos cadastrados, e não pode ser excluida";
+linha_cadastro_new.php:	if (strpos ($msg_erro,'tbl_defeito_reclamado') > 0) $msg_erro = "Esta linha já possui 'Defeitos Reclamados' cadastrados, e não pode ser excluida";
+linha_cadastro.php:	if (strpos ($msg_erro,'linha_fk') > 0)              $msg_erro = "Esta linha já possui produtos cadastrados, e não pode ser excluida";
+linha_cadastro.php:	if (strpos ($msg_erro,'tbl_defeito_reclamado') > 0) $msg_erro = "Esta linha já possui 'Defeitos Reclamados' cadastrados, e não pode ser excluida";
+linha_cadastro-tk.php:	if (strpos ($msg_erro,'linha_fk') > 0)              $msg_erro = "Esta linha já possui produtos cadastrados, e não pode ser excluida";
+linha_cadastro-tk.php:	if (strpos ($msg_erro,'tbl_defeito_reclamado') > 0) $msg_erro = "Esta linha já possui 'Defeitos Reclamados' cadastrados, e não pode ser excluida";
+marca_cadastro.php:	if (strpos ($msg_erro,'marca_fk') > 0) $msg_erro = "Esta marca não pode ser excluida";
+menu_callcenter_antigo.php:	<td nowrap width='260'><a href='os_parametros_excluida.php' class='menu'>Consulta OS Excluída</a></td>
+menu_callcenter.php:	<td nowrap width='260'><a href='os_parametros_excluida.php' class='menu'>Consulta OS Excluída</a></td>
+obs_os_troca.php:				WHERE tbl_os.excluida         IS TRUE
+os_acerto_defeito.php:				AND     tbl_os.excluida IS FALSE
+os_atrasada.php:		AND tbl_os.excluida IS NOT TRUE
+os_cadastro_latina.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro_latina.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_latina.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cadastro.php:			$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os";
+os_cadastro.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cadastro_sono.php:			$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os";
+os_cadastro_sono.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_sono.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro_sono.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_sono.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cadastro_tectoy.php:			$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os";
+os_cadastro_tectoy.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_tectoy.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro_tectoy.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_tectoy.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cadastro_testw.php:			$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os";
+os_cadastro_testw.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_testw.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro_testw.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_cadastro_testw.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cadastro_troca_black.php:			$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_cadastro_troca_black.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cancelar.php:			$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os";
+os_cancelar.php:				$sql = "UPDATE tbl_os SET excluida = TRUE WHERE os = $os AND tbl_os.finalizada IS NULL";
+os_consulta_blackedecker.php:		WHERE		tbl_os.fabrica = $login_fabrica AND (tbl_os.excluida IS NULL OR tbl_os.excluida IS FALSE) AND (1=2 ";
+os_consulta_blackedecker.php:							tbl_os.excluida                                                     ,
+os_consulta_blackedecker.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.os                                                          ,
+os_consulta_blackedecker.php:							tbl_os_excluida.sua_os                                                      ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_consulta_blackedecker.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_consulta_blackedecker.php:							tbl_os_excluida.serie                                                       ,
+os_consulta_blackedecker.php:							't'                                                    AS excluida          ,
+os_consulta_blackedecker.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.data_fechamento                                             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_consulta_blackedecker.php:				FROM		tbl_os_excluida
+os_consulta_blackedecker.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+os_consulta_blackedecker.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_consulta_blackedecker.php:		if ($excluida == "t")            $cor = "#FFE1E1";
+os_consulta_blackedecker.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cadastro.php?os=$os' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_consulta_blackedecker.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_consulta-error.php:		WHERE		tbl_os.fabrica = $login_fabrica AND (tbl_os.excluida IS NULL OR tbl_os.excluida IS FALSE) AND (1=2 ";
+os_consulta-error.php:							tbl_os.excluida                                            ,
+os_consulta-error.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                  AS ordem      ,
+os_consulta-error.php:							tbl_os_excluida.os                                                  ,
+os_consulta-error.php:							tbl_os_excluida.sua_os                                              ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data      ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura  ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento,
+os_consulta-error.php:							tbl_os_excluida.serie                                               ,
+os_consulta-error.php:							't'                                                    AS excluida  ,
+os_consulta-error.php:							tbl_os_excluida.consumidor_nome                                     ,
+os_consulta-error.php:							tbl_os_excluida.data_fechamento                                     ,
+os_consulta-error.php:				FROM		tbl_os_excluida
+os_consulta-error.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta-error.php:		WHERE		tbl_os.fabrica = $login_fabrica AND (tbl_os.excluida IS NULL OR tbl_os.excluida IS FALSE) AND (1=2 ";
+os_consulta-error.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_consulta-error.php:		if ($excluida == "t") $cor = "#FFE1E1";
+os_consulta-error.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cadastro.php?os=$os' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_consulta-error.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_consulta_excluida.php:echo "<a href='os_parametros_excluida.php'><img src='imagens_admin/btn_nova_busca.gif'></a>";
+os_consulta_excluida.php:				tbl_os_excluida.os                                                        ,
+os_consulta_excluida.php:				tbl_os_excluida.sua_os                                                    ,
+os_consulta_excluida.php:				tbl_os_excluida.codigo_posto                                              ,
+os_consulta_excluida.php:				tbl_os_excluida.referencia_produto                                        ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao   ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura    ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+os_consulta_excluida.php:				tbl_os_excluida.serie                                                     ,
+os_consulta_excluida.php:				tbl_os_excluida.nota_fiscal                                               ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf          ,
+os_consulta_excluida.php:				tbl_os_excluida.consumidor_nome                                           ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao
+os_consulta_excluida.php:		FROM 	tbl_os_excluida
+os_consulta_excluida.php:		LEFT JOIN tbl_produto ON tbl_produto.referencia = tbl_os_excluida.referencia_produto
+os_consulta_excluida.php:		WHERE	tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta_excluida.php:					tbl_os_excluida.fabrica                                                    ,
+os_consulta_excluida.php:					tbl_os_excluida.os                                                         ,
+os_consulta_excluida.php:					tbl_os_excluida.sua_os                                                     ,
+os_consulta_excluida.php:					tbl_os_excluida.codigo_posto                                               ,
+os_consulta_excluida.php:					tbl_os_excluida.referencia_produto                                         ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao    ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura     ,
+os_consulta_excluida.php:					tbl_os_excluida.data_abertura                         AS data_consulta     ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+os_consulta_excluida.php:					tbl_os_excluida.serie                                                      ,
+os_consulta_excluida.php:					tbl_os_excluida.nota_fiscal                                                ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf           ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_nome                                            ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_endereco                                        ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_numero                                          ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_bairro                                          ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_cidade                                          ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_estado                                          ,
+os_consulta_excluida.php:					tbl_os_excluida.defeito_reclamado                                          ,
+os_consulta_excluida.php:					tbl_os_excluida.defeito_reclamado_descricao                                ,
+os_consulta_excluida.php:					tbl_os_excluida.defeito_constatado                                         ,
+os_consulta_excluida.php:					tbl_os_excluida.revenda_cnpj                                               ,
+os_consulta_excluida.php:					tbl_os_excluida.revenda_nome                                               ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao     ,
+os_consulta_excluida.php:					(SELECT status_os FROM tbl_os_status WHERE tbl_os_status.os = tbl_os_excluida.os ORDER BY data DESC LIMIT 1) AS status,
+os_consulta_excluida.php:						where os        = tbl_os_excluida.os 
+os_consulta_excluida.php:			FROM      tbl_os_excluida
+os_consulta_excluida.php:			JOIN      tbl_produto       ON  tbl_produto.referencia    = tbl_os_excluida.referencia_produto
+os_consulta_excluida.php:			LEFT JOIN tbl_admin         ON  tbl_admin.admin           = tbl_os_excluida.admin
+os_consulta_excluida.php:			WHERE tbl_os_excluida.fabrica =  $login_fabrica ";
+os_consulta_excluida.php:						$sql .= " AND (tbl_os_excluida.data_abertura BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida.php:					$sql .= " and tbl_os_excluida.serie = '". $numero_serie."' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.consumidor_nome ILIKE '%".$nome_consumidor."%' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.sua_os ilike '%".$sua_os."%' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.nota_fiscal ilike '%".$nota_fiscal."%' ";
+os_consulta_excluida.php:			WHERE tbl_os.excluida IS TRUE
+os_consulta_excluida.php:	$monta_sql .= "OR (tbl_os_excluida.data_exclusao BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida.php:	$sql .= " ORDER BY $order_by lpad (tbl_os_excluida.sua_os,10,'0') DESC";
+os_consulta_excluida.php:		//$os_excluida        = trim(pg_result ($res,$i,os_excluida));
+os_consulta_excluida.php:	echo "<a href='os_parametros_excluida.php'><img src='imagens_admin/btn_nova_busca.gif'></a>";
+os_consulta_excluida_tk.php:echo "<a href='os_parametros_excluida.php'><img src='imagens_admin/btn_nova_busca.gif'></a>";
+os_consulta_excluida_tk.php:				tbl_os_excluida.sua_os                                                    ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.codigo_posto                                              ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.referencia_produto                                        ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao   ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura    ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.serie                                                     ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.nota_fiscal                                               ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf          ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.consumidor_nome                                           ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao
+os_consulta_excluida_tk.php:		FROM 	tbl_os_excluida
+os_consulta_excluida_tk.php:		LEFT JOIN tbl_produto ON tbl_produto.referencia = tbl_os_excluida.referencia_produto
+os_consulta_excluida_tk.php:		WHERE	tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta_excluida_tk.php:					tbl_os_excluida.fabrica                                                    ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.sua_os                                                     ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.codigo_posto                                               ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.referencia_produto                                         ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao    ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura     ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.data_abertura                         AS data_consulta     ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.serie                                                      ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.nota_fiscal                                                ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf           ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.consumidor_nome                                            ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao     
+os_consulta_excluida_tk.php:			FROM      tbl_os_excluida
+os_consulta_excluida_tk.php:			JOIN      tbl_produto       ON  tbl_produto.referencia    = tbl_os_excluida.referencia_produto
+os_consulta_excluida_tk.php:			LEFT JOIN tbl_admin         ON  tbl_admin.admin           = tbl_os_excluida.admin
+os_consulta_excluida_tk.php:			WHERE tbl_os_excluida.fabrica =  $login_fabrica
+os_consulta_excluida_tk.php:			WHERE tbl_os.excluida IS TRUE
+os_consulta_excluida_tk.php:	$monta_sql .= "OR (tbl_os_excluida.data_exclusao BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida_tk.php:	$sql .= " ORDER BY $order_by lpad (tbl_os_excluida.sua_os,10,'0') DESC";
+os_consulta_excluida_tk.php:		//$os_excluida        = trim(pg_result ($res,$i,os_excluida));
+os_consulta_excluida_tk.php:	echo "<a href='os_parametros_excluida.php'><img src='imagens_admin/btn_nova_busca.gif'></a>";
+os_consulta_lite_etiqueta.php:					tbl_os.excluida                                                   ,
+os_consulta_lite_etiqueta.php:			AND   tbl_os.excluida IS NOT TRUE";
+os_consulta_lite_etiqueta.php:		if ($excluida == "t") {
+os_consulta_lite_etiqueta.php:			$excluida           = trim(pg_result($res,$i,excluida));
+os_consulta_lite_etiqueta.php:			if ($excluida == "t")            $cor = "#FFE1E1";
+os_consulta_lite_etiqueta.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica != 14) {
+os_consulta_lite_etiqueta.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 14) {
+os_consulta_lite_filizola.php:						tbl_os.excluida                                                   ,
+os_consulta_lite_filizola.php:			$sql .=" AND   tbl_os.excluida IS NOT TRUE 
+os_consulta_lite_filizola.php:			$sql .=" AND (tbl_os.excluida IS NOT TRUE OR tbl_os_extra.status_os = 94 )
+os_consulta_lite_filizola.php:		if ($excluida == "t" ) {
+os_consulta_lite_filizola.php:			$excluida           = trim(pg_result($res,$i,excluida));
+os_consulta_lite_filizola.php:			if ($excluida == "t")    $cor = "#FF0000";
+os_consulta_lite_filizola.php:			if ($login_fabrica==20 AND $status_os == "94" AND $excluida == "t"){
+os_consulta_lite_filizola.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica != 14) {
+os_consulta_lite_filizola.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 14) {
+os_consulta_lite_filizola.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 50) {
+os_consulta_lite_filizola.php: 			if($excluida <>'t'){
+os_consulta_lite_off_britania.php:	$sql = "SELECT fn_os_excluida($os_excluir,$login_fabrica,$login_admin);";
+os_consulta_lite_off_britania.php:						tbl_os.excluida                                                   ,
+os_consulta_lite_off_britania.php:			if($login_fabrica <>50 AND $login_fabrica <>35 AND $login_fabrica <> 14) $sql .=" AND   tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:			$sql .=" AND (tbl_os.excluida IS NOT TRUE OR tbl_os_extra.status_os = 94 )
+os_consulta_lite_off_britania.php:					  AND tbl_os.excluida IS NOT TRUE";
+os_consulta_lite_off_britania.php:						  AND tbl_os.excluida IS NOT TRUE";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:				$sql .=" AND tbl_os.excluida IS TRUE ";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite_off_britania.php:				$sql .=" AND tbl_os.excluida IS TRUE ";
+os_consulta_lite_off_britania.php:		if ($excluida == "t" ) {
+os_consulta_lite_off_britania.php:			$excluida           = trim(pg_result($res,$i,excluida));
+os_consulta_lite_off_britania.php:						#$excluida = "t"; HD 56464
+os_consulta_lite_off_britania.php:			if ($excluida == "t")    $cor = "#FF0000";
+os_consulta_lite_off_britania.php:			if ($login_fabrica==20 AND $status_os == "94" AND $excluida == "t"){
+os_consulta_lite_off_britania.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica != 14) {
+os_consulta_lite_off_britania.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 43) {
+os_consulta_lite_off_britania.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 14) {
+os_consulta_lite_off_britania.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 50) {
+os_consulta_lite_off_britania.php:			if($excluida=='t' AND ($login_fabrica==50 or $login_fabrica ==14)){//HD 37007 5/9/2008
+os_consulta_lite_off_britania.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 45) {
+os_consulta_lite_off_britania.php: 			if($excluida <>'t'){
+os_consulta_lite_off_britania.php:			if (($login_fabrica==50 and ($excluida <> 't')) or ($login_fabrica == 14 and $excluida <> 't') or $login_fabrica==20) {
+os_consulta_lite_off_britania.php:				<option value='excluidas' <? if ($tipo_os == 'EXCLUIDAS') echo " SELECTED "; ?>>Excluídas do sistema</option>
+os_consulta_lite.php:		$sql = "UPDATE tbl_os SET excluida = true
+os_consulta_lite.php:		$sql = "INSERT INTO tbl_os_excluida (
+os_consulta_lite.php:		$sql = "SELECT fn_os_excluida($os_excluir,$login_fabrica,$login_admin);";
+os_consulta_lite.php:						tbl_os.excluida                                                   ,
+os_consulta_lite.php:			if($login_fabrica <>50 AND $login_fabrica <>35 AND $login_fabrica <> 14) $sql .=" AND   tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:			$sql .=" AND (tbl_os.excluida IS NOT TRUE OR tbl_os_extra.status_os = 94 )
+os_consulta_lite.php:					  AND tbl_os.excluida IS NOT TRUE";
+os_consulta_lite.php:						  AND tbl_os.excluida IS NOT TRUE";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:				$sql .=" AND tbl_os.excluida IS TRUE ";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:						 AND tbl_os.excluida IS NOT TRUE ";
+os_consulta_lite.php:				$sql .=" AND tbl_os.excluida IS TRUE ";
+os_consulta_lite.php:		if ($excluida == "t" ) {
+os_consulta_lite.php:				$excluida           = trim(pg_fetch_result($res,$i,excluida));
+os_consulta_lite.php:						#$excluida = "t"; HD 56464
+os_consulta_lite.php:			if ($excluida == "t")    $cor = "#FF0000";
+os_consulta_lite.php:			if ($login_fabrica==20 AND $status_os == "94" AND $excluida == "t"){
+os_consulta_lite.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica != 14) {
+os_consulta_lite.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 43) {
+os_consulta_lite.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 14) {
+os_consulta_lite.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 50) {
+os_consulta_lite.php:			if($excluida=='t' AND ($login_fabrica==50 or $login_fabrica ==14)){//HD 37007 5/9/2008
+os_consulta_lite.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 45) {
+os_consulta_lite.php:			if (pg_num_rows($res_os_extrato) && $excluida <>'t') {
+os_consulta_lite.php:				if($excluida <>'t'){
+os_consulta_lite.php:			if (($login_fabrica==50 and ($excluida <> 't')) or ($login_fabrica == 14 and $excluida <> 't') or in_array($login_fabrica,array(20,24)) ) {
+os_consulta_lite.php:				<option value='excluidas' <? if ($tipo_os == 'EXCLUIDAS') echo " SELECTED "; ?>>Excluídas do sistema</option>
+os_consulta.php:		WHERE		tbl_os.fabrica = $login_fabrica AND (tbl_os.excluida IS NULL OR tbl_os.excluida IS FALSE) AND (1=2 ";
+os_consulta.php:							tbl_os.excluida                                                    ,
+os_consulta.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_consulta.php:							tbl_os_excluida.os                                                          ,
+os_consulta.php:							tbl_os_excluida.sua_os                                                      ,
+os_consulta.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_consulta.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_consulta.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_consulta.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_consulta.php:							tbl_os_excluida.serie                                                       ,
+os_consulta.php:							't'                                                    AS excluida          ,
+os_consulta.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+os_consulta.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_consulta.php:				FROM		tbl_os_excluida
+os_consulta.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+os_consulta.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_consulta.php:		if ($excluida == "t")       $cor = "#FFE1E1";
+os_consulta.php:		if (strlen($fechamento) == 0 AND $excluida != "t" AND $login_fabrica != 14) {
+os_consulta.php:		if (strlen($data_fechamento) == 0 AND $excluida != "t" AND $login_fabrica == 14) {
+os_consulta.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cadastro.php?os=$os' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_consulta.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_consulta_procon.php:				AND    tbl_os.excluida IS NOT TRUE
+os_consulta_sac.php:			tbl_os.excluida                                                   ,
+os_consulta_sac.php:		AND   tbl_os.excluida IS NOT TRUE
+os_consulta_sac.php://		$excluida           = trim(pg_result($res,$i,excluida));
+os_consumidor_consulta.php:		$sql .= " AND tbl_os.excluida is not true ";
+os_cortesia_consulta_ant.php:							tbl_os.excluida                                                ,
+os_cortesia_consulta_ant.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.os                                                          ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.sua_os                                                      ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.serie                                                       ,
+os_cortesia_consulta_ant.php:							't'                                                    AS excluida          ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_cortesia_consulta_ant.php:				FROM		tbl_os_excluida
+os_cortesia_consulta_ant.php:				LEFT JOIN	tbl_produto       ON tbl_os_excluida.produto = tbl_produto.produto
+os_cortesia_consulta_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica 
+os_cortesia_consulta_ant.php:				AND         tbl_os_excluida.fabrica <> 1 ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_hoje_inicio' AND '$dia_hoje_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .=" and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_ontem_inicial' AND '$dia_ontem_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .=" and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_semana_inicial' AND '$dia_semana_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date < '$dia_inicial' AND data_fechamento IS NULL) ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN $data_inicial AND $data_final) ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.posto=$posto";
+os_cortesia_consulta_ant.php:	//	$monta_sql .= " and tbl_os_excluida.codigo_posto = '". $codigo_posto."' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.serie = '". $numero_serie."' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.consumidor_nome ILIKE '%".$nome_consumidor."%' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and (tbl_os_excluida.sua_os = '$numero_os' OR ";
+os_cortesia_consulta_ant.php:						$monta_sql .= " tbl_os_excluida.sua_os = '$numero_os-$x' OR ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.nota_fiscal = '".$numero_nf."' ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and tbl_os_excluida.data_fechamento $situacao ";
+os_cortesia_consulta_ant.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_cortesia_consulta_ant.php:		if ($excluida == "t") $cor = "#FFE1E1";
+os_cortesia_consulta_ant.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cortesia_cadastro.php?os=$os' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_cortesia_consulta_ant.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_cortesia_consulta_ant.php:		if (strlen($data_fechamento) == 0 AND ( $excluida == "f" OR strlen($excluida) == 0 ) ) echo "<a href='javascript:Excluir($os)'><img src='imagens/btn_excluir.gif'></a>";
+os_cortesia_consulta.php:		$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_cortesia_consulta.php:				A.excluida           ,
+os_cortesia_consulta.php:							false                                               AS excluida           ,
+os_cortesia_consulta.php:							tbl_os.excluida                                                  ,
+os_cortesia_consulta.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_cortesia_consulta.php:		if ($excluida == "t") $cor = "#FFE1E1";
+os_cortesia_consulta.php:		}elseif (($excluida == "f" OR strlen($excluida) == 0) and $tipo_os <> '13') {
+os_cortesia_consulta.php:		if(strlen($consumidor_revenda)==0 and ($excluida == "f" OR strlen($excluida) == 0)){
+os_cortesia_consulta.php:		}elseif ($excluida == "f" OR strlen($excluida) == 0) {
+os_cortesia_consulta.php:		if (strlen($data_fechamento) == 0 AND ( $excluida == "f" OR strlen($excluida) == 0 ) ) echo "<a href='javascript:Excluir($os)'><img src='imagens/btn_excluir.gif'></a>";
+os_cortesia_consulta_tk.php:							tbl_os.excluida                                                ,
+os_cortesia_consulta_tk.php:		$excluida           = trim(pg_result ($res,$i,excluida));
+os_cortesia_consulta_tk.php:		if ($excluida == "t") $cor = "#FFE1E1";
+os_cortesia_consulta_tk.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cortesia_cadastro.php?os=$os' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_cortesia_consulta_tk.php:		if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_cortesia_consulta_tk.php:		if (strlen($data_fechamento) == 0 AND ( $excluida == "f" OR strlen($excluida) == 0 ) ) echo "<a href='javascript:Excluir($os)'><img src='imagens/btn_excluir.gif'></a>";
+os_enviadas_tectoy.php:				AND tbl_os.excluida IS NOT TRUE
+os_etiqueta.php:						tbl_os.excluida                                                   ,
+os_etiqueta.php:				AND   tbl_os.excluida IS NOT TRUE";
+os_etiqueta.php:			$excluida           = trim(pg_result($res,$i,excluida));
+os_excluir_confirmar.php:		$sql = "SELECT tbl_os.excluida
+os_excluir_confirmar.php:				AND    tbl_os.excluida IS TRUE";
+os_excluir.php:						$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_extrato_detalhe_intelbras.php:		AND       tbl_os.excluida   IS NOT TRUE
+os_extrato_detalhe_intelbras.php:		AND   tbl_os.excluida        IS NOT TRUE
+os_extrato_detalhe.php:		AND         tbl_os.excluida      IS NOT TRUE
+os_extrato_detalhe_print_blackedecker_new.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_new.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_new_test.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_new_test.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_new_tx.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_new_tx.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_test.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print_blackedecker_test.php:						AND     tbl_os.excluida is not true
+os_extrato_detalhe_print.php:		AND     (tbl_os.excluida is false OR tbl_os.excluida is null)
+os_extrato_new.php:					AND    tbl_os.excluida        IS NOT TRUE 
+os_extrato_new.php:			AND tbl_os.excluida IS NOT TRUE 
+os_extrato_old.php:		AND    tbl_os.excluida        IS NOT TRUE 
+os_extrato_old.php:					AND   tbl_os.excluida        IS NOT TRUE
+os_extrato.php:					AND    tbl_os.excluida        IS NOT TRUE 
+os_extrato_por_posto.php:						AND    tbl_os.excluida        IS NOT TRUE 
+os_extrato_pre.php:					AND    tbl_os.excluida        IS NOT TRUE 
+os_fechamento_mlg.php:				AND    (tbl_os.excluida        IS NULL OR tbl_os.excluida IS FALSE ) 
+os_fechamento.php:				AND    (tbl_os.excluida        IS NULL OR tbl_os.excluida IS FALSE ) 
+os_filizola_valores.php:								AND    tbl_os.excluida IS NOT NULL
+os_intervencao_carteira.php:			AND   tbl_os.excluida IS NOT TRUE 
+os_intervencao_marisa.php:	$sqlx = "UPDATE tbl_os SET excluida = 't' WHERE os = $os";
+os_intervencao_marisa.php:	$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_intervencao_marisa.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_marisa.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_mlg.php:	$sqlx = "UPDATE tbl_os SET excluida = 't' WHERE os = $os";
+os_intervencao_mlg.php:	$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_intervencao_mlg.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_mlg.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_muca.php:	$sqlx = "UPDATE tbl_os SET excluida = 't' WHERE os = $os";
+os_intervencao_muca.php:	$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_intervencao_muca.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_muca.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao.php:	$sqlx = "UPDATE tbl_os SET excluida = 't' WHERE os = $os";
+os_intervencao.php:	$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_intervencao.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao.php:				AND tbl_os.excluida IS NOT TRUE
+os_intervencao_sap.php:						AND tbl_os.excluida IS NOT TRUE ";
+os_intervencao_sap.php:			AND tbl_os.excluida IS NOT TRUE 
+os_intervencao_sap.php:				AND tbl_os.excluida IS NOT TRUE 
+os_intervencao_sap.php:				AND tbl_os.excluida IS NOT TRUE 
+os_intervencao_suprimentos.php:			AND tbl_os.excluida IS NOT TRUE 
+os_manutencao_consulta_lite.php:		$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_manutencao_consulta_lite.php:		$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+os_manutencao_consulta_lite.php:		$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_mensalidade_consulta.php:						tbl_os.excluida                                                   ,
+os_mensalidade_consulta.php:				$excluida           = trim(pg_result($res,$i,excluida));
+os_mensalidade_consulta.php:		$sql = "SELECT    count(tbl_os_excluida.os) as total     ,
+os_mensalidade_consulta.php:				FROM      tbl_os_excluida
+os_mensalidade_consulta.php:				JOIN      tbl_posto         ON  tbl_posto.posto           = tbl_os_excluida.posto
+os_mensalidade_consulta.php:				JOIN      tbl_produto       ON  tbl_produto.produto       = tbl_os_excluida.produto
+os_mensalidade_consulta.php:				LEFT JOIN tbl_posto_linha   ON  tbl_posto_linha.linha = tbl_produto.linha AND tbl_posto_linha.posto = tbl_os_excluida.posto
+os_mensalidade_consulta.php:				WHERE     tbl_os_excluida.fabrica = $login_fabrica
+os_mensalidade_consulta.php:				AND       tbl_os_excluida.data_digitacao::date BETWEEN $data_inicial AND $data_final 
+os_mensalidade_consulta.php:				ORDER BY  count(tbl_os_excluida.os) ";
+os_mensalidade_consulta.php:						tbl_os.excluida                                                   ,
+os_mensalidade_consulta.php:				AND     tbl_os.excluida IS TRUE
+os_mensalidade_consulta.php:				$excluida           = trim(pg_result($res,$i,excluida));
+os_metais_consulta_lite.php:		$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_metais_consulta_lite.php:		$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+os_metais_consulta_lite.php:		$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_metais_consulta_lite.php:						A.excluida            ,
+os_metais_consulta_lite.php:							TRUE                                               AS excluida           ,
+os_metais_consulta_lite.php:							tbl_os.excluida                                                  ,
+os_metais_consulta_lite.php:						A.excluida            ,
+os_metais_consulta_lite.php:							TRUE                                               AS excluida           ,
+os_metais_consulta_lite.php:					and   tbl_os_revenda.excluida      IS FALSE ";
+os_metais_consulta_lite.php:							tbl_os.excluida                                                  ,
+os_metais_consulta_lite.php:				$excluida           = trim(pg_result($res,$i,excluida));
+os_metais_consulta_lite.php:					if ($excluida == "t") $cor = "#FFE1E1";
+os_metais_consulta_lite.php:					if ($excluida == "f" || strlen($excluida) == 0) echo "<a href='os_press.php?os=$os_revenda'><img src='imagens/btn_consulta.gif'></a>";
+os_metais_consulta_lite.php:					if (($excluida == "f" || strlen($excluida) == 0) && strlen($data_fechamento) == 0) echo "<a href='os_cadastro.php?os=$os_revenda'><img src='imagens/btn_alterar_cinza.gif'></a>";
+os_metais_consulta_lite.php:					if ($excluida == "f" || strlen($excluida) == 0) echo "<a href='os_print.php?os=$os_revenda' target='_blank'><img src='imagens/btn_imprime.gif'></a>";
+os_metais_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_metais_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_metais_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_metais_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_parametros_excluida.php:<FORM name="frm_pesquisa" METHOD="GET" ACTION="os_consulta_excluida.php">
+os_press.php:					excluida = true,
+os_press.php:					tbl_os.excluida                                                   ,
+os_press.php:		$excluida                    = pg_fetch_result ($res,0,excluida);
+os_press.php:			$sql = "SELECT excluida from tbl_os where os = $os";
+os_press.php:			$excluida = pg_fetch_result($res,0,0);
+os_press.php:		if ($excluida <> 't') {
+os_press.php: if ($excluida == "t") {
+os_press.php:	if($excluida=='t' and strtolower($nf) == 'pendente') $nf= "Cancelada";
+os_print_blackedecker.php:					tbl_os.excluida                                                           ,
+os_print_blackedecker.php:		$excluida                    = pg_result ($res,0,excluida);
+os_print_blackedecker.php:<? if ($excluida == "t") { ?>
+os_print_intelbras.php:					tbl_os.excluida                                                ,
+os_print_intelbras.php:		$excluida           = pg_result ($res,0,excluida);
+os_print_intelbras.php:<? if ($excluida == "t") { ?>
+os_print_multi.php:					tbl_os.excluida                                                ,
+os_print_multi.php:			$excluida           = pg_result ($resX,$i,excluida);
+os_print_multi.php:			<? if ($excluida == "t") { ?>
+os_print.php:					tbl_os.excluida                                                ,
+os_print.php:		$excluida           = pg_result ($res,0,excluida);
+os_print.php:<? if ($excluida == "t") { ?>
+os_relatorio_aberta.php:					AND tbl_os.excluida IS NOT TRUE
+os_relatorio_aberta.php:					AND tbl_os.excluida IS NOT TRUE
+os_relatorio_aberta.php:					AND   tbl_os.excluida IS NOT TRUE
+os_relatorio_aberta.php:		 AND   tbl_os.excluida IS NOT TRUE
+os_relatorio_aberta.php:		AND   tbl_os.excluida IS NOT TRUE
+os_relatorio.php:		$sql = "SELECT  tbl_os_excluida.codigo_posto                                        ,
+os_relatorio.php:						tbl_os_excluida.admin                                               ,
+os_relatorio.php:						tbl_os_excluida.sua_os                                              ,
+os_relatorio.php:						tbl_os_excluida.referencia_produto                                  ,
+os_relatorio.php:						tbl_os_excluida.serie                                               ,
+os_relatorio.php:						tbl_os_excluida.nota_fiscal                                         ,
+os_relatorio.php:						to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')       AS data_nf      ,
+os_relatorio.php:						to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY') AS data_exclusao,
+os_relatorio.php:							where tbl_os_status.os = tbl_os_excluida.os
+os_relatorio.php:				FROM    tbl_os_excluida
+os_relatorio.php:				JOIN    tbl_posto_fabrica    ON tbl_posto_fabrica.codigo_posto = tbl_os_excluida.codigo_posto
+os_relatorio.php:				JOIN    tbl_posto            ON tbl_posto.posto                = tbl_os_excluida.posto
+os_relatorio.php:				WHERE   tbl_os_excluida.fabrica = $login_fabrica
+os_relatorio.php:				AND     tbl_os_excluida.posto   = $posto";
+os_relatorio.php:		$sql .= "ORDER BY tbl_os_excluida.data_exclusao;";
+os_relatorio.php:						echo "<TD>OSs excluidas pelo posto.</TD>";
+os_relatorio-sonoadm.php:		$sql = "SELECT  tbl_os_excluida.codigo_posto                                        ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.sua_os                                              ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.referencia_produto                                  ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.serie                                               ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.nota_fiscal                                         ,
+os_relatorio-sonoadm.php:						to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')       AS data_nf      ,
+os_relatorio-sonoadm.php:						to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY') AS data_exclusao
+os_relatorio-sonoadm.php:				FROM    tbl_os_excluida
+os_relatorio-sonoadm.php:				JOIN    tbl_posto_fabrica    ON tbl_posto_fabrica.codigo_posto = tbl_os_excluida.codigo_posto
+os_relatorio-sonoadm.php:				JOIN    tbl_posto            ON tbl_posto.posto                = tbl_os_excluida.posto
+os_relatorio-sonoadm.php:				WHERE   tbl_os_excluida.fabrica = $login_fabrica ";
+os_relatorio-sonoadm.php:			$sql .= "AND tbl_os_excluida.codigo_posto = '$posto' ";
+os_relatorio-sonoadm.php:		$sql .= "ORDER BY tbl_os_excluida.data_exclusao;";
+os_relatorio_test.php:		$sql = "SELECT  tbl_os_excluida.codigo_posto                                        ,
+os_relatorio_test.php:						tbl_os_excluida.admin                                               ,
+os_relatorio_test.php:						tbl_os_excluida.sua_os                                              ,
+os_relatorio_test.php:						tbl_os_excluida.referencia_produto                                  ,
+os_relatorio_test.php:						tbl_os_excluida.serie                                               ,
+os_relatorio_test.php:						tbl_os_excluida.nota_fiscal                                         ,
+os_relatorio_test.php:						to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')       AS data_nf      ,
+os_relatorio_test.php:						to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY') AS data_exclusao,
+os_relatorio_test.php:							where tbl_os_status.os = tbl_os_excluida.os
+os_relatorio_test.php:				FROM    tbl_os_excluida
+os_relatorio_test.php:				JOIN    tbl_posto_fabrica    ON tbl_posto_fabrica.codigo_posto = tbl_os_excluida.codigo_posto
+os_relatorio_test.php:				JOIN    tbl_posto            ON tbl_posto.posto                = tbl_os_excluida.posto
+os_relatorio_test.php:				WHERE   tbl_os_excluida.fabrica = $login_fabrica
+os_relatorio_test.php:				AND     tbl_os_excluida.posto   = $posto";
+os_relatorio_test.php:		$sql .= "ORDER BY tbl_os_excluida.data_exclusao;";
+os_relatorio_test.php:						echo "<TD>OSs excluidas pelo posto.</TD>";
+os_revenda_blackedecker_consulta.php:							TRUE                                               AS excluida           ,
+os_revenda_blackedecker_consulta.php:						tbl_os.excluida                                                    ,
+os_revenda_blackedecker_consulta.php:		$excluida           = trim(pg_result($res,$i,excluida));
+os_revenda_blackedecker_consulta.php:			if ($excluida == "t") $cor = "#FFE1E1";
+os_revenda_blackedecker_consulta.php:			if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_cadastro.php?os=$os_revenda' target='_blank'><img src='imagens_admin/btn_alterar_".$btn.".gif'></a>";
+os_revenda_blackedecker_consulta.php:			if ($excluida == "f" OR strlen($excluida) == 0) echo "<a href='os_press.php?os=$os_revenda'><img src='imagens/btn_consultar_".$btn.".gif'></a>";
+os_revenda_consulta_lite.php:		$sql = "UPDATE tbl_os SET excluida = 't' , admin_excluida = $login_admin WHERE os = $os AND fabrica = $login_fabrica";
+os_revenda_consulta_lite.php:		$sql = "SELECT fn_os_excluida_reincidente($xxos,$login_fabrica)";
+os_revenda_consulta_lite.php:		$sql = "SELECT fn_os_excluida($os,$login_fabrica,$login_admin);";
+os_revenda_consulta_lite.php:						A.excluida            ,
+os_revenda_consulta_lite.php:							TRUE                                               AS excluida           ,
+os_revenda_consulta_lite.php:							tbl_os.excluida                                                  ,
+os_revenda_consulta_lite.php:						A.excluida            ,
+os_revenda_consulta_lite.php:							TRUE                                               AS excluida           ,
+os_revenda_consulta_lite.php:					and   tbl_os_revenda.excluida      IS FALSE ";
+os_revenda_consulta_lite.php:							tbl_os.excluida                                                  ,
+os_revenda_consulta_lite.php:				$excluida           = trim(pg_result($res,$i,excluida));
+os_revenda_consulta_lite.php:					if ($excluida == "t") $cor = "#FFE1E1";
+os_revenda_consulta_lite.php:					if ($excluida == "f" || strlen($excluida) == 0) echo "<a href='os_press.php?os=$os_revenda'><img src='imagens/btn_consulta.gif'></a>";
+os_revenda_consulta_lite.php:					if (($excluida == "f" || strlen($excluida) == 0) && strlen($data_fechamento) == 0) echo "<a href='os_cadastro.php?os=$os_revenda'><img src='imagens/btn_alterar_cinza.gif'></a>";
+os_revenda_consulta_lite.php:					if ($excluida == "f" || strlen($excluida) == 0) echo "<a href='os_print.php?os=$os_revenda' target='_blank'><img src='imagens/btn_imprime.gif'></a>";
+os_revenda_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_revenda_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_revenda_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_revenda_consulta_lite.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+os_revenda_print.php:		$cond= " AND tbl_os.excluida is not true ";
+peca_cadastro.php:		$msg_erro = "Esta peça não pode ser excluida";
+pesquisa_adiciona_os.php:				tbl_os.excluida
+pesquisa_adiciona_os.php:	$excluida         = pg_result($res,0,excluida);
+pesquisa_adiciona_os.php:	if($excluida == "t"){
+pesquisa_adiciona_os.php:	if(strlen($data_fechamento) > 0 AND $extrato_atual <> $extrato AND strlen($adiciona_baixado) == 0 AND $excluida<> "t"){
+pesquisa_consumidor_callcenter_new.php:		AND tbl_os.excluida IS NOT TRUE
+pesquisa_consumidor_callcenter_new_test.php:		AND tbl_os.excluida IS NOT TRUE
+pesquisa_suggar.php:			AND  tbl_os.excluida is false
+pesquisa_suggar.php:			AND  tbl_os.excluida is false
+pesquisa_suggar.php:			AND  tbl_os.excluida is false
+produtos_mais_demandados_familia.php:					AND   tbl_os.excluida IS NOT TRUE
+produtos_mais_demandados_familia.php:							AND   tbl_os.excluida IS NOT TRUE
+produtos_mais_demandados.php:					AND   tbl_os.excluida IS NOT TRUE
+produtos_mais_demandados.php:							AND   tbl_os.excluida IS NOT TRUE
+produtos_mais_demandados.php:			AND   tbl_os.excluida IS NOT TRUE
+produtos_mais_demandados.php:		AND   tbl_os.excluida IS NOT TRUE
+relacionamento_diagnostico_xls2.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_auditoria_os.php:		$cond_excluidas = "AND tbl_os.excluida is not true "; 
+relatorio_auditoria_os.php:				$sql.="$cond_excluidas
+relatorio_auditoria_os.php:				$sql.="$cond_excluidas
+relatorio_back_log.php:						AND tbl_os.excluida          IS NOT TRUE
+relatorio_back_log.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_britania_flavio2.php:WHERE tbl_os.data_digitacao BETWEEN '2009-04-01 00:00:00' AND '2009-04-30 23:59:59' and tbl_os.fabrica=3 and tbl_os.excluida IS FALSE order by tbl_os.sua_os limit 20 ";
+relatorio_callcenter_produto_observacao.php:$sql .= " AND tbl_callcenter.excluida is not true ";
+relatorio_callcenter_produto.php:			AND tbl_callcenter.excluida IS NOT TRUE ";
+relatorio_callcenter_produto_sam.php:			AND tbl_callcenter.excluida IS NOT TRUE
+relatorio_cfa.php:				tbl_os.excluida is not true AND
+relatorio_defeito_constatado_os_anual.php:	AND bi_os.excluida IS NOT TRUE
+relatorio_defeitos.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_diario.php:			and tbl_os.excluida is not true 
+relatorio_diario.php:				and tbl_os.excluida is not true 
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_digitacao BETWEEN '$data_inicial' AND '$data_final' ";
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os JOIN tbl_produto USING (produto) WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_digitacao BETWEEN '$data_inicial' AND '$data_final' AND tbl_produto.linha = 3 ";
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os JOIN tbl_produto USING (produto) WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_digitacao BETWEEN '$data_inicial' AND '$data_final' AND tbl_produto.linha = 2 ";
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os JOIN tbl_produto USING (produto) WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_digitacao BETWEEN '$data_inicial' AND '$data_final' AND tbl_produto.linha = 4 ";
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os JOIN tbl_produto USING (produto) WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_digitacao BETWEEN '$data_inicial' AND '$data_final' AND tbl_produto.linha = 212 ";
+relatorio_diario.php:	$sql = "SELECT COUNT(*) FROM tbl_os WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_fechamento BETWEEN '$data_inicial' AND '$data_final' ";
+relatorio_diario.php:	$sql = "SELECT trim (to_char (SUM(tbl_os.mao_de_obra),'999,999.99')) FROM tbl_os WHERE fabrica = $login_fabrica AND excluida IS NOT TRUE AND data_fechamento BETWEEN '$data_inicial' AND '$data_final' ";
+relatorio_engenharia_serie.php:WHERE tbl_os.excluida is not true
+relatorio_engenharia_serie.php:WHERE tbl_os.excluida is not true
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeito_constatado.php:		WHERE  tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_defeitos_latinatec.php:	$sql .="AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_latinatec.php:							AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_latinatec.php:		AND   tbl_os.excluida IS NOT TRUE ";
+relatorio_field_call_rate_defeitos.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos.php:				AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos.php:		AND   tbl_os.excluida IS NOT TRUE ";
+relatorio_field_call_rate_defeitos_tk.php:	$sql .="AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_tk.php:							AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_tk.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_tk.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_defeitos_tk.php:		AND   tbl_os.excluida IS NOT TRUE ";
+relatorio_field_call_rate_familia_custo_marisa.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_familia_custo.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_familia_pecas_custo.php:	AND   tbl_os.excluida IS NOT TRUE  
+relatorio_field_call_rate_familia_pecas_custo.php:		AND   tbl_os.excluida      IS NOT TRUE
+relatorio_field_call_rate_nserie_grafico.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_nserie_grafico.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_os_sem_peca_intelbras.php:		WHERE tbl_os.fabrica = $login_fabrica AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_os_sem_peca_intelbras.php:		AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:					AND   $tipo_data BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_latinatec.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec.php:							AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:					AND   $tipo_data BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_latinatec_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_latinatec_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_latinatec_tk.php:							AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:						AND   $tipo_data BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:					AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:								AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:					AND   $tipo_data BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:				AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas2_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:							AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas2_tk.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_comparativo_anual.php:			AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_comparativo_anual.php:			AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_comparativo.php:			AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_comparativo.php:			AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_custo_fer.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_custo_fer.php:$sql .= " AND   tbl_os.excluida IS NOT TRUE ; ";
+relatorio_field_call_rate_pecas_custo_fer.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_custo.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_custo.php:$sql .= " AND   tbl_os.excluida IS NOT TRUE ; ";
+relatorio_field_call_rate_pecas_custo.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_grupo.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_grupo.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_grupo.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_grupo.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico__latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico__latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico__latinatec.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_latinatec.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico_latinatec.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grafico.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grupo2.php:			and tbl_os.excluida is not true
+relatorio_field_call_rate_pecas_grupo2.php:			and tbl_os.excluida is not true
+relatorio_field_call_rate_pecas_grupo.php:				AND   tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grupo.php:				AND   tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59' AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grupo.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas_grupo.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_pecas_grupo.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_grupo.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_samuca.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_pecas_samuca.php:$sql .= "AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_posto.php:		AND tbl_os.excluida IS NOT TRUE;
+relatorio_field_call_rate_produto-2.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto-2.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto-2.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto3_britania_anual.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_produto3_britania.php:		AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto3_britania.php:			AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto3_britania_teste.php:		AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto3_britania_teste.php:				AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto_custo.php:		WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia_marisa.php:					AND    tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia_marisa.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia_os_xls.php:			tbl_os.excluida                                                      ,
+relatorio_field_call_rate_produto_familia_os_xls.php:		WHERE tbl_os.excluida is not true
+relatorio_field_call_rate_produto_familia_os_xls.php:			tbl_os.excluida                                                      ,
+relatorio_field_call_rate_produto_familia_os_xls.php:			$excluida           = trim(pg_result ($res,$i,excluida));
+relatorio_field_call_rate_produto_familia.php:					AND    tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia_teste.php:					AND    tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia_teste.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia-xls.php:					AND    tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_familia-xls.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_grupo.php:			AND excluida IS NOT TRUE
+relatorio_field_call_rate_produto_grupo.php:					WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_grupo.php:		AND   tbl_os.excluida                IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec.php:					WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec_teste.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec_teste.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_latinatec_teste.php:					WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_lista_basica.php:			AND   tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto.php:		WHERE  tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto.php:		WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto.php:		WHERE  tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto.php:			WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "aberta") $sql .= " AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "fechada") $sql .= " AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "excluida") $sql .= " AND tbl_os.excluida IS TRUE";
+relatorio_field_call_rate_produto_serie.php:				<option value="excluida" <? if ($situacao == "excluida") echo "selected"; ?>>Excluidas</option>
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "aberta") $sql .= " AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "fechada") $sql .= " AND tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto_serie.php:	if ($situacao == "excluida") $sql .= " AND tbl_os.excluida IS TRUE";
+relatorio_field_call_rate_produto_tk.php:				WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_tk.php:					WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_tk.php:				WHERE  tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto_tk.php:				WHERE tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto-xls.php:				WHERE tbl_os.excluida IS FALSE
+relatorio_field_call_rate_produto-xls.php:								AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto-xls-tectoy.php:				AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_produto-xls-tectoy.php:								AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_sem_peca_latinatec.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca_latinatec.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_sem_peca_tk.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_grafico.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_grafico.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_grafico.php:					AND tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_latinatec.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_latinatec.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie.php:	AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie.php:	AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie.php:	AND   tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie.php:		AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_tk.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_tk.php:					AND   tbl_os.excluida IS NOT TRUE
+relatorio_field_call_rate_serie_tk.php:				AND tbl_os.excluida IS NOT TRUE 
+relatorio_field_call_rate_serie_tk.php:				AND   tbl_os.excluida IS NOT TRUE
+relatorio_garantias.php:					AND tbl_os.excluida IS NOT TRUE ;
+relatorio_grafico_os_aberto.php:					    AND tbl_os.excluida IS NOT TRUE
+relatorio_grafico_os_aberto.php:					    AND tbl_os.excluida IS NOT TRUE
+relatorio_movimentacao_produto.php:					excluidas							,
+relatorio_movimentacao_produto.php:					AND bi_os.excluida = 'f'
+relatorio_movimentacao_produto.php:					AND bi_os.excluida = 'f'
+relatorio_movimentacao_produto.php:						COUNT (bi_os.excluida) AS excluidas
+relatorio_movimentacao_produto.php:					AND bi_os.excluida = 't'
+relatorio_movimentacao_produto.php:					$excluidas  = trim(pg_result($res,$i,excluidas));
+relatorio_movimentacao_produto.php:					$fechadatot = $fechadas + $excluidas;
+relatorio_os_aberta_90_download.php:			AND excluida is not true
+relatorio_os_aberta_completo.php:AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_completo.php:			AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_completo_xls.php:			AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_detalhado_fabio.php:			AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_fechada.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_os_aberta_geral.php:	AND tbl_os.excluida is not TRUE
+relatorio_os_aberta_lenoxx.php:			AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_lenoxx.php:			AND   tbl_os.excluida   IS NOT TRUE 
+relatorio_os_aberta_old.php:$excluidas   = $_GET['excluidas'];
+relatorio_os_aberta_old.php:if ( empty($excluidas) ) {
+relatorio_os_aberta_old.php:	$excluidas = $_POST['excluidas'];
+relatorio_os_aberta_old.php:					<td colspan='2' align='center'><input type='checkbox' name='excluidas' value='t' <?if($excluidas=='t')echo "checked";?>> Desconsiderar OSs excluídas </td>
+relatorio_os_aberta_old.php:		$condnks = "AND tbl_os.excluida = 'f' AND tbl_os.data_conserto IS NULL";
+relatorio_os_aberta_old.php:			AND   tbl_os.excluida   IS NOT TRUE
+relatorio_os_aberta_old.php:			$sql = "SELECT * FROM tbl_os_excluida WHERE os = $os";
+relatorio_os_aberta_old.php:				if ($excluidas == 't') {
+relatorio_os_aberta.php:$excluidas   = $_GET['excluidas'];
+relatorio_os_aberta.php:if ( empty($excluidas) ) {
+relatorio_os_aberta.php:	$excluidas = $_POST['excluidas'];
+relatorio_os_aberta.php:					<td colspan='2' align='center'><input type='checkbox' name='excluidas' value='t' <?if($excluidas=='t')echo "checked";?>> Desconsiderar OSs excluídas </td>
+relatorio_os_aberta.php:		$condnks = "AND temp_os_aberta.excluida = 'f' AND temp_os_aberta.data_conserto IS NULL";
+relatorio_os_aberta.php:			tbl_os.excluida,tbl_os.revenda, tbl_os.consumidor_nome,
+relatorio_os_aberta.php:			AND   tbl_os.excluida   IS NOT TRUE
+relatorio_os_aberta.php:			$sql = "SELECT * FROM tbl_os_excluida WHERE os = $os";
+relatorio_os_aberta.php:				if ($excluidas == 't') {
+relatorio_os_aberta_sac.php:			AND tbl_os.excluida IS NOT TRUE
+relatorio_os_aberta_samuel.php:$excluidas   = $_GET['excluidas'];
+relatorio_os_aberta_samuel.php:if ( empty($excluidas) ) {
+relatorio_os_aberta_samuel.php:	$excluidas = $_POST['excluidas'];
+relatorio_os_aberta_samuel.php:					<td colspan='2' align='center'><input type='checkbox' name='excluidas' value='t' <?if($excluidas=='t')echo "checked";?>> Desconsiderar OSs excluídas </td>
+relatorio_os_aberta_samuel.php:		$condnks = "AND temp_os_aberta.excluida = 'f' AND temp_os_aberta.data_conserto IS NULL";
+relatorio_os_aberta_samuel.php:			tbl_os.excluida,tbl_os.revenda, tbl_os.consumidor_nome,
+relatorio_os_aberta_samuel.php:			AND   tbl_os.excluida   IS NOT TRUE
+relatorio_os_aberta_samuel.php:			$sql = "SELECT * FROM tbl_os_excluida WHERE os = $os";
+relatorio_os_aberta_samuel.php:				if ($excluidas == 't') {
+relatorio_os_aberta_test.php:$excluidas   = $_GET['excluidas'];
+relatorio_os_aberta_test.php:if ( empty($excluidas) ) {
+relatorio_os_aberta_test.php:	$excluidas = $_POST['excluidas'];
+relatorio_os_aberta_test.php:					<td colspan='2' align='center'><input type='checkbox' name='excluidas' value='t' <?if($excluidas=='t')echo "checked";?>> Desconsiderar OSs excluídas </td>
+relatorio_os_aberta_test.php:		$condnks = "AND temp_os_aberta.excluida = 'f' AND temp_os_aberta.data_conserto IS NULL";
+relatorio_os_aberta_test.php:			tbl_os.excluida                                                          ,
+relatorio_os_aberta_test.php:			AND   tbl_os.excluida   IS NOT TRUE
+relatorio_os_aberta_test.php:			$sql = "SELECT * FROM tbl_os_excluida WHERE os = $os";
+relatorio_os_aberta_test.php:				if ($excluidas == 't') {
+relatorio_os_colombia.php:				AND tbl_os.excluida IS NOT TRUE ;
+relatorio_os_colombia_traducao.php:				AND tbl_os.excluida IS NOT TRUE ;
+relatorio_os_cortesia.php:			AND tbl_os.excluida is false
+relatorio_os_linha.php:			AND   tbl_os.excluida IS FALSE
+relatorio_os_por_posto_peca_britania.php:					tbl_os.excluida,
+relatorio_os_por_posto_peca_britania.php:	$sql .= "CREATE INDEX tmp_os_fabrica_os_posto_excluida on tmp_os_$login_admin(fabrica,os,posto,excluida);";
+relatorio_os_por_posto_peca_britania.php:					AND tmp_os_$login_admin.excluida IS NOT TRUE;";
+relatorio_os_por_posto_peca.php:                   and tbl_os.posto = $posto and tbl_os.excluida is not true ";
+relatorio_os_regiao.php:			$sql .= " AND tbl_os.excluida IS FALSE GROUP BY tbl_os.posto; ";
+relatorio_os_regiao.php:		$sql .= " AND tbl_os.excluida IS FALSE ORDER BY posto_ordem ASC";
+relatorio_os_reincidente_britania_waldir2.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_os_reincidente_britania_waldir3.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_os_reincidente_britania_waldir.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_os_sem_extrato.php:					AND (tbl_os.excluida IS FALSE OR tbl_os.excluida IS NULL)
+relatorio_os_sem_extrato_test2.php:				AND (tbl_os.excluida IS FALSE OR tbl_os.excluida IS NULL)
+relatorio_os_sem_extrato_test.php:					AND (tbl_os.excluida IS FALSE OR tbl_os.excluida IS NULL)
+relatorio_os_status_posto.php:				AND (tbl_os.excluida       IS NULL OR tbl_os.excluida IS FALSE)
+relatorio_os_status_posto.php:				AND (tbl_os.excluida       IS NULL OR tbl_os.excluida IS FALSE)
+relatorio_os_status_posto.php:					AND		(tbl_os.excluida       IS NULL OR tbl_os.excluida IS FALSE)
+relatorio_os_troca.php:	<td class="table_line" style="size: 10px" align='center' ><INPUT TYPE="radio" NAME="aprova" value='excluida' <? if(trim($aprova) == 'excluida') echo "checked='checked'"; ?>>Excluída</td>
+relatorio_os_troca.php:		if($aprova == "excluida"){ 
+relatorio_os_troca.php:					tbl_os.excluida                                              
+relatorio_os_troca.php:		if(trim($aprova) =='excluida'){
+relatorio_os_troca.php:			$excluida			= pg_result($res, $x, excluida);
+relatorio_os_troca.php:			if($excluida=='t' and trim($aprova) =='excluida'){
+relatorio_os_troca.php:				$xsql = "SELECT tbl_admin.login from tbl_admin JOIN tbl_os ON tbl_os.admin_excluida=tbl_admin.admin where os=$os";
+relatorio_os_troca.php:					$admin_excluida = pg_result($xres,0,0);
+relatorio_os_troca.php:					$admin_excluida="POSTO";
+relatorio_os_troca.php:			if($aprova<>'excluida'){
+relatorio_os_troca.php:			if($aprova<>'excluida'){
+relatorio_os_troca.php:			if(trim($aprova) =='excluida'){
+relatorio_os_troca.php:				echo "<td style='font-size: 9px; font-family: verdana'>".$admin_excluida. "</td>";
+relatorio_os_troca_test.php:	<td class="table_line" style="size: 10px" align='center' ><INPUT TYPE="radio" NAME="aprova" value='excluida' <? if(trim($aprova) == 'excluida') echo "checked='checked'"; ?>>Excluída</td>
+relatorio_os_troca_test.php:		if($aprova == "excluida"){
+relatorio_os_troca_test.php:					tbl_os.excluida
+relatorio_os_troca_test.php:		if(trim($aprova) =='excluida'){
+relatorio_os_troca_test.php:			$excluida			= pg_result($res, $x, excluida);
+relatorio_os_troca_test.php:			if($excluida=='t' and trim($aprova) =='excluida'){
+relatorio_os_troca_test.php:				$xsql = "SELECT tbl_admin.login from tbl_admin JOIN tbl_os ON tbl_os.admin_excluida=tbl_admin.admin where os=$os";
+relatorio_os_troca_test.php:					$admin_excluida = pg_result($xres,0,0);
+relatorio_os_troca_test.php:					$admin_excluida="POSTO";
+relatorio_os_troca_test.php:			if($aprova<>'excluida'){
+relatorio_os_troca_test.php:			if($aprova<>'excluida'){
+relatorio_os_troca_test.php:			if(trim($aprova) =='excluida'){
+relatorio_os_troca_test.php:				echo "<td style='font-size: 9px; font-family: verdana'>".$admin_excluida. "</td>";
+relatorio_pa_todos.php:				where fabrica <> 0 and excluida is not true and data_abertura between '$data_inicial' and '$data_final' ; ";
+relatorio_peca_atendida_os_aberta.php:					SELECT DISTINCT tbl_os.os, tbl_os.sua_os, tbl_os.excluida, tbl_os.data_abertura
+relatorio_peca_atendida_os_aberta.php:										excluida, 
+relatorio_peca_atendida_os_aberta.php:								AND excluida IS FALSE
+relatorio_peca_atendida_os_aberta.php:					SELECT DISTINCT tbl_os.os, tbl_os.sua_os,tbl_os.excluida, data_abertura
+relatorio_peca_atendida_os_aberta.php:						FROM (SELECT os, sua_os,excluida, data_abertura FROM tbl_os WHERE fabrica = $login_fabrica AND posto = $posto AND finalizada IS NULL) tbl_os
+relatorio_peca_atendida_os_aberta.php:							AND excluida IS FALSE
+relatorio_pecas_mes.php:		AND   excluida IS NOT TRUE
+relatorio_produto_os_finalizada.php:						AND excluida IS NOT TRUE
+relatorio_produto_os_finalizada.php:						AND   tbl_os.excluida IS NOT TRUE
+relatorio_produto_por_posto.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_produto_por_posto.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_qtde_valor.php:					AND tbl_os.excluida IS NOT TRUE 
+relatorio_quebra_ano_produto_novo.php:			AND tbl_os.excluida IS NOT NULL
+relatorio_quebra_familia_paulo.php:	WHERE tbl_os.excluida IS NOT TRUE and tbl_linha.fabrica=$login_fabrica
+relatorio_quebra_familia.php:	WHERE tbl_os.excluida IS NOT TRUE
+relatorio_quebra_familia_teste.php:	WHERE tbl_os.excluida IS NOT TRUE
+relatorio_quebra_linha.php:	WHERE tbl_os.excluida IS NOT TRUE and tbl_linha.fabrica=$login_fabrica
+relatorio_quebra_peca_detalhe.php:	WHERE tbl_os.excluida                     IS NOT TRUE
+relatorio_quebra_peca.php:		WHERE tbl_os.excluida                     IS NOT TRUE
+relatorio_quebra_posto.php:		WHERE tbl_os.excluida IS NOT TRUE
+relatorio_quebra_produto_paulo.php:	WHERE tbl_os.excluida IS NOT TRUE
+relatorio_quebra_produto.php:	WHERE tbl_os.excluida IS NOT TRUE
+relatorio_reincidencia_latinatec.php:							AND tbl_os.excluida IS NOT TRUE
+relatorio_reincidencia.php:		AND tbl_os.excluida is not true
+relatorio_reincidencia.php:		and tbl_os.excluida is not true
+relatorio_reincidencia.php:	AND   tbl_os.excluida       IS NOT TRUE 
+relatorio_retorno_familia.php:		AND tbl_os.excluida IS NOT TRUE
+relatorio_revenda_os.php:		AND tbl_os.excluida is not true
+relatorio_serie_ano.php:		AND   tbl_os.excluida IS NOT TRUE;
+relatorio_serie_ano.php:				AND   tbl_os.excluida IS NOT TRUE
+relatorio_serie_detalhe.php:			AND    tbl_os.excluida IS NOT TRUE
+relatorio_serie_igor.php:			AND    tbl_os.excluida IS NOT TRUE
+relatorio_serie.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_serie.php:			AND   tbl_os.excluida IS NOT TRUE
+relatorio_sla.php:						AND tbl_os.excluida          IS NOT TRUE
+relatorio_sla.php:						AND tbl_os.excluida IS NOT TRUE
+relatorio_tempo_conserto_mes.php:			AND     tbl_os.excluida IS NOT TRUE 
+relatorio_tempo_conserto_os.php:			AND		tbl_os.excluida IS NOT TRUE
+relatorio_tempo_conserto.php:			AND     tbl_os.excluida IS NOT TRUE ";
+relatorio_tempo_conserto.php:			AND     tbl_os.excluida IS NOT TRUE ";
+relatorio_tempo_conserto_postos.php:				AND tbl_os.excluida        IS NOT TRUE 
+relatorio_tempo_conserto_postos.php:				AND	tbl_os.excluida        IS NOT TRUE ";
+relatorio_valor_pecas_mobra.php:			AND tbl_os.excluida is not true ;
+relatorio_valor_pecas_mobra.php:			AND tbl_os.excluida is not true 
+resumo_pesquisa_suggar.php:			AND  tbl_os.excluida is false
+resumo_pesquisa_suggar.php:			AND  tbl_os.excluida is false
+resumo_pesquisa_suggar.php:			AND  tbl_os.excluida is false
+revenda_gerencia.php:						tbl_os.excluida                                                   ,
+revenda_gerencia.php:				AND   tbl_os.excluida IS NOT TRUE";
+revenda_gerencia.php:		if ($excluida == "t") {
+revenda_gerencia.php:			$excluida           = trim(pg_result($res,$i,excluida));
+revenda_gerencia.php:			if ($excluida == "t")            $cor = "#FFE1E1";
+revenda_gerencia.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica != 14) {
+revenda_gerencia.php:			if (strlen($fechamento) == 0 && $excluida != "t" && $login_fabrica == 14) {
+status_os_posto.php:			$sql = "UPDATE tbl_os SET excluida = 't' WHERE os = $os AND fabrica = $login_fabrica";
+status_os_posto.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+status_os_posto.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,null);";
+status_os_posto.php:										excluida,
+status_os_posto.php:					AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto.php:										excluida,
+status_os_posto.php:					AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto.php:										excluida,
+status_os_posto.php:									AND   (excluida IS NULL OR excluida = 'f')
+status_os_posto.php:									excluida,
+status_os_posto.php:									AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto.php:									excluida,
+status_os_posto.php:									AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto.php:					$excluida           = trim(pg_fetch_result($resMostra,$i,excluida));
+status_os_posto.php:				if ($excluida == "f" || strlen($excluida) == 0 and strlen($btn_acao_pre_os)==0) {
+status_os_posto.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto.php:					if ($excluida == "f" OR strlen($excluida) == 0) {
+status_os_posto.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto.php:							AND (excluida IS NULL OR excluida = 'f')
+status_os_posto.php:			AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto.php:							AND   (excluida IS NULL OR excluida = 'f')
+status_os_posto.php:							AND (excluida IS NULL OR excluida = 'f')
+status_os_posto.php:			AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto.php:					url: 'grava_obs_excluida.php',
+status_os_posto_test_edu.php:			$sql = "UPDATE tbl_os SET excluida = 't' WHERE os = $os AND fabrica = $login_fabrica";
+status_os_posto_test_edu.php:			$sql = "SELECT fn_os_excluida_reincidente($os,$login_fabrica)";
+status_os_posto_test_edu.php:			$sql = "SELECT fn_os_excluida($os,$login_fabrica,null);";
+status_os_posto_test_edu.php:										excluida,
+status_os_posto_test_edu.php:					AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto_test_edu.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto_test_edu.php:										excluida,
+status_os_posto_test_edu.php:					AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto_test_edu.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')";
+status_os_posto_test_edu.php:									AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto_test_edu.php:										excluida,
+status_os_posto_test_edu.php:									AND   (excluida IS NULL OR excluida = 'f')
+status_os_posto_test_edu.php:									excluida,
+status_os_posto_test_edu.php:									AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto_test_edu.php:									excluida,
+status_os_posto_test_edu.php:									AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto_test_edu.php:					$excluida           = trim(pg_fetch_result($resMostra,$i,excluida));
+status_os_posto_test_edu.php:				if ($excluida == "f" || strlen($excluida) == 0 and strlen($btn_acao_pre_os)==0) {
+status_os_posto_test_edu.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto_test_edu.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto_test_edu.php:					if ($excluida == "f" OR strlen($excluida) == 0) {
+status_os_posto_test_edu.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto_test_edu.php:						if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto_test_edu.php:					if ($excluida == "f" || strlen($excluida) == 0) {
+status_os_posto_test_edu.php:							AND (excluida IS NULL OR excluida = 'f')
+status_os_posto_test_edu.php:			AND (tbl_os.excluida IS NULL OR tbl_os.excluida = 'f')
+status_os_posto_test_edu.php:							AND   (excluida IS NULL OR excluida = 'f')
+status_os_posto_test_edu.php:							AND (excluida IS NULL OR excluida = 'f')
+status_os_posto_test_edu.php:			AND (excluida IS NULL OR excluida = 'f')";
+status_os_posto_test_edu.php:					url: 'grava_obs_excluida.php',
+troca_revenda_baixa.php:				AND tbl_os.excluida IS NOT TRUE
+troca_revenda_baixa.php:			AND tbl_os.excluida IS NOT TRUE
+troca_revenda_baixa.php:		AND tbl_os.excluida IS NOT TRUE

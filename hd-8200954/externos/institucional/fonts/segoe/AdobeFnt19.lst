@@ -1,0 +1,411 @@
+%!Adobe-FontList 1.19
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoePrint
+FamilyName:Segoe Print
+StyleName:Regular
+FullName:Segoe Print
+MenuName:Segoe Print
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoepr.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:168404
+FileModTime:1506696088
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe Print
+NameArray:0,Win,1,Segoe Print
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoePrint-Bold
+FamilyName:Segoe Print
+StyleName:Bold
+FullName:Segoe Print Bold
+MenuName:Segoe Print
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeprb.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:167800
+FileModTime:1506696095
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe Print Bold
+NameArray:0,Win,1,Segoe Print
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeScript
+FamilyName:Segoe Script
+StyleName:Regular
+FullName:Segoe Script
+MenuName:Segoe Script
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoesc.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:596924
+FileModTime:1506696095
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe Script
+NameArray:0,Win,1,Segoe Script
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeScript-Bold
+FamilyName:Segoe Script
+StyleName:Bold
+FullName:Segoe Script Bold
+MenuName:Segoe Script
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoescb.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:581228
+FileModTime:1506696095
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe Script Bold
+NameArray:0,Win,1,Segoe Script
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI
+FamilyName:Segoe UI
+StyleName:Regular
+FullName:Segoe UI
+MenuName:Segoe UI
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeui.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:925736
+FileModTime:1506696087
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-Bold
+FamilyName:Segoe UI
+StyleName:Bold
+FullName:Segoe UI Bold
+MenuName:Segoe UI
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeuib.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:914092
+FileModTime:1506696088
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-Italic
+FamilyName:Segoe UI
+StyleName:Italic
+FullName:Segoe UI Italic
+MenuName:Segoe UI
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeuii.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:509768
+FileModTime:1506696088
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-Light
+FamilyName:Segoe UI
+StyleName:Light
+FullName:Segoe UI Light
+MenuName:Segoe UI Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeuil.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:878372
+FileModTime:1506696088
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Light
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-Semilight
+FamilyName:Segoe UI
+StyleName:Semilight
+FullName:Segoe UI Semilight
+MenuName:Segoe UI Semilight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeuisl.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:816540
+FileModTime:1506696088
+WeightClass:350
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Semilight
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-BoldItalic
+FamilyName:Segoe UI
+StyleName:Bold Italic
+FullName:Segoe UI Bold Italic
+MenuName:Segoe UI
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\segoeuiz.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:523052
+FileModTime:1506696088
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUIBlack
+FamilyName:Segoe UI
+StyleName:Black
+FullName:Segoe UI Black
+MenuName:Segoe UI Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguibl.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:324448
+FileModTime:1506696088
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Black
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUIBlack-Italic
+FamilyName:Segoe UI
+StyleName:Black Italic
+FullName:Segoe UI Black Italic
+MenuName:Segoe UI Black
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguibli.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:351908
+FileModTime:1506696095
+WeightClass:900
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Segoe UI Black
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUIEmoji
+FamilyName:Segoe UI Emoji
+StyleName:Regular
+FullName:Segoe UI Emoji
+MenuName:Segoe UI Emoji
+StyleBits:0
+WritingScript:Emoji
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguiemj.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1785076
+FileModTime:1506696088
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Emoji
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUIHistoric
+FamilyName:Segoe UI Historic
+StyleName:Regular
+FullName:Segoe UI Historic
+MenuName:Segoe UI Historic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguihis.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1383320
+FileModTime:1506696088
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe UI Historic
+NameArray:0,Win,1,Segoe UI Historic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-LightItalic
+FamilyName:Segoe UI
+StyleName:Light Italic
+FullName:Segoe UI Light Italic
+MenuName:Segoe UI Light
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguili.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:441372
+FileModTime:1506696095
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Segoe UI Light
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-Semibold
+FamilyName:Segoe UI
+StyleName:Semibold
+FullName:Segoe UI Semibold
+MenuName:Segoe UI Semibold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguisb.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:941172
+FileModTime:1506696088
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Semibold
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUI-SemilightItalic
+FamilyName:Segoe UI
+StyleName:Semilight Italic
+FullName:Segoe UI Semilight Italic
+MenuName:Segoe UI Semilight
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguisli.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:448756
+FileModTime:1506696095
+WeightClass:350
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Segoe UI Semilight
+NameArray:0,Win,16,Segoe UI
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUISymbol
+FamilyName:Segoe UI Symbol
+StyleName:Regular
+FullName:Segoe UI Symbol
+MenuName:Segoe UI Symbol
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Marketing01\Desktop\Pasta segoe\Document fonts\seguisym.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2454648
+FileModTime:1506696088
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Segoe UI Symbol
+%EndFont
+

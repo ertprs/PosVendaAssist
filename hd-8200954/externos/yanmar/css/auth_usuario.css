@@ -1,0 +1,87 @@
+
+.logo{
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.alert-danger{
+	margin-bottom: 20px;
+    padding: 15px 20px !important;
+    font-size: 13px;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 5px !important;
+    color: #24292e !important;
+    background-color: #ffe3e6 !important;
+    border-color: rgba(158,28,35,.2) !important;
+}
+
+.alert-success{
+	margin-bottom: 20px;
+    padding: 15px 20px !important;
+    font-size: 13px;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 5px !important;
+    color: #24292e !important;
+    background-color: #e5ffe3 !important;
+    border-color: rgba(43, 176, 18, 0.2)
+}
+
+.alert-danger > button{
+	font-size: 20px;
+	text-align: justify;
+}
+
+form{
+	color: #5d5d5d;
+	background: #f2f2f2;
+	padding: 26px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form > img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+form > button {
+	background-color: #373865e8;
+	border-color: rgba(27,31,35,.15);
+	box-shadow: 0 1px 0 rgba(27,31,35,.1),inset 0 1px 0 hsla(0,0%,100%,.03);
+	color: #fff;
+	margin-top: 30px;
+}
+
+form > button:hover{
+	background-color:#373865;
+	color: #fff;
+}
+form > input{
+	font-size: 18px;
+	color: #ffffffe3;
+	width: 90% !important;
+    margin-left: 5% !important;	
+}
+
+form > label{
+	width: 90% !important;
+    margin-left: 5% !important;
+}
+
+.note{
+	min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: #586069;
+}
+
+.info{
+	margin-bottom:20px;
+}

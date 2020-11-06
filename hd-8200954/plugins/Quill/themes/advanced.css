@@ -1,0 +1,25 @@
+.advanced-wrapper {
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.advanced-wrapper {
+  width: 98%;
+}
+.editor-container {
+  height: 250px;
+  background-color: #FFFFFF;
+}
+.toolbar-container {
+  border-bottom: 1px solid #ccc;
+  background-color: #FFFFFF;
+}
+.toolbar-container .sc-format-group {
+  margin-right: 10px;
+}
+.basic-wrapper .toolbar-container .sc-active,
+.basic-wrapper .toolbar-container button:hover {
+  color: #008000;
+  font-weight: bold;
+}

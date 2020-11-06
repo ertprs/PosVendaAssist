@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<title>Telecontrol</title>
+
+</head>
+
+<body>
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="100%" height="100%">
+<font face="Verdana, Tahoma, Arial" size="2"><b>
+
+<script language="JavaScript">
+var navegador_nome = navigator.appName;
+var navegador_versao = navigator.appVersion;
+
+if ( navigator.cookieEnabled == false ) {
+	document.write('&bull; Desative o bloqueador de cookie do seu navegador.<br>');
+}
+
+if( navigator.javaEnabled() == false ) {
+	document.write('&bull; Ative o suporte Java do seu navevador.<br>');
+}
+
+// Verifica se o Internet Explorer está na versão 6.0
+if (navegador_nome.indexOf("Microsoft") != -1 && navegador_versao.indexOf("6.0") == -1) {
+	document.write('&bull; Atualize seu navegador.');
+}
+</script>
+
+</b></font>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

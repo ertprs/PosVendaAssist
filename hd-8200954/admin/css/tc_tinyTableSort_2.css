@@ -1,0 +1,100 @@
+table#res {
+	max-width: 1024px;
+	border-left: 1px solid #c6d5e1;
+	border-top: 1px solid #c6d5e1;
+	border-bottom: none;
+	margin: 0 auto 15px;
+	border-collapse: separate;
+}
+table#res th {
+	/*background: url('/loja/media/css/images/header-bg.gif');*/
+	text-align: left;
+	color: #cfdce7;
+	border: 1px solid #fff;
+	border-right: none
+}
+table#res th h3 {
+	font-size: 10px;
+	padding: 5px 8px 6px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0;
+	color: white;
+	cursor: pointer;
+	padding-left: 18px
+}
+tr.evenrow {background-color:#F7F5F0}
+tr.oddrow  {background-color:#F1F4FA}
+table#res td+td {text-align: right;width: 80px;}
+table#res td+td+td {width: 40px;}
+table#res td+td+td+td {width: 96px;}
+table#res caption {
+	font-size:14px!important;
+	font-weight: bold;
+	color:white;
+	background-color:#596d9b;
+	text-align:center;
+}
+div#controls {
+	width: 700px;
+}
+table#res td {
+	padding: 1px 6px 3px;
+	text-align: left;
+	overflow: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: verdana;
+	font-size: 11px;
+	border:1px solid #596d9b;
+}
+table#res th.desc,	table#res th.asc {
+	/*background-image: url('/loja/media/css/images/header-selected-bg.gif');*/
+	background-color: #4B708D;
+	background-image: -webkit-gradient(linear, left top, left bottom,
+									   color-stop(0.09, #204050),
+									   color-stop(0.50, #406080),
+									   color-stop(0.90, #204050));
+	-pie-background: linear-gradient(center top, #204050 9%, #406080 50%, #204050 90%);
+	background-image: linear-gradient(top, #204050 9%, #406080 50%, #204050 90%);
+	background-image: -o-linear-gradient(top, #204050 9%, #406080 50%, #204050 90%);
+	background-image: -moz-linear-gradient(center top, #204050 9%, #406080 50%, #204050 90%);
+	background-image: -webkit-linear-gradient(center top, #204050 9%, #406080 50%, #204050 90%);
+	-pie-lazy-init: true;
+	behavior: url(../js/PIE.php);
+}
+table#res .head h3 {background:url('images/sort.gif') 7px center no-repeat;}
+table#res .desc h3 {background:url('images/desc.gif') 7px center no-repeat;}
+table#res .asc  h3 {background:url('images/asc.gif') 7px  center no-repeat;}
+table#res .head:hover,table#res .desc:hover,table#res .asc:hover {color: white}
+table#res .evenrow td, table#res tr:nth-child(odd) td {background:#fff}
+table#res .oddrow td{background:#ecf2f6}
+table#res td.evenselected{background:#ecf2f6}
+table#res td.oddselected{background:#dce6ee}
+table#res tbody tr {background-color: white}
+#controls {
+	width: 750px;
+	margin: 0 auto;
+	height: 20px
+}
+#perpage {
+	float: left;
+	width: 100px
+}
+#perpage select {
+	float: left;
+	font-size: 11px
+}
+#perpage span {
+	float: left;
+	margin: 2px 0 0 5px
+}
+#navigation {
+	float: left;
+	width: 520px;
+	text-align: center
+}
+#navigation img {
+	cursor: pointer
+}

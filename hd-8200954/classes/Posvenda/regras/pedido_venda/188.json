@@ -1,0 +1,5 @@
+{
+  "usa_desconto": true,
+  "usa_desconto_tipo_posto":true,
+  "nao_calcula_desconto" :true
+}

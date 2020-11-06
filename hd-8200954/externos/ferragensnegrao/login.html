@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Worker - Acesso Restrito</title>
+<!--CSS-->
+<link href="css/ecatalogo.css" rel="stylesheet" type="text/css" media="all" />
+<!--SCRIPTS-->
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/ecatalogo_utils.js"></script>
+<script type="text/javascript">
+	// JavaScript Document
+	var erro;
+
+	function valida_senha() {
+		var url  = "../../index.php?ajax=sim&acao=validar";
+
+		var parametros = jQuery('form#acessar').serialize();//  Prepara os campos do formulário para enviar por POST
+		$('#btnLogin').attr('disabled',true).css('cursor', 'not-allowed,wait');		//  Deshabilita o botão de login enquanto está conferindo o usuário
+
+		$.post(
+			url,	
+			parametros+"&btnAcao=enviar",
+			function (data) {
+			var resposta= data.split("|");
+			var codigo  = resposta[0].replace(/.*\s(\w+)$/g, '');
+			var	texto   = resposta[1];
+
+			if (data.length > 0) {
+					if (codigo=="debug") {
+						alert(data);
+					} else if (codigo=="ok"){
+						window.parent.location = '../../'+texto;
+					} else if (codigo=="1"){
+						erro.html(texto);
+						erro.fadeIn('normal')
+							.delay(3000).fadeOut('fast');
+						$('input[name=senha]').val('');
+						$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+					} else {
+						texto = "O sistema passará por manutenção técnica!\n<b>";
+						erro.html(texto);
+						erro.fadeIn('normal')
+							.delay(4000).fadeOut('fast');
+						$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+					}
+				} else {
+					texto = "Erro no acesso.<br><b>Tente novamente.</b>";
+					erro.html(texto);
+					erro.fadeIn('normal')
+						.delay(3000).fadeOut('fast');
+					$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+				}
+		});
+	}
+	$(function() {
+		erro  = $('#alertBox');
+		erro.html('&nbsp;').hide().css('visibility',"visible");
+	});
+</script>
+</head>
+<body>
+<div id="loginBg"></div>
+<div id="loginContents">
+</div>
+<div id="loginBox">
+    <div class="box">
+	    <div class="genericBox ui-widget ui-widget-content ui-corner-all">
+	        <h1>ACESSO</h1>
+	        <div id="alertBoxContainer">
+	            <div id="alertBox" ></div>
+	        </div>
+	        <form id="acessar" name='acessar' action="javascript:valida_senha();">
+	                <div class="genericRow filtrosLogin">
+	                    <fieldset>
+	                        <label> Usuário:</label>
+	        				<input id="login" name="login" type="text" />
+	                    </fieldset>
+	                </div>
+	                <div class="genericRow filtrosLogin">
+	                    <fieldset>
+	                        <label> Senha:</label>
+	        				<input id="senha" name="senha" type="password" />
+	                    </fieldset>
+	                </div>
+	                <div class="genericRow filtrosLogin">
+	                    <div class="botDeTexto" align="center" style="width: 250px;float: right;margin-right: 22px;">
+	                        <button type='submit' id='btnLogin'>ENTRAR</button>
+	                    </div>
+	                </div>
+	        </form>
+	        <div class="consultaRow actions">
+	        	<a href="../esqueci_senha_new.php">Esqueceu sua senha?</a>
+				<a href="../primeiro_acesso_new.php" style="margin-left:38px">Primeiro Acesso</a>
+	        	<a href="../login_unico_new.php" style="margin-left:40px">Login &Uacute;nico</a>
+	        </div>
+	        <!--NOVO-->
+	        <div class="assinatura" align="center"><img src="imgs/logo-worker.png" border="0" alt="WORKER" title="WORKER"/></div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

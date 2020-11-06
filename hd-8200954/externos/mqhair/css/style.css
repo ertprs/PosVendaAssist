@@ -1,0 +1,222 @@
+html, body, #wrap { height:100%; margin: 0px;padding: 0px;}
+body { color:#a2acac; font-family: 'Poppins', sans-serif !important; font-size:12px; }
+
+.sucesso{
+    display: block;
+    text-align: center;
+    background: #CBDB2A !important;
+    color: #000 !important;
+    padding-top: 20px;
+    border: solid 1px #fff !important;
+}
+
+.error{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #d90000 !important;
+    color: #ffffff!important;
+    border: solid 1px #d90000 !important;
+}
+
+/** tabs seu esmaltec **/
+
+.tabs { width:560px; margin: 0 auto;}
+.tabset {margin:0; list-style:none; font-weight: normal; font:13px 'CorbelRegular', sans-serif;overflow:hidden;height:1%;}
+.tabset li {float:left; padding:0 0 0 0;}
+.tabset h3 { margin:0;  float:left; color:#414141;text-decoration:none;background:; padding:0 0 0 0;}
+.tabset h3 span {float:left;  background:white; padding: 0px 5px 5px 8px; cursor:pointer; margin-top: 12px; margin-right: 5px; font-weight: normal;
+
+
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+}
+.tabset h3 span span {background:none !important;  }
+.tabset .active {}
+.tabset .active h3 { color:#0B4EA2;}
+.tabset .active h3 span {background:white;  padding: 0px 5px 5px 8px; margin-top: 12px !important;}
+.tabs .blocks { margin:0; position:relative; background:white;}
+.tabs .t {  height:23px;overflow:hidden;}
+.tabs .holder {background:;}
+.tabs .frame {  background:;padding:0 28px 25px 22px;overflow:hidden;height:1%;}
+.tabs .list {margin:0;padding:0 0 27px; list-style:none;color:#fafafa;  line-height:20px;}
+.tabs .list li {background:#e3e964; overflow:hidden;height:1%; padding: 10px 15px 10px 15px; margin:0 0 10px;}
+.tabs .list h5 {margin:0;font-weight:normal;font-size:18px; color:#8a9000;}
+.tabs .list li .text {overflow:hidden;height:1%; color:#1b1b1b; }
+.tabs .list p {margin:0; }
+.tab-content a {color:#5b5f01;} 
+.tabs .list .visual {float:left;margin:6px 18px 0 2px;}
+* html .tabs .list .visual {margin-right:15px;}
+.tabs strong
+{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.tabs .text b, .tabs .text strong {
+font-weight: normal !important;
+font-size: 12px;
+}
+
+.tabs #pesquisa
+{
+  background:#6D3594;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-bottom:1px solid #321346;
+  border-right:1px solid #321346;
+  margin-right: 40px;
+}
+
+input:focus, input:active{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 1px solid #555;
+}
+
+input[type="radio"] {
+    margin: -2px 0px 0px 5px;
+}
+
+/*** Form Contato e Trabalhe conosco***/
+#FormTrabalhe h3 { margin: 0 0 12px 0 !important; font-family: 'Poppins', sans-serif !important; font-weight: bold; font-size: 24px !important; }
+#FormContato, #FormTrabalhe { width: 500px; padding:  20px 0 0 15px; color:#555555; }
+#FormContato .labels, #FormTrabalhe .labels { display: inline-block;  vertical-align: middle; padding-right: 10px;  margin-bottom: 10px;  }
+#FormContato .labels{ float:left;}
+#FormContato op{vertical-align: none;}
+#FormContato .error{ color:red;}
+#FormContato .opcoes, #FormTrabalhe .opcoes { vertical-align: middle; margin: 0 0 0 5px; }
+.input_text { background:#4d1c6e; width: 95%; border: 1px solid #321346; height: 16px; padding: 4px; margin: 4px 0; color: #CBDB2A; }
+.textarea { height: 130px !important; }
+#FormContato .ColEsq, #FormTrabalhe .ColEsq { float:left; width: 225px; padding-right: 36px; margin-top:10px; }
+#FormContato .ColDir, #FormTrabalhe .ColDir { float: left; width: 225px; margin-top:10px; }
+button { width: 110px; height: 34px;  margin: 12px 10px 0 0;font-family: 'Poppins', sans-serif !important; font-weight: bold;
+
+  background: transparent;
+  border: 1px solid #bfbfbf;
+  padding: 5px 25px;
+  font-family: 'Poppins', sans-serif !important;
+  
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  position:relative;
+  top:1px;
+ }
+
+#FormRevenda h3 { color:white !important; margin-bottom:10px; }
+#FormRevenda { width: 500px; padding:  20px 0 0 15px; color:black; }
+#FormRevenda .labels { display: inline-block;  vertical-align: middle; padding-right: 10px;  margin-bottom: 10px;  }
+#FormRevenda .labels { float:left;}
+#FormRevenda op{vertical-align: none;}
+#FormRevenda .error{ color:red;}
+#FormRevenda .opcoes { vertical-align: middle; margin: 0 0 0 5px; }
+.input_text { background:none; width: 95%; border: 0; height: 16px; padding: 4px 0; border-bottom: 1px solid #555;  margin: 4px 0; color: black; }
+.input_select{ background:#0052a2; width: 95%;  padding: 4px; margin: 4px 0; color: #fff; }
+
+.textarea { height: 130px !important; background:#0052a2; color: white; }
+#FormRevenda .ColEsq { float:left; width: 225px; padding-right: 36px; }
+#FormRevenda .ColDir { float: left; width: 225px; }
+#FormRevenda .ColEsq2 { float:left; width: 325px; padding-right: 36px; }
+#FormRevenda .ColDir2 { float: left; width: 125px; }
+.FimDosFloats {font-size: 0; line-height: 0; clear: both; height: 0;}
+
+
+
+.btn-anexar { 
+  width: 149px;
+  height: 45px;
+  margin: 0px !important;
+  margin-top: -11px !important;
+  margin-left: 5px !important;
+  font-family: 'Poppins', sans-serif !important;
+  display:block;
+  padding:0px;
+  text-decoration:none;
+  background: transparent;
+  border: 1px solid #bfbfbf;
+  padding: 5px 25px;
+}
+.btn-anexar:hover {
+  cursor: pointer;
+}
+.btn-anexar:active {
+  position:relative;
+  top:1px;
+  color:#222222;
+ }
+
+.label_anexo{
+  padding:0px;margin:0px;margin-top:20px;font-size: 18px;text-align: center;color: #999494;
+}
+
+
+.mensagem_providencia,.mensagem_providencia_c,.mensagem_providencia_r{
+  padding: 10px;
+  background: #eeeeee;
+  border: solid 1px #cccccc;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.txt_label{
+  padding-bottom: 5px !important;
+  display: block;
+}
+
+.men_retorno{
+  display: block;
+  padding: 5px;
+}
+
+.txtsucesso{
+    display: block;
+    text-align: center;
+    background: #CBDB2A !important;
+    color: #000 !important;
+    border: solid 1px #fff !important;
+}
+
+.txterror{
+    display: block;
+    text-align: center;
+    background: #d90000 !important;
+    color: #fff !important;
+    border: solid 1px #d90000 !important;
+}
+
+.errorproto{
+    display: block;
+    text-align: center;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 20px;
+}
+
+.btn-lupa-serie{
+  background-color: transparent;
+  width: 15px;
+  margin-left: -10px;
+  padding: 5px 7px;
+  height: 15px;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+

@@ -1,0 +1,8 @@
+.glyphicon {
+  background-position: center !important;
+  background-size: 14px 14px;
+}
+
+.icon-phone {
+	background-image: url("../glyphicons/glyphicons-164-iphone.png");
+}

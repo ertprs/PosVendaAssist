@@ -1,0 +1,88 @@
+.ui-widget-content {
+	background: none;
+}
+
+.ui-datepicker.ui-widget-content, .ui-autocomplete.ui-widget-content {
+	background: #FFFFFF;
+}
+
+#tc_menu .ui-tabs-nav li {
+	border-radius: 8px 8px 0px 0px;
+	-pie-background: linear-gradient(top, #D2D1D1 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.gerencia.ui-state-hover, #tc_menu .ui-tabs-nav li.gerencia.ui-tabs-active {
+	-pie-background: linear-gradient(top, #E6D1DE 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.callcenter.ui-state-hover, #tc_menu .ui-tabs-nav li.callcenter.ui-tabs-active {
+	-pie-background: linear-gradient(top, #E2F6D7 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.cadastro.ui-state-hover, #tc_menu .ui-tabs-nav li.cadastro.ui-tabs-active {
+	-pie-background: linear-gradient(top, #FFCA8F 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.infotecnica.ui-state-hover, #tc_menu .ui-tabs-nav li.infotecnica.ui-tabs-active {
+	-pie-background: linear-gradient(top, #C4E6F8 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.financeiro.ui-state-hover, #tc_menu .ui-tabs-nav li.financeiro.ui-tabs-active {
+	-pie-background: linear-gradient(top, #FEEFB7 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.auditoria.ui-state-hover, #tc_menu .ui-tabs-nav li.auditoria.ui-tabs-active {
+	-pie-background: linear-gradient(top, #B29C88 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-nav li.sair.ui-state-hover {
+	-pie-background: linear-gradient(top, #FF9886 0%, #FFF 72%);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+#tc_menu .ui-tabs-panel {
+	border-radius: 15px 15px 0px 0px;
+	-pie-background: linear-gradient(top , #FFFFFF 0%, #EEEEEE 40%, #DDD 48%, #DDD 52%, #EEEEEE 60%, #FFFFFF 100%) !important;
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+.tc_container.titulo_pagina td {
+	border-radius: 15px 15px 0px 0px;
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+.inputFocus {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+	behavior: url(plugins/PIE/PIE.htc);
+}
+
+.btn_excel {
+  -pie-background: linear-gradient(top, #559435 0%, #63AE3D 72%);
+  behavior: url(plugins/PIE/PIE.htc);
+}
+
+.dataTables_wrapper .row .span6 {
+	float: right;
+}
+
+.dataTables_wrapper .row .span6:first-child {
+	float: left;
+}
+
+.btn_excel, .btn_excel span, .btn_excel span img, .btn_excel span.txt {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  background-image: #FFFFFF !important;
+  border: 0px;
+}
+
+.btn_excel span.txt {
+	color: #0088cc;
+}

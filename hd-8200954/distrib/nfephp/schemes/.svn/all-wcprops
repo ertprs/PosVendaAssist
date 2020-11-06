@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes
+END
+consDPEC_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/consDPEC_v1.01.xsd
+END
+consReciNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/consReciNFe_v1.10.xsd
+END
+cancNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/cancNFe_v1.07.xsd
+END
+retEnviNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retEnviNFe_v1.10.xsd
+END
+nfe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/nfe_v1.10.xsd
+END
+retConsDPEC_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retConsDPEC_v1.01.xsd
+END
+consCad_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/consCad_v1.01.xsd
+END
+leiauteNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteNFe_v1.10.xsd
+END
+consSitNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/consSitNFe_v1.07.xsd
+END
+leiauteConsultaCadastro_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteConsultaCadastro_v1.01.xsd
+END
+leiauteDPEC_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteDPEC_v1.01.xsd
+END
+retDPEC_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retDPEC_v1.01.xsd
+END
+leiauteInutNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteInutNFe_v1.07.xsd
+END
+retInutNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retInutNFe_v1.07.xsd
+END
+enviNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/enviNFe_v1.10.xsd
+END
+leiauteConsSitNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteConsSitNFe_v1.07.xsd
+END
+retConsSitNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retConsSitNFe_v1.07.xsd
+END
+procNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/procNFe_v1.10.xsd
+END
+procInutNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/procInutNFe_v1.07.xsd
+END
+consStatServ_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/consStatServ_v1.07.xsd
+END
+cabecMsg_v1.02.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/cabecMsg_v1.02.xsd
+END
+retConsReciNFe_v1.10.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retConsReciNFe_v1.10.xsd
+END
+xmldsig-core-schema_v1.01_1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/xmldsig-core-schema_v1.01_1.xsd
+END
+leiauteCancNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteCancNFe_v1.07.xsd
+END
+leiauteConsStatServ_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/leiauteConsStatServ_v1.07.xsd
+END
+retCancNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retCancNFe_v1.07.xsd
+END
+inutNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/inutNFe_v1.07.xsd
+END
+retConsStatServ_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/retConsStatServ_v1.07.xsd
+END
+tiposBasico_v1.02.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/tiposBasico_v1.02.xsd
+END
+envDPEC_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/envDPEC_v1.01.xsd
+END
+procCancNFe_v1.07.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/procCancNFe_v1.07.xsd
+END
+xmldsig-core-schema_v1.01.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/schemes/xmldsig-core-schema_v1.01.xsd
+END

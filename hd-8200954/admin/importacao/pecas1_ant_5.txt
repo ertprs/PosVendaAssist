@@ -1,0 +1,44 @@
+153163-00         ENGRENAGEM                                      SPPCI    SPPPT                                   10.00 00000003.53 00001,00
+153178-00         CONJ. LIDE                                      SPPCN    SPPPT                                   05.00 00000000.48 00001,00
+185109-12         ETIQ. ESPECIF. DW861BBRTIPO 4                   SPPCN    SPPPT                                   15.00 00000000.12 00001,00
+185109-14         ETIQ. ESPECIF. DW861BB2TIPO 4                   SPPCN    SPPPT                                   15.00 00000000.12 00001,00
+185439-01         CONJ.ROTOR 220V DW861                           SPCJF    SPPPT                                   10.00 00000024.08 00001,00
+185713-00         CABO ELETR.PINO CHATO1.5mm                      SPPCN    SPPPT                                   05.00 00000006.61 00001,00
+186200-01         BASE DO CABO OSF                                SPPCF    SPHH                                    10.00 00000000.49 00001,00
+186201-14         BOTAO TEMPERATURA X60                           SPPCF    SPHH                                    10.00 00000000.11 00001,00
+186304-15         PLACA INDICAD.PRETA X60                         SPPCN    SPHH                                    15.00 00000000.12 00001,00
+186320-14         CONJ.HOUSING PINT.X60                           SPCJF    SPHH                                    10.00 00000001.51 00001,00
+187476-00         PARAFUSO SAPATA RECART.DW861                    SPPCN    SPPPT                                   10.00 00000003.63 00001,00
+187501-00         CONJ.ESTATOR 120V DW352                         SPCJF    SPPPT                                   10.00 00000014.05 00001,00
+187501-01         CONJ.ESTATOR 220V DW352                         SPCJF    SPPPT                                   10.00 00000014.05 00001,00
+187532-00         PINO DA SAPATA DW861                            SPPCN    SPPPT                                   10.00 00000000.87 00001,00
+187533-00         CAIXA DE CAMPO DW352                            SPPCF    SPPPT                                   08.00 00000006.52 00001,00
+187535-00         TAMPA CX.ENGR.USINADADW352                      SPPCF    SPPPT                                   08.00 00000001.40 00001,00
+187536-00         EIXO DE SAIDA DW352                             SPPCN    SPPPT                                   10.00 00000006.65 00001,00
+187538-00         CONJ.ESTATOR 220V DW861B                        SPCJF    SPPPT                                   10.00 00000014.49 00001,00
+187538-01         CONJ.ESTATOR DW861 127V                         SPCJF    SPPPT                                   10.00 00000014.36 00001,00
+187539-00         CONJ.ROTOR 220V DW861                           SPCJF    SPPPT                                   10.00 00000023.97 00001,00
+187539-01         CONJ.ROTOR 127V DW861                           SPCJF    SPPPT                                   10.00 00000024.05 00001,00
+187610-00         MOLA DE TORCAO DW352                            SPPCN    SPPPT                                   15.00 00000000.27 00001,00
+187613-01         CONJ.ROTOR 127V COMPLETODW861                   SPCJF    SPPPT                                   10.00 00000033.85 00001,00
+187622-00         BUCHA DW352                                     SPPCN    SPPPT                                   12.00 00000000.23 00001,00
+187882-00         CABO FECHADO OSF X60PINTADO PRATA               SPBEN    SPHH                                    10.00 00000001.61 00001,00
+5140037-31        MOLA                                            SPI      SPCPT                                   15.00 00000000.85 00001,00
+5140037-32        SUPORTE ESQ. ACESSORIOS                         SPI      SPCPT                                   05.00 00000003.93 00001,00
+5140037-33        PORCA QUADRADA M4                               SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140037-34        PARAFUSO M4X40                                  SPI      SPCPT                                   10.00 00000000.65 00001,00
+5140037-35        PARAFUSO M4X20                                  SPI      SPCPT                                   10.00 00000000.65 00001,00
+5140037-37        ESFERA DE ACO 5mm                               SPI      SPCPT                                   10.00 00000000.11 00001,00
+5140037-38        ANEL O RING                                     SPI      SPCPT                                   08.00 00000000.65 00001,00
+584376-06         MODULO ELETRONICO 220V                          SPI      SPPPT                                   08.00 00000116.07 00001,00
+624619-01         ETIQ.ESPECIF.DW352BRTIPO 4                      SPPCN    SPPPT                                   15.00 00000000.19 00001,00
+624620-01         ETIQ.ESPECIF.DW352B2TIPO 4                      SPPCN    SPPPT                                   15.00 00000000.19 00001,00
+647896-00         CONJ.ROTOR COMPLETO 220VDW861                   SPCJF    SPPPT                                   10.00 00000033.71 00001,00
+7310550000        CAPACITOR 60MF V40050-60Hz                      SPI      SPCOMP                                  10.00 00000019.43 00001,00
+7310590000        CAPACITOR 25MF V45050-60Hz                      SPI      SPCOMP                                  10.00 00000014.11 00001,00
+90501856          CARREGADOR                                      SPI      SPCPT                                   05.00 00000016.87 00001,00
+930770-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.11 00001,00
+JH110029BR        CABO ELETRICO                                   SPI      SPCPT                                   05.00 00000016.40 00001,00
+JH110054B2CH      ETIQ. ESPECIF. PW1750-B2TIPO 1                  SPI      SPCPT                                   15.00 00000001.31 00001,00
+JH110054BR        ETIQ. ESPECIF. PW1750-BRTIPO 1                  SPI      SPCPT                                   15.00 00000001.31 00001,00
+Q-02001-5005-00   FITA DE ISOLACAO                                SPI      SPHH          OBSOLETO                  10.00 00000006.21 00001,00

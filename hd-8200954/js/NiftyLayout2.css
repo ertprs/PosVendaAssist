@@ -1,0 +1,11 @@
+ul#intro,ul#intro li{list-style-type:none;margin:0;padding:0}
+ul#intro{width:100%;overflow:hidden;margin-bottom:20px}
+ul#intro li{float:left;width:180px;margin-right:10px;padding: 10px 0}
+li#mission{background: #E65714}
+li#services{background: #42B4AC}
+ul#intro li#more{margin-right:0;background: #7D63A9}
+ul#intro p,ul#intro h3{margin:0;padding: 0 10px}
+ul#intro h3{text-transform:uppercase;padding-bottom:3px;color: #FFF}
+
+
+

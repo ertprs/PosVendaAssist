@@ -1,0 +1,453 @@
+select nome from tbl_posto where nome = 'FAPE SUPRIM INDUSTRIAIS LTDA'
+;
+select posto, nome from tbl_posto where nome = 'FAPE SUPRIM INDUSTRIAIS LTDA';
+select * from tbl_credenciamento where posto = 40770 and fabrica = 1;
+\x
+select * from tbl_credenciamento where posto = 40770 and fabrica = 1;
+select * from tbl_credenciamento where posto = 40770 and fabrica = 1;
+\q
+select * from tbl_credenciamento where posto = 40770 and fabrica = 1;
+\x
+select * from tbl_credenciamento where posto = 40770 and fabrica = 1;
+\q
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE pedido IN (3188622,3188754);
+\x
+SELECT * FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_faturamento WHERE nota_fiscal IN('017672','017692');
+SELECT * FROM tbl_faturamento WHERE nota_fiscal IN('017672','017692') AND fabrica = 15;
+SELECT * FROM tbl_faturamento JOIN tbl_faturamento_item WHERE nota_fiscal IN('017672','017692') AND fabrica = 15;
+SELECT * FROM tbl_faturamento JOIN tbl_faturamento_item USING(faturamento) WHERE nota_fiscal IN('017672','017692') AND fabrica = 15;
+SELECT * FROM tbl_faturamento JOIN tbl_faturamento_item USING(faturamento) WHERE nota_fiscal IN('017672','017692') AND fabrica = 15;
+SELECT * FROM tbl_faturamento JOIN tbl_faturamento_item USING(faturamento) WHERE nota_fiscal IN('017672','017692') AND fabrica = 15;
+SELECT DISTINCT pedido, peca, qtde FROM tbl_faturamento_item WHERE pedido IN(3188622,3188754);
+\x
+SELECT DISTINCT pedido, peca, qtde FROM tbl_faturamento_item WHERE pedido IN(3188622,3188754);
+BEGIN;SELECT fn_atualiza_pedido_item (3188622, 852024, null, 3);
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188622;
+abort;
+BEGIN;SELECT fn_atualiza_pedido_item (852024, 3188622, null, 3);
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188622;
+BEGIN;SELECT fn_atualiza_pedido_item (852025, 3188622, null, 3);
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188622;
+commit;
+\set
+\i ~/telecontrol/www/mlg/mlg.psql
+:CSV
+SELECT DISTINCT peca, pedido, qtde FROM tbl_faturamento_item WHERE pedido IN(3188622,3188754);
+:TABLE
+BEGIN;SELECT fn_atualiza_pedido_item (738002,3188754, null, 1);
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188754;
+SELECT fn_atualiza_pedido_item (1027374,3188754, null, 1);
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188754;
+COMMIT;
+abort;
+SELECT * FROM latinatec_nf_item;
+SELECT * FROM latinatec_nf_item;
+\x
+SELECT * FROM latinatec_nf_item;
+\x\\SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT * FROM tbl_pedido_item WHERE pedido = 3188754;
+SELECT * FROM tbl_faturamento_item WHERE pedido = 3188754;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT * FROM latinatec_nf;
+SELECT * FROM tbl_faturamento_item WHERE pedido = 3188754;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT * FROM latinatec_nf;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+abort;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+abort;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ABORT;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ABORT;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde FROM latinatec_nf_item) as fi;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+ABORT;
+\q
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT * FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT * FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde FROM latinatec_nf_item) as fi;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+ROLLBACK;
+\df fn_atualiza_pedido_item
+SELECT pedido, qtde FROM tbl_pedido_item JOIN tbl_pedido USING(pedido) WHERE fabrica = 15 AND qtde <> qtde::integer LIMIT 60;
+SELECT pedido, qtde FROM tbl_pedido_item JOIN tbl_pedido USING(pedido) WHERE fabrica = 15 AND LIMIT 60;
+SELECT pedido, qtde FROM tbl_pedido_item JOIN tbl_pedido USING(pedido) WHERE fabrica = 15 LIMIT 60;
+\d tbl_pedido_item
+\d tbl_pedido_item
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde::int FROM latinatec_nf_item) as fi;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+ROLLBACK;
+\d tbl_pedido
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde::int FROM latinatec_nf_item) as fi;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_status_pedido (tbl_pedido.fabrica,tbl_pedido.pedido)
+  FROM tbl_pedido
+ WHERE fabrica = $fabrica
+   AND pedido IN (SELECT DISTINCT pedido FROM latinatec_nf_item);
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+ROLLBACK;
+BEGIN;
+INSERT INTO tbl_faturamento (fabrica, emissao, saida, transp, posto, total_nota, cfop, nota_fiscal, serie)
+        (SELECT 15, latinatec_nf.emissao, latinatec_nf.emissao, latinatec_nf.transp, latinatec_nf.posto, latinatec_nf.total, latinatec_nf.cfop, latinatec_nf.nota_fiscal, latinatec_nf.serie
+        FROM latinatec_nf
+        LEFT JOIN tbl_faturamento
+        ON  latinatec_nf.nota_fiscal      = tbl_faturamento.nota_fiscal
+        AND latinatec_nf.serie            = tbl_faturamento.serie
+        AND tbl_faturamento.fabrica       = 15
+        AND tbl_faturamento.distribuidor  IS NULL
+        WHERE tbl_faturamento.faturamento IS NULL );
+ALTER TABLE latinatec_nf_item ADD COLUMN faturamento INT4;
+UPDATE latinatec_nf_item SET faturamento = tbl_faturamento.faturamento
+  FROM   tbl_faturamento
+ WHERE tbl_faturamento.fabrica     = 15
+   AND   tbl_faturamento.nota_fiscal = latinatec_nf_item.nota_fiscal
+   AND   tbl_faturamento.serie       = latinatec_nf_item.serie
+   AND   tbl_faturamento.distribuidor IS NULL;
+DELETE FROM latinatec_nf_item WHERE faturamento IS NULL;
+DELETE FROM latinatec_nf_item WHERE peca IS NULL;
+INSERT INTO tbl_faturamento_item (faturamento, peca, qtde, preco, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido)
+    (SELECT faturamento, peca, qtde, unitario, aliq_icms, valor_icms, base_icms, aliq_ipi, valor_ipi, base_ipi, pedido
+       FROM latinatec_nf_item);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde::int FROM latinatec_nf_item) as fi;
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_status_pedido (tbl_pedido.fabrica,tbl_pedido.pedido)
+  FROM tbl_pedido
+ WHERE fabrica = 15
+   AND pedido IN (SELECT DISTINCT pedido FROM latinatec_nf_item);
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+ROLLBACK;
+select * from tbl_pedido_status;
+select * from tbl_status_pedido;
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT fn_atualiza_pedido_item (fi.peca,fi.pedido,null,fi.qtde)
+  FROM (SELECT DISTINCT peca, pedido, qtde::int FROM latinatec_nf_item) as fi;
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT DISTINCT pedido, peca, qtde FROM latinatec_nf_item;
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT pedido,status_pedido,pedido_atendido_total FROM tbl_pedido WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+\i ~/telecontrol/www/mlg/mlg.psql
+\d tbl_pedido
+\d tbl_pedido_item
+SELECT pedido, exportado, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item WHERE fabrica = 15 AND exportado > '2010-11-20';
+SELECT pedido, exportado, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE fabrica = 15 AND exportado > '2010-11-20';
+SELECT DISTINCT pedido, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE fabrica = 15 AND exportado > '2010-11-20';
+SELECT DISTINCT pedido, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE fabrica = 15 AND exportado > '2010-11-20' WHERE qtde_cancelada > 0;
+SELECT DISTINCT pedido, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE fabrica = 15 AND exportado > '2010-11-20' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE fabrica = 15 AND exportado > '2010-10-20' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, fabrica, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30'::Date AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30 0:0:0' AND qtde_cancelada > 0;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30 0:0:0' AND qtde_cancelada > 0 AND psto = 14301;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30 0:0:0' AND qtde_cancelada > 0 AND opsto = 14301;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30 0:0:0' AND qtde_cancelada > 0 AND posto = 14301;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-30 0:0:0' AND posto = 14301;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-01 0:0:0' AND posto = 14301;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-01 0:0:0' AND posto = 20321;
+SELECT DISTINCT pedido, fabrica, posto, exportado::date, qtde, qtde_faturada, qtde_cancelada FROM tbl_pedido JOIN tbl_pedido_item USING(pedido) WHERE exportado > '2010-10-01 0:0:0' AND posto = 6359;
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+\d tbl_pedido_item
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,pedido_item_atendido,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,qtde_cancelada,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+\d tbl_faturamento_item
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,qtde_cancelada,data_item FROM tbl_pedido_item WHERE pedido IN (3188622,3188754);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (3188622,3188754);
+SELECT pedido_item,pedido,peca,qtde,status_pedido,qtde_faturada,qtde_cancelada,data_item FROM tbl_pedido_item WHERE pedido IN (2902844);
+SELECT faturamento,pedido,peca,qtde,pendente FROM tbl_faturamento_item WHERE pedido IN (2902844);
+\q
+\q
+\q
+\q
+select os from tbl_os join tbl_os_troca using(os) where fabrica = 81 limit 10;
+\q
+\d tbl_hd_chamado_requisito
+\teste
+\q
+SELECT tbl_diagnostico.defeito_reclamado ,
+tbl_defeito_reclamado.defeito_reclamado ,
+tbl_defeito_reclamado.descricao
+FROM tbl_diagnostico
+JOIN tbl_defeito_reclamado USING(defeito_reclamado)
+WHERE tbl_diagnostico.fabrica = 42
+AND tbl_diagnostico.familia = 3333;
+select distinct familia from tbl_diagnostico where fabrica = 42;
+select distinc familia from tbl_defeito_reclamado where fabrica = 42;
+\d tbl_defeito_reclamado
+select distinc familia from tbl_defeito_reclamado where fabrica = 42;
+select distinct familia from tbl_defeito_reclamado where fabrica = 42;
+SELECT defeito_reclamado,
+descricao as defeito_reclamado_descricao
+FROM tbl_defeito_reclamado
+WHERE tbl_defeito_reclamado.descricao = 'NAO FUNCIONA'
+AND fabrica = 42 ;
+SELECT defeito_reclamado,
+descricao as defeito_reclamado_descricao
+FROM tbl_defeito_reclamado
+WHERE tbl_defeito_reclamado.descricao = 'NÃO FUNCIONA'
+AND fabrica = 42 ;
+ \d tbl_diagnostico
+SELECT familia from tbl_diagnostico WHERE familia = 3333;
+\d tbl_programa_restrito
+\d tbl_admin
+select defeito_reclamado from tbl_defeito_reclamado where os = 14681052;
+\d tbl_defeito_reclamado
+select defeito_reclamado from tbl_os where os = 14681052;
+select defeito_reclamado from tbl_os where os = 14682664;
+select defeito_reclamado_descricao from tbl_os where os = 14682664;
+select defeito_reclamado_descricao from tbl_os where os = 14683043;
+\d tbl_programa_restrito;
+select programa from tbl_programa_restrito where programa like '%_test';
+select programa from tbl_programa_restrito where programa like '%test';
+select programa from tbl_programa_restrito where programa like '%_test%';
+select programa from tbl_programa_restrito where fabrica = 10;
+select programa from tbl_programa_restrito where fabrica = 1;
+\d tbl_admin
+cd
+cd assist/www/admin
+\q
+select pedido from tbl_pedido where fabrica = 3 limit 1;
+select posto, max(pedido) from tbl_pedido where fabrica = 3 group by posto limit 1;
+select posto, max(pedido) from tbl_pedido where fabrica = 3 group by posto;
+select posto, max(pedido) from tbl_pedido where fabrica = 3 and posto = 6359 group by posto;
+select posto, max(pedido) from tbl_pedido where fabrica = 3 and posto = 1122 group by posto;
+select * from tbl_pedido where pedido = 1427752~
+;
+select * from tbl_pedido where pedido = 1427752;
+\x
+select * from tbl_pedido where pedido = 1427752;
+select tbl_posto.posto from tbl_posto join tbl_posto_fabrica where codigo_posto = 1122 and fabrica =3;
+select tbl_posto.posto from tbl_posto join tbl_posto_fabrica using(posto) where codigo_posto = 1122 and fabrica =3;
+select tbl_posto.posto from tbl_posto join tbl_posto_fabrica using(posto) where codigo_posto = '1122' and fabrica =3;
+select tbl_posto_fabrica.codigo_posto from tbl_posto join tbl_posto_fabrica using(posto) where tbl_posto.posto = 6359 and fabrica =3;
+select posto, max(pedido) from tbl_pedido where fabrica = 3 and posto = 1122 group by posto limit 10;
+\d tbl_pedido
+select pedido from tbl_pedido_peca;
+select max(pedido) from tbl_pedido where fabrica = 3;
+select posto from tbl_pedido where pedido = 3243786;
+\q
+\q
+\s tbl_arquivo

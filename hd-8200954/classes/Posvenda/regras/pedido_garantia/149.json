@@ -1,0 +1,7 @@
+{
+	"auditorias": [
+		{ "nome": "auditoria_os_reincidente", "status": [70,19,139,90], "status_aprovacao": [19,139,90] },
+		{ "nome": "auditoria_os_reincidente_numero_serie", "status": [67,68, 19,139, 90], "status_aprovacao": [19,139,90] },
+		{ "nome": "auditoria_numero_serie", "status": [102, 103], "status_aprovacao": 103 }
+	]
+}

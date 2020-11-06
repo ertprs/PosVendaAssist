@@ -1,0 +1,6 @@
+{
+    "auditoria_unica": true,
+    "cancelaOS": true,
+    "posto_interno_nao_gera":true,
+    "fora_garantia_nao_gera":true
+}

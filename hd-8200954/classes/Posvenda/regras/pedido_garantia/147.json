@@ -1,0 +1,7 @@
+{
+	"auditorias": [
+		{ "nome": "auditoria_os_reincidente", "status": [70, 19, 139, 90], "status_aprovacao": [19,139,90] },
+		{ "nome": "Analise da Fabrica", "status": [20, 64], "status_aprovacao": [64]}
+	],
+	"peca_sem_preco" : 9999.9
+}

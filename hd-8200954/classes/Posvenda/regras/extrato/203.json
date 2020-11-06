@@ -1,0 +1,5 @@
+ {
+      "posto_interno_nao_gera": true,       
+      "tipo_revenda_nao_gera": true,
+      "fora_garantia_nao_gera": "true"
+ }

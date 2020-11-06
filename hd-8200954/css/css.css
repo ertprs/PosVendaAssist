@@ -1,0 +1,450 @@
+/********************************************
+ * css.css                                  *
+ * autor: Marcos Teruo Ouchi                *
+ * Company: Telecontrol Networking - Brasil *
+ * Date: Outubro de 2003                    *
+ ********************************************/
+
+/*****************************
+ELEMENTOS DE POSICIONAMENTO
+*****************************/
+
+/******************************************
+ * Cores Telecontrol (logomarca):         *
+ *                                        *
+ * Azul:    rgb(54, 59, 97),   ou #363B61 *
+ * Amarelo: rgb(239, 201, 24), ou #F0C900 *
+ ******************************************/
+
+#container {
+  width: 700px;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-color: white;
+}
+
+#menu {
+  width: 100%;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-image: url("../imagens/fundo-cabecalho.png");
+}
+
+#submenu {
+  width: 100%;
+  padding:0px 30px 0px 30px;
+  margin:0px 0px 5px 0px;
+/*  background-image: url("../imagens/fundo-submenu.png");*/
+  text-align: left;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+}
+
+
+#subBanner {
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  background-image: url("../imagens/appatterns.gif");
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+}
+
+
+#page {
+	width: 100%;
+	border: 1px dotted #000000;
+	text-align: left;
+	}
+
+#contentleft {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	}
+
+#contentleft2 {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	}
+
+#contentcenter {
+	padding-left: 5px;
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	}
+
+
+
+/*****************************
+ELEMENTOS BASICOS
+*****************************/
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px,0px,0px,0px;
+	padding:  0px,0px,0px,0px;
+}
+
+p, div {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+	border-right: #888888 1px solid; 
+	border-top: #888888 1px solid; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	border-left: #888888 1px solid; 
+	border-bottom: #888888 1px solid; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	background-color: #f0f0f0
+}
+
+h1 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #888888;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 1.6em;
+}
+
+h2 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+	}
+
+h3 {
+	text-align: left;
+	font: normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+
+	
+}
+
+h4 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+}
+
+h5 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+}
+
+img {
+	border: 0px;
+}
+
+a:link {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#menu_posto a:link.conteudo,
+#menu_posto a:visited.conteudo {
+	color: white;
+}
+#menu_posto a:hover.conteudo {
+	color: #F0C900;
+}
+/* FORMULÁRIOS */
+
+.cellbox {
+	border-right: #888888 1px solid; 
+	padding-right: 5px; 
+	border-top: #888888 1px solid; 
+	padding-left: 5px; 
+	padding-bottom: 5px; 
+	border-left: #888888 1px solid; 
+	padding-top: 5px; 
+	border-bottom: #888888 1px solid
+}
+.box-header {
+	padding-right: 5px; 
+	padding-left: 5px; 
+	padding-bottom: 5px; 
+	padding-top: 5px
+}
+.frm {
+	border-right: #888888 1px solid; 
+	border-top: #888888 1px solid; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	border-left: #888888 1px solid; 
+	border-bottom: #888888 1px solid; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	background-color: #f0f0f0
+}
+
+.frm-on {
+	border-right: rgb(70,90,128) 1px solid; 
+	border-top: rgb(70,90,128) 1px solid; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	border-left: rgb(70,90,128) 1px solid; 
+	color: rgb(70,90,128); 
+	border-bottom: rgb(70,90,128) 1px solid; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	background-color: rgb(177,203,255)
+}
+
+.frm-on-os {
+	border-top: silver 1px solid; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	color: #808080; 
+	border-bottom: silver 1px solid; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	background-color: #eaeaea
+}
+
+.text-header {
+	font-weight: bold; 
+	font-size: 8pt; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+.header {
+	font-weight: bold; 
+	font-size: 16pt; 
+	color: rgb(0,128,255); 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* Se for alterado o CSS para os anexos, alterar também no admin e no os_cadastro_unico.css */
+table#anexos {
+	margin: 1ex auto;
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: left;
+	width: 620px;
+	table-layout: fixed;
+}
+#anexos thead.inicio {
+    border:1px solid #d2e4fc;
+    background-color:#485989;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: bold!important;
+    /* text-align: left; */
+    color: #FFFFFF;
+    padding-right: 1ex;
+    text-transform: uppercase;
+	text-align: center;
+}
+#anexos th {
+	text-align: center;
+	font-weight: bold;
+}
+#anexos tr.conteudo {
+    font-family: Arial, sans-serif;
+    background: #F4F7FB;
+}
+table#anexos tr td {vertical-align:middle;text-align:center;max-width: 150px;border: 1px solid #596D9B;}
+table#anexos tr td a>img {max-height: 150px;min-height: 96px;}
+#anexos img.excluir_NF {cursor: pointer}
+#DIVAnexo {padding: 10px;position: relative;left: 25%;margin:auto}
+#DIVAnexo label {display: inline-block;_zoom:1}
+
+/*****************************
+Em Baixo
+*****************************/
+#tituloslinks {
+  float:left;
+  padding:0px 0px 0px 0px ;
+  width: 100%;
+  background:#CE0000;
+}
+
+#tituloslinks2 {
+  float:left;
+  padding:0px 0px 0px 0px ;
+  width: 100%;
+  background:#FFFFFF;
+
+}
+
+#links {
+  width:760px;
+}
+
+.caixalinks, .caixalinksprimeira  {
+  float:left;
+  width:188px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+  text-align: left;
+  background: url(../imagens/fundoponto.gif) repeat-Y left white;
+  padding:6px 0px 0px 0px ;
+  height:250px;
+
+}
+
+.caixalinks div, .caixalinksprimeira div {
+  background: url(../imagens/redBullet.gif) no-repeat top left white;
+  padding:0px 0px 0px 7px;
+  margin:0px 0px 5px 5px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+
+#links a, #links a:visited {
+  color:#9C9A9C;
+  text-decoration:none;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+#links a:hover, #links a:active {
+  color:black;
+  text-decoration:underline;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+.caixalinksprimeira {
+  width:188px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+
+#nomeposto {
+	width: 650px;
+	height: 30px;
+	float: right;
+	text-align: right;
+	padding:0px 15px 0px px;
+}
+
+/*
+the 3 collumns will act as containers for the content blocks.
+They all will float left and will be given the correct right-margin
+To get around using the box model hack, the col divs have been given an exact width
+and the padding, margin and border elements have been added to the content elements
+*/
+
+#leftCol {
+	float: left;
+	width: 205px;
+}
+
+#middleCol {
+	float: left;
+	width: 225px;
+}
+
+#rightCol {
+	float: left;
+	width: 205px;
+}
+
+#mainCol {
+	float: center;
+	width: 650px;
+	background-color: white;
+}
+
+/* on IE5.x dotted lines only show if they are 2px. using box model hack to get round this */
+
+.contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	margin-bottom: 5px;
+	margin-right:  5px;
+	margin-left:   5px;
+	padding:      10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border: 1px dotted silver;	
+}
+
+html>body contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	border: 1px dotted #97D0EC;
+} 
+
+.contentBlockRight, .contentBlockBig {
+	margin-right: 0px;
+}
+
+div.destaque {
+  padding: 2ex 2em;
+  line-height: 1.5em;
+  color: #833;
+  background: #fdd;
+  border-radius: 4px;
+  /* box-shadow: 0 0 10px inset; */
+  margin: 4px;
+  font-size: 1.2em;
+}
+
+div.destaque * {
+  background: inherit;
+}
+
+#footer {
+	clear: both; 
+	padding: 0;
+	float: none;
+	width: calc(100% - 1ex);
+	width: 100%;
+	border: 0!important;
+	border-top:1px #7aa5d6 solid!important;
+	padding:1ex 0 0 0!important;
+	margin: 0;
+	margin-top: 20px; 
+	background: white;
+	color: #E0E0E0;
+	text-align: right;
+	font: normal bold 10px Arial, Verdana, Helvetica, sans-serif;
+}
+
+div#footer a {
+	color: #ddd!important;
+	text-decoration: none;
+	color:black;
+}
+div#footer a:hover {
+	text-decoration: underline;
+}
+
+.error {
+  color: white;
+  text-align: center;
+  font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+  background-color: #FF0000;
+}
+
+.msg_tc_pendencia {
+	font: normal bold 12px Verdana, Arial, sans-serif;
+	color: red;
+}

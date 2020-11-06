@@ -1,0 +1,1 @@
+/mnt/webuploads/wp-content/wp-cache-config.php

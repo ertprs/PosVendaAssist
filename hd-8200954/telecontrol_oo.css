@@ -1,0 +1,182 @@
+div {
+color: #333333;
+}
+
+select {
+margin: 0px;
+font: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+height: 17px;
+background-color: #F0F0F0;
+border: 1px solid #888888;
+}
+
+input[type='text'], input[type='password'], input[type='file'] {
+margin: 0px;
+font-weight: bold;
+font-size: 8pt;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+background-color: #f0f0f0;
+border: #888888 1px solid;
+}
+
+label{
+background-color:#D9E2EF;
+display: block;
+margin-bottom: 2px;
+}
+
+label.ajuda{
+display: none;
+}
+
+label.obrigatorio {
+color: #CC0000;
+}
+
+.msg_erro{
+    background-color:#FF0000;
+    font: bold 16px "Arial";
+    color:#FFFFFF;
+    text-align:center;
+	width: 700px;
+}
+
+.msg_erro > a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.div_grupo {
+width: 690px;
+text-align: left;
+background-color: #D9E2EF;
+margin-bottom: 10px;
+border-bottom: 1px solid #7092BE;
+padding: 5px;
+}
+
+.div_campo{
+display: inline-block;
+height: 35px;
+padding: 2px;
+}
+
+.div_textarea{
+height: 100%;
+}
+
+.label_grupo{
+font-size: 11px;
+background-color: #7092BE;
+padding: 3px;
+color: #FFFFFF;
+font-weight : bold;
+text-align:center ;
+}
+
+.div_text_date {
+	min-width: 100px;
+}
+
+.input_text_date {
+	width: 85px;
+}
+
+.div_input_hidden{
+display:none;
+}
+
+.header_label {
+	display: inline-block;
+	padding: 4px;
+}
+
+/* INÍCIO: Correções no datepicker */
+a.dp-choose-date {
+	float: right;
+}
+
+input.dp-applied {
+	float: none;
+}
+/* FIM: Correções no datepicker */
+
+/* INÍCIO: Correções no colorpicker */
+.mColorPickerTrigger  {
+	position: relative;
+	top: -2px;
+}
+/* FIM: Correções no colorpicker */
+
+/* INÍCIO: Correções no fileuploader */
+.qq-upload-button {
+	display: inline-block;
+	padding: 0px;
+	top: 1px;
+    width: 224px; text-align:center;    
+	margin: 0px;
+	border: #888888 1px solid;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.qq-upload-button-hover {background: inherit;}
+
+.qq-upload-button-focus {outline:1px solid black;}
+
+.qq-upload-list {
+	z-index: 99;
+	background-color: #EEEEEE;
+	margin:0px;
+	list-style:disc;
+	position: absolute;
+	padding: 10px;
+	padding-right: 30px;
+	border: 1px solid #666666;
+	top: 8px;
+	display: none;
+}
+
+.qq-upload-list li { margin:0; padding:0; line-height:15px; font-size:12px; position: relative; left: 20px;}
+/* FIM: Correções no fileuploader */
+
+.toolbar {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+.orientacao {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: left;
+}
+
+.__modelo__ {
+display: none;
+}
+
+.bloqueado {
+color: #555555;
+}
+
+.div_ajax_upload_miniatura {
+width: 224px;
+height: 224px;
+border: 1px solid #888888;
+background-position: center center;
+}
+
+.div_ajax_upload {
+height: auto;
+}
+
+.limpar_ajax_upload {
+width: 100%;
+}

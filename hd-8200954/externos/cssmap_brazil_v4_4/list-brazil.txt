@@ -1,0 +1,31 @@
+<div id="map-brazil">
+ <ul class="brazil">
+  <li class="br1"><a href="#acre">Acre</a></li>
+  <li class="br2"><a href="#alagoas">Alagoas</a></li>
+  <li class="br3"><a href="#amapa">Amapá</a></li>
+  <li class="br4"><a href="#amazonas">Amazonas</a></li>
+  <li class="br5"><a href="#bahia">Bahia</a></li>
+  <li class="br6"><a href="#ceara">Ceará</a></li>
+  <li class="br7"><a href="#distrito-federal">Distrito Federal</a></li>
+  <li class="br8"><a href="#espirito-santo">Espírito Santo</a></li>
+  <li class="br9"><a href="#goias">Goiás</a></li>
+  <li class="br10"><a href="#maranhao">Maranhão</a></li>
+  <li class="br11"><a href="#mato-grosso">Mato Grosso</a></li>
+  <li class="br12"><a href="#mato-grosso-do-sul">Mato Grosso do Sul</a></li>
+  <li class="br13"><a href="#minas-gerais">Minas Gerais</a></li>
+  <li class="br14"><a href="#para">Pará</a></li>
+  <li class="br15"><a href="#paraiba">Paraíba</a></li>
+  <li class="br16"><a href="#parana">Paraná</a></li>
+  <li class="br17"><a href="#pernambuco">Pernambuco</a></li>
+  <li class="br18"><a href="#piaui">Piauí</a></li>
+  <li class="br19"><a href="#rio-de-janeiro">Rio de Janeiro</a></li>
+  <li class="br20"><a href="#rio-grande-do-norte">Rio Grande do Norte</a></li>
+  <li class="br21"><a href="#rio-grande-do-sul">Rio Grande do Sul</a></li>
+  <li class="br22"><a href="#rondonia">Rondônia</a></li>
+  <li class="br23"><a href="#roraima">Roraima</a></li>
+  <li class="br24"><a href="#santa-catarina">Santa Catarina</a></li>
+  <li class="br25"><a href="#sao-paulo">São Paulo</a></li>
+  <li class="br26"><a href="#sergipe">Sergipe</a></li>
+  <li class="br27"><a href="#tocantins">Tocantins</a></li>
+ </ul>
+</div>

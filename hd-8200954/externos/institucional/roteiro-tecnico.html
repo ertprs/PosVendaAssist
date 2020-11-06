@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://ww2.telecontrol.com.br/assist/externos/institucional/roteiro-tecnico.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta charset="iso-8859-15">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script type="text/javascript" src="./roteiro-tecnico_files/jquery.min.js"></script>
+        <script src='../../plugins/dataTable.js'></script>
+        <!--<script src='http://momentjs.com/downloads/moment.js'></script>
+        <script src="http://momentjs.com/downloads/moment-with-locales.js"></script> -->
+
+        
+        <link rel='stylesheet' type='text/css' href='../../plugins/dataTable.css' />
+        <link type="text/css" rel="stylesheet" href="./roteiro-tecnico_files/bootstrap.min.css">        
+        <link rel="stylesheet" href="elgin_source/css/externo_roteiro.css">
+		
+        <script type="text/javascript" src="./roteiro-tecnico_files/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var telecontrolApi = 'https://api2.telecontrol.com.br';            
+
+            var consultaRoteiros = function (filter, callbackResponse) {
+                var url = telecontrolApi + '/institucional/roteiro/';
+                for (var key in filter) {
+                    url += key + '/' + filter[key] + '/';
+                }
+                $.ajax({
+                    url: 'crossDomainProxy.php',
+                    async: false,
+                    data: {
+                        apiLink: url
+                    },
+                    method: 'POST',
+                    success: function (data) {
+                        callbackResponse(data);
+                    },
+                    error: function (data) {
+                        callbackResponse(data.responseJSON);
+                    }
+                });
+
+            };
+
+            var consultaEstados = function (callbackResponse) {
+                var url = telecontrolApi + '/institucional/estado/';
+                $.ajax({
+                    url: 'crossDomainProxy.php',
+                    async: false,
+                    data: {
+                        apiLink: url
+                    },
+                    method: 'POST',
+                    success: function (data) {
+                        callbackResponse(data);
+                    },
+                    error: function () {
+
+                    }
+                });
+            };
+
+            var consultaCidades = function (estado, callbackResponse) {
+                var url = telecontrolApi + '/institucional/cidade/uf/' + estado;
+                $.ajax({
+                    url: 'crossDomainProxy.php',
+                    async: false,
+                    data: {
+                        apiLink: url
+                    },
+                    method: 'POST',
+                    success: function (data) {
+                        callbackResponse(data);
+                    },
+                    error: function () {
+
+                    }
+                });
+            };
+
+            var consultaPostos = function (filter, callbackResponse) {
+                var url = telecontrolApi + '/institucional/posto/';
+                for (var key in filter) {
+                    url += key + '/' + filter[key] + '/';
+                }
+                $.ajax({
+                    url: 'crossDomainProxy.php',
+                    async: false,
+                    data: {
+                        apiLink: url
+                    },
+                    method: 'POST',
+                    success: function (data) {
+                        callbackResponse(data);
+                    },
+                    error: function () {
+
+                    }
+                });
+            };
+
+            var fillSelect = function (select, options, key, label, values) {
+                $(select).find('option[value]').remove();
+                for (var index in options) {
+                    var opt = options[index];
+                    var option = $('<option value="' + opt[key] + '" >' + opt[label] + '</option>');
+                    for (var i in values) {
+                        var attr = values[i];
+                        option.attr(attr, opt[attr]);
+                    }
+                    $(select).append(option);
+                }
+            };
+
+            var makeTableRow = function (num, roteiro) {
+
+
+                var cidades = [];
+                $(roteiro.cidades_postos).each(function(idx,elem){
+                    if($.inArray(elem.contato_cidade.toUpperCase(),cidades) == -1){                        
+                        cidades.push(elem.contato_cidade.toUpperCase());                        
+                    }                                
+                });    
+
+                if(roteiro.cidades != null){
+                    $(roteiro.cidades).each(function(idx,elem){
+                        if($.inArray(elem.nome.toUpperCase(),cidades) == -1){                        
+                            cidades.push(elem.nome.toUpperCase());                        
+                        }                                
+                    });        
+                }
+                
+                var estados = [];
+                $(roteiro.cidades_postos).each(function(idx,elem){
+                    if($.inArray(elem.contato_estado.toUpperCase(),estados) == -1){                        
+                        estados.push(elem.contato_estado.toUpperCase());                        
+                    }                                
+                });    
+
+                if(roteiro.cidades != null){
+                    $(roteiro.cidades).each(function(idx,elem){
+                        if($.inArray(elem.estado.toUpperCase(),estados) == -1){                        
+                            estados.push(elem.estado.toUpperCase());                        
+                        }                                
+                    });        
+                }
+
+                var postos = [];
+                $(roteiro.postos).each(function(idx,elem){
+                    if($.inArray(elem.nome_fantasia.toUpperCase(),postos) == -1){
+                        postos.push(elem.nome_fantasia.toUpperCase());
+                    }
+                });
+
+                var tecnicos = [];
+                $(roteiro.tecnicos).each(function(idx,elem){
+                    if($.inArray(elem.nome.toUpperCase(),tecnicos) == -1){
+                        tecnicos.push(elem.nome.toUpperCase());
+                    }
+                });
+
+                // console.log(roteiro);return false;
+
+                var row = $('<tr></tr>');
+                row.append($('<td name="numero">' + roteiro.roteiro + '</td>'));
+                row.append($('<td name="data">' + roteiro.data_inicio + '</td>'));
+                row.append($('<td name="data">' + roteiro.data_termino + '</td>'));
+                row.append($('<td name="local">' + estados.join(", ") + '</td>'));
+                row.append($('<td name="cidades">' + cidades.join(", ") + '</td>'));
+                row.append($('<td name="postos">' + postos.join(", ") + '</td>'));
+                row.append($('<td name="tecnicos">' + tecnicos.join(", ") + '</td>'));
+                //row.append($('<td name="analise" >' + roteiro.estado + '</td>'));
+                row.append($('<td name="solicitante">' + roteiro.solicitante.toUpperCase() + '</td>'));
+                row.append($('<td name="status">' + roteiro.status.toUpperCase() + '</td>'));
+                row.append($('<td name="dias">' + roteiro.qtde_dias + '</td>'));
+                return row;
+            };
+
+            var makeRoteiroFilter = function (filterContainer) {
+                var filter = {fabrica: 117};
+                $(filterContainer).find('select,input,textarea').each(function () {
+                    var name = $(this).attr('name');
+                    var value = $(this).val();
+                    if (value) {
+                        filter[name] = value;
+                    }
+                });
+                return filter;
+            };
+
+            var estados = [
+                {value: 'AC', descricao: 'Acre'},
+                {value: 'AL', descricao: 'Alagoas'},
+                {value: 'AM', descricao: 'Amazonas'},
+                {value: 'AP', descricao: 'Amapá'},
+                {value: 'BA', descricao: 'Bahia'},
+                {value: 'CE', descricao: 'Ceará'},
+                {value: 'DF', descricao: 'Distrito Federal'},
+                {value: 'ES', descricao: 'Espírito Santo'},
+                {value: 'GO', descricao: 'Goiás'},
+                {value: 'MA', descricao: 'Maranhão'},
+                {value: 'MG', descricao: 'Minas Gerais'},
+                {value: 'MS', descricao: 'Mato Grosso do Sul'},
+                {value: 'MT', descricao: 'Mato Grosso'},
+                {value: 'PA', descricao: 'Pará'},
+                {value: 'PB', descricao: 'Paraíba'},
+                {value: 'PE', descricao: 'Pernambuco'},
+                {value: 'PI', descricao: 'Piauí'},
+                {value: 'PR', descricao: 'Paraná'},
+                {value: 'RJ', descricao: 'Rio de Janeiro'},
+                {value: 'RN', descricao: 'Rio Grande do Norte'},
+                {value: 'RO', descricao: 'Rondônia'},
+                {value: 'RR', descricao: 'Roraima'},
+                {value: 'RS', descricao: 'Rio Grande do Sul'},
+                {value: 'SC', descricao: 'Santa Catarina'},
+                {value: 'SE', descricao: 'Sergipe'},
+                {value: 'SP', descricao: 'São Paulo'},
+                {value: 'TO', descricao: 'Tocantins'}
+            ];
+
+            var preencheTabela = function (roteiros) {
+                if (roteiros.exception) {
+                    alert(roteiros.message);
+                    return;
+                }
+                var table = $('#roteiros');                
+                table.html('');
+                for (var i in roteiros) {
+                    var roteiro = roteiros[i];
+                    table.append(makeTableRow(parseInt(i) + 1, roteiro));
+                }
+            };
+
+            var buscaCidades = function (selectEstado) {
+                var estado = $(selectEstado).val();
+                consultaCidades(estado, function (cidades) {
+                    fillSelect($('select[name=cidade]'), cidades, 'ibge', 'cidade', ['uf']);
+                });
+            };
+
+            var buscaRoteiro = function (button) {
+                $(button).button('loading');
+                filter = makeRoteiroFilter('#filtro-roteiro');
+                consultaRoteiros(filter, function (roteiros) {
+                    preencheTabela(roteiros);
+                    $(button).button('reset');
+                });
+            };
+
+            var buscaPostos = function (select) {
+                var filter = makeRoteiroFilter('#filtro-roteiro');
+                consultaPostos(filter, function (postos) {
+                    fillSelect($('select[name=posto]'), postos, 'posto', 'nome_fantasia', []);
+                });
+            };
+
+            $(function () {
+                fillSelect($('select[name=estado]'), estados, 'value', 'descricao', []);
+                var filter = makeRoteiroFilter('#filtro-roteiro');
+
+                consultaRoteiros(filter, function (roteiros) {
+                    preencheTabela(roteiros);
+                });
+
+                $('#busca-roteiro').click(function () {
+                    buscaRoteiro($(this));
+                });
+
+                $('select[name=estado]').change(function () {
+                    buscaCidades($(this));
+                });
+
+                $('select[name=estado],select[name=cidade]').change(function () {
+                    buscaPostos();
+                });
+
+                //moment().format('DD/MM/YYYY');
+                 $.dataTableLoad({
+                    table : "#roteiros-list",
+                    aoColumns:[null,{"sType":"date"},{"sType":"date"},null,null,null,null,null,null,null],
+                     "aaSorting": [[1, "asc"]]
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+            <form class="">
+                <div id="filtro-roteiro" class="row">                    
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+                            <select class="form-control" id="estado" name="estado">
+                                <option></option>
+                            <option value="AC">Acre</option><option value="AL">Alagoas</option><option value="AM">Amazonas</option><option value="AP">Amapá</option><option value="BA">Bahia</option><option value="CE">Ceará</option><option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option><option value="GO">Goiás</option><option value="MA">Maranhão</option><option value="MG">Minas Gerais</option><option value="MS">Mato Grosso do Sul</option><option value="MT">Mato Grosso</option><option value="PA">Pará</option><option value="PB">Paraíba</option><option value="PE">Pernambuco</option><option value="PI">Piauí</option><option value="PR">Paraná</option><option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option><option value="RO">Rondônia</option><option value="RR">Roraima</option><option value="RS">Rio Grande do Sul</option><option value="SC">Santa Catarina</option><option value="SE">Sergipe</option><option value="SP">São Paulo</option><option value="TO">Tocantins</option></select>                            
+                        </div>                        
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <select class="form-control" id="cidade" name="cidade">
+                                <option></option>
+                            </select>
+                        </div>                        
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="cidade">Posto</label>
+                            <select class="form-control" id="posto" name="posto">
+                                <option></option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="col-md-3">                        
+                        <button style="margin-top: 24px" id="busca-roteiro" class="form-control btn btn-primary" type="button" data-loading-text="Buscando...">
+                            Buscar
+                        </button>                        
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid">
+            <table id="roteiros-list"class='table table-striped table-bordered table-hover table-fixed'>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Data Início</th>
+                        <th>Data Fim</th>
+                        <!--<th>Local</th>-->
+                        <th>UF</th>
+                        <th>Cidades</th>
+                        <th>Posto(s)</th>
+                        <th>Técnico(s)</th>
+                        <!--<th>Analise</th>-->
+                        <th>Solicitante</th>
+                        <th>Status</th>
+                        <th>Dias</th>
+                    </tr>
+                </thead>
+                <tbody id="roteiros"></tbody>
+            </table>
+        </div>    
+    </body>
+</html>

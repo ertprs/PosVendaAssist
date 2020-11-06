@@ -1,0 +1,98 @@
+@import url("contactenos.css");
+
+
+.destaques_home
+{
+	background:#000000 url(bg_box_home.gif) bottom repeat-x;
+}
+
+
+.destaques_home .imagem_conselho
+{
+	background:url(bg_fotos_dicas.png) no-repeat;
+}
+
+
+#menuMeioAmbiente .carta
+{
+	background:url(carta_compromisso.png) no-repeat top left;
+}
+
+#menuMeioAmbiente .ingestion
+{
+	background-position: 0px 0px;
+	background-image: url(ingestion.png);
+	background-repeat: no-repeat;
+}
+
+#menuMeioAmbiente .desechos
+{
+	background:url(desechos.png) no-repeat top left;
+}
+
+#menuMeioAmbiente .reciclaje
+{
+	background:url(recicleja.png) no-repeat top left;
+}
+
+#menuMeioAmbiente .embarcando
+{
+	background:url(embarcando.png) no-repeat top left;
+}
+
+#menuMeioAmbiente .quimicos
+{
+	background:url(quimicos.png) no-repeat top left;
+}
+
+
+#conteudo_meioAmbiente #wrap .carta_meioAmbiente
+{
+	background:url(fundo_carta.png) no-repeat;
+}
+
+#conteudo_meioAmbiente #wrap .carta_meioAmbiente2
+{
+	background:url(fundo_carta2.png) no-repeat;
+}
+
+#descricoes
+{
+	background:url(bg_pilas_destaque.jpg) top repeat-x;
+}
+
+
+
+.produtos
+{
+	background:url(bg_produtos.jpg) top left;
+}
+
+
+
+
+.produtos .sombra
+{
+	background:url("sombra_interna_produtos.png") repeat-x scroll 0 0 transparent;
+}
+/******************************/
+/****** FIM PRODUTOS **********/
+/******************************/
+
+
+
+/******************************/
+/****** INTERNA PRODUTOS ******/
+/******************************/
+
+
+#interna_produtos .imagem_destaque .btn-mas-empaques
+{ 
+     background-image: url("btn_mas_empaques.png");
+}
+
+/******************************/
+/**** FIM INTERNA PRODUTOS ****/
+/******************************/
+
+

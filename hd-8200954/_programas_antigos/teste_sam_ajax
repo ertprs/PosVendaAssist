@@ -1,0 +1,69 @@
+<?include 'dbconfig.php';
+include 'includes/dbconnect-inc.php';
+include 'autentica_usuario.php';
+include 'funcoes.php';
+?>
+
+var Ajax = new Object();
+
+Ajax.Request = function(url,callbackMethod){
+	
+	Page.getPageCenterX();
+	Ajax.request = Ajax.createRequestObject();
+	Ajax.request.onreadystatechange = callbackMethod;
+	Ajax.request.open("POST", url, true);
+	Ajax.request.send(url);
+}
+
+Ajax.Response = function (){
+	if(Ajax.CheckReadyState(Ajax.request))	{
+		var	response2 = Ajax.request.responseText;
+		var temp= document.getElementById('nota_fiscal_link');
+		
+		if (response2=="error"){
+			document.getElementById('loading').innerHTML ="";
+			document.getElementById('loading').innerHTML = "<table border=0 cellpadding=0 cellspacing=1 width=200 bgcolor=gray><tr><td align=center class=loaded height=45 bgcolor=#ffffff style='color:red;font-weigth:bold'>Nota Fiscal Não Encontrada!!</td></tr></table>";
+			setTimeout('Page.loadOut()',3000);
+			//document.getElementById('nota_fiscal_link').innerHTML = "Nenhuma nota encontrada!";
+			temp.innerHTML = "&nbsp;";
+		}
+		else{
+			response = response2.split('|');
+			temp.innerHTML = response[0];
+			var temp2= document.getElementById('data_emissao');
+			temp2.value = response[1];
+			//temp2.readonly = "readonly";
+
+		}
+	}
+}
+
+Ajax.createRequestObject = function(){
+	var obj;
+	if(window.XMLHttpRequest)	{
+		obj = new XMLHttpRequest();
+	}
+	else if(window.ActiveXObject)	{
+		obj = new ActiveXObject("MSXML2.XMLHTTP");
+	}
+	return obj;
+}
+
+Ajax.CheckReadyState = function(obj){
+	if(obj.readyState < 4) {
+		document.getElementById('loading').style.top = (Page.top + Page.height/2)-100;
+		document.getElementById('loading').style.left = Page.width/2-75;
+		document.getElementById('loading').style.position = "absolute";
+		document.getElementById('loading').innerHTML = "<table border=0 cellpadding=0 cellspacing=1 width=200 bgcolor=#AAA><tr><td align=center class=loading height=45 bgcolor=#FFFFFF>Aguarde.....<br><br><img src='../imagens/carregar_os' ></td></tr></table>";  
+	}
+	if(obj.readyState == 4)	{
+		if(obj.status == 200){
+			document.getElementById('loading').innerHTML = "<table border=0 cellpadding=0 cellspacing=1 width=200 bgcolor=gray><tr><td align=center class=loaded height=45 bgcolor=#ffffff>Informações carregadas com sucesso!</td></tr></table>";
+			setTimeout('Page.loadOut()',1000);
+			return true;
+		}
+		else{
+			document.getElementById('loading').innerHTML = "HTTP " + obj.status;
+		}
+	}
+}

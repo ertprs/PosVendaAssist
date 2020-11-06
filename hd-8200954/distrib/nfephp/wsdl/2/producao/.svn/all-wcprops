@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao
+END
+SCAN_NfeCancelamento2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NfeCancelamento2.asmx
+END
+SCAN_NfeInutilizacao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NfeInutilizacao2.asmx
+END
+SVAN_nfeconsulta2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_nfeconsulta2.asmx
+END
+SCAN_NfeRetRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NfeRetRecepcao2.asmx
+END
+SVAN_NFeCancelamento2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_NFeCancelamento2.asmx
+END
+SCAN_NFeStatusServico2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NFeStatusServico2.asmx
+END
+SVAN_NFeInutilizacao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_NFeInutilizacao2.asmx
+END
+SVAN_NFeRetRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_NFeRetRecepcao2.asmx
+END
+SCAN_NfeRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NfeRecepcao2.asmx
+END
+SVAN_NfeStatusServico2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_NfeStatusServico2.asmx
+END
+SVAN_NfeRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SVAN_NfeRecepcao2.asmx
+END
+SCAN_NfeConsulta2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/producao/SCAN_NfeConsulta2.asmx
+END

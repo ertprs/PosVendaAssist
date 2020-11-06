@@ -1,0 +1,283 @@
+/********************* CSS Reset *******************************/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,caption, tbody, tfoot, thead
+ {
+	margin: 0;	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul, dt, dl {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+fieldset,img {
+	border: none;
+}
+legend {
+	display: none;
+}
+input[type=text], textarea {
+	padding: 0;
+	border:1px solid #555;
+}
+a, a:link a:active a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+caption,cite,code,dfn,em,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+input, textarea, select{
+	outline:none; /*tira a borda dourada do chrome*/
+}
+textarea{
+	resize:none; /*não deixa redimensionar o textarea no chrome*/
+}
+a img { 
+	border: 0px;
+	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	color: inherit;
+}
+
+/**
+ * TOOLS 
+ **/
+* html>body .clearfix {
+	display: inline-block;
+	width: 100%;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear {
+	clear:both;
+	margin:0;
+	padding:0;
+	font-size: 15px;
+	line-height: 1px;
+}
+.replace {
+	background-color:transparent;
+	text-indent:-50000px;
+	overflow:hidden;
+	display:block;
+}
+.replace-bt {
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: transparent;
+	text-indent: -50000px;
+	line-height:999999px;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+	border:none;
+}
+.replace-txt{
+	text-indent: -999999px;
+}
+
+
+/**
+ *	Classes Helpers
+ */
+
+/*Posicionamento*/
+.relative{
+	position: relative;
+}
+.floatLeft{
+	float: left!important;
+}
+.floatRight{
+	float: right!important;
+}
+
+/*TOP*/
+.top10{
+	margin-top: 10px;
+}
+.top20{
+	margin-top: 20px;
+}
+.top30{
+	margin-top: 30px;
+}
+.top40{
+	margin-top: 40px;
+}
+.top50{
+	margin-top: 50px;
+}
+.top60{
+	margin-top: 60px;
+}
+.top70{
+	margin-top: 70px;
+}
+.top80{
+	margin-top: 80px;
+}
+.top90{
+	margin-top: 90px;
+}
+.top100{
+	margin-top: 100px;
+}
+.top120{
+	margin-top: 120px;
+}
+
+/*LEFT*/
+.left10{
+	margin-left: 10px;
+}
+.left20{
+	margin-left: 20px;
+}
+.left30{
+	margin-left: 30px;
+}
+.left40{
+	margin-left: 40px;
+}
+.left50{
+	margin-left: 50px;
+}
+.left60{
+	margin-left: 60px;
+}
+.left70{
+	margin-left: 70px;
+}
+.left80{
+	margin-left: 80px;
+}
+.left90{
+	margin-left: 90px;
+}
+.left100{
+	margin-left: 100px;
+}
+.left120{
+	margin-left: 120px;
+}
+
+/*RIGHT*/
+.right10{
+	margin-right: 10px;
+}
+.right20{
+	margin-right: 20px;
+}
+.right30{
+	margin-right: 30px;
+}
+.right40{
+	margin-right: 40px;
+}
+.right50{
+	margin-right: 50px;
+}
+.right60{
+	margin-right: 60px;
+}
+.right70{
+	margin-right: 70px;
+}
+.right80{
+	margin-right: 80px;
+}
+.right90{
+	margin-right: 90px;
+}
+.right100{
+	margin-right: 100px;
+}
+.right120{
+	margin-right: 120px;
+}
+
+
+/**
+ *	Se tiver uma fonte padrão para textos, setar a mesma no body,
+ *  que fará com que seus filhos herdem essas propiedades.
+ */
+body{
+	font-size: 14px;
+	font-family: "Arial", sans-serif;
+	color: #727272;
+}
+
+/**
+ *	Regra para imagens e recursos flexiveis
+ * 	Deve ser usado em sites com layout fluido ou liquido.
+ *  -Descomentar
+ */
+
+/*img, video, embed, iframe, code{
+	max-width: 100%
+}*/
+
+/**
+ *	Linha para cada bloco de conteudo
+ */
+.row{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/**
+ *	Bloco interno de conteudo fixo
+ */
+.content{
+	display: block;
+	width: 994px;
+	margin: 0 auto;
+}
+
+/**
+ *	Bloco interno de conteudo que varia sua largura 
+ *  Deve ser usado em sites com layout fluido ou liquido (baseados em porcentagens)
+ */
+.fluidContent{
+	display: block;
+	width: 96%;
+	margin: 0 auto;
+	max-width: 1366px;
+	min-width: 768px;
+}
+
+
+
+
+/**
+ *	Inicio de suas regras	
+ */
+ 
+body{
+	text-align: center;
+	padding-top: 120px
+}
+
+.demoFigura{
+    background-image: url('../img/manager/wt.gif');
+    height: 12px;
+    width: 26px;
+    margin: 0 auto;
+}

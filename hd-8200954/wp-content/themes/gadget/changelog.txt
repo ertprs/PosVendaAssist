@@ -1,0 +1,10 @@
+***Gadget Changelog***
+
+2011.02.24 - version 1.0.2
+ * includes/theme-options.php - fixed a bug for WP 3.1 compatibility
+ 
+2010.11.09 - version 1.0.1
+ * functions.php - added multisite support for the thumbnail function
+
+2009.11.28 - version 1.0
+ * First release!

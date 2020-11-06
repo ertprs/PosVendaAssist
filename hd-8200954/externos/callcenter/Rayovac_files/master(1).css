@@ -1,0 +1,87 @@
+
+
+/*******************************/
+/*********** BACKGROUND ********/
+/*******************************/
+.bg_superior
+{
+ackground:url(back_azul.gif) repeat-y scroll 50% 0 transparent;
+}
+
+
+#header_busca
+{
+	background:url(bg_header.png) repeat-x;
+}
+
+#logo_busca .busca
+{
+	background:url(fundo_busca.png) no-repeat;
+}
+
+
+#logo_busca .busca .campo_busca input.q
+{
+	background:url(campo_busca.png) no-repeat;
+}
+
+
+#menu
+{
+	background:url(fundo_menu.png) repeat-x;
+}
+
+
+#menu .home
+{
+	background:url(home.png) no-repeat top left;
+}
+
+#menu .rayovac
+{
+	background:url(rayovac.png) no-repeat top left;
+}
+
+#menu .pilas
+{
+	background:url(pilas.png) no-repeat top left;
+}
+
+#menu .linternas
+{
+	background:url(linternas.png) no-repeat top left;
+}
+
+#menu .promociones
+{
+	background:url(promociones.png) no-repeat top left;
+}
+
+#menu .servicos
+{
+	background:url(servicos.png) no-repeat top left;
+}
+
+#menu .contactenos
+{
+	background:url(contatos.png) no-repeat top left;
+}
+/********************************/
+/**********FIM MENU *************/
+/********************************/
+
+
+
+#footer
+{
+	background:url("bg_footer.png") repeat-x scroll 0 0 transparent;
+}
+
+/*** DROPBOX ***/
+ul.topnav {  
+   background:url(fundo_paises.jpg) no-repeat top left; 
+}
+ul.topnav li span { /*--Drop down trigger styles--*/  
+   background:url(seta_paises.jpg) no-repeat; 
+}  
+

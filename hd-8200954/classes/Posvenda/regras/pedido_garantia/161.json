@@ -1,0 +1,6 @@
+{
+    "auditoria_unica":true,
+    "posto_interno_nao_gera":true,
+    "posto_interno_gera_troca":true,
+    "nao_gera_pedido_peca_sem_preco":true
+}

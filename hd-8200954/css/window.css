@@ -1,0 +1,42 @@
+#tela {
+	position: absolute;
+	width: 400px;
+	display: none;
+	height: 300px;
+	overflow: hidden;
+	top: 100px;
+	left: 200px;
+}
+#windowTop {
+	 POSITION: relative; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right top; HEIGHT: 30px; OVERFLOW: hidden; CURSOR: move
+}
+#windowTopContent {
+	 LINE-HEIGHT: 30px; TEXT-INDENT: 10px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-POSITION: left top; HEIGHT: 30px; COLOR: #6caf00; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold; MARGIN-RIGHT: 13px
+}
+#windowMin {
+	POSITION: absolute; TOP: 10px; CURSOR: pointer; RIGHT: 25px
+}
+#windowMax {
+	POSITION: absolute; DISPLAY: none; TOP: 10px; CURSOR: pointer; RIGHT: 25px
+}
+#windowClose {
+	POSITION: absolute; TOP: 10px; CURSOR: pointer; RIGHT: 10px
+}
+#windowBottom {
+	 POSITION: relative; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right bottom; HEIGHT: 270px
+}
+#windowBottomContent {
+	 POSITION: relative; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left bottom; HEIGHT: 270px; MARGIN-RIGHT: 13px
+}
+#windowResize {
+	POSITION: absolute; BOTTOM: 5px; CURSOR: se-resize; RIGHT: 3px
+}
+#windowContent {
+	BORDER-BOTTOM: #6caf00 1px solid; POSITION: absolute; BORDER-LEFT: #6caf00 1px solid; BACKGROUND-COLOR: #fff; WIDTH: 375px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 255px; FONT-SIZE: 11px; OVERFLOW: auto; BORDER-TOP: #6caf00 1px solid; TOP: 30px; MARGIN-RIGHT: 10px; BORDER-RIGHT: #6caf00 1px solid; LEFT: 10px
+}
+#windowContent * {
+	MARGIN: 10px
+}
+.transferer2 {
+	BORDER-BOTTOM: #6baf04 1px solid; FILTER: alpha(opacity=30); BORDER-LEFT: #6baf04 1px solid; BACKGROUND-COLOR: #b4f155; BORDER-TOP: #6baf04 1px solid; BORDER-RIGHT: #6baf04 1px solid; -moz-opacity: 0.3; opacity: 0.3
+}

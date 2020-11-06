@@ -1,0 +1,60 @@
+	<style>
+		#comunicado_importante{
+			padding: 10px;
+			z-index: 99999;
+		}
+
+		#comunicado_importante h4{
+			text-align: center;
+		}
+		#sb-body .table {
+			display: table;
+			position: relative;
+			width: 94%;
+			height: 95%;
+			padding: 1em 2em;
+		}
+		#sb-body .table .row p {
+			font-size: 14px;
+		}
+		#sb-body .table .row {
+			table-layout: fixed;
+			display: block;
+		}
+		#sb-body .table > div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		#sb-body {
+			background-image: url()!important
+		}
+	</style>
+	<script type="text/javascript" src="plugins/posvenda_jquery_ui/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+	function desfazerNuvemComunicadoGeralPosto(){
+		return true;
+		// $('#nuvem').css({"display" : "none"});
+		console.log('test');
+		$.ajax({
+			url: document.location.href,
+			type: "POST",
+			data: "ComunicadoGeralPosto=ja_li",
+			complete: function(data){
+				data = data.responseText;
+				// console.log("ok -> ja leu");
+			}
+		});
+	}
+
+	window.onload = function() {
+		Shadowbox.open({
+			content:    '<div class="table"><div class="row"><h1 class="title">Aplicativo <em>Image Uploader</em></h1> </div> <div class="row tac"><hr style="margin: 2em 0 4em 0"> <img src="https://lh3.googleusercontent.com/dJWnaDEs1KdmPTaGmgQQnq8dSQSMyFbHQ6aHP-YQs1w8vb5UiXVSrHkZpCORC7YPTv0=h900" style="float: left;width: 25%;margin-right: 2em;"> <p>A Telecontrol está lançando uma nova ferramenta para auxiliar você na hora de cadastrar uma Ordem de Serviço:<br><br> Um <b>aplicativo <em>mobile</em></b> que irá facilitar o anexo de documentos na OS, como Nota Fiscal, foto do produto ou da etiqueta com o número de série.  <br><br> Instale já o aplicativo <strong><em>Telecontrol Image Uploader</em></strong> do <u><a href="https://goo.gl/Fy5LLS" target="_blank"><img style="height:2em;vertical-align: middle; margin: 0 1ex" src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png"></a></u> e comece a usar!</p><p>&nbsp;</p><p>Baixe o <a href="https://goo.gl/z6DCTF" target="_blank">Manual de Uso</a> e veja como é fácil.</p></div></div>',
+			player:     "html",
+			title:      "Nova Ferramenta",
+			height:     450,
+			width:      760,
+			onClose: desfazerNuvemComunicadoGeralPosto()
+		});
+	};
+	</script>
+

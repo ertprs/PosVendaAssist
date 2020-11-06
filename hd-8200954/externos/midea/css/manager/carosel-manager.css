@@ -1,0 +1,48 @@
+
+#topo_util_aria{
+    height: 104px;
+}
+
+
+#head_bar_menus_principais{
+    top: 10px;
+    left: 8px;
+    
+}
+
+#user_logado_infos{
+    top: -41px;
+    position: relative;
+}
+
+
+#logo1_manager_direito{
+    position: relative;
+    top: -41px;
+}
+
+#foo2_prev{
+    display:block;
+    position: relative;
+    left: -530px;
+    top: 32px;
+}
+
+#foo2_next{
+    display: block;
+    position: relative;
+    left: -41px;
+    top: 32px;
+    z-index: 1;
+}
+
+.caroufredsel_wrapper{
+    position: relative;
+    top: 13px;
+}
+
+#menuManagerCircularIcons{
+    height: 85px;
+    width: 508px;
+    top: 12px;
+}

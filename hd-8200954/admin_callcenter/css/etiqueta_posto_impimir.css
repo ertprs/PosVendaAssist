@@ -1,0 +1,68 @@
+@media print {  /*  Estilo para impressão   */
+	@page {
+		size:  21cm 29.7cm;
+		margin: 2cm 0.45cm;
+	}	
+
+    table {
+        table-layout: fixed;
+        width: 20cm;
+		background-color: White;
+		font-family: "Arial Unicode MS", Arial, sans-serif;
+		font-size: 10pt;
+    }
+    tr.et {
+        padding:0;
+        page-break-inside: avoid;
+    }
+    tr.sep {display: none}
+    tr.newpage {page-break-before: always;height:0}
+    td.l, td.r {
+        width:  9.50cm;
+        height: 3.50cm;
+        margin: 0;
+        padding:1.00cm;
+		text-align: center;
+        vertical-align: middle;
+    }
+    td.l div {display: block}   /* Este DIV é para evitar a quebra de página no meio da etiqueta    */
+    td.m{width: 0.50cm;page-break-inside: avoid;}
+
+	h1 {
+		font-family: "Arial Unicode MS", Arial, sans-serif;
+		font-size: 10pt;
+		font-weight: bold;
+        margin:0;
+	}
+
+/*  Todos os elementos que não devem sair na impressão  */
+    INPUT, H2, HR {display: none}
+}   /*  Fim do estilo para impressão  */
+
+@media screen { /*  Versão para mostrar na tela */
+    table {
+        width: 90%;
+		background-color: White;
+		font-family: "Arial Unicode MS", Arial, sans-serif;
+		font-size: 10pt;
+	}
+    h1,h2 {
+		font-family: "Arial Unicode MS", Arial, sans-serif;
+		font-size: 10pt;
+        margin:0;
+    }
+	td.l, td.r {
+		background-color: White;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(white), color-stop(.2, #bbb), color-stop(.4, #eee));
+        width: 30em;
+        height: 8em;
+		border: 1px dotted #ddd;
+        border-radius: 8px; /*  Só para FF e webKit (Safari, Chrome), por enquanto  */
+           	-moz-border-radius: 8px;
+           	-webkit-border-radius: 8px;
+		margin-bottom: 0.2ex;
+		padding: 0.5ex 2ex;
+    }
+    td.m    {width: 1em}
+    tr.sep  {}
+}

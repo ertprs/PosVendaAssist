@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+<title>- Wanke.com.br :: <?=$page_title?></title>
+<meta name="resource-type" content="document" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="revisit-after" content="1" />
+<meta name="robots" content="ALL" />
+<meta name="distribution" content="Global" />
+<meta name="rating" content="General" />
+<meta name="author" content="Filter Netmarketing" />
+<meta name="language" content="pt-br" />
+<meta name="doc-class" content="Completed" />
+<meta name="doc-rights" content="Private" />
+<style type="text/css">
+<!--
+@import url("http://beta.wanke.com.br/hp_br/../../includes_general/css_1.css");
+-->
+</style><script language="JavaScript" src="http://beta.wanke.com.br/hp_br/../includes/script.js"></script>
+
+<script type="text/javascript" language="JavaScript1.2" src="http://beta.wanke.com.br/hp_br/../../includes_general/generic_validate.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="http://beta.wanke.com.br/hp_br/../../includes_general/menu_api.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+var isHorizontal=0;
+
+var iconTopWidth  = 16;
+var iconTopHeight = 16;
+var subMenuAlign = "left";
+var moveImage  = "http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/movepic4.gif";
+var moveWidth      = 12;
+var moveHeight      = 18;
+
+var blankImage="http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/blank.gif";
+var fontStyle="normal 8pt Arial";
+var fontColor=["#393995","#393995"];
+var fontDecoration=["none","none"];
+
+var itemBackColor=["#E6E7E7","#CCCCCC"];
+var itemBorderWidth=0;
+var itemAlign="left";
+var itemBorderColor=["#c0e0FF","#80A0FF"];
+var itemBorderStyle=["solid","solid"];
+var itemBackImage=["",""];
+
+var menuBackImage="";
+var menuBackColor="#ffffff";
+var menuBorderColor="#000000";
+var menuBorderStyle="solid";
+var menuBorderWidth=0;
+var transparency=100;
+var transition=0;
+var transDuration=300;
+var shadowColor="#ffffff";
+var shadowLen=0;
+var menuWidth="99px";  // NEW (NN% or NNpx. Default - 0px)
+
+var statusString="Wanke.com.br";
+var iconWidth=16;
+var iconHeight=16;
+var arrowImageMain=["http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/arrow_r.gif","http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/arrow_r.gif"];
+var arrowImageSub=["http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/arrow_r.gif","http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/arrow_r.gif"]; // NEW
+var arrowWidth=7;
+var arrowHeight=7;
+var itemSpacing=1;
+var itemPadding=2;
+
+var separatorImage="http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/separ1.gif";
+var separatorWidth="100%";
+var separatorHeight="30";
+var separatorAlignment="center";
+
+var separatorVImage="http://beta.wanke.com.br/hp_br/../../includes_general/menu_imgs/separv1.gif";
+var separatorVWidth="15";
+var separatorVHeight="36";
+
+var movable=0;
+var absolutePos=1;
+var posX=1;
+var posY=1;
+
+var itemCursor = "hand";
+var itemTarget = "_self";
+var moveCursor = "move";
+
+var floatable=1;
+var floatIterations=5;
+
+var menuItems =
+[
+    ["&nbsp;&nbsp;Empresa","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=historia","","","Conheça a Wanke","_self"],
+    ["|&nbsp;&nbsp;História","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=historia","","",""],
+    ["|&nbsp;&nbsp;Ideologia","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=ideologia","","",""],
+    ["|&nbsp;&nbsp;Mercado","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=mercado","","",""],
+    ["|&nbsp;&nbsp;Notícias Históricas","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=not_historicas","","",""],
+    ["|&nbsp;&nbsp;Meio Ambiente","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=meio_ambiente","","",""],
+    ["|&nbsp;&nbsp;Responsabilidade Social&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=resp_social","","",""],
+	["|&nbsp;&nbsp;Galeria de Fotos&nbsp;&nbsp;","../galeria_fotos/index.php","","",""],
+    
+	["&nbsp;&nbsp;Produtos","http://beta.wanke.com.br/hp_br/produtos/index.php","","","Conheça os Produtos da Wanke"],
+			["|&nbsp;&nbsp;Lavadoras&nbsp;&nbsp;","","","",""],
+						["||&nbsp;&nbsp;Agitaço&nbsp;&nbsp;","","","",""],
+									["|||&nbsp;&nbsp;Tradicional&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=tradicional","","",""],
+										["|||&nbsp;&nbsp;Fiber&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=fiber","","",""],
+										["|||&nbsp;&nbsp;Space&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=space","","",""],
+										["|||&nbsp;&nbsp;Maria&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=maria","","",""],
+									["||&nbsp;&nbsp;Turbilhonamento&nbsp;&nbsp;","","","",""],
+									["|||&nbsp;&nbsp;Standart&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=standart","","",""],
+										["|||&nbsp;&nbsp;Mariana&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=mariana","","",""],
+										["|||&nbsp;&nbsp;Mariana colors&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=mariana colors","","",""],
+							["|&nbsp;&nbsp;Centrífugas&nbsp;&nbsp;","","","",""],
+					["||&nbsp;&nbsp;Inova&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=inova","","",""],
+						["||&nbsp;&nbsp;Sonare&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=sonare","","",""],
+						["||&nbsp;&nbsp;Inova colors&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=inova colors","","",""],
+					["|&nbsp;&nbsp;Fogões&nbsp;&nbsp;","","","",""],
+					["||&nbsp;&nbsp;Innovate 4 bocas&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=Innovate 4 bocas","","",""],
+						["||&nbsp;&nbsp;Innovate 4b plus&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=Innovate 4b plus","","",""],
+						["||&nbsp;&nbsp;Innovate 6 bocas&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=Innovate 6 bocas","","",""],
+						["||&nbsp;&nbsp;Innovate 6b plus&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/produtos/index.php?prd_id=Innovate 6b plus","","",""],
+				
+	["&nbsp;&nbsp;Atendimento","",""],
+	["|&nbsp;&nbsp;Assistência Técnica","http://www.telecontrol.com.br/mapa_rede/wanke.php",""],
+	["|&nbsp;&nbsp;Representantes&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/busca_representantes/index.php","","",""],
+	["|&nbsp;&nbsp;Manuais dos produtos&nbsp;&nbsp;","http://beta.wanke.com.br/hp_br/assistencia_tecnica/manual.php","","",""],
+    ["&nbsp;&nbsp;Notícias","http://beta.wanke.com.br/hp_br/noticias/index.php","","",""]
+];
+
+//
+apy_init();
+</script><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<div class="BT_AR"><a href="http://beta.wanke.com.br/hp_br/home/ar_login.php">Área Restrita</a> </div>
+<div class="BT_FC"><a href="http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=falecom">Fale Com</a> </div>
+<div class="BT_PR"><a href="http://beta.wanke.com.br/hp_br/empresa/index.php?emp_id=parceiros">Parceiros</a> </div>
+
+<div class="TOPO_OUTER">
+<div class="TOPO_INTER">
+<img src="http://beta.wanke.com.br/hp_br/../../arquivo_imagens/banner_capa/1.jpg" width="453" height="82" border="0" align="left" alt="- Bem vindo(a) -">
+<a href="http://beta.wanke.com.br/hp_br/../home/index.php"><img src="http://beta.wanke.com.br/hp_br/../../arquivo_imagens/gerais/logomarca_wanke.gif" width="208" height="60" border="0" align="right"></a>
+</div>
+</div>

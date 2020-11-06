@@ -1,0 +1,7 @@
+div.formulario, .no-print{
+	display:none !important;
+}
+
+table.tabela{
+	width:100% !important;
+}

@@ -1,0 +1,206 @@
+/*   
+Author URI: http://olivasdigital.com.br/
+Developer: Vitor Breda
+Date: 07/11/2014
+Description: Neste arquivo contém os estilos que são utilizados nas páginas de Contato. 
+*/
+@media all and (min-width: 641px) {
+    
+#contato .content-pages{
+    background:#fff;
+    padding-top:20px;
+    padding-left:20px;
+    overflow:hidden;
+    padding-bottom:40px;
+}
+
+#contato .intro-contact{
+    font-family:Raleway-Medium;
+    font-size:14px;
+    line-height:18px;
+    color:#777675;
+    margin-bottom:30px;
+}
+
+#contato .frm-contato{
+   float:left;
+   width:520px;
+}
+
+#contato .adress-assitencia{
+    float:right;
+    width:320px;
+    background:#f3f3f2;
+    border-radius:3px;
+    padding:30px 20px;
+}
+
+#contato .adress-assitencia .assist-tel{
+    margin-bottom: 33px;
+}   
+
+#contato .adress-assitencia .infos-adress{
+    padding: 0 30px 0 40px;
+    margin-top:30px;
+}
+
+#contato .adress-assitencia .infos-adress .unit{
+    font-family:Raleway-Bold;
+    font-size:14px;
+    text-transform:uppercase;
+    color:#006d69;
+    margin-bottom:10px;
+    padding-left:10px;
+    background:url(imgs/icon-geolocation.png) no-repeat left center;
+}
+
+#contato .adress-assitencia .infos-adress p{
+    font-family:Raleway-Medium;
+    font-size:12px;
+    color:#343434;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+.frm-default .row{
+    margin-bottom:20px;
+    clear:both;
+    overflow:visible;
+    display:table;
+    width:100%;
+}
+
+.frm-default label{
+    display:block;
+    font-family:Raleway-Bold;
+    font-size:14px;
+    color:#777675;
+    text-transform:uppercase;
+    margin-bottom:2px;
+}
+
+.frm-default .input-text{
+    border:1px solid #cccccc;
+    font-family:Raleway-Regular;
+    font-size:14px;
+    height:36px;
+    padding:0px 30px 0px 10px;
+    margin:0;
+    color:#3e3e3e;
+    border-radius:3px;
+}
+
+.frm-default .input-text.error{ 
+    border:1px solid #e30000;
+    background: url(imgs/icon-error-input.png?1) 496px center no-repeat;
+}
+
+.frm-default .data .input-text{
+    width:480px;
+}
+
+.frm-default .data-half{
+    float:left;
+    width:250px;
+    margin-right:20px;
+}
+
+.frm-default .data-half.no-margin{
+    margin-right:0px;
+}
+
+.frm-default .data-half .input-text{
+    width:209px;
+}
+
+
+#contato div.fancy-select div.trigger {
+    margin-top:2px;
+    border:1px solid #cccccc;
+    font-size:14px;
+    padding: 10px 25px 10px 10px;
+}
+
+#contato div.fancy-select ul.options {
+    top: 37px!important;
+    font-size:14px;
+}
+
+.frm-default .data-half div.fancy-select div.trigger {
+    width:213px;
+}
+
+.frm-default .data-half div.fancy-select ul.options {
+    width: 248px!important;
+    max-width: 248px!important;
+}
+
+.frm-default .data div.fancy-select div.trigger {
+    width:483px;
+}
+
+.frm-default .data div.fancy-select ul.options {
+    width: 518px!important;
+    max-width: 518px!important;
+}
+
+#contato div.fancy-select ul.options li{
+    padding: 10px;
+}
+
+#contato div.fancy-select div.trigger:after {
+    top: 16px;
+}
+
+#contato div.fancy-select div.trigger.invalid {
+    border: 1px solid #e30000;
+}
+
+.frm-default .input-textarea{
+    border:1px solid #cccccc;
+    font-family:Raleway-Medium;
+    font-size:14px;
+    padding:10px;
+    margin:0;
+    color:#3e3e3e;
+    border-radius:3px;
+    width:500px;
+    max-width:521px;
+    height:135px;
+}
+
+.frm-default .input-textarea.error {
+    border: 1px solid #e30000;
+}
+
+.frm-default .input-submit{
+    display:block;
+    float:right;
+    width: 100px;
+    text-align: center;
+    font-family: Chalet_Comprime;
+    font-size: 25px;
+    color: #eff0d9;
+    background: #006d69;
+    border: none;
+    border-radius: 3px;
+    padding: 9px 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px 0px #005e5b;;
+}
+
+.frm-default .input-submit:hover{
+    background:#00837e
+}
+
+.frm-default .input-submit:active{
+    background:#006d69;
+}
+.sucesso{
+	color: #006d69;
+	font-family: Raleway-Medium;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 10px 20px 0;
+}
+}

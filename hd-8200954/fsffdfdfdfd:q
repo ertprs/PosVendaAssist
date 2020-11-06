@@ -1,0 +1,193 @@
+[1mdiff --git a/box_uploader.php b/box_uploader.php[m
+[1mindex d6717f1..c915a90 100644[m
+[1m--- a/box_uploader.php[m
+[1m+++ b/box_uploader.php[m
+[36m@@ -391,6 +391,7 @@[m [mfunction File(tdocs) {[m
+     )[m
+     [m
+     const createThumbnail = (res) => {[m
+[32m+[m[32m        console.log('res');[m
+         console.log(res);[m
+         let src       = null;[m
+         let elem      = null;[m
+[1mdiff --git a/plugins/fileuploader/fileuploader-iframe.php b/plugins/fileuploader/fileuploader-iframe.php[m
+[1mindex ab0438e..31f2760 100644[m
+[1m--- a/plugins/fileuploader/fileuploader-iframe.php[m
+[1m+++ b/plugins/fileuploader/fileuploader-iframe.php[m
+[36m@@ -389,7 +389,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+             <div class="env-fileupload">[m
+                 <input id="fileupload" type="file" name="files[]" multiple onchange="readURL($(this))">[m
+                 <p id="icon"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span></p>[m
+[31m-                <p><?=traduz("Clique ou Arraste um arquivo nessa area")?></p>[m
+[32m+[m[32m                <p><?=traduz("Clique ou arraste um arquivo nessa area")?></p>[m
+             </div>[m
+         </div>[m
+     </div>[m
+[36m@@ -634,9 +634,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+ 	$(document).on("click", ".box-uploader-download-arquivo", function() {[m
+ 	        var link = $(this).data("link");[m
+ 	        var arquivo = $(this).data("arquivo");[m
+[31m-            console.log(arquivo);[m
+[31m-		var id = $(this).data("uniqueid");[m
+[31m-		console.log(link);[m
+[32m+[m		[32m    var id = $(this).data("uniqueid");[m
+ 	        window.open("fileuploader-download-arquivo.php?hash="+id+"&l="+btoa(link)+"&a="+arquivo);[m
+     	});[m
+ [m
+[36m@@ -684,7 +682,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+         }[m
+ [m
+         $(".tdocs-load").each(function(idx, elem){[m
+[31m-            var img = $(this);[m
+[32m+[m[32m            var img = $(this);[m[41m [m
+             var id = img.attr("data-uniqueid");[m
+             loadImage($(elem).data("uniqueid"),function(response){[m
+                 if (debug) {[m
+[36m@@ -770,11 +768,20 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+                 });[m
+             });[m
+ [m
+[32m+[m[32m        var cancelButton = $('<button/>')[m
+[32m+[m[32m        .addClass('btn btn-secondary btn-cancel-upload')[m
+[32m+[m[32m        .toggleClass('fa-cancel-circled2')[m
+[32m+[m[32m        .text('Remover')[m
+[32m+[m[32m        .on('click', function () {[m
+[32m+[m[32m                        $('.row-fluid ').fadeOut(1000);[m
+[32m+[m[32m                    });[m
+[32m+[m[32m        ;[m
+[32m+[m
+         $(".btn-remove-upload").click(removeButtonAction);[m
+ [m
+ [m
+         $('#fileupload').fileupload({[m
+[31m-            url: "uploader.php?context=<?=$contexto?>&reference_id=<?=$referenceId?>&hash_temp=<?=$hash_temp?>&descricao=<?=$dados_descricao?>",[m
+[32m+[m[32m            url: "uploader.php?context=<?=$contexto?>&reference_id=<?=$referenceId?>&hash_temp=<?=$hash_temp?>&descricao=<?=$dados_descricao?>",[m[41m    [m
+             dataType: 'json',[m
+             autoUpload: false,[m
+             // acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,[m
+[36m@@ -795,10 +802,11 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+ [m
+              // data.context = $('<div/>').appendTo('#files');[m
+ [m
+[31m-            var div = $("<div class='row-fluid '>");[m
+[32m+[m[32m            var div = $("<div class='row-fluid' row='"+ row +"' >");[m
+[32m+[m[32m            row++;[m
+ [m
+             if (visible = 1) {[m
+[31m-                $('.upload-bar').empty();[m
+[32m+[m[32m                // $('.upload-bar').empty();[m
+                 data.context = $(div).appendTo(".upload-bar")[m
+                 $('.upload-bar').fadeIn();[m
+                 $('#env-send-all').css('display', 'block');[m
+[36m@@ -816,18 +824,22 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+ [m
+             var div1 = $("<div class='col-md-4 col-sm-4 '>");[m
+ [m
+[31m-            var div2 = $("<div class='env-buttons col-md-2 col-sm-2' style='text-align: center'></div>");[m
+[32m+[m[32m            var div2 = $("<div class='env-button col-md-2 col-sm-2' style='text-align: center'></div>");[m
+[32m+[m
+[32m+[m[32m            var cdiv = $("<div class='cancel-button col-md-2 col-sm-2' style='text-align: center'></div>");[m
+ [m
+             if (descricao == "true"){[m
+                 var campo_descricao = $("<div class='col-md-2 col-sm-2'><p><b>"+dados_descricao+"</b></p></div>");[m
+             }[m
+ [m
+[31m-            var button = uploadButton.clone(true);[m
+[32m+[m[32m            var cancelBtn = cancelButton.clone(true);[m
+[32m+[m[32m            var uploadBtn = uploadButton.clone(true);[m
+ [m
+[31m-            $(button).data(data);[m
+[32m+[m[32m            $(uploadBtn).data(data);[m
+[32m+[m
+[32m+[m[32m            $(div2).append(uploadBtn);[m
+[32m+[m[32m            $(cdiv).append(cancelBtn);[m
+ [m
+[31m-            $(div2).append(button);[m
+[31m-            [m
+             if(comboboxContextOptions != null){[m
+                 var div3 = $("<div class='col-md-4 col-sm-4'>");[m
+                 var select = $("<select  class='form-control input-xs'>");[m
+[36m@@ -859,6 +871,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+                 $(div).append(campo_descricao);[m
+             }[m
+             $(div).append(div2);[m
+[32m+[m[32m            $(div).append(cdiv);[m
+             $(div).append(div3);[m
+             $(div).append(divCursor);[m
+             [m
+[36m@@ -905,7 +918,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+             }[m
+ [m
+             var string = $("<span class='tdocs-load is-image' style='margin-top: 5px !important;margin-left: 15px !important;float: left;'>" + file.name + "</span>");[m
+[31m-            divs[4].append(string[0]);[m
+[32m+[m[32m            divs[5].append(string[0]);[m
+ [m
+             if (file.preview) { [m
+                 divs[1].append(file.preview);                    [m
+[36m@@ -917,7 +930,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+                 node.append($('<span class="text-danger"/>').text(file.error));[m
+             }[m
+             if (index + 1 === data.files.length) {[m
+[31m-                data.context.find('button')[m
+[32m+[m[32m                data.context.find('.btn-make-upload')[m
+                     .text('Upload')[m
+                     .prop('disabled', !!data.files.error);[m
+             }[m
+[36m@@ -948,8 +961,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+ [m
+             fileInfo['fileId'] = data.result;[m
+ [m
+[31m-            tableAdd(fileInfo, row);[m
+[31m-            row++; [m
+[32m+[m[32m            tableAdd(fileInfo, row);[m[41m [m
+ [m
+             hideInfo();[m
+ [m
+[36m@@ -1103,7 +1115,6 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+ [m
+     function removeRow(field)[m
+     {[m
+[31m-        console.log(field);[m
+         var tdocsId    = field.data("tdocsid"); [m
+         var row        = field.parents(".gallindex");[m
+         [m
+[36m@@ -1122,7 +1133,7 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+     function deleteAction(field)[m
+     {[m
+         field.prop('disabled', true);[m
+[31m-        field.html('<i class="fa fa-spinner fa-w-16 fa-spin fa-lg"></i>');[m
+[32m+[m[32m        field.html('<i class="fas fa-spinner fa-pulse fa-sm"></i>');[m
+         removeRow(field);[m
+     }[m
+ [m
+[36m@@ -1140,10 +1151,8 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+             }[m
+         });[m
+ [m
+[31m-        // if((file['fileData'].type).search('image') != '-1' && imageSource) {[m
+[31m-        //     img = '<img src="' + imageSource + '"alt="' + file['fileData'].name + '"/>'[m
+[31m-        // } else[m
+[31m-            var img = '<i id="icon-placeholder" class="fas fa-file-image"></i>'[m
+[32m+[m[32m        var img = '<i id="icon-placeholder" class="fas fa-file-image"></i>';[m
+[32m+[m[32m        var teste =  window.parent.File.createThumbnail; console.log(teste);[m
+ [m
+         $('.gridbody').append([m
+             '<tr id="gall-0" class="rowa gallindex odd" role="row">'+[m
+[36m@@ -1182,17 +1191,6 @@[m [mvar comboboxContextOptions = window.parent.BoxUploader.types;[m
+                     '</div>'+[m
+                 '</td>'+[m
+             '</tr>');[m
+[31m-[m
+[31m-[m
+[31m-        // $('.btn-delete-file').each(function(i, el) {[m
+[31m-        //     $(this).click(function() {[m
+[31m-        //         if($(this).attr('row') == row) {[m
+[31m-        //             $(this).prop('disabled', true);[m
+[31m-        //             $(this).html('<i class="fa fa-spinner fa-w-16 fa-spin fa-lg"></i>');[m
+[31m-        //             deleteRow($(this));[m
+[31m-        //         }[m
+[31m-        //     })[m
+[31m-        // });[m
+         [m
+     }[m
+ [m

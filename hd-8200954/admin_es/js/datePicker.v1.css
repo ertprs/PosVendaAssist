@@ -1,0 +1,117 @@
+
+a.date-picker {
+	width: 16px;
+	height: 16px;
+	border: none;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(calendar.png) no-repeat; 
+}
+a.date-picker span {
+	margin: 0 0 0 -2000px;
+}
+div.date-picker-holder, div.date-picker-holder * {
+/*	margin: 0;
+	padding: 0;*/
+}
+
+div.date-picker-holder {
+	position: relative;
+}
+div.date-picker-holder input {
+	float: left;
+}
+div.popup-calendar {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: -16px; /* value for IE */
+	padding: 1px;
+	border: 2px solid #596D9B;
+	background: #FEFEFE;
+	color: #000000;
+	overflow:hidden;
+	width: 150px;
+}
+html>body div.popup-calendar {
+	left: 99px; /* value for decent browsers */
+}
+div.popup-calendar div.link-close {
+	float: right;
+}
+div.popup-calendar div.link-prev {
+	float: left;
+}
+div.popup-calendar h3 {
+	font-size: 1.0em;
+	margin: 1px 0 1px 1px;
+}
+div.popup-calendar div.link-next {
+	float: right;
+}
+div.popup-calendar div a {
+	padding: 0px 0px;
+	color: #000000;
+}
+div.popup-calendar div a:hover {
+	background-color: #FFFFFF;
+	color: #1A5BBD;
+}
+div.popup-calendar table {
+	margin: 0;
+}
+* html div.popup-calendar table {
+	display: inline;
+	margin: 0;
+}
+div.popup-calendar table th {
+	background: #596D9B;
+	color:#FFFFFF;
+	width: 17px;
+	height: 13px;
+	text-align: center;
+	padding:0;
+	margin:0;
+	font-size:9px;
+}
+div.popup-calendar table td {
+	background: #eeeeee;
+	color:#000000;
+	width: 17px;
+	height: 13px;
+	text-align: center;
+	padding:0;
+	margin:0;
+	font-size:9px;
+}
+div.popup-calendar table td.inactive {
+	color: #aaaaaa;
+	padding: 0px 0 0;
+}
+div.popup-calendar table th.weekend {
+	background: #596D9B;
+}
+div.popup-calendar table td.weekend {
+	background: #E2E2E2;
+}
+div.popup-calendar table td a {
+	display: block;
+	border: 1px solid #eeeeee;
+	width: 17px;
+	height: 13px;
+	text-decoration: none;
+	color: #2178D8;
+}
+div.popup-calendar table td.today a {
+	border-color: #aaa;
+	background: #E2E2E2;
+}
+div.popup-calendar table td a.selected, div.popup-calendar table td a:hover {
+	background: #4F8EEE; 
+	color: #ffffff;
+}

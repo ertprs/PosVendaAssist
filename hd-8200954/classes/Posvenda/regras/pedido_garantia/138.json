@@ -1,0 +1,8 @@
+{
+  	"verifica_tbl_os_troca": true,
+	"auditorias": [
+		{ "nome": "auditoria_solucao", "status": [167, 209], "status_aprovacao": 209 },
+		{ "nome": "auditoria_os_reincidente", "status": [67,68, 19,139, 90], "status_aprovacao": [19,139,90] },
+		{ "nome": "auditoria_fora_garantia", "status": [206, 207], "status_aprovacao": 207 }
+	]
+}

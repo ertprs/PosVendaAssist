@@ -1,0 +1,8 @@
+{
+    "finaliza_os_obs_obrigatoria": true,
+    "solucao_os" : true,
+    "solucao_os_multiplo": true,
+    "finaliza_os_obs_length": 10,
+    "posto_interno_nao_valida": true,
+    "finaliza_os_verifica_pedido_bonificado": true
+}

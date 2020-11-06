@@ -1,0 +1,10 @@
+{
+	"auditorias": [
+		{"nome": "OS Reincidente", "status": [70,19,139,90,64], "status_aprovacao": [19,139,90,64]},
+		{"nome": "Auditoria pedido de peca", "status": [203,204,205], "status_aprovacao": 204}
+	],
+	"nao_gera_pedido_peca_sem_preco": true,
+	"nao_gera_pedido_peca_sem_preco_troca": true,
+	"verifica_tabela_troca":true,
+	"condicao_garantia": "LIVRE DE DEBITO"
+}

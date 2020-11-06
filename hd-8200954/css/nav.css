@@ -1,0 +1,109 @@
+/*
+make sure that each nav element has 5px space to the right
+NOTE: origionally I was using display: inline. However setting the margin/padding did not work
+So I've changed it to float and it seems to work
+*/
+
+#skipNav {
+	display:none;
+}
+ 
+#topNav li {
+	float: left;
+	padding: 0px 5px 0px 0px;
+	margin: 0px;
+}
+
+#topNav li a {
+	display: block;
+	height: 15px;
+	width: 80px;
+}
+
+
+/*
+because the page is fixed width and we know the width of the nav elements,
+we can set the width of the last nav element to 115px.
+KLUDGE: befor the nav bar was a list and was just a bunch of images, this element displayed properly
+However the lastNavElement div was causing a number of issues especially in safari where it was warapping onto
+the next line I assume becasue the element was actuall longer that it was set to. To get round this I've added a blank
+li element which now does the same job but seems to work.
+*/
+
+/*#lastNavElement {
+	height: 15px;
+	width: 100px;
+	background: #CED5DD;
+	margin: 0px, 0px, 5px, 0px;
+	padding: 0px;
+	border: 1px solid #F00;
+	float: left;	
+}*/
+
+
+
+#topNav #blankLink {
+	display: block;
+	width: 115px;
+	height: 15px;
+	padding: 0px;
+	background: #CCD6E1;
+}
+
+/* regular state for the links */
+
+#topNav #homeLink a {
+	background:  url(/images/home.gif) no-repeat;
+}
+
+#topNav #aboutLink a {
+	background:  url(/images/about.gif) no-repeat;
+}
+
+#topNav #whatLink a {
+	background:  url(/images/what_we_do.gif) no-repeat;
+}
+
+#topNav #workLink a {
+	background:  url(/images/our_work.gif) no-repeat;
+}
+
+#topNav #articlesLink a {
+	background:  url(/images/articles.gif) no-repeat;
+}
+#topNav #contactLink a {
+	background:  url(/images/contact.gif) no-repeat;
+}
+
+#topNav #loginLink a {
+	background:  url(/images/login.gif) no-repeat;
+}
+
+/* over state, selected state and pre-loaded bg's to prevent flickering in IE5 */
+
+#topNav #homeLink a:hover, #topNav #homeLinkSelected a:link, #topNav #homeLink, #topNav #homeLinkSelected {
+	background:  url(/images/home_over.gif) no-repeat;
+}
+
+#topNav #aboutLink a:hover, #topNav #aboutLinkSelected a:link, #topNav #aboutLink, #topNav #aboutLinkSelected {
+	background:  url(/images/about_over.gif) no-repeat;
+}
+
+#topNav #whatLink a:hover, #topNav #whatLinkSelected a:link, #topNav #whatLink, #topNav #whatLinkSelected {
+	background:  url(/images/what_we_do_over.gif) no-repeat;
+}
+
+#topNav #workLink a:hover, #topNav #workLinkSelected a:link, #topNav #workLink, #topNav #workLinkSelected {
+	background:  url(/images/our_work_over.gif) no-repeat;
+}
+
+#topNav #articlesLink a:hover, #topNav #articlesLinkSelected a:link, #topNav #articlesLink, #topNav #articlesLinkSelected {
+	background:  url(/images/articles_over.gif) no-repeat;
+}
+#topNav #contactLink a:hover, #topNav #contactLinkSelected a:link, #topNav #contactLink, #topNav #contactLinkSelected {
+	background:  url(/images/contact_over.gif) no-repeat;
+}
+
+#topNav #loginLink a:hover, #topNav #loginLinkSelected a:link, #topNav #loginLink, #topNav #loginLinkSelected {
+	background:  url(/images/login_over.gif) no-repeat;
+}

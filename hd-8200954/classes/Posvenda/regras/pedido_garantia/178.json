@@ -1,0 +1,4 @@
+{
+	"auditoria_unica": true,
+	"nao_gera_pedido_peca_sem_preco": true
+}

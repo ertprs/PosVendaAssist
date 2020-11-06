@@ -1,0 +1,97 @@
+<link href="js/jquery-ui-1.8.23.custom/development-bundle/themes/base/jquery.ui.accordion.css" rel="stylesheet"  type="text/css" />
+<!--[if IE 7]>
+<style>
+.float-helpdesk:hover span.txt_p {
+	font-size: 11.5px;
+}
+.float-helpdesk:hover img {
+	width: 39px;
+	height: 39px;
+}
+.float-helpdesk:hover span.txt {
+	top: 55px;
+	font-size: 11.5px;
+}
+.submenu_telecontrol {
+	right: 30px;
+}
+.submenu_telecontrol_callcenter {
+	right: 20px;
+}
+.submenu_item {
+	border-radius: 8px 8px 0px 0px;
+	behavior: url(../externos/js/PIE.htc);
+}
+.ui-accordion .ui-accordion-header { 
+	background: linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	border-radius: 13px 13px 0px 0px; 
+	behavior: url(../externos/js/PIE.htc);
+}
+</style>
+<![endif]-->
+
+<!--[if IE 8]>
+<style>
+.float-helpdesk:hover span.txt_p {
+	font-size: 11.5px;
+}
+.float-helpdesk:hover img {
+	width: 39px;
+	height: 39px;
+}
+.float-helpdesk:hover span.txt {
+	top: 55px;
+	font-size: 11.5px;
+}
+.submenu_telecontrol {
+	right: 30px;
+}
+.submenu_telecontrol_callcenter {
+	right: 20px;
+}
+.submenu_item {
+	border-radius: 8px 8px 0px 0px;
+	behavior: url(../externos/js/PIE.htc);
+}
+.ui-accordion .ui-accordion-header { 
+	background: linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	border-radius: 13px 13px 0px 0px; 
+	behavior: url(../externos/js/PIE.htc);
+}
+</style>
+<![endif]-->
+
+<!-- <script src="js/jquery-1.4.2.js"></script> -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".ui-accordion").find("h3").click(function () {
+			$(this).parent("div").find("div").slideToggle('fast');
+		});
+
+		if (window.navigator.appName == "Microsoft Internet Explorer" && (window.navigator.appVersion.match(/MSIE 8.0/gi) || window.navigator.appVersion.match(/MSIE 7.0/gi))) {
+			$(".ui-accordion").each(function() {
+				var i = 0;
+				$(this).find("table > tbody > tr").each(function () {
+					var color = (i % 2) ? "#fafafa" : "#f0f0f0" ;
+					$(this).css("background-color", color);
+					i++;
+				});
+			});
+		}
+
+		var span = $("<span></span>").addClass("ui-header-codigo").attr("title", "Código, link curto!").text("Código").css("bottom", "3px");
+		$("h3.ui-accordion-header").append(span);
+
+		$(".submenu_telecontrol").last("span").css("margin-right", "0px");
+
+		setInterval(function () {
+			if ($("#txt_p").is(":visible")) {
+				$("#txt_p").hide();
+			} else {
+				$("#txt_p").show();
+			}
+		}, 500);
+	});
+</script>
+

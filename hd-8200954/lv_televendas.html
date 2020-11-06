@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Telecontrol - Atendimento</title>
+
+<script type="text/javascript"  src="js/gradient.js"></script>
+<script type="text/javascript"  src="js/niftycube.js"></script>
+
+<!-- include "lv_televendas_cabecalho.php";
+
+/* if (strlen($cook_fabrica)==0 AND ( strlen($cook_login_unico)>0 OR strlen($cook_login_simples)>0)) {
+	include "lv_tvtc_cabecalho.php";
+}else{
+	include "lv_tv_cabecalho.php";
+}*/
+?> -->
+
+<script type="text/javascript">
+window.onload=function(){
+	Nifty("td.title,td.titulo");
+	Nifty("td.cajatexto,div.cajatexto","tl,br");
+}
+</script>
+
+<style type="text/css">
+/*	Definir estilo do título e os textos	*/
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	.titulo {
+		border:  none;
+		margin: 0px;
+		padding: 4px;
+		color: white;
+		position: relative;
+		width: 375px;
+		height: 30px;
+		text-align: center;
+		font-size: 18px;
+		font-family: arial,freesans,garuda,helvetica,verdana,sans-serif;
+		font-weight: normal;
+		vertical-align: middle;
+		background-image: url('./imagens/barra_dg_azul_tc_30.jpg');
+		background-repeat: repeat-x;
+		background-position: left top;
+	}
+
+
+	.cajatexto {
+		font-family:arial, freesans, garuda, helvetica, verdana, sans-serif;
+		padding:	5px;
+		background:	#dbe4ec;
+		color:		#666;
+		font-size:	12px;
+		text-align: justify;
+	}
+
+	.texto {
+		font-family:arial, freesans, garuda, helvetica, verdana, sans-serif;
+		padding:	5px 25px 5px 25px;
+		background:	white;
+		color:		#666;
+		font-size:	11px;
+		text-align: justify;
+		width:		380px;
+	}
+
+/*	Definir estilo dos links	*/
+	a:link, a:visited {
+		text-decoration:none;
+		color:			#00A;
+		font-weight:	bold;
+		border:			none;
+	}
+
+	a:hover {
+		border: 1px #AAA;
+		text-decoration:underline;
+		color: #6b7290;
+	}
+
+/*	Definição do estilo da tabela	*/
+	table {
+		table-layout:	fixed;
+		position:		relative;
+		text-align:		center;
+		left:			0px;
+		width:			380px;
+		margin:			0px;
+		border:			0px;
+		border-spacing:	0px;
+		padding:		0px;
+	}
+
+	table.title {
+	/*	background-image:	url('imagens/fundo_lvtv_tc.png');
+		background-repeat:	no-repeat;
+		background-position:0px 0px;	*/
+		margin: 0px;
+		width: 400px;
+	}
+
+	td.head	{
+		text-align: center;
+		font-size:	12px;
+		font-weight:bold;
+		height:		62px;
+	}
+
+	TR {
+		background: none;
+		margin:		10px;
+		border:		12px white;
+	/*	text-align:	center;		*/
+	}
+
+	td {
+		font-family:verdana, arial, freesans, garuda, helvetica, sans-serif;
+		text-align: left;
+		font-size: 11px;
+		font-weight: bold;
+		padding:	2px 5px 2px 5px;
+	/*	position:	relative;			*/
+	}
+
+	td.title {
+		position:	relative;
+		text-align: center;
+		font-size:	1.2em;
+		color:		#FADB05;
+	}
+
+/*	Outros	*/
+	ul li {
+		color:		#666;
+		font-size:	11px;
+		min-width:	300px;
+		text-align: left;
+	}
+
+	.lista {
+		text-align:		left;
+		float:			left;
+		width:			188px;
+		font-family:	arial, freesans, garuda, helvetica, verdana, sans-serif;
+		padding-bottom:	10px;
+		background:		white;
+		color:			#666;
+	}
+
+/*	Inserir aqui o controle de fábrica, se for TC ou outra para alterar os dados,
+	etc.	*/
+</style>
+</HEAD>
+
+<BODY>
+<TABLE  cellspacing='0'
+		style='table-layout: fixed; width: 400px;'
+		class='gradient 242946 96A0B8 vertical title'>
+	<TR>
+		<TD style='WIDTH: 70px; HEIGHT: 62px;'>
+			&nbsp;
+		</TD>
+		<TD class='head' style='WIDTH: 50px;'>
+				<IMG SRC='imagens/televendas_am_pq.png' ALT='TV Logo'>
+		</TD>
+		<TD style='margin: 12px; WIDTH: 280px;'>
+			<IMG SRC='imagens/televendas_am_bg_new.png' ALT='Televendas'>
+		</TD>
+	</TR>
+</table>
+
+<table  border="0" cellpadding="0" cellspacing="0"
+		style='table-layout: fixed; left: 10px; width: 380px;'>
+ 	<TR>
+		<TD	style= 'height: 6px;'>&nbsp;</TD>
+	</TR>
+	<TR>
+		<td	class='titulo'>Central de Atendimento</td>
+	</TR>
+	<TR>
+		<TD	style= 'height: 6px;'>&nbsp;</TD>
+<!-- 		<IMG SRC='imagens/televendas_fx_bg.png' valign='center'> -->		
+	</TR>
+	<tr>
+		<td class='cajatexto'>Atendimento</td>
+	</tr>
+	<tr>
+		<td class='texto'>Atrav&eacute;s de nosso Atendimento voc&ecirc; pode tirar d&uacute;vidas, fazer sugest&otilde;es, elogios ou reclama&ccedil;&otilde;es sobre nossos produtos e servi&ccedil;os.
+		<br><br>
+		<span  style='padding-left: 20px;'>
+		Fale Conosco: <a href='mailto:lojavirtual@telecontrol.com.br'>clique aqui</a></span>.
+		<br>
+		</td>
+	</tr>
+	<tr>
+		<td class='cajatexto'>Televendas
+		</td>
+	</tr>
+	<tr>
+		<td class='texto'>
+			  Se preferir, efetue suas compras pelo telefone. Utilize o nosso Canal de Televendas, um servi&ccedil;o especial de vendas por telefone da Telecontrol. Uma maneira simples de comprar com o atendimento personalizado dos nossos consultores, que ir&atilde;o orient&aacute;-lo sobre os produtos e op&ccedil;&otilde;es de pagamento mais indicados para voc&ecirc;. Basta ligar para os n&uacute;meros abaixo e fazer o seu pedido.
+		<br>
+		</td>
+	</tr>
+	<tr>
+		<td class='cajatexto'>Atendimento por telefone:
+		</td>
+	</tr>
+	<tr><td>
+		<DIV class='lista'>
+			(14) 3413-6588 Mar&iacute;lia<br>
+			(11) 4063-4230 S&atilde;o Paulo<br>
+			(21) 4063-4180 Rio de Janeiro<br>
+			(19) 4062-9091 Campinas<br>
+		</DIV>
+		<DIV class='lista' style='margin-left: 190px; margin-top: -6em;'>
+			(41) 4063-9872 Curitiba<br>
+			(31) 4062-7401 Belo Horizonte<br>
+			(48) 4052-8762 Florian&oacute;polis<br>
+		</DIV>
+	</td></tr>
+	<tr>
+		<td class='cajatexto'>* Hor&aacute;rio de Atendimento:</td>
+	</tr>
+	<tr>
+		<td class='texto'>
+			<UL style='padding-left: 20px;'>
+				<LI>Segunda &agrave; Sexta das 8h &agrave;s 18h
+				<LI>S&aacute;bado das 8h &agrave;s 12h
+			</UL>
+		</td>
+	</tr>
+</TABLE>
+</BODY></HTML>

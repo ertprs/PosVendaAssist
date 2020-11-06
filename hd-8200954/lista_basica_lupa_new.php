@@ -1,0 +1,1 @@
+admin/lista_basica_lupa_new.php

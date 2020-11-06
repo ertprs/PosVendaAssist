@@ -1,0 +1,190 @@
+#geral .contactenos
+{
+    padding-top: 70px;
+    background-color: #fff;    
+}
+
+#geral .contactenos input, #geral .contactenos textarea
+{
+    text-transform: none;
+    font-size: 12px;
+    color: #4a686d;
+}    
+#geral .contactenos h1
+{
+    width: 149px;
+    height: 19px;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin-left: 38px;
+	background-repeat:no-repeat;
+}
+
+#geral .contactenos .envia-tu-mensaje
+{
+    width: 433px;
+    float: left;
+    margin-right: 37px;
+    font-size: 12px;
+}
+#geral .contactenos .envia-tu-mensaje p
+{
+    color: #4A686D;
+    margin-left: 83px;
+}
+#geral .contactenos .envia-tu-mensaje table
+{
+      margin-left: 83px;
+}
+
+#geral .contactenos .envia-tu-mensaje h2
+{
+    width: 433px;
+    height: 92px;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin-bottom: 22px;
+}
+
+#geral .contactenos .envia-tu-mensaje .txb-nome, #geral .contactenos .envia-tu-mensaje .txb-email
+{
+    background-repeat: no-repeat;
+    width: 292px;
+}
+#geral .contactenos .envia-tu-mensaje .txb-nome input, #geral .contactenos .envia-tu-mensaje .txb-email  input
+{
+    width: 286px;
+    height: 31px;
+    border: none;
+    background-color: Transparent;   
+    margin: 0px;
+    padding: 0px 3px; 
+}
+#geral .contactenos .envia-tu-mensaje .txb-nome, #geral .contactenos .envia-tu-mensaje input.ddd {
+	width: 36px;
+}
+#geral .contactenos .envia-tu-mensaje .txb-nome, #geral .contactenos .envia-tu-mensaje input.telefone {
+	width: 244px;
+}
+
+.contactenos .envia-tu-mensaje .txb-messaje1
+{
+    background-repeat: no-repeat;
+    width: 292px;
+    height: 95px;
+}
+.contactenos .envia-tu-mensaje  textarea.txb-messaje1
+{
+    width: 286px;
+    height: 86px;
+    border: none!important;
+    background-color: Transparent;   
+    margin: 0px;
+    padding: 5px 3px 0 3px; 
+}
+
+.contactenos .envia-tu-mensaje .txb-messaje2
+{
+    background-repeat: no-repeat;
+    width: 232px;
+    height: 35px;
+}
+
+
+#geral .contactenos .sifuenos-aqui
+{
+    width: 490px;
+    height: 245px;
+    float: left;
+}
+
+#geral .contactenos .sifuenos-aqui h2
+{
+    width: 490px;
+    height: 88px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#geral .contactenos .sifuenos-aqui .icones
+{
+    padding-left: 106px;    
+}
+
+#geral .contactenos .sifuenos-aqui .icones a
+{
+    width: 92px;
+    height: 115px;
+    overflow: hidden;
+    text-indent: -9999px;
+    float: left;
+    margin-left: 6px;
+}
+#geral .contactenos .emails
+{
+    width: 433px;
+    height: 336px;
+    float: left;
+    margin-right: 37px;    
+}
+#geral .contactenos .emails p
+{
+    color: #4a686d;
+    padding-left: 118px;
+    font-size: 12px;
+}
+
+#geral .contactenos .emails input.text-emails
+{
+    width: 232px;
+    height: 31px;    
+    border-width: 0px;
+    float: left;
+}
+
+
+
+#geral .contactenos .emails a
+{
+    color: #D32A2F;
+}
+
+#geral .contactenos .emails h2
+{
+    width: 433px;
+    height: 96px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#geral .contactenos .contacto-clientes
+{
+    width: 490px;
+    height: 239px;
+    float: left;
+}
+
+#geral .contactenos .contacto-clientes p
+{
+    color: #4a686d;
+    padding-left: 280px;
+    font-size: 12px;
+}
+
+#geral .contactenos .contacto-clientes a
+{
+    color: #D32A2F;
+}
+
+#geral .contactenos .contacto-clientes h2
+{
+    width: 490px;
+    height: 96px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.btn-contact
+{
+	padding-left:118px;	
+}

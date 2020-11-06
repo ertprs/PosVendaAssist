@@ -1,0 +1,124 @@
+	
+.fisheye{
+	text-align: center;
+	height: 50px;
+	position: fixed;
+	margin: 0 auto;
+	list-style: none;
+}
+
+a.fisheyeItem2
+{
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	width: 40px;
+	position: absolute;
+	display: block;
+	bottom: 0;
+}
+
+.fisheyeItem2 img
+{
+	border: none;
+	margin: 5px auto 0 auto;
+	width: 100%;
+}
+
+.fisheyeItem2 span
+{
+	display: none;
+	position: fixed;
+	z-index: 500;
+}
+.fisheyeContainter
+{
+	background-color: #FFFFFF;
+	height: 50px;
+	width: 200px;
+	left: 500px;
+	position: absolute;
+}
+#fisheye2
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.widget{
+	position: absolute;
+	z-index: 9999;
+	float: left;
+	margin: 1em;
+	list-style: none;
+}
+
+.show{
+	position: absolute;
+	z-index: 9998;
+	float: right;
+	margin: 5em;
+	right: -5px;
+}
+.stickyWidget{
+	padding: 15px 20px;
+	width: 185px;
+	height: 155px;
+	background: url(../imagem/sticky.png) no-repeat center;
+}
+
+.closeWidget{
+	position: absolute;
+	z-index: 99999;
+	top: -5px;
+	left: -5px;
+}
+.stickyWidget>img{
+	display: none;
+}
+
+.stickyWidget textarea{
+	height: 100%;
+	width: 100%;
+	background: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	font-family: 'Marker Felt';
+	overflow: hidden;
+}
+
+
+
+#dock{
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	left: 40%;
+	z-index: 0;
+	list-style: none;
+}
+
+#dock li{
+	float: left;
+}
+
+#dock>li>ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#dock>li>ul>li{
+	position: absolute;
+	top: 0;
+}
+
+#dock span
+{
+	display: none;
+	position: fixed;
+	z-index: 500;
+}

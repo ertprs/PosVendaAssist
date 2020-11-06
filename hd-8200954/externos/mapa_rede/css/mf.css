@@ -1,0 +1,219 @@
+/* CSS Document */
+/*  Mapa da rede autorizada da Masterfrio   */
+/*	Curveycorners para IE:
+ *      CCborderRadius
+		CCborderRadiusTR
+		CCborderRadiusTL
+		CCborderRadiusBR
+		CCborderRadiusBL
+*/
+* {margin:0;padding:0;}
+body {
+	background: white url('../imagens/mf_fundo.jpg') fixed;
+	font-family: Segoe UI, Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+img#menu_sup {border: 0 transparent solid;margin-top: 1px;cursor:pointer;}
+#mapabr {
+	text-align:center;
+	position:relative;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: 10;
+}
+img {border: 0 transparent solid;cursor: pointer}
+
+div#postos_estado {
+	display: none;
+	position:relative;
+	width: 1050px;
+	text-align: left;
+	height: 380px;
+	z-index: 1;
+	background: transparent url(../imagens/mf_tbl_bg.png) 0 0 repeat-y;
+	_background: transparent url(../imagens/mf_tbl_bg_ie.png) no-repeat;
+	background-image: -moz-linear-gradient(left, #70C5E6, rgba(112,197,230,0.7) 75%, rgba(112,197,230,0.15));
+    background-image: -webkit-gradient(linear, left center, right center, from(#70C5E6), color-stop(75%, rgba(112,197,230,0.7)), to(rgba(112,197,230,0.15)));
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	margin-top: 1em;
+	padding-top: 1em;
+}
+div#postos_estado div#voltar {
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	width: 32px;
+	height:32px;
+	/*visibility: hidden;*/
+	cursor: pointer;
+	z-index: 100;
+}
+div#postos_estado #nome_estado {
+	border-radius:12px;
+	-moz-border-radius:12px;
+	background: #0F87B6 url("../imagens/mf_mapa_ico.gif") no-repeat 1ex 3px;
+	color:white;
+	font:bold 16px Segoe UI,Trebuchet,Verdana,Arial,Helvetica,sans-serif;
+	height:30px;
+	margin:auto 1.5ex;
+	padding:1ex 0 0 48px;
+	text-align:left;
+	vertical-align:middle;
+}
+select#estado {
+	width: 250px;
+}
+div#ul_cidades {
+	position: absolute;
+	top: 60px;
+	width: 250px;
+	background-color: transparent;
+	color: white;
+	margin:0 2ex;
+	height: 90%;
+}
+#ul_cidades select {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	box-shadow:0 0 10px black inset;
+	-moz-box-shadow:0 0 10px black inset;
+	-webkit-box-shadow:0 0 10px black inset;
+	background-color:rgba(255, 255, 255, 0.75);
+	border: 0 solid transparent;
+	height:280px;
+	width: 250px;
+	padding: 1ex 0 0 4px;
+}
+#ul_cidades select option {
+	padding: 2px 1em;
+	background-color: rgba(255, 255, 255, 0);
+	border-bottom: 1px lightgrey dashed;
+	border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+#ul_cidades select option:hover {
+	background-color: #8bcbe3;
+}
+
+#ul_cidades h4 {
+	background-color: #0F87B6;
+	border-radius: 8px;
+    -moz-border-radius: 8px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	padding-left: 1ex;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+/*  Tabela de postos    */
+div#tbl_postos {
+	position: absolute;
+	top: 60px;
+	left: 270px;
+	width: 750px;
+	background-color: transparent;
+	color: white;
+	height: 80%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#tbl_postos table#postos {
+	table-layout: fixed;
+	width: 696px;
+	border-collapse: separate;
+	border-spacing: 2px;
+	color: white;
+	font-size: 11px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+table#postos caption {
+	margin-bottom: 5px;
+	padding-left: 1ex;
+	font-size: 1.1em;
+	line-height: 2em;
+	background-color: #0f87b6;
+	border-radius: 10px;
+    -moz-border-radius: 10px;
+	width: 696px;
+}
+table#postos thead th {
+	background-color: #0F87B6;
+	vertical-align: middle;
+	font-size: 1.1em;
+	height: 20px;
+}
+table#postos thead th:first-child {
+    -moz-border-radius: 8px 0 0 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+table#postos thead th:last-child {
+    -moz-border-radius: 0 8px 8px 0;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+#tbl_postos table#postos tbody tr {
+	border-bottom: 1px solid white;
+	font-size: 1.1em;
+	border-bottom: 1px white solid;
+}
+#tbl_postos table#postos tbody tr:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+#tbl_postos table#postos tbody tr td {
+	border-bottom: 1px solid white;
+	font-size: 1em;
+	overflow: hidden;
+	width: 150px;
+	padding: 0.5ex 1em;
+	margin: 0;
+}
+#tbl_postos table#postos tbody tr td.ell {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+table#postos tbody td+td {width: 200px}
+table#postos tbody td+td+td {width: 80px;text-align: right}
+table#postos tbody td+td+td+td {width: 32px;text-align:center}
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+
+.btn-info.active {
+  color: rgba(255, 255, 255, 0.75);
+}

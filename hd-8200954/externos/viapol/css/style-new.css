@@ -1,0 +1,396 @@
+.main-logo{
+	height:80px;}
+
+.gradient{
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	}
+
+.left{
+	float:left;}
+
+.right{
+	float:right;}
+
+.full-width{
+	width:100%;
+}
+
+.uppercase{text-transform: uppercase;}
+.uncap{text-transform: capitalize!important;}
+
+.tac, .alignc{text-align:center;}
+
+.list_no-style{
+	padding:0px;}
+
+
+.flex .list_no-style{
+	position:absolute;
+	width:100%;
+	bottom:0px;}
+
+.list_no-style li{
+	list-style-type:none;
+}
+
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+
+section.module.parallax {
+  height:250px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex{
+	display:flex;
+	align-items:stretch;}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+	
+
+}
+
+@media all and (max-width:960px){
+	.brand_products li{
+		flex-basis:33%;
+	}	
+}
+	
+@media all and (max-width:667px){
+	.brand_products li{
+		flex-basis:100%;
+				padding:20px 0px !important;
+	}	
+}
+
+.menu_new{
+	z-index:100;
+	display:block;
+	position:relative;
+	float:none;
+	padding:0px;
+	overflow:visible !important;
+	}
+
+.menu-gradient{
+	z-index: 100;
+	padding:10px 0px 20px 0px;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	position: relative;
+		}
+
+footer h5{
+	margin:0px;
+	font-size:20px;
+	color:#81AD19;
+	font-weight:bold;
+	text-transform:uppercase;}
+
+footer li{
+	padding:5px 0px;
+}
+
+footer .size1of3{
+	margin-bottom:20px;
+	}
+
+.new_homepage {
+	background-color:#fff;}
+
+.new_homepage .gradient{
+	background-color:#fff;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	height:100%;
+	position:relative;
+	padding-bottom:115px;
+	}
+		
+		
+.new_homepage .size1of4{
+	overflow: visible !important;
+	z-index:100;
+	position:relative;
+	margin-bottom:20px;
+		}
+
+.new_homepage .top{
+  padding:40px 15px 20px 15px;
+}
+
+.new_homepage .top img{
+	width:50%;
+	display:block;
+	margin:0 auto;
+	position:relative;
+	margin-bottom:15px;
+}
+
+.new_homepage .bottom{
+	margin:0px;
+	background-color:#81AD19;
+}	
+	
+.new_homepage .bottom li{
+	padding:8px 0px;
+	border-bottom:1px solid rgba(255,255,255,.33);
+}	
+
+.new_homepage .bottom li a{
+	color:#fff;		
+	}
+		
+.new_homepage .bottom li a:after{
+	content:"";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 6px;
+	border-color: transparent transparent transparent #fff;
+	display:inline-block;
+	margin-left:10px;
+	
+}
+
+.homepage-parallax{
+	margin-top:-250px;
+	overflow:hidden;
+	}
+
+.plax-background{
+	background-color:#01508E;
+	width: 100%;
+	height: 100vh;
+	opacity: .8;}
+
+.banner_parallax{
+	overflow:hidden;
+	}
+
+.brand-box{
+	z-index:1000;
+	margin-top:100px;	
+}
+
+.brand_logo{
+	margin: 0 auto;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -150px;
+    z-index: 50;
+    width: 310px;
+    height: 310px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+	}
+	
+.brand_logo img{
+	    max-height: 80px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -100%);	
+		}
+
+.brand_head-banner{
+	background-color:#01508E;
+	text-transform:uppercase;
+	padding:10px 20px;
+}
+.brand_head-banner h1{	
+		color:#fff !important;	
+				}
+
+.brand_products{
+	padding:0px;
+ 	border-left:1px solid #ccc;}
+
+.brand_products li{
+	font-size:20px;
+	text-align:center;
+	padding:60px 0px;
+}
+
+.btn {
+	text-align:center;
+	display:block;
+	text-transform:uppercase;
+}
+
+
+.btn_green h2{
+	color:#fff;
+	text-align: center;
+	width: auto;
+	position: relative;
+	display: inline-block;
+	background: #81AD19;
+	padding:8px 40px;
+	}
+
+.brand_btn{
+	margin-top:40px;
+	}
+	
+.product_line{
+	padding:0px;
+	}	
+		
+.product_line h1{
+	text-transform:uppercase;
+	}
+	
+.product_prod{
+	position:relative;
+	height:225px;
+	background-size:cover;
+		}
+		
+.product_prod h2{
+	width:80%;
+	position: absolute;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);		
+	text-align:center;
+	font-size:20px;
+	color:#fff;}
+
+.product_bkg{
+	background-color:rgba(129,173,25,.8);
+	height:100%;
+}
+
+.brand_links{
+	padding:0px;}
+	
+.brand_links li{
+	padding:60px 0px 40px 0px;
+}
+	
+.brand_links li img{
+	max-height:80px;
+	max-width:100%;
+	margin:0 auto;
+	display:block;
+}
+
+
+.question a:after{
+	content:"";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 6px;
+	border-color: transparent transparent transparent #81AD19;
+	display:inline-block;
+	margin-left:10px;
+}
+
+.contact_sales h2, .contact_sales .btn{
+	float:left;
+	clear:left;}
+	
+.contact_sales .btn{
+	background: #81AD19;
+	padding:8px 40px;
+	margin-top:10px;
+	color:#fff;		
+	margin-bottom:40px;			
+}
+			
+.contact_sales .btn a{
+	color:#fff;		
+	}
+
+#searchBox{
+	transition:visibility 2s, opacity 2s;
+	visibility:none;
+	opacity:0;
+	}
+/* ** note to design team: putting a hover rule on the search box causes last menu bar item to be unaccessable **  */
+#searchBox:hover{
+	visibility:visible;
+	opacity:1;
+	}	
+
+#searchBox:focus{
+	display:block !important;
+	visibility:visible !important;
+	opacity:1 !important
+	}
+
+.menu_new #searchBar{
+	position:absolute;
+	margin-top:0px;
+	top:0px;
+	left:-166px;
+	
+	}
+	
+#searchBar input{
+	font-size:1em;
+	border:0px;
+	height:34px;
+	padding-left:10px;
+	border:1px solid #cccccc;
+	background-color:#fff;
+	width:200px; 
+	
+	
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

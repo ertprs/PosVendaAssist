@@ -1,0 +1,7 @@
+{
+    "tabela": "tbl_os_produto",
+    "nao_calcula_peca": true,
+    "calcula_visita_km": true,
+	"calcula_excedente_km":30,
+    "visita_mobra": true
+}

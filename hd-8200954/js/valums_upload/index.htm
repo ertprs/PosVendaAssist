@@ -1,0 +1,61 @@
+<html>
+<head>
+    <script src="http://valums.com/theme/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="file-uploader-demo1">      
+
+    <noscript><p>Please enable JavaScript to use file uploader.</p></noscript>         
+
+</div>
+
+
+
+<div>
+
+<link href="http://valums.com/files/2010/file-uploader/fileuploader.css" rel="stylesheet" type="text/css" />
+
+<script src="http://valums.com/files/2010/file-uploader/fileuploader.js" type="text/javascript"></script>
+
+<script>        
+
+    jQuery(function(){
+
+        var uploader = new qq.FileUploader({
+
+            element: document.getElementById('file-uploader-demo1'),
+
+            action: 'server/php.php',
+			params: {
+				informativo: '1245'
+			},
+			multiple: false,
+			onComplete: function(id, fileName, responseJSON){
+			timestamp = new Date().getTime();
+			$("#ultima").css("background-image", "url(server/" + responseJSON.file_path + "?" + timestamp + ")");
+			},
+			allowedExtensions: ['jpg', 'png', 'gif'],
+			messages: {
+				typeError: "São permitidos apenas os seguintes tipos de arquivos: {extensions}",
+				sizeError: "{file} is too large, maximum file size is {sizeLimit}.",
+				minSizeError: "{file} is too small, minimum file size is {minSizeLimit}.",
+				emptyError: "{file} is empty, please select files again without it.",
+				onLeave: "The files are being uploaded, if you leave now the upload will be cancelled."
+			},
+			template: '<div class="qq-uploader">' +
+			'<div class="qq-upload-drop-area"><span>Drop files here to upload</span></div>' +
+			'<div class="qq-upload-button">Enviar arquivo</div>' +
+			'<ul class="qq-upload-list"></ul>' +
+			'</div>'
+        });           
+
+    });     
+
+</script>   
+
+</div>
+<div id="ultima" style="border: 1px solid #333333; width: 200px; height: 200px; background-position: center center; background-image: url(server/uploads/1245_imagem_esquerda.jpg);"></div>
+
+</body>
+</html>

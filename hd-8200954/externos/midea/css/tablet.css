@@ -1,0 +1,34 @@
+@media screen and (orientation:portrait) {
+    body {zoom: 75%;}
+    .bx-pager a {width: 20px; height: 20px;}
+    .linksProdutosRodape a {margin-left: 15px}
+	.containerAssistencia {min-height: 800px;}
+	
+	
+
+	#fancybox-wrap {zoom: 85%; margin-top: 50%!important}
+	
+	.containerDuvidas {min-height: 740px;}
+}
+
+@media screen and (max-width: 1290px){
+	.ajusteRodape{
+		margin-top: 210px;
+	}
+}
+@media screen and (min-width: 1290px) and (max-width: 1366px){
+	.ajusteRodape{
+		margin-top: 270px;
+	}
+}
+@media screen and (min-width: 1366px){
+	.ajusteRodape{
+		margin-top: 310px;
+	}
+}
+
+@media screen and (min-width: 1600px){
+	.ajusteRodape{
+		margin-top: 480px;
+	}
+}

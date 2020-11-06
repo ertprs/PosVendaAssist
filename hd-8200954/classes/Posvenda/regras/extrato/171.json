@@ -1,0 +1,6 @@
+{
+	"fora_garantia_nao_gera": true,
+	"os_garantia": true,
+	"posto_interno_nao_gera": true,
+	"nao_gera_os_auditoria": true
+}

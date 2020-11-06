@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{
+	font-family:Helvetica, Verdana, Arial;
+}
+
+input
+{
+	color:#27689c;
+	font-size:15px;
+}
+
+.leiaMais
+{
+	text-decoration:underline;
+	font-size:11px;
+	color:#01407a;
+}
+
+/**************************/
+/********* FOOTER *********/
+/**************************/
+#footer .amarelo
+{
+	color:#f8b120;
+	font-size:11px;
+}
+
+#footer .azul, #footer .azul a
+{
+	color:#005591;
+	font-size:11px;
+}
+
+/**************************/
+/****** FIM FOOTER ********/
+/**************************/
+
+
+
+/****************************/
+/*********** HOME ***********/
+/****************************/
+
+.destaques_home .dicas
+{
+	color:#FFFFFF;
+	font-size:11px;
+}
+
+.destaques_home .dicas h1
+{
+	color:#f9b322;
+	font-size:14px;
+	/*line-height:35px;*/
+}
+
+.destaques_home .controle_compartilhar_dicas .prevNext
+{
+	text-decoration:none;
+	color:#7d6422;
+	font-size:10px;
+}
+
+
+
+
+
+
+
+.titulo_meioAmbiente
+{
+	color:#828282;
+	font-size:15px;
+}
+
+.titulo_meioAmbiente h1
+{
+	color:#e24f4a;
+	font-size:27px;
+}
+
+
+#menuMeioAmbiente a
+{
+	font-size:0px;
+	overflow:hidden;
+	text-indent:-999px;
+}
+
+#conteudo_meioAmbiente #wrap  h1
+{
+	font-weight:bold;
+	font-size:18px;
+}
+
+#conteudo_meioAmbiente #wrap  h2
+{
+	font-weight:100;
+	font-size:14px;
+}
+
+#conteudo_meioAmbiente
+{
+	line-height:16px;
+}
+#conteudo_meioAmbiente #wrap p
+{
+	font-size:12px;
+}
+
+#conteudo_meioAmbiente #wrap
+{
+	color:#FFFFFF;
+}
+
+.carta_meioAmbiente2
+{
+	/*font-size:12px;*/
+}
+
+
+.produtos .boxes h2
+{
+	font-size:13px;
+	line-height:18px;
+	font-weight:100;
+	color:#002839;
+}
+
+.produtos .boxes_hover
+{
+	opacity:0.6;
+	background-image:none;
+	background-color:#FF0000;
+}
+
+#descricoes .texto
+{
+	font-size:13px;
+	line-height:17px;
+	color:#454545;
+}
+
+#descricoes .texto .titulo
+{
+	color:#d3292f;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:16PX;
+}
+
+
+/******************************/
+/****** INTERNA PRODUTOS ******/
+/******************************/
+
+#interna_produtos
+{
+	font-size:11px;
+	color:#454545;
+	line-height:22px;
+	min-height:1000px;
+}
+
+#interna_produtos .conteudo ul
+{
+	list-style:disc;
+	margin-left:15px;
+	
+}
+
+#interna_produtos .conteudo b
+{
+	font-weight:bold;
+}
+
+#interna_produtos .conteudo h1
+{
+	font-size:16px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+#interna_produtos .menu h1
+{
+	color:#01407a;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}

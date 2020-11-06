@@ -1,0 +1,49 @@
+
+#wrapper {
+	text-align: center;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#triax {
+	float: left;
+	width: 242px;
+	height: 100%;
+	text-align: right;
+}
+
+#logo {
+	float: right;
+	width: 475px;
+}
+
+#titulo {
+	float: right;
+	width: 475px;
+}
+
+#texto {
+	float: right;
+	width: 450px;
+	text-align:left;
+	margin-top:25px;
+}
+
+#leftCol {
+	float: left;
+	text-align: right;
+}
+
+#middleCol {
+	float: left;
+	text-align:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#rightCol {
+	float: right;
+
+}

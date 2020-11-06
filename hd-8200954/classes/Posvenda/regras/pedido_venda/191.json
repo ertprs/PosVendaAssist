@@ -1,0 +1,5 @@
+{
+	"auditoria_pedido_obrigatoria": true,
+	"usa_desconto_fabricante": true,
+	"usa_desconto": true
+}

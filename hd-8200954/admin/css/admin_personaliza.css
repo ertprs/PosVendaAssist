@@ -1,0 +1,120 @@
+/*	CSS para o popup de atualização de dados pessoais do Admin no cabeçalho.	*/
+#userCfg {
+	position:relative;
+	padding-right: 0;
+	margin:auto;
+	width: 510px;
+	/*height: 300px;*/
+	background-color:#FFF;
+	color:#363b61;
+	border-radius: 8px;
+	box-shadow: 0 0 8px black;
+	overflow: hidden;
+	z-index: 200;
+	font: normal 12px Segoe UI, Arial, Helvetica, sans-serif;
+}
+h2#cfgHeader {
+	top:0;
+	left:0;
+	margin: 0;
+	padding-left: 20px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 4px 4px 0 0;
+	right: 1em;
+	color: #555555;
+	background-color: #596d9b;
+	/*background-color: rgba(192, 64, 64, 0.75);*/
+	color: white;
+	font-size: 14px;
+}
+#btnFechar {
+	float: right;
+	margin: 2px 6px 0 0;
+	background-color: #a00;
+	color: white;
+	font-weight: bold;
+	width: 22px;
+	height:20px;
+	line-height: 8px;
+	border-radius: 4px;
+	border: 0 solid transparent;
+	vertical-align: top;
+}
+#btnFechar:hover{
+	/* border: 1px solid white; */
+	background-color: #c00;
+}
+
+#dia,#mes {
+	text-align:right;
+    width: 6em;
+}
+#usrData {
+	padding: 1em;
+}
+#usrData label {
+	text-align: right;
+	display: inline-block;
+	width: 12em;
+	padding-right: 5px;
+}
+input{
+	background-color: #f9f9f9;
+	border: 1px solid #999;
+	padding: 4px;
+	border-radius: 4px;
+	margin-bottom: 3px;
+}
+button{
+	background-color: #ddd;
+	border: 1px solid #999;
+	padding: 7px;
+	border-radius: 4px;
+	margin-bottom: 3px;
+}
+button:hover{
+	cursor: pointer;
+}
+/*
+input:invalid {
+	background-color: #fcc;
+	color: #900;
+	outline: 1px dashed red;
+ }
+input:focus:invalid {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC');
+	background-position: right top;
+	background-repeat: no-repeat;
+	-moz-box-shadow: none;
+	padding-right: 20px;
+}
+input:valid {
+	background-color: #D9E2EF;
+	color: #009;
+ }
+input:focus:valid {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=');
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 20px;
+}
+input[type=number]:valid,
+input[type=number]:invalid {
+	background-position: left top;
+	padding-right: 0;
+}
+*/
+#usrPic {
+	float: left;
+	clear: none;
+	min-height:80px;
+	min-width: 80px;
+	max-width: 110px;
+	max-height:120px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 4px #999;
+	border-radius: 4px;
+	behavior: url(../js/PIE.php);
+}
+

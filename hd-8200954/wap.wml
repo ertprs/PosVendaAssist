@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+"http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<card id="pergunta" title="Assuntos">
+<p align="center"><br />
+<select name="name"> 
+<option value="um">telecontrol</option>
+<option value="dois">networking</option>
+<option value="tres">Teruo</option>
+<option value="quatro">Selma</option>
+<option value="cinco">Isto é um teste</option>
+<option value="seis">e funciona!!!!</option>
+</select>
+<br />
+<a href="#pergunta2">Próxima</a>
+
+</p>
+</card>
+
+<card id="pergunta2" title="Assuntos 2 tbm">
+<p align="center"><br />
+entre OS <br />
+<input type="texto" name="teste">
+</p>
+</card>
+</wml>

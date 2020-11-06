@@ -1,0 +1,934 @@
+<table border="1">
+  <tr>
+    <th align="center">os</th>
+    <th align="center">descricao</th>
+    <th align="center">ressarcimento</th>
+    <th align="center">troca_revenda</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">10909810</td>
+    <td align="left">Termostato Descalibrado</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11397807</td>
+    <td align="left">Ferrugem/Oxidação</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11520265</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11338879</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11338895</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11338948</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903926</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903925</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903929</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903927</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903930</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903924</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903928</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10307092</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10462577</td>
+    <td align="left">Potência Acima do Nominal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10418920</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10547396</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11002526</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10335254</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10699193</td>
+    <td align="left">Termostato Descalibrado</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10621076</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10561353</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11445800</td>
+    <td align="left">Uso inadequado</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11447050</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11321666</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10461406</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10547395</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10561613</td>
+    <td align="left">Potência Acima do Nominal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10855479</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10942878</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11350664</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11601742</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10929826</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11644883</td>
+    <td align="left">Uso inadequado</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10547394</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11708728</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11349394</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11866399</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903088</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903089</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903087</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903086</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903084</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903755</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11903754</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910470</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910475</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910474</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910471</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910473</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910472</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910477</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910479</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910476</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910478</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910480</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910485</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910484</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910483</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910481</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910482</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910490</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910488</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910489</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910487</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910486</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910493</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910494</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910492</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910491</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910495</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910496</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910497</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11910498</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911758</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911756</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911757</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911759</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911761</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11911760</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11662951</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12104062</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12104062</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">t</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12387600</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12433925</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174477</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174478</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174479</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174480</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174482</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12174481</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10460649</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11937650</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933325</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933330</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933329</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933331</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933324</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933322</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933327</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933319</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933320</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933328</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933321</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933323</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11933326</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12249344</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12293136</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12325516</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12332092</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12465478</td>
+    <td align="left">Potência abaixo do Nominal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11785723</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12654124</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">t</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12243993</td>
+    <td align="left">Ferrugem/Oxidação</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12086190</td>
+    <td align="left">Ferrugem/Oxidação</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12497394</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11892258</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">12549163</td>
+    <td align="left">Corpo Superior/Inferior Descascando</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754444</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754336</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754336</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754335</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754335</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754440</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754439</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754441</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754333</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754333</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754442</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754332</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754332</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754334</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754334</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">t</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11754443</td>
+    <td align="left">Falha de Montagem/Encaixes (Fabricante)</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11798981</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11798981</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">t</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10969885</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10969886</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10969884</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10967864</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">10967867</td>
+    <td align="left">Falha de componente</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13038400</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">f</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046201</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046200</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046199</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046198</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046197</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046196</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046195</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046194</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046193</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13046192</td>
+    <td align="left">Sem defeito/funcionamento normal</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">13069943</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">t</td>
+    <td align="left">f</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">11157241</td>
+    <td align="left">Ferrugem/Oxidação</td>
+    <td align="left">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+</table>
+<p>(154 registros)<br />
+</p>

@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+.titulo_tela {
+	font-size: 24px;
+	font-family: "Trebuchet MS",Arial,Helvetica,san-serif;
+	font-weight: normal;
+	letter-spacing: 0.4px;
+	line-height: 1.4em;
+	margin-left:18px;
+}
+
+
+.titulo_tela :hover{
+	color: #888F96;
+	text-decoration: underline;
+	cursor: auto;
+}
+
+
+.email_sucesso {
+	font-size: 13px;
+	vertical-align: middle;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-weight: bold;
+	color:green;;
+}
+
+.email_erro {
+	font-size: 13px;
+	vertical-align: middle;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#C6322B;
+}
+
+
+.input_gravar {
+	color:white;
+	height:24px;
+	line-height: 18px;
+	background:#2c3547;
+	cursor: pointer;
+	display: inline-block;
+	border:  1px solid #fff;
+	padding: 0   5px 1px 5px;
+}
+
+.input_gravar:hover {
+	color:#E4C300;
+	border:solid 1px #E4C300;
+}
+
+.erro_campos_obrigatorios{
+	font-size: 11px;
+	vertical-align: middle;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#C6322B;
+}
+
+#manual:hover{
+	color:#C6322B;	
+}
+
+.div_top_principal{
+ 	height:23px;
+	width:950px;
+	background:;
+	border: 0px solid #CCC;
+	padding: 0px;
+	font-size:11px;
+	color:#535252;
+	margin-left:18px;
+ }
+
+.botao_gravar {
+	background:red;
+}
+#mensagem_envio{
+	margin-top:5px;
+}
+
+.email_sucesso {
+	font-size: 13px;
+	vertical-align: middle;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-weight: bold;
+	color:green;;
+}
+
+.email_erro {
+	font-size: 13px;
+	vertical-align: middle;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#C6322B;
+}
+
+ .barra_topo {
+	background: white url('../img/barra_topo.gif');
+	background-repeat: repeat-x;
+	width:948px;
+	height:30px;
+	text-align: center;
+	font-size:10px;
+	color:#262626;
+	border:solid 1px #cccccc;
+	border-bottom:solid 1px white;
+	margin-left:18px;
+ }
+
+.caixa_conteudo{
+	margin-left:18px;
+}
+
+ .barra_topo_login_unico {
+	background: white url('../img/barra_topo.gif');
+	background-repeat: repeat-x;
+	width:948px;
+	height:30px;
+	text-align: center;
+	font-size:10px;
+	color:#262626;
+	border:solid 1px #cccccc;
+	border-bottom:solid 1px white;"
+ }
+
+
+
+/********************************
+ *	CSS Document				*
+ *	Estilo dos formulários      *
+ *  Author: W3Mídia             *
+ *  Author: Manuel López        *
+ *******************************/
+
+/*  Definições gerais   */
+#conteudo form[name!=contato] { /* Qualquer form menos o do login   */
+	border: 0 solid white;
+	width: 100%;
+	margin-left: 10%;
+    font: normal normal 12px arial,helvetica,sans-serif;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+fieldset {
+/*	background-color: white;	*/
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    border: 1px solid #ddd;
+	width:600px;
+	background-color:;
+    padding: 1em;
+    margin: 2em;
+	line-height: 2em;
+behavior: url(/mlg/js/PIE.php);
+}
+
+/*  Redefine os elementos do form  */
+fieldset p {   /*  Formulário com uma coluna   */
+	float: none;
+	text-align: left;
+
+}
+
+fieldset.colunas p {    /* Formulário com duas colunas  */
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+legend {
+	font: normal bold 12px arial;
+	color: #535252;
+	padding:0 1.5em;
+	margin-left: 1em;
+    text-transform: uppercase;
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+	color: #535252;
+    text-align: right;
+	font-weight: bold;
+	margin-right: 0.5ex;
+}
+span {
+	color: #a00;
+	font-size: 0.8em;
+	padding-left: 1em;
+	line-height: 1.4em;
+	text-align: left!important;
+}
+
+input, textarea, select {
+	padding: 1px;
+	background-color: white;
+	border: 1px solid #ccc;
+	height: 20px;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus, select:focus {
+	background-color: white;
+	border: 1px solid #ccc;
+}
+
+input[type=checkbox] + label {
+	font: normal normal 0.9em arial, helvetica, sans-serif;
+	color: #3d3d3d;
+	display: inline;
+	width: auto;
+	padding-left: 1.5em;
+    text-transform: none;
+}
+
+input[type=image] {
+	border: 1px solid #fff;
+	outline: 1px solid #ccc;
+	cursor: pointer;
+}
+
+/*  Definição para formulários específicos  */
+input.cnpjOFF {
+	color: #989898;
+	font: italic normal 11px verdana;
+}
+
+form#verifica p, form#verifica label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: left;
+}
+form#pa_senha label {width: 140px !important;text-align: right}
+fieldset#info_ad label,
+label#descricao_posto {
+	font: normal normal 1em arial, helvetica, sans-serif;
+	color: #3d3d3d;
+	display: block;
+	width: 98%;
+    text-transform: none;
+    margin-top: 1em;
+    text-align: left;
+}
+form fieldset#info_ad textarea {
+	width: 75%;
+	height: 1.3em;
+}
+form fieldset#info_ad textarea:focus {
+	height: 4em;
+	width: 90%;
+    white-space: normal;
+}
+/*  Formulário de entrada login único */
+form fieldset {
+	text-align: left;
+	padding-left: 20px;
+	line-height: 2em;
+    text-align: left;
+}
+form#frm_es label {
+	width: 170px;
+	padding:0;
+	margin: 0;
+	padding-right: 10px;
+	text-align: right;
+}
+
+/*	Formulário de contato	*/
+#formContato {
+	width: 301px;
+	float: right;
+	clear: none;
+	margin-right: 20px;
+	border: 0;
+}
+
+#formContato fieldset {
+	display: block;
+	border: 0;
+	margin: 0;
+	padding:0;
+}
+
+#formContato label {
+	display: block;
+	margin-top: 4px;
+	text-align: left;
+	width: auto;
+}
+
+#formContato input.text,
+#formContato input.fone,
+#formContato textarea.msgtxt {
+	width: 300px;
+	border: 1px solid #ccc;
+	outline-width: 0;
+}
+#formContato input.fone {width: 60%}
+
+#formContato textarea {
+	height: 130px
+}
+
+#formContato input.submit {
+	width: 70px;
+	margin-top: 10px
+}
+
+/*  Formulário de login no cabeçalho */
+#login_box {
+	float: right;
+	width: 212px;
+	height: 84px;
+	margin: 0;
+	padding:0;
+	margin-left: 32px;
+	color: #3d3d3d;
+	font-size: 12px;
+	text-align: right;
+	border: 0 solid transparent;
+    background-color: transparent;
+}
+
+#login_box p {
+	margin-top: 6px;
+	width: 100%;
+	height: 20px;
+}
+
+#login_box label {
+	display: inline;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+#login_box input {
+	margin-left: 20px;
+	margin-right: 2px;
+	width: 135px;
+	height: 18px;
+	background: transparent url('../img/inputLogin.gif') repeat-x;
+	border: 0;
+	outline: 0;
+}
+
+#login_box input.bt {
+	width: 41px;
+	float: right;
+	margin-right: 5px;
+	border:  1px solid #fff;
+	outline: 1px solid #ccc;
+}
+
+#login_box label {
+	width: 45px;
+	float: left;
+}
+
+#login_box a.esqueceuSenha {
+	float: left;
+}
+
+div.fileinput {
+	position: relative;
+	overflow: visible;
+	height: 2em;
+}
+form fieldset img {
+	position: relative;
+	left: 10px;
+	vertical-align: middle;
+	max-width: 40%;
+	height: 48px;
+	max-height: 400px;
+	/*outline: 1px solid yellow;*/
+}
+
+form fieldset img:hover {
+	/*height: 280px;*/
+	/*z-index: 10;*/
+	vertical-align: center;
+	/*left: 20px;*/
+}
+div#ex, div#exlu  {
+	border: 1px solid #d3be96;
+	background-color:#fcf0d8;
+	background-color:rgba(252, 240, 216, 0.6);  /* fundo semi-transparente	*/
+	padding:10px;
+	width:868px;
+	margin:1em 0;
+	font-size: 10px;
+	font-family: arial, trebuchet MS, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #535252;
+	-pie-background: rgba(252, 240, 216, 0.6);  /* fundo semi-transparente	*/
+}
+
+/*   Bordas tipo logo - Só CSS3, hoje: Gecko 1.9.x+ (FireFox 3+) e WebKit 2.x (Chrome 2+ e Safari 3+)  */
+.border_tc_8 {
+	border-radius: 0 8px 0 8px;
+	-moz-border-radius: 0 8px 0 8px;
+behavior: url(/mlg/js/PIE.php);
+}
+.border_tc_6 {
+	border-radius: 0 6px 0 6px;
+	-moz-border-radius: 0 6px 0 6px;
+behavior: url(/mlg/js/PIE.php);
+}
+label.erro_campos_obrigatorios, label.email_sucesso {display:inline}
+span.rss-date {
+	color: #666;
+	line-height: 23px;
+	font-size: 13px;
+	padding: 0 10px;
+}

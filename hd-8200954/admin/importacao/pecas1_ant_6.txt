@@ -1,0 +1,117 @@
+1005013-00        CONJ. BASE E ALMOFADA                           SPI      SPCPT                                   08.00 00000004.96 00001,00
+185493-01         PE BLENDER LF910                                SPPCF    SPHH                                    10.00 00000000.23 00001,00
+596818-00         TAMPA TRASEIRA                                  SPI      SPPPT                                   08.00 00000043.19 00001,00
+596819-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000002.83 00001,00
+596821-00         ROTOR 220V                                      SPI      SPPPT                                   10.00 00000647.69 00001,00
+596822-00         ROLAMENTO DE ESFERAS                            SPI      SPPPT                                   12.00 00000032.51 00001,00
+596823-00         ANEL DE RETENCAO INTERNO                        SPI      SPPPT                                   10.00 00000002.83 00001,00
+596824-00         PORTA ESCOVA                                    SPI      SPPPT                                   10.00 00000038.02 00001,00
+596825-00         ESCOVA DE CARVAO                                SPI      SPPPT                                   10.00 00000032.39 00001,00
+596826-00         ARRUELA                                         SPI      SPPPT                                   10.00 00000002.83 00001,00
+596827-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000002.83 00001,00
+596828-00         CHAPA DE CONTATO                                SPI      SPPPT                                   08.00 00000005.56 00001,00
+596829-00         ANEL DE RETENCAO EXTERNO                        SPI      SPPPT                                   10.00 00000002.83 00001,00
+596830-00         ANEL O RING                                     SPI      SPPPT                                   08.00 00000002.83 00001,00
+596831-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000005.56 00001,00
+596832-00         ROLAMENTO DE ESFERAS                            SPI      SPPPT                                   12.00 00000043.19 00001,00
+596833-00         TAMPA DA CAIXA DE ENGR.                         SPI      SPPPT                                   08.00 00000151.22 00001,00
+596834-00         CAIXA DE ENGRENAGEM                             SPI      SPPPT                                   08.00 00000289.43 00001,00
+596835-00         ENGRENAGEM INTERMEDIARIA                        SPI      SPPPT                                   10.00 00000115.17 00001,00
+596836-00         EIXO PINHAO INTERMED.                           SPI      SPPPT                                   10.00 00000201.63 00001,00
+596837-00         CONJ. ALAVANCA DEVELOCIDADE                     SPI      SPPPT                                   08.00 00000014.40 00001,00
+596838-00         ALAVANCA                                        SPI      SPPPT                                   08.00 00000079.40 00001,00
+596839-00         PINO                                            SPI      SPPPT                                   10.00 00000002.83 00001,00
+596840-00         ROLAMENTO DE ESFERAS                            SPI      SPPPT                                   12.00 00000079.40 00001,00
+596841-00         EIXO                                            SPI      SPPPT                                   10.00 00000151.22 00001,00
+596842-00         CHAVETA                                         SPI      SPPPT                                   08.00 00000002.83 00001,00
+596843-00         FIXADOR DO CONDUTOR                             SPI      SPPPT                                   08.00 00000020.23 00001,00
+596844-00         CONDUTOR                                        SPI      SPPPT                                   05.00 00000011.13 00001,00
+596845-00         JUNTA                                           SPI      SPPPT                                   08.00 00000011.13 00001,00
+596846-00         COBERTURA                                       SPI      SPPPT                                   08.00 00000014.40 00001,00
+596847-00         ENGRENAGEM DE SAIDA                             SPI      SPPPT                                   10.00 00000230.16 00001,00
+596848-00         ARRUELA DE ENCOSTO                              SPI      SPPPT                                   10.00 00000002.83 00001,00
+596849-00         ANEL DE RETENCAO EXTERNO                        SPI      SPPPT                                   10.00 00000002.83 00001,00
+596850-00         EIXO PINHAO                                     SPI      SPPPT                                   10.00 00000172.57 00001,00
+596851-00         ENGRENAGEM DUPLA                                SPI      SPPPT                                   10.00 00000288.01 00001,00
+596852-00         CHAVETA                                         SPI      SPPPT                                   08.00 00000008.39 00001,00
+596853-00         ROLAMENTO DE AGULHAS                            SPI      SPPPT                                   12.00 00000046.72 00001,00
+596854-00         DEFLETOR                                        SPI      SPPPT                                   08.00 00000019.96 00001,00
+596855-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000005.56 00001,00
+596857-00         ESTATOR 220V                                    SPI      SPPPT                                   10.00 00000243.03 00001,00
+596858-00         CAIXA DE CAMPO                                  SPI      SPPPT                                   08.00 00000129.63 00001,00
+596859-00         CAPACITOR                                       SPI      SPPPT                                   10.00 00000027.91 00001,00
+596860-00         TUBO ISOLANTE                                   SPI      SPPPT                                   08.00 00000002.83 00001,00
+596930-00         ELETROMAGNETO                                   SPI      SPPPT                                   05.00 00000491.93 00001,00
+596931-00         CARCACA                                         SPI      SPPPT                                   08.00 00000378.36 00001,00
+596933-00         TAMPA ESPECIF. D21620TIPO 1                     SPI      SPPPT                                   08.00 00000081.35 00001,00
+596934-00         LUVA                                            SPI      SPPPT                                   08.00 00000081.35 00001,00
+596935-00         GUARNICAO DO GUIA                               SPI      SPPPT                                   08.00 00000015.55 00001,00
+596936-00         ENCOSTO DO GUIA                                 SPI      SPPPT                                   08.00 00000010.43 00001,00
+596937-00         PLACA                                           SPI      SPPPT                                   08.00 00000029.24 00001,00
+596938-00         COLUNA DESLIZANTE                               SPI      SPPPT                                   08.00 00000384.19 00001,00
+596939-00         SUPORTE                                         SPI      SPPPT                                   08.00 00000276.44 00001,00
+596940-00         CREMALHEIRA                                     SPI      SPPPT                                   08.00 00000126.12 00001,00
+596941-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.53 00001,00
+596942-00         BUCHA                                           SPI      SPPPT                                   12.00 00000016.52 00001,00
+596943-00         PINHAO                                          SPI      SPPPT                                   10.00 00000150.05 00001,00
+596944-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000001.85 00001,00
+596945-00         MANCAL                                          SPI      SPPPT                                   12.00 00000182.73 00001,00
+596946-00         TRAVA ESFERICA                                  SPI      SPPPT                                   08.00 00000001.15 00001,00
+596947-00         HASTE DE PRESSAO                                SPI      SPPPT                                   08.00 00000029.24 00001,00
+596948-00         BOTAO DA TRAVA                                  SPI      SPPPT                                   08.00 00000015.11 00001,00
+596949-00         MOLA                                            SPI      SPPPT                                   15.00 00000004.68 00001,00
+596950-00         HASTE DO VOLANTE                                SPI      SPPPT                                   08.00 00000012.55 00001,00
+596951-00         TAMPA DA HASTE                                  SPI      SPPPT                                   08.00 00000005.75 00001,00
+596952-00         RESERVATORIO PARA FLUIDO                        SPI      SPPPT                                   08.00 00000189.71 00001,00
+596953-00         INSERTO                                         SPI      SPPPT                                   08.00 00000025.25 00001,00
+596954-00         GRAMPO                                          SPI      SPPPT                                   08.00 00000022.96 00001,00
+596955-00         APOIO                                           SPI      SPPPT                                   08.00 00000011.65 00001,00
+596956-00         PRISIONEIRO                                     SPI      SPPPT                                   08.00 00000002.39 00001,00
+596957-00         INSERTO                                         SPI      SPPPT                                   08.00 00000011.39 00001,00
+596958-00         FIXADOR DO CONDUTOR                             SPI      SPPPT                                   08.00 00000020.23 00001,00
+596959-00         MANIPULO                                        SPI      SPPPT                                   10.00 00000000.53 00001,00
+596960-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000011.65 00001,00
+596961-00         ETIQUETA FANTASIA                               SPI      SPPPT                                   08.00 00000005.83 00001,00
+596962-00         ETIQUETA                                        SPI      SPPPT                                   15.00 00000008.12 00001,00
+596965-00         CABO ELETRICO                                   SPI      SPPPT                                   05.00 00000059.22 00001,00
+596966-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.53 00001,00
+596967-00         TUBO                                            SPI      SPPPT                                   08.00 00000006.97 00001,00
+596968-00         PINO                                            SPI      SPPPT                                   10.00 00000000.53 00001,00
+596971-00         CALCO                                           SPI      SPPPT                                   08.00 00000077.81 00001,00
+596972-00         BUCHA                                           SPI      SPPPT                                   12.00 00000014.67 00001,00
+596973-00         RETENTOR DE OLEO                                SPI      SPPPT                                   08.00 00000020.93 00001,00
+596974-00         RETENTOR DE OLEO                                SPI      SPPPT                                   08.00 00000020.93 00001,00
+596975-00         CONJ. PROT. FIXADOR DOCABO ELETR.               SPI      SPPPT                                   08.00 00000066.24 00001,00
+596976-00         PROTETOR                                        SPI      SPPPT                                   08.00 00000174.16 00001,00
+596977-00         MANIPULO                                        SPI      SPPPT                                   08.00 00000009.72 00001,00
+596978-00         EIXO PORTA FERRAMENTA                           SPI      SPPPT                                   10.00 00000578.84 00001,00
+596979-00         COLAR                                           SPI      SPPPT                                   08.00 00000116.15 00001,00
+596980-00         ANEL O RING                                     SPI      SPPPT                                   08.00 00000001.15 00001,00
+596981-00         ANEL DE RETENCAO INTERNO                        SPI      SPPPT                                   10.00 00000008.39 00001,00
+596982-00         MOLA                                            SPI      SPPPT                                   15.00 00000005.39 00001,00
+596983-00         MOLA                                            SPI      SPPPT                                   15.00 00000020.93 00001,00
+596984-00         TRAVA                                           SPI      SPPPT                                   08.00 00000069.68 00001,00
+596985-00         MOLA                                            SPI      SPPPT                                   15.00 00000005.75 00001,00
+596986-00         PLUGUE                                          SPI      SPPPT                                   08.00 00000005.75 00001,00
+596987-00         PLACA DE APOIO                                  SPI      SPPPT                                   08.00 00000032.24 00001,00
+596988-00         MODULO ELETRONICO 220V                          SPI      SPPPT                                   15.00 00000531.41 00001,00
+596990-00         DISSIPADOR DE CALOR                             SPI      SPPPT                                   08.00 00000002.29 00001,00
+596991-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.88 00001,00
+596992-00         ARRUELA                                         SPI      SPPPT                                   10.00 00000002.29 00001,00
+596993-00         ARRUELA                                         SPI      SPPPT                                   10.00 00000000.53 00001,00
+596994-00         PORCA                                           SPI      SPPPT                                   10.00 00000000.53 00001,00
+596995-00         PRISIONEIRO                                     SPI      SPPPT                                   08.00 00000005.56 00001,00
+596996-00         PORCA                                           SPI      SPPPT                                   10.00 00000000.53 00001,00
+596997-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000001.15 00001,00
+596998-00         INTERRUPTOR                                     SPI      SPPPT                                   15.00 00000011.13 00001,00
+596999-00         INTERRUPTOR                                     SPI      SPPPT                                   15.00 00000011.13 00001,00
+597000-00         ANEL ISOLANTE                                   SPI      SPPPT                                   08.00 00000000.88 00001,00
+597001-00         CONJ. NEON                                      SPI      SPPPT                                   02.00 00000077.11 00001,00
+597003-00         SUPRESSOR                                       SPI      SPPPT                                   15.00 00000053.43 00001,00
+597004-00         INTERRUPTOR                                     SPI      SPPPT                                   15.00 00000011.13 00001,00
+597005-00         TAMPA                                           SPI      SPPPT                                   08.00 00000063.85 00001,00
+597006-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.53 00001,00
+597007-00         PORCA                                           SPI      SPPPT                                   10.00 00000000.53 00001,00
+597008-00         PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.53 00001,00
+597009-00         ARRUELA MOLA                                    SPI      SPPPT                                   10.00 00000000.53 00001,00
+597020-00         CINTA                                           SPI      SPPPT                                   08.00 00000020.67 00001,00

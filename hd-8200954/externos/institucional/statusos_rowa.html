@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" >
+    <head>
+        <meta charset="iso-8859-1" />
+        <title>Telecontrol Institucional</title>
+        <!-- jQuery -->
+        <script type="text/javascript"  src="lib/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        
+        <style>
+            #loading{
+               height: 35px;
+               width: 200px;
+            }
+            #spanContainer{
+                width:100px;
+                height: 40px;
+                display:none;
+            }
+            #map {
+                height:600px;
+                width:600px;
+            }
+            .infoWindowContent {
+                font-size:  14px !important;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+            }
+            h2 {
+                margin-bottom:0;
+                margin-top: 0;
+            }
+            #link, #link a{
+                color:#ffffff;
+            }
+
+        </style>
+
+        <!-- Javascript -->
+
+        <script src="js/auth.js"></script>
+    
+    </head>
+    <body>
+        <div class="container" id="ng-app"  >
+            <br>
+            <div id="msgErro" class="alert alert-danger" style="display: none;" ></div>
+            <div id="alertas"></div>
+            <div id="alert-messages"></div>
+            <div>
+
+                <script src="lib/mask/mask.min.js" ></script>
+                <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR&onload=showRecaptcha&render=explicit" async defer></script>
+                <script type="text/javascript">
+                    var showRecaptcha= function() {
+                        grecaptcha.render('reCaptcha', {
+                          'sitekey' : '6LckVVIUAAAAAEQpRdiIbRSbs_ePTTrQY0L4959J'
+                        });
+                    };
+
+                    $(function () {
+
+                        $("#cpf_cnpj").focus(function(){
+
+                            $(this).unmask();
+                            $(this).mask("99999999999999");
+                        });
+                        $("#cpf_cnpj").blur(function(){
+                            var el = $(this);
+                            el.unmask();
+                            if(el.val().length > 11){
+                                el.mask("99.999.999/9999-99");
+                            }
+
+
+                            if(el.val().length <= 11){
+                                el.mask("999.999.999-99");
+                            }
+                        });
+
+                    });
+
+
+                    function pegaIp(){
+                        var ip = '';
+                        $.ajax({
+                            url : "./pega_ip.php",
+                            async:false,
+                            dataType : "json",
+                            success : function(data){
+                                ip = data.ip;
+                           }
+                        });
+                        return ip;
+                    }
+
+                    var consulta = function(){
+                        var msgErro = [];
+                        var data = {};
+                        var inputOS = $('#os');
+                        var inputCpfCnpj = $('#cpf_cnpj');                        
+                        var ip = pegaIp();
+                        data.userIpAddress = ip;
+                        data.os = inputOS.val();
+                        data.cpf_cnpj = inputCpfCnpj.val();
+                        data.recaptcha_response_field = grecaptcha.getResponse();
+
+                        data.token_fabrica = "d1aca44122c2ef29e76b9d12610c51c7";
+                        if (data.os.length == 0 && data.cpf_cnpj.length == 0) {
+                            msgErro.push("Informe o número da ordem de serviço ou o CPF/CNPJ");
+                        }
+                        // if (data.cpf_cnpj.length == 0){
+                        //     msgErro.push("Informe o CPF/CNPJ ");
+                        // }
+                        if (data.recaptcha_response_field.length == 0){
+                            msgErro.push("Preencha o ReCaptcha");
+                        }
+                        if( data.cpf_cnpj.length > 0 &&
+                            !data.cpf_cnpj.match(/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/) &&
+                            !data.cpf_cnpj.match(/^[0-9]{2}\.[0-9]{3}\.[0-9]{3}\/[0-9]{4}-[0-9]{2}$/)){
+                            msgErro.push('CPF/CNPJ Inválido');
+                        }
+                        if(msgErro.length > 0){
+                            $("#msgErro").html(msgErro.join("<br />")).show().focus();
+                            return;
+                        }
+                        data.cpf_cnpj = data.cpf_cnpj.replace(/[./-]+/gi,'');
+                        var urlSuffix = '';
+                        for(var index in data){
+                            var value = data[index];
+                            if(value == undefined || value.length == 0)
+                                continue;
+                            urlSuffix += index +'/'+data[index]+'/';
+                        }
+
+                        
+                        var apiLink = 'https://api2.telecontrol.com.br/institucional/statusos/';
+                        var url = apiLink + urlSuffix;
+
+                        $("button").button("loading");
+                        $("#msgErro").html("").hide();
+                        $("#result").hide();
+                        $.ajax({
+                            url : 'crossDomainProxy.php',
+                            data : {
+                                'apiLink' : url
+                            },
+                            method : 'POST',
+                            success : function(data){
+                                if(data.exception){
+                                    $("#msgErro").text(data.message).show();
+                                    return;
+                                }
+                                showOs(data);
+                            },
+                            error : function(data){
+                                var erro = data.responseJSON.message;
+                                if(erro.match(/o encontrada./)) {
+                                        erro = "Não encontramos nenhuma ordem de serviço com os dados fornecidos. Por favor entre em contato com o posto autorizado no qual o aparelho foi deixado e solicite o número da ordem de serviço do fabricante";
+                                }
+
+                                $("#msgErro").text(erro).show();
+                            },
+                            complete : function(data){
+                                $("button").button("reset");
+                                grecaptcha.reset();
+                            }
+                        });
+                    };
+
+                    var showOs = function(ret){
+                        var qtde = ret.length;
+                        var msg_situacao = ""; 
+
+                        //ret.forEach(function(value,key){
+                        $.each(ret,function(key,value){
+
+                            if (typeof value != 'object' || typeof value.entity == 'undefined') {
+                                return;
+                            }
+                            console.log(value.entity.situacao);
+
+                            var situacao = value.entity.situacao;
+                            var marca = value.entity.marca;
+                            var fone = value.entity.contato_fone_comercial;
+                            fone = fone.replace(/^([0-9][0-9])-/g, "(\$1) ");
+                            // if (marca == '110') {
+                            //     var link = "http://treinamento.britania.com.br/atendimentop/index.php/fale-conosco";
+                            // }else{
+                            //     var link = "http://treinamento.britania.com.br/atendimentob/index.php/fale-conosco";
+                            // }
+                            switch(situacao) {
+                                case "1":
+                                    msg_situacao = "SEU APARELHO ESTÁ PRONTO PARA RETIRADA.";
+                                    break;
+                                case "2": 
+                                    msg_situacao = "O REPARO DO SEU APARELHO ESTÁ EM ANDAMENTO.";
+                                    break;
+                                case "3": 
+                                    msg_situacao = "O REPARO DO SEU APARELHO ESTÁ EM ANDAMENTO. ENTRE EM CONTATO COM O POSTO AUTORIZADO PARA SABER A DATA PARA RETIRADA.";
+                                    break;
+                                case "4": 
+                                    msg_situacao = "O REPARO DO SEU APARELHO ESTÁ EM ANDAMENTO. QUALQUER DÚVIDA ENTRE EM <a href='"+link+"' target='_blank'>CONTATO CONOSCO</a>.";
+                                    break;
+                                case "5": 
+                                    msg_situacao = "POR FAVOR ENTRE EM CONTATO CONOSCO PARA MAIS INFORMAÇÕES SOBRE O REPARO DO SEU APARELHO.";
+                                    break;
+                            }
+
+                                        
+                            var resultado = "<ul class='list-group' style='margin-bottom: 0px;'><li class='list-group-item panel-heading' style='background-color: #428bca; border-color: #428bca'><h3 style='margin-top:0;margin-bottom:0;font-size:16px;color:inherit'><b>Ordem de serviço: "+ value.sua_os+ "</b></h3></li><li class='list-group-item' > "+((value.entity.consumidor_revenda == "R") ? "<b>Revenda</b>" : "<b>Consumidor</b>")+": "+((value.entity.consumidor_revenda == "R") ? value.entity.revenda_nome : value.entity.consumidor_nome) + "</li><li class='list-group-item' ><b>Produto:</b> "+ value.entity.descricao_produto+ "</li><li class='list-group-item' ><b>Situação:</b> "+msg_situacao+ "</li><li class='list-group-item' ></li><li class='list-group-item' ><b>Posto Autorizado:</b> "+value.entity.posto_autorizado+"</li><li class='list-group-item' ><b>Endereço</b>: "+value.entity.endereco + " " + value.entity.numero + " - " + value.entity.cidade + "</li><li class='list-group-item' ><b>Telefone:</b> "+fone +"</li></ul><br>";
+
+                            $("#result").html("");
+                            $("#result").html(resultado);
+                            $("#result").show();
+                        });
+                    };
+
+                </script>
+
+                <div style="width: 100%; height: auto; display: block;">
+
+                    <div id="tit_princ" class="museo museo300">CONSULTAR ORDEM DE SERVIÇO</div><br />
+                    <div id="txt_conteudo" class="museo300">Para encontrar a situação de sua Ordem de Serviço, preencha os dados abaixo.</div>
+                    <div id="txt_conteudo_menor" class="museo300" style="font-size:14px;margin-bottom:24px">Insira o número da Ordem de Serviço ou CPF/CNPJ</div>
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="position:relative; float:left; width: 100%; height: auto; display: block;">
+                                    <form name="statusos_form"    role="form" novalidate >
+                                        <div class="row">
+                                            <label for="os" class="col-xs-12" >Número da Ordem de Serviço</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-5">
+                                                <input type="text"  id="os" name="os" class="form-control" />
+                                            </div>                                        
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-md-12" for="cpf_cnpj" >
+                                                CPF / CNPJ
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <input type="text"  name="cpf_cnpj" id="cpf_cnpj" class="form-control"  style="width:200px"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="reCaptcha">
+                                            Carrengado reCaptcha
+                                        </div>
+
+                                        <br /><br />
+                                        <button onClick="consulta()" class="submit_envia" type="button" data-loading-text="Consultando..." style="margin-left:0; padding-left:0;" >
+                                            Consultar
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" >
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="resultado"></div>
+                                <div id="result" class="panel panel-primary" style="display: none; margin-top: 10px; margin-bottom:  0px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </body>
+</html>

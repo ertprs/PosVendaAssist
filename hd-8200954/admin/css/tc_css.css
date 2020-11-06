@@ -1,0 +1,22 @@
+.tc_container{
+	width: 850px;
+	margin: 0 auto;
+
+}
+#footer {
+  	border: 0px solid white;
+  	background: white;
+  	color: #C0C0C0 !important;
+  	text-align: right;
+  	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#footer a{
+	text-decoration: none;
+	color: #596d9b !important;
+}
+
+#footer a:hover{	
+	color: #000000 !important;
+}
+

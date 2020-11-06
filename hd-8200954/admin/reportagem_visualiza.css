@@ -1,0 +1,103 @@
+html {
+	background-color: #888888;
+	background-image: url(reportagem_imagens/fundo.jpg);
+	color: #333333;
+}
+
+body {
+	background-image: url(reportagem_imagens/reportagem_cabecalho_blackedecker.jpg);
+	background-repeat: no-repeat;
+	font-size: 11pt;
+	font-family: Arial;
+	text-align: justify;
+	width: 750px;
+	background-color: #FFFFFF;
+	padding: 20px;
+	padding-top: 212px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 3px #FFCC0E;
+}
+
+.imagens {
+	background-color: none;
+	padding: 0px;
+}
+
+.imagens img {
+	padding: 0px;
+	background-color: #333333;
+}
+
+.img_centro {
+	margin: 10px;
+}
+
+.img_esquerda {
+	float: left;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.img_direita {
+	float: right;
+	margin: 10px;
+	margin-right: 0px;
+}
+
+.legenda{
+	font-size: 8pt;
+	margin: 5px;
+}
+
+.titulo{
+	font-size: 18pt;
+	font-weight: bold;
+	border-bottom: 2px solid #333333;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Galeria de Imagens */
+#gallery {
+font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+color: #333;
+line-height: 140%;
+font-size: 70%;
+padding: 30px;
+background: #777777;
+border: 3px solid #333333;
+width: 684px;
+}
+
+#gallery h2 {
+margin-top: 1.2em;
+margin-bottom: 0;
+padding: 0;
+border-bottom: 1px dotted #dedede;
+}
+#gallery  h3 {
+margin-top: 1.2em;
+margin-bottom: 0;
+padding: 0;
+}
+#gallery ul {
+list-style-image:url(list-style.gif);
+}
+#gallery #descriptions {
+position: relative;
+height: 50px;
+background: #EEE;
+margin-top: 10px;
+width: 640px;
+padding: 10px;
+overflow: hidden;
+}
+#gallery #descriptions .ad-image-description {
+position: absolute;
+}
+#gallery #descriptions .ad-image-description .ad-description-title {
+display: block;
+}

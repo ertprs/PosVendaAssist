@@ -1,0 +1,7 @@
+{
+    "tabela": "tbl_os_produto",
+    "nao_calcula_peca": true,
+    "limite_km": true,
+    "limite_km_qtde": 30,
+    "limite_km_valor": 30
+}

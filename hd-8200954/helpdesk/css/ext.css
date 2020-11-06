@@ -1,0 +1,120 @@
+
+.botao1{
+    background-image:url(imagem/statistic.png);
+}
+
+pre.code{
+	background: #F8F8F8;
+	border: 1px solid #e8e8e8;
+	padding:10px;
+	margin:10px;
+	margin-left:0px;
+	border-left:5px solid #e8e8e8;
+	font-size: 12px !important;
+	line-height:14px !important;
+}
+.msg .x-box-mc {
+    font-size:14px;
+}
+#msg-div {
+    position:absolute;
+    left:35%;
+    top:10px;
+    width:450px;
+    z-index:20000;
+}
+.x-grid3-row-body p {
+    margin:5px 5px 10px 5px !important;
+}
+
+.botao{
+	background:-moz-linear-gradient(center top , #3B3E63, #4A5280 45%, #4A5280 55%, #3B3E63) repeat scroll 0 0 #433C85;
+	color:#FFFFFF;
+}
+
+@-webkit-keyframes interno {
+ from {
+   opacity: 0.0;
+   font-size: 50%;
+ }
+ to {
+   opacity: 2.0;
+   font-size: 100%;
+ }
+}
+
+.interno{
+	-webkit-animation-name: interno;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate; 
+}
+
+.widget{
+	position: absolute;
+	z-index: 9999;
+	float: left;
+	margin: 1em;
+	list-style: none;
+}
+
+.show{
+	position: absolute;
+	z-index: 9998;
+	float: right;
+	margin: 5em;
+	right: -5px;
+}
+.stickyWidget{
+	padding: 15px 20px;
+	width: 185px;
+	height: 155px;
+	background: url(../imagem/sticky.png) no-repeat center;
+}
+
+.closeWidget{
+	position: absolute;
+	z-index: 99999;
+	top: -5px;
+	left: -5px;
+}
+.stickyWidget>img{
+	display: none;
+}
+
+.stickyWidget textarea{
+	height: 100%;
+	width: 100%;
+	background: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	font-family: 'Marker Felt';
+	overflow: hidden;
+}
+
+.x-grid3-hd-row td, .x-grid3-row td, .x-grid3-summary-row td{
+	font-size: 16px;
+}
+
+.calendar {
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	border-top-width: 3px;
+	border-top-style: groove;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-color: #9F2727;
+	background: #fff;
+	font-weight: bold;
+	padding: 1px 0 2px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #455C6F;
+}

@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url('tc09_forms.css');
+@font-face {
+	font-family: 'Kabel';
+	font-style: normal;
+	font-weight: medium;
+	src: local('Kabel Md'), url('kabel.ttf') format('ttf');
+}
+
+.red,.vermelho {color: #900!important}
+.azul {color: #36d!important}
+.verde {color: #090!important}
+.cinza {color: #ccc!important}
+.cinza_escuro {color:#666!important}
+.negrito,.bold {font-weight: bold!important}
+.cursiva,.italica,.italic {font-style: italic!important;}
+.center {text-align: center!important}
+.middle {vertical-align: absmiddle!important}
+.esquerda {text-align:left}
+.direita {text-align:right}
+.sombra_caixa {
+	box-shadow: 3px 3px 4px #666;
+	-moz-box-shadow: 3px 3px 4px #666;
+	-webkit-box-shadow: 3px 3px 4px #666;
+behavior: url(js/PIE.php);
+}
+
+* {
+	color: #3d3d3d;
+}
+
+p {
+	text-align: justify;
+}
+
+a:link, a:focus, a:visited {
+	text-decoration: none;
+	color: #3d3d3d;
+	transition: color 0.6s;
+	-o-transition: color 0.6s;
+	-ms-transition: color 0.6s;
+	-moz-transition: color 0.6s;
+	-webkit-transition: color 0.6s;
+}
+
+a:hover {
+	color: #0f0777;
+	text-decoration: underline;
+}
+
+h3 {font-size: 14px;text-align:left}
+
+h3 a:hover {
+	color: #3d3d3d!important;
+	text-decoration: none;
+}
+
+#logo a {
+	display: block;
+	height: 72px;
+}
+.kabelTitle {
+	font-family: "Kabel Md";
+	color: #363b61;
+}
+div#conteudo ul {
+	margin-left: 15px;
+}
+
+div#conteudo ul li {
+	text-align: justify;
+}
+
+div#LoginTipos p{width:100%; height:20px; font-size:12px;margin-left: 2px;}
+div#LoginTipos a.loginUnico { float:left; padding-right:10px; border-right:1px solid #3d3d3d }
+div#LoginTipos a.primeiroAcesso { float:right;padding-right: 9px }
+div#LoginTipos p.flags {padding-top:10px;margin:0 0 0 6px;margin-left: -3px; font-size:12px;}
+div#LoginTipos p.flags img {margin-left: 6px;cursor:pointer}
+div#LoginTipos p.flags img:hover {
+	box-shadow: 0 0 6px #36d;
+	-moz-box-shadow: 0 0 6px #36d;
+	-webkit-box-shadow: 0 0 6px #36d;
+behavior: url(js/PIE.php);
+}
+
+div.autoCredenciamento input {
+	margin-left: 20px
+}
+
+div.autoCredenciamento input.cadastrar {
+	margin-top: 5px;
+	width: 80px;
+	height: 20px;
+}
+
+div.autoCredenciamento input, div#formContato select, div#formContato input, div#formContato textarea {
+	outline: 1px solid #ccc;
+	border: 1px solid white;
+}
+
+/*  DIVs de mensagem e erro */
+#entrando, #errologin {
+	position: absolute;
+	top:	20px;
+	left:	40%;
+	width:	30%;
+	z-index:10;
+	display:none;
+}
+
+/*  Rodapé  */
+div#footer p {
+	text-align: center;
+	margin-top: 2px;
+	font-size: 10px;
+}
+
+div#footer ul {
+	clear: both;
+	height: 20px;
+	margin: 0 auto 5px auto;
+}
+
+div#footer ul#navfooter1 {
+	width: 530px;
+}
+
+div#fones p {
+	line-height: 1.6em;
+	vertical-align: baseline;
+    text-transform: capitalize;
+}
+div#fones span {
+	display: inline-block;
+	font-weight: bold;
+	width: 40%;
+}
+
+div#footer ul#navfooter2 {
+	width: 340px;
+	display: none;
+}
+
+div#footer ul#navfooter3 {
+	width: 520px;
+    font-size: 0.9em;
+	text-align: center;
+}
+
+div#footer ul li {
+	display: inline;
+	list-style: none;
+}
+
+div#footer ul#navfooter1 a, div#footer ul#navfooter2 a {
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+div#footer ul#navfooter3 img {margin-right: 2px;margin-left: 5px}
+div#footer ul#navfooter3 a	 {margin: 0 12px 0 0;}
+
+div#footer ul#navfooter3 li {
+	cursor: pointer;
+}
+
+div#footer ul#navfooter3 li img {
+	width: 15px;
+	margin: 0;
+	margin-left: 6px;
+	margin-right:4px;
+}
+
+.ass {
+	width: 979px;
+	margin: auto;
+	height: 1.6em;
+}
+
+.ass .w3 {
+	width: 80px;
+	float: right;
+	display: block;
+	position: relative;
+	top: -10px;
+}

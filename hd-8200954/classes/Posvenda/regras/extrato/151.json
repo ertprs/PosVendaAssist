@@ -1,0 +1,5 @@
+{
+    "calcula_os_sem_valor": true,
+    "nao_calcula_posto_interno": true,
+    "nao_os_bloqueada":true
+}

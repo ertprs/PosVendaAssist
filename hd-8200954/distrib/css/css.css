@@ -1,0 +1,144 @@
+
+body {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px,0px,0px,0px;
+	padding:  0px,0px,0px,0px;
+
+}
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12 px;
+ 	text-decoration: none;
+	color: #000099;
+	font-weight: bold;
+}
+a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12 px;
+	color: #0066ff;
+	font-weight: bold;
+}
+
+td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12 px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0099CC;
+    color: #FFFFFF
+	/*#FFCC00*/
+
+}
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFCC00;
+    color: #FFFFFF
+
+}
+form{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12 px;
+	font-weight: bold;
+}
+
+
+.frm {
+	BORDER-RIGHT: #888888 1px solid;
+	BORDER-TOP: #888888 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #f0f0f0
+}
+.frm-on {
+	BORDER-RIGHT: rgb(70,90,128) 1px solid;
+	BORDER-TOP: rgb(70,90,128) 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: rgb(70,90,128) 1px solid;
+	COLOR: rgb(70,90,128);
+	BORDER-BOTTOM: rgb(70,90,128) 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #FFDF5E
+}
+.pontilhado{
+	margin-bottom: 5px;
+	margin-right:  5px;
+	margin-left:   5px;
+	padding:      10px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	border: 1px dotted silver;
+}
+
+.vermelho{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ff0000;
+}
+
+	.titulo_tabela{
+	        background-color:#596d9b;
+	        font: bold 14px "Arial";
+	        color:#FFFFFF;
+	        text-align:center;
+	}
+	.titulo_coluna{
+	        background-color:#596d9b;
+	        font: bold 11px "Arial";
+	        color:#FFFFFF;
+	        text-align:center;
+	}
+	.msg_erro{
+	        background-color:#FF0000;
+	        font: bold 14px "Arial";
+	        color:#FFFFFF;
+	        text-align:center;
+	        margin: 0 auto;
+	        width: 900px;
+	        padding: 5px 0;
+	}
+	.formulario{
+	        background-color:#D9E2EF;
+	        font:11px Arial;
+	        text-align:left;
+	        margin: 0 auto;
+	        width: 700px;
+	        border: 1px solid #596d9b ;
+	}
+
+	.formulario .formulario{
+	        
+	        border: none ;
+	}
+
+	table.tabela tr td{
+	        font-family: verdana;
+	        font-size: 11px;
+	        border-collapse: collapse;
+	        border:1px solid #596d9b;
+	}
+
+	.sucesso{
+	    background-color:#008000;
+	    font: bold 14px "Arial";
+	    color:#FFFFFF;
+	    text-align:center;
+	}
+	.texto_avulso{
+	    font: 14px Arial; color: rgb(89, 109, 155);
+	    background-color: #d9e2ef;
+	    text-align: center;
+	    width:700px;
+	    margin: 0 auto;
+	    border-collapse: collapse;
+	    border:1px solid #596d9b;
+	}
+	.subtitulo{
+	    background-color: #7092BE;
+	    font:bold 11px Arial;
+	    color: #FFFFFF;
+	}

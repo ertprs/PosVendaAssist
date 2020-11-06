@@ -1,0 +1,26 @@
+<?php
+/* Esta funcao executa um comando SQL no banco de dados PostgreSQL
+	$con 	Ponteiro da conexao
+	$sql	Clausula SQL a executar
+	$erro 	Especifica se a funcao exibe ou nao (0=nao, 1=sim)
+	$res	Resposta
+*/
+function pgexec($con,$sql,$erro = 1) {
+	if(empty($sql) OR !($con)) {
+		echo "erro 0";
+		return 0; // Erro na conexao ou no comando SQL
+	}
+		
+	if(!($res = pg_exec($con,$sql))) {
+		if($erro) {
+			echo "<p align='center'>" . pg_errormessage($con) . 
+			"<br><strong>Ocorreu um 
+			erro na execucao do comando SQL no banco de 
+			dados. Favor contactar o administrador</strong>
+			<p>";
+			exit;
+		}
+	}
+	return $res;
+}
+?>

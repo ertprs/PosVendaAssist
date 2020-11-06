@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://ww2.telecontrol.com.br/assist/externos/institucional/treinamentopostos.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta charset="iso-8859-1">
+        <title>Telecontrol Institucional</title>
+        
+        <!-- jQuery -->        
+        <script src="./treinamentopostos_files/jquery.min.js"></script>
+        <script src="./treinamentopostos_files/jquery-ui.min.js"></script>
+        
+        <script src="./treinamentopostos_files/treinamento-postos.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="./treinamentopostos_files/bootstrap.min.css">
+        <script src="./treinamentopostos_files/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" href="https://ww2.telecontrol.com.br/assist/externos/institucional/lib/jquery_ui/jquery-ui.min.css">        
+        <link rel="stylesheet" href="https://ww2.telecontrol.com.br/assist/externos/institucional/lib/jquery_ui/jquery-ui.theme.min.css">        
+
+        <!-- CSS -->
+        <style>
+            #env{
+                margin-top: 20px;
+            }
+           #map {
+                height:600px;
+                width:600px;
+            }
+            #btn-consultar{
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+            .infoWindowContent {
+                    font-size:  14px !important;
+                        border-top: 1px solid #ccc;
+                            padding-top: 10px;
+            }
+
+            .hideElement{
+                display: none;
+            }
+            h2 {
+                    margin-bottom:0;
+                        margin-top: 0;
+            }
+            .wid-column{
+                width: 105px;
+            }
+        </style>
+
+        <link href="./treinamentopostos_files/externo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container" id="env">
+            <div id="alertas"></div>
+            <div id="alert-messages"></div>
+
+                <div class="container">
+                    <form name="treinamento_postos">
+                        <div class="row" style="margin-bottom: 10px;min-height: 36px">
+                            <div id="loading" class="hideElement" style="display: none;">
+                                <div class="col-md-1">
+                                    <img src="./treinamentopostos_files/ajax-loader.gif">                                
+                                </div>
+                                <div class="col-md-2"><p style="margin-top:5px">Carregando...</p></div>
+                            </div>
+                            <div id="error-message">
+
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <select id="sel-regiao">
+                                    <option value="">Selecione uma Região</option></select>
+                            </div>
+                            <div class="col-md-4">
+                                <select id="sel-estado">
+
+                                    <option value="">Selecione um Estado</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" id="inp-cidades" placeholder="Digite sua Cidade">
+                            </div>
+                        </div>
+                        <button id="btn-consultar" class="btn btn-primary btn-block" type="button">Consultar</button>
+                        <div id="result" class="panel panel-primary hideElement"> 
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Treinamentos: </h3>
+                            </div>
+                            <div class="panel-body" style="padding: 0px;">
+                                <table class="table">
+                                    <thead>
+                                        <tr><th>Título</th>
+                                        <th>Local</th>
+                                        <th>Data Início</th>
+                                        <th>Data Fim</th>
+                                        <th>Vagas</th>
+                                        <th>Inscritos</th>
+                                        <th>Status</th>
+                                    </tr></thead>
+                                    <tbody id="training-results">
+                                    </tbody>                                                            
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+
+</body></html>

@@ -1,0 +1,10 @@
+{ "multiplos_defeitos":true,
+ "tabela":"tbl_os_produto",
+ "nao_calcula_peca":true,
+ "nao_calcula_mo_posto_interno":true,
+ "nao_calcula_km_posto_interno":true,
+ "preco_peca": true,
+ "tabela_preco_peca": "KOF",
+ "unidade_negocio": true,
+ "usa_eficiencia" : true
+}

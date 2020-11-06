@@ -1,0 +1,98 @@
+/* CSS Menus ADMIN */
+body {
+	text-align: center;
+}
+
+.cabecalho {
+	color: black;
+	width: 700px;
+	margin: auto;
+	background-color:#D9E2EF;
+	/*border-bottom: 2px dotted white;*/
+	font-size: 12px;
+	height: 1.8em;
+	line-height: 1.8em;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.menu {
+	width: 260px;
+}
+
+.descricao {
+	padding: 5px 10px;
+	color: black;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: justify;
+	width: 415px;
+}
+
+/*========================== MENU ===================================*/
+a:link.menu {
+	padding: 3px;
+	display:block;
+	font: normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: navy;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+}
+
+a:visited.menu {
+	padding: 3px;
+	display:block;
+	font: normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: navy;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+}
+/* #tbl_menu tr:nth-child(odd) {background-color:#f0f0f0!important;width:700px;} */
+a:hover.menu {
+	padding: 3px;
+	display:block;
+	font: normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	background-color: #ced7e7;
+}
+/* sub menus - Por enquanto não usa no ADMIN
+a:hover {color:#247BF0; }
+img     { border:0px;   }
+.sys_tabs {
+	width: 700px;
+	margin: auto;
+	margin-top: 4px;
+	text-align: center;
+}
+.sys_submenu {
+	background-image: url(../imagens/submenu_fundo_cinza.gif);
+	height: 20px;
+	line-height: 16px;
+	vertical-align: top;
+}
+.sys_submenu, .links {
+	text-align: center!important;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color:#596d9b;
+	width: 100%;
+	margin:auto;
+}
+ */
+#voip{
+	position: absolute; top: 40px; right: 5px;
+	background-color: #F2F7FF;
+	border: 2px solid #69c;
+	font: 10pt Arial;
+	color: #69c;
+}
+

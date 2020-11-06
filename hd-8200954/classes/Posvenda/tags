@@ -1,0 +1,489 @@
+
+Pedido.php,1545
+class PedidoPedido7,71
+    private $_pedido;_pedido10,87
+    private $_fabrica;_fabrica11,109
+    private $_model;_model12,132
+    private $_descricao_pedido;_descricao_pedido13,153
+    private $_posto;_posto14,185
+    private $_tabela;_tabela15,206
+    private $_condicao_pagamento;_condicao_pagamento16,228
+    private $_limite_minimo;_limite_minimo17,262
+    private $_total_pedido;_total_pedido18,291
+    private $_admin;_admin19,319
+    public function __construct($fabrica, $pedido)__construct21,341
+            $this->_pedido = $pedido;_pedido24,429
+        $this->_fabrica = $fabrica;_fabrica27,478
+    public function finaliza()finaliza31,522
+        $this->_model = new PedidoModel($this->_fabrica, $this->_pedido);_model34,560
+        $this->_descricao_pedido    = $this->_model->getDescricaoPedido();_descricao_pedido49,1187
+        $this->_posto               = $this->_model->getCodigoPosto();_posto50,1262
+        $this->_condicao_pagamento  = $this->_model->getCodicaoPagamento();_condicao_pagamento51,1333
+        $this->_admin               = $this->_model->getAdmin();_admin52,1409
+        $this->_tabela = $this->_model->getValorTabela($this->_descricao_pedido, $this->_posto);_tabela65,1807
+        $this->_limite_minimo   = $this->_model->getLimiteMinimo($this->_condicao_pagamento);_limite_minimo85,2598
+        $this->_total_pedido    = $this->_model->getTotalPedido($this->_condicao_pagamento);_total_pedido86,2692
+    public function formatMoney($RS){formatMoney109,3455
+
+Validacao/_85/FechamentoOs.php,2423
+class FechamentoOsFechamentoOs5,43
+	private $os;os7,64
+	private $fabrica;fabrica8,78
+	private $con;con9,97
+	private $erros;erros10,112
+	public function __construct($os, $con)__construct12,130
+		$this->os = $os;os14,173
+		$this->fabrica = 85;fabrica15,192
+		$this->con = $con;con16,215
+		$this->erro = '';erro17,236
+	public function validaFechamento()validaFechamento20,260
+		$sql = "SELECT hd_chamado FROM tbl_hd_chamado_extra WHERE os = {$this->os}";sql22,299
+		$res = pg_query($this->con,$sql);res23,378
+			$this->erros = "Prezados, por gentileza, abrir chamado junto a Gelopar através do assistente responsável pela sua região, tendo em mãos a nota fiscal de compra e o número da ordem de serviço. Dúvidas, não hesitem em contatar a fábrica. Centro de Assessoria Técnica Fone: +55 41 3607-9000 ou 0800 645 6450 (O 0800 é de uso exclusivo da Gelopar e posto, não deve ser divulgado para consumidor final e revenda).";erros26,447
+		$sql = "SELECT posto,defeito_constatado,serie,sua_ossql30,884
+		$res = pg_query($this->con,$sql);res34,1191
+			$this->erros = "OS {$this->os} não encontrada para finalizar";                                             erros37,1260
+		$posto = pg_fetch_result($res, 0, "posto");                                                                             posto41,1393
+		$defeito_constatado = pg_fetch_result($res, 0, "defeito_constatado");                                                                             defeito_constatado42,1516
+		$serie = pg_fetch_result($res, 0, "serie");                                                                             serie43,1665
+		$sua_os = pg_fetch_result($res, 0, "sua_os");sua_os44,1788
+			$this->erros = "Favor informar o defeito constatado para a ordem de serviço";erros47,1879
+			$this->erros = "Favor digitar o Número de Série do produto na Ordem de serviço";erros52,2012
+		$sql = "SELECT interv_reinc.os                                                                  sql56,2118
+				$res = pg_query($this->con,$sql);res73,2940
+			$this->erro = "OS {$this->os} em intervenção de peça, aguarde autorização da fábrica para finalizar";erro76,3008
+		$sql = "SELECT fn_valida_os_gelopar_serie({$this->os}, {$this->fabrica})";sql80,3135
+		$res = pg_query($this->con,$sql);res81,3212
+		$this->erro = pg_errormessage($this->con);erro83,3249
+	public function getErros()getErros93,3370
+
+ExcecaoMobra.php,4122
+class ExcecaoMobraExcecaoMobra5,28
+	protected $fabrica;fabrica12,91
+	protected $os;os18,201
+	protected $con;con24,273
+	private $valorMobra;valorMobra30,352
+	private $valorMobraAdicional;valorMobraAdicional36,461
+	private $valorMobraPercentual;valorMobraPercentual42,618
+	private $dadosOs = array();dadosOs48,703
+	private $dadosOs = array();dadosOs48,703
+	private $dadosExcecaoMobra = array();dadosExcecaoMobra54,826
+	private $dadosExcecaoMobra = array();dadosExcecaoMobra54,826
+	private $erros = array();erros60,951
+	private $erros = array();erros60,951
+	public function __construct($os, $fabrica, $skip_adicional = false)__construct63,983
+	public function __construct($os, $fabrica, $skip_adicional = false)skip_adicional63,983
+            $excecaoAdicional = '\\Posvenda\\Fabricas\\_' . $fabrica . '\\ExcecaoMobraAdicional';excecaoAdicional67,1186
+        $parametros = "host=$dbhost dbname=$dbnome port=$dbport user=$dbusuario password=$dbsenha";parametros80,1558
+            $this->con = \pg_connect($parametros);con83,1667
+			$this->fabrica = $fabrica;fabrica84,1718
+			$this->os = $os;os85,1748
+			$this->dadosOs = $this->getOs();dadosOs86,1768
+	public function getExcecaoMobra($searchBy = array())getExcecaoMobra100,2248
+		$conds = "";conds103,2306
+		$fabrica = $this->fabrica;fabrica104,2321
+			foreach ($searchBy as $key => $value) {key107,2381
+		$sql = "SELECT posto, sql231,5772
+		$res = pg_query($this->con, $sql);res251,6248
+		$return = pg_fetch_all($res);return253,6286
+	public function getQtdeDias(){getQtdeDias258,6341
+		$sql = "select distinct qtde_dias from tbl_excecao_mobra where qtde_dias notnull and fabrica = ".$this->fabrica;sql260,6374
+		$res = pg_query($this->con,$sql);res261,6489
+		$return = pg_fetch_all($res);return263,6528
+	public function getOs()getOs273,6689
+		$os = $this->os;os276,6719
+		$fabrica = $this->fabrica;fabrica277,6738
+		$dada_verificacao = ($fabrica == 141) ? "tbl_os.data_conserto::date" : "tbl_os.finalizada::date";dada_verificacao279,6770
+		$qtde_dias = $this->getQtdeDias();qtde_dias281,6871
+			$cond = "CASE ";cond286,6941
+			foreach ($qtde_dias as $key => $value) {key288,6962
+			$cond = "NULL AS qtde_dias ";cond294,7179
+		$sql = "SELECT tbl_os.os,sql298,7220
+		$res = pg_query($this->con,$sql);res322,7885
+		$return = pg_fetch_all($res);return324,7924
+	public function calculaExcecaoMobra()calculaExcecaoMobra334,8041
+		$searchFields = array();searchFields337,8084
+			$this->dadosOs = $this->getOs();dadosOs340,8120
+				$i = 0;i344,8191
+					$os 				= $key['os'];os347,8248
+					$produto 			= $key['produto'];produto348,8275
+					$linha 				= $key['linha'];linha349,8311
+					$familia 			= $key['familia'];familia350,8344
+					$posto  			= $key['posto'];posto351,8380
+					$solucao_os 		= $key['solucao_os'];solucao_os352,8413
+					$tipo_atendimento 	= $key['tipo_atendimento'];tipo_atendimento353,8454
+					$revenda        	= ($key['consumidor_revenda'] == "R") ? "t" : "";revenda354,8506
+					$id_revenda        	= $key['revenda'];id_revenda355,8578
+					$troca_produto     	= $key['troca_produto'];troca_produto356,8622
+					$tipo_posto     	= $key['tipo_posto'];tipo_posto357,8672
+					$qtde_dias     		= $key['qtde_dias'];qtde_dias358,8716
+					$sql = "SELECT count(*)sql360,8760
+					$res = pg_query($this->con, $sql);res366,8986
+					$peca_lancada = pg_fetch_result($res, 0, 0);peca_lancada368,9032
+					$searchFields = array(searchFields370,9083
+					$this->dadosExcecaoMobra = $this->getExcecaoMobra($searchFields);dadosExcecaoMobra385,9619
+	public function setNewMobra($tipo,$valor,$os)setNewMobra419,10683
+				$updateValue = "mao_de_obra = $valor";updateValue425,10779
+				$updateValue = "mao_de_obra = mao_de_obra + $valor";updateValue429,10870
+				$updateValue = "mao_de_obra = mao_de_obra * (1 + ($valor / 100::float))";updateValue433,10973
+		$sql = "UPDATE tbl_os SET $updateValue WHERE os = $os";sql444,11151
+		$res = pg_query($this->con,$sql);res446,11210
+		$erros = pg_last_error($this->con);erros448,11249
+
+MaoDeObra.php,1178
+class MaoDeObraMaoDeObra9,111
+    private $_os;_os14,164
+    private $_fabrica;_fabrica19,219
+    private $_os_model;_os_model24,290
+    private $_mao_de_obra;_mao_de_obra29,349
+    private $_excecoes;_excecoes34,411
+    public function __construct($os, $fabrica)__construct36,436
+        $this->_os = $os;_os38,489
+        $this->_fabrica = $fabrica;_fabrica39,515
+        $this->_os_model = new OsModel($this->_fabrica, $this->_os);_os_model40,551
+        $this->_mao_de_obra = 0;_mao_de_obra41,620
+    public function getMaoDeObra()getMaoDeObra44,660
+    public function calculaMaoDeObra()calculaMaoDeObra58,920
+        $this->_excecoes = $this->getExcecaoMaoDeObra();_excecoes61,1008
+            $res = $this->_os_model->getPDOStatement()->fetch();res71,1387
+            $this->_mao_de_obra = $res['mao_de_obra'];_mao_de_obra77,1529
+            $this->_mao_de_obra = $this->_excecoes;_mao_de_obra81,1670
+    public function getExcecaoMaoDeObra()getExcecaoMaoDeObra92,1854
+        $excecaoMobra = new ExcecaoMobra($this->_os, $this->_fabrica);excecaoMobra94,1902
+        $res = $this->_os_model->getPDOStatement()->fetch();res109,2350
+
+Os.php,671
+class OsOs8,87
+    private $_os;_os11,99
+    private $_fabrica;_fabrica12,117
+    private $_model;_model13,140
+    public function __construct($fabrica, $os = null)__construct15,162
+    public function __construct($fabrica, $os = null)os15,162
+            $this->_os = $os;_os18,249
+        $this->_fabrica = $fabrica;_fabrica21,290
+        $this->_model = new OsModel($this->_fabrica, $this->_os);_model23,327
+    public function calculaOs()calculaOs26,400
+        $mo = new MaoDeObra($this->_os, $this->_fabrica);mo32,526
+        $mao_de_obra = $mo->getMaoDeObra();mao_de_obra34,585
+        $pecas = '';pecas38,663
+        $km = '';km39,684
+
+Model/Pedido.php,4500
+class Pedido extends AbstractModelPedido5,34
+    private $_pedido; _pedido8,72
+    private $_fabrica;_fabrica9,95
+    public function __construct($fabrica = null, $pedido = null)__construct11,119
+    public function __construct($fabrica = null, $pedido = null)pedido11,119
+            $this->_pedido = $pedido;_pedido17,265
+        $this->_fabrica = $fabrica;_fabrica20,314
+    public function verificaPedidoFabrica($pedido = null)verificaPedidoFabrica25,402
+            $pedido = $this->_pedido;pedido29,496
+        $res = $this->getPDOStatement()->fetch();res39,764
+    public function verificaCondicaoPagamentoFabrica($pedido = null)verificaCondicaoPagamentoFabrica50,976
+            $pedido = $this->_pedido;pedido54,1081
+        $res = $this->getPDOStatement()->fetch();res65,1532
+    public function getDescricaoPedido()getDescricaoPedido76,1715
+        $res = $this->getPDOStatement()->fetch();res87,2188
+    public function getCodigoPosto()getCodigoPosto94,2316
+        $res = $this->getPDOStatement()->fetch();res104,2585
+    public function getCodicaoPagamento(){getCodicaoPagamento110,2674
+        $res = $this->getPDOStatement()->fetch();res119,2946
+    public function getAdmin(){getAdmin125,3038
+        $res = $this->getPDOStatement()->fetch();res134,3296
+    public function getValorTabela($descricao_pedido = null, $posto = null)getValorTabela141,3422
+    public function getValorTabela($descricao_pedido = null, $posto = null)posto141,3422
+            $tabela = (strtolower($descricao_pedido) == "garantia") ? "tabela" : "tabela_posto";tabela148,3602
+            $pdo = $this->getPDO();pdo150,3700
+            $sql = "sql152,3737
+            $query  = $pdo->query($sql);query159,3978
+            $res    = $query->fetch(\PDO::FETCH_ASSOC);res160,4019
+    public function setPrecoPedido($tabela = null, $pedido = null)setPrecoPedido169,4187
+    public function setPrecoPedido($tabela = null, $pedido = null)pedido169,4187
+            $pedido = $this->_pedido;pedido173,4290
+        $pdo = $this->getPDO();pdo176,4339
+        $sql = "sql178,4372
+        return $query = $pdo->query($sql);query187,4698
+    public function getPecaSemPreco($tipo_pedido = null, $tabela = null, $fabrica = null, $pedido = null)getPecaSemPreco192,4811
+    public function getPecaSemPreco($tipo_pedido = null, $tabela = null, $fabrica = null, $pedido = null)tabela192,4811
+            $fabrica = $this->_fabrica;fabrica196,4953
+            $pedido = $this->_pedido;pedido200,5033
+        $pdo = $this->getPDO();pdo203,5082
+            $sql = "sql207,5168
+            $sql = "sql220,5676
+        $query = $pdo->query($sql);query231,6112
+            $res = $query->fetch(\PDO::FETCH_ASSOC);res234,6211
+            $res = $query->fetchAll(\PDO::FETCH_ASSOC);res237,6363
+    public function setPrecoPeca($tabela = null, $peca = null){setPrecoPeca248,6599
+    public function setPrecoPeca($tabela = null, $peca = null){peca248,6599
+        $pdo = $this->getPDO();pdo250,6664
+        $sql = "INSERT INTO tbl_tabela_item (tabela, peca, preco) VALUES({$tabela}, {$peca}, '0.00')";sql251,6696
+        $query = $pdo->query($sql);query252,6799
+    public function getLimiteMinimo($condicao_pagamento = null, $pedido = null){getLimiteMinimo257,6876
+    public function getLimiteMinimo($condicao_pagamento = null, $pedido = null){pedido257,6876
+            $pedido = $this->_pedido;pedido260,6987
+        $pdo = $this->getPDO();pdo263,7036
+        $sql = "sql265,7069
+        $query = $pdo->query($sql);query273,7314
+            $res    = $query->fetch(\PDO::FETCH_ASSOC);res276,7371
+    public function getTotalPedido($condicao_pagamento = null, $pedido = null){getTotalPedido285,7541
+    public function getTotalPedido($condicao_pagamento = null, $pedido = null){pedido285,7541
+            $pedido = $this->_pedido;pedido288,7651
+        $pdo = $this->getPDO();pdo291,7700
+        $sql = "sql293,7733
+        $query = $pdo->query($sql);query302,8230
+            $res    = $query->fetch(\PDO::FETCH_ASSOC);res305,8287
+    public function somaGravaTotalPedido($tabela = null, $pedido = null){somaGravaTotalPedido313,8421
+    public function somaGravaTotalPedido($tabela = null, $pedido = null){pedido313,8421
+            $pedido = $this->_pedido;pedido316,8525
+        $pdo = $this->getPDO();pdo319,8574
+        $sql = "sql321,8607
+        $query = $pdo->query($sql);query334,9072
+
+Model/ExcecaoMobra.php,1327
+class ExcecaoMobra {ExcecaoMobra5,34
+    private $_os;_os7,56
+    private $_fabrica;_fabrica8,74
+    private $_con;_con9,97
+    public function __construct($os = null, $fabrica = null){__construct11,117
+    public function __construct($os = null, $fabrica = null){fabrica11,117
+        $parametros = "host=$dbhost dbname=$dbnome port=$dbport user=$dbusuario password=$dbsenha";parametros22,379
+        $this->_os = $os;_os24,480
+        $this->_fabrica = $fabrica;_fabrica25,506
+        $this->con = \pg_connect($parametros);con26,542
+    public function totalDias(){totalDias30,597
+        $sql = "SELECT data_conserto::date - data_digitacao::date AS total_dias FROM tbl_os WHERE os = $this->_os AND fabrica = $this->_fabrica";sql32,631
+        $res = pg_query($this->_con,$sql);res33,777
+        $dias = pg_fetch_all($res);dias34,820
+    public function calculaExcecaoMobraTriagem(){calculaExcecaoMobraTriagem40,890
+        $sql = "UPDATE tbl_os SETsql42,941
+        $res = pg_query($this->_con,$sql);res63,2138
+    public function calculaExcecaoMobraDiasConserto($dias){calculaExcecaoMobraDiasConserto67,2189
+            $sql = "UPDATE tbl_os SET mao_de_obra = 0 WHERE os = $this->_os AND fabrica = $this->_fabrica";sql71,2289
+            $res = pg_query($this->_con,$sql);res72,2397
+
+Model/Os.php,789
+class Os extends AbstractModelOs5,34
+    private $_os; _os8,68
+    private $_fabrica;_fabrica9,87
+    public function __construct($fabrica, $os = null)__construct11,111
+    public function __construct($fabrica, $os = null)os11,111
+            $this->_os = $os;_os16,238
+        $this->_fabrica = $fabrica;_fabrica19,279
+    public function isClosed($os = null)isClosed28,444
+            $os = $this->_os;os31,517
+        $res = $this->getPDOStatement()->fetch();res42,820
+    public function zeraMaoDeObra($os = null)zeraMaoDeObra57,1061
+            $os = $this->_os;os60,1139
+    public function updateMaoDeObra($mobra, $os = null)updateMaoDeObra79,1500
+    public function updateMaoDeObra($mobra, $os = null)os79,1500
+            $os = $this->_os;os86,1654
+
+Model/Sql/Insert.php,751
+class Insert implements Interfacesql{Insert4,8
+    private $tabela;tabela7,52
+    private $campos;campos8,73
+    private $_query;_query9,94
+    function __construct($tabela = null, $campos = array()){__construct10,115
+    function __construct($tabela = null, $campos = array()){campos10,115
+    public function setTabela($tabela){setTabela14,192
+    public function addCampo($campo){addCampo17,255
+    public function addCond($cond){addCond20,300
+    public function getQuery(){getQuery23,390
+    public function prepare(){prepare26,466
+        $fields = array_keys($this->campos);fields27,497
+        $values = array_values($this->campos);values28,542
+        $this->_query = "INSERT INTO ". $this->tabela ." _query29,589
+
+Model/Sql/Select.php,1436
+class Select implements InterfaceSqlSelect11,186
+    private $_campos = array();_campos16,259
+    private $_campos = array();_campos16,259
+    private $_tabela;_tabela21,327
+    private $_joins = array();_joins26,384
+    private $_joins = array();_joins26,384
+    private $_conds = array();_conds31,450
+    private $_conds = array();_conds31,450
+    private $_query;_query36,517
+    public function __construct($campos = array(), $tabela = null, $joins = array(), $conds = array())__construct47,840
+    public function __construct($campos = array(), $tabela = null, $joins = array(), $conds = array())tabela47,840
+            $arr = array();arr50,980
+            foreach ($campos as $key => $val) {key51,1008
+                    $add = $val;add53,1096
+                    $add = "$val AS $key";add55,1154
+    public function setTabela($tabela)setTabela85,1723
+        $this->_tabela = $tabela;_tabela87,1768
+    public function addCampo($campo)addCampo98,1929
+            $key = key($campo);key101,2004
+            $val = $campo[$key];val102,2036
+            $campo = $val . ' AS ' . $key;campo103,2069
+    public function addJoin($join)addJoin117,2293
+    public function addCond($cond)addCond130,2509
+    public function getQuery()getQuery142,2684
+    public function prepare()prepare152,2824
+        $query = 'SELECT ';query154,2860
+        $this->_query = $query;_query164,3150
+
+Model/Sql/Update.php,1134
+class Update implements InterfaceSqlUpdate11,186
+    private $_campos = array();_campos16,259
+    private $_campos = array();_campos16,259
+    private $_tabela;_tabela21,327
+    private $_conds = array();_conds26,384
+    private $_conds = array();_conds26,384
+    private $_query;_query31,451
+    public function __construct($tabela = null, $campos = array(), $cond = array())__construct33,473
+    public function __construct($tabela = null, $campos = array(), $cond = array())campos33,473
+            $this->_tabela = $tabela;_tabela36,594
+            foreach ($campos as $k => $ca) {k40,674
+    public function setTabela($tabela) {setTabela58,1029
+        $this->_tabela = $tabela;_tabela59,1070
+    public function addCampo($campo) {addCampo73,1319
+        $key = key($campo);key78,1428
+        $val = $campo["{$key}"];val79,1456
+    public function addCond($cond) {addCond92,1681
+    public function getQuery(){getQuery103,1852
+    public function prepare(){prepare112,1987
+        $query = 'UPDATE ' . $this->_tabela . ' SET ';query113,2018
+        $this->_query = $query;_query117,2174
+
+Model/Sql/InterfaceSql.php,293
+interface InterfaceSqlInterfaceSql5,38
+    public function setTabela($tabela);setTabela7,63
+    public function addCampo($campo);addCampo8,103
+    public function addCond($cond);addCond9,141
+    public function getQuery();getQuery10,177
+    public function prepare();prepare11,209
+
+Model/AbstractModel.php,4823
+abstract class AbstractModelAbstractModel5,34
+    protected $tabela;tabela11,101
+    protected $sql;sql16,194
+    protected $query;query21,250
+    protected $campos = array();campos26,307
+    protected $campos = array();campos26,307
+    protected $join = array();join31,375
+    protected $join = array();join31,375
+    protected $where = array();where36,441
+    protected $where = array();where36,441
+    protected $groupBy = array();groupBy41,508
+    protected $groupBy = array();groupBy41,508
+    protected $orderBy = array();orderBy46,577
+    protected $orderBy = array();orderBy46,577
+    private $configFile;configFile51,647
+    private $_pdo;_pdo56,706
+    private $_prep;_prep61,768
+    private $_condParam = array();_condParam66,823
+    private $_condParam = array();_condParam66,823
+    private $_condStack = array();_condStack71,893
+    private $_condStack = array();_condStack71,893
+    public function __construct($tabela, $config = '')__construct77,1073
+    public function __construct($tabela, $config = '')config77,1073
+            $this->tabela = $tabela;tabela80,1165
+            $this->configFile = $configFile;configFile84,1248
+            $this->configFile = '/etc/telecontrol.cfg';configFile86,1310
+    public function select()select97,1555
+        $this->sql = new \Posvenda\Model\Sql\Select;sql99,1590
+    public function insert()insert111,1825
+        $this->sql = new \Posvenda\Model\Sql\Insert($this->tabela, $this->campos);sql113,1860
+    public function update()update125,2125
+        $this->sql = new \Posvenda\Model\Sql\Update;sql127,2160
+    public function setCampos(array $campos)setCampos140,2407
+            $campos = $this->transformUpdateField($campos);campos143,2522
+        $this->campos = $campos;campos146,2593
+    public function addJoin(array $join)addJoin157,2814
+        foreach ($join as $tbl => $cond) {tbl159,2861
+    public function addWhere($where)addWhere172,3166
+            $_key = key($where);_key175,3241
+            $explode_key = explode('.', $_key);explode_key177,3275
+                $val = $explode_key[1];val180,3368
+                $val = $explode_key[0];val182,3429
+            $params = $_key . ' = :' . $val;params185,3484
+            $params = $where;params190,3623
+    public function biggerOrEqualThan(array $campo, $is_equal = false)biggerOrEqualThan209,4115
+    public function biggerOrEqualThan(array $campo, $is_equal = false)is_equal209,4115
+        $eq = '';eq211,4192
+            $eq = '=';eq213,4244
+        $stack = array($campo[0] => $campo[1]);stack216,4278
+    public function lesserOrEqualThan(array $campo, $is_equal = false)lesserOrEqualThan229,4668
+    public function lesserOrEqualThan(array $campo, $is_equal = false)is_equal229,4668
+        $eq = '';eq231,4745
+            $eq = '=';eq233,4797
+        $stack = array($campo[0] => $campo[1]);stack236,4831
+    public function between($campo, array $datas)between249,5111
+        foreach ($datas as $k => $d) {k251,5167
+    public function prepare()prepare263,5436
+        foreach ($this->campos as $chave => $campo) {chave267,5519
+            $add = $campo;add268,5573
+                $add = array("{$chave}" => "$campo");add271,5669
+        $this->query = $this->sql->getQuery();query287,6011
+        $this->_prep = $this->_pdo->prepare($this->query, array(\PDO::ATTR_CURSOR => \PDO::CURSOR_FWDONLY));_prep289,6059
+    public function execute()execute299,6267
+    public function getQuery()getQuery307,6405
+    public function getPDO()getPDO315,6514
+    public function getPDOStatement()getPDOStatement323,6629
+    protected function loadConfig()loadConfig334,6853
+        $conn_str = 'pgsql:host=' . $dbhost . ';port=' . $dbport . ';dbname=' . $dbnome . ';user=' . $dbusuario . ';password=' . $dbsenha;conn_str338,6931
+    protected function connect($conn_str)connect349,7242
+            $this->_pdo = new \PDO($conn_str);_pdo352,7304
+    protected function biggerOrLesser($campo, $operator, $is_equal)biggerOrLesser368,7658
+            $eq = '=';eq371,7765
+    private function stack(array $value)stack383,8030
+        $key = key($value);key385,8077
+    private function _reset()_reset396,8304
+        $this->_condParam = array();_condParam398,8340
+        $this->_condStack = array();_condStack399,8377
+        $this->join = array();join400,8414
+        $this->campos = array();campos401,8445
+        $this->campos = array();campos403,8479
+        $this->join = array();join404,8512
+    private function transformUpdateField(array $campos)transformUpdateField418,8786
+        $ret = array();ret420,8849
+        foreach ($campos as $key => $val) {key421,8873
+            $stack = array($key => $val);stack423,8954
+
+Model/Produto.php,375
+class Produto extends AbstractModelProduto5,34
+    private $_produto;_produto7,72
+    public function __construct($produto = null)__construct9,100
+            $this->_produto = $produto;_produto12,187
+    public function setProduto($produto)setProduto18,289
+        $this->_produto = $produto;_produto20,336
+    public function getMaoDeObra()getMaoDeObra25,402
+
+Model/Tecnico.php,1444
+class Tecnico extends AbstractModelTecnico5,34
+    private $_tecnico; _tecnico8,73
+    private $_fabrica;_fabrica9,97
+    private $_nome;_nome11,121
+    private $_email;_email12,141
+    private $_cpf;_cpf13,162
+    private $_ativo;_ativo14,181
+    public function getTecnico(){getTecnico16,203
+    public function getNome(){getNome19,275
+    public function getEmail(){getEmail22,341
+    public function getCpf(){getCpf25,409
+    public function getAtivo(){getAtivo28,473
+    public function setTecnico($tecnico){setTecnico34,544
+        $this->_tecnico = $tecnico;_tecnico35,586
+    public function setNome($nome){setNome37,628
+        $this->_nome = $nome;_nome38,664
+    public function setEmail($email){setEmail40,700
+        $this->_email = $email;_email41,738
+    public function setCpf($cpf){setCpf43,776
+        $this->_cpf = $cpf;_cpf44,810
+    public function setAtivo($ativo){setAtivo46,844
+        $this->_ativo = $ativo;_ativo47,882
+    public function __construct($fabrica, $tecnico = null)__construct49,920
+    public function __construct($fabrica, $tecnico = null)tecnico49,920
+            $this->_tecnico= $tecnico;_tecnico54,1062
+        $this->_fabrica = $fabrica;_fabrica56,1111
+    public function save(){save59,1158
+        $queryBuilder = empty($this->_tecnico) ? $this->insert() : $this->update()->addWhere(array("tecnico" => $this->_tecnico));queryBuilder60,1186
+
+Fabricas/_141/ExcecaoMobraAdicional.php,367
+class ExcecaoMobraAdicional extends ExcecaoMobraExcecaoMobraAdicional8,125
+    private $_model;_model10,176
+    private $_dias;_dias11,197
+    public function __construct($os, $fabrica) {__construct13,218
+        $this->_model = new ExcecaoMobraModel($this->_os, $this->_fabrica);_model16,318
+        $this->_dias = $this->_model->totalDias();_dias19,500

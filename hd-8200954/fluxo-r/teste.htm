@@ -1,0 +1,28 @@
+
+<script>
+
+funcao1 = function (var1){
+	alert(var1);
+}
+
+function teste2(varx,funx){
+	alert ("Tulio" + funx);
+	eval(funx+"('"+varx+"')")
+}
+
+teste2( 'Parametro 123','funcao1' );
+
+
+var fabio = function(fn, array) {
+	alert('funcao 1');
+	fn(array);
+}
+
+var imprimir = function(array) {
+	alert('funcao2 2');
+	alert(array);
+}
+
+fabio( imprimir, ['fabio','nowakiZ'] );
+
+</script>

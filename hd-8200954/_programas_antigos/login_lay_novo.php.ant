@@ -1,0 +1,278 @@
+<?
+include 'dbconfig.php';
+include 'includes/dbconnect-inc.php';
+//include 'autentica_usuario.php';
+include 'cabecalho_login_lay_novo.php';
+?>
+<head>
+<style type="text/css">
+input {
+	BORDER-RIGHT: #000000 1px solid; 
+	BORDER-TOP: #000000 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 8pt; 
+	BORDER-LEFT: #000000 1px solid; 
+	BORDER-BOTTOM: #000000 1px solid; 
+	FONT-FAMILY: Verdana; 
+	BACKGROUND-COLOR: #FFFFFF
+}
+</style>
+</head>
+
+<table style='font-family: verdana; font-size: 10px; background-color: #ffffff; width='700' border='1' align='center' cellpadding='4' cellspacing='4' >
+<tr>
+<td align='center' width='150'>
+<IMG SRC='logos/britania.jpg' ALT='Bem Vindo!!!'><BR>
+Bem vindo posto<BR>
+########
+</td>
+<td>
+
+<!-- ########BUSCA TELECONTROL########## -->
+
+<FORM METHOD='POST' ACTION='<? $PHP_SELF ?>'>
+<table style='font-family: verdana; font-size: 10px; background-color: #dfdfdf; width='600' border='0' align='center' cellpadding='4' cellspacing='4' >
+<tr>
+<td ROWSPAN='2' width='200'>Busca Rápida Telecontrol</td>
+<td><center>O.S | Pedido | Nota Fiscal | Comunicado | Preço de Peça</center>
+</td>
+</tr>
+
+<tr>
+<td align='center' width='300'>
+<input type='text' size='20' maxlength='20' name='busca' value=''> <INPUT TYPE='submit' name='btn_buscar' value='Buscar'>
+</td>
+</tr>
+</table>
+</form>
+
+<!-- ########BUSCA TELECONTROL########## -->
+
+</td>
+</tr>
+</table>
+
+
+<!--######## TABELA CORPO ########## -->
+
+<table style='font-family: verdana; font-size: 10px; background-color: #ffffff; width='700' border='1' align='center' cellpadding='4' cellspacing='0' >
+<tr>
+
+<td width='150' valign='top'><!--######## ESQUERDO ########## -->
+
+<table style='font-family: verdana; font-size: 10px; background-color: #dfdfdf; width='150' border='1' align='center' cellpadding='3' cellspacing='1' >
+<tr>
+<td>Telecontrol
+</td>
+</tr>
+<tr>
+<td bgcolor='#ffffff'>Aqui os Postos Autorizados Britania podem efetuar o lançamento de Ordens de Serviço em garantia, conferir seu extrato financeiro, visualizar e imprimir vistas explodidas, contatar a empresa através do Fale Conosco, ficar a par de lançamentos de produtos e promoções entre outros recursos de grande utilidade para agilizar todo o processo de controle de Ordens de Serviço.<BR><BR>A Telecontrol desenvolve sistemas totalmente destinados à Internet, com isto você tem acesso às informações de sua empresa de qualquer lugar, podendo tomar decisões gerenciais com total segurança. 
+</td>
+</tr>
+</table>
+<BR><BR>
+<table style='font-family: verdana; font-size: 10px; background-color: #dfdfdf; width='150' border='1' align='center' cellpadding='3' cellspacing='1' >
+<tr width='150'>
+<td colspan='2'>Acesso Rápido
+</td>
+</tr>
+
+<tr width='150'>
+<td width='50' valign='top' bgcolor='#ffffff'>
+<B>Cadastrar</B><BR>
+Ordem Serviço<BR>
+Pedidos de Peça<BR>
+O.S. Revenda<BR>
+Consumidor<BR>
+Revenda<BR>
+Status OS<BR>
+</td>
+<td width='50' valign='top' bgcolor='#ffffff'>
+<B>Consultar</b><BR>
+Ordem Serviço<BR>
+Pedidos de Peça<BR>
+Pendência de Peça<BR>
+O.S. Revenda<BR>
+Nota Fiscal<BR>
+</td>
+</tr>
+<tr>
+<td align='center' colspan='2' bgcolor='#ffffff'>
+<B>Fechar Ordem Serviço</B>
+
+</td>
+</tr>
+</table>
+
+</td><!--######## ESQUERDO ########## -->
+
+
+<td width='500' valign='top'><!--######## DIREITO ########## -->
+<table style='font-family: verdana; font-size: 10px; background-color: #F0F0E4; width='500' border='1' align='center' cellpadding='4' cellspacing='4' >
+<tr>
+<td align='center' colspan='3'>
+<?
+echo "<a href='$PHP_SELF?tipo=Boletim'>Boletim</a> | <a href='$PHP_SELF?tipo=Comunicado'>Comunicado</a> | <a href='$PHP_SELF?tipo=Descritivo técnico'>Descritivo técnico</a> | <a href='$PHP_SELF?tipo=Esquema Elétrico'>Esquema Elétrico</a> | <a href='$PHP_SELF?tipo=Foto'>Foto</a> | <a href='$PHP_SELF?tipo=informativo'>Informativo</a> <BR>  <a href='$PHP_SELF?tipo=Lançamentos'>Lançamentos</a> |  <a href='$PHP_SELF?tipo=Manual'>Manual</a> |  <a href='$PHP_SELF?tipo=Orientação de Serviço'>Orientação</a> |  <a href='$PHP_SELF?tipo=Procedimento'>Procedimento</a> | <a href='$PHP_SELF?tipo=Promocao'>Promoção</a> |  <a href='$PHP_SELF?tipo=Vista Explodida'>Vista Explodida</a>"; ?>
+</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>
+
+	<font size='3'><B>Novo layout do Sistema Telecontrol</B><BR> Confira as novidades do Sistema</font>
+
+</td>
+</tr>
+<tr>
+<td  width='166' valign='top'><font size='1'><B>Boletim</B> 00/00/0000</font><BR>
+Batedeira com problemas<BR>
+BAT PEROLA BRANCA 220V BAU com problemas, por...<BR>
+<hr width='98%' size='1'>
+<font size='1'><B>Boletim</B> 00/00/0000</font><BR>
+Batedeira com problemas<BR>
+BAT PEROLA BRANCA 220V BAU com problemas, por...<BR>
+<hr width='98%' size='1'>
+<font size='1'><B>Boletim</B> 00/00/0000</font><BR>
+Batedeira com problemas<BR>
+BAT PEROLA BRANCA 220V BAU com problemas, por...<BR>
+</td>
+
+<td width='166' valign='top'>
+<font size='1'><B>Lançamento</B> 00/00/0000</font><BR>
+Ar condicionado<BR>
+Verificar o lançamento do novo Ar Condicionado..<BR>
+<hr width='98%' size='1'>
+
+<font size='1'><B>Lançamento</B> 00/00/0000</font><BR>
+TV tela plana<BR>
+Verificar o lançamento do novo TV..<BR>
+<hr width='98%' size='1'>
+
+<font size='1'><B>Lançamento</B> 00/00/0000</font><BR>
+Aquecedor<BR>
+Verificar o lançamento do novo Aquecedor..<BR>
+
+</td>
+
+<td width='166' valign='top'>
+<font size='1'><B>Comunicado</B> 00/00/0000</font><BR>
+Ar condicionado<BR>
+Verificar o lançamento do novo Ar Condicionado..<BR>
+<hr width='98%' size='1'>
+
+<font size='1'><B>Comunicado</B> 00/00/0000</font><BR>
+TV tela plana<BR>
+Verificar o lançamento do novo TV..<BR>
+<hr width='98%' size='1'>
+
+<font size='1'><B>Comunicado</B> 00/00/0000</font><BR>
+Aquecedor<BR>
+Verificar o lançamento do novo Aquecedor..<BR>
+
+</td>
+</tr>
+
+</table>
+<BR>
+<!--######## DIREITO BAIXO########## -->
+<table style='font-family: verdana; font-size: 10px; background-color: #ffffff; width='500' border='0' align='center' cellpadding='3' cellspacing='1' >
+<tr>
+<td valign='top' align='center'><!--######## DIREITO ESQUERDO########## -->
+O Sistema Telecontrol tem o que você precisa!<BR><BR>
+<table style='font-family: verdana; font-size: 10px; background-color: #008800; width='340' border='0' align='center' cellpadding='3' cellspacing='1' >
+<tr>
+<td>Fechamento de Extrato
+</td>
+</tr>
+<tr>
+<td bgcolor='#DCF5C7'>Seu proximo extrato sera fechado no dia ##! Existem 99 OS abertas e 99 Fechadas
+</td>
+</tr>
+</table><BR>
+
+
+<table style='font-family: verdana; font-size: 10px; background-color: #000088; width='340' border='0' align='center' cellpadding='3' cellspacing='1' >
+<tr>
+<td>E-mail atualizado
+</td>
+</tr>
+<tr>
+<td bgcolor='#DBE5F5'>Mantenha seu e-mail atualizado bla bla bla bla bla bla bla bla bla bla bla bla 
+</td>
+</tr>
+</table><BR>
+
+
+<table style='font-family: verdana; font-size: 10px; background-color: #F09A4A; width='340' border='0' align='center' cellpadding='3' cellspacing='1' >
+<tr>
+<td>Informações atualizadas
+</td>
+</tr>
+<tr>
+<td bgcolor='#F0D596'>Mantenha as informações sobre seu posto atualizadas!! bla bla bla bla bla bla bla bla 
+</td>
+</tr>
+</table>
+
+</td><!--######## DIREITO ESQUERDO########## -->
+
+<td valign='top' width='150'><!--######## DIREITO DIREITO - AJUDA########## -->
+<table style='font-family: verdana; font-size: 12px; background-color: #FFCC00; width='150' border='0' align='center' cellpadding='5' cellspacing='1' >
+<tr>
+<td><font color='#ffffff'>Ajuda do Sistema</font>
+</td>
+</tr>
+<tr>
+<td align='center' bgcolor='#ffffff'> <!-- ###MANUAIS#### -->
+<font color='#FF0000' size='1' face='verdana'>
+<b>Obtenha mais informações sobre o novo sistema</b></font>
+<BR><font size='1'><a href='pdf/sistema.pdf'>PDF</a> <a href='pdf/sistema.doc'>DOC</a>
+ <a href='pdf/sistema.htm'>HTML</a></font>
+<BR><BR><font color='#FF0000' size='1' face='verdana'>
+<b>Consulte o manual feito especialmente para você!</b></font><BR>
+<font size='1' face='verdana'><a href='pdf/ajuda.pdf'>PDF</a> 
+<a href='pdf/ajuda.doc'>DOC</a> 
+<a href='pdf/ajuda.htm'>HTML</a></font>
+ <BR><BR><font color='#FF0000' size='1' face='verdana'>
+<b>Para valorizar ainda mais o seu serviço, estamos aumentando o valor das taxas de mão-de-obra</b></font>
+<BR><font size='1'><a href='#doisreais'>saiba mais</a></font>
+<BR><BR><font color='#FF0000' size='1' face='verdana'>
+<b>Circular Manual do Sistema</b></font><BR><font size='1' face='verdana'>
+<a href='http://www.telecontrol.com.br/assist/pdf/sistema.pdf'>PDF</a></font> 
+<font size='1'><a href='http://www.telecontrol.com.br/assist/pdf/sistema.doc'>DOC</a></font> 
+<font size='1'><a href='http://www.telecontrol.com.br/assist/pdf/sistema.htm'>HTML</a></font>
+<BR><BR><font color='#FF0000' size='1' face='verdana'><b>Manual Ajuda do Sistema</b></font><BR>
+<font size='1' face='verdana'><a href='http://www.telecontrol.com.br/assist/pdf/ajuda.pdf'>PDF</a></font> 
+<font size='1'><a href='http://www.telecontrol.com.br/assist/pdf/ajuda.doc'>DOC</a></font> 
+<font size='1'><a href='http://www.telecontrol.com.br/assist/pdf/ajuda.htm'>HTML</a></font>
+
+</td><!-- ###MANUAIS#### -->
+</tr>
+</table>
+
+</td><!--######## DIREITO DIREITO AJUDA########## -->
+</tr>
+
+</table>
+
+
+</td><!--######## DIREITO ########## -->
+
+</tr>
+</table>
+
+<!--######## TABELA CORPO ########## -->
+
+
+
+
+<?
+/*
+echo "<table style='font-family: verdana; font-size: 12px; background-color: #FFFFFF; width='700' border='1' align='center' cellpadding='4' cellspacing='2'>";
+echo "<tr>";
+echo "<td>teste";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+ */
+ include "rodape_lay_novo.php";
+?>

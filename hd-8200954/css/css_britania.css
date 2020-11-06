@@ -1,0 +1,14 @@
+.menu {
+	width: 150px;
+	color: #FFFFFF;
+	background-color: Navy;
+	border-top: 1px medium #FFD700;
+}
+
+.menu_item {
+	height: 30px;
+	font: 12px bold Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: Navy;
+	border-top: 1px medium #FFD700;
+}

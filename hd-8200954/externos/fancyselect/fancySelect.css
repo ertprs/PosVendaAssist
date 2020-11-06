@@ -1,0 +1,173 @@
+div.fancy-select {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	
+}
+
+div.fancy-select div.trigger {
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #fff;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	-webkit-appearance: none;
+	height: 44px;
+	padding: 10px 15px;
+	color: #000;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	line-height: 1.8;
+	z-index: 10;
+	min-width: 200px;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:hover {
+	border-color: #66afe9;
+}
+
+div.fancy-select div.trigger:after {
+	font-family: 'Glyphicons Halflings';
+	border-left: 1px solid #ccc;
+	content: "\e252";
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 55%;
+	top: 30%;
+	right: 15px;
+	margin-top: -2px;
+	padding-left: 1em;
+	color: #555;
+}
+
+div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 11;
+	max-height: 200px;
+	overflow: auto;
+	width: 100%;
+	min-width: 200px;
+	padding: 5px;
+	font-size: 12px;
+
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+	border: 1px solid #CBC5BD;
+	line-height: 1.8;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 0px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 100%;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	padding: 6px 15px;
+	margin: 0px;
+	cursor: pointer;
+	white-space: nowrap;
+
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.hover {
+	color: #555;
+	background: #66afe9;
+}
+
+/* large */
+
+.fancyselect-lg div.fancy-select div.trigger{
+	font-size: 20px;
+	height: 55px;
+	padding: 10px 15px 10px 25px;
+}
+
+.fancyselect-lg div.fancy-select div.trigger:after {
+	width: 47px;
+	height: 17px;
+	margin-top: -8px;
+	background-image: url(../img/icon-caret-down-2x.png);
+	right: 25px;
+}
+
+.fancyselect-lg div.fancy-select ul.options li{
+	padding: 6px 21px;
+	font-size: 20px;
+}

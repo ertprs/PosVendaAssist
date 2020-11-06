@@ -1,0 +1,1 @@
+../admin/dbconfig.php

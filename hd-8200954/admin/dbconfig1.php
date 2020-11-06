@@ -1,0 +1,1 @@
+../dbconfig1.php

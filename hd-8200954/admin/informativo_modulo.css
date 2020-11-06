@@ -1,0 +1,50 @@
+/************* ESTILOS ESPECÍFICOS DA TELA *************/
+#link {
+	width: 420px;
+}
+
+#ordem {
+	width: 80px;
+}
+
+#altura {
+	width: 80px;
+}
+
+#borda {
+	width: 65px;
+}
+
+#img_imagem_esquerda, #img_imagem_direita {
+background-repeat: no-repeat;
+}
+
+.fonte_textos {
+	width: 150px;
+}
+
+.tamanho_textos {
+	width: 50px;
+}
+
+.cor_textos {
+	width: 65px;
+}
+
+.alinhamento_textos {
+	width: 100px;
+}
+
+.ordem_textos {
+	width: 50px;
+}
+
+.texto_textos {
+	width: 680px;
+	height: 200px;
+}
+
+.div_textarea {
+	height: auto;
+}
+

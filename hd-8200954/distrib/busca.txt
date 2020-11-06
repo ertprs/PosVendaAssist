@@ -1,0 +1,83 @@
+baixa_manual.php:		$sql = "UPDATE tbl_contas_receber 
+baixa_manual.php:					WHERE tbl_contas_receber.documento = '$documento' ";
+baixa_manual.php:	$sql = "SELECT	tbl_contas_receber.documento      ,
+baixa_manual.php:					tbl_contas_receber.valor          ,
+baixa_manual.php:					tbl_contas_receber.valor_recebido ,
+baixa_manual.php:					tbl_contas_receber.posto          ,
+baixa_manual.php:					tbl_contas_receber.status         ,
+baixa_manual.php:			FROM tbl_contas_receber
+baixa_manual.php:			JOIN    tbl_posto ON tbl_posto.posto = tbl_contas_receber.posto
+caixa_detalhe.php:				tbl_contas_receber.documento, 
+caixa_detalhe.php:				tbl_contas_receber.valor AS valor,
+caixa_detalhe.php:		JOIN tbl_contas_receber USING (posto)
+caixa_detalhe.php:		WHERE tbl_contas_receber.vencimento = '$vencto' AND tbl_contas_receber.recebimento IS NULL AND tbl_contas_receber.distribuidor=$login_posto";
+caixa_devedores.php:				FROM tbl_contas_receber
+caixa_devedores_valor.php:				FROM tbl_contas_receber
+caixa.php:		FROM (SELECT tbl_contas_receber.vencimento::date AS vencimento, SUM (valor) AS total 
+caixa.php:				FROM tbl_contas_receber 
+caixa.php:				GROUP BY tbl_contas_receber.vencimento::date
+caixa_senha.php:		FROM (SELECT tbl_contas_receber.vencimento::date AS vencimento, SUM (valor) AS total 
+caixa_senha.php:				FROM tbl_contas_receber 
+caixa_senha.php:				GROUP BY tbl_contas_receber.vencimento::date
+compra_manual.php:AND   tbl_pedido.posto IN (SELECT posto FROM tbl_contas_receber WHERE tbl_contas_receber.posto = tbl_pedido.posto AND tbl_contas_receber.recebimento IS NULL AND tbl_contas_receber.vencimento <  CURRENT_DATE - INTERVAL '30 days' )
+conta_receber.php:					tbl_contas_receber.documento, 
+conta_receber.php:					tbl_contas_receber.valor AS valor,
+conta_receber.php:					(current_date - tbl_contas_receber.vencimento::date)::int4 AS dias_atraso,
+conta_receber.php:					TO_CHAR(tbl_contas_receber.vencimento,'DD/MM/YYYY') as vencimento,
+conta_receber.php:			JOIN tbl_contas_receber USING (posto)
+conta_receber.php:				) post ON post.posto = tbl_contas_receber.posto";
+conta_receber.php:	$sql .= " WHERE tbl_contas_receber.distribuidor  = $login_posto";
+conta_receber.php:		$sql .=" AND tbl_contas_receber.recebimento IS NULL 
+conta_receber.php:				 AND (current_date - tbl_contas_receber.vencimento::date)::int4 > 0";
+conta_receber.php:		$sql .=" AND tbl_contas_receber.recebimento IS NULL ";
+conta_receber.php:		$sql .= " AND tbl_contas_receber.vencimento BETWEEN '$x_data_inicial' AND '$x_data_final'";
+conta_receber.php:	$sql .= "ORDER BY tbl_contas_receber.vencimento";
+conta_receber_test.php:					tbl_contas_receber.documento, 
+conta_receber_test.php:					tbl_contas_receber.valor AS valor,
+conta_receber_test.php:					(current_date - tbl_contas_receber.vencimento::date)::int4 AS dias_atraso,
+conta_receber_test.php:					TO_CHAR(tbl_contas_receber.vencimento,'DD/MM/YYYY') as vencimento,
+conta_receber_test.php:			JOIN tbl_contas_receber USING (posto)
+conta_receber_test.php:				) post ON post.posto = tbl_contas_receber.posto";
+conta_receber_test.php:	$sql .= " WHERE tbl_contas_receber.distribuidor  = $login_posto";
+conta_receber_test.php:		$sql .=" AND tbl_contas_receber.recebimento IS NULL 
+conta_receber_test.php:				 AND (current_date - tbl_contas_receber.vencimento::date)::int4 > 0";
+conta_receber_test.php:		$sql .=" AND tbl_contas_receber.recebimento IS NULL ";
+conta_receber_test.php:		$sql .= " AND tbl_contas_receber.vencimento BETWEEN '$x_data_inicial' AND '$x_data_final'";
+conta_receber_test.php:	$sql .= "ORDER BY tbl_contas_receber.vencimento";
+duplicata_conferencia.php:	$sql = "SELECT  tbl_contas_receber.faturamento_fatura                              ,
+duplicata_conferencia.php:					tbl_contas_receber.documento                                       ,
+duplicata_conferencia.php:					to_char(tbl_contas_receber.emissao,'DD/MM/YYYY')     AS emissao    ,
+duplicata_conferencia.php:					tbl_contas_receber.valor                                           ,
+duplicata_conferencia.php:					to_char(tbl_contas_receber.vencimento,'DD/MM/YYYY')  AS vencimento ,
+duplicata_conferencia.php:					to_char(tbl_contas_receber.recebimento,'DD/MM/YYYY') AS recebimento,
+duplicata_conferencia.php:					tbl_contas_receber.valor_recebido                                  ,
+duplicata_conferencia.php:					tbl_contas_receber.status                                          ,
+duplicata_conferencia.php:					case when   tbl_contas_receber.vencimento < current_date
+duplicata_conferencia.php:							and tbl_contas_receber.status      is null
+duplicata_conferencia.php:							and tbl_contas_receber.recebimento is null then
+duplicata_conferencia.php:						case when tbl_contas_receber.vencimento < current_date
+duplicata_conferencia.php:								and tbl_contas_receber.status      notnull
+duplicata_conferencia.php:								and tbl_contas_receber.recebimento is null then
+duplicata_conferencia.php:							case when tbl_contas_receber.recebimento    notnull
+duplicata_conferencia.php:								and   tbl_contas_receber.valor_recebido notnull then
+duplicata_conferencia.php:			FROM    tbl_contas_receber
+duplicata_conferencia.php:			JOIN    tbl_faturamento_fatura   ON tbl_faturamento_fatura.faturamento_fatura = tbl_contas_receber.faturamento_fatura
+duplicata_conferencia.php:		$sql .= "AND tbl_contas_receber.documento ilike '$documento%' ";
+duplicata_conferencia.php:		$sql .= "AND tbl_contas_receber.recebimento IS NULL
+duplicata_conferencia.php:				 AND tbl_contas_receber.status      IS NULL ";
+duplicata_conferencia.php:	$sql .= "GROUP BY   tbl_contas_receber.faturamento_fatura,
+duplicata_conferencia.php:						tbl_contas_receber.documento         ,
+duplicata_conferencia.php:						tbl_contas_receber.emissao           ,
+duplicata_conferencia.php:						tbl_contas_receber.valor             ,
+duplicata_conferencia.php:						tbl_contas_receber.vencimento        ,
+duplicata_conferencia.php:						tbl_contas_receber.recebimento       ,
+duplicata_conferencia.php:						tbl_contas_receber.valor_recebido    ,
+duplicata_conferencia.php:						tbl_contas_receber.status
+duplicata_conferencia.php:			ORDER BY    tbl_contas_receber.vencimento,
+duplicata_conferencia.php:						tbl_contas_receber.emissao;";
+pedido_consulta.php:							FROM tbl_contas_receber
+posicao_financeira_telecontrol.php:			FROM   tbl_contas_receber
+posicao_financeira_telecontrol.php:			WHERE  (tbl_contas_receber.recebimento IS NULL OR tbl_contas_receber.recebimento > current_date - INTERVAL '90 days')
+posicao_financeira_telecontrol.php://	AND    tbl_contas_receber.status      IS NULL
+posicao_financeira_telecontrol.php:						FROM    tbl_contas_receber
+posicao_financeira_telecontrol.php:						ORDER BY tbl_contas_receber.vencimento ";

@@ -1,0 +1,4 @@
+TP    	Trocar Peca
+LP    	Limpeza
+AJ    	Ajuste
+SD    	Soldagem

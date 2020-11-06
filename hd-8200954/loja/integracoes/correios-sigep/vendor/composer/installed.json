@@ -1,0 +1,37 @@
+[
+    {
+        "name": "stavarengo/php-sigep-fpdf",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stavarengo/php-sigep-fpdf.git",
+            "reference": "83bb6890d09c970047732704f782bd8e701de0bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stavarengo/php-sigep-fpdf/zipball/83bb6890d09c970047732704f782bd8e701de0bf",
+            "reference": "83bb6890d09c970047732704f782bd8e701de0bf",
+            "shasum": ""
+        },
+        "time": "2017-08-30T14:03:11+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "PhpSigepFPDF.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stavarengo",
+                "email": "faelsta@gmail.com"
+            }
+        ],
+        "description": "Unofficial FPDF library - Cópia do FPDF 1.7 usado pelo projeto stavarengo/php-sigep."
+    }
+]

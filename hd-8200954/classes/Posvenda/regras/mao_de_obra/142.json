@@ -1,0 +1,6 @@
+{
+  "tabela": "tbl_os_produto",
+  "nao_calcula_peca": true,
+  "taxa_visita" : 55,
+  "calcula_visita_km": true
+}

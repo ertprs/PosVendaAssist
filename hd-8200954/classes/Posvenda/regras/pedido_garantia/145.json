@@ -1,0 +1,8 @@
+{
+	"auditorias": [
+		{ "nome": "Solicitacao de Peca/Produto", "status": [203, 204, 205], "status_aprovacao": [203,204] },
+		{ "nome": "Analise da Fabrica", "status": [199, 200, 201,64], "status_aprovacao": [200,64] },
+		{ "nome": "OS Reincidente", "status": [70, 19,139,90], "status_aprovacao": [19,139,90] },
+		{ "nome": "Construtora", "status": [213, 214, 215], "status_aprovacao": 214 }
+	]
+}

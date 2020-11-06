@@ -1,0 +1,359 @@
+4082610000        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000003.13 00001,00
+4200030000        CONJ. PLACA COM VALVULAS                        SPI      SPCOMP                                  00.00 00000010.03 00001,00
+5062030008        CILINDRO F154                                   SPI      SPCOMP                                  00.00 00000020.37 00001,00
+7011170000        PARAFUSO SEXT. M10X35                           SPI      SPCOMP                                  10.00 00000000.63 00001,00
+7011220000        PARAFUSO M6X40                                  SPI      SPCOMP                                  10.00 00000000.32 00001,00
+7011460000        PARAFUSO DRENO DO CARTERM6X12                   SPI      SPCOMP                                  10.00 00000000.19 00002,00
+7011550000        PARAFUSO SEXTAVADO M8X60                        SPI      SPCOMP                                  10.00 00000000.56 00001,00
+7012060000        PARAFUSO PHILLIPS M4X12                         SPI      SPCOMP                                  10.00 00000000.12 00001,00
+7012100000        PARAFUSO PHILLIPS 3.9X16                        SPI      SPCOMP                                  10.00 00000000.19 00002,00
+7030360000        ARRUELA PRESSAO M10X16                          SPI      SPCOMP                                  10.00 00000000.32 00001,00
+7031010000        ARRUELA DE PRESSAO M8X13                        SPI      SPCOMP                                  10.00 00000000.19 00001,00
+7040020000        ANEL DE RETENCAO INTERNO                        SPI      SPCOMP                                  10.00 00000000.32 00001,00
+7060010000        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000011.28 00001,00
+7060060000        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000013.79 00001,00
+7060280000        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000011.91 00001,00
+7060550000        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000012.23 00001,00
+7062720000        DISTANCIADOR                                    SPI      SPCOMP                                  00.00 00000002.20 00001,00
+7078500000        JUNTA SUP. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000001.57 00001,00
+7078640000        JUNTA INF. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000002.36 00001,00
+7100640000        REGULADOR DE PRESSAO                            SPI      SPCOMP                                  00.00 00000018.31 00001,00
+7130010000        TORNEIRA 1/4                                    SPI      SPCOMP                                  00.00 00000007.59 00001,00
+7140580000        ANEL                                            SPI      SPCOMP                                  10.00 00000005.12 00001,00
+7150580000        CARENAGEM POSTERIOR                             SPI      SPCOMP                                  00.00 00000012.85 00001,00
+7150590000        CARENAGEM ANTERIOR PRETA                        SPI      SPCOMP                                  00.00 00000006.59 00001,00
+7180060000        VISOR NIVEL DE OLEO                             SPI      SPCOMP                                  00.00 00000004.57 00001,00
+7190080000        VALVULA NAO RETORNO1/2 X3/8                     SPI      SPCOMP                                  05.00 00000011.28 00001,00
+7190090000        VALVULA NAO RETORNO1/2 X 1/2                    SPI      SPCOMP                                  05.00 00000020.75 00001,00
+7200140000        VENTILADOR                                      SPI      SPCOMP                                  00.00 00000007.84 00001,00
+7250740000        PRESSOSTATO                                     SPI      SPCOMP                                  15.00 00000017.29 00001,00
+7310080000        CAPACITOR 25MF V45050-60Hz                      SPI      SPCOMP                                  10.00 00000014.11 00001,00
+7310360000        CAPACITOR 60MF V40050-60Hz                      SPI      SPCOMP                                  10.00 00000019.43 00001,00
+7422160010        CONJ. FILTRO DE AR                              SPI      SPCOMP                                  00.00 00000005.96 00001,00
+7422160030        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000018.17 00001,00
+7422160040        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000011.86 00001,00
+7422160050        PISTAO                                          SPI      SPCOMP                                  05.00 00000016.29 00001,00
+7422160060        JOGO DE ANEIS                                   SPI      SPCOMP                                  10.00 00000011.76 00001,00
+7422160070        CONECTOR                                        SPI      SPCOMP                                  00.00 00000007.52 00001,00
+7422160080        PORCA SERPENTINA INTERM                         SPI      SPCOMP                                  10.00 00000002.39 00001,00
+7422160090        SERPENTINA INTERMEDIARIA                        SPI      SPCOMP                                  05.00 00000013.79 00001,00
+7422160100        JUNTA SUP. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000001.04 00001,00
+7422160120        VALVULA                                         SPI      SPCOMP                                  05.00 00000002.20 00001,00
+7422160130        PLACA DE VALVULA                                SPI      SPCOMP                                  00.00 00000020.05 00001,00
+7422160140        JUNTA INF. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000000.94 00001,00
+7422160150        PRISIONEIRO M8                                  SPI      SPCOMP                                  00.00 00000000.37 00001,00
+7422160160        CILINDRO                                        SPI      SPCOMP                                  05.00 00000042.63 00001,00
+7422160170        JUNTA PE CILINDRO                               SPI      SPCOMP                                  08.00 00000001.31 00001,00
+7422160180        PINO DO PISTAO                                  SPI      SPCOMP                                  10.00 00000002.20 00001,00
+7422160190        BIELA                                           SPI      SPCOMP                                  00.00 00000010.35 00001,00
+7422160200        PLUG CARTER                                     SPI      SPCOMP                                  00.00 00000001.25 00001,00
+7422160210        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000001.25 00001,00
+7422160220        TAMPA TRASEIRA DO CARTER                        SPI      SPCOMP                                  00.00 00000004.71 00001,00
+7422160230        JUNTA DA TAMPA TRASEIRA                         SPI      SPCOMP                                  08.00 00000000.79 00001,00
+7422160240        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000013.79 00001,00
+7422160250        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000001.25 00001,00
+7422160260        DRENO DO CARTER                                 SPI      SPCOMP                                  00.00 00000000.75 00001,00
+7422160270        RETENTOR 24X47X8                                SPI      SPCOMP                                  10.00 00000004.20 00001,00
+7422160280        JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000001.57 00001,00
+7422160290        TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000023.51 00001,00
+7422160300        SUSPIRO DO CARTER                               SPI      SPCOMP                                  00.00 00000004.83 00001,00
+7422160310        VOLANTE                                         SPI      SPCOMP                                  00.00 00000070.51 00001,00
+7422160320        PARAFUSO SEXTAVADO M8X25                        SPI      SPCOMP                                  10.00 00000000.25 00001,00
+7422160340        CARTER                                          SPI      SPCOMP                                  05.00 00000124.73 00001,00
+7422160350        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000051.45 00001,00
+7422170050        SERPENTINA INTERMEDIARIA                        SPI      SPCOMP                                  05.00 00000020.05 00001,00
+7422170060        CONECTOR T                                      SPI      SPCOMP                                  00.00 00000009.72 00001,00
+7422170080        JUNTA INF. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000002.09 00001,00
+7422170160        ARRUELA LISA 30X44X1,5                          SPI      SPCOMP                                  10.00 00000000.63 00001,00
+7422170170        TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000040.75 00001,00
+7422170180        JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000002.36 00001,00
+7422170190        RETENTOR                                        SPI      SPCOMP                                  10.00 00000005.64 00001,00
+7422170200        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000015.04 00001,00
+7422170210        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000057.97 00001,00
+7422170220        CARTER                                          SPI      SPCOMP                                  05.00 00000196.56 00001,00
+7422170230        ANEL DE RETENCAO EXTERNO                        SPI      SPCOMP                                  10.00 00000000.95 00001,00
+7422170300        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000021.93 00001,00
+7422180010        CONJ. FILTRO DE AR                              SPI      SPCOMP                                  00.00 00000012.85 00001,00
+7422180030        COTOVELO                                        SPI      SPCOMP                                  05.00 00000012.04 00001,00
+7422180070        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000026.32 00001,00
+7422180080        JUNTA SUP. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000002.09 00001,00
+7422180120        CILINDRO                                        SPI      SPCOMP                                  05.00 00000053.28 00001,00
+7422180130        JUNTA PE CILINDRO                               SPI      SPCOMP                                  08.00 00000002.09 00001,00
+7422180140        JOGO DE ANEIS                                   SPI      SPCOMP                                  10.00 00000021.68 00001,00
+7422180150        PISTAO                                          SPI      SPCOMP                                  05.00 00000033.96 00001,00
+7422180160        PINO DO PISTAO                                  SPI      SPCOMP                                  10.00 00000003.13 00001,00
+7422180170        ANEL DE RETENCAO INTERNO                        SPI      SPCOMP                                  10.00 00000000.51 00001,00
+7422180200        VOLANTE                                         SPI      SPCOMP                                  00.00 00000137.64 00001,00
+7422180280        BIELA                                           SPI      SPCOMP                                  00.00 00000019.84 00001,00
+7422180310        DRENO DE OLEO DO CARTER                         SPI      SPCOMP                                  00.00 00000001.25 00001,00
+7422180320        VISOR NIVEL DE OLEO                             SPI      SPCOMP                                  00.00 00000006.64 00001,00
+7422180380        CHAVETA                                         SPI      SPCOMP                                  10.00 00000001.00 00001,00
+7422180390        CONJ. PLACA COM VALVULAS                        SPI      SPCOMP                                  00.00 00000032.59 00001,00
+7422180410        TIRANTE M10X40                                  SPI      SPCOMP                                  00.00 00000000.63 00001,00
+7422220030        SUSPIRO DO CARTER                               SPI      SPCOMP                                  00.00 00000004.57 00001,00
+7422220050        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000001.57 00001,00
+7422220080        CARTER                                          SPI      SPCOMP                                  05.00 00000096.84 00001,00
+7422220110        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000041.68 00001,00
+7422220130        JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000001.57 00001,00
+7422220140        TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000023.51 00001,00
+7422220150        VOLANTE                                         SPI      SPCOMP                                  00.00 00000061.73 00001,00
+7422220170        PINO DE ACO 2X10                                SPI      SPCOMP                                  10.00 00000000.63 00001,00
+7422220180        CHAVETA                                         SPI      SPCOMP                                  10.00 00000001.00 00001,00
+7422220260        PESCADOR INCLINADO                              SPI      SPCOMP                                  00.00 00000001.25 00001,00
+7422220270        PESCADOR RETO                                   SPI      SPCOMP                                  00.00 00000001.25 00001,00
+7422220280        COLO DA BIELA                                   SPI      SPCOMP                                  00.00 00000003.13 00001,00
+7422220290        BIELA                                           SPI      SPCOMP                                  00.00 00000010.65 00001,00
+7422220380        SERPENTINA INTERMEDIARIA                        SPI      SPCOMP                                  05.00 00000015.67 00001,00
+7422220390        CONECTOR T                                      SPI      SPCOMP                                  00.00 00000007.52 00001,00
+7458680000        APOIO EXTERNO DO FILTRO                         SPI      SPCOMP                                  00.00 00000001.19 00001,00
+7458810000        DISCO SUPERIOR                                  SPI      SPCOMP                                  00.00 00000001.13 00001,00
+7570550000        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000017.24 00001,00
+7581030000        BIELA                                           SPI      SPCOMP                                  00.00 00000008.15 00001,00
+7640100000        TAMPA TRASEIRA                                  SPI      SPCOMP                                  00.00 00000012.23 00001,00
+7670040000        CARTER                                          SPI      SPCOMP                                  05.00 00000034.47 00001,00
+9100010020        CARTER                                          SPI      SPCOMP                                  05.00 00000058.55 00001,00
+9100010030        TAMPA TRASEIRA                                  SPI      SPCOMP                                  00.00 00000023.51 00001,00
+9100010040        ROTOR                                           SPI      SPCOMP                                  10.00 00000072.20 00001,00
+9100010050        PRISIONEIRO M8                                  SPI      SPCOMP                                  00.00 00000000.37 00001,00
+9100010060        PARAFUSO SEXT. M6X139                           SPI      SPCOMP                                  10.00 00000001.88 00001,00
+9100010070        PINO DO PISTAO                                  SPI      SPCOMP                                  10.00 00000001.88 00001,00
+9100010080        JUNTA INTERM. PLACA VALV                        SPI      SPCOMP                                  08.00 00000000.99 00001,00
+9100010100        JUNTA DE BORRACHA CARTER                        SPI      SPCOMP                                  08.00 00000003.23 00001,00
+9100010110        TAMPA DO CARTER                                 SPI      SPCOMP                                  00.00 00000013.79 00001,00
+9100010170        SUSPIRO DO CARTER                               SPI      SPCOMP                                  00.00 00000003.25 00001,00
+9100010200        VENTILADOR                                      SPI      SPCOMP                                  00.00 00000014.41 00001,00
+9100010210        ELEMENTO FILTRANTE                              SPI      SPCOMP                                  00.00 00000000.51 00001,00
+9100010220        TAMPA DO FILTRO                                 SPI      SPCOMP                                  00.00 00000002.63 00001,00
+9100010230        PISTAO                                          SPI      SPCOMP                                  05.00 00000014.48 00001,00
+9100010240        PLACA DE VALVULA                                SPI      SPCOMP                                  00.00 00000016.48 00001,00
+9100010250        APOIO INTERNO DO FILTRO                         SPI      SPCOMP                                  00.00 00000001.00 00001,00
+9100010270        CILINDRO 50mm                                   SPI      SPCOMP                                  05.00 00000032.59 00001,00
+9100010280        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000024.76 00001,00
+9100010290        CONTRAPESO                                      SPI      SPCOMP                                  00.00 00000020.05 00001,00
+9100010300        JUNTA PE CILINDRO                               SPI      SPCOMP                                  08.00 00000001.67 00001,00
+9100010310        JUNTA SUP. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000001.47 00001,00
+9100010320        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000020.19 00001,00
+9100010370        VALVULA                                         SPI      SPCOMP                                  05.00 00000001.32 00001,00
+9100010430        RETENTOR 25X52X10                               SPI      SPCOMP                                  10.00 00000003.64 00001,00
+9100010470        COTOVELO                                        SPI      SPCOMP                                  05.00 00000003.45 00001,00
+9100010480        ANEL DE RETENCAO INTERNO                        SPI      SPCOMP                                  10.00 00000000.32 00001,00
+9100010780        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000008.82 00001,00
+9100010790        JOGO DE ANEIS                                   SPI      SPCOMP                                  10.00 00000009.92 00001,00
+9100020150        JUNTA INF. PLACA VALVULA                        SPI      SPCOMP                                  08.00 00000001.47 00001,00
+9100030040        BIELA                                           SPI      SPCOMP                                  00.00 00000008.47 00001,00
+9100030090        CARENAGEM                                       SPI      SPCOMP                                  00.00 00000023.81 00001,00
+9100250080        VALVULA START                                   SPI      SPCOMP                                  05.00 00000011.41 00001,00
+9101060010        ESTATOR 110V/220V 60Hz                          SPI      SPCOMP                                  10.00 00000125.04 00001,00
+9991950010        ARRUELA LISA M8X36X4                            SPI      SPCOMP                                  10.00 00000000.75 00001,00
+9991950020        VOLANTE                                         SPI      SPCOMP                                  00.00 00000032.59 00001,00
+9991950030        TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000009.91 00001,00
+9991950040        SUSPIRO DO CARTER                               SPI      SPCOMP                                  00.00 00000004.08 00001,00
+9991950050        JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000001.83 00001,00
+9991950060        RETENTOR 20X35X10                               SPI      SPCOMP                                  10.00 00000002.20 00001,00
+9991950070        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000011.28 00001,00
+9991950080        ANEL DE RETENCAO EXTERNO                        SPI      SPCOMP                                  10.00 00000000.63 00001,00
+9991950100        ROLAMENTO DE ESFERAS                            SPI      SPCOMP                                  12.00 00000011.91 00001,00
+9991950110        ANEL TRAVA                                      SPI      SPCOMP                                  10.00 00000000.32 00001,00
+9991950120        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000039.17 00001,00
+9991950130        BLOCO CARTER E CILINDRO                         SPI      SPCOMP                                  05.00 00000062.36 00001,00
+9991950140        DRENO OLEO DO CARTER                            SPI      SPCOMP                                  00.00 00000000.51 00001,00
+9991950150        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000000.51 00001,00
+9991950160        VISOR NIVEL DE OLEO                             SPI      SPCOMP                                  00.00 00000004.57 00001,00
+9991950170        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000000.63 00001,00
+9991950180        TAMPA DE OLEO DO CARTER                         SPI      SPCOMP                                  00.00 00000001.25 00001,00
+9991950190        JUNTA DO CABECOTE                               SPI      SPCOMP                                  08.00 00000001.31 00001,00
+9991950200        BIELA                                           SPI      SPCOMP                                  00.00 00000008.47 00001,00
+9991950230        ANEL DE RETENCAO INTERNO                        SPI      SPCOMP                                  10.00 00000000.32 00001,00
+9991950250        SEDE DA VALV. ADMISSAO                          SPI      SPCOMP                                  00.00 00000005.33 00001,00
+9991950270        VALVULA                                         SPI      SPCOMP                                  05.00 00000001.57 00001,00
+9991950310        SEDE DA VALV. COMPRESSAO                        SPI      SPCOMP                                  00.00 00000005.33 00001,00
+9991950320        MOLA DA VALV. COMPRESSAO                        SPI      SPCOMP                                  15.00 00000001.25 00001,00
+9991950330        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000024.13 00001,00
+9991950350        PARAFUSO ALLEN M6X15                            SPI      SPCOMP                                  10.00 00000000.32 00001,00
+9991950370        TIRANTE M4X40                                   SPI      SPCOMP                                  00.00 00000000.25 00001,00
+9991950380        PORCA BORBOLETA M4                              SPI      SPCOMP                                  10.00 00000000.63 00001,00
+9991950390        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000003.13 00001,00
+9991950410        MOLA DA VALV. ADMISSAO                          SPI      SPCOMP                                  15.00 00000001.25 00001,00
+9991950420        ARRUELA SEDE VALVULA23X27X0,65                  SPI      SPCOMP                                  10.00 00000000.63 00001,00
+9991960010        CONJ. FILTRO DE AR                              SPI      SPCOMP                                  00.00 00000005.96 00001,00
+9991960020        ARRUELA LISA M10X36X5                           SPI      SPCOMP                                  10.00 00000001.00 00001,00
+9991960040        TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000026.08 00001,00
+9991960050        RETENTOR 25X35X7,5                              SPI      SPCOMP                                  10.00 00000004.01 00001,00
+9991960070        VIRABREQUIM                                     SPI      SPCOMP                                  00.00 00000060.17 00001,00
+9991960080        BLOCO CARTER E CILINDRO                         SPI      SPCOMP                                  05.00 00000140.33 00001,00
+9991960100        JUNTA DA TAMPA TRASEIRA                         SPI      SPCOMP                                  08.00 00000001.31 00001,00
+9991960110        TAMPA DO CARTER                                 SPI      SPCOMP                                  00.00 00000015.36 00001,00
+9991960150        SUSPIRO DO CARTER                               SPI      SPCOMP                                  00.00 00000003.69 00001,00
+9991960160        BIELA                                           SPI      SPCOMP                                  00.00 00000016.55 00001,00
+9991960190        PISTAO                                          SPI      SPCOMP                                  05.00 00000016.29 00001,00
+9991960240        JUNTA INTERM. PLACA VALV                        SPI      SPCOMP                                  08.00 00000001.47 00001,00
+9991960260        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000038.29 00001,00
+9991960270        PARAFUSO ALLEN M8X30                            SPI      SPCOMP                                  10.00 00000000.32 00001,00
+9991960280        JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000001.83 00001,00
+9991960310        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000006.58 00001,00
+9991970010        TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000015.36 00001,00
+9991970110        CILINDRO                                        SPI      SPCOMP                                  05.00 00000030.40 00001,00
+9991970120        JUNTA PE CILINDRO                               SPI      SPCOMP                                  08.00 00000001.31 00001,00
+9991970130        JOGO DE ANEIS                                   SPI      SPCOMP                                  10.00 00000008.36 00001,00
+9991970140        PISTAO                                          SPI      SPCOMP                                  05.00 00000013.48 00001,00
+9991970150        PINO DO PISTAO                                  SPI      SPCOMP                                  10.00 00000001.25 00001,00
+9991970160        BIELA                                           SPI      SPCOMP                                  00.00 00000008.47 00001,00
+9991970220        VISOR NIVEL DE OLEO                             SPI      SPCOMP                                  00.00 00000002.20 00001,00
+9991970230        ANEL DE BORRACHA                                SPI      SPCOMP                                  08.00 00000000.63 00001,00
+9991970250        CARTER                                          SPI      SPCOMP                                  05.00 00000066.07 00001,00
+9991970360        JOGO DE JUNTAS                                  SPI      SPCOMP                                  08.00 00000011.86 00001,00
+9991970370        PESCADOR                                        SPI      SPCOMP                                  00.00 00000000.63 00001,00
+153114-01         ETIQ. ESPECIF. DW352-B3 TIPO 1                  SPI      SPPPT         OBSOLETO                  15.00 00000002.16 00001,00
+153115-01         ETIQ. ESPECIF. DW352-B2 TIPO 1                  SPI      SPPPT         OBSOLETO                  15.00 00000002.16 00001,00
+184696-00         CONJ.MANCAL 79XX ANTIGA                         SPCJF    SPCPT         OBSOLETO                  12.00 00000004.96 00001,00
+186396-00         CONJ.PORTA ESCOVA DW502                         SPCJF    SPPPT                                   10.00 00000001.39 00001,00
+186500-00         MANOMETRO 1/4NPT0-250PSIS/TRS.S/LOG FIAC 1190749SPPCN    SPCOMP                                  00.00 00000009.03 00001,00
+186502-00         VALVULA SEG.1/4 8 BARFIAC 1991237               SPPCN    SPCOMP                                  00.00 00000003.57 00001,00
+186503-00         VALVULA SEG.1/4 175 LBSFIAC 1991242             SPPCN    SPCOMP                                  00.00 00000006.76 00001,00
+186504-00         VALVULA RETENCAO 1" FIAC1991264                 SPPCN    SPCOMP                                  00.00 00000021.31 00001,00
+186536-00         ADESIVO 220 VOLTS FIAC061209                    SPPCN    SPCOMP                                  00.00 00000000.07 00001,00
+186537-00         ADESIVO ADV PRESS B&DFIAC 061215                SPPCN    SPCOMP                                  00.00 00000000.12 00001,00
+186538-00         ADESIVO RESER.B&D S/OLEOFIAC 061216             SPPCN    SPCOMP                                  00.00 00000001.28 00001,00
+186539-00         ADESIVO ADV VAL.PURG B&DFIAC 061214             SPPCN    SPCOMP                                  00.00 00000001.28 00001,00
+186541-00         ADESIVO MUD.VOLT.B&DFIAC 0060077                SPPCN    SPCOMP                                  00.00 00000001.13 00001,00
+186542-00         ADESIVO NR13 B&D FIAC061213                     SPPCN    SPCOMP                                  00.00 00000000.12 00001,00
+186543-00         ADESIVO RES.LOGO B&D 25LS/OLEO B2/BR FIAC 061212SPPCN    SPCOMP                                  15.00 00000001.45 00001,00
+186544-00         ADESIVO LATERAL B&DFIAC 061210                  SPPCN    SPCOMP                                  00.00 00000000.27 00001,00
+186547-00         ADES.ADVERT.RES.25/50LB&D C/OLEO FIAC 061379    SPPCN    SPCOMP                                  15.00 00000001.32 00001,00
+186565-00         ADES.ADV.RES.DW 2,6-5,2FIAC 061405              SPPCN    SPCOMP                                  15.00 00000001.28 00001,00
+186566-00         ADESIVO ADV.RES.DW 10-20B3 FIAC 061406          SPPCN    SPCOMP                                  15.00 00000003.84 00001,00
+186567-00         ADESIVO NR 13 DEWALTFIAC 061407                 SPPCN    SPCOMP                                  15.00 00000000.39 00001,00
+186568-00         ADESIVO ADV. PRESSOST.FIAC 061403               SPPCN    SPCOMP                                  00.00 00000001.28 00001,00
+186569-00         ADESIVO INSTR. PRESSOST.FIAC 061402             SPPCN    SPCOMP                                  15.00 00000000.25 00001,00
+186570-00         ADESIVO ADV.VAL.PURG.DWFIAC 061404              SPPCN    SPCOMP                                  15.00 00000000.25 00001,00
+186571-00         ADESIVO FRONTAL 2,6/60DEWALT B2 FIAC 061399     SPPCN    SPCOMP                                  15.00 00000000.85 00001,00
+186572-00         ADESIVO FRONTAL 5,2/100DEWALT B2 FIAC 061400    SPPCN    SPCOMP                                  15.00 00000001.48 00001,00
+186573-00         ADESIVO FRONTAL 10/200DEWALT B2 FIAC 061401     SPPCN    SPCOMP                                  15.00 00000005.04 00001,00
+186574-00         ADESIVO FRONT.15/200DEWALT B2 FIAC 061397       SPPCN    SPCOMP                                  15.00 00000004.96 00001,00
+186575-00         ADESIVO FRONTAL 25/250DEWALT B2 FIAC 061398     SPPCN    SPCOMP                                  15.00 00000005.93 00001,00
+186576-00         ANILHA 10mm FIAC 2080004                        SPPCN    SPCOMP                                  10.00 00000000.55 00001,00
+186590-00         CABO PLUG TRIP.SELOINMETRO FIAC 0300240         SPPCN    SPCOMP                                  05.00 00000006.23 00001,00
+186606-00         CARENAGEM PLAST.PROF.AR                         SPPCN    SPCOMP                                  15.00 00000013.28 00001,00
+186642-00         CORREIA A-42 FIAC0610443                        SPPCN    SPCOMP                                  10.00 00000006.64 00001,00
+186647-00         CORREIA A-38 FIAC0610428                        SPPCN    SPCOMP                                  10.00 00000004.00 00001,00
+186648-00         CORREIA A-37 FIAC0610465                        SPPCN    SPCOMP                                  10.00 00000004.53 00001,00
+186649-00         CORREIA A-48 FIAC0610447                        SPPCN    SPCOMP                                  10.00 00000005.93 00001,00
+186652-00         COTOVELO L 1/4 FIAC0630462                      SPPCN    SPCOMP                                  05.00 00000003.87 00001,00
+186653-00         COTOVELO MACHO OD.1/2 x1/2 BSP FIAC 0630469     SPPCN    SPCOMP                                  05.00 00000011.21 00001,00
+186654-00         COTOVELO MACHO OD.1/4 x1/8 NPT FIAC 0630470     SPPCN    SPCOMP                                  05.00 00000004.33 00001,00
+186656-00         CRUZETA 1/4 GALV FIAC0640471                    SPPCN    SPCOMP                                  00.00 00000006.13 00001,00
+186658-00         CONEXAO T FIAC 2090001                          SPPCN    SPCOMP                                  00.00 00000002.31 00001,00
+186659-00         PLUG 1/2 FIAC 1500933                           SPPCN    SPCOMP                                  00.00 00000001.01 00001,00
+186661-00         DRENO 1/4 RECARTILHADOFIAC 0700488              SPPCN    SPCOMP                                  05.00 00000002.97 00001,00
+186673-00         ESPAGUETE 10mm PRETOFIAC 0820539                SPPCN    SPCOMP                                  00.00 00000000.84 00000,00
+186675-00         GRADE PROTECAO 515x335MEDIA FIAC 0940583        SPPCN    SPCOMP                                  00.00 00000020.57 00001,00
+186714-00         NIPLE RETO 1/4 x 1/4BSPT LATAO FIAC 1320832     SPPCN    SPCOMP                                  00.00 00000002.84 00001,00
+186718-00         PISTOLA FX2000 MOD.90SFIAC 1460911              SPPCN    SPCOMP                                  05.00 00000036.20 00001,00
+186719-00         PLAQUETA IDENTIF.RESER.B&D FX90 22 FIAC 1480932 SPPCN    SPCOMP                                  00.00 00000003.25 00001,00
+186719-01         PLAQUETA IDENTIF.RESERV.B&D FX90 50 FIAC 1480932SPPCN    SPCOMP                                  05.00 00000003.13 00001,00
+186719-03         PLAQUETA ID.CABEC.TIPO 1D55905F FIAC 1480934    SPPCF    SPCOMP                                  00.00 00000003.19 00001,00
+186719-06         PLAQUETA ID.CABEC.TIPO 1D55915F FIAC 1480936    SPPCF    SPCOMP                                  00.00 00000003.13 00001,00
+186719-08         PLAQUETA ID.CABEC.TIPO 2D55925F FIAC 1480938    SPPCF    SPCOMP                                  05.00 00000003.12 00001,00
+186719-11         PLAQUETA ID.CABEC.TIPO 2D55927F FIAC 1480939    SPPCF    SPCOMP                                  05.00 00000003.19 00001,00
+186719-15         PLAQUETA ID.CABEC.TIPO 3D55932F FIAC 1480941    SPPCF    SPCOMP                                  00.00 00000003.12 00001,00
+186719-17         PLAQUETA IDENT.CABECOTED55950F FIAC 1480942     SPPCN    SPCOMP                                  00.00 00000003.13 00001,00
+186719-19         PLAQUETA IDENT.RESERV.60L 10 BAR FIAC 1480944   SPPCN    SPCOMP                                  05.00 00000003.15 00001,00
+186719-20         PLAQUETA IDENT.RESERV.100L 10 BAR FIAC 1480945  SPPCN    SPCOMP                                  00.00 00000003.13 00001,00
+186719-21         PLAQUETA IDENT.RESERV.200L 10 BAR FIAC 1480947  SPPCN    SPCOMP                                  00.00 00000003.07 00001,00
+186719-22         PLAQUETA IDENT.RESERV.236L 12 BAR FIAC 1480950  SPPCN    SPCOMP                                  05.00 00000003.44 00001,00
+186719-23         PLAQUETA IDENT.RESERV.250L 12 BAR FIAC 1480951  SPPCN    SPCOMP                                  00.00 00000003.13 00001,00
+186719-29         PLAQUETA ID.D55955F-B2TIPO 1                    SPPCF    SPCOMP                                  05.00 00000003.08 00000,00
+186719-30         PLAQUETA D55932F TIPO 2                         SPPCF    SPCOMP                                  00.00 00000003.07 00000,00
+186719-32         PLAQUETA ID.D55940F-B2TIPO 1                    SPPCN    SPCOMP                                  00.00 00000003.12 00000,00
+186719-45         PLAQUETA TIPO 2 COMPR.                          SPPCN    SPCOMP                                  05.00 00000003.44 00000,00
+186720-00         POLIA DIAM.100mm 1cA F28CHAV.8mm FIAC 1510943   SPPCN    SPCOMP                                  12.00 00000012.93 00001,00
+186723-00         POLIA DIAM.100mm 1cAF.19,04 FIAC 1510955        SPPCN    SPCOMP                                  12.00 00000009.61 00001,00
+186725-00         POLIA DIAM.70mm 1cAF.15,84 FIAC 1510940         SPPCN    SPCOMP                                  12.00 00000007.69 00001,00
+186726-00         PORCA PARLOCK M6 FIAC1550977                    SPPCN    SPCOMP                                  10.00 00000000.45 00000,00
+186728-00         PRESSOSTATO SIAQ 125/175PSI PRETO FIAC 1600999  SPPCN    SPCOMP                                  15.00 00000022.43 00001,00
+186732-00         RODA D 100x25 F10NACIONAL FIAC 1741037          SPPCN    SPCOMP                                  05.00 00000002.79 00001,00
+186734-01         SERPENTINA COBRE PAREDE1/32" PORCA PROLONGADA   SPPCN    SPCOMP                                  00.00 00000011.31 00001,00
+186735-01         SERPENTINA COBRE PAREDE1/32" PORCA PROLONGADA   SPPCN    SPCOMP                                  00.00 00000028.47 00001,00
+186736-01         SERPENTINA COBRE PAREDE1/32" PORCA PROLONGADA   SPPCN    SPCOMP                                  00.00 00000022.03 00001,00
+186737-01         SERPENTINA COBRE PAREDE1/32" PORCA PROLONGADA   SPPCN    SPCOMP                                  00.00 00000029.83 00001,00
+186741-00         SERPENTINA FX 2000 FIAC1801087                  SPPCN    SPCOMP                                  05.00 00000004.09 00001,00
+186743-00         SERPENTINA FX90/25 FIAC1801092                  SPPCN    SPCOMP                                  05.00 00000003.92 00001,00
+186746-00         TAMPAO 1/8 SEXT.BSPFIAC 1871146                 SPPCN    SPCOMP                                  05.00 00000000.68 00000,00
+186747-00         TAMPAO DE 1/4" FIAC1871145                      SPPCN    SPCOMP                                  00.00 00000001.13 00001,00
+186748-00         TERMINAL ANEL FIAC1881146                       SPPCN    SPCOMP                                  00.00 00000001.35 00001,00
+186749-00         TERMINAL FORQUILHA FIAC1881145                  SPPCN    SPCOMP                                  00.00 00000000.09 00001,00
+186750-00         TERMINAL LUVA AMARELAFIAC 1881149               SPPCN    SPCOMP                                  00.00 00000000.25 00001,00
+186751-00         TERMINAL LUVA VERMELHAFIAC 1881150              SPPCN    SPCOMP                                  00.00 00000000.19 00001,00
+186755-00         TIRANTE M6 x 139mm FIAC1400882                  SPPCN    SPCOMP                                  00.00 00000000.67 00001,00
+186765-00         ARRUELA LISA M10 FIAC130121                     SPPCN    SPCOMP                                  10.00 00000000.07 00001,00
+186766-00         CABO ELETR.3x1,5mm LINHAAB FIAC 300233          SPPCN    SPCOMP                                  05.00 00000002.71 00001,00
+186769-00         PARAFUSO SEXT.M8x20mmFIAC 1400852               SPPCN    SPCOMP                                  10.00 00000000.21 00001,00
+186772-00         PARAF.PHILIPS CAB PAN4,8x13mm FIAC 1400875      SPPCN    SPCOMP                                  10.00 00000000.48 00001,00
+186773-00         PORCA SEXTAVADA M8 FIAC1550980                  SPPCN    SPCOMP                                  10.00 00000000.07 00001,00
+186775-00         ARRUELA LISA M8 FIAC130122                      SPPCN    SPCOMP                                  10.00 00000000.05 00001,00
+186781-00         PARAFUSO SEXT.M10x60mmROSCA PARC.FIAC 1400850   SPPCN    SPCOMP                                  10.00 00000000.51 00001,00
+186782-00         PARAF.PHILIPS CAB PAN5,5x22mm FIAC 1400873      SPPCN    SPCOMP                                  10.00 00000000.08 00001,00
+186783-00         PARAF.PHILIPS CAB PAN4,8x22mm FIAC 1400874      SPPCN    SPCOMP                                  10.00 00000000.05 00001,00
+186784-00         PORCA SEXT.M10 FIAC1550981                      SPPCN    SPCOMP                                  10.00 00000000.07 00001,00
+186786-00         ARRUELA LISA M6x13mmFIAC 130123                 SPBEN    SPCOMP                                  10.00 00000000.03 00001,00
+186787-00         PARAFUSO M4x8 FIAC1400878                       SPPCN    SPCOMP                                  10.00 00000000.32 00001,00
+186799-00         ARRUELA LISA M6 FIAC130123                      SPPCN    SPCOMP                                  10.00 00000000.03 00001,00
+186800-00         ARRUELA M6x18 FIAC130130                        SPPCN    SPCOMP                                  10.00 00000000.03 00001,00
+186809-00         PARAFUSO SEXT.M6x40mmROSCA PARC.FIAC 1400854    SPPCN    SPCOMP                                  10.00 00000000.17 00001,00
+186810-00         PARAFUSO SEXT.M6x20mmFIAC 1400855               SPPCN    SPCOMP                                  10.00 00000000.09 00001,00
+186811-00         PARAFUSO ALLEN M6x30mmFIAC 1400863              SPPCN    SPCOMP                                  10.00 00000000.25 00001,00
+186829-00         ARRUELA DE PRESSAO M6FIAC 130127                SPPCN    SPCOMP                                  10.00 00000000.11 00001,00
+186831-00         PARAFUSO SEXT.M8 40mmFIAC 1400981               SPPCN    SPCOMP                                  10.00 00000000.27 00001,00
+186832-00         PORCA SEXT.M6 FIAC1550979                       SPPCN    SPCOMP                                  10.00 00000000.28 00001,00
+186833-00         PARAFUSO SEXT.M10x20mmFIAC 1400849              SPPCN    SPCOMP                                  10.00 00000000.32 00001,00
+186839-00         GRADE DE PROTECAOFIAC 940584                    SPPCN    SPCOMP                                  00.00 00000029.08 00001,00
+186840-00         PARAFUSO M8 x 30mm FIAC                         SPPCN    SPCOMP                                  10.00 00000000.16 00001,00
+186841-00         PARAFUSO M10x40mm FIAC                          SPPCN    SPCOMP                                  10.00 00000000.36 00001,00
+186844-00         ARRUELA LISA 0130132                            SPPCN    SPCOMP                                  10.00 00000000.24 00001,00
+186892-00         ARRUELA DENTADA D8130119                        SPBEN    SPCOMP                                  10.00 00000000.11 00001,00
+186894-00         PARAFUSO PHILIPS CAB.CHATA M6x20 1400872        SPPCN    SPCOMP                                  10.00 00000000.13 00001,00
+186900-00         ADESIVO FRONTAL C/OLEOBD 25LT                   SPPCN    SPCOMP                                  15.00 00000001.29 00000,00
+186973-00         TUBO PRETO 1961233                              SPPCN    SPCOMP                                  00.00 00000001.19 00001,00
+186980-00         PE DE BORRACHA COMPR.                           SPPCN    SPCOMP                                  00.00 00000000.21 00001,00
+187199-00         SERPENT.COBRE PAREDE1/32 PORCA PROL.3/4x3/4     SPPCN    SPCOMP                                  05.00 00000045.25 00001,00
+187262-00         CORREIA A-58 COMPR.                             SPPCN    SPCOMP                                  10.00 00000005.23 00001,00
+187263-00         POLIA DIAM.80mm 1 CANALC/FURO 19mm+CHAVETA 3/16 SPPCN    SPCOMP                                  12.00 00000008.27 00000,00
+187264-00         COTOVELO MACHO 1/2x3/4BSP COMPR.                SPPCN    SPCOMP                                  05.00 00000016.09 00001,00
+187354-00         ETIQ.ADESIVA DADOSTECNICOS COMPRESS             SPPCN    SPCOMP                                  15.00 00000000.15 00000,00
+187371-00         ADESIVO FRONTAL 20/250COMPR.                    SPPCN    SPCOMP                                  15.00 00000003.39 00000,00
+187382-01         POLIA DIAM.70mm 1CANALC/FURO 19+CHAVETA 3/16"   SPPCN    SPCOMP                                  12.00 00000007.65 00001,00
+187427-00         POLIA 80mm 1 CANAL FURO28mm CHAV. 8mm           SPPCN    SPCOMP                                  12.00 00000008.24 00001,00
+187618-00         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000000.36 00000,00
+187618-01         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000000.85 00000,00
+187618-02         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000001.07 00000,00
+187618-03         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000001.47 00000,00
+187618-04         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000001.79 00000,00
+187618-05         TUBO PRETO COMPRESSOR                           SPPCF    SPCOMP                                  00.00 00000000.72 00000,00
+187619-00         CABO ELETRICO 3x1,35mCOMPR.                     SPPCF    SPCOMP                                  05.00 00000005.28 00000,00
+187619-02         CABO ELETRICO 3x1.5mmCOMPR.                     SPPCF    SPCOMP                                  05.00 00000001.36 00000,00
+187620-00         ESPAGUETE COMPRESSOR                            SPPCF    SPCOMP                                  00.00 00000000.25 00000,00
+187620-01         ESPAGUETE COMPRESSOR                            SPPCF    SPCOMP                                  00.00 00000000.31 00000,00
+187621-00         MANGUEIRA COMPRESSOR                            SPPCF    SPCOMP                                  05.00 00000008.81 00001,00
+187729-00         BASE COMPR.                                     SPPCF    SPCOMP                                  00.00 00000056.55 00000,00
+187730-00         COTOVELO 1/2 x 3/4"COMPR.                       SPPCN    SPCOMP                                  05.00 00000016.09 00000,00
+330003-54         ROLAMENTO                                       SPPCI    SPPPT         SUBST   605040-42         12.00 00000004.48 00001,00
+323711-40         ANEL O  RING                                    SPI      SPPPT         SUBST   323711-15         08.00 00000000.69 00003,00
+326201-02         EMPUNHADURA LATERAL                             SPI      SPPPT         NLM                       08.00 00000007.64 00001,00
+326201-03         EMPUNHADURA LATERAL                             SPI      SPPPT                                   08.00 00000007.63 00001,00
+402113-01         DIRECIONADOR                                    SPI      SPPPT         SUBST   329923-49         08.00 00000006.43 00001,00
+402173-00         BLOCO TRAVA                                     SPI      SPPPT         SUBST   402960-00         08.00 00000011.59 00001,00
+429699-00         PARAFUSO COM ARRUELA                            SPI      SPPPT                                   10.00 00000000.27 00001,00
+487239-00         TRAVA DA FERRAMENTA                             SPI      SPPPT         SUBST   489672-00         08.00 00000020.36 00001,00
+5140013-65        ARRUELA PLANA                                   SPI      SPCPT         OBSOLETO                  10.00 00000000.07 00005,00
+5140029-13        CABO ELETRICO                                   SPI      SPCPT         SUBST   5140030-44        05.00 00000009.10 00001,00
+5140030-44        CABO ELETRICO                                   SPI      SPCPT                                   05.00 00000008.61 00001,00
+562244-00         PINHAO                                          SPPCI    SPPPT         OBSOLETO                  10.00 00000005.80 00001,00
+562244-01         PINHAO DW861                                    SPPCI    SPPPT                                   10.00 00000005.80 00001,00
+562249-00         ENGRENAGEM                                      SPPCI    SPPPT                                   10.00 00000007.62 00001,00
+605040-42         ROLAMENTO CW DW861                              SPPCI    SPPPT                                   12.00 00000004.48 00001,00
+615172-00         CONJ.ROTOR 220V NOVA LAG                        SPCJF    SPPPT         SUBST   647714-00         10.00 00000057.53 00001,00
+615173-01         CONJ.ROTOR 120V NOVA LAG                        SPCJF    SPPPT         SUBST   187166-00         10.00 00000056.84 00001,00
+617004-00         CONJ.ESTATOR 220V                               SPCJF    SPPPT         NLM                       10.00 00000045.81 00001,00
+647150-00         CONJ.PORTA ESCOVA 120V                          SPCJF    SPPPT                                   10.00 00000003.37 00001,00
+647150-01         CONJ.PORTA ESCOVA 220V                          SPCJF    SPPPT                                   10.00 00000003.37 00001,00
+647714-00         CONJ.MOTOR 220V LAG                             SPCJF    SPPPT                                   10.00 00000095.97 00001,00

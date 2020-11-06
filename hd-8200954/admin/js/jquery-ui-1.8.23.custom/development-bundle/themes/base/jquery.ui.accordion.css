@@ -1,0 +1,149 @@
+/*!
+ * jQuery UI Accordion 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+.ui-accordion { 
+	width: 100%; 
+}
+.ui-accordion .ui-accordion-header { 
+	background: #7D8FBB;
+	background: -moz-linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	background: -webkit-linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	background: -o-linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	background: -ms-linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	background: linear-gradient(bottom, #7D8FBB 0%, #5A6D9C 70%);
+	cursor: pointer; 
+	margin-top: 1px; 
+	zoom: 1; 
+	font-weight: bold; 
+	font-size: 13px; 
+	border-radius: 13px 13px 0px 0px; 
+	color: #FFF;
+	font-height: 15px;
+	text-align: center !important;
+	height: 17px !important;
+	line-height: 15px;
+}
+.ui-accordion .ui-accordion-header a { 
+	display: block; 
+	font-size: 1em; 
+	padding: .5em .5em .5em .7em; 
+}
+.ui-accordion .ui-accordion-header:hover {
+	background: #9BADD9;
+	background: -moz-linear-gradient(bottom, #9BADD9 0%, #788BBA 70%);
+	background: -webkit-linear-gradient(bottom, #9BADD9 0%, #788BBA 70%);
+	background: -o-linear-gradient(bottom, #9BADD9 0%, #788BBA 70%);
+	background: linear-gradient(bottom, #9BADD9 0%, #788BBA 70%);
+}
+.ui-accordion .ui-accordion-li-fix { 
+	display: inline;
+}
+.ui-accordion .ui-accordion-header-active { 
+	background-color: #D9E2EF; 
+	border: 1px; 
+	border-color: #D3DEEF; 
+	border-style: solid; 
+	border-bottom: 0px; 
+}
+.ui-accordion .ui-accordion-header .ui-icon { 
+	position: absolute; 
+	left: .5em; 
+	top: 50%; 
+	margin-top: -8px; 
+	color: #FFF;
+}
+.ui-accordion-icons .ui-accordion-header a { 
+	padding-left: 2.2em; 
+}
+.ui-accordion-content{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.ui-accordion .ui-accordion-content { 
+	border: 2px; 
+	border-color: #5A6D9C; 
+	border-style: solid; 
+	border-top: 0px; 
+	border-left: 0px; 
+	border-right: 0px; 
+	margin-top: -3px; 
+	position: relative; 
+	top:-12px; 
+	margin-bottom: 2px; 
+	overflow: hidden; 
+	zoom: 1; 
+	width: 100% !important;
+}
+.ui-accordion-content > table > tbody > tr:nth-child(0n+2) {
+	background-color: #fafafa;
+}
+.ui-accordion-content > table > tbody > tr:nth-child(2n+2) {
+	background-color: #f0f0f0;	
+}
+.ui-accordion-content > table > tbody > tr:hover td {
+	background-color: #D0DFEA;
+}
+.ui-accordion-content > table > tbody > tr:hover .ui-content-img img{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.ui-accordion-content > table > tbody > tr > td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.ui-accordion .ui-accordion-content-active { 
+	display: block; 
+}
+.ui-accordion .ui-accordion-content .ui-content-img {
+	width: 28px;
+}
+.ui-accordion .ui-accordion-content .ui-content-codigo {
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold; 
+	width: 30px;
+	padding-right: 7px;
+	padding-left: 5px;
+	color: #002C80;
+}
+.ui-accordion .ui-accordion-content .ui-content-img img {
+	border: 0px;
+	width: 24px;
+	height: 24px;
+	padding: 5px !important;
+}
+.ui-accordion .ui-accordion-content .ui-content-link {
+	text-align: left;
+	font-size: 13px;
+	padding: 0px;
+}
+.ui-accordion .ui-accordion-content .ui-content-link a{
+	color: #002C80;
+	text-decoration: none;
+	font-weight: bold;
+}
+.ui-accordion .ui-accordion-content .ui-content-desc {
+	font-size: 12px;
+	font-color: #000;
+	text-align: justify;
+	padding: 5px !important;
+}
+.ui-header-codigo {
+	font-size: 10px;
+	position: absolute;
+	float: left;
+	left: 50px;
+	margin-bottom: 4px;
+	line-height: 15px;
+}

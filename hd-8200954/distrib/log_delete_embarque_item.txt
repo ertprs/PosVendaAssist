@@ -1,0 +1,1558 @@
+
+
+ Excluir item 8609973 (18/01/2010 11:33:05) 
+ [ SELECT fn_delete_embarque_item(8609973); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8643747 (01/02/2010 08:27:09) 
+ [ SELECT fn_delete_embarque_item(8643747); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8705084 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8705084); ]
+
+
+ Excluir item 8704765 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8704765); ]
+
+
+ Excluir item 8704457 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8704457); ]
+
+
+ Excluir item 8703511 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8703511); ]
+
+
+ Excluir item 8702900 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8702900); ]
+
+
+ Excluir item 8702020 (01/02/2010 08:31:29) 
+ [ SELECT fn_delete_embarque_item(8702020); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8776800 (09/02/2010 13:59:56) 
+ [ SELECT fn_delete_embarque_item(8776800); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8817633 (17/02/2010 08:50:31) 
+ [ SELECT fn_delete_embarque_item(8817633); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8600002 (22/02/2010 08:03:04) 
+ [ SELECT fn_delete_embarque_item(8600002); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8677929 (22/02/2010 12:30:15) 
+ [ SELECT fn_delete_embarque_item(8677929); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8862354 (01/03/2010 09:46:26) 
+ [ SELECT fn_delete_embarque_item(8862354); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8809154 (02/03/2010 08:17:24) 
+ [ SELECT fn_delete_embarque_item(8809154); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8907350 (02/03/2010 08:34:39) 
+ [ SELECT fn_delete_embarque_item(8907350); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8978825 (04/03/2010 16:24:53) 
+ [ SELECT fn_delete_embarque_item(8978825); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8922173 (05/03/2010 10:12:32) 
+ [ SELECT fn_delete_embarque_item(8922173); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8985251 (05/03/2010 10:12:37) 
+ [ SELECT fn_delete_embarque_item(8985251); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8994220 (05/03/2010 16:41:47) 
+ [ SELECT fn_delete_embarque_item(8994220); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 8977643 (09/03/2010 08:33:49) 
+ [ SELECT fn_delete_embarque_item(8977643); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114148 (23/03/2010 09:17:55) 
+ [ SELECT fn_delete_embarque_item(9114148); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114147 (23/03/2010 09:18:37) 
+ [ SELECT fn_delete_embarque_item(9114147); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9129722 (23/03/2010 12:36:22) 
+ [ SELECT fn_delete_embarque_item(9129722); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9160882 (24/03/2010 13:21:39) 
+ [ SELECT fn_delete_embarque_item(9160882); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9160881 (24/03/2010 13:22:15) 
+ [ SELECT fn_delete_embarque_item(9160881); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9121916 (25/03/2010 08:30:34) 
+ [ SELECT fn_delete_embarque_item(9121916); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9131923 (25/03/2010 11:40:24) 
+ [ SELECT fn_delete_embarque_item(9131923); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9131922 (25/03/2010 11:42:36) 
+ [ SELECT fn_delete_embarque_item(9131922); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114157 (26/03/2010 08:34:58) 
+ [ SELECT fn_delete_embarque_item(9114157); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114149 (26/03/2010 08:34:59) 
+ [ SELECT fn_delete_embarque_item(9114149); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114151 (26/03/2010 08:36:07) 
+ [ SELECT fn_delete_embarque_item(9114151); ]
+
+
+ Excluir item 9114150 (26/03/2010 08:36:07) 
+ [ SELECT fn_delete_embarque_item(9114150); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114152 (26/03/2010 08:36:32) 
+ [ SELECT fn_delete_embarque_item(9114152); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114153 (26/03/2010 08:37:20) 
+ [ SELECT fn_delete_embarque_item(9114153); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114154 (26/03/2010 08:37:21) 
+ [ SELECT fn_delete_embarque_item(9114154); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114156 (26/03/2010 08:38:16) 
+ [ SELECT fn_delete_embarque_item(9114156); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114158 (26/03/2010 08:38:17) 
+ [ SELECT fn_delete_embarque_item(9114158); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9291459 (09/04/2010 08:22:37) 
+ [ SELECT fn_delete_embarque_item(9291459); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9258196 (09/04/2010 08:22:56) 
+ [ SELECT fn_delete_embarque_item(9258196); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9274842 (09/04/2010 08:23:54) 
+ [ SELECT fn_delete_embarque_item(9274842); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9258204 (09/04/2010 08:24:46) 
+ [ SELECT fn_delete_embarque_item(9258204); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9114191 (09/04/2010 12:10:59) 
+ [ SELECT fn_delete_embarque_item(9114191); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9308328 (09/04/2010 13:10:04) 
+ [ SELECT fn_delete_embarque_item(9308328); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9193100 (09/04/2010 16:11:49) 
+ [ SELECT fn_delete_embarque_item(9193100); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9193102 (09/04/2010 16:12:42) 
+ [ SELECT fn_delete_embarque_item(9193102); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9193099 (09/04/2010 16:15:05) 
+ [ SELECT fn_delete_embarque_item(9193099); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9193101 (09/04/2010 16:19:25) 
+ [ SELECT fn_delete_embarque_item(9193101); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9362225 (15/04/2010 08:25:47) 
+ [ SELECT fn_delete_embarque_item(9362225); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9362223 (15/04/2010 08:27:37) 
+ [ SELECT fn_delete_embarque_item(9362223); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9362224 (15/04/2010 08:28:34) 
+ [ SELECT fn_delete_embarque_item(9362224); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9362226 (15/04/2010 08:41:03) 
+ [ SELECT fn_delete_embarque_item(9362226); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9308330 (15/04/2010 09:03:53) 
+ [ SELECT fn_delete_embarque_item(9308330); ]
+
+
+ Excluir item 9308329 (15/04/2010 09:03:53) 
+ [ SELECT fn_delete_embarque_item(9308329); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9339657 (15/04/2010 09:10:37) 
+ [ SELECT fn_delete_embarque_item(9339657); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9355380 (15/04/2010 09:12:40) 
+ [ SELECT fn_delete_embarque_item(9355380); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9315876 (16/04/2010 08:22:51) 
+ [ SELECT fn_delete_embarque_item(9315876); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395702 (20/04/2010 08:33:10) 
+ [ SELECT fn_delete_embarque_item(9395702); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395696 (20/04/2010 08:33:31) 
+ [ SELECT fn_delete_embarque_item(9395696); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395695 (20/04/2010 08:33:53) 
+ [ SELECT fn_delete_embarque_item(9395695); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395694 (20/04/2010 08:34:12) 
+ [ SELECT fn_delete_embarque_item(9395694); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395693 (20/04/2010 08:34:39) 
+ [ SELECT fn_delete_embarque_item(9395693); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395698 (20/04/2010 08:35:06) 
+ [ SELECT fn_delete_embarque_item(9395698); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395700 (20/04/2010 08:35:20) 
+ [ SELECT fn_delete_embarque_item(9395700); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395699 (20/04/2010 08:35:28) 
+ [ SELECT fn_delete_embarque_item(9395699); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395701 (20/04/2010 08:35:35) 
+ [ SELECT fn_delete_embarque_item(9395701); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395697 (20/04/2010 08:35:42) 
+ [ SELECT fn_delete_embarque_item(9395697); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9318047 (20/04/2010 08:43:42) 
+ [ SELECT fn_delete_embarque_item(9318047); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9409301 (22/04/2010 09:12:19) 
+ [ SELECT fn_delete_embarque_item(9409301); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9389193 (22/04/2010 09:13:05) 
+ [ SELECT fn_delete_embarque_item(9389193); ]
+
+
+ Excluir item 9389192 (22/04/2010 09:13:05) 
+ [ SELECT fn_delete_embarque_item(9389192); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395719 (22/04/2010 09:32:21) 
+ [ SELECT fn_delete_embarque_item(9395719); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395722 (22/04/2010 09:54:44) 
+ [ SELECT fn_delete_embarque_item(9395722); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395721 (22/04/2010 10:02:35) 
+ [ SELECT fn_delete_embarque_item(9395721); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395720 (22/04/2010 10:26:32) 
+ [ SELECT fn_delete_embarque_item(9395720); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395723 (22/04/2010 10:40:09) 
+ [ SELECT fn_delete_embarque_item(9395723); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395724 (22/04/2010 10:44:39) 
+ [ SELECT fn_delete_embarque_item(9395724); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395725 (22/04/2010 10:45:15) 
+ [ SELECT fn_delete_embarque_item(9395725); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395726 (22/04/2010 10:46:01) 
+ [ SELECT fn_delete_embarque_item(9395726); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395718 (22/04/2010 10:46:38) 
+ [ SELECT fn_delete_embarque_item(9395718); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395717 (22/04/2010 10:47:20) 
+ [ SELECT fn_delete_embarque_item(9395717); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395716 (22/04/2010 10:47:45) 
+ [ SELECT fn_delete_embarque_item(9395716); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395715 (22/04/2010 10:48:33) 
+ [ SELECT fn_delete_embarque_item(9395715); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395714 (22/04/2010 10:50:54) 
+ [ SELECT fn_delete_embarque_item(9395714); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395713 (22/04/2010 10:51:38) 
+ [ SELECT fn_delete_embarque_item(9395713); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395727 (22/04/2010 10:52:17) 
+ [ SELECT fn_delete_embarque_item(9395727); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395728 (22/04/2010 10:52:50) 
+ [ SELECT fn_delete_embarque_item(9395728); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395712 (22/04/2010 10:53:23) 
+ [ SELECT fn_delete_embarque_item(9395712); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395711 (22/04/2010 10:53:44) 
+ [ SELECT fn_delete_embarque_item(9395711); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395729 (22/04/2010 10:54:04) 
+ [ SELECT fn_delete_embarque_item(9395729); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395710 (22/04/2010 10:54:58) 
+ [ SELECT fn_delete_embarque_item(9395710); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395709 (22/04/2010 10:55:37) 
+ [ SELECT fn_delete_embarque_item(9395709); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395708 (22/04/2010 10:56:11) 
+ [ SELECT fn_delete_embarque_item(9395708); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395707 (22/04/2010 10:56:38) 
+ [ SELECT fn_delete_embarque_item(9395707); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395706 (22/04/2010 10:57:08) 
+ [ SELECT fn_delete_embarque_item(9395706); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395705 (22/04/2010 10:57:37) 
+ [ SELECT fn_delete_embarque_item(9395705); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9395703 (22/04/2010 10:58:01) 
+ [ SELECT fn_delete_embarque_item(9395703); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415720 (23/04/2010 08:24:35) 
+ [ SELECT fn_delete_embarque_item(9415720); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415814 (23/04/2010 10:05:25) 
+ [ SELECT fn_delete_embarque_item(9415814); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415815 (23/04/2010 10:12:41) 
+ [ SELECT fn_delete_embarque_item(9415815); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415816 (23/04/2010 10:34:21) 
+ [ SELECT fn_delete_embarque_item(9415816); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415817 (23/04/2010 10:37:20) 
+ [ SELECT fn_delete_embarque_item(9415817); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415819 (23/04/2010 11:20:14) 
+ [ SELECT fn_delete_embarque_item(9415819); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415818 (23/04/2010 11:21:15) 
+ [ SELECT fn_delete_embarque_item(9415818); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415820 (23/04/2010 11:32:24) 
+ [ SELECT fn_delete_embarque_item(9415820); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415821 (23/04/2010 11:32:37) 
+ [ SELECT fn_delete_embarque_item(9415821); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415822 (23/04/2010 13:46:18) 
+ [ SELECT fn_delete_embarque_item(9415822); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415823 (23/04/2010 13:46:36) 
+ [ SELECT fn_delete_embarque_item(9415823); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415825 (23/04/2010 14:02:42) 
+ [ SELECT fn_delete_embarque_item(9415825); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415824 (23/04/2010 14:03:00) 
+ [ SELECT fn_delete_embarque_item(9415824); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9396328 (23/04/2010 14:10:52) 
+ [ SELECT fn_delete_embarque_item(9396328); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9396329 (23/04/2010 14:12:51) 
+ [ SELECT fn_delete_embarque_item(9396329); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9396535 (23/04/2010 14:16:14) 
+ [ SELECT fn_delete_embarque_item(9396535); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415827 (23/04/2010 14:17:03) 
+ [ SELECT fn_delete_embarque_item(9415827); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415826 (23/04/2010 14:17:15) 
+ [ SELECT fn_delete_embarque_item(9415826); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415828 (23/04/2010 14:22:53) 
+ [ SELECT fn_delete_embarque_item(9415828); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415830 (23/04/2010 14:52:13) 
+ [ SELECT fn_delete_embarque_item(9415830); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415829 (23/04/2010 14:52:27) 
+ [ SELECT fn_delete_embarque_item(9415829); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415832 (23/04/2010 15:01:52) 
+ [ SELECT fn_delete_embarque_item(9415832); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9370623 (23/04/2010 15:37:17) 
+ [ SELECT fn_delete_embarque_item(9370623); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415836 (23/04/2010 15:38:42) 
+ [ SELECT fn_delete_embarque_item(9415836); ]
+
+
+ Excluir item 9415834 (23/04/2010 15:38:42) 
+ [ SELECT fn_delete_embarque_item(9415834); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415835 (23/04/2010 15:39:18) 
+ [ SELECT fn_delete_embarque_item(9415835); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415837 (23/04/2010 15:41:26) 
+ [ SELECT fn_delete_embarque_item(9415837); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415838 (23/04/2010 15:48:19) 
+ [ SELECT fn_delete_embarque_item(9415838); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415840 (26/04/2010 14:14:04) 
+ [ SELECT fn_delete_embarque_item(9415840); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415839 (26/04/2010 14:14:26) 
+ [ SELECT fn_delete_embarque_item(9415839); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9415869 (27/04/2010 14:40:21) 
+ [ SELECT fn_delete_embarque_item(9415869); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9422108 (28/04/2010 08:07:04) 
+ [ SELECT fn_delete_embarque_item(9422108); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9416312 (28/04/2010 10:12:43) 
+ [ SELECT fn_delete_embarque_item(9416312); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9447931 (28/04/2010 15:25:15) 
+ [ SELECT fn_delete_embarque_item(9447931); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9460258 (30/04/2010 08:26:40) 
+ [ SELECT fn_delete_embarque_item(9460258); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9441801 (30/04/2010 08:27:00) 
+ [ SELECT fn_delete_embarque_item(9441801); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9447927 (30/04/2010 08:27:26) 
+ [ SELECT fn_delete_embarque_item(9447927); ]
+
+
+ Excluir item 9447926 (30/04/2010 08:27:26) 
+ [ SELECT fn_delete_embarque_item(9447926); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467318 (30/04/2010 09:49:19) 
+ [ SELECT fn_delete_embarque_item(9467318); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467317 (30/04/2010 09:49:39) 
+ [ SELECT fn_delete_embarque_item(9467317); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467319 (30/04/2010 10:22:53) 
+ [ SELECT fn_delete_embarque_item(9467319); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467320 (30/04/2010 10:24:35) 
+ [ SELECT fn_delete_embarque_item(9467320); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467321 (30/04/2010 10:41:02) 
+ [ SELECT fn_delete_embarque_item(9467321); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467322 (30/04/2010 10:41:55) 
+ [ SELECT fn_delete_embarque_item(9467322); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467324 (30/04/2010 10:58:59) 
+ [ SELECT fn_delete_embarque_item(9467324); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9454550 (30/04/2010 13:39:12) 
+ [ SELECT fn_delete_embarque_item(9454550); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9473296 (03/05/2010 08:14:23) 
+ [ SELECT fn_delete_embarque_item(9473296); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9468175 (03/05/2010 08:15:45) 
+ [ SELECT fn_delete_embarque_item(9468175); ]
+
+
+ Excluir item 9467454 (03/05/2010 08:15:45) 
+ [ SELECT fn_delete_embarque_item(9467454); ]
+
+
+ Excluir item 9467408 (03/05/2010 08:15:45) 
+ [ SELECT fn_delete_embarque_item(9467408); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9491116 (04/05/2010 09:43:35) 
+ [ SELECT fn_delete_embarque_item(9491116); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9498506 (04/05/2010 13:10:21) 
+ [ SELECT fn_delete_embarque_item(9498506); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9472753 (04/05/2010 13:10:54) 
+ [ SELECT fn_delete_embarque_item(9472753); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9460355 (12/05/2010 09:14:24) 
+ [ SELECT fn_delete_embarque_item(9460355); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9560866 (17/05/2010 13:28:34) 
+ [ SELECT fn_delete_embarque_item(9560866); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9579199 (18/05/2010 08:16:02) 
+ [ SELECT fn_delete_embarque_item(9579199); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9554819 (18/05/2010 15:58:44) 
+ [ SELECT fn_delete_embarque_item(9554819); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9555298 (19/05/2010 14:06:03) 
+ [ SELECT fn_delete_embarque_item(9555298); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9579757 (19/05/2010 14:06:38) 
+ [ SELECT fn_delete_embarque_item(9579757); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9548419 (20/05/2010 12:14:29) 
+ [ SELECT fn_delete_embarque_item(9548419); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9579518 (20/05/2010 12:16:52) 
+ [ SELECT fn_delete_embarque_item(9579518); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9591677 (20/05/2010 13:26:06) 
+ [ SELECT fn_delete_embarque_item(9591677); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9591837 (20/05/2010 13:26:45) 
+ [ SELECT fn_delete_embarque_item(9591837); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9597387 (21/05/2010 08:56:42) 
+ [ SELECT fn_delete_embarque_item(9597387); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9585313 (21/05/2010 08:58:43) 
+ [ SELECT fn_delete_embarque_item(9585313); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9604407 (24/05/2010 10:47:17) 
+ [ SELECT fn_delete_embarque_item(9604407); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9603708 (25/05/2010 11:51:07) 
+ [ SELECT fn_delete_embarque_item(9603708); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9597389 (25/05/2010 14:13:33) 
+ [ SELECT fn_delete_embarque_item(9597389); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9604410 (25/05/2010 14:15:02) 
+ [ SELECT fn_delete_embarque_item(9604410); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9625441 (27/05/2010 14:38:30) 
+ [ SELECT fn_delete_embarque_item(9625441); ]
+
+
+ Excluir item 9619891 (27/05/2010 14:38:32) 
+ [ SELECT fn_delete_embarque_item(9619891); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9636682 (28/05/2010 10:37:02) 
+ [ SELECT fn_delete_embarque_item(9636682); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9637455 (28/05/2010 10:42:15) 
+ [ SELECT fn_delete_embarque_item(9637455); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9628237 (28/05/2010 15:03:49) 
+ [ SELECT fn_delete_embarque_item(9628237); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9642789 (31/05/2010 12:10:24) 
+ [ SELECT fn_delete_embarque_item(9642789); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9665972 (02/06/2010 08:42:05) 
+ [ SELECT fn_delete_embarque_item(9665972); ]
+
+
+ Excluir item 9665973 (02/06/2010 08:42:06) 
+ [ SELECT fn_delete_embarque_item(9665973); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9665971 (02/06/2010 08:42:33) 
+ [ SELECT fn_delete_embarque_item(9665971); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9608867 (02/06/2010 08:42:39) 
+ [ SELECT fn_delete_embarque_item(9608867); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9672469 (02/06/2010 08:43:35) 
+ [ SELECT fn_delete_embarque_item(9672469); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9672470 (02/06/2010 08:43:44) 
+ [ SELECT fn_delete_embarque_item(9672470); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9661071 (02/06/2010 08:44:13) 
+ [ SELECT fn_delete_embarque_item(9661071); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9637924 (02/06/2010 08:44:23) 
+ [ SELECT fn_delete_embarque_item(9637924); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9686480 (07/06/2010 08:36:07) 
+ [ SELECT fn_delete_embarque_item(9686480); ]
+
+
+ Excluir item 9686483 (07/06/2010 08:36:07) 
+ [ SELECT fn_delete_embarque_item(9686483); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9666632 (07/06/2010 09:11:56) 
+ [ SELECT fn_delete_embarque_item(9666632); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9666633 (07/06/2010 09:12:16) 
+ [ SELECT fn_delete_embarque_item(9666633); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9660362 (07/06/2010 09:14:56) 
+ [ SELECT fn_delete_embarque_item(9660362); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9660361 (07/06/2010 09:15:14) 
+ [ SELECT fn_delete_embarque_item(9660361); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9660360 (07/06/2010 09:15:24) 
+ [ SELECT fn_delete_embarque_item(9660360); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9643559 (07/06/2010 13:38:26) 
+ [ SELECT fn_delete_embarque_item(9643559); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9467323 (07/06/2010 15:36:24) 
+ [ SELECT fn_delete_embarque_item(9467323); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9704852 (14/06/2010 08:22:31) 
+ [ SELECT fn_delete_embarque_item(9704852); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9731611 (14/06/2010 08:23:25) 
+ [ SELECT fn_delete_embarque_item(9731611); ]
+
+
+ Excluir item 9731612 (14/06/2010 08:23:26) 
+ [ SELECT fn_delete_embarque_item(9731612); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9811883 (23/06/2010 08:14:04) 
+ [ SELECT fn_delete_embarque_item(9811883); ]
+
+
+ Excluir item 9781221 (23/06/2010 08:14:05) 
+ [ SELECT fn_delete_embarque_item(9781221); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9678475 (23/06/2010 08:14:13) 
+ [ SELECT fn_delete_embarque_item(9678475); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9815573 (23/06/2010 08:24:17) 
+ [ SELECT fn_delete_embarque_item(9815573); ]
+
+
+ Excluir item 9815574 (23/06/2010 08:24:17) 
+ [ SELECT fn_delete_embarque_item(9815574); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9815576 (23/06/2010 08:24:46) 
+ [ SELECT fn_delete_embarque_item(9815576); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9815575 (23/06/2010 08:25:04) 
+ [ SELECT fn_delete_embarque_item(9815575); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9815612 (25/06/2010 14:04:11) 
+ [ SELECT fn_delete_embarque_item(9815612); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9815611 (25/06/2010 14:04:31) 
+ [ SELECT fn_delete_embarque_item(9815611); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9832629 (29/06/2010 15:37:58) 
+ [ SELECT fn_delete_embarque_item(9832629); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9910691 (14/07/2010 09:26:22) 
+ [ SELECT fn_delete_embarque_item(9910691); ]
+
+
+ Excluir item 9912214 (14/07/2010 09:26:22) 
+ [ SELECT fn_delete_embarque_item(9912214); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9910690 (14/07/2010 09:28:12) 
+ [ SELECT fn_delete_embarque_item(9910690); ]
+
+
+ Excluir item 9912213 (14/07/2010 09:28:12) 
+ [ SELECT fn_delete_embarque_item(9912213); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9847786 (20/07/2010 09:45:17) 
+ [ SELECT fn_delete_embarque_item(9847786); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9946604 (28/07/2010 17:38:57) 
+ [ SELECT fn_delete_embarque_item(9946604); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10005521 (02/08/2010 08:17:39) 
+ [ SELECT fn_delete_embarque_item(10005521); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10034180 (04/08/2010 08:51:32) 
+ [ SELECT fn_delete_embarque_item(10034180); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 9822353 (04/08/2010 08:51:56) 
+ [ SELECT fn_delete_embarque_item(9822353); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10034178 (04/08/2010 08:52:50) 
+ [ SELECT fn_delete_embarque_item(10034178); ]
+
+
+ Excluir item 10034179 (04/08/2010 08:52:50) 
+ [ SELECT fn_delete_embarque_item(10034179); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10040404 (05/08/2010 08:15:08) 
+ [ SELECT fn_delete_embarque_item(10040404); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10046826 (06/08/2010 08:07:30) 
+ [ SELECT fn_delete_embarque_item(10046826); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10053294 (10/08/2010 08:16:56) 
+ [ SELECT fn_delete_embarque_item(10053294); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10079464 (11/08/2010 08:06:51) 
+ [ SELECT fn_delete_embarque_item(10079464); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10086294 (12/08/2010 08:06:01) 
+ [ SELECT fn_delete_embarque_item(10086294); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10086643 (12/08/2010 08:16:56) 
+ [ SELECT fn_delete_embarque_item(10086643); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10086660 (16/08/2010 15:08:17) 
+ [ SELECT fn_delete_embarque_item(10086660); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10102094 (17/08/2010 14:23:56) 
+ [ SELECT fn_delete_embarque_item(10102094); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10104604 (18/08/2010 10:36:23) 
+ [ SELECT fn_delete_embarque_item(10104604); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10107201 (26/08/2010 15:29:36) 
+ [ SELECT fn_delete_embarque_item(10107201); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10112239 (30/08/2010 09:25:27) 
+ [ SELECT fn_delete_embarque_item(10112239); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10123100 (30/08/2010 15:19:57) 
+ [ SELECT fn_delete_embarque_item(10123100); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10086645 (03/09/2010 08:53:15) 
+ [ SELECT fn_delete_embarque_item(10086645); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10134096 (08/09/2010 08:21:06) 
+ [ SELECT fn_delete_embarque_item(10134096); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10133413 (08/09/2010 08:21:26) 
+ [ SELECT fn_delete_embarque_item(10133413); ]
+
+
+ Excluir item 10133405 (08/09/2010 08:21:26) 
+ [ SELECT fn_delete_embarque_item(10133405); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10145848 (14/09/2010 09:21:29) 
+ [ SELECT fn_delete_embarque_item(10145848); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10145847 (14/09/2010 09:25:55) 
+ [ SELECT fn_delete_embarque_item(10145847); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10147243 (15/09/2010 18:10:15) 
+ [ SELECT fn_delete_embarque_item(10147243); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10148326 (16/09/2010 16:07:32) 
+ [ SELECT fn_delete_embarque_item(10148326); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10148477 (16/09/2010 16:11:13) 
+ [ SELECT fn_delete_embarque_item(10148477); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10152426 (21/09/2010 15:12:55) 
+ [ SELECT fn_delete_embarque_item(10152426); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10151900 (22/09/2010 09:40:31) 
+ [ SELECT fn_delete_embarque_item(10151900); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10151901 (22/09/2010 10:02:55) 
+ [ SELECT fn_delete_embarque_item(10151901); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10154540 (28/09/2010 13:06:00) 
+ [ SELECT fn_delete_embarque_item(10154540); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10156449 (01/10/2010 10:44:09) 
+ [ SELECT fn_delete_embarque_item(10156449); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10191500 (03/11/2010 14:46:21) 
+ [ SELECT fn_delete_embarque_item(10191500); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10191506 (03/11/2010 14:46:31) 
+ [ SELECT fn_delete_embarque_item(10191506); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10191511 (03/11/2010 14:46:49) 
+ [ SELECT fn_delete_embarque_item(10191511); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10191514 (03/11/2010 14:46:54) 
+ [ SELECT fn_delete_embarque_item(10191514); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10191517 (03/11/2010 14:47:02) 
+ [ SELECT fn_delete_embarque_item(10191517); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10193079 (04/11/2010 07:37:06) 
+ [ SELECT fn_delete_embarque_item(10193079); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10193085 (04/11/2010 07:37:32) 
+ [ SELECT fn_delete_embarque_item(10193085); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10193088 (04/11/2010 07:38:25) 
+ [ SELECT fn_delete_embarque_item(10193088); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10193089 (04/11/2010 07:38:27) 
+ [ SELECT fn_delete_embarque_item(10193089); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10193090 (04/11/2010 07:38:28) 
+ [ SELECT fn_delete_embarque_item(10193090); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10199565 (10/11/2010 11:18:07) 
+ [ SELECT fn_delete_embarque_item(10199565); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10199566 (10/11/2010 11:19:44) 
+ [ SELECT fn_delete_embarque_item(10199566); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10202021 (18/11/2010 07:15:18) 
+ [ SELECT fn_delete_embarque_item(10202021); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10210643 (18/11/2010 07:16:57) 
+ [ SELECT fn_delete_embarque_item(10210643); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10210645 (18/11/2010 07:17:04) 
+ [ SELECT fn_delete_embarque_item(10210645); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10210642 (18/11/2010 07:18:08) 
+ [ SELECT fn_delete_embarque_item(10210642); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10211841 (19/11/2010 08:40:34) 
+ [ SELECT fn_delete_embarque_item(10211841); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10256410 (20/12/2010 11:19:52) 
+ [ SELECT fn_delete_embarque_item(10256410); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10289908 (12/01/2011 11:32:10) 
+ [ SELECT fn_delete_embarque_item(10289908); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10290356 (12/01/2011 12:23:27) 
+ [ SELECT fn_delete_embarque_item(10290356); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10316098 (02/02/2011 09:48:52) 
+ [ SELECT fn_delete_embarque_item(10316098); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10317479 (03/02/2011 09:26:17) 
+ [ SELECT fn_delete_embarque_item(10317479); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10319767 (04/02/2011 09:13:51) 
+ [ SELECT fn_delete_embarque_item(10319767); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10319341 (04/02/2011 12:22:25) 
+ [ SELECT fn_delete_embarque_item(10319341); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10347529 (02/03/2011 09:19:56) 
+ [ SELECT fn_delete_embarque_item(10347529); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 10346832 (02/03/2011 09:20:06) 
+ [ SELECT fn_delete_embarque_item(10346832); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 

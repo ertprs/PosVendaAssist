@@ -1,0 +1,161 @@
+@import url("reset.css");
+@import url("ie.css");
+@import url("typographic.css");
+.widthGeral{width:960px;}
+.clearBooth{clear:left}
+.left{float:left}
+.center { background:#007ab7; }
+body { margin:0px; /* background:#007ab7;  # HD 941072 - Retirado porque daria conflito de body não encontrado no include de iframe */ }
+/*******************************/
+/*********** BACKGROUND ********/
+/*******************************/
+.bg_superior { min-width:960px; 	position:absolute; width:100%; z-index:2; }
+#bg_inferior
+{
+	background-position:center 85px;
+	background-repeat:no-repeat;
+	min-width:960px;
+	padding-top:124px;
+	width:100%;
+	z-index:-1;
+}
+/*******************************/
+/******* FIM BACKGROUND ********/
+
+/****************************/
+/********** HEADER **********/
+#header_busca { width:100%; position:absolute; z-index:5000; }
+#logo_busca  { margin:0 auto; }
+#logo_busca .logo { float:left; margin-top:7px; margin-left:68px; width:345px; }
+#logo_busca .busca { float:left; padding-left:25px; width:462px; height:96px; }
+#logo_busca .busca .campo_busca { float:left; width:320px; padding-top:23px; }
+#logo_busca .busca .campo_busca input.q { padding:0 20px 0 10px; border:none; height:31px; width:234px; }
+#logo_busca .busca .campo_busca .btn_ok { margin-left:-10px; position:absolute; }
+#logo_busca .paises { float:right/*left*/; padding-top:10px; }
+/********************************/
+/********** FIM HEADER **********/
+
+/********************************/
+/************* MENU *************/
+#menu { margin:0 auto; display:block; height:57px; }
+#menu a { float: left; margin-left:-8px; height: 31px; overflow: hidden; text-indent: -9999px; }
+#menu a:hover { background-position:bottom; }
+#menu .home { margin:0px; width:104px; }
+#menu .rayovac { width:127px; }
+#menu .pilas { width:111px; }
+#menu .linternas { width:145px; }
+#menu .promociones { width:145px; }
+#menu .servicos { width:233px; }
+#menu .contactenos { width:143px; }
+/********************************/
+/**********FIM MENU *************/
+
+/*********************************/
+/************ GERAL **************/
+/*********************************/
+#geral
+{
+	/*background-color:#FFFFFF;*/
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	margin:-35px auto 0;
+	position:relative;
+	z-index:499;
+}
+/*********************************/
+/********* FIM GERAL  ************/
+
+/*********** FOOTER *************/
+/********************************/
+#footer
+{
+	height:132px;
+	margin-top:-10px;
+	position:absolute;
+	padding-top:30px;
+	width:100%;
+	z-index:1505;
+}
+#footer .direitos_redesSociais { margin:0 auto; }
+#footer .direitos { width:50%; float:left; }
+#footer .redesSociais { float:right; padding-left:5px; }
+/********************************/
+/******** FIM FOOTER ************/
+
+/*** DROPBOX ***/
+ul.topnav {  
+   list-style: none;
+   margin: 0;  
+   float: left;
+   font-size:11px;
+   width:110px;
+   margin-top:4px;
+   color:#a6a6a6;
+}
+ul.topnav li { float: left; margin: 0; position: relative; /*--Declare X and Y axis base for sub navigation--*/ }
+ul.topnav li a{  
+  padding:10px 10px;
+  width:57px;  
+  color:#a6a6a6;
+  display: block;  
+  text-decoration: none;  
+  float: left;  
+}
+ul.topnav li span { /*--Drop down trigger styles--*/ width: 31px; height: 33px; float: left; }  
+ul.topnav li ul.subnav {  
+   	list-style: none;  
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
+    left: 0; top: 30px;
+    background: #fff;  
+    margin: 0; padding: 0;  
+    display: none;  
+    float: left;  
+    width: 110px;  
+    border-left: 1px solid #bacada;  
+ }
+ ul.topnav li ul.subnav li{  
+      margin: 0; padding: 0;  
+      border-top: 1px solid #bacada; /*--Create bevel effect--*/  
+      clear: both;  
+      width: 110px;  
+ }
+html ul.topnav li ul.subnav li a { float: left; width: 90px; padding:4px 10px; }  
+html ul.topnav li ul.subnav li a:hover { background-color:#8aafcb; color:#FFFFFF; }
+/** home **/
+.sel-paises {
+	font-family:Arial;
+	color:#FFFFFF;
+	background:url(../imagens/layout/azul_trans.png);  
+	width: 695px; 
+	padding: 30px; 
+	top: 470px;
+	position: absolute;
+	display: none;
+}
+.sel-paises .conteiner h1 { font-size: 20px; margin-bottom: 30px;  float: left; width: 655px; }
+.sel-paises .conteiner a { font-size: 11px; float: left; }
+.sel-paises a { color:#FFFFFF; text-decoration:none; }
+.sel-paises ul
+{    
+    list-style-position: inside;
+    list-style-type: disc;
+    float: left; 
+    margin-right: 30px; 
+    margin-left: 30px;
+}
+.sel-paises ul li { margin-bottom: 7px; }
+.claim, .esc-paises {
+	font-family: Arial;
+	color:#FFFFFF;
+	background:url(../imagens/layout/azul_trans.png); 
+	width: 790px;
+	padding: 30px; 
+	top: 470px;
+	left: 30px;
+	position: absolute;
+	display: block;
+	margin-left:58px;
+}
+.claim a, .esc-paises a { color:#FFFFFF; }
+.claim img, .esc-paises img{ 	margin-left:-15px; }
+.claim .conteiner a, esc-paises .conteiner a { float: right; font-size: 11px; }

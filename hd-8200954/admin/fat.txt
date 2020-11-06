@@ -1,0 +1,58 @@
+detalhe_ordem_servico.php:				$sqlX  = "SELECT trim(tbl_faturamento.nota_fiscal) As nota_fiscal ,
+distrib_pendencia.php:			tbl_faturamento.nota_fiscal
+distribuidor_desempenho.php:			UPDATE britania_desempenho SET emissao_distrib = TO_CHAR (tbl_faturamento.emissao,'DD/MM/YYYY')
+estoque_consulta.php:				FROM tbl_faturamento_item
+estoque_posto_movimento_tk.php:					  JOIN tbl_estoque_posto_movimento on tbl_estoque_posto_movimento.faturamento = tbl_faturamento.faturamento
+extrato_consulta_os_intelbras.php:								JOIN tbl_faturamento_item ON tbl_faturamento_item.pedido = tbl_pedido.pedido AND tbl_faturamento_item.peca = tbl_os_item.peca
+extrato_consulta_os.php:								LEFT JOIN tbl_faturamento_item ON tbl_faturamento_item.pedido = tbl_os_item.pedido
+extrato_consulta_pesquisa.php:				GROUP BY tbl_extrato.extrato, tbl_extrato.posto, tbl_faturamento_item.peca 
+extrato_consulta.php:				GROUP BY tbl_extrato.extrato, tbl_extrato.posto, tbl_faturamento_item.peca
+extrato_distribuidor_adicional_pecas.php:$sql = "SELECT  tbl_faturamento.nota_fiscal , 
+extrato_os_aprova.php:							$sql  = "SELECT trim(tbl_faturamento.nota_fiscal) As nota_fiscal , 
+extrato_peca_retorno_obrigatorio.php:	$sql_adicional_2  = " AND tbl_faturamento.emissao BETWEEN '$tmp_data_inicial' AND '$tmp_data_final' ";
+extrato_peca_retorno_obrigatorio-xls.php:		$sql_adicional_2  = " AND tbl_faturamento.emissao BETWEEN '$x_data_inicial' AND '$x_data_final' ";
+extrato_posto_devolucao_britania_lgr.php:					JOIN tbl_faturamento      USING (faturamento)
+extrato_posto_devolucao_britania.php:	#				AND   tbl_faturamento_item.aliq_icms > 0
+extrato_posto_devolucao_controle.php:				AND tbl_faturamento.fabrica  = $login_fabrica
+extrato_posto_devolucao_lgr_itens.php:						ORDER BY tbl_faturamento.nota_fiscal ";
+lgr_controle.php:				AND tbl_faturamento.fabrica  = $login_fabrica
+lgr_manual.php:			ORDER BY tbl_faturamento.emissao, tbl_faturamento.nota_fiscal, tbl_peca.descricao;";
+lgr_vistoria_itens.php:				 AND tbl_faturamento_item.qtde - tbl_faturamento_item.qtde_inspecionada > 0";
+lote_capa_conferencia_gama.php:			FROM tbl_faturamento
+lote_capa_conferencia.php:			FROM tbl_faturamento
+manutencao_logistica_reversa2.php:	#				AND   tbl_faturamento_item.aliq_icms > 0
+manutencao_logistica_reversa2_v_ant.php:	#				AND   tbl_faturamento_item.aliq_icms > 0
+nf_relacao_britania.php:	$query .= "ORDER BY tbl_faturamento.emissao DESC, tbl_faturamento.nota_fiscal DESC";
+nota_fiscal_detalhe.php:			WHERE	tbl_faturamento_item.faturamento = $faturamento ";
+os_consulta_simplificada.php:			$sql .= " AND tbl_faturamento.nota_fiscal ILIKE '%$numero_nf%'";
+os_fechamento.php:								LEFT JOIN tbl_faturamento_item on tbl_os_item.peca = tbl_faturamento_item.peca and tbl_os_item.pedido = tbl_faturamento_item.pedido
+os_fechamento.php:													AND     tbl_faturamento_item.peca   = $peca
+os_press.php:								if($login_fabrica == 51) $sql.="AND     tbl_faturamento_item.os_item = $os_item ";
+pedido_admin_altera.php:										AND   tbl_faturamento_item.peca   = $peca";
+pedido_admin_consulta.php:			WHERE tbl_faturamento_item.pedido = $pedido
+pedido_cadastro_altera.php:													FROM tbl_faturamento_item 
+pedido_finalizado.php:	$sqlX = "SELECT	trim(tbl_faturamento.nota_fiscal) AS nota_fiscal,
+pedido_nao_faturado_cadastro.php:$sql = "DELETE FROM tbl_faturamento WHERE faturamento = 1084";
+pendencia_posto.php:	if (strlen ($nota_fiscal) > 1)  $condicao = " tbl_faturamento.nota_fiscal = LPAD ('$nota_fiscal',6,'0') ";
+relatorio_britania_flavio2.php:LEFT JOIN tbl_faturamento		 ON  tbl_faturamento_item.faturamento   = tbl_faturamento.faturamento
+relatorio_devolucao_obrigatoria.php:				ORDER BY SUM (tbl_faturamento_item.qtde) DESC;";
+relatorio_devolucao_pecas_pendentes.php:			GROUP BY tbl_posto_fabrica.codigo_posto,tbl_posto.nome,tbl_faturamento_item.peca, tbl_peca.referencia, tbl_peca.descricao, tbl_faturamento_item.preco,tbl_faturamento.nota_fiscal, tbl_faturamento.emissao
+relatorio_diario.php:	$sql = "SELECT trim (to_char (SUM (qtde * preco),'999,999.99')) FROM tbl_faturamento_item JOIN tbl_pedido USING (pedido) JOIN tbl_faturamento USING (faturamento) WHERE tbl_pedido.fabrica = $login_fabrica AND tbl_pedido.tipo_pedido = 2 AND tbl_faturamento.emissao BETWEEN '$data_inicial' AND '$data_final' ";
+relatorio_faturamento_garantia_pecas.php:			AND tbl_faturamento.posto = $posto;
+relatorio_faturamento_pecas.php:			AND tbl_faturamento.emissao between '$xdata_inicial' and '$xdata_final'
+relatorio_lgr.php:						AND tbl_faturamento.posto                   IS NULL
+relatorio_os_aberta_completo.php:						AND   tbl_faturamento_item.os     = $os
+relatorio_os_aberta_completo_xls.php:						AND   tbl_faturamento_item.os     = $os
+relatorio_os_status_posto.php:										AND     tbl_faturamento_item.faturamento_item = $faturamento_item";
+relatorio_peca_atendida_os_aberta.php:							AND   tbl_faturamento.emissao + INTERVAL'15 days' < CURRENT_DATE
+relatorio_peca_pendente_gama.php:	AND   tbl_faturamento.nota_fiscal IS NULL
+relatorio_peca_pendente_gama_troca.php:						AND tbl_faturamento.nota_fiscal IS NULL
+relatorio_peca_pendente.php:			AND   tbl_faturamento_item.faturamento IS NULL 
+relatorio_pecas_terceiros.php:						tbl_faturamento_item.peca
+relatorio_prazo_atendimento_periodo.php:		if($login_fabrica<>14){ $sql .= " JOIN        tbl_faturamento ON tbl_faturamento.pedido = tbl_pedido.pedido ";}
+relatorio_prazo_medio_atendimento.php:						tbl_faturamento.emissao
+relatorio_qualidade.php:		JOIN  tbl_faturamento      F  ON F.faturamento = FI.faturamento
+relatorio_reembolso_frete.php:		AND tbl_faturamento.fabrica = $login_fabrica ";
+relatorio_troca_produto.php:									AND   tbl_faturamento_item.peca    = $peca;";
+relatorio_troca_produto_total.php:					$sql_x = "select distinct nota_fiscal from tbl_faturamento join tbl_faturamento_item using(faturamento) where tbl_faturamento_item.pedido='$pedido';";
+relatorio_vistoria_pecas.php:			AND tbl_faturamento.cfop IN ( $cfop )

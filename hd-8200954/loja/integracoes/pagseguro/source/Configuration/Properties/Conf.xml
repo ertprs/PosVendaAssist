@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <environment>sandbox</environment><!-- sandbox or production -->
+    <!--<environment>production</environment> -->
+    <credentials>
+        <account>
+            <email>felipemarttos@hotmail.com</email>
+            <production>
+                <token>19866B4D12124C97A9AFFF336B716B0F</token>
+            </production>
+            <sandbox>
+                <token>19866B4D12124C97A9AFFF336B716B0F</token>
+            </sandbox>
+        </account>
+        <application>
+            <production>
+                <appId>your_production_application_id</appId>
+                <appKey>your_production_application_key</appKey>
+            </production>
+            <sandbox>
+                <appId>your_sandbox_application_id</appId>
+                <appKey>your_sandbox_application_key</appKey>
+            </sandbox>
+        </application>
+    </credentials>
+    <charset>UTF-8</charset>
+    <log>
+        <active>false</active>
+        <location>/</location>
+    </log>
+</config>

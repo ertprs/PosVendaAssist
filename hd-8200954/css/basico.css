@@ -1,0 +1,174 @@
+/* prevents styles being used by NN4 and IE4 */
+
+@import "estilo.css";
+@import "posicionamento.css";
+@import "nav.css";
+
+/*
+This is the general stylesheet that controls simple styling rules
+that will be executed by basic/old browsers such as NN4
+TODO: get rid of fixed font size. Consider using percentage in body
+and em's in content.
+*/
+
+body {
+	font: 90% Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	line-height: 140%;
+}
+
+p, div {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+}
+
+h1 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 1.6em;
+}
+
+h2 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63752D;
+	line-height: 1.6em;
+}
+
+h3 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	line-height: 1.6em;
+}
+
+h4 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+
+}
+
+
+img {
+	border: 0px;
+	display: block;
+}
+
+a:link {
+	color: #63798D;
+	font-weight: bold;
+
+}
+
+a:visited {
+	color: #63798D;
+	font-weight: bold;
+
+}
+
+a:hover {
+	color: #000000;
+	font-weight: bold;
+
+}
+
+a:active {
+	color: #000000;
+	font-weight: bold;
+
+}
+
+#logo {
+	margin: 0px;
+}
+
+#topNav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.linkList {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+#subNav {
+	list-style: none;
+	padding: 15px 0px 0px 20px;
+	margin: 0px;
+}
+
+#subNavContact {
+	list-style: none;
+	padding: 15px 0px 0px 0px;
+	margin: 0px;
+}
+
+
+#bottomNav {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+/* classes */
+
+.swap span {
+	display: none;
+}
+
+.cutoutImage {
+	float: left;
+	padding-right: 10px;
+}
+
+fieldset {
+	border: 0px solid #fff;
+}
+
+input {
+	font: 1em/1em Verdana, Arial, Helvetica, sans-serif;
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f0f0f0
+}
+
+#searchButton, #subscribeButton, #unsubscribeButton {
+	color: #445362;
+	font: 0.9em/normal Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+#subscribeField {
+	width: 100%;
+}
+
+
+/* FORMULÁRIOS */
+
+.cellbox {
+	BORDER-RIGHT: #888888 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #888888 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #888888 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #888888 1px solid
+}
+.box-header {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.frm {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f0f0f0
+}
+.frm-on {
+	BORDER-RIGHT: rgb(70,90,128) 1px solid; BORDER-TOP: rgb(70,90,128) 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: rgb(70,90,128) 1px solid; COLOR: rgb(70,90,128); BORDER-BOTTOM: rgb(70,90,128) 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: rgb(177,203,255)
+}
+.frmContato {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+}
+.text-header {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: rgb(0,128,255); FONT-FAMILY: Verdana
+}
+

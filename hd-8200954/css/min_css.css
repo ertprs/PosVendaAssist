@@ -1,0 +1,53 @@
+/**
+ * CSS usado em telas antigas, sem conflito com o CSS da FMC
+ * ou com o Bootstrap, mas ainda "necessário".
+ */
+.error {background: red; color: white; font-weight: bold}
+.msg_tc_pendencia {
+    font: normal bold 12px Verdana, Arial, sans-serif;
+    color: red;
+}
+.frm {
+    border-right: #888888 1px solid; 
+    border-top: #888888 1px solid; 
+    font-weight: bold; 
+    font-size: 8pt; 
+    border-left: #888888 1px solid; 
+    border-bottom: #888888 1px solid; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    background-color: #f0f0f0
+}
+
+.frm-on {
+    border-right: rgb(70,90,128) 1px solid; 
+    border-top: rgb(70,90,128) 1px solid; 
+    font-weight: bold; 
+    font-size: 8pt; 
+    border-left: rgb(70,90,128) 1px solid; 
+    color: rgb(70,90,128); 
+    border-bottom: rgb(70,90,128) 1px solid; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    background-color: rgb(177,203,255)
+}
+
+.frm-on-os {
+    border-top: silver 1px solid; 
+    font-weight: bold; 
+    font-size: 8pt; 
+    color: #808080; 
+    border-bottom: silver 1px solid; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    background-color: #eaeaea
+}
+
+div.destaque {
+  padding: 2ex 2em;
+  line-height: 1.5em;
+  color: #833;
+  background: #fdd;
+  border-radius: 4px;
+  /* box-shadow: 0 0 10px inset; */
+  margin: 4px;
+  font-size: 1.2em;
+}
+

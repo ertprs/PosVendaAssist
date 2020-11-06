@@ -1,0 +1,64 @@
+
+
+ Excluir embarque 11993 (03/01/2008 07:13:46) 
+ [ SELECT fn_cancelar_embarque(11993) ]
+
+
+ Excluir embarque 12051 (05/01/2008 07:38:54) 
+ [ SELECT fn_cancelar_embarque(12051) ]
+
+
+ Excluir embarque 12051 (05/01/2008 07:40:52) 
+ [ SELECT fn_cancelar_embarque(12051) ]
+
+
+ Excluir embarque 12050 (05/01/2008 07:41:27) 
+ [ SELECT fn_cancelar_embarque(12050) ]
+
+
+ Excluir embarque 12050 (05/01/2008 07:41:30) 
+ [ SELECT fn_cancelar_embarque(12050) ]
+
+
+ Excluir embarque 12066 (08/01/2008 07:08:05) 
+ [ SELECT fn_cancelar_embarque(12066) ]
+
+
+ Excluir embarque 12065 (08/01/2008 07:09:19) 
+ [ SELECT fn_cancelar_embarque(12065) ]
+
+
+ Excluir embarque 12117 (11/01/2008 07:09:10) 
+ [ SELECT fn_cancelar_embarque(12117) ]
+
+
+ Excluir embarque 12211 (16/01/2008 07:26:08) 
+ [ SELECT fn_cancelar_embarque(12211) ]
+
+
+ Excluir embarque 12210 (16/01/2008 07:26:31) 
+ [ SELECT fn_cancelar_embarque(12210) ]
+
+
+ Excluir embarque 12209 (16/01/2008 07:26:52) 
+ [ SELECT fn_cancelar_embarque(12209) ]
+
+
+ Excluir embarque 12208 (16/01/2008 07:27:12) 
+ [ SELECT fn_cancelar_embarque(12208) ]
+
+
+ Excluir embarque 12206 (16/01/2008 07:27:52) 
+ [ SELECT fn_cancelar_embarque(12206) ]
+
+
+ Excluir embarque 12204 (16/01/2008 07:28:09) 
+ [ SELECT fn_cancelar_embarque(12204) ]
+
+
+ Excluir embarque 12203 (16/01/2008 07:28:28) 
+ [ SELECT fn_cancelar_embarque(12203) ]
+
+
+ Excluir embarque 12202 (16/01/2008 07:28:49) 
+ [ SELECT fn_cancelar_embarque(12202) ]

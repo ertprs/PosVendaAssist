@@ -1,0 +1,66 @@
+.texto {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.menu-principal {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.menu-principal:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #66ccff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.menu-principal:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #005279; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.subtitulo1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.titulo-index {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #005279; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A.links:hover {
+	COLOR: #e10000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.linksp:hover {
+	FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.links:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.links {
+	FONT-SIZE: 12px; COLOR: #005279; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.combo {
+	FONT-SIZE: 12px; WIDTH: 160px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: aliceblue
+}
+.data {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textop {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.linksp {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #005279; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.linha {
+	BORDER-BOTTOM: #006699 1px dotted
+}
+.botao {
+	BORDER-RIGHT: #006699 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: 1px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; BORDER-LEFT: 1px; COLOR: #006699; PADDING-TOP: 4px; BORDER-BOTTOM: #006699 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.borda-esq {
+	BORDER-LEFT: #005279 1px solid
+}
+.textoDestaque {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #b4007d; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.fundoProdutos {
+	BACKGROUND-POSITION: center top; BACKGROUND-IMAGE: url(imagens/home_produtos.jpg); BACKGROUND-REPEAT: no-repeat
+}
+.homeTitulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #7a7a7a; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.homeBanner {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #7a7a7a; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

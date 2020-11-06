@@ -1,0 +1,5 @@
+{
+	"finaliza_os_valida_data_conserto": true,
+	"nao_valida_pedido_nao_faturado"  : true,
+	"fabrica_nao_valida_os" : true
+}

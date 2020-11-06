@@ -1,0 +1,128 @@
+html, body {
+	background: white;
+	color: #333;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 14px;
+}
+p {
+	line-height: 18px;
+}
+p a {
+	color: #333;
+	text-decoration: none;
+}
+h2 {
+	margin-bottom: 5px;
+	float: left;
+	font-size: 18px;
+	color: #333;
+	width: 100%;
+}
+h1 {
+	color: #333;
+	font-size: 32px;
+	padding: 20px 20px 10px;
+}
+.box_content {
+	padding: 0;
+	width: 789px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+#cep {
+	border: 1px solid #aaa;
+	width: 214px;
+	height: 30px;
+	margin: 5px 0 15px;
+	color: #333;
+	padding: 2px;
+}
+#formAssistencia {
+	float: left;
+	width: 336px;
+	margin: 25px 40px 0 0;
+}
+#formAssistencia label {
+	width: 100%;
+	font-size: 18px;
+	color: #333;
+	font-weight: bolder;
+}
+#formAssistencia select {
+	width: 334px;
+	height: 40px;
+	margin: 5px 0 15px;
+	color: #333;
+	padding: 2px;
+}
+#resultado {
+	float: left;
+	width: 410px;
+	margin-top: 25px;
+}
+#resultado h2 {
+	color: #333
+}
+#resultado span {
+	margin: 10px 0;
+	display: block;
+}
+div.alert {
+	background-color: #d9edf7;
+	color: #31708f;
+	font-weight: bold;
+	border: 1px solid #bce8f1;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+div.calculo-rota {
+	margin-top: 20px;
+	display: none;
+}
+.btn-instrucao-rota {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	z-index: 1;
+}
+div.instrucao-rota {
+	position: absolute;
+	display: none;
+	z-index: 2;
+	background-color: #fff;
+	overflow-y: scroll;
+}
+.btn-fechar-instrucao {
+	float: right;
+	display: block;
+	margin-top: -30px;
+}
+#consultar,  span.localizar,  span.rota,  span.localizar-todos {
+	max-width: 180px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	border: solid #e30615 2px;
+	margin: 5px 3px 15px;
+	color: #e30615;
+	padding: 8px;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: background .25s ease-in-out, color .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out, color .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
+}
+#consultar:hover,  span.localizar:hover,  span.rota:hover,  span.localizar-todos:hover {
+	color: white;
+	background-color: #e30615;
+}
+.posto-resultado {
+	text-transform: uppercase;
+}

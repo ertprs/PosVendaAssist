@@ -1,0 +1,1 @@
+admin/ajax_verifica_troca.php

@@ -1,0 +1,7 @@
+{
+	"usa_desconto":true ,
+	"auditoria":true,
+	"status_auditoria": 18,
+    "anexo": true,
+    "anexo_qtde": true
+}

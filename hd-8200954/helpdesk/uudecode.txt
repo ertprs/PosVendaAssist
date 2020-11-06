@@ -1,0 +1,26 @@
+begin 644 extrato_040908.txt
+M,C$T,#4W"3<Q,#$Q,SDY,#`P,34T"3DY"3(P,#@M,#DM,#,@,#`Z,#`Z,#`)
+M-#@)-3$),`T*,C$T,#8P"34Y,#<S-#@V,#`P,3,P"3,X-`DR,#`X+3`Y+3`S
+M(#`P.C`P.C`P"3,X-`DP"3`-"C(R,S@W.0DW,3`Q,3,Y.3`P,#$U-`DP"3(P
+M,#@M,#DM,#,@,#`Z,#`Z,#`),`DP"3`-"C(S,S@U,`DW,3`Q,3,Y.3`P,#$U
+M-`DQ,@DR,#`X+3`Y+3`S(#`P.C`P.C`P"3$R"3`),`T*,C0U-S$U"3<Q,#$Q
+M,SDY,#`P,34T"3,P"3(P,#@M,#DM,#,@,#`Z,#`Z,#`),S`),`DP#0HR-3<V
+M-#()-S$P,3$S.3DP,#`Q-30),3(R"3(P,#@M,#DM,#,@,#`Z,#`Z,#`),3(R
+M"3`),`T*,C4W-C0T"34Y,#<S-#@V,#`P,3,P"3`),C`P."TP.2TP,R`P,#HP
+M,#HP,`DP"3`),`T*,C<P.#DR"3<Q,#$Q,SDY,#`P,34T"30W"3(P,#@M,#DM
+M,#,@,#`Z,#`Z,#`)-#<),`DP#0HR-S`X.30)-3DP-S,T.#8P,#`Q,S`)-C0)
+M,C`P."TP.2TP,R`P,#HP,#HP,`DV-`DP"3`-"C(X-#DW,`DW,3`Q,3,Y.3`P
+M,#$U-`DU-`DR,#`X+3`Y+3`S(#`P.C`P.C`P"34T"3`),`T*,CDX,#`V"3<Q
+M,#$Q,SDY,#`P,34T"3(X,`DR,#`X+3`Y+3`S(#`P.C`P.C`P"3(X-@DT.`DM
+M-30-"C,Q,#@P.0DW,3`Q,3,Y.3`P,#$U-`DR-S`),C`P."TP.2TP,R`P,#HP
+M,#HP,`DR-S`),`DP#0HS,3`X,3$)-3DP-S,T.#8P,#`Q,S`),S,),C`P."TP
+M.2TP,R`P,#HP,#HP,`DS,PDP"3`-"C,R-3(S,`DU.3`W,S0X-C`P,#$S,`DQ
+M,C,),C`P."TP.2TP,R`P,#HP,#HP,`DQ,#4),3@),`T*,S(U,C0V"30T-C`R
+M-3@Y,#`P,3<S"3DY.0DR,#`X+3`Y+3`S(#`P.C`P.C`P"3DY.0DP"3`-"C,R
+M-3(W,`DP,3<P-3<S.3`P,#$V,0DT.#<X"3(P,#@M,#DM,#,@,#`Z,#`Z,#`)
+M-CD)-#@P.0DP#0HS,C4R-S$)-3$P,#,W-S`P,#`R,#`),3,W-`DR,#`X+3`Y
+M+3`S(#`P.C`P.C`P"3<U"3$R.3D),`T*,S(U,S`R"3`P,3,X-3<R,#`P,3,Q
+M"3DV"3(P,#@M,#DM,#,@,#`Z,#`Z,#`)-#@)-#@),`T*,S(U,S`U"34Y-C8Q
+K-S(X,#`P,3`W"3,V-@DR,#`X+3`Y+3`S(#`P.C`P.C`P"3,V-@DP"3`-"@``
+`
+end

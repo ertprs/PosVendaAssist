@@ -1,0 +1,439 @@
+/*****************************
+css.css
+autor: Marcos Teruo Ouchi
+Company: Telecontrol Networking - Brasil
+Date: Outubro de 2003
+*****************************/
+
+.mais_escuro {
+    color: #000000;
+}
+
+.menu_top {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	border: 1px solid;
+	color:#000000;
+}
+
+
+.table_line {
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	border: 1px solid;
+}
+
+.table_line2 {
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.error {
+  color: white;
+  text-align: center;
+  font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+  background-color: #FF0000;
+}
+
+
+/*****************************
+ELEMENTOS DE POSICIONAMENTO
+*****************************/
+
+#container {
+  width: 700px;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-color: white;
+}
+
+#menu {
+  width: 100%;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-image: url("../imagens_admin/fundo-cabecalho.png");
+}
+
+#submenu {
+  width: 100%;
+  padding:0px 30px 0px 30px;
+  margin:0px 0px 5px 0px;
+/*  background-image: url("../imagens/fundo-submenu.png");*/
+  text-align: left;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+}
+
+
+#subBanner {
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  background-color: #FFFFFF;
+  /*background-image: url("../imagens/fundo_page.gif");*/
+}
+
+
+#page {
+	width: 100%;
+	border: 1px dotted #000000;
+	text-align: left;
+	}
+
+#contentleft {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	}
+
+#contentleft2 {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	}
+
+#contentcenter {
+	padding-left: 5px;
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	}
+
+
+#contentleft3 {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	color: #000000;
+	text-align: left;
+	font-size: x-small;
+	font-weight: normal;
+	line-height: 20px;
+	}
+
+
+/*****************************
+ELEMENTOS BASICOS
+*****************************/
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px,0px,0px,0px;
+	padding:  0px,0px,0px,0px;
+}
+
+p, div {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+}
+
+/* input {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f0f0f0
+}*/
+
+h1 {
+	font-FAMILY: Arial, Helvetica, Verdana,  sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: NAVY;
+	margin-top: 6px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63752D;
+	line-height: 1.6em;
+}
+
+h3 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	line-height: 1.6em;
+	
+}
+
+h4 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	line-height: 0.1em;
+}
+
+h5 {
+	background-color: #000000;
+	text-align:center;
+	color: #fffFFF;
+	font-weight: BOLD;
+	font-size:    small;
+}
+
+
+hr {
+	line-height: 5px;
+}
+
+img {
+	border: 0px;
+}
+
+a:link {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* FORMULÁRIOS */
+
+.formulario {
+	background-color:#D9E2EF;
+	font:11px Arial;
+	margin: auto;
+	width: 700px;
+}
+
+.formulario table{
+	text-align:left;
+}
+
+.formulario button, input[type="submit"], input[type="button"] {
+	    cursor: pointer;
+	    text-align: center;
+}
+
+.texto_avulso {
+	font: 14px Arial; color: rgb(89, 109, 155);
+	background-color: #d9e2ef;
+	text-align: center;
+	width:700px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border:1px solid #596d9b;
+}
+
+.cellbox {
+	BORDER-RIGHT: #888888 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #888888 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #888888 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #888888 1px solid
+}
+.box-header {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.frm {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f0f0f0
+}
+.frm-on {
+	BORDER-RIGHT: rgb(70,90,128) 1px solid; BORDER-TOP: rgb(70,90,128) 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: rgb(70,90,128) 1px solid; COLOR: rgb(70,90,128); BORDER-BOTTOM: rgb(70,90,128) 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: rgb(177,203,255)
+}
+.text-header {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+}/*
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: rgb(0,128,255); FONT-FAMILY: Verdana
+}
+*/
+
+.Tabela{
+	border:1px solid #d2e4fc;
+	background-color:#F5A9A9;
+	}
+
+table.tabela2 tr td{
+    font-family: verdana;
+    font-size: 11px;
+    border:1px solid #ACACAC;
+	border-collapse: collapse;
+}
+
+.titulo_tabela{
+    background-color:#596d9b;
+    font: bold 14px "Arial";
+    color:#FFFFFF;
+    text-align:center;
+}
+
+.titulo_coluna{
+    background-color:#596d9b;
+    font: bold 11px "Arial";
+    color:#FFFFFF;
+    text-align:center;
+}
+
+.inicio {
+	font-family: Arial;
+	FONT-SIZE: 8pt;
+	font-weight: bold;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.conteudo {
+	font-family: Arial;
+	FONT-SIZE: 8pt;
+	font-weight: bold;
+	text-align: left;
+	background: #F4F7FB;
+}
+
+table#anexos {margin: 1ex auto}
+table#anexos thead {text-transform:capitalize;text-align:center}
+table#anexos tr td {vertical-align:middle;text-align:center}
+table#anexos tr td a>img {max-height: 150px;min-height: 96px;}
+
+#footer {
+
+  border: 0px solid white;
+  background: white;
+  color: #C0C0C0;
+  text-align: right;
+  font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* 
+	Colocado por Fabio para padronizar as telas de pesquisa (10/10/2007)
+	USO: <table class='PesquisaTabela'>
+
+*/
+
+.PesquisaTabela{
+	font-size:12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+}
+
+.PesquisaTabela caption {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 6px 6px 6px 2px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color:#ffffff;
+	background-color: #596D9B;
+}
+
+.PesquisaTabela thead {
+	text-align: center;
+	color:#ffffff;
+	background-color: #596D9B;
+
+}
+
+.PesquisaTabela tbody {
+	text-align: left;
+	border: 0px;
+	background-color: #D9E2EF;
+}
+
+.PesquisaTabela tbody td{
+	padding:5px 5px 0px 10px;
+}
+
+.PesquisaTabela tbody .linha{
+	text-align:center;
+	font-weight:bold;
+}
+
+/* Se for alterado o CSS para os anexos, alterar também no posto e no os_cadastro_unico.css */
+table#anexos {
+	margin: 1ex auto;
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: left;
+	width: 630px;
+	table-layout: fixed;
+}
+#anexos thead.inicio {
+    border:1px solid #d2e4fc;
+    background-color:#485989;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: bold!important;
+    text-align: left;
+    color: #FFFFFF;
+    padding-right: 1ex;
+    text-transform: uppercase;
+	text-align: center;
+}
+#anexos th {
+	text-align: center;
+	font-weight: bold;
+}
+#anexos tr.conteudo {
+    font-family: Arial, sans-serif;
+    background: #F4F7FB;
+}
+table#anexos tr td {vertical-align:middle;text-align:center;max-width: 150px;border: 1px solid #596D9B;}
+table#anexos tr td a>img {max-height: 150px;min-height: 96px;}
+#anexos img.excluir_NF {cursor: pointer}
+#DIVAnexo {padding: 10px;position: relative;left: 25%;margin:auto}
+#DIVAnexo label {display: inline-block;_zoom:1}
+
+.float-helpdesk a:hover img, .float-helpdesk a:hover span {
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.submenu_telecontrol, .submenu_telecontrol a {
+	font-family: arial; 
+	font-size: 13px;
+	color: #000000;
+	cursor: pointer;
+	margin-right: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: normal;
+}
+
+.submenu_telecontrol_callcenter {
+	margin-right: 20px;
+}
+
+.submenu_telecontrol_callcenter a {
+	margin-right: 0px;
+}
+
+
+.submenu_item {
+	background-image: url(images/background.jpg);
+	background-repeat: repeat-x;
+	height: 18px;
+}
+
+.float-helpdesk:hover span.txt_p {
+	text-decoration: blink;
+}
+
+

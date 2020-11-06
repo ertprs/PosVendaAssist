@@ -1,0 +1,143 @@
+<!--CSS-->
+<!DOCTYPE html />
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta name="language" content="pt-br" />
+    <title>Fluidra - Acesso Restrito</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../callcenter/plugins/jquery-1.11.3.min.js" ></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="../callcenter/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="../callcenter/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Plugins Adicionais -->
+    <script type="text/javascript" src="../../plugins/jquery.mask.js"></script>
+    <script type="text/javascript" src="../../plugins/jquery.alphanumeric.js"></script>
+    <script type="text/javascript" src="../../plugins/fancyselect/fancySelect.js"></script>
+    <script type="text/javascript" src="../../plugins/jquery.form.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../plugins/fancyselect/fancySelect.css" />
+
+
+    <script type="text/javascript">
+
+    	var erro;
+
+        function valida_senha() {
+			var url  = "../../index.php?ajax=sim&acao=validar";
+
+			var parametros = jQuery('form#acessar').serialize();//  Prepara os campos do formulário para enviar por POST
+			$('#logar').attr('disabled',true).css('cursor', 'not-allowed,wait');		//  Deshabilita o botão de login enquanto está conferindo o usuário
+
+			$.post(
+				url,	
+				parametros+"&btnAcao=enviar",
+				function (data) {
+				var resposta= data.split("|");
+				var codigo  = resposta[0].replace(/.*\s(\w+)$/g, '');
+				var	texto   = resposta[1];
+
+				if (data.length > 0) {
+						if (codigo=="debug") {
+							alert(data);
+						} else if (codigo=="ok"){
+							window.parent.location = '../../'+texto;
+						} else if (codigo=="1"){
+							erro.html(texto);
+							erro.fadeIn('normal')
+								.delay(3000).fadeOut('fast');
+							$('input[name=senha]').val('');
+							$('#logar').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+						} else {
+							//alert(data);
+							texto = "O sistema passará por manutenção técnica!\n<b>";
+							erro.html(texto);
+							erro.fadeIn('normal')
+								.delay(4000).fadeOut('fast');
+							$('#logar').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+						}
+					} else {
+						texto = "Erro no acesso.<br><b>Tente novamente.</b>";
+						erro.html(texto);
+						erro.fadeIn('normal')
+							.delay(3000).fadeOut('fast');
+						$('#logar').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+					}
+			});
+		}
+
+		$(function() {
+			erro  = $('#msg_erro');
+			erro.html('&nbsp;').hide().css('visibility',"visible");
+		});
+	       
+    </script>
+    <style>
+        label {
+            color: #8f8f8f;
+        }
+
+        .campo_obrigatorio {
+            color: darkred;
+        }
+
+        a {
+        	font-size: 13px;
+        	padding-left:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    
+	<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" >    	
+        <div id="msg_erro" class="alert alert-danger alert-dismissible col-xs-6 col-sm-6 col-md-4 col-lg-4" style="display: none;"></div>
+    </div>
+    
+
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" >    	
+        <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-4" >
+            <h3 style="color:#00adf0;">Acessar:</h3>
+        </div>
+    </div>
+
+    <form id="acessar" name='acessar'>
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+	        <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-4" >
+	            <!-- <label for="login" >Login</label> -->
+	            <input type="text" class="form-control" id="login" name="login" placeholder="Login" />
+	        </div>
+	    </div>
+	    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-4" >
+	            <!-- <label for="senha" >Senha</label> -->
+	            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
+	        </div>
+	    </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        	<div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-4" >
+	            <button style="background-color: #428bca;color: white;width: 100px;float:right;margin-right:5%" type="button" id="logar" onclick="valida_senha();" class="btn btn-md">Logar</button>
+	        </div>
+        </div>
+
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        <div class="form-group col-xs-6 col-sm-6 col-md-5 col-lg-5" >
+	        	<a href="../esqueci_senha.php">Esqueceu sua senha?</a>
+				<a href="../primeiro_acesso.php" >Primeiro Acesso</a>
+	        	<a href="../login_unico.php" >Login &Uacute;nico</a>
+	        </div>
+	    </div>
+
+	    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    	<div class="form-group col-xs-6 col-sm-6 col-md-5 col-lg-5" >
+		    	<img src="imgs/logo_fluidra.jpg" width="60" height="24" border="0" alt="Fluidra" title="Fluidra" style="float:right;margin-top: 10px;margin-right:20%"/>
+		    </div>
+	    </div>
+    </form>
+</div>
+
+</body>
+</html>

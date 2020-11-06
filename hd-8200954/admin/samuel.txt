@@ -1,0 +1,273 @@
+opiniao_posto.php:	$sql = "DELETE FROM tbl_opiniao_posto_pergunta
+opiniao_posto.php:			WHERE  tbl_opiniao_posto_pergunta.opiniao_posto_pergunta = $opiniao_posto_pergunta;";
+opiniao_posto.php:			$sql = "INSERT INTO tbl_opiniao_posto_pergunta (
+opiniao_posto.php:			$sql = "UPDATE tbl_opiniao_posto_pergunta SET
+opiniao_posto.php:			FROM tbl_opiniao_posto_pergunta
+opiniao_posto.php:			FROM	tbl_opiniao_posto
+opiniao_posto.php:		$sql = "SELECT	tbl_opiniao_posto_pergunta.opiniao_posto_pergunta ,
+opiniao_posto.php:						tbl_opiniao_posto_pergunta.pergunta               ,
+opiniao_posto.php:						tbl_opiniao_posto_pergunta.ordem                  ,
+opiniao_posto.php:						tbl_opiniao_posto_pergunta.tipo_resposta 
+opiniao_posto.php:				FROM	tbl_opiniao_posto_pergunta
+opiniao_posto.php:				JOIN    tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto.php:				AND		tbl_opiniao_posto.fabrica = $login_fabrica
+opiniao_posto.php:				WHERE	tbl_opiniao_posto_pergunta.opiniao_posto = $opiniao_posto
+opiniao_posto.php:				ORDER BY tbl_opiniao_posto_pergunta.ordem ;";
+opiniao_posto_relatorio-new.php:$res = pg_exec ($con,"SELECT opiniao_posto FROM tbl_opiniao_posto WHERE fabrica = $login_fabrica AND ativo IS TRUE ");
+opiniao_posto_relatorio-new.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio-new.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio-new.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio-new.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio-new.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio-new.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio-new.php:	$sql = "SELECT	tbl_opiniao_posto_pergunta.pergunta              ,
+opiniao_posto_relatorio-new.php:					tbl_opiniao_posto_pergunta.tipo_resposta         ,
+opiniao_posto_relatorio-new.php:					tbl_opiniao_posto_pergunta.opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:			FROM	tbl_opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:			JOIN	tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto_relatorio-new.php:			WHERE	tbl_opiniao_posto.fabrica = $login_fabrica
+opiniao_posto_relatorio-new.php:			ORDER BY tbl_opiniao_posto_pergunta.tipo_resposta        , 
+opiniao_posto_relatorio-new.php:					tbl_opiniao_posto_pergunta.ordem;";
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_satisfeito
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito satisfeito'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_satisfeito
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'satisfeito'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_nem_nem
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'nem satisfeito nem insatisfeito'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_insatisfeito
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito insatisfeito'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_insatisfeito
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'insatisfeito'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_sim
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 't'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('S')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_nao
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'f'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('S')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_progresso
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito progresso'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_melhorou
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'melhorou'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_permaneceu_igual
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'permaneceu igual'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio-new.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_piorou
+opiniao_posto_relatorio-new.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio-new.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'piorou'
+opiniao_posto_relatorio-new.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio-new.php:			SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio-new.php:			JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio-new.php:			JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio-new.php:			WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio-new.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio-new.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio-new.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio-new.php:			JOIN	tbl_opiniao_posto_resposta ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio-new.php:			AND		tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $pergunta
+opiniao_posto_relatorio-new.php:			AND		tbl_opiniao_posto_resposta.resposta               = '$resposta'
+opiniao_posto_relatorio-new.php:			FROM	tbl_opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:$sql = "SELECT	tbl_opiniao_posto.cabecalho
+opiniao_posto_relatorio-new.php:		FROM tbl_opiniao_posto 
+opiniao_posto_relatorio-new.php:						tbl_opiniao_posto_pergunta.pergunta,
+opiniao_posto_relatorio-new.php:						tbl_opiniao_posto_resposta.resposta,
+opiniao_posto_relatorio-new.php:						tbl_opiniao_posto_pergunta.ordem   
+opiniao_posto_relatorio-new.php:				FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio-new.php:				JOIN    tbl_posto_fabrica ON tbl_posto_fabrica.posto         = tbl_opiniao_posto_resposta.posto 
+opiniao_posto_relatorio-new.php:				JOIN    tbl_opiniao_posto_pergunta ON tbl_opiniao_posto_pergunta.opiniao_posto_pergunta = tbl_opiniao_posto_resposta.opiniao_posto_pergunta
+opiniao_posto_relatorio-new.php:				JOIN    tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto_relatorio-new.php:				WHERE   tbl_opiniao_posto.fabrica        = $login_fabrica
+opiniao_posto_relatorio-new.php:				ORDER BY tbl_opiniao_posto_pergunta.ordem;";
+opiniao_posto_relatorio.php:$res = pg_exec ($con,"SELECT opiniao_posto FROM tbl_opiniao_posto WHERE fabrica = $login_fabrica AND ativo IS TRUE ");
+opiniao_posto_relatorio.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio.php:	$sql = "SELECT	tbl_opiniao_posto_pergunta.pergunta              ,
+opiniao_posto_relatorio.php:					tbl_opiniao_posto_pergunta.tipo_resposta         ,
+opiniao_posto_relatorio.php:					tbl_opiniao_posto_pergunta.opiniao_posto_pergunta
+opiniao_posto_relatorio.php:			FROM	tbl_opiniao_posto_pergunta
+opiniao_posto_relatorio.php:			JOIN	tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto_relatorio.php:			WHERE	tbl_opiniao_posto.fabrica = $login_fabrica
+opiniao_posto_relatorio.php:			ORDER BY tbl_opiniao_posto_pergunta.tipo_resposta        , 
+opiniao_posto_relatorio.php:					tbl_opiniao_posto_pergunta.ordem;";
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_satisfeito
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito satisfeito'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_satisfeito
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'satisfeito'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_nem_nem
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'nem satisfeito nem insatisfeito'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_insatisfeito
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito insatisfeito'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_insatisfeito
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'insatisfeito'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('F')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_sim
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 't'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('S')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_nao
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'f'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('S')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_muito_progresso
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'muito progresso'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_melhorou
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'melhorou'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_permaneceu_igual
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'permaneceu igual'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio.php:						SELECT	count(tbl_opiniao_posto_resposta.resposta) AS ocorrencia_piorou
+opiniao_posto_relatorio.php:						FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:						JOIN	tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta)
+opiniao_posto_relatorio.php:						JOIN	tbl_posto ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:						WHERE	tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $opiniao_posto_pergunta
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_resposta.resposta               = 'piorou'
+opiniao_posto_relatorio.php:						AND		tbl_opiniao_posto_pergunta.tipo_resposta in ('P')
+opiniao_posto_relatorio.php:			SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio.php:			JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio.php:			JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio.php:			WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio.php:			JOIN	tbl_opiniao_posto_resposta ON tbl_opiniao_posto_resposta.posto = tbl_posto.posto
+opiniao_posto_relatorio.php:			AND		tbl_opiniao_posto_resposta.opiniao_posto_pergunta = $pergunta
+opiniao_posto_relatorio.php:			AND		tbl_opiniao_posto_resposta.resposta               = '$resposta'
+opiniao_posto_relatorio.php:			FROM	tbl_opiniao_posto_pergunta
+opiniao_posto_relatorio.php:$sql = "SELECT	tbl_opiniao_posto.cabecalho
+opiniao_posto_relatorio.php:		FROM tbl_opiniao_posto 
+opiniao_posto_relatorio.php:						tbl_opiniao_posto_pergunta.pergunta,
+opiniao_posto_relatorio.php:						tbl_opiniao_posto_resposta.resposta,
+opiniao_posto_relatorio.php:						tbl_opiniao_posto_pergunta.ordem   
+opiniao_posto_relatorio.php:				FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio.php:				JOIN    tbl_posto_fabrica ON tbl_posto_fabrica.posto         = tbl_opiniao_posto_resposta.posto 
+opiniao_posto_relatorio.php:				JOIN    tbl_opiniao_posto_pergunta ON tbl_opiniao_posto_pergunta.opiniao_posto_pergunta = tbl_opiniao_posto_resposta.opiniao_posto_pergunta
+opiniao_posto_relatorio.php:				JOIN    tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto_relatorio.php:				WHERE   tbl_opiniao_posto.fabrica        = $login_fabrica
+opiniao_posto_relatorio.php:				ORDER BY tbl_opiniao_posto_pergunta.ordem;";
+opiniao_posto_relatorio_print.php:$res = pg_exec ($con,"SELECT opiniao_posto FROM tbl_opiniao_posto WHERE fabrica = $login_fabrica AND ativo IS TRUE ");
+opiniao_posto_relatorio_print.php:				SELECT DISTINCT posto FROM tbl_opiniao_posto_resposta 
+opiniao_posto_relatorio_print.php:				JOIN tbl_opiniao_posto_pergunta USING (opiniao_posto_pergunta) 
+opiniao_posto_relatorio_print.php:				JOIN tbl_opiniao_posto USING (opiniao_posto) 
+opiniao_posto_relatorio_print.php:				WHERE tbl_opiniao_posto.opiniao_posto = $opiniao_posto
+opiniao_posto_relatorio_print.php:	$sql = "SELECT	tbl_opiniao_posto.cabecalho
+opiniao_posto_relatorio_print.php:			FROM tbl_opiniao_posto 
+opiniao_posto_relatorio_print.php:					tbl_opiniao_posto_pergunta.pergunta,
+opiniao_posto_relatorio_print.php:					tbl_opiniao_posto_resposta.resposta,
+opiniao_posto_relatorio_print.php:					tbl_opiniao_posto_pergunta.ordem   
+opiniao_posto_relatorio_print.php:			FROM	tbl_opiniao_posto_resposta
+opiniao_posto_relatorio_print.php:			JOIN    tbl_posto_fabrica ON tbl_posto_fabrica.posto         = tbl_opiniao_posto_resposta.posto 
+opiniao_posto_relatorio_print.php:			JOIN    tbl_opiniao_posto_pergunta ON tbl_opiniao_posto_pergunta.opiniao_posto_pergunta = tbl_opiniao_posto_resposta.opiniao_posto_pergunta
+opiniao_posto_relatorio_print.php:			JOIN    tbl_opiniao_posto ON tbl_opiniao_posto.opiniao_posto = tbl_opiniao_posto_pergunta.opiniao_posto
+opiniao_posto_relatorio_print.php:			WHERE   tbl_opiniao_posto.fabrica        = $login_fabrica
+opiniao_posto_relatorio_print.php:			ORDER BY tbl_opiniao_posto_pergunta.ordem;";

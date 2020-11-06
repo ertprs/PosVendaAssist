@@ -1,0 +1,236 @@
+# This file is distributed under the same license as the Grayandgold package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Grayandgold\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-08 21:59+0100\n"
+"PO-Revision-Date: 2011-05-08 21:59+0100\n"
+"Last-Translator: Jimmy Sigenstroem <webmaster@w3blog.dk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SearchPath-0: B:\\Php\\xampplite\\htdocs\\wordpress\\wp-content\\themes\\grayandgold\n"
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/404.php:9
+msgid "Error 404 - Not Found"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/404.php:10
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:9
+msgid "Category: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:11
+msgid "Posts Tagged: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:13
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:15
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:17
+msgid "Archive for: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:28
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:13
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:19
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:13
+msgid "Posted by "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:28
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:52
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:71
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:13
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/page.php:24
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:13
+msgid "Edit"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:36
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:21
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:16
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:24
+msgid "Permanent Link to: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:36
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:21
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:24
+msgid "Read full article"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:37
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:22
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:25
+msgid "Leave a comment"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:37
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:22
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:25
+msgid "1 Comment"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:37
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:22
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:25
+msgid "% Comments"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:37
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:22
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:25
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:44
+msgid "Tags: No tags"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:37
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:22
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:25
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:44
+msgid "Tags: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:39
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:24
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:27
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:46
+msgid "Categories: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:45
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:30
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:34
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:46
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:31
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:35
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:51
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:36
+msgid "Not Found"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archive.php:52
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/index.php:37
+msgid "Sorry, but you are looking for something that is not here."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archives.php:13
+msgid "Archives by Month: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/archives.php:18
+msgid "Archives by Subject: "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:4
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:9
+#, php-format
+msgid "One Response to %2$s"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:15
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:30
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:18
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:33
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/comments.php:38
+msgid "Comments are closed."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:17
+msgid "header-menu"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:18
+msgid "Extra Menu"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:42
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:45
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:52
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:59
+msgid "Reply"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/functions.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:8
+msgid "Search Results for "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:19
+msgid "Edit this entry "
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/search.php:46
+msgid "No posts found. Try a different search?."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:27
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:35
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:36
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:52
+msgid "You can <a href=\"#respond\">leave a response</a>, or <a href=\"<?php trackback_url(true); ?>\" rel=\"trackback\">trackback</a> from your own site."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:56
+msgid "Responses are currently closed, but you can <a href=\"<?php trackback_url(true); ?> \" rel=\"trackback\">trackback</a> from your own site."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:60
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:64
+msgid "Both comments and pings are currently closed."
+msgstr ""
+
+#: B:\Php\xampplite\htdocs\wordpress\wp-content\themes\grayandgold/single.php:76
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#~ msgid "<p class=\"serif\">Read the rest of this page &raquo;</p>"
+#~ msgstr "<p class=\"serif\">Læs resten af denne side &raquo;</p>"

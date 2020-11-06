@@ -1,0 +1,122 @@
+body {
+	text-align: center;
+	/* this is ussed to prevent the left hand side of the wrapper dissappearing off the side of the page in Netsacpe 7 */
+
+}
+
+/*
+This style is for the wrapper div. It's purpose is to contain the site contents.
+This div beign centered using margin-left:auto; margin-right:auto for standard compliant browsers.
+For IE I'm useing text-align: center on the body and then text-align: left here.
+see http://www.bluerobot.com/web/css/center1.html
+*/
+
+#wrapper {
+	text-align: left;
+	width: 710px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* this is used to clear the floats. */
+.clear {
+	clear: both;
+}
+
+/* floating the logo to the left and adding some bottom padding */
+
+#logo {
+	float: left;
+	display: block;
+	padding-bottom: 15px;
+}
+
+/*
+Make the search appear on the right. This one caused me some problems.
+Initially I had a fieldset in the form. I tried floaring the form right but Ie needed a width to be set.
+I floated the fieldset but it didn't work in Opera. I tried doing both but it broke in opera
+Tried setting the width of the form and using ext-align: right but N7.x wouldnt display the form
+Jeremy Keith suggested removing the fieldset and it seemed to fix the issue.
+*/
+
+#searchForm {
+	width: 300px;
+	height: 30px;
+	float: right;
+	text-align: right;
+}
+
+/* floating the pic and callout left */
+
+#mainBranding {
+	float: left;
+	width: 710px;
+	margin: 5px 5px 5px 0px;
+}
+
+#homePage #mainBranding {
+	width: 505px;
+}
+
+/* KLUDGE: The validator was saying that the image contained within the noscript tag
+needed to be wrapped in a div to validate? However wrapping it a div caused IE5.2 OSX
+to wrapp the callout image so had to set the div to display linline */
+
+.inline {
+	display: inline;
+}
+
+
+#callout {
+	float: left;
+	width: 200px;
+	margin: 5px 0px 5px 0px;
+}
+
+/*
+the 3 collumns will act as containers for the content blocks.
+They all will float left and will be given the correct right-margin
+To get around using the box model hack, the col divs have been given an exact width
+and the padding, margin and border elements have been added to the content elements
+*/
+
+#leftCol {
+	float: left;
+	width: 205px;
+}
+
+#middleCol {
+	float: left;
+	width: 305px;
+}
+
+#rightCol {
+	float: left;
+	width: 200px;
+}
+
+#mainCol {
+	float: left;
+	width: 510px;
+}
+
+/*
+handle to footer stuff.
+NOTE: initially I was using clear attached to an empty span befor the footer element
+However this caused an error in NN6x and Safari whereby the footer content would appear
+at the top of the page. To fix this I'm applying clear to the actual element
+ERROR: applying clear to the actual element causes an error in IE5.2.
+whereby the bottim nave and copyright notice sit on different lines
+*/
+
+#footer {
+	clear: both;
+}
+
+
+
+#copyright {
+	float: right;
+}

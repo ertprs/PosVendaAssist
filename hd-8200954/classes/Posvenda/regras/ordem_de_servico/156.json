@@ -1,0 +1,7 @@
+{ 
+    "posto_interno_nao_valida":true,
+    "finaliza_sem_defeito_constatado": {
+        "tipo_atendimento": ["262"]
+    },
+    "posto_interno_nao_valida_anexo" : true
+ }

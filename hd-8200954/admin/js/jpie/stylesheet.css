@@ -1,0 +1,33 @@
+
+
+#canvas {
+	position:relative;
+}
+
+#canvas img {
+	cursor:crosshair;
+	z-index:0;
+	border:0px;
+	background:#AAAAAA;
+}
+
+/*toolbar styles*/
+#JPIE_toolbar{
+	background:#F0F0F0;
+}
+
+#JPIE_toolbar img {
+	border:0px;
+	margin:0px;
+}
+
+/*Status bar*/
+
+#statusBar {
+	background:#F0F0F0;
+	font-family:arial;
+	font-size:10pt;
+	color:#333333;
+	position:relative;
+	float:right;
+}

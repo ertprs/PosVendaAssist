@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD attrname="fabrica" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="defeito" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="codigo" fieldtype="string" WIDTH="10"/>
+<FIELD attrname="descricao" fieldtype="string" WIDTH="30"/>
+</FIELDS>
+</METADATA>
+<ROWDATA>
+<ROW RowState="4" fabrica="" defeito="" codigo="" descricao=""/>
+</ROWDATA>
+</DATAPACKET>

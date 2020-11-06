@@ -1,0 +1,162 @@
+/*****************************
+css.css
+autor: Marcos Teruo Ouchi
+Company: Telecontrol Networking - Brasil
+Date: Outubro de 2003
+*****************************/
+
+/*****************************
+ELEMENTOS DE POSICIONAMENTO
+*****************************/
+
+#container {
+  width: 650px;
+  border: 0px solid white;
+  padding:0px 0px 0px 0px;
+  margin:px 0px 0px 0px;
+  background: white;
+}
+
+
+#nomeposto {
+	width: 650px;
+	height: 30px;
+	float: right;
+	text-align: right;
+	padding:0px 15px 0px px;
+}
+
+/*
+the 3 collumns will act as containers for the content blocks.
+They all will float left and will be given the correct right-margin
+To get around using the box model hack, the col divs have been given an exact width
+and the padding, margin and border elements have been added to the content elements
+*/
+
+#leftCol {
+	float: left;
+	width: 205px;
+}
+
+#middleCol {
+	float: left;
+	width: 225px;
+}
+
+#rightCol {
+	float: left;
+	width: 205px;
+}
+
+#mainCol {
+	float: center;
+	width: 650px;
+	background-color: white;
+}
+
+
+body {
+	margin: 0px,0px,0px,0px;
+	padding:  0px,0px,0px,0px;
+	text-align: center;
+	background: url(../imagens/6_background.gif);
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+}
+
+
+h1 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #888888;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 1.6em;
+}
+
+h2 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+	}
+
+h3 {
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	text-align: justify;
+}
+
+h4 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+}
+
+h5 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+}
+
+img {
+	border: 0px;
+}
+
+
+/* on IE5.x dotted lines only show if they are 2px. using box model hack to get round this */
+
+.contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	margin-bottom: 5px;
+	margin-right:  5px;
+	margin-left:   5px;
+	padding:      10px;
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border: 1px dotted silver;	
+}
+
+html>body contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	border: 1px dotted #97D0EC;
+} 
+
+.contentBlockRight, .contentBlockBig {
+	margin-right: 0px;
+}
+
+a:link {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #63798D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footer {
+  width: 650px;
+  border: 0px solid white;
+  padding:10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  background: silver;
+  color: #808080;
+  text-align: right;
+  font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+}

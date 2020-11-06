@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD attrname="fabrica" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="produto" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="peca" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="referencia" fieldtype="string" WIDTH="20"/>
+<FIELD attrname="descricao" fieldtype="string" WIDTH="50"/>
+<FIELD attrname="origem" fieldtype="string" WIDTH="10"/>
+<FIELD attrname="type" fieldtype="string" WIDTH="10"/>
+<FIELD attrname="posicao" fieldtype="string" WIDTH="20"/>
+<FIELD attrname="qtde" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="qtde_pedido" fieldtype="string" WIDTH="15"/>
+</FIELDS>
+</METADATA>
+<ROWDATA>
+<ROW RowState="4" fabrica="" produto="" peca="" referencia="" descricao="" origem="" type="" posicao="" qtde="" qtde_pedido=""/>
+</ROWDATA>
+</DATAPACKET>

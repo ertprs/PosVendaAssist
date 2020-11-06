@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FONTS */
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/myriadpro-bold-webfont.eot');
+    src: url('../fonts/myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-bold-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-bold-webfont.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('../fonts/myriadpro-regular_0-webfont.eot');
+	src: local('☺'), 
+        url('../fonts/myriadpro-regular_0-webfont.woff') format('woff'),
+        url('../fonts/myriadpro-regular_0-webfont.ttf') format('truetype'), 
+        url('../fonts/myriadpro-regular_0-webfont.svg#webfontSQf9YpUK') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/myriadpro-semibold-webfont.eot');
+    src: url('../fonts/myriadpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-semibold-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-semibold-webfont.svg#MyriadProSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, #wrap { height:100%; }
+body>#wrap { height:auto; min-height:100%; background:url(../img/bg_content2.png) repeat-y center;  }
+body { background:#e6eaea; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+p { line-height:18px; }
+p a { color:#fa8e07; text-decoration:none; }
+.container { width:990px; margin:0 auto; position:relative; }
+.content { background:url(../img/bg_content.png) repeat-y left; float:left; width:990px; min-height:400px; }
+h2 { margin-bottom:5px; float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:100%; }
+h1 { color:#9ba6a6; font-size:32px; font-family:'MyriadProBold',Verdana, Geneva, sans-serif; float:left; width:789px; padding:20px 20px 10px; }
+#breadcrumb { border-bottom:1px solid #e8ecec; float:left; width:829px; height:21px; }
+#breadcrumb li { background:url(../img/bg_breadcrumb.png) no-repeat left; height:21px; margin:0 10px 0 0; line-height:19px; width:auto; padding-left:13px; float:left; }
+#breadcrumb li a { color:#b1bbbb; text-decoration:none; font-size:10px; font-family:Verdana, Geneva, sans-serif; }
+#breadcrumb li:first-child { background:none; }
+.box_content { float:right; padding:0 20px 20px; width:789px; }
+img.alingleft { margin:0 15px 5px 0 !important; }
+
+/* TOP */
+.content_top { background:url(../img/bg_top.jpg) repeat-x; float:left; width:100%; height:108px; position:relative; z-index:30; }
+#logo { float:left; display:block; }
+#nav_menu { background:#3c454c; float:left; width:749px; height:69px; }
+#nav_menu>li { float:left; display:block; margin-left:6px; line-height:69px; }
+#nav_menu>li:first-child { margin-left:5px; }
+#nav_menu li a{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:13px; text-transform:uppercase; text-decoration:none; color:#fff; float:left; height:69px; padding:0 10px; }
+#nav_menu>li>a:hover , #nav_menu>li>a.active { background:#707c7c; }
+#nav_menu li .submenu_produtos, #nav_menu li .submenu_sobre, #nav_menu li .submenu_assintencia, #nav_menu li .submenu_receita { position:absolute; top:69px; height:39px; left:180px; display:none; }
+#nav_menu li .submenu_produtos li, #nav_menu li .submenu_sobre li, #nav_menu li .submenu_assintencia li, #nav_menu li .submenu_receita li { float:left; display:block; height:39px; line-height:39px; margin:0; }
+#nav_menu li .submenu_produtos a, #nav_menu li .submenu_sobre a, #nav_menu li .submenu_assintencia a, #nav_menu li .submenu_receita a { height:39px; }
+#search { background:#fff; float:right; position:relative; width:154px; height:25px; margin-top:7px; }
+#search input { background:#fff; float:left; width:119px; height:23px; border:1px solid #fff; color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; padding:0 5px; line-height:25px; }
+#search input[type="submit"] { background:url(../img/btn_search.jpg) no-repeat; width:23px; height:21px; border:none; cursor:pointer; position:absolute; right:2px; top:2px; }
+
+/* HOME */
+#content_banners { background:url(../img/bg_banner.jpg) repeat-x center; width:100%; float:left; height:442px; }
+#content_banners #banners img { float:right; }
+#content_banners #box_banner { float:left; width:100% !important; height:442px; }
+#nav { position:absolute; right:0; z-index:10; top:121px; }
+#nav a { background:#fff; width:23px; height:21px; text-align:center; line-height:21px; float:left; margin-left:3px; text-decoration:none; color:#f5882c; }
+#nav a.activeSlide { background:#f28426; color:#fff; border:1px solid #fff; height:19px; width:21px; line-height:19px; }
+
+#list_produtos { float:right; display:block; width:829px; background:#fff; padding:3px 0; }
+#list_produtos li { background:url(../img/bg_list.png) no-repeat left; float:left; display:block; width:269px; height:395px; position:relative; }
+#list_produtos li a { text-decoration:none; }
+#list_produtos li:first-child { background:none; margin-left:4px; }
+#list_produtos li h1 { font-size:14px; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; text-transform:uppercase; float:left; width:229px; font-weight:normal; }
+#list_produtos li h1 strong { color:#f4921d; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:36px; font-weight:bold; text-transform:none; float:left; width:100%; }
+#list_produtos li .box_img { float:left; width:100%; text-align:center; }
+#list_produtos li a.leia_mais { background:url(../img/btn_larj.png) no-repeat; width:83px; height:29px; position:absolute; bottom:0; right:0; font-size:12px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; color:#fff; text-decoration:none; line-height:29px; padding-left:35px; }
+#list_produtos li a.leia_mais img { float:right; margin:8px 16px 0 0; *margin-top:-22px; }
+
+#box_home { background:#fff; padding:20px 0 20px 20px; float:right; width:809px; }
+#box_home span { float:left; width:269px; color:#818e8e; }
+#box_home span a { color:#818E8E; text-decoration:none; }
+#box_home span h2 { color:#828f8f; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-weight:normal; margin-bottom:12px; }
+#box_home span img { margin-right:12px; float:left; }
+#box_home span form { float:left; width:100%; margin-top:12px; }
+#box_home span form input { color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; background:#fff; border:1px solid #fff; width:82px; height:21px; padding:0 28px 0 3px; line-height:23px; *margin:-1px 0 0 -5px; }
+#box_home span form input#name { background:#fff; border:1px solid #d8ddde; width:96px; height:23px; float:left; }
+#box_home span form fieldset { background:#fff; width:114px; height:23px; border:1px solid #d8ddde; float:left; position:relative; margin-left:5px; *margin-top:-1px; }
+#box_home span form input[type="submit"] { background:url(../img/bg_leia2.jpg) repeat-x; cursor:pointer; border:none; width:23px; height:21px; position:absolute; top:1px; *top:2px; right:1px; color:#fff; font-size:10px; font-weight:bold; padding:0 3px; }
+
+/* LISTA DE PRODUTOS */
+#resultado_busca { width:829px; float:right; }
+#resultado_busca h1 { padding:20px 0 0 20px; }
+#resultado_busca h2 { padding:5px 0 20px 20px; width:809px; border-bottom:1px solid #e8ecec; }
+#busca_not { margin:20px; float:left; }
+
+#page_list_produtos { width:829px; display:block; float:right; }
+#page_list_produtos h1 { border-bottom:1px solid #e8ecec; color:#9ba6a6; font-size:32px; font-family:'MyriadProBold',Verdana, Geneva, sans-serif; float:left; width:789px; padding:20px; margin-bottom:0; }
+ul.list { float:left; display:block; }
+ul.list li { text-align:center; float:left; width:160px; height:235px; *height:240px;  margin:0 20px; position:relative; margin-top:20px; display:inline; *display:block; } 
+ul.list li a { text-decoration:none; }
+ul.list li p { text-align:center; color:#859797; width:160px; margin:12px 0 0; height:45px; display:table-cell; vertical-align:middle; *float:left; display:block; }
+ul.list li a.leia_mais { cursor:pointer; color:#fff; position:absolute; bottom:0; left:43px; background:url(../img/bg_leia2.jpg) repeat-x; height:25px; width:76px; text-align:center; line-height:25px; text-decoration:none; }
+ul.list li.clear { background:#e8ecec; float:left; width:829px; height:1px; margin:35px 0 0; }
+#box_paginate { float:left; width:100%; text-align:center; height:60px }
+.paginate { float:left; width:100%; text-align:center; }
+.paginate li { display:inline; margin:1px 1px 0; }
+.paginate li a { background:#e8ecec; color:#9ba6a6; text-decoration:none; text-align:center; line-height:21px; padding:4px 7px 5px; }
+.paginate li a img { margin-top:7px; }
+.paginate li a:hover, .paginate li a.active { background:#9ba6a6; color:#fff; }
+
+/* LINHAS */
+ul#list_linhas li { text-align:center; float:left; width:160px; min-height:230px; margin:0 20px; position:relative; margin-top:20px; } 
+ul#list_linhas li h2 { margin-top:20px; }
+ul#list_linhas li a { text-decoration:none; }
+ul#list_linhas li.clear { background:#e8ecec; float:left; width:829px; min-height:1px !important; margin:5px 0; }
+
+/* PRODUTO */
+#produto { width:789px; display:block; float:right; padding:20px; }
+#produto h1 { color:#9ba6a6; font-size:32px; font-family:'MyriadProBold',Verdana, Geneva, sans-serif; float:left; width:593px; padding:0; }
+#produto h1 strong { float:left; width:100%; font-weight:normal; font-family:'MyriadProBold',Verdana, Geneva, sans-serif; font-size:12px; color:#b1bbbb; }
+#produto #gallery { float:left; width:345px; margin:20px 20px 20px 0; }
+#produto #gallery #box { cursor:crosshair; position:relative; float:left; height:340px; width:340px; text-align:center; }
+#produto #gallery #box .action { font-weight:normal; background:url(../img/btn_gallery.jpg) no-repeat; width:63px; height:21px; position:absolute; z-index:10000; padding:0; line-height:21px; margin:0; top:8px; left:8px; }
+#produto #gallery #box .action a{ font-size:10px; font-family:Verdana, Geneva, sans-serif; color:#b1bbbb; text-decoration:none; }
+#produto #gallery #box .action a img { float:left; margin:5px 0 0 7px; }
+#produto #gallery #box .zoom { top:36px; left:8px; }
+#produto #gallery #thumb { float:left; display:block; height:69px; }
+#produto #gallery span#next { background:url(../img/btn_next.jpg) no-repeat; width:28px; height:68px; float:right; padding:0; margin:10px 0 0; }
+#produto #gallery span#prev { background:url(../img/btn_prev.jpg) no-repeat; width:28px; height:68px; float:left; padding:0; margin:10px 0 0; }
+#produto #comprar { float:right; background:url(../img/comprar.jpg) no-repeat; width:176px; height:45px; cursor:pointer; }
+#produto #caract { float:left; width:424px; }
+#produto #caract p { float:left; }
+#produto #caract ul { float:left; width:100%; margin-top:40px; }
+#produto #caract ul li { background:url(../img/btn_detaque.png) no-repeat; width:98px; height:98px; float:left; margin-right:7px; text-align:center; }
+#produto #caract ul li img { margin:15px 0 5px; }
+#produto #caract ul li p { float:left; width:100%; color:#828f8f; font-size:12px; }
+#produto #gallery span { width:119px; height:30px; float:left; font-family:Verdana, Geneva, sans-serif; font-weight:bold; color:#9cabab; font-size:11px; line-height:30px; padding-left:45px; cursor:pointer; margin-top:31px; }
+#produto #gallery a { text-decoration:none; }
+#produto #gallery #ficha { background:url(../img/bg_ficha.jpg) no-repeat; margin-right:17px; }
+#produto #gallery #manual { background:url(../img/bg_manual.jpg) no-repeat; }
+.info { border-top:1px solid #e8ecec; float:right; width:789px; padding:20px; }
+.info img, .info h2, .info p { float:left; }
+.info h2, .info p { width:700px; margin-left:15px; }
+.info h3 { color:#59aeca; font-family:'MyriadProRegular',Verdana, Geneva, sans-serif; font-size:13px; font-weight:normal; float:left; margin-top:20px; }
+.info .twitter-share-button { float:left; margin:17px 0 0 20px; }
+.info .bt_facebook { float:left; margin:17px 0 0; }
+.info form { float:left; width:100%; }
+.info input { font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#a2acac; background:url(../img/bg_input.jpg) repeat-x; border:1px solid #bdc4c4; height:23px; width:415px; line-height:23px; padding:0 5px; margin:20px 0 0; }
+.info input#name { width:270px; }
+.info input[type="submit"] { background:url(../img/bg_leia2.jpg) repeat-x; border:none; width:70px; height:25px; color:#fff; cursor:pointer; line-height:25px; text-align:center; *margin-left:-9px; }
+.info #box_video { float:left; margin:30px 0 0 15px; width:627px; height:356px; }
+.info ul.list li { margin:10px 37px 0 0; }
+.info ul.list li img { float:none; }
+.info span { float:left; width:187px; margin-left:15px; }
+.info span img { margin-top:10px; }
+
+/* SOBRE A CADENCE - A CADENCE */
+.sobre img { padding:5px; border:1px solid #f1f1f1; float:left; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; margin:0 15px 5px 0 !important; float:left; }
+.sobre h3 { background:url(../img/list.png) no-repeat left; margin:30px 0 5px; float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:779px; padding-left:10px; } 
+.sobre #destaque { float:left; }
+
+/* SOBRE A CADENCE - PARCEIROS */
+.parceiros { float:right; width:789px; padding:0 20px 20px; margin-bottom:20px; }
+.parceiros img { float:left; border:1px solid #f1f1f1; margin:15px 15px 15px 0; float:left; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; padding:5px; }
+.parceiros h2 { width:275px; margin-bottom:20px; }
+.parceiros p { float:left; width:299px; }
+.parceiros .mais { background:url(../img/btn_parceiros.jpg) no-repeat; width:24px; height:23px; float:right; cursor:pointer; }
+
+/* SOBRE A CADENCE - TRABALHE CONOSCO */
+#trabalhe_conosco { width:829px; float:left; margin-bottom:30px; }
+#trabalhe_conosco p { margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #e8ecec; padding-left:20px; }
+#formTrabConsc { width:673px; padding-left:20px; margin:auto; }
+#formTrabConsc fieldset { float:left; width:264px; margin-right:49px; }
+#formTrabConsc label { float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:264px; }
+#formTrabConsc input { border:1px solid #bdc4c4; height:23px; width:254px; padding:0 5px; margin-bottom:15px; line-height:23px; color:#A2ACAC; font-family:Verdana, Geneva, sans-serif; font-size:12px; }
+#formTrabConsc input[type="submit"]{ background:url(../img/bg_leia2.jpg) repeat-x; width:70px; height:25px; border:none; font-size:11px; color:#fff; cursor:pointer; float:right; margin:10px 0 0; }
+#formTrabConsc textarea { border:1px solid #bdc4c4; float:left; resize:none; height:161px; width:342px; padding:5px; color:#A2ACAC; font-family:Verdana, Geneva, sans-serif; font-size:12px; }
+
+/* SOBRE A CADENCE - IMPRENSA */
+.imprensa { width:100%; float:left; margin:20px 20px 0 0; border-bottom:1px solid #e8ecec; padding-bottom:20px; }
+.imprensa h1 a { color:#9BA6A6; text-decoration:none; }
+.imprensa h1 { padding:0; margin-bottom:20px; }
+.imprensa h1 a img { float:left; margin: 12px 10px 0 0; }
+.imprensa span { font-size:14px; color:#707c7c; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; line-height:18px; width:180px; float:left; margin-left:10px; }
+.imprensa span strong { font-size:16px; }
+.imprensa span p { color:#A2ACAC; font-family:'MyriadProRegular',Verdana,Geneva,sans-serif; font-size:13px; font-weight:normal; margin-top:8px; float:left; }
+.imprensa .mais { width:76px; height:25px; background:url(../img/bg_leia2.jpg) repeat-x; float:right; text-align:center; line-height:25px; color:#fff; cursor:pointer; margin:20px 0 0; text-decoration:none; }
+.imprensa ul { float:left; width:100%; margin-top:15px; }
+.imprensa ul li { float:left; margin-left:8px; }
+.photos_imprensa span { position:relative; border:none; width:232px; height:174px; }
+.photos_imprensa ul li { background:url(../img/bg_photos.png) no-repeat; position:relative; padding:8px 0 0 8px; width:175px; height:117px; margin-left:10px; }
+.mais_itens li { background:none !important; padding:0 !important; margin:0 10px 8px 0;}
+.imprensa .first { margin:0; }
+.photos_imprensa .download { position:absolute; right:7px; bottom:7px; background:url(../img/btn_download1.jpg) no-repeat; width:30px; height:30px; cursor:pointer; }
+.photos_imprensa .download:hover { background-position:0 -30px; }
+.imprensa_text .download { background:url(../img/download_text.png) no-repeat; width:115px; height:24px; float:left; font-weight:bold; font-size:11px; font-family:Verdana, Geneva, sans-serif; color:#9cabab; padding:8px 0 0 65px; margin-top:10px; cursor:pointer; text-decoration:none; }
+  
+/* NOTICIAS */
+#noticias { float:left; padding:20px; width:789px; }
+#noticias h1 { padding:0; width:589px; }
+
+#sidebar_left { float:right; width:200px; }
+#sidebar_left #buscaNoticia { background:url(../img/bg_input.jpg) repeat-x; width:198px; height:23px; border:1px solid #bdc4c4; float:right; position:relative; margin:4px 0 20px; }
+#sidebar_left #buscaNoticia input { background:none; border:none; width:164px; height:23px; padding:0 5px; line-height:23px; color:#9ba6a6; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; }
+#sidebar_left #buscaNoticia input[type="submit"] { background:url(../img/btn_search.jpg) no-repeat; width:23px; height:21px; position:absolute; right:1px; top:1px; cursor:pointer; }
+#sidebar_left ul { border:1px solid #d8ddde; float:left; width:178px; margin-bottom:20px; padding:10px; }
+#sidebar_left ul li { margin:0 0 5px 10px; width:168px; float:left; }
+#sidebar_left ul li a { color:#a2acac; font-size:14px; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; float:left; width:100%; text-decoration:none; }
+#sidebar_left ul li:first-child a { color:#828f8f; font-size:18px; font-family:"Trebuchet MS", Verdana, Geneva, sans-serif; font-weight:bold; }
+#sidebar_left ul li:first-child { margin:0 0 5px; }
+#sidebar_left #formNews { width:180px; border:1px solid #d8ddde; float:left; margin-bottom:20px; padding:10px; }
+#sidebar_left #formNews label { color:#828f8f; font-size:18px; font-family:"Trebuchet MS", Verdana, Geneva, sans-serif; font-weight:bold; float:left; width:100%; }
+#sidebar_left #formNews p { float: left; width:100%; margin:5px 0; } 
+#sidebar_left #formNews #name { border:1px solid #d8ddde; background:#fff; padding:0 5px; width:168px; height:23px; line-height:23px; color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; margin-bottom:5px; }
+#sidebar_left #formNews fieldset { border:1px solid #d8ddde; background:#fff; width:178px; height:23px; position:relative; }
+#sidebar_left #formNews fieldset input { background:#fff; border:1px solid #fff; width:143px; height:20px; padding:0 28px 0 5px; line-height:23px; color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; *margin-top:-1px; }
+#sidebar_left #formNews fieldset input[type="submit"] { background:url(../img/bg_leia2.jpg) repeat-x; width:23px; height:21px; position:absolute; top:1px; *top:2px; right:1px; font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#fff; line-height:23px; text-align:center; font-weight:bold; cursor:pointer; padding:0 0 2px; }
+
+#noticias .content { float:left; width:545px; background:none; }
+#noticias .content>div { margin:20px 0; float:left; border-bottom:1px solid #e8ecec; width:545px; }
+#noticias .content>div img { padding:5px; border:1px solid #f1f1f1; margin:15px 15px 8px 0; float:left; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+#noticias .content>div h2 { width:100%; }
+#noticias .content>div h2 a { margin-bottom:10px; float:left; width:100%; color:#F98A05; font-family:'MyriadProSemibold',Verdana,Geneva,sans-serif; font-size:18px; text-decoration:none; } 
+#noticias .content>div .like { background:url(../img/coment.png) no-repeat; width:107px; height:22px; float:left; color:#9cabab; font-size:11px; font-family:Verdana, Geneva, sans-serif; font-weight:bold; text-decoration:none; padding:10px 0 0 57px; margin-top:30px; }
+#noticias .content>div .date { background:url(../img/btn_larj.png) no-repeat; width:83px; height:29px; float:right; line-height:29px; color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; text-decoration:none; padding-left:35px; }
+#noticias .content>div .envia_receita { background:url(../img/receita.jpg) no-repeat; width:140px; height:35px; float:left; margin-top:20px; }
+#noticias .content>div .bt_facebook { float:left; width:285px; margin-top:10px; }
+#noticias .content>div .twitter-share-button { float:left; margin:12px 0 0 20px }
+.pots_categoria { float:left; width:100%; margin:10px 0 !important; }
+.pots_categoria .iframe { float:left; width:100%; text-align:center; margin:10px 0; }
+.pots_categoria a { color:#A2ACAC; }
+
+#noticias-breadcrumb { float:left; width:100%; }
+#noticias-breadcrumb li { background:url(../img/btn_next.png) no-repeat left; float:left; color: #9BA6A6; font-family:'MyriadProBold',Verdana,Geneva,sans-serif; font-size:32px; margin-left:15px; padding-left:25px; }
+#noticias-breadcrumb li:first-child { background:none; margin:0; padding:0; }
+
+#nav_page { float:left; width:100%; }
+#nav_page li { float:left; display:block; margin:2px; }
+#nav_page li a { border:1px solid #ef7f1f; width:21px; height:19px; float:left; background:#fff; color:#ef7f1f; font-size:10px; text-align:center; line-height:20px; text-decoration:none; }
+#nav_page li a:hover, #nav_page li a.active { color:#fff; background:#ee7d1d; border:none; width:23px; height:21px; }
+
+.post p { float:left; width:100%; }
+.post h1 a img { float:left; margin:12px 10px 0 0; }
+.post h1 a { color: #9BA6A6; text-decoration:none; }
+.post #comments { position:relative; float:left; width:100%; border-bottom:1px solid #e8ecec; height:133px; }
+.post #comments label { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; font-size:18px; color:#828f8f; float:left; width:100%; margin-bottom:5px; }
+.post #comments fieldset { float:left; width:210px; margin-right:10px; }
+.post #comments input { width:210px; float:left; height:23px; border:1px solid #e8ecec; color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; padding:0 5px; line-height:23px; margin-bottom:10px; }
+.post #comments textarea { width:301px; height:49px; border:1px solid #e8ecec; resize:none; padding:5px; color:#a7b0b0; font-size:11px; font-family:Verdana, Geneva, sans-serif; float:right; }
+.post #comments input[type="submit"] { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; border:none; background:url(../img/bg_leia2.jpg) repeat-x; width:61px; height:23px; text-align:center; line-height:23px; color:#fff; margin:0; cursor:pointer; position:absolute; right:0; bottom:10px; }
+
+.post ul { width:460px; margin:0 auto; }
+.post ul li { margin-top:30px; float:left; width:460px; }
+.post ul li h3 { border-bottom:1px solid #e8ecec; color:#f98a05; font-size:14px; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; padding-bottom:5px; margin-bottom:5px; }
+.post ul li h3 strong { color:#c2c2c2; font-size:13px; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-weight:normal; margin-left:5px; }
+
+/* ONDE COMPRAR */
+#revendas { float:left; width:100%; margin-top:20px;}
+#revendas li { background:url(../img/bg_lits_comprar.png) no-repeat; float:left; display:block; margin:0 13px 17px 0; width:177px; height:107px; padding:7px 0 0 7px; }
+#revendas li span { float:left; width:170px; height:100px; }
+#revendas li a { float:left; width:170px; height:100px; }
+
+/* DOWNLOADS */
+#box_busca { padding:20px 0; border-top:1px solid #e8ecec; border-bottom:1px solid #e8ecec; float:left; width:100%; margin:25px 0; }
+#box_busca h2 { color:#9ba6a6; font-family:'MyriadProBold', Verdana, Geneva, sans-serif; width:350px; margin-left:25px; }
+#box_busca h2 em { float:left; width:100%; font-size:12px; font-style:normal; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-weight:normal; }
+#formDownload  { background:url(../img/bg_form.png) no-repeat right; padding-right:20px; float:left; width:336px; }
+#formDownload label { width:100%; float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; }
+#formDownload select { float:left; background:url(../img/bg_input.jpg) repeat-x; border:1px solid #bdc4c4; width:334px; height:23px; margin:5px 0 15px; font-family:'MyriadProRegular',Verdana, Geneva, sans-serif; color:#a2acac; padding:2px; }
+#formDownload input { background:url(../img/bg_leia2.jpg) repeat-x; width:70px; height:23px; color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; border:none; float:right; text-align:center; line-height:23px; cursor:pointer; }
+#list_resultado { float:left; width:405px; }
+#list_resultado a { color:#A2ACAC; text-decoration:none; }
+#list_resultado ul { float:left; display:block; margin-left:25px; width:100%; }
+#list_resultado ul li { float:left; display:block; margin:0 25px 25px 0; }
+#list_resultado ul li a { height:67px; width:67px; text-align:center; float:left; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; border:1px solid #d2d7d7; }
+#box_busca span { width:121px; height:21px; float:left; cursor:pointer; padding:9px 0 0 43px; margin:10px 0 30px 25px; font-weight:bold; }
+#box_busca #manual { background:url(../img/bg_manual.jpg) no-repeat; }
+#box_busca #ficha { background:url(../img/bg_ficha.jpg) no-repeat; }
+#logo_download { float:left; width:100%; margin-top:20px; }
+#logo_download li { float:left; margin-right:13px; position:relative; width:184px;  }
+#logo_download li img { background:url(../img/bg_lits_comprar.png) no-repeat; padding:7px; float:left; margin-top:5px; }
+#logo_download li .tipo_arquivo { background:none; padding:0; margin:0 5px 0; }
+#logo_download li .download { background:url(../img/btn_download1.jpg) no-repeat; width:30px; height:30px; position:absolute; right:9px; bottom:9px; }
+#logo_download li .download:hover { background-position:0 -30px; }
+
+/* ASSISTENCIA */
+#formAssistencia { float:left; width:336px; margin:25px 40px 0 0; }
+#formAssistencia label { width:100%; float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; }
+#formAssistencia select { float:left; background:url(../img/bg_input.jpg) repeat-x; border:1px solid #bdc4c4; width:334px; height:23px; margin:5px 0 15px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; padding:2px; }
+#resultado { float:left; width:269px; margin-top:25px; }
+#resultado h2 { color:#828f8f }
+#resultado span { float:left; width:100%; margin:5px 0; }
+
+/* SAC */
+#formSac { float:left; width:753px; border-top:1px solid #e8ecec; padding:20px 0 20px 40px; margin-top:20px; }
+#formSac fieldset { float:left; width:339px; margin-right:40px; }
+#formSac label { float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:264px; }
+#formSac input, #formSac select { height:23px; border:1px solid #bdc4c4; margin:8px 0 15px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formSac input { width:327px; line-height:23px; padding:0 5px; } 
+#formSac select { width:339px; padding:2px; } 
+#formSac textarea { float:right; width:325px; height:233px; border:1px solid #bdc4c4; resize:none; margin:5px 33px 0 0; padding:5px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formSac input[type="submit"]{ float:right; background:url(../img/bg_leia2.jpg) repeat-x; width:61px; border:none; color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; cursor:pointer; margin:10px 33px 0 0; }
+
+/* DUVIDAS FREQUENTES */
+.duvidas_frequente { float:left; margin-top:20px; width:789px; }
+.duvidas_frequente h1 { padding:0 }
+.duvidas_frequente h1 a { text-decoration:none; color:#9BA6A6; }
+.duvidas_frequente h1 a img { float:left; margin:13px 10px 0 0; }
+.duvidas_frequente p { float:left; width:100%; }
+.duvidas_frequente h2 { width:780px; margin:30px 0 10px;  }
+.duvidas_frequente h2#title { margin:0; border-bottom:1px solid #e8ecec; padding:5px 0 20px; font-size:22px; }
+.duvidas { float:left; width:650px; }
+.duvidas li { float:left; border-right:1px solid #a2acac; padding-right:10px; margin:5px 10px 5px 0; }
+.duvidas li.last{ border:none; padding:0; margin-right:0; }
+.duvidas li a { text-decoration:none; color:#a2acac; }
+.duvidas li a:hover { color:#fa8e07; }
+
+/* RECEITAS */
+#formReceita { float:left; width:749px; border-top:1px solid #e8ecec; border-bottom:1px solid #e8ecec; padding:20px 0 20px 40px; margin-top:20px; }
+#formReceita fieldset { float:left; width:330px; margin-right:40px; }
+#formReceita label { float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:264px; }
+#formReceita input, #formReceita select { height:23px; border:1px solid #bdc4c4; margin:5px 0 15px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formReceita input { width:327px; line-height:23px; padding:0 5px; } 
+#formReceita #title { width:698px; }
+#formReceita select { width:340px; padding:2px; } 
+#formReceita #textarea { width:412px; margin:auto; float:none; }
+#formReceita textarea { float:right; width:400px; height:153px; border:1px solid #bdc4c4; resize:none; padding:5px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formReceita input[type="submit"]{ float:right; background:url(../img/bg_leia2.jpg) repeat-x; width:61px; border:none; color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; cursor:pointer; margin:10px 0; }
+
+/* Central */
+#formCentral { float:left; width:749px; border-top:1px solid #e8ecec; border-bottom:1px solid #e8ecec; padding:20px 0 20px 40px; margin-top:20px; }
+#formCentral fieldset { float:left; width:330px; margin-right:40px; }
+#formCentral label { float:left; font-size:18px; color:#f98a05; font-family:'MyriadProSemibold', Verdana, Geneva, sans-serif; width:264px; }
+#formCentral input, #formCentral select { height:23px; border:1px solid #bdc4c4; margin:5px 0 15px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formCentral input { width:327px; line-height:23px; padding:0 5px; } 
+#formCentral select { width:340px; padding:2px; } 
+#formCentral #textarea { width:412px; margin:auto; float:none; }
+#formCentral textarea { float:right; width:400px; height:153px; border:1px solid #bdc4c4; resize:none; padding:5px; color:#a2acac; font-family:'MyriadProRegular', Verdana, Geneva, sans-serif; font-size:13px; }
+#formCentral input[type="submit"]{ float:right; background:url(../img/bg_leia2.jpg) repeat-x; width:61px; border:none; color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; cursor:pointer; margin:10px 0; }
+.opcao_central { background:url(../img/bg_contato.jpg) repeat-x; width:636px; height:68px; float:left; border:1px solid #e6ecec; margin:40px 75px 0; }
+.opcao_central h2 { font-size:15px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; color:#707c7c; width:295px; margin:12px 0 0 25px; }
+.opcao_central h2 em { font-family:Verdana, Geneva, sans-serif; font-size:12px; font-weight:normal; font-style:normal; }
+.opcao_central h3 { float:right; color:#707c7c; font-size:24px; font-weight:bold; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; margin:17px 25px 0 0; }
+.opcao_central img { float:left; margin:12px 0 0 68px; }
+
+
+/* SIDEBAR */
+#sidebar { width:155px; padding-left:6px; top:108px; left:0; padding-bottom:10px; margin-top:-442px; float:left; }
+#sidebar ul { float:left; display:block; width:100%; *margin-bottom:1px; margin-bottom:1px; }
+#sidebar ul li { float:left; width:145px; padding:3px 5px; }
+#sidebar ul li a { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color:#fff; float:left; width:140px; }
+#sidebar ul li a:hover { color:#c4caca; }
+#sidebar ul li:first-child { background:#828f8f; text-transform:uppercase; font-weight:bold; padding:5px; }
+#sidebar ul li:first-child:hover { background:#f98a05; }
+#sidebar ul li:first-child a:hover { color:#fff; }
+#sidebar_home { float:left; }
+
+#sidebar_left .envia_receita { background:url(../img/receita_gd.jpg) no-repeat; width:200px; height:51px; float:left; margin-bottom:20px; }
+
+/* FOOTER */
+.content_foot { background:#3c454b; width:100%; position:relative; height:225px; margin-top:-225px; clear:both; *margin-top:0; }
+.content_foot .container { height:155px; padding:20px 0; }
+.content_foot ul { float:left; display:block; margin:0 65px; }
+.content_foot ul li { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:16px; color:#fff; }
+.content_foot ul li a { font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#fff; text-decoration:none; }
+.content_foot ul li a:hover { color:#9ba6a6; }
+.content_foot #logo_mpy { float:right; margin-top:70px; }
+.content_foot #sociais { float:right; width:16px; height:16px; margin:70px 25px 0;  }
+.content_foot #sociais li { float:left; margin-left:18px; }
+.content_foot #sociais li:first-child { margin:0; } 
+.content_foot #sociais li a { background:url(../img/social_script.png) no-repeat; float:left; width:15px; height:16px; }
+.content_foot #sociais li a#face { background-position:-31px 0; }
+.content_foot #sociais li a#face:hover { background-position:-31px -16px; }
+.content_foot #sociais li a#twitter { background-position:-15px 0; width:16px; height:16px; } 
+.content_foot #sociais li a#twitter:hover { background-position:-15px -16px; } 
+.content_foot #sociais li a#youtube { background-position:0 0; } 
+.content_foot #sociais li a#youtube:hover { background-position:0 -16px; } 
+
+.clear { float:left; clear:both; }
+input.error, textarea.error, select.error { border: 1px dotted red !important; }

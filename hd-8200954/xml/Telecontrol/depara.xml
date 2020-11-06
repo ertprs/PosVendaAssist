@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD attrname="fabrica" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="peca_de" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="peca_para" fieldtype="string" WIDTH="15"/>
+</FIELDS>
+</METADATA>
+<ROWDATA>
+<ROW RowState="4" fabrica="10" peca_de="411924" peca_para="569997"/>
+<ROW RowState="4" fabrica="10" peca_de="411925" peca_para="411839"/>
+<ROW RowState="4" fabrica="10" peca_de="411961" peca_para="411839"/>
+<ROW RowState="4" fabrica="10" peca_de="522739" peca_para="522740"/>
+<ROW RowState="4" fabrica="10" peca_de="526601" peca_para="724516"/>
+<ROW RowState="4" fabrica="10" peca_de="540378" peca_para="569996"/>
+</ROWDATA>
+</DATAPACKET>

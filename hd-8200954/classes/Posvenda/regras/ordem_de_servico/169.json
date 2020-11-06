@@ -1,0 +1,6 @@
+{
+	"nao_valida_lb" : true,
+	"finaliza_nao_verifica_auditoria": true,
+	"finaliza_os_valida_data_conserto": true,
+	"integracao": true
+}

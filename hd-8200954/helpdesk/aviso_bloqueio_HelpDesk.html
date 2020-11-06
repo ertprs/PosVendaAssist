@@ -1,0 +1,116 @@
+	<style type="text/css">
+	div.oculto {text-align: left;padding: 8px 16px;background-color: #f0f0fa;}
+	#window_box {
+	    display: block;
+	    background-color: #ffffff;
+	    position: absolute;
+		text-align: left;
+	    width: 600px;
+	    max-height:75%;
+		top: 100px;
+		left: 25%;
+        padding-top: 32px;
+		margin: auto;
+	    border: 2px solid #68769f;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        overflow: hidden;
+		z-index: 10000;
+	}
+	#window_box:hover {
+		box-shadow: 3px 3px 3px #ccc;
+	}
+	#window_box #ei_container p {
+	    padding: .5ex 1ex;
+	}
+	#window_box #ei_header {
+		position: absolute;
+		top:	0;
+		left:	0;
+		margin:	0;
+		width: 100%;
+		height: 28px;
+		background-image: url('http://www.telecontrol.com.br/assist/admin/imagens_admin/azul.gif');    /* IE */
+		background-image: -o-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -ms-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -moz-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -webkit-gradient(linear,  0 0, 0 100%,
+												from(#b4bbce),
+													color-stop(0.07,#68769f),
+													color-stop(0.20,#68769f),
+												to(#7889bb));
+		background-image: -webkit-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+	    padding: 2px 1em;
+	    color: white;
+	    font: normal bold 13px Segoe UI, Verdana, MS Sans-Serif, Arial, Helvetica, sans-serif;
+	}
+	#window_box #ei_container {
+		text-align: left;
+	}
+	#window_box #ei_container {
+		margin: 1px;
+		padding-bottom: 1ex;
+		overflow-y: auto;
+        overflow-x: hidden;
+	    height: 100%;
+		font-size: 16px;
+		color: #313452;
+        background-color: #fdfdfd;
+	}
+	#window_box #fechar_msg {
+		position: absolute;
+		top: 3px;
+		right: 5px;
+		width: 16px;
+		height:16px;
+		font: normal bold 12px Verdana, Arial, Helvetica, sans-serif;
+		color:white;
+	    cursor: pointer;
+		margin:0;padding:0;
+		vertical-align:top;
+		text-align:center;
+		background-color: #f44;
+		border:	1px solid #d00;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 2px 2px 2px #900;
+		-moz-box-shadow: 1px 1px 1px #900;
+		-webkit-box-shadow: 2px 2px 2px #900;
+	}
+	#window_box #link {
+		text-decoration: underline;
+		color: #0000FF;
+	}
+	</style>
+	<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+	<script type="text/javascript" language="JavaScript">
+	jQuery().ready(function($) {
+		$('#fechar_msg').click(function() {
+			$('#window_box').hide('slow');
+		});
+		$('#window_box').draggable({cursor: 'move',handle: '#ei_header'});
+		$('#ei_header').dblclick(function() {
+			$('#ei_container').slideToggle();
+        });
+	});
+    </script>
+  </head>
+ <div id="window_box">
+	<div id="ei_header"><img src='../../img/favicon.ico' style='padding: 4px 1ex 0 0' />Comunicado Telecontrol</div>
+	<div id="fechar_msg" title='Mensagem lida.'>X</div>
+ 	<div id="ei_container" class='azul_dn'>
+		<h1>INFORMAÇÃO IMPORTANTE</h1>
+		<img src="http://1.bp.blogspot.com/_ztClXtzh_NI/Stu2Ewyg3LI/AAAAAAAAAgM/tfW3V8L8eXA/s640/enConstruccion1.gif" alt="Manutenção Programada" style='float:left;clear:none;position:relative;top:-10px;left:5px;margin-right:0px;width:200px' />
+		<h3>Prezado Cliente,</h3>
+		<p>Conforme programado:</p>
+		 <p>&nbsp;</p>
+		 <p>Hoje não haverá atendimento do <b>HELP DESK</b> e a <u>abertura de chamados está bloqueada</u> para implantação e teste de funcionalidade do <b>CHAT</b> que será utilizado a partir de <b><u>01/02/2012</u></b>. <br />
+		 </p>
+	</p>
+		<p>&nbsp;</p>
+		<p style='text-align:right'>
+			<i>Atte.</i><br>
+			<b>Equipe Telecontrol</b>
+		</p>
+	 </div>
+ </div>

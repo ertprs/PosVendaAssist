@@ -1,0 +1,35 @@
+<style type="text/css">
+
+body {
+font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+
+}
+.tabela_consulta{
+	border-width: thin;
+	border-style: solid;
+	background-color:  #D9E2EF;
+	border-color: #D9E2EF;
+	font-size:11px;
+}
+.tabela_cadastro {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	border: 1px solid;
+	color:#596d9b;
+	background-color: #d9e2ef
+}
+.combo{ 
+
+width:160px; /* largura da janela do menu */
+
+background-color:#ffffff; /* cor do fundo do menu em repouso */
+
+font:11px Verdana, Geneva, Arial, Helvetica, sans-serif; /* tamanho e tipo das fontes */
+
+color: #3B3B3B; /* cor da fonte */ 
+
+} 
+
+
+</style>

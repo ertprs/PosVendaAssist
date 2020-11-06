@@ -1,0 +1,5 @@
+{
+    "km_urbano_interurbano":true,
+    "valores_km": [1.80,1.00],
+    "nao_calcula_peca":true
+}

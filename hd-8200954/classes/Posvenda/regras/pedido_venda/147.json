@@ -1,0 +1,5 @@
+{
+  	"tipo_pedido_sp" : true,
+	"usa_desconto": true,
+	"nao_calcula_desconto": true
+}

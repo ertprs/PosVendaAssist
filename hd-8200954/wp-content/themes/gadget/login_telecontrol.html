@@ -1,0 +1,137 @@
+	<script type="text/javascript">
+	function SetAjax() {
+	    var xmlhttp;
+	    if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+		try {
+		    xmlhttp = new XMLHttpRequest();
+		} catch (e) {
+		    xmlhttp = false;
+		}
+	    }
+	    return xmlhttp;
+	}
+
+    function telecontrol_login() {
+		var user = document.acessar.login.value;
+		var pass = document.acessar.senha.value;
+		var ajax = new SetAjax(); // Instancia um objeto XMLHTTPRequest
+
+        if (user != '' && pass != '') {
+	        var url = "assist/index.php?ajax=sim&acao=validar";
+	        var post= "login="+user+"&senha="+pass+"&btnAcao=entrar";
+
+            ajax.open("POST",url,true);
+            ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            ajax.send(post);
+            ajax.onreadystatechange=function() {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    var resposta = ajax.responseText.split("|");
+                    var codigo  = resposta[0];
+                    var texto   = resposta[1];
+                    var erro        = document.getElementById('errologin');
+                    var carga       = document.getElementById('entrando');
+// 					var caminho     = (location.hostname == 'www.telecontrol.com.br') ? 'assist/' : '';
+					var caminho     = 'assist/';
+
+                    if (ajax.responseText.length > 0) {
+                        if (codigo=="debug") {
+                                alert(data);
+                        }
+                        else if (codigo=="ok"){
+                                erro.style.display='none';
+                                carga.innerHTML = "Entrando... ./";// + caminho + texto;
+                                carga.style.display = 'block';
+                                window.setTimeout("window.location = './" + caminho + texto + "'", 1000);
+                        }
+                        else if (codigo=="time"){
+                                erro.style.display='none';
+                                carga.innerHTML = "Entrando...";
+                                carga.style.display = 'block';
+                                window.setTimeout("window.location = '/" + texto + "'", 600);
+                        }
+                        else if (codigo=="1"){
+                                texto = texto+"<p>Se voc&ecirc; esqueceu sua senha, <a href='esqueci_senha.php' style='color:#733;'><b>clique aqui!</b></a></p>";
+                                erro.innerHTML = texto;
+                                erro.style.display = 'block';
+                                window.setTimeout("document.getElementById('errologin').style.display='none'", 5000);
+                                document.getElementById('btnAcao').disabled = false;
+                                document.getElementById('btnAcao').value = 'entrar';
+                        }
+                        else if (codigo=="81_no_lu"){
+                                erro.innerHTML = texto;
+                                erro.style.display = 'block';
+                                window.setTimeout("document.getElementById('errologin').style.display='none'", 6000);
+                                document.getElementById('btnAcao').disabled = false;
+                                document.getElementById('btnAcao').value = 'entrar';
+                        }
+                        else if (codigo=="81_lu"){
+                                erro.innerHTML = texto;
+                                erro.style.display = 'block';
+                                window.setTimeout("document.getElementById('errologin').style.display='none'", 6000);
+                                document.getElementById('btnAcao').disabled = false;
+                                document.getElementById('btnAcao').value = 'entrar';
+                        }
+                        else {
+            				//alert(data);
+                            texto = "O sistema passará por manutenção técnica!\n<b>";
+                            texto+= "Dentro de algumas horas será restabelecido.\n</b>Agradecemos a compreensão!";
+                            erro.innerHTML = texto;
+                            erro.style.display = 'block';
+                            window.setTimeout("document.getElementById('errologin').style.display='none'", 7000);
+                            document.getElementById('btnAcao').disabled = false;
+                            document.getElementById('btnAcao').value = 'entrar';
+                            //logar_erro_acesso('1', data, parametros);
+                            //alert(http_forn[curDateTime].responseText);
+                        }
+                    }else{
+                        texto = "Erro no acesso.<br><b>Tente novamente.</b>";
+                                erro.innerHTML = texto;
+                                erro.style.display = 'block';
+                                window.setTimeout("document.getElementById('errologin').style.display='none'", 5000);
+                                document.getElementById('btnAcao').disabled = false;
+                                document.getElementById('btnAcao').value = 'entrar';
+                        logar_erro_acesso('2', data, parametros);
+                    }
+                }
+            }
+        }
+    }
+	</script>
+	<style type="text/css">
+	.erro, .msg {
+	    border-radius: 8px;
+	    -moz-border-radius: 8px;
+		position: relative;
+		margin: 1em 2em;
+		padding:1em 2em;
+		color: white!important;
+		position: fixed;
+		width: 300px;
+		top: 64px;
+		right: 10%;
+	behavior: url(/mlg/js/PIE.php);
+	}
+	.erro {
+		border: 3px solid #900;
+		background-color: #faa;		/*	IE	*/
+		background-color: rgba(255,170,170,0.8);
+		*background-color: #faa;    /* IE6  */
+		_background-color: #faa;    /* IE7+ */
+	/*	opacity: 0.8;
+		filter: alpha(opacity=80);*/
+		-pie-background: rgba(255,170,170,0.8);
+	behavior: url(/mlg/js/PIE.php);
+	}
+	.msg {
+		border: 3px solid #138;
+		color: white!important;
+		background-color: #273977;	/*	IE	*/
+		background-color: rgba(39,57,119,0.8);
+		*background-color: #273977;
+		_background-color: #273977;
+	/*	opacity: 0.8;
+		filter: alpha(opacity=80);*/
+		-pie-background: rgba(39,57,119,0.8);
+	behavior: url(/mlg/js/PIE.php);
+	}
+	</style>

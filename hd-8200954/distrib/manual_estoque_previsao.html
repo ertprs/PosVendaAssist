@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+	<title>Cálculo da Previsão</title>
+	<style type="text/css">
+		body {
+			font: normal 13px "Arial";
+		}
+		h2 {
+			background-color: #596D9B;
+			font-weight:bold;
+			font-size: 1.2em;
+			color: white;
+			text-align: center;
+			padding: 3px 0;
+		}
+		h3 > span {
+			color: #596D9B;
+		}
+		ul li {
+			background-color:#FFF;
+		}
+		ul li:nth-of-type(odd) {
+			background-color:#FAFAFA;
+		}
+	</style>
+</head>
+<body>
+	<h2>Cálculo da Previsão de Estoque</h2>
+	<h3>BestWay:</h3>
+	<p>Quando se trata de peças da BestWay (antes Salton), o sistema considera o acerto inicial de Estoque, com dois campos específicos:</p>
+	<ul>
+		<li><b>Entrada Total BestWay:</b> Mostra o Total recebido da Salton.</li>
+		<li><b>Entrada Total JM:</b> Total da peça que entrou desde o distribuidor anterior (JM)</li>
+	</ul>
+	<p>Além dessas considerações, acrescentamos 4 colunas com as quantidades devolvidas, tanto à Salton quanto à JM.</p>
+	<p>Ainda com a <b>BestWay</b>, a pesquisa de peças considera <u>SEMPRE</u> o de-para de cada peça, realizando os cáculos com base ao total  das peças 'DE' e 'PARA'.</p>
+	<h3>Saída Total</h3>
+	<p>Mostra quantas unidades da peça saíram: total, total para Garantia e total para compra (faturado)</p>
+	<h3>Acerto de Estoque</h3>
+	<p>Corresponde à soma dos acertos de estoque cadastrados para esa peça (lembrando que considera o De-Para!)</p>
+	<p>A entrada, menos a saída, mais o acerto, deveria bater com o...</p>
+	<p></p>
+	<h3>Estoque Atual</h3>
+	<p>Mostra o que consta no sistema como quantidade no estoque.</p>
+	<h3>Valor Total</h3>
+	<p>Multiplica a quantidade em estoque com o preço (distribuidor) atual da peça.</p>
+	<h3>Demanda</h3>
+	<p>Quantidade de peças, referente ao número de pedidos. </p>
+	<h3>Pedido Fábrica</h3>
+	<p>Informa a quantidade de peças pedidas para fábrica.</p>
+	<h3>Pedido Reposição</h3>
+	<p>Sugestão de quantidade a pedir da peça, baseado na previsão (é a soma das previsões)</p>
+	<h2>Campos de previsão</h2>
+	<h3>Saída <span>[data]</span></h3>
+	<p>Cada coluna <b>Saída [data]</b> Informa do total de peças que saíram do Distribuidor durante o mês anterior à data informada. Isso inclui faturado e Garantia.</p>
+	<p>Com essas informações, o programa calcua as duas seguintes colunas:</p>
+	<h3>Média <span>[X]</span> meses</h3>
+	<p>Calcula a média de saída de peças (somando todas as saídas do ítem anterior e dividindo pelos meses solicitados) no período solicitado.</p>
+	<h3>Previsão <span>[Y]</span> meses</h3>
+	<p>Com a média dos últimos X meses, calculamos a previsão para os próximos Y meses assim:</p>
+	<p>Multiplicar a média (que é o totalde peças dos útimos X meses dividido entre X meses) pelo número de meses (Y) de previsão.</p>
+	<h2>Campos de Ação</h2>
+	<h3>Gerar Arquivo CSV</h3>
+	<p>Gera um arquivo texto, com o resultato da pesquisa.</p>
+	<h3>Somente itens com pedido</h3>
+	<p>Quando selecionado, exibe somente os itens que possuem Pedido para Reposição.</p>
+</body>
+</html>

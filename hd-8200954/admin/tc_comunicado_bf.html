@@ -1,0 +1,101 @@
+<style type="text/css">
+	#cloudBox {
+		display: block;
+        position: relative;
+  display: block;
+	    margin-left: auto;
+			  margin-right: auto;
+				    width: 50%;
+		background-color: white;
+		/*margin: 15px 260px auto;*/
+		/* overflow: hidden; */
+        text-align: center;
+		z-index: 450;
+	}
+	#cloudBox #fechar {
+		position: absolute;
+		top: -8px;
+		right: -50px;
+		width:  16px;
+		height: 16px;
+		font: normal bold 12px Verdana, Arial, Helvetica, sans-serif;
+		color:white;
+		cursor: pointer;
+		margin:0;padding:0;
+		vertical-align:top;
+		text-align:center;
+		background-color: #f44;
+		border:	1px solid #d00;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 2px 2px 2px #900;
+	}
+    #sky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width:100vw;
+      height:100vh;
+      background: rgba(0,0,0,0.6);
+      z-index: 999999;
+    }
+</style>
+
+<!--[if IE]>
+  	<style type="text/css">
+		#cloudBox {
+			margin:1em 15%;
+		}
+		#ei_container #msgErro {
+			color: #900;
+			background-color: #ff8080;
+		}
+	</style>
+<![endif]-->
+
+<script type="text/javascript">
+
+	function setCookie(c_name,value,domain,path,expiredays) {
+		var exdate=new Date();
+			exdate.setDate(exdate.getDate()+expiredays);
+		var c_domain   = (domain == null || domain == "") ? "" : ";domain="+domain;
+		var c_path     = (path == null || path == "") ? "" : ";path="+path;
+		var expireDate = (expiredays==null) ? "" : ";expires="+exdate.toUTCString();
+		document.cookie=c_name+ "=" +escape(value)+c_domain+c_path+expireDate;
+	}
+
+	function desfazerNuvem() {
+		setCookie('HdBlackFriday2','ja_li', null, null, 1);
+		document.getElementById('sky').style.display = 'none';
+		document.getElementById('fechar').style.display = 'none';
+	}
+
+</script>
+<div id="sky">
+  <div id="cloudBox">
+  	<div id="fechar" onClick='desfazerNuvem()' title='Ocultar durante esta sessão'>X</div>
+					 <table align="center"  border="0" cellpadding="0" cellspacing="0" style="border: 2px solid #434390;margin: 20px auto;">
+							<tbody>
+							<tr style="">
+							<td style="padding: 0 60px; margin: 0 auto;text-align: left;">
+							<p style="font-family:Arial, Helvetica; font-size: 15px;color: 808080; font-weight:normal; line-height: 30px;margin: 0;text-align: left;padding: 40px 0">
+							A Telecontrol comunica que não haverá expediente nos dias 24 e 25 de Fevereiro em virtude do feriado de Carnaval. Voltaremos às nossas atividades normalmente no dia 26 de Fevereiro a partir das 08:00hs
+							<br>Equipe Telecontrol
+							</p>
+							</td>
+							</tr>
+							<tr style="text-align:center;">
+							<td style="padding-top:0;">
+							<table width="100%">
+							<tr>
+							<td width="25%"></td>
+							<td width="50%" style="padding-bottom:50px;text-align:center;"><a href="http://telecontrol.com.br" target="_blank"><img src="https://www.telecontrol.com.br/images/logo.png" alt="Telecontrol" style="border: 0; margin: 0;" width ="200"></a></td>
+							<td width="25%" style="text-align:center;"><span style="font-family:Arial;font-size:9px;color:#ccc;">Deus é o Provedor.</span></td>
+							</tr>
+							</table>
+							</td>
+							</tr>
+							</tbody>
+							</table>
+  </div>
+</div>

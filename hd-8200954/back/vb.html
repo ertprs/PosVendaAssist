@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+
+<script language="VBscript">
+        Sub entrance_onClick
+                returnvalue=MsgBox ("Você está sendo enviado para um site sobre DHTML. Continuar?",35,"Greetings!")
+                If returnvalue=6 Then
+                        window.location="http://www.dynamicdrive.com"
+                ElseIf returnvalue=7 Then
+                        window.location="http://www.telecontrol.com.br/"
+                End If
+        End Sub
+</script>
+
+<script language="JavaScript">
+        function entrance2(){
+                if(navigator.appName!="Netscape")
+                        return
+                if (confirm("Você entrará num site sobre DHTML. Continuar?"))
+                        window.location="http://www.dynamicdrive.com"
+                else
+                        window.location="http://www.yahoo.com"
+}
+</script>
+
+</HEAD>
+
+<BODY>
+
+<form>
+	<input type="button" name="entrance" value="Clique Aqui" onClick="entrance2()">
+</form>
+
+</BODY>
+</HTML>

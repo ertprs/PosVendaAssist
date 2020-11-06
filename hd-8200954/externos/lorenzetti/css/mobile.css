@@ -1,0 +1,4980 @@
+/********************* CSS Reset *******************************/
+html,  body,  div,  span,  applet,  object,  iframe, h1,  h2,  h3,  h4,  h5,  h6,  p,  blockquote,  pre, a,  abbr,  acronym,  address,  big,  cite,  code, del,  dfn,  em,  font,  img,  ins,  kbd,  q,  s,  samp, small,  strike,  strong,  sub,  sup,  tt,  var, b,  u,  i,  center, dl,  dt,  dd,  ol,  ul,  li, fieldset,  form,  label,  legend, caption,  tbody,  tfoot,  thead
+ {
+    
+	margin:  0;
+    	padding:  0;
+    
+	border:  0;
+    
+	outline:  0;
+    
+	vertical-align:  baseline;
+    
+	background:  transparent;
+    
+}
+ol,  ul,  dt,  dl  {
+    
+	list-style:  none;
+    
+}
+blockquote,  q  {
+    
+	quotes:  none;
+    
+}
+fieldset, img  {
+    
+	border:  none;
+    
+}
+legend  {
+    
+	display:  none;
+    
+}
+input[type=text],  textarea  {
+    
+	padding:  0;
+    
+	border: 1px solid #555;
+    
+}
+a,  a:link a:active a:visited  {
+    
+	color:  #000000;
+    
+	text-decoration:  none;
+    
+}
+a:hover  {
+    
+	text-decoration:  underline;
+    
+}
+caption, cite, code, dfn, em, th, var  {
+    
+	font-style:  normal;
+    
+	font-weight:  normal;
+    
+}
+input,  textarea,  select {
+    
+	outline: none;
+     /*tira a borda dourada do chrome*/
+}
+textarea {
+    
+	resize: none;
+     /*não deixa redimensionar o textarea no chrome*/
+}
+a img  {
+     
+	border:  0px;
+    
+	margin:  0px;
+    
+}
+h1,  h2,  h3,  h4,  h5,  h6 {
+    
+	font-weight:  normal;
+    
+	color:  inherit;
+    
+}
+
+h2  {
+    
+	font-family:  'neuron_boldregular';
+     font-size:  1.2em;
+     color:  #444;
+     line-height:  1em;
+     float:  left;
+     width:  100%;
+     
+}
+
+/**
+ * TOOLS 
+ **/
+a:hover  {
+    text-decoration:  none;
+}
+
+
+select {
+    
+	font-size:  1.2em;
+    
+}
+
+*  {
+    
+    -webkit-box-sizing:  border-box;
+    
+       -moz-box-sizing:  border-box;
+    
+            box-sizing:  border-box;
+    
+	-webkit-tap-highlight-color:  rgba(255,  255,  255,  0);
+     
+}
+
+
+ * html>body .clearfix  {
+    
+ 	display:  inline-block;
+    
+ 	width:  100%;
+    
+ }
+ .clearfix:after  {
+    
+ 	content:  ".";
+    
+ 	display:  block;
+    
+ 	height:  0;
+    
+ 	clear:  both;
+    
+ 	visibility:  hidden;
+    
+ }
+ .clear  {
+    
+ 	clear: both;
+    
+ 	margin: 0;
+    
+ 	padding: 0;
+    
+ 	font-size:  15px;
+    
+ 	line-height:  1px;
+    
+ }
+ .replace  {
+    
+ 	background-color: transparent;
+    
+ 	text-indent: -50000px;
+    
+ 	overflow: hidden;
+    
+ 	display: block;
+    
+ }
+ .replace-bt  {
+    
+ 	background-repeat:  no-repeat;
+    
+ 	background-position:  left top;
+    
+ 	background-color:  transparent;
+    
+ 	text-indent:  -50000px;
+    
+ 	line-height: 999999px;
+    
+ 	cursor:  pointer;
+    
+ 	overflow:  hidden;
+    
+ 	display:  block;
+    
+ 	border: none;
+    
+ }
+ .replace-txt {
+    
+ 	text-indent:  -999999px;
+    
+ }
+
+
+/**
+ *	Classes Helpers
+ */
+
+ /*Posicionamento*/
+ .relative {
+    
+ 	position:  relative;
+    
+ }
+ .floatLeft {
+    
+ 	float:  left!important;
+    
+ }
+ .floatRight {
+    
+ 	float:  right!important;
+    
+ }
+
+ /*TOP*/
+ .top10 {
+    
+ 	margin-top:  10px;
+    
+ }
+ .top15 {
+    
+ 	margin-top:  15px;
+    
+ }
+ .top20 {
+    
+ 	margin-top:  20px;
+    
+ }
+ .top25 {
+    
+ 	margin-top:  25px;
+    
+ }
+ .top30 {
+    
+ 	margin-top:  30px;
+    
+ }
+ .top40 {
+    
+ 	margin-top:  40px;
+    
+ }
+ .top50 {
+    
+ 	margin-top:  50px;
+    
+ }
+ .top60 {
+    
+ 	margin-top:  60px;
+    
+ }
+ .top70 {
+    
+ 	margin-top:  70px;
+    
+ }
+ .top80 {
+    
+ 	margin-top:  80px;
+    
+ }
+ .top90 {
+    
+ 	margin-top:  90px;
+    
+ }
+ .top100 {
+    
+ 	margin-top:  100px;
+    
+ }
+ .top120 {
+    
+ 	margin-top:  120px;
+    
+ }
+ 
+ .top150 {
+    
+ 	margin-top:  150px;
+    
+ }
+ 
+ .top200 {
+    
+ 	margin-top:  200px;
+    
+ }
+ 
+ .top250 {
+    
+ 	margin-top:  250px;
+    
+ }
+
+  .bottom15 {
+    
+ 	margin-bottom:  15px;
+    
+ }
+
+ .bottom20 {
+    
+ 	margin-bottom:  20px;
+    
+ }
+
+ .bottom25 {
+    
+ 	margin-bottom:  25px;
+    
+ }
+
+ .bottom30 {
+    
+ 	margin-bottom:  30px;
+    
+ }
+
+ /*LEFT*/
+ .left10 {
+    
+ 	margin-left:  10px;
+    
+ }
+ .left20 {
+    
+ 	margin-left:  20px;
+    
+ }
+ .left30 {
+    
+ 	margin-left:  30px;
+    
+ }
+ .left40 {
+    
+ 	margin-left:  40px;
+    
+ }
+ .left50 {
+    
+ 	margin-left:  50px;
+    
+ }
+ .left60 {
+    
+ 	margin-left:  60px;
+    
+ }
+ .left70 {
+    
+ 	margin-left:  70px;
+    
+ }
+ .left80 {
+    
+ 	margin-left:  80px;
+    
+ }
+ .left90 {
+    
+ 	margin-left:  90px;
+    
+ }
+ .left100 {
+    
+ 	margin-left:  100px;
+    
+ }
+ .left120 {
+    
+ 	margin-left:  120px;
+    
+ }
+
+ /*RIGHT*/
+ .right10 {
+    
+ 	margin-right:  10px;
+    
+ }
+ .right20 {
+    
+ 	margin-right:  20px;
+    
+ }
+ .right30 {
+    
+ 	margin-right:  30px;
+    
+ }
+ .right40 {
+    
+ 	margin-right:  40px;
+    
+ }
+ .right50 {
+    
+ 	margin-right:  50px;
+    
+ }
+ .right60 {
+    
+ 	margin-right:  60px;
+    
+ }
+ .right70 {
+    
+ 	margin-right:  70px;
+    
+ }
+ .right80 {
+    
+ 	margin-right:  80px;
+    
+ }
+ .right90 {
+    
+ 	margin-right:  90px;
+    
+ }
+ .right100 {
+    
+ 	margin-right:  100px;
+    
+ }
+ .right120 {
+    
+ 	margin-right:  120px;
+    
+ }
+
+/**
+ *	Regra para imagens e recursos flexiveis
+ * 	Deve ser usado em sites com layout fluido ou liquido.
+ *  -Descomentar
+ */
+
+/*img,  video,  embed,  iframe,  code {
+    
+	max-width:  100%
+	}
+*/
+
+/**
+ *	Linha para cada bloco de conteudo
+ */
+ .row {
+    
+ 	display:  block;
+    
+ 	float:  left;
+    
+ 	width:  100%;
+    
+ }
+
+/**
+ *	Bloco interno de conteudo fixo
+ */
+ .content {
+    
+ 	display:  block;
+    
+ 	width:  92%;
+    
+ 	margin:  0 auto;
+    
+ }
+
+/**
+ *	Bloco interno de conteudo que varia sua largura 
+ *  Deve ser usado em sites com layout fluido ou liquido (baseados em porcentagens)
+ */
+ .fluidContent {
+    
+ 	display:  block;
+    
+ 	width:  100%;
+    
+ 	margin:  0 auto;
+    
+/* 	max-width:  768px;
+    
+ 	min-width:  320px;
+    */
+ }
+
+.overflow  {
+    overflow:  hidden;
+}
+
+
+
+
+/**
+ *	Inicio de suas regras	
+ */
+ 
+body {
+    
+ 	font-size:  100%;
+    
+ 	font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+    
+
+}
+	
+
+
+.cabecalhoPadrao  {
+    
+	background:  url('../img/mobile/common/bg/h1.jpg') 0 0 no-repeat;
+    
+	float:  left;
+    
+	height:  68px;
+    
+	width:  100%;
+    
+	background-size:  100% 100%;
+    
+}
+
+.cabecalhoPadrao h1  {
+    
+	float:  left;
+     
+	color:  white;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	margin-left:  4%;
+    
+	margin-top:  23px;
+    
+	font-size:  1.9em;
+    
+}
+
+
+.backgroundFB  {
+    background:  #fbf9f9;
+     float:  left;
+     width:  100%;
+}
+
+
+.intro  {
+    float:  left;
+     width:  100%;
+}
+
+.intro span  {
+    font-family:  'neuron_boldregular';
+     font-size:  1.2em;
+     color:  #444;
+     line-height:  0.9em;
+     float:  left;
+     width:  100%;
+ }
+
+.intro p  {
+    color:  #444;
+     font-family:  'neuronitalic';
+     float:  left;
+     width:  100%;
+     margin-top:  10px;
+}
+
+
+.btnPadrao  {
+    
+	background:  #00adf6;
+     
+	float:  left;
+     
+	width:  100%;
+     
+	text-align:  center;
+     
+	font-family:  'neuron_demiboldregular';
+    
+	color:  white;
+    
+	height:  50px;
+    
+	line-height:  50px;
+    
+
+}
+.btnPadrao2  {
+    
+	background:  #00adf6;
+     
+	float:  left;
+     
+	width:  100%;
+     
+	text-align:  center;
+     
+	font-family:  'neuron_demiboldregular';
+    
+	color:  white;
+    
+	height:  50px;
+    
+	line-height:  50px;
+        cursor: pointer
+    
+
+}
+.btnPadrao2 input{
+    font-size: 1.125em;
+    height: 53px;
+    line-height: 53px;
+    background: transparent;
+     
+	float:  left;
+     
+	width:  100%;
+     
+	text-align:  center;
+     
+	font-family:  'neuron_demiboldregular';
+    
+	color:  white;
+    
+	height:  50px;
+    
+	line-height:  50px;
+        cursor: pointer;
+        border: none
+}
+
+
+.btnPadrao:hover,  .btnPadrao:active{
+    background:  #065492;
+}
+.btnPadrao2:hover{
+    background:  #065492;
+}
+.btnPadrao2 input:hover,  .btnPadrao2 input:active {
+    border: none;
+    background: transparent;
+} 
+
+
+.btnPadrao a  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	text-align:  center;
+     
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.375em;
+    
+	color:  white;
+    
+	height:  50px;
+    
+	line-height:  50px;
+        text-decoration: none
+    
+}
+
+.btnPadrao input  {
+    
+	font-family:  'neuron_demiboldregular';
+    
+	background:  transparent;
+     
+	float:  left;
+     
+	width:  100%;
+     
+	text-align:  center;
+     
+	border:  none;
+    
+	cursor:  pointer;
+    
+	font-size:  1.375em;
+    
+	color:  white;
+    
+	height:  50px;
+    
+	line-height:  50px;
+    
+}
+
+
+.resultadoPesquisa  {
+    float:  left;
+}
+
+.resultadoPesquisa span  {
+    color:  #999999;
+     font-family:  'neuronitalic';
+ }
+
+.resultadoPesquisa b  {
+    font-family:  'neuron_demiboldregular';
+     font-size:  1.1em;
+     font-weight:  normal;
+     color:  #444444;
+}
+ 
+.resultadoPesquisa i  {
+    font-family:  'neuron_demiboldregular';
+     font-size:  1.1em;
+     font-weight:  normal;
+     color:  #b20000;
+     font-style:  normal;
+}
+ 
+
+.voltar  {
+    
+	float:  left;
+     
+	clear:  both;
+     
+	width:  100%;
+    
+	/*color:  red;
+     */
+	background:  url('../img/mobile/common/bg/voltar.png') 0 center no-repeat;
+    
+	/*line-height:  3em;
+    */
+	padding-left:  10px;
+    
+	padding-top:  10px;
+    
+	padding-bottom:  10px;
+    
+}
+
+.voltar a  {
+    
+	color:  #00acf6;
+     
+	font-size:  0.8em;
+    
+}
+
+.voltar a:hover,  .voltar a:active  {
+    color:  #065492;
+}
+
+
+
+.campoPadrao  {
+    
+	display:  block;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	height:  36px;
+    
+	border:  2px solid #dfdddf;
+    
+	background:  white;
+    
+}
+
+.textareaPadrao  {
+    
+	display:  block;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	height:  100px;
+    
+	border:  2px solid #dfdddf;
+    
+	background:  white;
+    
+}
+
+.campoPadrao input  {
+    float:  left;
+     width:  92%;
+     border:  none;
+     background:  white;
+     margin-top:  8px;
+     margin-left:  10px;
+     color:  #999999;
+     font-size:  0.8em;
+     font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+}
+
+.textareaPadrao  textarea  {
+    float:  left;
+     width:  92%;
+     border:  none;
+     background:  white;
+     margin-top:  8px;
+     margin-left:  10px;
+     color:  #999999;
+     font-size:  0.8em;
+     font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+     height:  80px;
+}
+
+
+
+.titCentralizado  {
+    float:  left;
+     width:  100%;
+     text-align:  center;
+}
+
+
+.content h4.neuronregular,
+.content .titCentralizado h4 {line-height: 56px; text-align: left;}
+
+.content span.carrinho {background: url('../img/site/common/bg/carrinho.png') center top  no-repeat; width: 58px; height:56px; display: inline-block; margin: 15px 20px -17px 0;}
+
+.content .neuronregular {font-size: 22px; font-family: "neuron_boldregular", sans serif; color: #00AFF3;}
+
+.content p {font-size: 16px; color: #999; margin: 3px 0}
+
+
+.campoBusca  {
+    
+	float:  left;
+    
+	width:  84%;
+    
+	margin-left:  6%;
+    
+	height:  32px;
+    
+	background:  url('../img/mobile/common/bg/bg-busca.png') 0 0 no-repeat;
+    
+	position:  relative;
+    
+	margin-top:  15px;
+    
+	margin-bottom:  15px;
+    
+}
+
+.campoBuscaRight  {
+    
+	position:  absolute;
+    
+	background:  url('../img/mobile/common/bg/bg-busca-right.png') 0 0 no-repeat;
+    
+	top:  0;
+    
+	right:  -14px;
+    
+	width:  14px;
+    
+	height:  32px;
+    
+
+}
+
+.campoBusca input  {
+    
+	float:  left;
+     
+	width:  80%;
+    
+	margin-left:  35px;
+    
+	/*margin-top:  8px;
+    */
+	border:  none;
+    
+	background:  transparent;
+    
+	color:  white;
+    
+	font-size:  0.8em;
+    
+	height:  32px;
+    
+}
+
+
+
+
+
+
+
+
+
+/********************* PÁGINA INICIAL *********************/	
+.topo  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	height:  50px;
+    
+	position:  relative;
+    
+	z-index:  9;
+    
+	background:  white;
+    
+}
+
+.logo  {
+    
+	float:  left;
+     
+	width:  99px;
+    
+	height:  57px;
+    
+	background:  #009ee2 url('../img/mobile/common/bg/logo.png');
+    
+}
+
+.logo:hover,  .logo:active  {
+    background-color:  #065492;
+}
+
+
+
+/*.paiMenu  {
+    position:  relative;
+     float:  right;
+     width:  100%}
+*/
+
+
+.btnMenu  {
+    
+	float:  right;
+     
+	background:  url('../img/mobile/common/misc/misc.png');
+    
+	width:  24px;
+    
+	height:  21px;
+    
+	margin-top:  15px;
+    
+}
+
+
+
+.menu  {
+    
+	float:  right;
+    
+	position:  absolute;
+    
+	width:  85%;
+    
+	top:  0;
+    
+	right:  -85%;
+    
+	height:  100%;
+    
+	background:  #464646;
+    
+	z-index:  9999;
+    
+	display:  none;
+    
+}
+
+.itemMenu > a  {
+    
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.4em;
+    
+	color:  white;
+    
+	border-bottom:  1px solid #3b3b3b;
+    
+	border-top:  1px solid #898989;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	line-height:  1.8em;
+    
+	background:  #6b6b6b url('../img/mobile/common/bg/flechas-menu.png') 94% 14px no-repeat;
+    
+	padding-left:  25px;
+    
+}
+
+.itemMenu > a:hover,  .itemMenu > a:active  {
+    color:  #999;
+}
+
+
+.submenu  {
+    
+	float:  left;
+     
+	margin-top:  -1px;
+    
+	width:  100%;
+    
+}
+
+.submenu li  {
+    
+	float:  left;
+     
+	width:  100%;
+    
+}
+
+.submenu li a  {
+    
+	font-size:  1.4em;
+    
+	color:  white;
+    
+	border-bottom:  1px solid #3b3b3b;
+    
+	border-top:  1px solid #6b6b6b;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	line-height:  1.8em;
+    
+	background:  #4f4f4f;
+    
+	padding-left:  25px;
+    
+	font-family:  'neuronitalic';
+    
+}
+
+
+.submenu li a:hover,  .submenu li a:active  {
+    color:  #999;
+}
+
+
+
+.menuOculto  {
+    display:  none;
+     float:  left;
+     width:  100%;
+}
+
+
+
+.menuLinhas  {
+    
+	border-top:  5px solid #464646;
+    
+	border-bottom:  5px solid #464646;
+    
+	margin-top:  -1px;
+    
+	margin-bottom:  -1px;
+    
+	float:  left;
+    
+	position:  relative;
+    
+}
+
+.itemMenuAberto > a  {
+    background:  #6b6b6b url('../img/mobile/common/bg/flechas-menu.png') 93% -18px no-repeat;
+}
+
+
+
+
+/* configura banner home */
+.containerBanner  {
+     width:  100%;
+     float:  left;
+     overflow:  hidden;
+     text-align:  center;
+     position:  relative;
+      /*height:  450px;
+    */}
+.sliderBanner  {
+    float:  left;
+     width:  100%;
+}
+
+.sliderBanner li  {
+    display:  block;
+     float:  left;
+     width:  100%;
+}
+
+.sliderBanner li a  {
+    float:  left;
+     width:  100%;
+}
+
+.sliderBanner li a img  {
+    float:  left;
+     width:  100%;
+}
+
+.paginacaoBanner  {
+    position:  absolute;
+     width:  100%;
+     text-align:  center;
+     float:  left;
+     left:  0;
+     bottom:  10px;
+	 z-index:10;
+}
+
+.paginacaoBanner a  {
+    
+	width:  15px;
+     
+	height:  15px;
+     
+	-webkit-border-radius:  15px;
+     
+	-moz-border-radius:  15px;
+     
+	-ms-border-radius:  15px;
+     
+	-o-border-radius:  15px;
+     
+	border-radius:  15px;
+     
+	margin-left:  5px;
+     
+	margin-right:  5px;
+     
+	background:  transparent;
+     
+	border:  1px solid white;
+    
+	position:  relative;
+     z-index:  9999;
+     
+	display:  inline-block;
+     
+	overflow:  hidden;
+    
+	text-indent:  -9999px;
+    
+
+}
+
+.paginacaoBanner a:hover,  .paginacaoBanner a.selected  {
+    background:  white;
+}
+
+.paginacaoBanner a span  {
+    text-indent:  -9999px;
+     overflow:  hidden;
+     font-size:  0;
+}
+
+
+
+
+
+.chamadasHome  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+}
+
+.chamadaOndeComprar  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	padding:  15px 15px 15px 15px;
+    
+	background:  #efeeed url('../img/mobile/common/bg/arrow-right.png') 98% center no-repeat;
+    
+}
+
+.chamadaOndeComprar span  {
+    
+	color:  #00adf6;
+    
+	font-family:  'neuron_boldregular';
+    
+	font-size:  1.4em;
+    
+	float:  left;
+    
+	width:  95%;
+    
+}
+
+.chamadaOndeComprar p  {
+    
+	color:  #444444;
+    
+	font-family:  'neuronitalic';
+    
+	font-size:  1em;
+    
+	float:  left;
+    
+	width:  95%;
+    
+
+}
+
+.chamadaOndeComprar:hover span,  .chamadaOndeComprar:active span  {
+    color:  #065492;
+}
+
+
+
+.chamadaPractia  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	min-height:  73px;
+    
+	background:  url('../img/mobile/common/bg/capa-practia.jpg') 0 0 no-repeat;
+    
+	background-size:  100% 100%;
+    
+	padding:  15px 15px 15px 15px;
+    
+}
+
+.chamadaLiva  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	min-height:  73px;
+    
+	background:  url('../img/mobile/common/bg/capa-liva.jpg') 0 0 no-repeat;
+    
+	background-size:  100% 100%;
+    
+	padding:  15px 15px 15px 15px;
+    
+}
+
+.chamadaSensia  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	min-height:  73px;
+    
+	background:  url('../img/mobile/common/bg/capa-sensia.jpg') 0 0 no-repeat;
+    
+	background-size:  100% 100%;
+    
+	padding:  15px 15px 15px 15px;
+    
+}
+
+.chamadaDesea  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	min-height:  73px;
+    
+	background:  url('../img/mobile/common/bg/capa-desea.jpg') 0 0 no-repeat;
+    
+	background-size:  100% 100%;
+    
+	padding:  13px 15px 15px 15px;
+    
+}
+
+.chamadaPractia span,  .chamadaLiva span,  .chamadaSensia span,  .chamadaDesea span  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+}
+
+.chamadaPractia p,  .chamadaLiva p,  .chamadaSensia p,  .chamadaDesea p  {
+    
+	color:  white;
+     
+	font-size:  0.8em;
+     
+	line-height:  1.1em;
+     
+	padding-top:  2px;
+     
+	float:  left;
+    
+}
+
+
+.chamadasHome a:hover p  {
+    opacity:  0.5;
+}
+
+
+.box-indisponivel{ padding:50px 0 0; clear:both; }
+.box-indisponivel img { margin:0 auto 20px; display:block; }
+.box-indisponivel .chamadaIndisponivel{ color:#999999; font-size:20px; line-height:150%; text-align:center; padding: 0 20px; }
+.box-indisponivel .chamadaIndisponivel .linkAtendimentoOnline { color: #01ADF7; font-size: 22px; font-family: 'neuronitalic'; text-decoration:none; }
+
+
+/********************* ASSISTÊNCIA TÉCNICA *********************/
+.introAssistencia  {
+    float:  left;
+     width:  100%;
+}
+
+.introAssistencia span  {
+    float:  left;
+     width:  100%;
+     color:  #444444;
+     font-family:  'neuron_boldregular';
+     font-size:  1.2em;
+}
+
+.introAssistencia p  {
+    float:  left;
+     width:  100%;
+     color:  #666;
+     font-family:  'neuronitalic';
+     line-height:  1.1em;
+     font-size:  0.9em;
+     margin-top:  3px;
+}
+
+
+.btnGarantia  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	background:  #efeeed url('../img/mobile/common/bg/flecha-garantia.png') 95% center no-repeat;
+    
+	height:  53px;
+    
+	margin-bottom:  1px;
+    
+}
+
+
+.btnGarantia a  {
+    
+	float:  left;
+     
+	width:  100%;
+    
+	height:  53px;
+    
+	line-height:  53px;
+    
+	color:  #00acf6;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.4em;
+    
+
+}
+
+.btnGarantia a:hover,  .btnGarantia a:active  {
+    color:  #065492;
+}
+
+.btnGarantia a img  {
+    float:  left;
+     margin-right:  10px;
+     margin-top:  10px;
+}
+
+
+
+
+.textoGarantia  {
+    float:  left;
+     width:  100%;
+     color:  #999;
+     font-size:  0.8em;
+     line-height:  1.2em;
+}
+
+
+.textoSemGarantia  {
+    float:  left;
+     width:  100%;
+}
+
+.textoSemGarantia span  {
+    float:  left;
+     width:  100%;
+     color:  #444;
+     font-size:  1.2em;
+     line-height:  1em;
+     font-family:  'neuron_boldregular';
+}
+
+.textoSemGarantia p  {
+    float:  left;
+     width:  100%;
+     color:  #999;
+     font-size:  0.8em;
+     line-height:  1.2em;
+     font-family:  'neuronitalic';
+     margin-top:  7px;
+}
+
+
+.fone0800  {
+    float:  left;
+     width:  100%;
+     margin-top:  25px;
+}
+
+.fone0800 img  {
+    float:  left;
+     margin-right:  10px;
+}
+
+.fone0800 span  {
+    font-size:  2.4em;
+     color:  #444;
+     font-family:  'neuron_boldregular';
+     float:  left;
+     margin-top:  10px;
+}
+
+
+.tituloAbsolute  {
+    position:  absolute;
+     right:  4%;
+     top:  138px;
+     z-index:  9;
+     font-family:  'neuron_demiboldregular';
+     font-size:  1.3em;
+     color:  #444;
+}
+
+
+.maisBuscados  {
+    float:  left;
+     width:  100%;
+}
+
+.maisBuscados h2  {
+    margin-bottom:  5px;
+}
+
+.maisBuscados a  {
+    float:  left;
+     width:  100%;
+     border:  2px solid #00aff0;
+     color:  #00aff0;
+     text-align:  center;
+     font-size:  0.8em;
+     margin-top:  10px;
+     line-height:  2.2em;
+}
+
+
+.maisBuscados a:hover,  .maisBuscados a:active  {
+    border-color:  #065492;
+}
+
+
+
+
+
+
+/********************* LINHAS *********************/	
+.bannerLinha  {
+    float:  left;
+     width:  100%;
+}
+
+.bannerLinha img  {
+    float:  left;
+     width:  100%;
+}
+
+
+.chamadaLinhaInterna span  {
+    float:  left;
+     width:  100%;
+     font-family:  'neuronitalic';
+     font-size:  1.2em;
+     line-height:  1em;
+     margin-top:  15px;
+}
+
+.chamadaLinhaInterna p  {
+    float:  left;
+     width:  100%;
+     color:  #999999;
+     font-size:  0.9em;
+     margin-top:  15px;
+     font-family:  'neuronregular';
+}
+
+
+
+/* grid produtos */
+.containerProdutos  {
+    background:  #fafafa;
+     float:  left;
+     width:  100%}
+
+.produto  {
+    float:  left;
+     width:  50%;
+     text-align:  center;
+     display:  inline-block;
+     position:  relative;
+     overflow:  hidden;
+ }
+.produto .lancamento{
+	position:absolute;
+	top:25px; right:25px;
+	background:url(../img/site/common/img/img-selo-lancamento.png) no-repeat;
+	width:84px;
+	height:24px;
+	text-indent:-50000px;
+	overflow:hidden;
+	display:block;
+	cursor:pointer;
+}
+
+
+.produto span  {
+    
+	font-size:  1.1em;
+    
+	font-family:  'neuronitalic';
+    
+	float:  left;
+    
+	width:  90%;
+    
+	margin-left:  5%;
+    
+	padding-bottom:  20px;
+    
+	min-height:  62px;
+    
+
+
+}
+
+.thumbProduto  {
+    
+	width:  1000px;
+    
+	height:  110px;
+    
+	display:  table-cell;
+     
+	vertical-align:  middle;
+    
+	text-align:  center;
+    
+
+}
+
+.thumbProduto *  {
+    vertical-align:  middle;
+ }
+
+
+
+
+.barraHorizontal  {
+    
+ 	float:  left;
+     
+ 	height:  3px;
+     
+ 	width:  100%;
+    
+ 	background:  #E5E5E5;
+    
+ 	border-top:  1px solid #FEFEFE;
+    
+ 	border-bottom:  1px solid #FEFEFE;
+    
+}
+
+
+.barraVertical  {
+    
+ 	float:  left;
+     
+ 	/*height:  211px;
+     */
+ 	height:  500px;
+     
+ 	width:  3px;
+    
+ 	background:  #E5E5E5;
+    
+ 	border-left:  1px solid #FEFEFE;
+    
+ 	border-right:  1px solid #FEFEFE;
+    
+ 	top:  0;
+    
+ 	left:  0;
+    
+ 	position:  absolute;
+    
+ 	z-index:  999
+}
+
+
+.barraVertical2  {
+    
+ 	float:  right;
+     
+ 	height:  500px;
+     
+ 	width:  3px;
+    
+ 	background:  #E5E5E5;
+    
+ 	border-left:  1px solid #FEFEFE;
+    
+ 	border-right:  1px solid #FEFEFE;
+    
+ 	top:  0;
+    
+ 	right:  0;
+    
+ 	position:  absolute;
+    
+ 	z-index:  999
+}
+
+
+
+
+
+
+
+
+
+
+/********************* ONDE COMPRAR *********************/
+.revendas  {
+    float:  left;
+     width:  100%;
+}
+
+
+.revendas a  {
+    float:  left;
+     width:  100%;
+     margin-top:  20px;
+     margin-bottom:  15px;
+}
+
+.revendas span  {
+    color:  #999999;
+     font-size:  0.7em;
+     line-height:  1.2em;
+     float:  left;
+     width:  100%;
+     margin-top:  18px;
+}
+
+
+.thumbRevenda  {
+    
+	width:  2000px;
+     
+	height:  155px;
+    
+	display:  table-cell;
+     
+	vertical-align:  middle;
+    
+	text-align:  center;
+    
+}
+
+.thumbRevenda *  {
+    vertical-align:  middle;
+ }
+
+
+.revendas .centralizar  {
+    background:  white;
+     border:  1px solid #eeeeee;
+}
+
+
+
+.thumbRevenda:hover,  .thumbRevenda:active  {
+    outline:  2px solid #00AFF3;
+}
+
+
+.lojasOnline  {
+    float:  left;
+     width:  100%;
+}
+
+
+.lojasOnline a:hover ,  .lojasOnline a:active   {
+    outline:  2px solid #00AFF3;
+}
+
+
+.lojasOnline a  {
+    float:  left;
+     width:  47%;
+     background:  white;
+     border:  1px solid #eeeeee;
+     margin-top:  22px;
+}
+
+.lojasOnline a:nth-child(2n+2)  {
+    float:  right;
+}
+
+.lojasOnline a {
+/*    
+    max-height:  130px;*/
+    
+}
+
+.thumbLojaOnline  {
+    
+	width:  1000px;
+     
+	height:  100px;
+    
+	display:  table-cell;
+     
+	vertical-align:  middle;
+    
+	text-align:  center;
+    
+}
+
+.thumbLojaOnline img  {
+    max-width:  99%;
+}
+
+
+.thumbLojaOnline *  {
+    vertical-align:  middle;
+ }
+
+
+
+.loja  {
+    float:  left;
+     width:  100%;
+     background:  white;
+     border:  1px solid #eeeeee;
+     padding:  20px;
+     margin-top:  28px;
+     position:  relative;
+}
+
+.nomeLoja h2  {
+    font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+     font-size:  0.9em;
+     font-weight:  700;
+}
+
+
+.enderecoLoja  {
+    background:  url('../img/mobile/common/bg/endereco.jpg') 0 0 no-repeat;
+     float:  left;
+     width:  100%;
+     margin-top:  12px;
+     min-height:  28px;
+}
+
+.enderecoLoja span  {
+    font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+     font-size:  0.7em;
+     float:  left;
+     line-height:  1.2em;
+     color:  #999999;
+     padding-left:  29px;
+}
+
+
+.foneLoja  {
+    background:  url('../img/mobile/common/bg/fone.jpg') 0 0 no-repeat;
+     float:  left;
+     width:  100%;
+     min-height:  30px;
+     margin-top:  20px;
+}
+
+.foneLoja span  {
+    font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+     font-size:  0.7em;
+     float:  left;
+     line-height:  1.2em;
+     color:  #999999;
+     padding-left:  29px;
+     line-height:  2.5em;
+}
+
+
+.tagLoja  {
+    
+	position:  absolute;
+    
+	top:  -9px;
+    
+	right:  10px;
+    
+	padding:  3px 8px;
+    
+	background:  #eeeeee;
+    
+	color:  #5f5f5f;
+    
+	font-size:  0.6em;
+    
+}
+
+address  {
+    font-style:  normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* MODELO *********************/	
+.bannerProduto  {
+    
+	background:  url('../img/mobile/common/bg/bg-geral.jpg') 0 0 no-repeat;
+    
+	width:  100%;
+     
+	float:  left;
+     
+	text-align:  center;
+     
+	min-height:  186px;
+     
+	background-size:  100% 100%;
+     
+}
+
+.bannerProduto h1  {
+    font-family:  'neuron_demiboldregular';
+     font-size:  1.2em;
+     text-align:  left;
+     margin-top:  20px;
+     color:  #999;
+     min-height:  42px;
+}
+
+.bannerProduto img  {
+    max-width:  100%;
+}
+
+
+/*as imagens das linhas liva e desea ainda nao foram criadas pelo design*/
+.bgPractia  {
+    background:  url('../img/mobile/common/bg/bg-practia.jpg') 0 0 no-repeat;
+     background-size:  100% 100%;
+}
+
+.bgLiva  {
+    background:  url('../img/mobile/common/bg/bg-liva.jpg') 0 0 no-repeat;
+     background-size:  100% 100%;
+}
+
+.bgSensia  {
+    background:  url('../img/mobile/common/bg/bg-sensia.jpg') 0 0 no-repeat;
+     background-size:  100% 100%;
+}
+
+.bgDesea  {
+    background:  url('../img/mobile/common/bg/bg-desea.jpg') 0 0 no-repeat;
+     background-size:  100% 100%;
+}
+
+
+
+
+.menuProduto  {
+    border-top:  1px solid #ccc;
+     float:  left;
+     width:  100%;
+     background:  white;
+}
+
+.menuProduto a  {
+    color:  #00AFF3;
+     font-family:  'neuron_demiboldregular';
+     font-size:  1.1em;
+     padding-left:  4%;
+     float:  left;
+     width:  100%;
+     line-height:  2.2em;
+}
+
+.menuProduto a:hover,  .menuProduto a:active  {
+    color:  #065492;
+}
+.menuProdutoPractia a  {
+    color:  #4CAB66;
+ }
+
+.menuProdutoPractia a:hover,  .menuProdutoPractia a:active  {
+    color:  #3D8952;
+}
+.menuProdutoLiva a  {
+    color:  #F99A3E;
+ }
+
+.menuProdutoLiva a:hover,  .menuProdutoLiva a:active  {
+    color:  #E67606;
+}
+.menuProdutoSensia a  {
+    color:  #26BFAF;
+ }
+
+.menuProdutoSensia a:hover,  .menuProdutoSensia a:active  {
+    color:  #21A396;
+}
+.menuProdutoDesea a  {
+    color:  #761B76;
+ }
+
+.menuProdutoDesea a:hover,  .menuProdutoDesea a:active  {
+    color:  #761B76;
+}
+
+
+.menuProdutoPractia .itemMenuProduto  {
+    background:  url('../img/mobile/common/bg/arrow-practia.png') 96% center no-repeat;
+}
+
+.menuProdutoLiva .itemMenuProduto  {
+    background:  url('../img/mobile/common/bg/arrow-liva.png') 96% center no-repeat;
+}
+
+.menuProdutoSensia .itemMenuProduto  {
+    background:  url('../img/mobile/common/bg/arrow-sensia.png') 96% center no-repeat;
+}
+
+.menuProdutoDesea .itemMenuProduto  {
+    background:  url('../img/mobile/common/bg/arrow-desea.png') 96% center no-repeat;
+}
+
+
+
+.itemMenuProduto  {
+    
+	width:  100%;
+    
+	background:  url('../img/mobile/common/bg/arrow-geral.png') 96% center no-repeat;
+    
+	border-bottom:  1px solid #ccc;
+     
+	height:  2.6em;
+    
+}
+
+.socialModelo  {
+    float:  left;
+     width:  100%;
+     text-align:  center;
+     padding-top:  30px;
+     padding-bottom:  30px;
+}
+
+.curtir,  .twittar  {
+    display:  inline-block;
+     width:  90px;
+}
+
+
+
+
+.btnDimensionador  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	background:  #efeeed url('../img/mobile/common/bg/arrow-right.png') 96% center no-repeat;
+     
+	margin-bottom:  2px;
+    
+}
+
+.btnDimensionador: hover span,  .btnDimensionador:active span  {
+    color:  #065492;
+}
+
+
+
+.btnDimensionador a  {
+    float:  left;
+     width:  100%;
+     padding-left:  4%;
+     padding-bottom:  12px;
+}
+
+.btnDimensionador span  {
+    color:  #00adf6;
+     font-family:  'neuron_demiboldregular';
+     font-size:  1.4em;
+     margin-top:  12px;
+     float:  left;
+     width:  88%;
+}
+
+.btnDimensionador p  {
+    color:  #444;
+     font-family:  'neuronitalic';
+     font-size:  1em;
+     float:  left;
+     width:  88%;
+}
+
+
+
+
+.cabecalhoProduto  {
+    float:  left;
+    	width:  100%;
+     position:  relative;
+     padding-top:  10px;
+     padding-bottom:  13px;
+}
+
+.cabecalhoProduto h2  {
+    position:  absolute;
+     top:  20px;
+     right:  0;
+     float:  right;
+     width:  auto;
+     font-size:  1.4em;
+}
+
+
+.textoProduto p  {
+    float:  left;
+     width:  100%;
+     margin-top:  15px;
+     color:  #999;
+      font-family:  'neuronregular';
+}
+
+
+.videoProduto  {
+    float:  left;
+     width:  100%;
+}
+
+
+
+
+
+
+/*.rowTresCaracteristicas  {
+    position:  relative;
+     float:  left;
+     width:  100%;
+     height:  200px;
+}
+*/
+
+.tresCaracteristicas  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+ }
+
+.caracteristicaBig  {
+     display:  inline-block;
+     width:  200px;
+      white-space:  normal;
+     margin-right:  15px;
+     padding-left:  15px;
+}
+
+.caracteristicaBig img  {
+    float:  left;
+     width:  100%;
+ }
+
+.caracteristicaBig span  {
+    float:  left;
+     color:  #444444;
+     font-family:  'neuron_boldregular';
+     font-size:  1.4em;
+     margin-top:  5px;
+}
+
+.caracteristicaBig p  {
+    float:  left;
+     color:  #999999;
+     font-family:  'neuronregular';
+     font-size:  0.9em;
+     margin-top:  3px;
+}
+
+
+
+
+
+
+#scrollbar1  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar1 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+ }
+
+#scrollbar1 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar1 .thumb .end, 
+#scrollbar1 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar1 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar1 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar1 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*top:  250px;
+    */ }
+#scrollbar1 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar1 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+                    
+#scrollbar1 *,  #scrollbar2 *,  #scrollbar3 *,   #scrollbar4 *,   #scrollbar5 *  {
+    
+	-webkit-transition:  all 0.4s ease;
+    
+	-moz-transition:  all 0.4s ease;
+    
+	-o-transition:  all 0.4s ease;
+    
+	-ms-transition:  all 0.4s ease;
+    
+	transition:  all 0.4s ease;
+    
+}
+
+
+
+#scrollbar2  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar2 .viewport  {
+     width:  100%;
+      overflow:  hidden;
+     position:  relative;
+     float:  left;
+}
+
+#scrollbar2 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar2 .thumb .end, 
+#scrollbar2 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar2 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar2 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar2 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*top:  190px;
+    */ }
+#scrollbar2 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar2 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+.containerCaracteristicas  {
+    float:  left;
+     width:  900px;
+     text-align: center;
+}
+
+.caracteristicas  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+     text-align:  left;
+
+}
+
+.caracteristicaGeral  {
+    display:  block;
+    float: left;
+     width:  250px;
+     white-space:  normal;
+     margin-right:  15px;
+     padding-left:  15px;
+     text-align:  left;
+}
+
+.caracteristicaGeral img  {
+    float:  left;
+     background:  #00AFF3;
+     margin-right: 10px;
+     margin-bottom: 10px;
+
+}
+
+.caracteristicaGeral span  {
+     color:  #444444;
+     font-family:  'neuron_lightitalic';
+     font-size:  1.4em;
+     padding-top:  5px;
+     display:  block;
+     float: left;
+     width: 150px;
+     margin-top: -8px;
+}
+
+.caracteristicaGeral p  {
+     color:  #999999;
+     font-family:  'neuronregular';
+     font-size:  14px;
+     width: 150px;
+     float: left;
+ }
+
+
+
+
+
+
+
+
+
+#scrollbar3  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar3 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+     float:  left;
+}
+
+#scrollbar3 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar3 .thumb .end, 
+#scrollbar3 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar3 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar3 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar3 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*bottom:  0;
+    */ }
+#scrollbar3 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar3 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+.produtosRelacionados  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+     text-align:  center;
+ }
+
+.especificacoesPorProduto  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+     text-align:  center;
+ }
+
+.especificacao  {
+    display:  inline-block;
+     width:  300px;
+     white-space:  normal;
+     margin-right:  8px;
+     margin-left:  8px;
+     text-align:  left;
+     border:  2px solid transparent;
+}
+.coluna  {
+    float:  left;
+     width:  100%;
+     line-height:  1.8em;
+     border-top:  1px solid #fbf9f9;
+ }
+	
+.coluna b  {
+    background:  #e1e0e0;
+     float:  left;
+     width:  65%;
+     font-size:  0.6em;
+     color:  #77797d;
+     padding-left:  13px;
+}
+
+.coluna i  {
+    font-weight:  normal;
+     font-style:  normal;
+ }
+
+.coluna span  {
+    float:  right;
+     width:  35%;
+     text-align:  center;
+     color:  #999999;
+     font-size:  0.6em;
+     background:  white;
+}
+
+
+
+.especificacaoPractia:active,  .especificacaoPractia:hover  {
+    border:  2px solid #4cab66;
+}
+
+.especificacaoLiva:active,  .especificacaoLiva:hover  {
+    border:  2px solid #F99A3E;
+}
+
+.especificacaoSensia:active,  .especificacaoSensia:hover  {
+    border:  2px solid #26BFAF;
+}
+
+.especificacaoDesea:active,  .especificacaoDesea:hover  {
+    border:  2px solid #922193;
+}
+
+
+
+
+
+
+#scrollbar4  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar4 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+     float:  left;
+}
+
+#scrollbar4 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar4 .thumb .end, 
+#scrollbar4 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar4 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar4 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar4 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*bottom:  0;
+    */ }
+#scrollbar4 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar4 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+.containerSaberAntes  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+     text-align:  center;
+}
+
+.saberAntes  {
+    display:  inline-block;
+     width:  150px;
+     white-space:  normal;
+     margin-right:  5px;
+     margin-left:  5px;
+ }
+
+.saberAntes img  {
+     background:  #00AFF3;
+ }
+
+.saberAntes span  {
+    color:  #444444;
+     font-family:  'neuron_lightitalic';
+     font-size:  1.2em;
+}
+
+.saberAntes p  {
+     color:  #999999;
+     font-family:  'neuronregular';
+     font-size:  0.9em;
+ }
+
+.imgSaberAntes  {
+    float:  left;
+     width:  100%;
+     text-align:  center;
+}
+
+
+
+
+
+
+/* onde comprar produto */
+.introOndeComprarProduto  {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+
+.introOndeComprarProduto div {
+    background: url(../img/site/common/bg/bg-onde-comprar-pin.png) no-repeat;
+    padding-left: 80px;
+    margin: 13px 0px 10px;
+    overflow: hidden;
+    min-height: 82px;
+}
+
+.introOndeComprarProduto p {
+    color: #999;
+    font-family: 'neuronregular';
+    font-size: 0.9em;
+}
+
+.mapa  {
+    float:  left;
+     width:  100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* perguntas produto */
+.pergunta  {
+    float:  left;
+     width:  100%;
+     background:  #fbf9f9;
+}
+
+.titPergunta  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	background:  #dfdddf url('../img/mobile/common/bg/arrow-faq.png') 96% 19px no-repeat;
+    
+	min-height:  64px;
+    
+	margin-top:  1px;
+    
+	font-family:  'neuronitalic';
+    
+	color:  #444;
+    
+	font-size:  1.1em;
+    
+	padding-left:  4%;
+    
+	padding-top:  13px;
+    
+	padding-bottom:  13px;
+    
+}
+
+.titPergunta span  {
+    float:  left;
+     width:  80%;
+ }
+
+
+.respostaPergunta  {
+    float:  left;
+     width:  100%;
+     display:  none;
+     color:  #999999;
+     font-family:  'neuronregular';
+     padding-top:  10px;
+     padding-bottom:  25px;
+}
+
+
+.perguntaAberta .titPergunta  {
+    background-position:  96% -62px;
+}
+
+
+.perguntaGeral  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-geral.png') 96% 19px no-repeat;
+     color:  #00AFF3;
+}
+
+.perguntaPractia  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-practia.png') 96% 19px no-repeat;
+     color:  #4cab66;
+}
+
+.perguntaLiva  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-liva.png') 96% 19px no-repeat;
+     color:  #F99A3E;
+}
+
+.perguntaSensia  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-sensia.png') 96% 19px no-repeat;
+     color:  #26BFAF;
+}
+
+.perguntaDesea  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-desea.png') 96% 19px no-repeat;
+     color:  #922193;
+}
+
+.perguntaInstitucional  {
+    background:  #dfdddf url('../img/mobile/common/bg/arrow-faq-geral.png') 96% 19px no-repeat;
+     color:  #00AFF3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* PRODUTOS *********************/	
+.opcoesFiltro  {
+    
+	background:  #eeeeee;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	margin-bottom:  -1px;
+    
+	position:  relative;
+    
+}
+
+
+.btnFIltrar  {
+    float:  left;
+     margin-top:  23px;
+     margin-bottom:  25px;
+}
+
+.btnFIltrar a  {
+    
+	padding:  5px 20px;
+    
+	background:  #00AFF3;
+    
+	color:  white;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.2em;
+    
+	float:  left;
+    
+}
+
+.btnFIltrar a: hover,  .btnFIltrar a:active  {
+    background:  #065492;
+}
+
+
+.btnComparar  {
+    float:  right;
+     margin-top:  23px;
+     margin-bottom:  25px;
+ }
+
+.btnComparar a  {
+    
+	background:  white;
+    
+	color:  #00AFF3;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.2em;
+    
+	float:  left;
+    
+	position:  relative;
+     overflow:  hidden;
+    
+}
+
+.btnComparar a: hover,  .btnComparar a:active  {
+    color:  #065492;
+}
+
+.btnComparar i  {
+    
+	float:  left;
+    
+	padding:  3px 15px;
+    
+	font-style:  normal;
+    
+	border:  2px solid #b9e6fa;
+    
+}
+
+
+.btnComparar span  {
+    
+	color:  white;
+    
+	background:  #00AFF3;
+    
+	float:  right;
+    
+	padding:  5px 15px;
+    
+}
+
+
+
+
+
+.opcoesProduto  {
+    
+	background:  #00AFF3;
+    
+	float:  left;
+     
+	width:  100%;
+    
+	color:  white;
+    
+	display:  none;
+    
+}
+
+
+.setaProduto {
+    
+	display:  none;
+    
+	position:  absolute;
+    
+	bottom:  0;
+    
+	left:  0;
+    
+	z-index:  99;
+    
+	text-align:  center;
+    
+	width:  100%;
+    
+	height:  15px;
+    
+}
+
+
+
+
+.setaProduto img  {
+    background:  #00AFF3;
+}
+
+
+
+.colorPractia .setaProduto img {
+    	background-color:  #50aa69;
+ }
+
+.colorLiva .setaProduto img {
+     background-color:  #f78c20;
+ }
+
+.colorSensia .setaProduto img {
+     background-color:  #26BFAF;
+ }
+
+.colorDesea .setaProduto img {
+    	background-color:  #922193;
+ }
+
+
+
+.opcoesProdutoPractia  {
+    background:  #4CAB66;
+}
+ 
+.opcoesProdutoLiva  {
+    background:  #F99A3E;
+}
+ 
+.opcoesProdutoSensia  {
+    background:  #26BFAF;
+}
+ 
+.opcoesProdutoDesea  {
+    background:  #922193;
+}
+ 
+
+
+
+.barraHorizontalTable  {
+    
+	float:  left;
+    
+	height:  3px;
+    
+	width:  100%;
+    
+	background:  #553939;
+    
+	border-top:  1px solid #fff;
+    
+	border-bottom:  1px solid #fff;
+    
+	opacity:  0.1;
+    
+	-moz-opcaity:  0.1;
+    
+	filter:  alpha(opacity=10);
+    
+}
+
+
+
+
+.chamadaModelo  {
+    
+	float:  left;
+    
+	width:  90%;
+    
+	color:  white;
+    
+	margin-left:  4%;
+    
+	font-size:  0.8em;
+    
+	padding-top:  13px;
+    
+	padding-bottom:  13px;
+    
+}
+
+.linkOutroProduto  {
+    
+	float:  left;
+    
+	width:  60%;
+    
+	color:  white;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	padding-top:  13px;
+    
+	padding-bottom:  13px;
+    
+}
+
+
+.comparar  {
+    
+	float:  right;
+    
+	width:  38%;
+    
+	color:  white;
+    
+	margin-top:  22px;
+    
+
+}
+
+
+.comparar p  {
+    
+	opacity:  0.5;
+    
+	-moz-opcaity:  0.5;
+    
+	filter:  alpha(opacity=50);
+    
+	font-size:  0.8em;
+    
+	float:  right;
+    
+	margin-right:  10px
+}
+
+
+.wtCheckColors {
+    
+	display:  block;
+    
+	background:  url('../img/site/common/misc/misc.png') no-repeat -236px -284px;
+    
+	width:  16px;
+    
+	height:  16px;
+    
+	float:  right;
+    
+	background-color:  #fff;
+    
+	cursor:  pointer;
+    
+}
+.wtCheckActiveColors {
+    
+	background-color:  transparent;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* FAQ *********************/	
+.categoriaPergunta  {
+    
+	float:  left;
+     
+	width:  100%;
+    
+	background:  #efeeed url('../img/mobile/common/bg/arrow-categoria-faq.png') 96% center no-repeat;
+    
+	margin-top:  1px;
+    
+	min-height:  62px;
+    
+	padding-left:  4%;
+    
+}
+.categoriaPergunta span  {
+    
+	font-family:  'neuron_demiboldregular';
+     
+	float:  left;
+    
+	width:  100%;
+     
+	line-height:  1em;
+     
+	color:  #00adf6;
+     
+	font-size:  1.2em;
+    
+	padding-top:  12px;
+    
+}
+
+.categoriaPergunta p  {
+    
+	color:  #a0a0a0;
+    
+	font-family:  'neuronregular';
+    
+	float:  left;
+    
+	width:  100%;
+    
+	font-size:  0.9em;
+    
+	margin-top:  2px;
+    
+}
+
+
+
+
+.faqNaoRespondida  {
+    float:  left;
+     width:  100%;
+     color:  #444;
+ }
+
+.faqNaoRespondida h2  {
+    font-size:  1.1em;
+}
+
+.faqNaoRespondida span  {
+    font-family:  'neuron_lightitalic';
+     float:  left;
+     width:  100%;
+     margin-top:  3px;
+}
+
+.faqNaoRespondida p  {
+    font-family:  'neuronregular';
+     color:  #999;
+     font-size:  0.9em;
+     float:  left;
+     width:  100%;
+     margin-top:  4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* PRODUTO INTERNA *********************/	
+.ondeComprarInternaProduto  {
+    float:  left;
+     width:  100%;
+     text-align:  left;
+}
+
+.ondeComprarInternaProduto div {
+    background: url(../img/site/common/bg/bg-onde-comprar-pin.png) no-repeat;
+    padding-left: 80px;
+    margin: 13px 0px 10px;
+    overflow: hidden;
+    min-height: 82px;
+}
+
+.ondeComprarInternaProduto p  {
+    color:  #999;
+     font-family:  'neuronregular';
+     font-size:  0.9em;
+}
+
+
+
+#scrollbar5  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar5 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+     float:  left;
+}
+
+#scrollbar5 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar5 .thumb .end, 
+#scrollbar5 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar5 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar5 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar5 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*bottom:  0;
+    */ }
+#scrollbar5 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar5 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+
+
+
+#scrollbar6  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar6 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+     float:  left;
+}
+
+#scrollbar6 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar6 .thumb .end, 
+#scrollbar6 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar6 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar6 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar6 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*bottom:  0;
+    */ }
+#scrollbar6 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar6 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/********************* FILTRO *********************/	
+.itemfiltro  {
+    float:  left;
+     width:  100%;
+     background:  #fbf9f9;
+}
+
+.titFiltro  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	background:  #dfdddf url('../img/mobile/common/bg/flechas-menu.png') 96% 17px no-repeat;
+    
+	margin-top:  1px;
+    
+	font-family:  'neuron_demiboldregular';
+    
+	color:  #444;
+    
+	font-size:  1.1em;
+    
+	padding-left:  4%;
+    
+	padding-top:  13px;
+    
+	padding-bottom:  13px;
+    
+}
+
+.titFiltro span  {
+    float:  left;
+     width:  80%;
+ }
+
+
+.listaOpcoesFiltro  {
+    float:  left;
+     width:  100%;
+     display:  none;
+     color:  #999999;
+     font-family:  'neuronregular';
+ }
+
+
+.listaOpcoesFiltro label  {
+    float:  left;
+     width:  100%;
+     border-bottom:  1px solid #eeeeee;
+     padding-left:  4%;
+     padding-right:  4%;
+     padding-top:  13px;
+     padding-bottom:  13px;
+     font-size:  1.1em;
+}
+
+
+.listaOpcoesFiltro label:hover  {
+    background:  #e7f3fa;
+}
+
+
+.filtroAberto .titFiltro  {
+    background-position:  96% -16px;
+}
+
+
+
+
+
+.wtCheckColorsFiltro {
+    
+	display:  block;
+    
+	background:  url('../img/mobile/common/misc/misc.png') 0 -334px no-repeat;
+    
+	width:  21px;
+    
+	height:  21px;
+    
+	float:  right;
+    
+	background-color:  #fff;
+    
+	cursor:  pointer;
+    
+}
+.wtCheckActiveColorsFiltro {
+    
+	background-color:  #00AFF3;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* COMPARADOR *********************/	
+.topoComparador {
+    
+	background:  #EEEEEE;
+    
+	padding-top:  30px;
+    
+	border-bottom:  2px solid #00aff0;
+    
+}
+.abaComparador {
+    
+	display:  block;
+    
+	float:  left;
+    
+	padding:  14px 12px;
+     
+	background:  #fff;
+    
+	border-top:  2px solid #dfdddf;
+    
+	border-right:  2px solid #dfdddf;
+    
+	border-left:  2px solid #dfdddf;
+    
+	font-family:  "Verdana";
+    
+	font-size:  11px;
+    
+	color:  #999999;
+    
+	margin-right:  5px;
+    
+	text-overflow:  ellipsis;
+    
+	white-space:  nowrap;
+    
+	overflow:  hidden;
+    
+	max-width:  48%;
+    
+}
+.abaComparador: hover,  .abaComparador.Sel {
+    
+	background:  #00aff0;
+    
+	border-top:  2px solid #00aff0;
+    
+	border-right:  2px solid #00aff0;
+    
+	border-left:  2px solid #00aff0;
+    
+	color:  #fff;
+    
+	text-decoration:  none;
+    
+}
+
+
+
+
+.paginacaoComparador  {
+    position:  absolute;
+     width:  40%;
+     text-align:  right;
+     float:  left;
+     right:  0;
+     top:  25px;
+}
+
+.paginacaoComparador a  {
+    
+	width:  15px;
+     
+	height:  15px;
+     
+	-webkit-border-radius:  15px;
+     
+	-moz-border-radius:  15px;
+     
+	-ms-border-radius:  15px;
+     
+	-o-border-radius:  15px;
+     
+	border-radius:  15px;
+     
+	margin-left:  5px;
+     
+	margin-right:  5px;
+     
+	background:  transparent;
+     
+	border:  1px solid #00AFF3;
+    
+	position:  relative;
+     z-index:  999;
+     
+	display:  inline-block;
+     
+	overflow:  hidden;
+    
+	text-indent:  -9999px;
+    
+	white-space:  nowrap;
+    
+	overflow:  hidden;
+    
+	color:  transparent;
+    
+}
+
+
+
+
+.paginacaoComparador a: hover,  .paginacaoComparador a.selected  {
+    background:  #00AFF3;
+}
+
+.paginacaoComparador a span  {
+    text-indent:  -9999px;
+     overflow:  hidden;
+     font-size:  0;
+}
+
+
+
+
+
+
+/* sérgio */
+
+
+.carouselComparar {
+    
+	display:  block;
+    
+	position:  relative;
+    
+	height:  auto;
+    
+	overflow:  visible!important;
+    
+	width:  290px;
+    
+}
+.listaCarousel {
+    
+	display:  block;
+    
+	margin:  0 auto;
+    
+	width:  880px;
+    
+	margin-top:  -10px;
+    
+}
+.nextComparar {
+    
+	position:  absolute;
+    
+	top:  45%;
+    
+	right:  -35px;
+    
+	background:  url('../img/site/common/misc/misc.png') no-repeat -232px -238px;
+    
+	width:  19px;
+    
+	height:  35px;
+    
+}
+.nextComparar: hover {
+    
+	background-position:  -179px -238px;
+    
+}
+.prevComparar {
+    
+	position:  absolute;
+    
+	top:  45%;
+    
+	left:  -35px;
+    
+	background:  url('../img/site/common/misc/misc.png') no-repeat -258px -238px;
+    
+	width:  19px;
+    
+	height:  35px;
+    
+}
+.prevComparar: hover {
+    
+	background-position:  -205px -238px;
+    
+}
+.itemProdutoComparar {
+    
+	display:  block;
+    
+	float:  left;
+    
+	width:  290px;
+    
+	position:  relative;
+    
+	padding-top:  15px;
+    
+}
+.txtCompare {
+    
+	width:  240px;
+    
+	margin:  0 auto;
+    
+	float:  none;
+    
+	font-family:  "neuron_extralightitalic";
+    
+	font-size:  18px;
+    
+	line-height:  18px;
+    
+	padding:  40px 0 0 0;
+    
+	color:  #00AFF3;
+    
+}
+.txtCompareSub {
+    
+	width:  260px;
+    
+	margin:  0 auto;
+    
+	float:  none;
+    
+	font-family:  "Verdana";
+    
+	font-size:  11px;
+    
+	padding:  10px 0;
+    
+	color:  #999;
+    
+}
+.thumbProdutoCompare {
+    
+	/*width:  290px;
+    */
+	padding-top:  20px;
+    
+}
+.produtoCompare {
+    
+	width:  290px;
+    
+	padding-bottom:  20px;
+    
+}
+.tagRemover {
+    
+	display:  block;
+    
+	position:  absolute;
+    
+	right:  18px;
+    
+	top:  0px;
+    
+	background:  #f07777;
+    
+	width:  71px;
+    
+	height:  20px;
+    
+	line-height:  20px;
+    
+	font-family:  "Verdana";
+    
+	color:  #fff;
+    
+	text-align:  center;
+    
+	font-size:  11px;
+    
+	overflow:  visible;
+    
+}
+.tagRemover: hover {
+    
+	text-decoration:  none;
+    
+	background:  #dc6e6e
+}
+.listaCarousel .barraProdutos {
+    
+	margin-top:  9px;
+    
+}
+
+.titInfo {
+    
+	display:  block;
+    
+	background:  #00aff0;
+    
+	height:  36px;
+    
+	cursor:  pointer;
+    
+}
+.titInfo h3 {
+    
+	font-family:  "Verdana";
+    
+	color:  #fff;
+    
+	text-indent:  20px;
+    
+	font-weight:  bold;
+    
+	font-size:  14px;
+    
+	padding-top:  10px;
+    
+}
+.menos {
+    
+	display:  block;
+    
+	float:  right;
+    
+	margin-top:  -11px;
+    
+	margin-right:  18px;
+    
+	width:  13px;
+    
+	height:  13px;
+    
+	background:  url('../img/site/common/misc/misc.png') no-repeat -145px -272px;
+    
+	padding:  2px;
+     
+}
+
+.infoTable {
+    
+	display:  block;
+    
+	float:  left;
+    
+	width:  60%;
+    
+	height:  auto;
+    
+}
+.rowChamadaInfo {
+    
+	width:  99%;
+    
+	color:  #77797d;
+    
+	text-align:  left;
+    
+	background:  #dadada;
+    
+	margin-bottom:  1px;
+    
+	height:  30px;
+    
+	line-height:  30px;
+    
+	/*padding:  8px 4% 8px 15px;
+    */
+	font-family:  "Verdana";
+     
+	padding-left:  15px;
+    
+	font-size:  0.7em;
+    
+}
+.rowChamadaInfo p {
+    
+	color:  #00aff0;
+    
+	display:  inline;
+    
+}
+.contentInfo {
+    
+	display:  block;
+    
+	float:  left;
+    
+	margin-left:  0.7em;
+     
+	width:  244px;
+    
+}
+
+.detalhesTable  {
+    
+	float:  right;
+    
+	width:  40%;
+    
+}
+
+.rowInfo {
+    
+	display:  block;
+    
+	/*width:  244px;
+    */
+	width:  100%;
+    
+	float:  left;
+    
+	background-color:  #fff;
+    
+	/*padding:  8px 0;
+    */
+	height:  30px;
+    
+	line-height:  30px;
+    
+	margin-bottom:  1px;
+    
+	font-family:  "Verdana";
+    
+	font-size:  0.7em;
+    
+	text-align:  center;
+    
+	color:  #77797d
+}
+.inicioCarousel {
+    
+	display:  block;
+    
+}
+.tableInformacoes {
+    
+	overflow:  hidden;
+    
+	position:  relative;
+    
+}
+.mais {
+    
+	background:  url('../img/site/common/misc/misc.png') no-repeat -145px -251px;
+    
+	width:  13px;
+    
+	height:  13px;
+    
+	margin-top:  -16px;
+    
+}
+.notOk {
+    
+	visibility:  hidden;
+    
+}
+.isOk {
+    
+	background:  url('../img/site/common/bg/ok.png')  #fff  50% 50% no-repeat;
+    
+}
+
+.menuModelo a {
+    
+	border-right:  1px solid #e5e5e5;
+     
+}
+.menuModelo a: first-child {
+    
+	border-left:  1px solid #e5e5e5;
+     
+	border-right:  none;
+     
+}
+
+
+
+
+/* sérgio */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* NOTÍCIAS *********************/	
+.campoData  {
+    float:  left;
+     width:  42%;
+}
+
+.campoData input  {
+    width:  82%;
+}
+
+.ate  {
+    
+	float:  left;
+     
+	width:  16%;
+     
+	text-align:  center;
+     
+	margin-top:  30px;
+     
+	color:  #999999;
+    
+	font-size:  0.8em;
+    
+	font-family:  Verdana,  Geneva,  Tahoma,  sans-serif;
+    
+}
+
+
+
+.release  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	border:  1px solid #eeeeee;
+    
+	background:  white;
+    
+	margin-top:  40px;
+    
+	position:  relative;
+    
+	padding:  13px;
+    
+}
+
+.release img  {
+    
+	width:  100%;
+    
+	height:  100%;
+    
+	position:  absolute;
+    
+	left:  0;
+    
+	top:  0;
+    
+}
+
+.release span  {
+    
+	color:  #c5c5c5;
+    
+	font-size:  0.7em;
+    
+	position:  relative;
+    
+}
+
+.release h2  {
+    
+	color:  #00AFF3;
+    
+	margin-top:  10px;
+    
+	font-size:  1.1em;
+    
+	line-height:  1.1em;
+    
+	position:  relative;
+    
+}
+
+.release p  {
+    
+	color:  #999999;
+    
+	font-family:  'neuronregular';
+    
+	font-size:  0.9em;
+    
+	float:  left;
+    
+	width:  100%;
+    
+	margin-top:  10px;
+    
+	position:  relative;
+    
+}
+
+.tagRelease  {
+    
+	position:  absolute;
+    
+	top:  -12px;
+    
+	right:  15px;
+    
+	background:  #dfdddf;
+    
+	color:  #999999;
+    
+	font-size:  0.8em;
+    
+	padding:  3px 10px;
+    
+}
+
+
+.release: hover h2,  .release:active h2 {
+    color:  #065492;
+}
+
+
+
+
+.cabecalhoRelease  {
+    float:  left;
+     width:  100%;
+     margin-top:  10px;
+}
+
+
+.titRelease  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	margin-bottom:  15px;
+    
+}
+
+.dataRelease  {
+    
+	color:  #c5c5c5;
+    
+	font-size:  0.7em;
+    
+	float:  left;
+    
+	margin-top:  4px;
+    
+}
+
+.tagReleaseInterna  {
+    
+	float:  left;
+    
+	margin-left:  15px;
+    
+	background:  #dfdddf;
+    
+	color:  #999999;
+    
+	font-size:  0.8em;
+    
+	padding:  3px 10px;
+    
+}
+
+
+.conteudoRelease span  {
+    float:  left;
+     width:  100%;
+     margin-top:  30px;
+     font-family:  'neuronitalic';
+     font-size:  1.1em;
+     color:  #444;
+}
+
+.conteudoRelease p  {
+    float:  left;
+     width:  100%;
+     margin-top:  25px;
+     font-family:  'neuronregular';
+     font-size:  0.9em;
+     color:  #999;
+     line-height:  1.3em;
+}
+
+
+.fonteNoticia  {
+    float:  left;
+     width:  100%;
+     margin-top:  40px;
+}
+
+.fonteNoticia a  {
+    
+	color:  #00AFF3;
+     
+	background:  url('../img/mobile/common/misc/misc.png') 0 -23px no-repeat;
+     
+	padding-left:  17px;
+     
+	font-family:  'neuron_demiboldregular';
+    
+	font-size:  1.1em;
+    
+}
+
+.fonteNoticia a: hover,  .fonteNoticia a:active  {
+    color:  #065492;
+}
+
+.sliderReleases  {
+    float:  left;
+     width:  100%;
+     margin-top:  40px;
+ }
+
+.sliderReleases li  {
+    display:  block;
+     float:  left;
+     width:  100%;
+}
+
+.sliderReleases li img  {
+    float:  left;
+     width:  100%;
+}
+
+.sliderReleases li span  {
+    float:  left;
+     width:  100%;
+     margin-top:  5px;
+     font-family:  'neuronregular';
+     font-size:  0.8em;
+     color:  #999;
+     line-height:  1.3em;
+}
+
+
+.rowPagerRelease  {
+    float:  left;
+     width:  100%;
+     position:  relative;
+}
+
+.containerPaginacaoReleases  {
+    width:  70%;
+     float:  left;
+     margin-left:  15%;
+     margin-top:  25px;
+ }
+
+.paginacaoReleases  {
+     display: block;
+      float:  left;
+     width:  100%;
+     position:  relative;
+ }
+
+.paginacaoReleases li  {
+    display: block;
+     float:  left;
+     width:  50%;
+     margin-left:  5px;
+     margin-right:  5px;
+}
+
+.paginacaoReleases li a  {
+    display: block;
+      float:  left;
+     width:  100%;
+}
+
+.paginacaoReleases li a img  {
+    display: block;
+      float:  left;
+     width:  100%;
+ }
+
+
+.prevRelease  {
+    
+	background:  url('../img/mobile/common/bg/arrow-release.png') 0 0 no-repeat;
+    
+	width:  9px;
+    
+	height:  15px;
+    
+	position:  absolute;
+    
+	top:  45%;
+    
+	left:  3%;
+    
+}
+
+.nextRelease  {
+    
+	background:  url('../img/mobile/common/bg/arrow-release.png') -52px 0 no-repeat;
+    
+	width:  9px;
+    
+	height:  15px;
+    
+	position:  absolute;
+    
+	top:  45%;
+    
+	right:  3%;
+    
+}
+
+
+
+
+.scrollReleases  {
+    float:  left;
+     width:  100%;
+     white-space:  nowrap;
+     text-align:  center;
+}
+
+.scrollReleases .release  {
+    display:  inline-block;
+     text-align:  left;
+     width:  260px;
+     white-space:  normal;
+     margin-right:  4px;
+     margin-left:  4px;
+     float:  none;
+ }
+
+
+
+
+
+
+#scrollbar6  {
+     width:  100%;
+     clear:  both;
+ }
+
+#scrollbar6 .viewport  {
+     width:  100%;
+     overflow:  hidden;
+     position:  relative;
+ }
+
+#scrollbar6 .overview  {
+     list-style:  none;
+     position:  absolute;
+     left:  0;
+     top:  0;
+ }
+
+#scrollbar6 .thumb .end, 
+#scrollbar6 .thumb  {
+     background-color:  #00AFF3;
+ }
+
+#scrollbar6 .scrollbar  {
+     position:  relative;
+     float:  right;
+     width:  15px;
+ }
+
+#scrollbar6 .track  {
+     background-color:  transparent;
+     height:  100%;
+     width: 13px;
+     position:  relative;
+     padding:  0 1px;
+ }
+
+#scrollbar6 .thumb  {
+     height:  2px;
+     width:  13px;
+     cursor:  pointer;
+     overflow:  hidden;
+     position:  absolute;
+     /*top:  250px;
+    */ }
+#scrollbar6 .thumb .end  {
+     overflow:  hidden;
+     height:  5px;
+     width:  13px;
+ }
+
+#scrollbar6 .disable {
+     display:  none;
+ }
+
+.noSelect  {
+     user-select:  none;
+     -o-user-select:  none;
+     -moz-user-select:  none;
+     -khtml-user-select:  none;
+     -webkit-user-select:  none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lblInputOpcional{ position:absolute; top:0; right:10px; font:italic 12px/44px Verdana,Geneva,sans-serif; color:#c9c9c9; }
+
+.ondeComprarProduto .txtMsgErro{ font-weight:700; font-size:16px; color:#EE7272; float:left; padding:10px 0 0; display:none; }
+.ondeComprarProduto .msgForm{
+	width:100%;
+	padding:10px 0 0;
+	display:none;
+	clear:both;
+}
+.ondeComprarProduto .msgForm span{ font-weight:700; font-size:16px; color:#01ADF7; text-align:center; display:block; }
+.ondeComprarProduto .errorValidate { border-color:#ee7272; }
+
+
+/********************* DOWNLOADS *********************/	
+.download  {
+    float:  left;
+     width:  100%;
+     background:  #efeeed;
+     margin-top:  1px;
+     padding-top:  7px;
+     padding-bottom:  9px;
+}
+
+.download p  {
+    float:  left;
+     width:  100%;
+     color:  #00aef3;
+     font-size:  1em;
+     font-family:  'neuronitalic';
+}
+
+.download span  {
+    
+	background:  url('../img/mobile/common/misc/misc.png') 0 -312px no-repeat;
+    
+	float:  left;
+     
+	width:  100%;
+     
+	color:  #999;
+     
+	font-size:  0.7em;
+    
+	padding-left:  11px;
+    
+	margin-top:  5px;
+    
+}
+
+
+.containerDownloads a: first-child  {
+    margin-top:  -1px;
+ }
+
+.containerDownloads a:last-child  {
+    margin-bottom:  -1px;
+     z-index:  999;
+     position:  relative;
+}
+
+
+.download:hover p  {
+    color:  #065492 }
+
+.downloadPractia span  {
+    background-position:  0 -272px;
+}
+
+.downloadPractia p  {
+    color:  #4cab66;
+}
+
+.downloadPractia:hover p, .downloadPractia:active p  {
+    color:  #3D8952;
+}
+
+.downloadLiva span  {
+    background-position:  0 -259px;
+}
+
+.downloadLiva p  {
+    color:  #F99A3E;
+}
+
+.downloadLiva:hover p, .downloadLiva:active p  {
+    color:  #E67606;
+}
+
+.downloadSensia span  {
+    background-position:  0 -285px;
+}
+
+.downloadSensia p  {
+    color:  #26BFAF;
+}
+
+.downloadSensia:hover p, .downloadSensia:active p  {
+    color:  #21A396;
+}
+
+.downloadDesea span  {
+    background-position:  0 -298px;
+}
+
+.downloadDesea p  {
+    color:  #922193;
+}
+
+.downloadDesea:hover p, .downloadDesea:active p  {
+    color:  #761B76;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* FALE CONOSCO *********************/	
+.obsContato  {
+    float:  left;
+     width:  100%;
+     text-align:  center;
+     color:  #999;
+     font-size:  0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* SOBRE A MIDEA *********************/	
+.imgSobre  {
+    float:  left;
+     width:  100%}
+.imgSobre img  {
+    float:  left;
+     width:  100%;
+}
+
+
+.textoSobre  {
+    
+	color:  #999999;
+    
+	font-family:  'neuronregular';
+    
+}
+
+.textoSobre h2  {
+    margin-top:  30px;
+}
+
+
+.textoSobre p  {
+    
+	float:  left;
+     
+	width:  100%;
+    
+	margin-top:  18px;
+    
+}
+
+.textoSobre span  {
+    
+	float:  left;
+     
+	width:  100%;
+    
+	font-family:  'neuronitalic';
+    
+}
+
+
+.btnSobre  {
+    
+	float:  left;
+     
+	width:  100%;
+     
+	background:  #efeeed url('../img/mobile/common/bg/flecha-garantia.png') 95% center no-repeat;
+    
+	height:  53px;
+    
+	margin-bottom:  1px;
+    
+	border-top:  1px solid #dfdddf;
+     
+	border-bottom:  1px solid #dfdddf;
+     
+}
+
+
+.btnSobre a  {
+    
+	float:  left;
+     
+	width:  87%;
+    
+	height:  53px;
+    
+	color:  #00acf6;
+    
+	font-size:  0.8em;
+    
+	padding-top:  9px;
+    
+	padding-left:  4%;
+    
+	font-weight:  700;
+    
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* RODAPÉ *********************/	
+.rodape  {
+    
+	float:  left;
+    
+	width:  100%;
+    
+	background:  #00adf6;
+    
+	padding-top:  15px;
+    
+	padding-bottom:  15px;
+    
+}
+
+
+.socialRodape  {
+    float:  left;
+    	width:  100%;
+    text-align:  center;
+ }
+
+.socialRodape a  {
+    display:  inline-block;
+     width:  30px;
+     height:  30px;
+     margin:  0.5%;
+}
+
+/*.facebook  {
+    background:  url('../img/mobile/common/misc/misc.png') 0 -50px;
+ }
+
+.linkedin  {
+    background:  url('../img/mobile/common/misc/misc.png') -35px -50px;
+ }
+
+.youtube  {
+    background:  url('../img/mobile/common/misc/misc.png') -70px -50px;
+ }*/
+
+
+.socialRodape a:hover,  .socialRodape a:active  {
+    opacity:  0.6;
+}
+
+
+.brivia  {
+    text-align:  center;
+ }
+
+.brivia a  {
+    font-size:  0.7em;
+     opacity:  0.4;
+}
+.brivia a:hover,  .brivia a:active  {
+    opacity:  1;
+}
+
+
+
+
+
+
+
+
+
+/* configuração geral de estilos */
+.colorGeral  {
+    color:  #00AFF3;
+}
+
+.colorGeral:hover,  .colorGeral:active  {
+    color:  #065492;
+}
+
+
+.colorPractia  {
+    color:  #4cab66;
+}
+
+.colorPractia:hover,  .colorPractia:active  {
+    color:  #3D8952;
+}
+
+.colorLiva  {
+    color:  #F99A3E;
+}
+
+.colorLiva:hover,  .colorLiva:active  {
+    color:  #E67606;
+}
+
+.colorSensia  {
+    color:  #26BFAF;
+}
+
+.colorSensia:hover,  .colorSensia:active  {
+    color:  #21A396;
+}
+
+.colorDesea  {
+    color:  #922193;
+}
+
+.colorDesea:hover,  .colorDesea:active  {
+    color:  #761B76;
+}
+
+
+.btnPractia  {
+    background:  #4cab66;
+}
+
+.btnPractia:hover,  .btnPractia:active  {
+    background:  #3D8952;
+}
+
+.btnLiva  {
+    background:  #F99A3E;
+}
+
+.btnLiva:hover,  .btnLiva:active  {
+    background:  #E67606;
+}
+
+.btnSensia  {
+    background:  #26BFAF;
+}
+
+.btnSensia:hover,  .btnSensia:active  {
+    background:  #21A396;
+}
+
+.btnDesea  {
+    background:  #922193;
+}
+
+.btnDesea:hover,  .btnDesea:active  {
+    background:  #761B76;
+}
+
+
+
+.colorPractiaSecundaria  {
+    color:  #3D8952;
+}
+
+.colorLivaSecundaria  {
+    color:  #E67606;
+}
+
+.colorSensiaSecundaria  {
+    color:  #21A396;
+}
+
+.colorDeseaSecundaria  {
+    color:  #065492;
+}
+
+
+
+
+.caracteristicaPractia img  {
+    background:  #4cab66;
+}
+
+.caracteristicaLiva img  {
+    background:  #F99A3E;
+}
+
+.caracteristicaSensia img  {
+    background:  #26BFAF;
+}
+
+.caracteristicaDesea img  {
+    background:  #922193;
+}
+
+
+
+
+
+
+::-webkit-input-placeholder  {
+     
+    color:  #444;
+     text-overflow:  ellipsis;
+     
+}
+: -moz-placeholder  {
+     
+    color:  #444 !important;
+     text-overflow:  ellipsis;
+     
+}
+: :-moz-placeholder  {
+     
+    color:  #444 !important;
+     text-overflow:  ellipsis;
+     
+}
+ /* for the future */
+: -ms-input-placeholder  {
+     
+    color:  #444 !important;
+     text-overflow:  ellipsis;
+     
+}
+
+.btnLupaPadrao  {
+    display:  none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    
+	.comparar {
+    
+		margin-top:  14px;
+    
+	}
+}
+
+.hoverBlockedMap {
+    
+    padding-bottom:  30px
+}
+.hoverBlockedMapBottom {
+    
+    margin-top:  0;
+    
+    padding-top:  30px
+}
+
+#blockedMap {
+    
+    height:  350px;
+    
+    width:  100%;
+    
+    position:  absolute;
+    top:  0;
+     
+    left:  0;
+     
+    z-index:  100
+}
+
+.input_hide{
+    visibility: hidden;
+    width: 100%
+}
+.backgroundFBNegativo{
+    padding-bottom: 200px;
+}
+.nomeProduto {
+    float: left;
+    width: 50%;
+    font-family: 'neuronitalic';
+    font-size: 24px;
+    line-height: 22px;
+    color: #00AFF3;
+}
+
+.nomeProduto:hover {color: #065492;}
+
+/*- MODAL -*/
+#overlayModal{ position:fixed; top:0; left:0; z-index:103; background-color:#000000; width:100%; height:100%; opacity:0.5; filter:alpha(opacity=50); }
+#modalPadrao{ position:absolute; top:180px; left:50%; z-index:104; margin-left:-50px; }
+#modalPadrao .wrapperModalPadrao{
+	position:relative;
+	z-index:1;
+	min-width:155px;
+	min-height:155px;
+}
+#modalPadrao .loader{
+	background:url(../img/site/common/img/loaderModal.gif) no-repeat;
+	width:32px;
+	height:32px;
+	position:absolute;
+	top:50%; left:50%;
+	z-index:2;
+	margin:-16px 0 0 -16px; }
+
+#modalPadrao .lk-fechar-modal{
+    position: absolute;
+    left: 268px;
+    z-index: 2;
+    background: url(../img/site/common/bg/lk-fechar-modal.png) no-repeat;
+    width: 57px;
+    height: 57px;
+}
+
+/*- Modal viva mais -*/
+.modal-viva-mais{ width:314px; margin:0 auto; }
+#modalPadrao.modal-viva-mais .lk-fechar-modal{ top:-30px; right:10px; }
+
+
+/*- Modal Instagram -*/
+
+.img-modal{
+    margin: 0 auto;
+    width: 270px;
+}
+.img-modal .principal{
+    width: 270px;
+}
+
+.link-modal {
+    position: absolute;
+    top: 183px;
+    left: 81px;
+}
+.duvida {
+    float: left;
+    width: 485px;
+    height: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.linhaDuvidas a {
+  width: 100%;
+  font-size: 0.9em; 
+  padding: 0 0 35px;
+}
+
+.duvida h3 {
+  font-size: 1em; 
+  color: #00AFF3; 
+  float: left
+}
+.duvida span {
+  float: right; 
+  font-size: 0.9em; 
+  color: #ccc;
+}	
+.duvida p {
+  float: left; 
+  width: 95%; 
+  font-size: 0.9em; 
+  padding: 0; 
+  margin: 3px 0 0 0; 
+  color: #999;
+}
+
+.duvida:hover {
+  text-decoration: none;
+}
+
+.duvida:hover h3 {
+  color: #065492; 
+}
+
+.duvida {
+  padding-left: 0;
+}
+.duvida .barraDuvidas {
+  display: none;
+}

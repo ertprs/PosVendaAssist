@@ -1,0 +1,1 @@
+../shadowbox_view_comunicado.php

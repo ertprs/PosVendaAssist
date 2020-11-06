@@ -1,0 +1,68 @@
+<style type="text/css">
+	#cloudBox {
+	    display: block;
+	    background-color: transparent;
+	    position: absolute;
+		font-size: 11px;
+		text-align: left;
+	    top:  0;
+	    left: 0;
+        padding: 32px 0 1em 1em;
+	/*	height: 70%;*/
+		margin: 20px auto;
+        overflow: hidden;
+		z-index: 450;
+	}
+	#cloudBox #fechar {
+		position: absolute;
+		bottom: 48px;
+		right:  64px;
+		width:  16px;
+		height: 16px;
+		font: normal bold 12px Verdana, Arial, Helvetica, sans-serif;
+		color:white;
+		cursor: pointer;
+		margin:0;padding:0;
+		vertical-align:top;
+		text-align:center;
+		background-color: #f44;
+		border:	1px solid #d00;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 2px 2px 2px #900;
+	}
+</style>
+
+<!--[if IE]>
+  	<style type="text/css">
+		#cloudBox {
+			margin:1em 15%;
+		}
+		#ei_container #msgErro {
+			color: #900;
+			background-color: #ff8080;
+		}
+	</style>
+<![endif]-->
+
+<script type="text/javascript">
+
+	function setCookie(c_name,value,domain,path,expiredays) {
+		var exdate=new Date();
+			exdate.setDate(exdate.getDate()+expiredays);
+		var c_domain   = (domain == null || domain == "") ? "" : ";domain="+domain;
+		var c_path     = (path == null || path == "") ? "" : ";path="+path;
+		var expireDate = (expiredays==null) ? "" : ";expires="+exdate.toUTCString();
+		document.cookie=c_name+ "=" +escape(value)+c_domain+c_path+expireDate;
+	}
+
+	function desfazerNuvem() {
+		setCookie('HDComunicadoJanela','ja_li');
+		document.getElementById('nuvem').style.display = 'none';
+	}
+
+</script>
+<div id="cloudBox">
+	<img id='nuvem' src='imagens/Nuvem_Fim_Janela_HD.png' style='margin:auto' />
+	<div id="fechar" onClick='desfazerNuvem()' title='Ocultar durante esta sessão'>X</div>
+</div>

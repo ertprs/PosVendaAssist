@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250" />
+    <meta name="generator" content="PSPad editor, www.pspad.com" />
+    <title>Regra de Cálculo de Km – COLORMAQ</title>
+	<script type="text/javascript" event="onload" for="window" language="JavaScript">
+	    function tamanho() {
+			var xx=480;
+			var y=10;
+			var x=window.screen.availWidth;
+			var yy=window.screen.availHeight;
+				x=(parseInt(x)/2)-(xx/2);// Calcula a posiçăo do centro horiz. da janela
+				yy=(parseInt(yy) - 40);
+				y=(parseInt(window.screen.availHeight) - yy)/2;
+			this.window.resizeTo(xx,yy);
+			this.window.moveTo(x,y);
+		}
+	</script>
+    <style type="text/css">
+/*<![CDATA[*/
+	body {
+		color: black;
+		background: white;
+		font-family: Verdana, Arial, Sans Serif;
+		font-size: 9pt;
+		line-height: 1.5em;
+		text-align: justify;
+		padding: 0 2px;
+		margin:35px 10px;
+	}
+
+	H1 {
+		background-color: #242946;
+	/*	Experimental, webkit-only */
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#242946), to(#DADFE8));
+		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType="0",StartColorStr=#242946,EndColorStr=#dadfe8);
+		border: 0px solid transparent;
+		/* Bordes redondeados, *SOLO CSS3* */
+	    border-radius: 8px;
+	    	-moz-border-radius: 8px;
+	    	-webkit-border-radius: 8px;
+		color: #DADFE8;
+		font-size: 1.5em;
+		font-weight: bold;
+		line-height: 3em;
+		text-align: center;
+		vertical-align: middle;
+	}
+	H3 {
+		color: #242946;
+		text-align: left;
+		padding-left: 2em;
+		font-size: 1.1em;
+	}
+
+	A#fechar {
+		background-color: #F99;
+		border: 2px solid #FCC;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		padding: 3px;
+		font-size: 0.8em;
+		color: navy;
+	/*  Para No-IE  */
+		position: fixed;
+		top: 3px;
+		right: 15px;
+		width: 12ex;
+		height: 1.7em;
+		opacity: 0.8;
+		filter: alpha(opacity=90);
+		vertical-align: baseline;
+	    border-radius: 3px;
+	    	-moz-border-radius: 3px;
+	    	-webkit-border-radius: 3px;
+	/* Para IE  */
+		float: right;
+	}
+
+	.botao {
+		cursor: pointer;
+		background-color: #DDD;
+		color: #333;
+		padding: 0 0.7ex;
+		/* Bordes redondeados, *SOLO CSS3* */
+	    border-radius: 4px;
+	    	-moz-border-radius: 4px;
+	    	-webkit-border-radius: 4px;
+		border: 2px outset #999;
+	}
+	.botao:hover {	/* Para navegadores no-IE	*/
+		border: 2px inset #666;
+	}
+
+	p {
+	    margin-bottom: 1em;
+		border-bottom: 1px dashed #DADFE8;
+		padding: 2px 1ex 5px 1ex;
+	}
+    /*]]>*/
+    </style>
+
+	<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+
+    <style type="text/css">
+    <!--
+	a#fechar {position: absolute;}
+    //-->
+    </style>
+	<![endif]-->
+
+  </head>
+  <body onLoad="javascript:tamanho();">
+    <h1>
+      REGRA DE C&Aacute;LCULO DE KM – COLORMAQ
+    </h1>
+    <h3>
+      Para pagar Km, &eacute; necess&aacute;rio que o posto esteja com o "valor de km" na tela de cadastro de
+      posto.
+    </h3>
+    <p>
+      Na digita&ccedil;&atilde;o de OS, ao selecionar o produto, o sistema verifica qual a linha do produto, e
+      com esta informa&ccedil;&atilde;o &eacute; constatado se para esta linha existe atendimento de garantia (sem
+      deslocamento) ou garantia com descolamento de acordo com a tela <em>Postos Autorizados </em>x<em> Deslocamento</em> no menu cadastro.
+    </p>
+    <p>
+      Ao selecionar <strong>Garantia com Deslocamento</strong>, o posto dever&aacute; preencher os dados
+      do cliente e clicar na op&ccedil;&atilde;o <strong>calcular dist&acirc;ncia</strong> no quadro abaixo.
+    </p>
+    <p>
+      O sistema calcula a dist&acirc;ncia e permite que ele altere manualmente.
+    </p>
+    <p>
+      Se o posto alterar esta distancia, a OS entra em <span class="marked">auditoria de Km</span>.
+    </p>
+    <p>
+      Se a <strong>Qtde de Km.</strong> for mais que <b>50</b> Km, tamb&eacute;m entra em auditoria.
+    </p>
+    <p>
+      Se <strong>Qtde de Km.</strong> for maior que <b>20</b> Km, ele calcula o <em>valor do Km </em>x<em> Qtde de Km.</em>, sen&atilde;o <span class="u">zera</span> o valor do c&aacute;lculo.
+    </p>
+    <p>
+      No extrato existe uma regra que se existir mais de uma OS na mesma cidade finalizada o mesmo
+      dia, ent&atilde;o s&atilde;o zeradas as de menor quantidade de Km.
+    </p>
+    <br>
+	<a id="fechar" href="javascript:this.window.close();">
+		Fechar&nbsp;<SPAN class='botao'>X</SPAN>
+	</a>
+  </body>
+</html>

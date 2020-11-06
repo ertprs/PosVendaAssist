@@ -1,0 +1,5 @@
+{
+    "auditoria_unica": true,
+    "verifica_os_pedido_obrigatorio": true,
+    "nao_verifica_estoque": true
+}

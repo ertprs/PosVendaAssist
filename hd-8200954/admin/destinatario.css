@@ -1,0 +1,66 @@
+.btn_tamanho{ 
+	width: 75px; 
+}
+.btn_acoes{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+table.tabela tr  {
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b; 
+	width: 690px;
+}
+
+.td_nome{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 230px;
+
+}
+.td_email{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 230px;
+
+}
+.td_ativo{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 1px;
+
+}
+.td_acoes{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 160px;
+}
+
+.msg_sucesso{
+    background-color:#008000;
+    font: bold 14px "Arial";
+    color:#FFFFFF;
+    text-align:center;
+	width: 700px;
+}
+
+
+#nome{
+	width: 350px;
+}
+
+#email {
+	width: 275px;
+}

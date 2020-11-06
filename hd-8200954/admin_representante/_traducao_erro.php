@@ -1,0 +1,1 @@
+../_traducao_erro.php

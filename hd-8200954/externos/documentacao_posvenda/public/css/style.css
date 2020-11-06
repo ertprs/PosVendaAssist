@@ -1,0 +1,152 @@
+.container{
+    width: 940px;
+}
+
+body{
+
+    background: #fff;
+    background-image: url("../img/pattern-89ds.png");
+    background-repeat: repeat;
+
+}
+
+#env-geral{
+    min-height: 600px;
+}
+
+#marca{
+    margin: 5px 0 10px 0;
+}
+
+#env-menu-superior{
+    margin: 5px 0 0 0;
+}
+
+#documentacao{
+    border-left: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding-left: 5px;
+    margin-bottom: 10px;
+
+}
+
+.linha{
+    background: #eee;
+    padding: 2px;
+    margin: 2px 0 0 0;
+}
+
+.linha div{
+    background: #cbcbcb;
+    height: 50px;
+}
+
+.btn_excel {
+    cursor: pointer;
+    width: 185px;
+    margin: 0 auto;
+}
+
+.btn_excel span {
+    display: inline-block;
+}
+
+.btn_excel span img {
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    vertical-align: middle;
+}
+
+.btn_excel span.txt {
+    color: #FFF; 
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px 4px 4px 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4D8530;
+    background: -moz-linear-gradient(top, #559435 0%, #63AE3D 72%);
+    background: -webkit-linear-gradient(top, #559435 0%, #63AE3D 72%);
+    background: -o-linear-gradient(top, #559435 0%, #63AE3D 72%);
+    background: -ms-linear-gradient(top, #559435 0%, #63AE3D 72%);
+    background: linear-gradient(top, #559435 0%, #63AE3D 72%);
+    line-height: 18px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+#exemplo-pagina{
+    width: 600px;
+}
+
+#exemplo-pagina .row-fluid{
+    background: #eeeeee;
+}
+
+#exemplo-pagina .row-fluid .span10{    
+    color: #fff;        
+    margin-bottom: 2px;
+}
+
+#exemplo-pagina #cam1{
+    background: #585858;
+}
+#exemplo-pagina #cam2{
+    background: #858585;
+}
+#exemplo-pagina #cam3{    
+    background: #679194;
+}
+
+.table-botoes{
+    width: 700px !important;
+}
+
+.env-cont-pag #DataTables_Table_0_length{
+    margin: 0 0 0 10px;
+}
+
+.env-cont-pag #DataTables_Table_0_filter{
+    margin: 0 10px 0 0;
+}
+
+.rodape{
+    background: #363a60;
+    min-height: 100px;
+    padding: 10px 0 0 0;
+}
+
+.row-titulo-inferior{
+    margin-top: 45px;
+    padding: 10px 0 0 0;
+    border-top: 2px solid #f1cc08;
+}
+
+.titulo-inferior{
+    color: #fff;
+    text-align: center;
+}
+
+.list-rodape{
+    list-style: none;
+}
+
+.list-rodape a{
+    color: #fff;
+}
+
+.list-rodape a:hover{
+    color: #f1cc08;
+}
+
+.informacao-tecnica{
+    color: #fff;
+    border-left: 1px dotted #f1cc08;
+    padding-right: 10px;
+    height: 90px;
+}
+
+.informacao-tecnica ul{
+    list-style: none;
+}

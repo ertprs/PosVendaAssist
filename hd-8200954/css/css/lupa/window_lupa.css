@@ -1,0 +1,85 @@
+/*
+	Éderson Sandre - 01/06/2011
+*/
+@import url("../../modal/modal-message.css");
+@import url("../../table/demo_table_jui.css");
+@import url("../../table/jquery-ui-1.7.2.custom.css");
+
+.lp_header{
+	background: #000;
+	height:80px;
+	background: url('../../table/imagem/ui-bg_highlight-soft_75_cccccc_1x100.png');
+	position: relative;
+}
+
+.lp_header a.lp_h_btn_fechar{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+.lp_header div{
+	text-align: center;
+	padding-top: 22px;
+	font-size: 28px;
+	color: #FCFCFC;
+}
+
+.lp_pesquisando_por{
+	background: #FCFCFC;
+	padding: 10px;
+	text-align: center;
+	color: #666;
+}
+
+.lp_msg_erro{
+	padding: 10px;
+	text-align: center;
+	color: #666;
+	margin: 10px;
+	color: #CC3333; 
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.lp_tabela{
+	margin: 0 auto;
+	width: 99%;
+	border: 1px solid #596D9B;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+
+.lp_tabela th{
+	background: #596D9B;
+	padding: 3px 2px;
+	text-align: center;
+	color: #CCC;
+}
+
+.lp_tabela td{
+	padding: 2px;
+	text-align: left;
+	color: #333;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.lp_tabela td a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
+
+.lp_fechar_pesquisa{
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+}

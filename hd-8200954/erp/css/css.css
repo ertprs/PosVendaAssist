@@ -1,0 +1,541 @@
+/*****************************
+css.css
+autor: Marcos Teruo Ouchi
+Company: Telecontrol Networking - Brasil
+Date: Outubro de 2003
+*****************************/
+
+/*****************************
+ELEMENTOS DE POSICIONAMENTO
+*****************************/
+
+#container {
+  width: 700px;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-color: white;
+}
+
+#menu {
+  width: 100%;
+  padding:0px 0px 0px 0px;
+  margin:10px 0px 0px 0px;
+  background-image: url("../imagens/fundo-cabecalho.png");
+}
+
+#submenu {
+  width: 100%;
+  padding:0px 30px 0px 30px;
+  margin:0px 0px 5px 0px;
+/*  background-image: url("../imagens/fundo-submenu.png");*/
+  text-align: left;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+}
+
+
+#subBanner {
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  background-image: url("../imagens/appatterns.gif");
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+}
+
+
+#page {
+	width: 100%;
+	border: 1px dotted #000000;
+	text-align: left;
+	}
+
+#contentleft {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+	}
+
+#contentleft2 {
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	}
+
+#contentcenter {
+	padding-left: 5px;
+	padding-right: 5px;
+	float:left;
+	background: transparent;
+	}
+
+
+
+/*****************************
+ELEMENTOS BASICOS
+*****************************/
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding:  0px 0px 0px 0px;
+}
+
+p, div {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#input_texto {
+	BORDER-RIGHT: #888888 1px solid;
+	BORDER-TOP: #888888 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #f0f0f0
+}
+
+h1 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #888888;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	line-height: 1.6em;
+}
+
+h2 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+	}
+
+h3 {
+	text-align: left;
+	font: normal x-small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+
+
+}
+
+h4 {
+	font: bold small Verdana, Arial, Helvetica, sans-serif;
+	color: #63798D;
+}
+
+h5 {
+	background-color: #BBBBBB;
+	text-align:left;
+	color: #fff;
+	font-weight: BOLD;
+	font-size:    xx-small;
+}
+
+img {
+	border: 0px;
+}
+
+a:link {
+	color: #63798D;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #63798D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* FORMULÁRIOS */
+
+.cellbox {
+	BORDER-RIGHT: #888888 1px solid;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #888888 1px solid;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 5px;
+	BORDER-LEFT: #888888 1px solid;
+	PADDING-TOP: 5px;
+	BORDER-BOTTOM: #888888 1px solid
+}
+.box-header {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px
+}
+.frm {
+	BORDER-RIGHT: #888888 1px solid;
+	BORDER-TOP: #888888 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #f0f0f0
+}
+
+.frm-on {
+	BORDER-RIGHT: rgb(70,90,128) 1px solid;
+	BORDER-TOP: rgb(70,90,128) 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: rgb(70,90,128) 1px solid;
+	COLOR: rgb(70,90,128);
+	BORDER-BOTTOM: rgb(70,90,128) 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: rgb(177,203,255)
+}
+
+.frm-on-os {
+
+	BORDER-TOP: silver 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	COLOR: #808080;
+	BORDER-BOTTOM: silver 1px solid;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #EAEAEA
+}
+
+.text-header {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+.header {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 16pt;
+	COLOR: rgb(0,128,255);
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+/*****************************
+Em Baixo
+*****************************/
+#tituloslinks {
+  float:left;
+  padding:0px 0px 0px 0px ;
+  width: 100%;
+  background:#CE0000;
+}
+
+#tituloslinks2 {
+  float:left;
+  padding:0px 0px 0px 0px ;
+  width: 100%;
+  background:#FFFFFF;
+
+}
+
+#links {
+  width:760px;
+}
+
+.caixalinks, .caixalinksprimeira  {
+  float:left;
+  width:188px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+  text-align: left;
+  background: url(../imagens/fundoponto.gif) repeat-Y left white;
+  padding:6px 0px 0px 0px ;
+  height:250px;
+
+}
+
+.caixalinks div, .caixalinksprimeira div {
+  background: url(../imagens/redBullet.gif) no-repeat top left white;
+  padding:0px 0px 0px 7px;
+  margin:0px 0px 5px 5px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+
+#links a, #links a:visited {
+  color:#9C9A9C;
+  text-decoration:none;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+#links a:hover, #links a:active {
+  color:black;
+  text-decoration:underline;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+.caixalinksprimeira {
+  width:188px;
+  font:bold xx-small Verdana, Arial, sans-serif;
+}
+
+
+#nomeposto {
+	width: 650px;
+	height: 30px;
+	float: right;
+	text-align: right;
+	padding: 0px 15px 0px 0px;
+}
+
+/*
+the 3 collumns will act as containers for the content blocks.
+They all will float left and will be given the correct right-margin
+To get around using the box model hack, the col divs have been given an exact width
+and the padding, margin and border elements have been added to the content elements
+*/
+
+#leftCol {
+	float: left;
+	width: 205px;
+}
+
+#middleCol {
+	float: left;
+	width: 225px;
+}
+
+#rightCol {
+	float: left;
+	width: 205px;
+}
+
+#mainCol {
+	float: center;
+	width: 650px;
+	background-color: white;
+}
+
+/* on IE5.x dotted lines only show if they are 2px. using box model hack to get round this */
+
+.contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	margin-bottom: 5px;
+	margin-right:  5px;
+	margin-left:   5px;
+	padding:      10px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	border: 1px dotted silver;
+}
+
+html>body contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	border: 1px dotted #97D0EC;
+}
+
+.contentBlockRight, .contentBlockBig {
+	margin-right: 0px;
+}
+.botao{
+	height:30;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+}
+
+#footer {
+  width: 100%;
+  border: 0px solid white;
+  padding:10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  background: white;
+  color: #E0E0E0;
+  text-align: right;
+  font: bold xx-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+.error {
+	font-size: 10px;
+	color: white;
+	text-align: center;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:5px;
+	margin-top:5px;
+	border:#485989 1px solid; background-color: #FF0000;
+
+}
+
+.Erro{
+	font-size: 10px;
+	color:#FFF;
+	text-align: center;
+	border:#485989 1px solid; background-color: #990000;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.ajuda{
+	padding:2px;
+	border:1px solid gray;
+	background-color:#FFBAB3;
+	color:#B60303;
+}
+
+.ok{
+	font-family: Verdana;
+	font-size: 12px;
+	color:black;
+	font-weight:bold;
+	border-top:#00B31F 1px solid; background-color: #ADFAAF;
+	border-bottom:#00B31F 1px solid; background-color: #ADFAAF;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.miudinho{
+	color:#B7B7B7;
+	font-size:9px;
+}
+
+
+a.button {
+	background: transparent url('../imagens/bg_button_cinza_a.gif') no-repeat scroll top right;
+	color: #444;
+	display: block;
+	float: left;
+	font-weight:bold;
+	font: normal 12px arial, sans-serif;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 18px;
+	text-decoration: none;
+}
+
+a.button span {
+	background: transparent url('../imagens/bg_button_cinza_span.gif') no-repeat;
+	display: block;
+	font-weight:bold;
+	line-height: 14px;
+	padding: 5px 0 5px 18px;
+}
+
+a.button:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none;
+}
+
+a.button:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px;
+}
+
+a.button:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+
+a.button_vermelho {
+	background: transparent url('../imagens/bg_button_vermelho_a.gif') no-repeat scroll top right;
+	color: #444;
+	display: block;
+	float: left;
+	font-weight:bold;
+	font: normal 12px arial, sans-serif;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 18px;
+	text-decoration: none;
+}
+
+a.button_vermelho span {
+	background: transparent url('../imagens/bg_button_vermelho_span.gif') no-repeat;
+	display: block;
+	font-weight:bold;
+	line-height: 14px;
+	padding: 5px 0 5px 18px;
+}
+
+a.button_vermelho:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none;
+}
+
+a.button_vermelho:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px;
+}
+
+a.button_vermelho:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button_vermelho:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+a.button_verde {
+	background: transparent url('../imagens/bg_button_verde_a.gif') no-repeat scroll top right;
+	color: #444;
+	display: block;
+	float: left;
+	font-weight:bold;
+	font: normal 12px arial, sans-serif;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 18px;
+	text-decoration: none;
+}
+
+a.button_verde span {
+	background: transparent url('../imagens/bg_button_verde_span.gif') no-repeat;
+	display: block;
+	font-weight:bold;
+	line-height: 14px;
+	padding: 5px 0 5px 18px;
+}
+
+a.button_verde:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none;
+}
+
+a.button_verde:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px;
+}
+
+a.button_verde:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button_verde:active span {
+	background-position: bottom left;
+	padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+ input.text, textarea.text {
+	border: 1px solid #000;
+	background: #fff;
+}

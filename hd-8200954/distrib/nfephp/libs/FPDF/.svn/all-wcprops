@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/license.txt
+END
+example.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/example.php
+END
+barcode128.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/barcode128.inc
+END
+install.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/install.txt
+END
+fpdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/fpdf.php
+END
+fpdf.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/fpdf.css
+END
+fpdf16.zip
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/fpdf16.zip
+END
+code128.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/code128.php
+END
+pdfbarcode128.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/pdfbarcode128.inc
+END
+histo.htm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/histo.htm
+END
+FAQ.htm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/FPDF/FAQ.htm
+END

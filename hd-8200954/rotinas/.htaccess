@@ -1,0 +1,2 @@
+# Proibe acesso este diretório via Apache
+deny from all

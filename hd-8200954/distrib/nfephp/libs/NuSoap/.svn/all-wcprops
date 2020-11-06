@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap
+END
+class.soap_server.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soap_server.php
+END
+class.wsdl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.wsdl.php
+END
+nusoapmime.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/nusoapmime.php
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/changelog
+END
+class.soap_fault.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soap_fault.php
+END
+class.soap_transport_http.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soap_transport_http.php
+END
+class.wsdlcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.wsdlcache.php
+END
+class.soap_parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soap_parser.php
+END
+class.nusoap_base.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.nusoap_base.php
+END
+class.soapclient.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soapclient.php
+END
+class.xmlschema.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.xmlschema.php
+END
+nusoap.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/nusoap.php
+END
+class.soap_val.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/NuSoap/class.soap_val.php
+END

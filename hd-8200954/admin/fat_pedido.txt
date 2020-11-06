@@ -1,0 +1,33 @@
+andre.php:				LEFT JOIN tbl_faturamento on tbl_faturamento.pedido = tbl_pedido.pedido
+andre.php:				LEFT JOIN tbl_faturamento on tbl_faturamento.pedido = tbl_pedido.pedido
+extrato_os_aprova.php:									WHERE   tbl_faturamento.pedido    = $pedido
+fat.txt:relatorio_prazo_atendimento_periodo.php:		if($login_fabrica<>14){ $sql .= " JOIN        tbl_faturamento ON tbl_faturamento.pedido = tbl_pedido.pedido ";}
+nota_fiscal_detalhe.php:					CASE WHEN tbl_faturamento.pedido IS NOT NULL THEN tbl_faturamento.pedido ELSE tbl_faturamento_item.pedido END AS pedido                                                    ,
+os_consulta_simplificada.php:				LEFT JOIN tbl_faturamento ON tbl_os_item.pedido = tbl_faturamento.pedido
+os_fechamento_mlg.php:												WHERE   tbl_faturamento.pedido    = $pedido
+os_fechamento_mlg.php:												WHERE   tbl_faturamento.pedido    = $pedido
+os_fechamento.php:												WHERE   tbl_faturamento.pedido    = $pedido
+os_fechamento.php:												WHERE   tbl_faturamento.pedido    = $pedido
+os_press_filizola.php:					WHERE   tbl_faturamento.pedido    = $pedido
+os_press.php:							WHERE   tbl_faturamento.pedido    = $pedido
+os_press.php:							WHERE   tbl_faturamento.pedido    = $pedido
+pedido_admin_altera.php:							AND     tbl_faturamento.pedido       = $pedido 
+pedido_admin_altera.php:						else                                         $sql_adicional = "AND tbl_faturamento.pedido      = $pedido ";
+pedido_admin_altera.php:										AND tbl_faturamento.pedido        = $pedido 
+pedido_admin_consulta.php:								AND     tbl_faturamento.pedido       = $pedido
+pedido_admin_consulta.php:							$sql_adicional = "AND tbl_faturamento.pedido      = $pedido ";
+pedido_admin_consulta.php:										AND tbl_faturamento.pedido        = $pedido
+pedido_admin_consulta.php:								AND     (tbl_faturamento.pedido    = $pedido OR tbl_faturamento_item.pedido=$pedido)
+pedido_admin_consulta_teste.php:								AND     tbl_faturamento.pedido       = $pedido
+pedido_admin_consulta_teste.php:							$sql_adicional = "AND tbl_faturamento.pedido      = $pedido ";
+pedido_admin_consulta_teste.php:										AND tbl_faturamento.pedido        = $pedido
+pedido_admin_consulta_teste.php:								AND     (tbl_faturamento.pedido    = $pedido OR tbl_faturamento_item.pedido=$pedido)
+relatorio_prazo_atendimento_periodo.php: 					LEFT JOIN   tbl_faturamento ON tbl_faturamento.pedido = tbl_pedido.pedido ";
+relatorio_prazo_atendimento_periodo.php:		if($login_fabrica<>14){ $sql .= " AND         tbl_faturamento.pedido ISNULL ";}
+relatorio_prazo_atendimento_periodo.php:		if($login_fabrica<>14){ $sql .= " JOIN        tbl_faturamento ON tbl_faturamento.pedido = tbl_pedido.pedido ";}
+relatorio_prazo_medio_atendimento.php:			JOIN    tbl_faturamento ON tbl_faturamento.pedido = tbl_pedido.pedido
+relatorio_troca_produto.php:								WHERE tbl_faturamento.pedido    = $pedido
+samuca.php:								AND     tbl_faturamento.pedido       = $pedido
+samuca.php:							$sql_adicional = "AND tbl_faturamento.pedido      = $pedido ";
+samuca.php:										AND tbl_faturamento.pedido        = $pedido
+samuca.php:								AND     (tbl_faturamento.pedido    = $pedido OR tbl_faturamento_item.pedido=$pedido)

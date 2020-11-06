@@ -1,0 +1,79 @@
+
+	
+	*{
+		color:          #666666;
+	}
+
+	@font-face
+	{
+		font-family: museo100;
+		src: url('../fonts/Museo100-Regular.ttf'),
+			 url('../fonts/Museo100-Regular.otf'); /* IE9 */
+	}
+
+	@font-face
+	{
+		font-family: museo300;
+		src: url('../fonts/Museo300-Regular.ttf'),
+			 url('../fonts/Museo300-Regular.otf'); /* IE9 */
+	}
+
+	@font-face
+	{
+		font-family: museo500;
+		src: url('../fonts/Museo500-Regular.ttf'),
+			 url('../fonts/Museo500-Regular.otf'); /* IE9 */
+	}
+
+	@font-face
+	{
+		font-family: museo700;
+		src: url('../fonts/Museo700-Regular.ttf'),
+			 url('../fonts/Museo700-Regular.otf'); /* IE9 */
+	}
+
+	@font-face
+	{
+		font-family: museo900;
+		src: url('../fonts/Museo900-Regular.ttf'),
+			 url('../fonts/Museo900-Regular.otf'); /* IE9 */
+	}
+
+	.museo100{ font-family: museo100, Arial, helvetica, Sans-serif; }
+	.museo300{ font-family: museo300, Arial, helvetica, Sans-serif; }
+	.museo500{ font-family: museo500, Arial, helvetica, Sans-serif; }
+	.museo700{ font-family: museo700, Arial, helvetica, Sans-serif; }
+	.museo900{ font-family: museo900, Arial, helvetica, Sans-serif; }
+
+	td { 
+		font-family:museo300;
+	}
+
+	select {
+		font-family:museo300;
+	}
+
+	form {
+		font-family:            museo300, Arial, helvetica, Sans-serif;
+		color:#999999;
+		text-align: left;
+	}
+
+	.submit_envia{
+		cursor:                 pointer;
+		background:             none;
+		border:                 none;
+		background-image:       url(../submit_back.png);
+		background-size:        120px 28px;
+		background-repeat:      no-repeat;
+		width:                  100px;
+		font-family:            Arial, helvetica, Sans-serif;
+		color:                  #fff;
+		width:                  120px;
+		height:                 28px;
+		font-size:              12px;
+		margin-left:            90px;
+		margin-top:             -5px;
+	}
+
+

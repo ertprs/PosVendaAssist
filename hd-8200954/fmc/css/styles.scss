@@ -1,0 +1,526 @@
+// Sizes
+$full: 100%;
+$pad-1: 16px;
+$border-radius: 3px;
+
+// Colors
+$black: #000;
+$font-color: #808080;
+$gray: #aaaaaa;
+$gray-light: #e2e2e2;
+$gray-lighter: #f2f2f2;
+$white: #ffffff;
+$primary-color: #373865;
+$primary-color2: #494994;
+$secondary-color: #fac819;
+$danger: #dd0010;
+
+// Transitions
+$time: .15s;
+$smooth-time: .4s;
+@mixin transition {
+  transition: color $time ease-in-out, background $time ease-in-out, border-color $time ease-in-out, opacity $time ease-in-out;
+  -webkit-transition: color $time ease-in-out, background $time ease-in-out, border-color $time ease-in-out, opacity $time ease-in-out;
+}
+
+// Backgrounds
+$bg-colors: (gray-lighter: $gray-lighter, $white: $white, primary: $primary-color);
+
+@each $label, $bg in $bg-colors {
+  .bg-#{$label} {
+    background-color: $bg;
+  }
+}
+
+$directions: top right bottom left;
+
+// Paddings and Margins
+
+// Generates .pad-top...
+@for $i from 1 through 4 {
+  .padding-#{$i} {
+    padding: $pad-1*$i;
+  }
+  @each $direction in $directions {
+    .pad-#{$direction}-#{$i} {
+      padding-#{$direction}: $pad-1*$i;
+    }
+    .margin-#{$direction}-#{$i} {
+      margin-#{$direction}: $pad-1*$i;
+    }
+  }
+}
+
+@each $direction in $directions {
+  .pad-#{$direction} {
+    padding-#{$direction}: $pad-1;
+  }
+  .margin-#{$direction} {
+    margin-#{$direction}: $pad-1;
+  }
+}
+
+.p-tb {
+  @extend .pad-top-2;
+  @extend .pad-bottom-2;
+}
+
+// Boxes
+@mixin table {
+  display: table;
+  position: relative;
+  width: $full;
+  height: $full;
+}
+
+@mixin cell {
+  display: table-cell;
+  width: $full;
+  height: $full;
+  vertical-align: middle;
+}
+
+.box {
+  background-color: $white;
+  @extend .padding-2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.31);
+}
+
+hr {
+  height: 0;
+  margin: $pad-1 0 0 0;
+  padding: $pad-1 0 0 0;
+  border: 0;
+  border-top: 1px solid $gray-light;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.main, .main2 {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  height: $full;
+}
+
+.main2 {
+  width: 800px;
+}
+
+.table {
+  @include table;
+  &.table-auto {
+    table-layout: auto;
+  }
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .row {
+    display: table-row;
+  }
+}
+
+// Fonts
+$smaller-size: 13px;
+$small-size: 14px;
+$normal-size: 15px;
+$title-size: 20px;
+$extra-big: 22px;
+$big-size: 18px;
+$bigger-size: 20px;
+$icon-size: 14px;
+$medium: 500;
+
+.title {
+  font-size: $title-size;
+  text-align: center;
+  @extend .pad-bottom;
+  i {
+    margin-right: 8px;
+  }
+  &.no-m {
+    margin: 0;
+    padding: 0;
+  }
+  &.white {
+    color: $white;
+  }
+}
+
+p {
+  font-size: $small-size;
+  text-align: center;
+  display: inline-block;
+}
+
+// Buttons
+.btn {
+  @include transition;
+  padding: 7px 12px;
+  font-size: $smaller-size;
+  color: $white;
+  background: $primary-color;
+  border-radius: $border-radius;
+  display: inline-block;
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+// Alerts
+.alerts {
+  text-align: center;
+  .alert {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: $small-size;
+    border-radius: $border-radius;
+    width: auto;
+    display: inline-block;
+    &.danger {
+      background: $danger;
+      color: $white;
+      font-weight: $medium;
+    }
+    &.info {
+      &:before {
+        content: "\f06a";
+        font-family: "FontAwesome";
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// Defaults
+* {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
+  font: 15px/1.55 'Roboto', Arial, Tahoma;
+  color: $black;
+  background: $white;
+}
+
+html, body {
+  height: $full;
+}
+
+a {
+  @include transition;
+  color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: normal;
+  &:hover {
+    color: $primary-color;
+  }
+  img {
+    border: 0;
+  }
+}
+
+img {
+  border: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4em;
+  font-weight: normal;
+  font-size: $normal-size;
+  text-transform: none;
+  font-style: normal;
+}
+
+// Alignments
+.tal {
+  text-align: left;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+// Header
+$header-h: 50px;
+.nav-bg {
+  background: $primary-color;
+  height: $header-h;
+}
+
+.nav {
+  z-index: 10;
+  background: $primary-color;
+  height: $header-h;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $full;
+  ul {
+    @include table;
+    > li {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      > h1 a {
+        padding: 0 20px;
+      }
+      > ul {
+        display: none;
+        width: $full;
+        position: absolute;
+        background: $primary-color;
+        top:$header-h;
+        left: 0;
+        height: auto;
+        li {
+          width: $full;
+          display: block;
+          border-top: 1px solid $primary-color2;
+          a {
+            padding: 12px;
+          }
+        }
+      }
+      &:hover {
+        > h1 a {
+          background: $primary-color2;
+        }
+        > ul {
+          display: block;
+        }
+      }
+      h1 {
+        display: table;
+        width: $full;
+        height: $full;
+      }
+      a {
+        display: table-cell;
+        vertical-align: middle;
+        color: $white;
+        text-align: center;
+        width: $full;
+        height: $full;
+        &:hover {
+          background: $primary-color2;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.home {
+        width: 50px;
+        a {
+          font-size: $big-size;
+          background-color: $primary-color2;
+          &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  .sub-header {
+    height: 120px;
+    .table {
+      .customer {
+
+      }
+      .telecontrol {
+
+      }
+    }
+  }
+}
+
+.message {
+  background: $gray-lighter;
+  a.close {
+    display: block;
+    font-size: $smaller-size;
+    color: $white;
+    left: 0;
+    width: $full;
+    top: 5px;
+    text-align: right;
+    &:hover {
+      i {
+        background: $primary-color;
+      }
+    }
+    i {
+      padding: 4px 8px;
+      background: $gray;
+    }
+  }
+  p {
+    @include transition;
+    height: 60px;
+    overflow: hidden;
+    &.expanded {
+      height: 100%;
+    }
+  }
+  &.simple {
+    p {
+      height: auto;
+    }
+  }
+}
+
+.menu {
+  min-height: 50vh;
+  ul {
+    li {
+      float: left;
+      @include table;
+      width: 160px;
+      height: 160px;
+      a {
+        text-align: center;
+        @include cell;
+        img {
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+        }
+        .the-title {
+          @include table;
+          height: 40px;
+          h2 {
+            text-align: center;
+            font-size: $smaller-size;
+            @include cell;
+          }
+        }
+        &:hover {
+          background: $gray-light;
+        }
+      }
+      &:nth-child(-n+5) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Comunicados
+.comunicados {
+  .box {
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        border-left: 1px solid $gray-light;
+        padding-left: 10px;
+        margin-left: 10px;
+        &:first-child {
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    p {
+      display: block;
+    }
+  }
+}
+
+// O. Serviço
+.menu2 {
+  ul {
+    padding: 0 100px;
+    li {
+      width: $full;
+      border-bottom: 1px solid $gray-light;
+      a {
+        padding: $pad-1 $pad-1;
+        display: table;
+        width: $full;
+        h2 {
+          display: table-cell;
+          vertical-align: middle;
+          width: 50%;
+          color: $primary-color;
+          i {
+            width: 30px;
+          }
+        }
+        span {
+          display: table-cell;
+          vertical-align: middle;
+          width: 50%;
+        }
+        &:hover {
+          background-color: $gray-lighter;
+        }
+      }
+      &:first-child {
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $gray-lighter;
+  height: 55px;
+  .table {
+    div {
+      text-align: center;
+      h6 {
+        display: inline-block;
+        font-size: $smaller-size;
+        color: #808080;
+      }
+    }
+  }
+}

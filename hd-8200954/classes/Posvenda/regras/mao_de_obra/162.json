@@ -1,0 +1,8 @@
+{
+    "calcula_mo_servico_realizado": true,
+    "calcula_mo_defeito_constatado": true,
+    "calcula_mo_troca":true,
+    "nao_calcula_km": true,
+    "nao_calcula_mo": true,
+    "nao_calcula_peca":true
+}

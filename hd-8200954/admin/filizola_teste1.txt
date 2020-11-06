@@ -1,0 +1,45 @@
+SELECT DISTINCT
+tbl_produto.referencia ,
+tbl_produto.descricao ,
+tbl_os_revenda_item.defeito_reclamado_descricao ,
+tbl_os_revenda_item.serie ,
+tbl_os_revenda_item.capacidade ,
+tbl_os_revenda_item.certificado_conformidade
+FROM tbl_os_revenda
+JOIN tbl_os_revenda_item USING(os_revenda)
+JOIN tbl_produto USING(produto)
+WHERE tbl_os_revenda.os_revenda = 378511
+AND tbl_os_revenda.fabrica = 7;
+
+ referencia |           descricao            |    defeito_reclamado_descricao    | serie | capacidade | certificado_conformidade
+------------+--------------------------------+-----------------------------------+-------+------------+--------------------------
+ 4006082    | BAL FILIZOLA MF 60/3 VC        | MANUTENÇÃO PREVENTIVA             | 4287  |            |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 2550  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 2551  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 2552  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 2555  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 25968 |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 25969 |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 25970 |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3105  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3106  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3107  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3109  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3110  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3116  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3117  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3120  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3122  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3123  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3124  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3125  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3126  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 3127  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 4389  |         15 |                        0
+ 4008026    | BAL PLATINA 15kg RF            | MANUTENÇÃO PREVENTIVA             | 4390  |         15 |                        0
+ 4085052    | BAL.ELET.FILIZOLA BC 1505-II-N | MOD. BC-15, MANUTENÇÃO PREVENTIVA | 368   |         15 |                        0
+ 4096493    | BAL BP-15 LCD                  | MANUTENÇÃO PREVENTIVA             | 19584 |         15 |                        0
+ 4096493    | BAL BP-15 LCD                  | MANUTENÇÃO PREVENTIVA             | 19585 |         15 |                        0
+ 4096493    | BAL BP-15 LCD                  | MANUTENÇÃO PREVENTIVA             | 35926 |         15 |                        0
+ 4096493    | BAL BP-15 LCD                  | MANUTENÇÃO PREVENTIVA             | 53218 |         15 |                        0
+(29 rows)

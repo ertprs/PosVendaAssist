@@ -1,0 +1,5 @@
+{
+    "tabela": "tbl_os_produto",
+    "nao_calcula_peca": true,
+    "nao_calcula_km": true
+}

@@ -1,0 +1,19 @@
+<?php
+
+if (date ("H",time()) >= "03" AND date ("H",time()) < "05" ) {
+}else{
+	$dbhost    = "192.168.0.3";
+	$dbbanco   = "postgres";
+	$dbport    = 5432;
+	$dbusuario = "britania";
+	$dbsenha   = "britania";
+	$dbnome    = "dbbritania";
+	
+	$ip = getenv ("REMOTE_ADDR");
+	
+#	if ($ip <> "200.206.158.62") {
+#		echo "<center><b>ESTAMOS EM MANUTENÇÃO. FAVOR AGUARDAR LIBERAÇÃO...</b></center>";
+#		exit;
+#	}
+}
+?>

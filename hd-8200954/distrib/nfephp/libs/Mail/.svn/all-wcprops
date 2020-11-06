@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail
+END
+xmail.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/xmail.xsl
+END
+xmail_1.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/xmail_1.xsl
+END
+mimePart.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/mimePart.php
+END
+mimePart_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/mimePart_1.php
+END
+xmail.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/xmail.dtd
+END
+xmail_1.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/xmail_1.dtd
+END
+Mail.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/Mail.php
+END
+Mail_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/Mail_1.php
+END
+mime.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/mime.php
+END
+mime_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/mime_1.php
+END

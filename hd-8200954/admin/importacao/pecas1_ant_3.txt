@@ -1,0 +1,171 @@
+7012010000        PARAFUSO PHILLIPS 3.9X19                        SPI      SPCOMP                                  10.00 00000000.19 00001,00
+186540-00         ADESIV.DAD.TEC.MOTOR B&DS/OLEO 60Hz FIAC 061217 SPPCN    SPCOMP                                  00.00 00000000.13 00001,00
+186577-00         ABRACADEIRA ROSCA S/FIM9-13mm FIAC 0020006      SPPCN                                            05.00 00000000.68 00001,00
+186674-00         ESPIGAO 1/4x1/4 C/PORCAFIAC 0820540             SPPCN                                            05.00 00000003.16 00001,00
+186730-00         PROTETOR TERMICO DENTALFIAC 1641011             SPPCN    SPCOMP                                  00.00 00000014.52 00001,00
+186897-00         ESTATOR H11950F-BR0830543                       SPPCN    SPCOMP                                  10.00 00000098.35 00001,00
+186898-00         ROTOR H11950F-B2 1761060                        SPPCN    SPCOMP                                  10.00 00000032.77 00001,00
+187029-00         TAMPA DO CABECOTE                               SPI      SPCOMP                                  00.00 00000018.17 00001,00
+187032-00         TAMPA FRONTAL                                   SPI      SPCOMP                                  00.00 00000023.51 00001,00
+187034-00         CARTER                                          SPI      SPCOMP                                  05.00 00000096.84 00001,00
+187037-00         CILINDRO                                        SPI      SPCOMP                                  05.00 00000042.63 00001,00
+187050-00         JUNTA TAMPA TRASEIRA                            SPI      SPCOMP                                  08.00 00000000.79 00001,00
+187057-00         JUNTA DA TAMPA FRONTAL                          SPI      SPCOMP                                  08.00 00000001.57 00001,00
+187058-00         JUNTA PE CILINDRO                               SPI      SPCOMP                                  08.00 00000001.31 00001,00
+187121-00         TAMPA TRASEIRA DO CARTER                        SPI      SPCOMP                                  00.00 00000004.71 00001,00
+187355-00         PORCA LATAO 10mm                                SPPCN    SPCOMP                                  10.00 00000002.21 00001,00
+187551-00         ETIQ. ESPECIF. G720-B2TIPO 3                    SPI      SPCPT                                   15.00 00000000.13 00001,00
+187557-02         ETIQ. ESPECIF. G720-BRTIPO 3                    SPI      SPCPT                                   15.00 00000000.13 00001,00
+330122-47         CABO ELETRICO                                   SPI      SPPPT                                   05.00 00000018.28 00001,00
+568538-00         PINCA 6mm                                       SPI      SPCPT                                   08.00 00000004.30 00001,00
+579755-02         ESTATOR 220V                                    SPI      SPPPT         SUBST   387745-00         10.00 00000051.43 00001,00
+597720-00         TAMPA DA MANOPLA                                SPI      SPCPT         INDISP                    08.00 00000002.01 00001,00
+597721-00         MANOPLA                                         SPI      SPCPT         INDISP                    15.00 00000002.33 00001,00
+597722-00         PRISIONEIRO                                     SPI      SPCPT         INDISP                    08.00 00000002.60 00001,00
+597725-00         TAMPA DIREITA                                   SPI      SPCPT         INDISP                    08.00 00000002.92 00001,00
+597726-00         CONJ. COBERTURA                                 SPI      SPCPT         INDISP                    08.00 00000024.01 00001,00
+597730-00         TAMPA ESQUERDA                                  SPI      SPCPT         INDISP                    08.00 00000002.92 00001,00
+597756-00         PINCA 1/4                                       SPI      SPCPT                                   08.00 00000004.38 00001,00
+597757-00         PINCA 8mm                                       SPI      SPCPT                                   08.00 00000004.38 00001,00
+597827-00         CONJ. ROLDANA                                   SPI      SPCPT                                   08.00 00000002.09 00001,00
+5140004-01        CAPACITOR                                       SPI      SPCPT                                   10.00 00000000.96 00001,00
+5140013-93        BASE                                            SPI      SPCPT                                   08.00 00000003.93 00001,00
+5140013-94        PE                                              SPI      SPCPT                                   08.00 00000000.07 00001,00
+5140023-85        ANEL DE BORRACHA                                SPI      SPCPT                                   08.00 00000000.07 00001,00
+5140023-86        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140023-87        PLACA CHAVE DE VOLTAGEM                         SPI      SPCPT                                   08.00 00000000.33 00001,00
+5140023-88        CHAVE SELETORA 120V/220V                        SPI      SPCPT                                   15.00 00000002.45 00001,00
+5140023-89        CONDUTOR PRETO 90mm                             SPI      SPCPT                                   05.00 00000000.65 00001,00
+5140023-90        CONDUTOR VERDE 90mm                             SPI      SPCPT                                   05.00 00000000.65 00001,00
+5140023-91        CONDUTOR VERMELHO 90mm                          SPI      SPCPT                                   05.00 00000000.65 00001,00
+5140023-92        CONJ. CONDUTOR                                  SPI      SPCPT                                   05.00 00000000.65 00001,00
+5140023-93        CONDUTOR VERDE 100mm                            SPI      SPCPT                                   05.00 00000000.65 00001,00
+5140023-94        ESTATOR 120V/220V                               SPI      SPCPT                                   10.00 00000015.75 00001,00
+5140023-95        ETIQ. ESPECIF. 120V/220V                        SPI      SPCPT                                   15.00 00000001.31 00001,00
+5140029-15        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140029-16        TRAVA DO EIXO                                   SPI      SPCPT                                   10.00 00000000.33 00001,00
+5140029-17        CAIXA DE ENGRENAGEM                             SPI      SPCPT                                   08.00 00000005.57 00001,00
+5140029-18        ARRUELA MOLA                                    SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140029-19        TAMPA DA CAIXA DE ENGR.                         SPI      SPCPT                                   08.00 00000004.92 00001,00
+5140029-20        GUARDA                                          SPI      SPCPT                                   08.00 00000007.30 00001,00
+5140029-21        TAMPA TRASEIRA                                  SPI      SPCPT                                   08.00 00000006.17 00001,00
+5140029-22        LUVA DA CAIXA CAMPO                             SPI      SPCPT                                   08.00 00000000.99 00001,00
+5140029-28        CAIXA DE CAMPO                                  SPI      SPCPT                                   08.00 00000006.17 00001,00
+5140029-31        ALAVANCA DO INTERRUPTOR                         SPI      SPCPT                                   08.00 00000000.20 00001,00
+5140029-32        BOTAO DE TRAVA                                  SPI      SPCPT                                   08.00 00000000.13 00001,00
+5140029-38        ETIQUETA FANTASIA                               SPI      SPCPT                                   15.00 00000000.13 00001,00
+5140030-37        ROTOR 120V                                      SPI      SPCPT                                   10.00 00000016.44 00001,00
+5140030-41        ROTOR 220V                                      SPI      SPCPT                                   10.00 00000018.36 00001,00
+5140030-42        ETIQ. ESPECIF. 7698 220VTIPO 2                  SPI      SPCPT                                   08.00 00000000.52 00001,00
+5140030-43        ETIQ. ESPECIF. 7698 120VTIPO 2                  SPI      SPCPT                                   08.00 00000000.52 00001,00
+5140039-01        PLACA LOGOMARCA                                 SPI      SPCPT                                   08.00 00000002.43 00001,00
+5140039-02        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.65 00001,00
+5140039-03        TAMPA                                           SPI      SPCPT                                   08.00 00000004.00 00001,00
+5140039-05        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-06        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.13 00001,00
+5140039-07        PRESILHA DO PORTA ESCOVA                        SPI      SPCPT                                   08.00 00000000.13 00001,00
+5140039-08        TAMPA DA HASTE                                  SPI      SPCPT                                   08.00 00000000.45 00001,00
+5140039-11        ETIQUETA FANTASIA                               SPI      SPCPT                                   15.00 00000000.45 00001,00
+5140039-12        ETIQ. DA ESCALA                                 SPI      SPCPT                                   15.00 00000000.20 00001,00
+5140039-15        ROLAMENTO DE ESFERAS                            SPI      SPCPT                                   12.00 00000002.23 00001,00
+5140039-16        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.33 00001,00
+5140039-19        PORCA DA PINCA                                  SPI      SPCPT                                   10.00 00000002.23 00001,00
+5140039-20        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-21        FIXADOR DO ROLAMENTO                            SPI      SPCPT                                   08.00 00000000.45 00001,00
+5140039-22        ROLAMENTO DE ESFERAS                            SPI      SPCPT                                   12.00 00000003.93 00001,00
+5140039-23        ANEL DE RETENCAO EXTERNO                        SPI      SPCPT                                   08.00 00000000.13 00001,00
+5140039-24        MANCAL                                          SPI      SPCPT                                   12.00 00000038.71 00001,00
+5140039-25        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-26        PORCA                                           SPI      SPCPT                                   10.00 00000000.59 00001,00
+5140039-27        TAMPA DA TRAVA                                  SPI      SPCPT                                   08.00 00000002.47 00001,00
+5140039-28        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.40 00001,00
+5140039-29        MOLA                                            SPI      SPCPT                                   15.00 00000002.09 00001,00
+5140039-30        FOLE DE PROTECAO                                SPI      SPCPT                                   08.00 00000010.49 00001,00
+5140039-31        HASTE                                           SPI      SPCPT                                   08.00 00000013.65 00001,00
+5140039-32        TUBO DE SUCCAO                                  SPI      SPCPT                                   08.00 00000004.33 00001,00
+5140039-33        TAMPA DO TUBO                                   SPI      SPCPT                                   08.00 00000003.28 00001,00
+5140039-34        MANIPULO                                        SPI      SPCPT                                   10.00 00000001.77 00001,00
+5140039-35        MOLA                                            SPI      SPCPT                                   15.00 00000000.20 00001,00
+5140039-36        PORCA                                           SPI      SPCPT                                   10.00 00000000.33 00001,00
+5140039-37        BASE                                            SPI      SPCPT                                   08.00 00000022.17 00001,00
+5140039-38        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.13 00001,00
+5140039-39        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-40        TAMPA DA BASE                                   SPI      SPCPT                                   08.00 00000005.25 00001,00
+5140039-41        PROTETOR                                        SPI      SPCPT                                   08.00 00000001.84 00001,00
+5140039-42        MOLA                                            SPI      SPCPT                                   15.00 00000000.07 00001,00
+5140039-43        ESFERA DE ACO                                   SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-44        PLACA DE AJUSTE                                 SPI      SPCPT                                   08.00 00000000.33 00001,00
+5140039-45        TORRE DE AJUSTE                                 SPI      SPCPT                                   08.00 00000000.52 00001,00
+5140039-46        ARRUELA MOLA                                    SPI      SPCPT                                   10.00 00000000.27 00001,00
+5140039-47        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.13 00001,00
+5140039-48        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-49        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-50        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-51        BOTAO DA TRAVA                                  SPI      SPCPT                                   08.00 00000000.83 00001,00
+5140039-52        TRAVA                                           SPI      SPCPT                                   08.00 00000002.47 00001,00
+5140039-53        MOLA                                            SPI      SPCPT                                   15.00 00000000.07 00001,00
+5140039-54        MANIPULO                                        SPI      SPCPT                                   10.00 00000000.59 00001,00
+5140039-55        TAMPA EMPUNHADURA ESQ.                          SPI      SPCPT                                   08.00 00000003.68 00001,00
+5140039-56        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.72 00001,00
+5140039-57        ARRUELA MOLA                                    SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-58        ARRUELA                                         SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-59        EMPUNHADURA ESQUERDA                            SPI      SPCPT                                   08.00 00000004.59 00001,00
+5140039-60        PARAFUSO AJUSTE PROFUND.                        SPI      SPCPT                                   10.00 00000001.91 00001,00
+5140039-61        HASTE DE PROFUNDIDADE                           SPI      SPCPT                                   08.00 00000002.29 00001,00
+5140039-62        ANEL O RING                                     SPI      SPCPT                                   08.00 00000000.20 00001,00
+5140039-63        INDICADOR PROFUNDIDADE                          SPI      SPCPT                                   08.00 00000000.20 00001,00
+5140039-64        BOTAO DE AJUSTE                                 SPI      SPCPT                                   08.00 00000000.27 00001,00
+5140039-66        PROTETOR DO CABO ELETR.                         SPI      SPCPT                                   08.00 00000000.33 00001,00
+5140039-67        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-68        ALAVANCA DE TRAVA                               SPI      SPCPT                                   12.00 00000000.65 00001,00
+5140039-69        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-70        ARRUELA MOLA                                    SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-71        PORCA                                           SPI      SPCPT                                   10.00 00000000.20 00001,00
+5140039-72        EMPUNHADURA DIREITA                             SPI      SPCPT                                   08.00 00000004.59 00001,00
+5140039-73        PRESILHA DO CABO ELETR.                         SPI      SPCPT                                   08.00 00000000.13 00001,00
+5140039-74        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.13 00001,00
+5140039-75        CAIXA DE CAMPO                                  SPI      SPCPT                                   08.00 00000017.65 00001,00
+5140039-76        CONDUTOR                                        SPI      SPCPT                                   05.00 00000001.24 00001,00
+5140039-77        TUBO ISOLADOR                                   SPI      SPCPT                                   08.00 00000001.12 00001,00
+5140039-78        INTERRUPTOR 120V                                SPI      SPCPT                                   15.00 00000010.43 00001,00
+5140039-79        TAMPA INTERNA                                   SPI      SPCPT                                   08.00 00000000.27 00001,00
+5140039-80        TAMPA EMPUNHADURA DIR.                          SPI      SPCPT                                   08.00 00000003.80 00001,00
+5140039-81        CHAVE                                           SPI      SPCPT                                   08.00 00000002.23 00001,00
+5140039-82        DEFLETOR                                        SPI      SPCPT                                   08.00 00000001.12 00001,00
+5140039-83        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-84        PARAFUSO                                        SPI      SPCPT                                   10.00 00000000.13 00001,00
+5140039-85        ARRUELA MOLA                                    SPI      SPCPT                                   10.00 00000000.07 00001,00
+5140039-86        ARRUELA                                         SPI      SPCPT                                   10.00 00000000.27 00001,00
+5140039-87        GUIA PARALELO                                   SPI      SPCPT                                   08.00 00000007.03 00001,00
+5140039-88        HASTE DO GUIA                                   SPI      SPCPT                                   08.00 00000005.51 00001,00
+5140039-89        PINO DE CENTRAR                                 SPI      SPCPT                                   10.00 00000000.85 00001,00
+5140039-93        ESCOVA DE CARVAO 220V                           SPI      SPCPT                                   10.00 00000003.00 00001,00
+5140039-95        PORTA ESCOVA                                    SPI      SPCPT                                   10.00 00000004.63 00001,00
+5140039-97        ESTATOR 220V                                    SPI      SPCPT                                   10.00 00000040.18 00001,00
+5140039-99        ROTOR 220V                                      SPI      SPCPT                                   10.00 00000059.22 00001,00
+5140040-06        INTERRUPTOR 220V                                SPI      SPCPT                                   15.00 00000010.42 00001,00
+623584-06         ROTOR 120V                                      SPI      SPPPT                                   10.00 00000052.19 00001,00
+623584-07         ROTOR 220V                                      SPI      SPPPT                                   10.00 00000052.19 00001,00
+626992-02         CAIXA DE CAMPO                                  SPI      SPPPT                                   08.00 00000011.57 00001,00
+626995-01         CONJ. EMPUNHADURA                               SPI      SPPPT                                   08.00 00000007.79 00001,00
+627001-00         ALAVANCA DO INTERRUPTOR                         SPI      SPPPT                                   08.00 00000002.31 00001,00
+627125-01         ESTATOR 120V                                    SPI      SPPPT                                   10.00 00000026.67 00001,00
+627125-04         ESTATOR 220V                                    SPI      SPPPT                                   10.00 00000026.67 00001,00
+627283-00         DEFLETOR TRASEIRO                               SPI      SPPPT                                   08.00 00000000.51 00001,00
+627313-00         TAMPA SUP. CX. DE ENGR.                         SPI      SPPPT                                   08.00 00000003.77 00001,00
+627465-00         PINHAO                                          SPI      SPPPT                                   10.00 00000007.64 00001,00
+628398-00         PRESILHA DO CABO ELETR.                         SPI      SPPPT                                   08.00 00000000.28 00001,00
+628885-00         ETIQUETA FANTASIA                               SPI      SPPPT                                   15.00 00000000.35 00001,00
+629447-02         CONJ. CX. COM ENGR.E EIXO M14                   SPI      SPPPT                                   10.00 00000046.20 00001,00
+631028-00         CONJ. CONDUTOR                                  SPI      SPPPT                                   05.00 00000000.77 00001,00
+632513-00         JUNTA DE BORRACHA                               SPI      SPPPT                                   08.00 00000000.92 00001,00
+633391-00         PLACA DE BORRACHA                               SPI      SPPPT                                   08.00 00000000.13 00001,00
+633515-00         SEPARADOR DE PARTICULAS                         SPI      SPPPT                                   08.00 00000003.80 00001,00
+634599-00         TERMINAL                                        SPI      SPPPT                                   15.00 00000000.36 00001,00
+636760-00         MOLA DO CARVAO                                  SPI      SPPPT                                   15.00 00000000.32 00001,00
+637251-00         CONJ. COND. E CAPACITOR                         SPI      SPPPT                                   10.00 00000002.52 00001,00
+640491-01         ESCOVA DE CARVAO 120V                           SPI      SPPPT                                   10.00 00000003.01 00001,00
+640491-03         ESCOVA DE CARVAO 220V                           SPI      SPPPT                                   10.00 00000003.01 00001,00
+640973-01         ETIQ. ESPECIF. D28136-BRTIPO 1                  SPI      SPPPT                                   15.00 00000000.39 00001,00
+640973-02         ETIQ. ESPECIF. D28136-B2TIPO 1                  SPI      SPPPT                                   15.00 00000000.39 00001,00
+930927-00         FLANGE DE APOIO                                 SPI      SPPPT                                   05.00 00000002.59 00001,00

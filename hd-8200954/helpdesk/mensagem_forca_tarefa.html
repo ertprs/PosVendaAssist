@@ -1,0 +1,145 @@
+<style type="text/css">
+	div.oculto {text-align: left;padding: 8px 16px;background-color: #f0f0fa;}
+	#window_box {
+		display: block;
+		background-color: #ffffff;
+		position: absolute;
+		text-align: left;
+		width: 600px;
+		max-height:75%;
+		top: 100px;
+		left: 25%;
+		padding-top: 32px;
+		margin: auto;
+		border: 2px solid #68769f;
+		border-radius: 8px;
+		-moz-border-radius: 8px;
+		overflow: hidden;
+		z-index: 10000;
+	}
+	#window_box:hover {
+		box-shadow: 3px 3px 3px #ccc;
+	}
+	#window_box #ei_container p {
+		padding: .5ex 1ex;
+	}
+	#window_box #ei_header {
+		position: absolute;
+		top:	0;
+		left:	0;
+		margin:	0;
+		width: 100%;
+		height: 28px;
+		background-image: url('http://www.telecontrol.com.br/assist/admin/imagens_admin/azul.gif');    /* IE */
+		background-image: -o-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -ms-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -moz-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		background-image: -webkit-gradient(linear,  0 0, 0 100%,
+												from(#b4bbce),
+													color-stop(0.07,#68769f),
+													color-stop(0.20,#68769f),
+												to(#7889bb));
+		background-image: -webkit-linear-gradient(top, #b4bbce, #68769f 6px, #68769f 15px, #7889bb);
+		padding: 2px 1em;
+		color: white;
+		font: normal bold 13px Segoe UI, Verdana, MS Sans-Serif, Arial, Helvetica, sans-serif;
+	}
+	#window_box #ei_container {
+		text-align: left;
+	}
+	#window_box #ei_container {
+		margin: 1px;
+		padding-bottom: 1ex;
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: 100%;
+		font-size: 13px;
+		color: #313452;
+		background-color: #fdfdfd;
+	}
+	#window_box #fechar_msg {
+		position: absolute;
+		top: 3px;
+		right: 5px;
+		width: 16px;
+		height:16px;
+		font: normal bold 12px Verdana, Arial, Helvetica, sans-serif;
+		color:white;
+		cursor: pointer;
+		margin:0;padding:0;
+		vertical-align:top;
+		text-align:center;
+		background-color: #f44;
+		border:	1px solid #d00;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 2px 2px 2px #900;
+		-moz-box-shadow: 1px 1px 1px #900;
+		-webkit-box-shadow: 2px 2px 2px #900;
+	}
+	#window_box #link {
+		text-decoration: underline;
+		color: #0000FF;
+	}
+	.confirmar {
+		background-color: #f44;
+		border:	1px solid #d00;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 2px 2px 2px #900;
+		color:white;
+		cursor: pointer;
+		display: inline-block;
+		font: normal bold 12px Verdana, Arial, Helvetica, sans-serif;
+		height:18px;
+		margin: auto;
+		padding-top: 2px;
+		text-align:center;
+		text-shadow: 1px 1px 0 black;
+		width: 80px;
+	}
+	div#block {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pie-background: rgba(0,0,0,0.6);
+		background-color: rgba(0,0,0,0.6);
+		z-index: 100;
+		behavior:('http://ww2.telecontrol.com.br/mlg/js/PIE.php');
+	}
+</style>
+<script type="text/javascript" src='../js/jquery-1.6.1.min.js'></script>
+<script type="text/javascript" language="JavaScript">
+jQuery().ready(function($) {
+	$('.confirmar').click(function() {
+		$('#block').remove();
+	});
+	//$('#window_box').draggable({cursor: 'move',handle: '#ei_header'});
+	$('#ei_header').dblclick(function() {
+		$('#ei_container').slideToggle();
+	});
+});
+</script>
+</head>
+<div id="block">
+	<div id="window_box">
+		<div id="ei_header"><img src='../../img/favicon.ico' style='padding: 4px 1ex 0 0' />Comunicado Telecontrol</div>
+		<div id="fechar_msg" title='Mensagem lida.'>X</div>
+		<div id="ei_container" class='azul_dn'>
+			<h1 style='text-align:center'>INTERAÇÃO E APROVAÇÃO DE CHAMADOS</h1>
+			<p>Os chamados do Help Desk abertos há mais de <u>90</u> dias, com status <b>NOVO</b> ou <b>SUSPENSO</b> serão baixados automaticamente em <b>06/01/2012</b>.
+			Chamados <u>aguardando aprovação</u> de <b>REQUISITOS</b> ou de <b>ORÇAMENTO</b>, também serão baixados se não forem aprovados <b><u>em até 30 dias</u></b>.
+			Por isso, caso algum chamado de sua empresa esteja nessa condição e queira o atendimento aprove e informe os requisitos ou o orçamento <b>IMEDIATAMENTE</b>,
+			contamos com o seu apoio e celeridade nesse processo.
+			</p>
+			<br /><br />
+			</p>
+			<p align='center'><span class='confirmar'>&nbsp;Continuar&nbsp;</span></p>
+			<p style='text-align:right'>
+				<b>Equipe Telecontrol</b>
+			</p>
+		 </div>
+	</div>
+</div>

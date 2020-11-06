@@ -1,0 +1,276 @@
+div {
+  text-align: left;
+  font-size: 13px;
+}
+
+.obrigatorio {
+  color: #B94A48;
+  font-size: 12px;
+}
+
+.asteristico {
+  color:#B94A48;
+  background-color: inherit;
+  float:left;
+  margin-bottom:0;
+  margin-left:-9px;
+  margin-top:7px;
+}
+
+.alert  {
+  text-align:center;
+}
+
+.destaque_table {
+  background-color: #596D9B;
+}
+
+.container {
+  width: 850px;
+}
+
+.titulo_tabela {
+  background-color:#596d9b;
+  font: bold 16px "Arial";
+  color:#FFFFFF;
+  text-align:center;
+  padding: 5px 0 0 0;
+}
+
+caption.titulo_tabela {
+  border-radius: 3px;
+}
+
+.subtitulo_tabela {
+    background-color: #7092BE;
+    color: #FFFFFF;
+    font: bold 14px Arial;
+    text-align:center;
+    padding: 5px 0 0 0;
+}
+
+.subtitulo_tabela th {
+  line-height: 10px !important;
+}
+
+.titulo_coluna {
+  background-color:#596d9b;
+  font: bold 11px "Arial";
+  color:#FFFFFF;
+  text-align:center;
+  padding: 5px 0 0 0;
+}
+
+.tc_formulario {
+  background-color:#D9E2EF;
+  text-align:center;
+}
+
+.row-fluid {
+  margin-bottom: 0px;
+  height: 60px;
+}
+
+label {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.control-group label:not(.control-label) {
+    line-height: 1.9em;
+}
+
+table td {
+  font-size:12px;
+  margin-bottom: 0px;
+}
+
+table th {
+  text-align: center !important;
+}
+
+
+/* CSS LUPA */
+#topo {
+    background: #c7bfc9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c7bfc9 1%, #ededed 49%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#c7bfc9), color-stop(49%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c7bfc9 1%,#ededed 49%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c7bfc9 1%,#ededed 49%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c7bfc9 1%,#ededed 49%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #c7bfc9 1%,#ededed 49%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7bfc9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    width: auto;
+    height: 65px;
+}
+
+.espaco {
+  margin: 6px 0 15px 6px;
+}
+
+#border_table {
+  margin: 6px;
+}
+
+.alert_shadobox {
+margin: 6px; 
+width: auto;
+}
+
+.lupa_img {
+  width: 85px;
+  height: 80px;
+  margin: 5px 12px 15px 6px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #EDEDED !important;
+}
+
+table.full_info_table th {
+  text-align: right !important;
+  background-color: #7B96D7 !important; 
+  color: #FFFFFF !important; 
+  font-weight: bold !important;
+  padding: 4px;
+}
+
+table.full_info_table td {
+  padding: 4px;
+}
+
+table.full_info_table th.full_info_title {
+  background-color: #596D9B !important; 
+  color: #FFFFFF !important; 
+  font-weight: bold !important;
+  text-align: center !important;
+  padding: 8px;
+}
+
+.cursor_lupa {
+  cursor: pointer;
+}
+
+tr.titulo_coluna a, tr.titulo_coluna .btn-link {
+  color: #FFF !important;
+}
+
+.fa-search {
+  cursor: pointer;
+}
+
+.table {
+  height: auto !important;
+}
+
+.table > thead > tr.error > th {
+  background-color: #f2dede;
+}
+
+.table > thead > tr.warning > th {
+  background-color: #fcf8e3;
+}
+
+.table > thead > tr.success > th {
+  background-color: #dff0d8;
+}
+
+.table > thead > tr.info > th {
+  background-color: #d9edf7;
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  margin-bottom: 0;
+}
+
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  opacity: 0;
+  margin-top: -20px !important;
+  width: 100% !important;;
+  height: 38px !important;
+}
+
+.custom-file-input:focus ~ .custom-file-control {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-file-input:focus ~ .custom-file-control::before {
+  border-color: #80bdff;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Browse";
+}
+
+.custom-file-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.custom-file-label::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  height: calc(calc(1.54rem + 2px) - 1px * 2);
+  padding: 0.375rem 0.75rem;
+  line-height: 1.6;
+  color: #495057;
+  content: "Escolha";
+  background-color: #e9ecef;
+  border-left: 1px solid #ced4da;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.input-group > .custom-file {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.input-group > .custom-file:focus {
+  z-index: 3;
+}
+
+.input-group > .form-control + .custom-file,
+.input-group > .custom-select + .custom-file,
+.input-group > .custom-file + .form-control,
+.input-group > .custom-file + .custom-select,
+.input-group > .custom-file + .custom-file {
+  margin-left: -1px;
+}
+
+.input-group > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label::before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .custom-file:not(:first-child) .custom-file-label,
+.input-group > .custom-file:not(:first-child) .custom-file-label::before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

@@ -1,0 +1,1 @@
+to_char(current_date, 'DY');

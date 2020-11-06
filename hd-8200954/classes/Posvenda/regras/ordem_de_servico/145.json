@@ -1,0 +1,9 @@
+{
+	"linha_tipo_atendimento": {
+		"843": [198,202,197,201,200,206],
+		"844": [202,203,197,201,200,206]
+	},
+	"linha_sem_lgr": 844,
+	"solucao_os" : true,
+	"nao_valida_lb" : true
+}

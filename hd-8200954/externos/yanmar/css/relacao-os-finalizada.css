@@ -1,0 +1,122 @@
+	table{
+		font-size:15px;
+	    margin-bottom: 20px !important;
+	    margin-top:20px !important;
+        background-color: #596d9b17 !important;
+	}
+	thead{
+		background-color: #596D9B;
+    	color: #fff;
+	}
+
+	input[name='avaliacao']{
+		min-width:250px;
+		height: 35px;
+	}
+
+	.container-table{
+	    margin-top: 50px !important;
+	    margin-bottom: 100px !important;
+	    width: 70% !important;
+	    border-radius:5px;
+	    -webkit-box-shadow: -1px 0px 12px -1px rgba(0, 0, 0, 0.49);
+		-moz-box-shadow: -1px 0px 12px -1px rgba(0, 0, 0, 0.49);
+		box-shadow: -1px 0px 12px -1px rgba(0, 0, 0, 0.49);
+	}
+
+	#tbl_os_wrapper{
+	    border-top: 1px solid #00000042;
+	    padding: 30px;
+	    width: 100%;
+	}
+
+	.navbar{
+		width: 100%;
+	    height: 50px;
+	    background-color: #555584;
+	}
+
+	.center{
+	    text-align: center;
+	    text-align: -webkit-center;
+	    text-align: -moz-center;
+	    vertical-align: middle;
+	}
+
+	.btn-gravar-avaliacao{
+    	padding: 2px 6px 2px 6px !important;
+	}
+
+	table.dataTable thead th, table.dataTable thead td{
+		border: none !important;
+	}
+
+	tbody > tr{
+		font-size: 13px;
+	}
+	.column-img {
+	  float: left;
+	  padding: 5px;
+	  width: 20%;
+	  position: relative;
+	}
+
+	.column-img > img{
+		width: 100%;
+		height: auto;
+		min-width: 20px;
+	}
+
+	.column-title {
+	  float: left;
+	  padding: 5px;
+	  width: 80%;
+	}
+
+	.column-title > h4{
+	    font-size: 1.5vw;
+	    margin: 0;
+	}
+
+	.row-header{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 10px;
+	}
+
+	#tbl_os_paginate{
+		font-size:12px;
+	}
+
+	.alert-warning{
+		width: 100%;
+    	margin-top: 10px;
+	}
+
+	@media all and (max-width: 900px) {
+		.container-table{
+			width: 95% !important;
+			margin-top:10px!important;
+		}
+		.dataTables_length{
+			display: none;
+		}
+
+		.column-title > h4{
+		    font-size:14px;
+		}
+
+		.dataTables_info{
+			display:none;
+		}
+
+		#tbl_os_paginate{
+			font-size:10px;
+		}
+
+		input[type='search']{
+			width: 100%;
+		}
+	}
+}

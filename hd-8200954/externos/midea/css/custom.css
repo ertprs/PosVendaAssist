@@ -1,0 +1,71 @@
+/* HEADER */
+ul.menu.navbar li:first-child {
+  margin-left: 0;
+  display: none; }
+  @media (min-width: 768px) {
+    ul.menu.navbar li:first-child {
+      display: block; } }
+ul.menu.navbar .btn-blue {
+  background: #00AFF3;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 6px 10px;
+  margin-top: 22px;
+  transition: background 0.2s ease-out; }
+  ul.menu.navbar .btn-blue:hover {
+    background: #065492; }
+
+.menu > li {
+  margin-left: 22px; }
+
+/* ONDE COMPRAR */
+.sliderBanner {
+  background: #e6e2df; }
+
+.contentRodape {
+  position: relative; }
+  .contentRodape::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -284px;
+    left: 20px;
+    background: url("../img/site/common/dia-das-maes/flower-5.png") center top no-repeat;
+    width: 224px;
+    height: 284px; }
+  .contentRodape::after {
+    content: '';
+    display: block;
+    width: 204px;
+    height: 328px;
+    position: absolute;
+    top: -328px;
+    right: 20px;
+    background: url("../img/site/common/dia-das-maes/flower-6.png") center top no-repeat; }
+
+.containerBanner {
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  z-index: 10;
+  position: relative; }
+
+.ondeComprarBannerMideaStore {
+  background: url("../img/site/common/onde-comprar/background-banner.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center; }
+  .ondeComprarBannerMideaStore img {
+    max-width: 100%; }
+
+/* TIME COUNTER */
+.timeCounter {
+  background: #00AFF3;
+  color: #fff;
+  padding: 8px 0;
+  text-align: right;
+  font-size: 16px; }
+  .timeCounter span {
+    font-weight: bold; }
+
+/*# sourceMappingURL=custom.css.map */

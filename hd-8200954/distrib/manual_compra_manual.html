@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Regras da tela</title>
+	<style type="text/css">
+		body {
+			font: normal 13px "Arial";
+		}
+		h2 {
+			background-color: #596D9B;
+			font-weight:bold;
+			font-size: 1.2em;
+			color: white;
+			text-align: center;
+			padding: 3px 0;
+		}
+		ul li {
+			background-color:#FFF;
+		}
+		ul li:nth-of-type(odd) {
+			background-color:#FAFAFA;
+		}
+	</style>
+</head>
+<body>
+	<h2>Como é feito o cálculo...?</h2>
+	<p>Como calcula cada coluna:</p>
+	<h3>Compra</h3>
+	<p>A coluna <b>Compra</b> é baseada no estoque e no faturamento, com a seguinte regra:<br />
+	Primeiro, calcula o <u><b>Estoque Mínimo</b></u>, com este cálculo:
+		<p><b>Média</b> * <b>qtdeX</b> / 2</p>
+		Sendo que <i>qtdeX</i> corresponde ao <b>nº de postos</b> que fizeram pedido dessa peça.<br /><br />
+	Depois, para determinar a <u><b>quantidade comprometida</b></u>, soma esse estoque mínimo com a Quantidade (não a qtdeX)<br />
+	<p><b>Estoque mínimo</b> + <b>quantidade</b></p>
+	Calcula o <u><b>total de entrada</b></u> da peça:
+	<p><b>Estoque mínimo</b> + <b>qtde Fábrica</b> + <b>qtde Transportadora</b></p>
+	O total da coluna <u><b>Compra</b></u> vem determinado pela <b>qtde comprometida</b> (estoque mínimo+qtde) <u>menos</u> o <b>total de entrada</b>.
+	</p>
+	<h3>Mínimo</h3>
+	Esta coluna informa o estoque mínimo da peça.<br />
+	<p>O cálculo desta coluna é: coluna <b>Media OK</b> * <b>QtdeX</b> / 2</p>
+	<p>Este valor é usado depois para o cálculo da Qtde. Comprometida.</p>
+	<h3>Pedido</h3>
+	<p>Esta coluna informa a quantidade de peças solicitadas pelos postos. Esta quantidade está baseada em:</p>
+	<ul>
+		<li>Peças em pedidos que não tenham sido cancelados, recusados, ou já totalmente atendidos,</li>
+		<li>quantidade dessa peça, considerando que a quantidade será a soma da quantidade no pedido, menos a quantidade cancelada menos a quantidade faturada pelo distribuidor,</li>
+		<li>desconsidera as peças cuja quantidade, após o cálculo, seja 0.</li>
+		<li>desconsidera a quantidade nos pedidos de postos com contas em atraso.</li>
+		<li>Desconsidera as "peças" que na verdade são produtos (pedidos de troca, p.e.)</li>
+		<li>quantidade da peça no estoque,</li>
+	</ul>
+	<h3>Estoque</h3>
+	<p>Reflete o estoque atual da peça. Não considera o acerto de estoque.</p>
+
+	<h3>Fábrica</h3>
+	<p>Esta coluna é a soma das peças que estão com o Fabricante (peças solicitadas pelo Distribuidor, ainda não atendidas pelo Fabricante, segundo o Faturamento)</p>
+	<h3>Transportadora</h3>
+	<p>Quantidade de peças na transportadora (cálculo: peças sem distribuidor, não cancladas e não conferidas).</p>
+	<h3>Colunas 'Cálculo'</h3>
+	<p>Quanto as quantidades das colunas "Cálculo", estas são as condições para chegar a esses valores:</p>
+	<p>Para o cálculo da previsão de <b>30 dias</b>, faz a soma da quantidade dos pedidos realizados nos últimos 30 dias.</p>
+	<p>Para o cálculo da previsão de <b>60 dias</b>, faz a soma da quantidade dos pedidos realizados nos 30 dias anteriores (entre 31 e 60 dias atrás).</p>
+	<p>Para o cálculo da previsão de <b>90 dias</b>, faz a soma da quantidade dos pedidos realizados nos 60 dias anteriores (entre 61 e 90 dias atrás).</p>
+
+	<p>Para determinar quem é o <b>maior comprador</b> de cada peça, faz a soma das quantidades dessa peça, separando por posto, e pega o valor maior.</p>
+	<p><b>QtdeX</b> corresponde com a quantidade de postos que solicitaram a peça.</p>
+	<p>A <b>média</b> é feita com base a soma das quantidades, posto por posto, e determinando a média.</p>
+	<p>Adiciona também a <b>desviação</b>, que indica a confiabilidade dos valores anteriores (previsão e média). Quanto menor a desviação, mais confiáveis são os resultados.</p>
+</body>
+</html>

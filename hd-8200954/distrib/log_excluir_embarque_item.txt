@@ -1,0 +1,20 @@
+
+
+ Excluir item 6388573 (09/01/2008 07:47:21) 
+ [ SELECT fn_cancelar_embarque_item(6388573); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 6389357 (14/01/2008 13:12:54) 
+ [ SELECT fn_cancelar_embarque_item(6389357); ]
+
+ COMMIT TRANSACTION 
+
+
+ Excluir item 6392124 (16/01/2008 07:29:15) 
+ [ SELECT fn_cancelar_embarque_item(6392124); ]
+
+ COMMIT TRANSACTION 
+
+ COMMIT TRANSACTION 

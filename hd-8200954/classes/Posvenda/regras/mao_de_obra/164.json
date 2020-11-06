@@ -1,0 +1,5 @@
+{
+    "nao_calcula_km": true,
+    "nao_calcula_peca": true,
+    "calcula_qtde_dias": true
+}

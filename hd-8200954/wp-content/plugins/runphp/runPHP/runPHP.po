@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: runPHP\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2006-01-11 00:01-0800\n"
+"Last-Translator: James Van Lommel <jamesvl@gmail.com>\n"
+"Language-Team: nosq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: c:\\Data\\Business\\repos\\nosq\\htdocs\\nosq.com\\wp\\wp-content\\plugins\\runPHP\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: runPHP.php:165
+msgid "run PHP code?"
+msgstr "eval() code?"
+
+#: runPHP.php:304
+msgid "I can activate or deactivate runPHP on a post."
+msgstr "I can activate or deactivate runPHP on a post."
+
+#: runPHP_options_ui.inc.php:33
+msgid "Update completed successfully."
+msgstr "Update completed successfully."
+
+#: runPHP_options_ui.inc.php:42
+msgid "Roles allowed to use runPHP:"
+msgstr "Roles allowed to use runPHP:"
+
+#: runPHP_options_ui.inc.php:66
+msgid "Update options"
+msgstr "Update options"
+

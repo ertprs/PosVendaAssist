@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD attrname="transportadora" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="fabrica" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="codigo_interno" fieldtype="string" WIDTH="20"/>
+<FIELD attrname="nome" fieldtype="string" WIDTH="50"/>
+<FIELD attrname="cnpj" fieldtype="string" WIDTH="14"/>
+<FIELD attrname="fantasia" fieldtype="string" WIDTH="30"/>
+</FIELDS>
+</METADATA>
+<ROWDATA>
+<ROW RowState="4" transportadora="" fabrica="" codigo_interno="" nome="" cnpj="" fantasia=""/>
+</ROWDATA>
+</DATAPACKET>

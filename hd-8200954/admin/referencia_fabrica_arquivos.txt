@@ -1,0 +1,443 @@
+black_quebra_acumulado_2.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado_2.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado_2.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado_2.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado_2.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado_2.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado_2.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado_ant.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado_ant.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado_ant.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado_ant.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado_ant.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado_ant.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado_ant.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado_ant.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado_ant.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado_ant.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado_ant.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado_ant.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado_ant.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado_ant.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado_ant.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado_os.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_os-prov2.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_os-prov.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_pecas.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_pecas-prov2.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_pecas-prov2.php:referencia_fabrica | 7935BSBR
+black_quebra_acumulado_pecas-prov.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado_pecas-prov.php:referencia_fabrica | 7935BSBR
+black_quebra_acumulado_pecas_sam.php:		WHERE tbl_produto.referencia_fabrica = '$referencia' ";
+black_quebra_acumulado.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov_2.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov_2.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov_2.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov_2.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov_2.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov_2.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_2.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov_2_sil.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov_2_sil.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov_2_sil.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov_2_sil.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov_2_sil.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov_2_sil.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_2_sil.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-igor2.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-igor2.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-igor2.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-igor2.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-igor2.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-igor2.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-igor2.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-igor2.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor2.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor2.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-igor2.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor2.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor2.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-igor2.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor2.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor2.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-igor2.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-igor2.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-igor2.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-igor2.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-igor2.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor2.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-igor.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-igor.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-igor.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-igor.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-igor.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-igor.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-igor.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-igor.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-igor.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-igor.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-igor.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-igor.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-igor.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-igor.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-igor.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-igor.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-igor.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-muca.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-muca.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-muca.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-muca.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-muca.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-muca.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-muca.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-muca.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-muca.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-muca.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-muca.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-muca.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-muca.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-muca.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-muca.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-muca.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-muca.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-muca.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-muca.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-muca.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-muca.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-muca.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov_.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov_.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov_.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov_.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov_.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov_.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov_.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov_.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov_.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov_.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov_.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov_.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov_.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov_.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov_.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov_.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov_.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov_.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov_rg.php:						tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov_rg.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov_rg.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov_rg.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov_rg.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov_rg.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov_rg.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V1.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-V1.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-V1.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-V1.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-V1.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V1.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-V1.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V1.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V1.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V1.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V1.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V1.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V1.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V1.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V1.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V1.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-V1.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-V1.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-V1.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-V1.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V1.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V1.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V2.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-V2.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-V2.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-V2.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-V2.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V2.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-V2.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V2.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V2.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V2.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V2.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V2.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V2.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V2.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V2.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V2.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-V2.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-V2.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-V2.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-V2.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V2.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V2.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V3.php:					(SELECT descricao FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS nome ,
+black_quebra_acumulado-prov-V3.php:					(SELECT voltagem  FROM tbl_produto WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS voltagem ,
+black_quebra_acumulado-prov-V3.php:					(SELECT tbl_linha.nome FROM tbl_produto JOIN tbl_linha USING (linha) WHERE referencia_fabrica = fcr.referencia LIMIT 1) AS linha_nome ,
+black_quebra_acumulado-prov-V3.php:			FROM   (SELECT	tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-prov-V3.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-V3.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-prov-V3.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V3.php:				GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V3.php:				ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V3.php:					tbl_produto.referencia_fabrica AS referencia , 
+black_quebra_acumulado-prov-V3.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, linha_nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V3.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V3.php:					tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V3.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V3.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado-prov-V3.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-prov-V3.php:SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-prov-V3.php:GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-prov-V3.php:ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-prov-V3.php:		tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-prov-V3.php:		tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-V3.php:ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-prov-xls.php:			GROUP BY tbl_produto.descricao, tbl_produto.voltagem, tbl_linha.nome, tbl_produto.referencia_fabrica 
+black_quebra_acumulado-prov-xls.php:			ORDER BY tbl_produto.referencia_fabrica";
+black_quebra_acumulado_sam.php:	$sql = "SELECT  tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado_sam.php:					GROUP BY tbl_produto.referencia_fabrica
+black_quebra_acumulado_sam.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado_teste.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado_teste.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado_teste.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado_teste.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado_teste.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado_teste.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado_teste.php:	ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-V1.php:	$sql = "SELECT  tbl_produto.referencia_fabrica  AS referencia ,
+black_quebra_acumulado-V1.php:update black_antigo_os set produto = tbl_produto.produto from tbl_produto join tbl_linha using (linha) where tbl_linha.fabrica = 1 and black_antigo_os.produto is null and black_antigo_os.referencia_pesquisa ILIKE '%' || TRIM (tbl_produto.referencia_fabrica) || '%' AND substr (black_antigo_os.voltagem,1,3) = substr (tbl_produto.voltagem,1,3) ;
+black_quebra_acumulado-V2.php:						tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-V2.php:		SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-V2.php:		GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-V2.php:		ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-V2.php:				tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-V2.php:				tbl_produto.referencia_fabrica 
+black_quebra_acumulado-V2.php:		ORDER BY tbl_produto.referencia_fabrica
+black_quebra_acumulado-V3.php:					tbl_os.produto , tbl_produto.referencia_fabrica, 
+black_quebra_acumulado-V3.php:	SELECT  rpad(referencia_fabrica,18,' ')                                                    AS PRODUTO        ,
+black_quebra_acumulado-V3.php:	GROUP BY    referencia_fabrica, data
+black_quebra_acumulado-V3.php:	ORDER BY    rpad(referencia_fabrica,18,' ');
+black_quebra_acumulado-V3.php:			tbl_produto.referencia_fabrica AS referencia ,
+black_quebra_acumulado-V3.php:			tbl_produto.referencia_fabrica 
+black_quebra_acumulado-V3.php:	ORDER BY tbl_produto.referencia_fabrica
+produto_cadastro-2007-09-18.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-2007-09-18.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-2007-09-18.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-2007-09-18.php:						referencia_fabrica       ,
+produto_cadastro-2007-09-18.php:						$aux_referencia_fabrica          ,
+produto_cadastro-2007-09-18.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-2007-09-18.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-2007-09-18.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-2007-09-18.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-2007-09-18.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro-2007-11-30.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-2007-11-30.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-2007-11-30.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-2007-11-30.php:						referencia_fabrica       ,
+produto_cadastro-2007-11-30.php:						$aux_referencia_fabrica          ,
+produto_cadastro-2007-11-30.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-2007-11-30.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-2007-11-30.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-2007-11-30.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-2007-11-30.php:			<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro_ant2.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro_ant2.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro_ant2.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro_ant2.php:						referencia_fabrica       ,
+produto_cadastro_ant2.php:						$aux_referencia_fabrica          ,
+produto_cadastro_ant2.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro_ant2.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro_ant2.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro_ant2.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro_ant2.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro_igor.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro_igor.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro_igor.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro_igor.php:						referencia_fabrica       ,
+produto_cadastro_igor.php:						$aux_referencia_fabrica          ,
+produto_cadastro_igor.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro_igor.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro_igor.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro_igor.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro_igor.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro.php:						referencia_fabrica       ,
+produto_cadastro.php:						$aux_referencia_fabrica          ,
+produto_cadastro.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro.php:			<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro_teste.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro_teste.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro_teste.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro_teste.php:						referencia_fabrica       ,
+produto_cadastro_teste.php:						$aux_referencia_fabrica          ,
+produto_cadastro_teste.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro_teste.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro_teste.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro_teste.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro_teste.php:			<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro_V1.php:		$referencia_fabrica		= $_POST["referencia_fabrica"];
+produto_cadastro_V1.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro_V1.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro_V1.php:						referencia_fabrica       ,
+produto_cadastro_V1.php:						$aux_referencia_fabrica          ,
+produto_cadastro_V1.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro_V1.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro_V1.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro_V1.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro_V1.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro-v2.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-v2.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-v2.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-v2.php:						referencia_fabrica       ,
+produto_cadastro-v2.php:						$aux_referencia_fabrica          ,
+produto_cadastro-v2.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-v2.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-v2.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-v2.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-v2.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro-V3.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-V3.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-V3.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-V3.php:						referencia_fabrica       ,
+produto_cadastro-V3.php:						$aux_referencia_fabrica          ,
+produto_cadastro-V3.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-V3.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-V3.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-V3.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-V3.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro-v4.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-v4.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-v4.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-v4.php:						referencia_fabrica       ,
+produto_cadastro-v4.php:						$aux_referencia_fabrica          ,
+produto_cadastro-v4.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-v4.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-v4.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-v4.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-v4.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_cadastro-V5.php:		$referencia_fabrica			= $_POST["referencia_fabrica"];
+produto_cadastro-V5.php:		if (strlen($_POST["referencia_fabrica"]) > 0)	$aux_referencia_fabrica = "'". trim($_POST["referencia_fabrica"]) ."'";
+produto_cadastro-V5.php:		$aux_referencia_fabrica = "'". trim($_POST["referencia"]) ."'";
+produto_cadastro-V5.php:						referencia_fabrica       ,
+produto_cadastro-V5.php:						$aux_referencia_fabrica          ,
+produto_cadastro-V5.php:							referencia_fabrica       = $aux_referencia_fabrica                ,
+produto_cadastro-V5.php:			$referencia_fabrica         = $_POST["referencia_fabrica"];
+produto_cadastro-V5.php:					tbl_produto.referencia_fabrica      ,
+produto_cadastro-V5.php:		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_cadastro-V5.php:		<input type="text" class="frm" name="referencia_fabrica" value="<? echo $referencia_fabrica ?>" size="15" maxlength="20">
+produto_consulta_20071123.php://		$referencia_fabrica       = trim(pg_result($res,0,referencia_fabrica));
+produto_consulta.php://		$referencia_fabrica       =		trim(pg_result($res,0,referencia_fabrica));
+produto_consulta_teste.php://		$referencia_fabrica       =		trim(pg_result($res,0,referencia_fabrica));
+relatorio_field_call_rate_def_constatado_grafico.php:				JOIN (SELECT tbl_os.os FROM tbl_os JOIN tbl_os_extra USING (os) JOIN tbl_extrato USING (extrato) JOIN tbl_produto on tbl_produto.produto = tbl_os.produto WHERE tbl_produto.referencia_fabrica = '$produto' AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59') oss ON oss.os = tbl_os_extra.os
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_produto.referencia_fabrica = '$produto'
+relatorio_field_call_rate_def_constatado_grafico.php:				JOIN (SELECT tbl_os.os FROM tbl_os JOIN tbl_os_extra USING (os) JOIN tbl_extrato USING (extrato) JOIN tbl_produto on tbl_produto.produto = tbl_os.produto WHERE tbl_produto.referencia_fabrica = '$produto' AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59') oss ON oss.os = tbl_os_extra.os
+relatorio_field_call_rate_def_constatado_grafico.php:				AND tbl_produto.referencia_fabrica = '$produto'
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_defeitos_grupo.php:				AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_nserie_grafico.php:					AND tbl_produto.referencia_fabrica='$produto' AND tbl_produto.ativo='t'
+relatorio_field_call_rate_pecas_grafico_grupo.php:				AND tbl_produto.referencia_fabrica = '$produto'
+relatorio_field_call_rate_pecas_grafico_grupo.php:				AND tbl_produto.referencia_fabrica = '$produto'
+relatorio_field_call_rate_pecas_grupo2.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_pecas_grupo2.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_pecas_grupo2.php:		$cond_6 = " tbl_produto.referencia_fabrica = '$produto' ";
+relatorio_field_call_rate_pecas_grupo.php:				JOIN (SELECT tbl_os.os FROM tbl_os JOIN tbl_os_extra USING (os) JOIN tbl_extrato USING (extrato) JOIN tbl_produto on tbl_os.produto = tbl_produto.produto WHERE tbl_produto.referencia_fabrica='$produto' AND tbl_produto.ativo='t' AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59') oss ON oss.os = tbl_os_extra.os
+relatorio_field_call_rate_pecas_grupo.php:				AND tbl_produto.referencia_fabrica='$produto'
+relatorio_field_call_rate_pecas_grupo.php:				WHERE tbl_produto.referencia_fabrica='$produto' AND tbl_produto.ativo='t' 
+relatorio_field_call_rate_pecas_grupo.php:					AND tbl_produto.referencia_fabrica='$produto' AND ativo='t'
+relatorio_field_call_rate_pecas_grupo.php:				JOIN (SELECT tbl_os.os FROM tbl_os JOIN tbl_os_extra USING (os) JOIN tbl_extrato USING (extrato) WHERE tbl_os.produto in(select produto from tbl_produto where referencia_fabrica='$produto' AND ativo='t') AND tbl_extrato.data_geracao BETWEEN '$data_inicial 00:00:00' AND '$data_final 23:59:59') oss ON oss.os = tbl_os_extra.os
+relatorio_field_call_rate_pecas_grupo.php:				AND   tbl_produto.referencia_fabrica='$produto' AND tbl_produto.ativo='t' " ;
+relatorio_field_call_rate_produto_grupo.php:			$sql = "SELECT tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo.php:					GROUP BY tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo.php:					ORDER by tbl_produto.referencia_fabrica";
+relatorio_field_call_rate_produto_grupo.php:					$xreferencia_fabrica = pg_result($res,$x,referencia_fabrica);
+relatorio_field_call_rate_produto_grupo.php:					echo "<option value='$xreferencia_fabrica'>$xreferencia_fabrica</option>";
+relatorio_field_call_rate_produto_grupo.php:	$sql = "SELECT tbl_produto.referencia_fabrica,
+relatorio_field_call_rate_produto_grupo.php:			WHERE tbl_produto.referencia_fabrica  in ($produto_referencia)
+relatorio_field_call_rate_produto_grupo.php:			and tbl_produto.referencia_fabrica notnull 
+relatorio_field_call_rate_produto_grupo.php:			GROUP BY tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo.php:	$sql = "SELECT tbl_produto.referencia_fabrica,
+relatorio_field_call_rate_produto_grupo.php:		AND   tbl_produto.referencia_fabrica IS NOT NULL
+relatorio_field_call_rate_produto_grupo.php:		AND tbl_produto.referencia_fabrica IN ($produto_referencia)
+relatorio_field_call_rate_produto_grupo.php:		GROUP BY tbl_produto.referencia_fabrica;";
+relatorio_field_call_rate_produto_grupo.php:			$referencia_fabrica = trim(pg_result($res,$i,referencia_fabrica));
+relatorio_field_call_rate_produto_grupo.php:			echo "<TD  align='left'><B><a href='javascript:AbrePeca(\"$referencia_fabrica\",\"$x_data_inicial\",\"$x_data_final\",\"grupo\");'>$referencia_fabrica</a></b></td>";
+relatorio_field_call_rate_produto_grupo.php:					AND   referencia_fabrica  = '$referencia_fabrica'
+relatorio_field_call_rate_produto_grupo_teste.php:			$sql = "SELECT tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo_teste.php:					GROUP BY tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo_teste.php:					ORDER by tbl_produto.referencia_fabrica";
+relatorio_field_call_rate_produto_grupo_teste.php:					$xreferencia_fabrica = pg_result($res,$x,referencia_fabrica);
+relatorio_field_call_rate_produto_grupo_teste.php:					echo "<option value='$xreferencia_fabrica'>$xreferencia_fabrica</option>";
+relatorio_field_call_rate_produto_grupo_teste.php:	$sql = "SELECT tbl_produto.referencia_fabrica,
+relatorio_field_call_rate_produto_grupo_teste.php:			WHERE tbl_produto.referencia_fabrica  in ($produto_referencia)
+relatorio_field_call_rate_produto_grupo_teste.php:			and tbl_produto.referencia_fabrica notnull 
+relatorio_field_call_rate_produto_grupo_teste.php:			GROUP BY tbl_produto.referencia_fabrica
+relatorio_field_call_rate_produto_grupo_teste.php:	$sql = "SELECT tbl_produto.referencia_fabrica,
+relatorio_field_call_rate_produto_grupo_teste.php:		AND   tbl_produto.referencia_fabrica IS NOT NULL
+relatorio_field_call_rate_produto_grupo_teste.php:		AND tbl_produto.referencia_fabrica IN ($produto_referencia)
+relatorio_field_call_rate_produto_grupo_teste.php:		GROUP BY tbl_produto.referencia_fabrica;";
+relatorio_field_call_rate_produto_grupo_teste.php:			$referencia_fabrica = trim(pg_result($res,$i,referencia_fabrica));
+relatorio_field_call_rate_produto_grupo_teste.php:			echo "<TD  align='left'><B><a href='javascript:AbrePeca(\"$referencia_fabrica\",\"$x_data_inicial\",\"$x_data_final\",\"grupo\");'>$referencia_fabrica</a></b></td>";
+relatorio_field_call_rate_produto_grupo_teste.php:					AND   referencia_fabrica  = '$referencia_fabrica'
+relatorio_field_call_rate_sem_peca_grupo.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_sem_peca_grupo.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_serie_grupo.php:			AND tbl_produto.referencia_fabrica = '$produto' 
+relatorio_field_call_rate_serie_grupo.php:		AND   tbl_acao_corretiva.referencia_fabrica ='$produto' order by radical_serie";
+rel_new_visao_geral_produto.php:	$sql = "SELECT  tbl_produto.referencia_fabrica                                        AS PRODUTO        ,
+rel_new_visao_geral_produto.php:			GROUP BY    tbl_produto.referencia_fabrica ;
+rel_new_visao_geral_produto.php:		$sql = "SELECT produto FROM tbl_produto WHERE referencia_fabrica = '$referencia'";
+rel_new_visao_geral_produto_raphael.php:	$sql = "SELECT  tbl_produto.referencia_fabrica                                        AS PRODUTO        ,
+rel_new_visao_geral_produto_raphael.php:			GROUP BY    tbl_produto.referencia_fabrica ;
+rel_new_visao_geral_produto_raphael.php:		$sql = "SELECT produto FROM tbl_produto WHERE referencia_fabrica = '$referencia'";
+rel_new_visao_geral_produto_sam.php:	$sql = "SELECT  tbl_produto.referencia_fabrica                                        AS PRODUTO        ,
+rel_new_visao_geral_produto_sam.php:			GROUP BY    tbl_produto.referencia_fabrica ;
+rel_new_visao_geral_produto_sam.php:		$sql = "SELECT produto FROM tbl_produto WHERE referencia_fabrica = '$referencia'";
+rel_new_visao_geral_produto-V2.php:	$sql = "SELECT  tbl_produto.referencia_fabrica                                        AS PRODUTO        ,
+rel_new_visao_geral_produto-V2.php:			GROUP BY    tbl_produto.referencia_fabrica ;
+rel_new_visao_geral_produto-V2.php:		$sql = "SELECT produto FROM tbl_produto WHERE referencia_fabrica = '$referencia'";

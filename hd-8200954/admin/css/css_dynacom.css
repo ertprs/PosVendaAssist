@@ -1,0 +1,140 @@
+/*====================================================
+		GERAL
+======================================================*/
+
+body {
+padding: 0px,0px,0px,0px;
+margin: 0px,0px,0px,0px;
+text-align: center;
+background-color: #FFFFFF;
+}
+
+img {border: 0px;
+}
+
+a:link {
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #C0C0C0;
+	text-decoration: none;
+}
+
+a:visited {
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #C0C0C0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:active {
+	color: #000000;
+}
+
+
+/*====================================================
+		MENU
+======================================================*/
+
+.menu_up {
+	height: 10;
+	background-color: #F0F0F0;
+	border-right: 3px solid  #FFFFFF;
+}
+
+.menu_dw {
+	text-align: center;
+	height: 40;
+	border-right: 3px solid #FFFFFF;
+	background-image: url("../imagens/btn_back.png"); 
+}
+
+.menu_txt {
+	height: 10;
+	background-color: #ffffff;
+	border-right: 3px solid #FFFFFF;
+}
+
+a.menu_item:link {
+	font: 10px bold Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000; /* COR DO TEXTO DO LINK */
+	text-decoration: none;
+}
+
+a.menu_item:visited {
+	font: 10px bold Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000; /* COR DO TEXTO DO LINK */
+	text-decoration: none;
+}
+
+a.menu_item:hover {
+	color: #FFFFFF;
+	background-color: #E0E0E0 /* COR DO FUNDO DO LINK */
+}
+
+a.menu_item:active {
+	color: #000000;
+}
+
+/*====================================================
+		SUB-MENU
+======================================================*/
+.sub_menu {
+	background-color: #0093DD;
+	height: 18px;
+
+}
+
+a.sub_item:link {
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+a.sub_item:visited {
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.sub_item:hover {
+	color: #000000;
+}
+/*====================================================
+		CABECALHO DE IDENTIFICAÇÃO DE USUÁRIO E DATA
+======================================================*/
+
+.cab_txt {
+	font: 10px bold Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+/*====================================================
+		CORPO DO FORMULÁRIO
+======================================================*/
+.corpo {
+	padding: 5px;
+	height: 280;
+	background-color: #E0E0E0;
+}
+/*====================================================
+		CORPO DE IMPRESSÃO
+======================================================*/
+
+/*====================================================
+		CORPO DE CONSULTA
+======================================================*/
+
+/*====================================================
+		RODAPÉ
+======================================================*/
+
+.rodape {
+	padding: 3px;
+	background-color: #D9E2EF;
+	height: 16px;
+	font: 10px bold Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #596D9B;
+}

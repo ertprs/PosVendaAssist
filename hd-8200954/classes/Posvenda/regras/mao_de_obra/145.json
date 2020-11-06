@@ -1,0 +1,8 @@
+{
+  "tabela": "tbl_os_produto",
+  "limite_km": true,
+  "limite_km_qtde": 40,
+  "limite_km_valor": 28,
+  "nao_calcula_peca_tipo_atendimento": [200, 201],
+  "adicional_preco_peca": { "formula": "+%", "valor": 30 }
+}

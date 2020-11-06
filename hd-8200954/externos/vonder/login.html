@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Grupo OVD - Acesso Restrito</title>
+<!--CSS-->
+<link href="css/ecatalogo.css" rel="stylesheet" type="text/css" media="all" />
+<!--SCRIPTS-->
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/ecatalogo_utils.js"></script>
+<script type="text/javascript">
+	// JavaScript Document
+	var erro;
+
+	function valida_senha() {
+		var url  = "../../index.php?ajax=sim&acao=validar";
+
+		var parametros = jQuery('form#acessar').serialize();//  Prepara os campos do formulário para enviar por POST
+		$('#btnLogin').attr('disabled',true).css('cursor', 'not-allowed,wait');		//  Deshabilita o botão de login enquanto está conferindo o usuário
+
+		$.post(
+			url,	
+			parametros+"&btnAcao=enviar",
+			function (data) {
+			var resposta= data.split("|");
+			var codigo  = resposta[0].replace(/.*\s(\w+)$/g, '');
+			var	texto   = resposta[1];
+
+			if (data.length > 0) {
+					if (codigo=="debug") {
+						alert(data);
+					} else if (codigo=="ok"){
+						/*erro.hide();
+						carga.html("Entrando...");
+						carga.show('fast')
+							 .delay(1000)
+							 .queue(function() {*/
+						window.parent.location = '../../'+texto;
+						/*		jQuery(this).dequeue();
+							 })
+							 .hide('fast');*/
+					} else if (codigo=="1"){
+					//	texto = texto+"<p>Se você esqueceu sua senha, <a href='esqueci_senha.php' style='color:#733;'><b>clique aqui!</b></a></p>";
+						erro.html(texto);
+						erro.fadeIn('normal')
+							.delay(3000).fadeOut('fast');
+						$('input[name=senha]').val('');
+						$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+					} else {
+						// 					alert(data);
+						texto = "O sistema passará por manutenção técnica!\n<b>";
+						//texto+= "Dentro de algumas horas será restabelecido.\n</b>Agradecemos a compreensão!";
+						erro.html(texto);
+						erro.fadeIn('normal')
+							.delay(4000).fadeOut('fast');
+						$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+						//alert(http_forn[curDateTime].responseText);
+					}
+				} else {
+					texto = "Erro no acesso.<br><b>Tente novamente.</b>";
+					erro.html(texto);
+					erro.fadeIn('normal')
+						.delay(3000).fadeOut('fast');
+					$('#btnLogin').removeAttr('disabled').css('cursor', 'default');    // Ativa de novo o botão 'Entrar'
+				}
+		});
+	}
+	$(function() {
+		erro  = $('#alertBox');
+		erro.html('&nbsp;').hide().css('visibility',"visible");
+	});
+</script>
+</head>
+<body>
+<div id="loginBg">
+    <div id="loginContents"></div>
+</div>
+<div id="loginBox">
+    <div class="genericBox ui-widget ui-widget-content ui-corner-all">
+        <h1>Login</h1>
+        <div id="alertBoxContainer">
+            <div id="alertBox" ></div>
+        </div>
+        <form id="acessar" name='acessar' action="javascript:valida_senha();">
+                <div class="genericRow filtrosLogin">
+                    <fieldset>
+                        <label>Login:</label>
+        				<input id="login" name="login" type="text" />
+                    </fieldset>
+                </div>
+                <div class="genericRow filtrosLogin">
+                    <fieldset>
+                        <label>Senha:</label>
+        				<input id="senha" name="senha" type="password" />
+                    </fieldset>
+                </div>
+                <!-- <div class="genericRow filtrosLogin">
+                    <fieldset>
+                        <label>Sistema:</label>
+                        <select name="">
+                            <option value="1">Selecione um sistema</option>
+                            <option value="2">Opção 1</option>
+                            <option value="3">Opção 2</option>
+                            <option value="4">Opção 3</option>
+                        </select>
+                    </fieldset>
+                </div> -->
+                <div class="genericRow filtrosLogin">
+                    <div class="botDeTexto">
+                        <button type='submit' id='btnLogin'>OK</button>
+                    </div>
+                </div>
+        </form>
+        <div class="consultaRow actions">
+        	<a href="../esqueci_senha.php">Esqueceu sua senha?</a>
+			<a href="../primeiro_acesso.php" style="margin-left:38px">Primeiro Acesso</a>
+        	<a href="../login_unico.php" style="margin-left:40px">Login &Uacute;nico</a>
+        </div>
+        <!--NOVO-->
+        <img src="imgs/logo-grupoovd.gif" width="45" height="24" border="0" alt="Grupo OVD" title="Grupo OVD"/>
+    </div>
+</div>
+</body>
+</html>

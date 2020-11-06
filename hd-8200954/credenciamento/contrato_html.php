@@ -1,0 +1,1677 @@
+<?
+include 'dbconfig.php';
+include 'includes/dbconnect-inc.php';
+
+
+$fabrica   = "25" ;
+$arquivos  = "/tmp";
+$mensagem  = "";
+
+
+$sql    = "SELECT upper(nome)      ,
+					endereco       ,
+					numero         ,
+					complemento    ,
+					cidade         ,
+					estado         ,
+					SUBSTR (tbl_posto.cep,1,2) || '.' || SUBSTR (tbl_posto.cep,3,3) || '-' || SUBSTR (tbl_posto.cep,6,3) AS cep ,
+					SUBSTR (tbl_posto.cnpj,1,2) || '.' || SUBSTR (tbl_posto.cnpj,3,3) || '.' || SUBSTR (tbl_posto.cnpj,6,3) || '/' || SUBSTR (tbl_posto.cnpj,9,4) || '-' || SUBSTR (tbl_posto.cnpj,12,2) AS cnpj     ,
+					posto          ,
+					to_char(current_date,'DD/MM/YYYY') as data_contrato
+				FROM tbl_posto JOIN tbl_posto_fabrica using(posto)
+				WHERE fabrica = 25 AND posto = 4311;";
+$result = $conn-> exec ($sql);
+
+
+$posto_nome = pg_result($res,0,nome);
+$endereco   = pg_result($res,0,endereco);
+$numero   = pg_result($res,0,numero);
+$complemento   = pg_result($res,0,complemento);
+$cidade   = pg_result($res,0,cidade);
+$estado   = pg_result($res,0,estado);
+$cep   = pg_result($res,0,cep);
+$cnpj   = pg_result($res,0,cnpj);
+$posto   = pg_result($res,0,posto);
+$data_contrato = pg_result($res,0,data_contrato);
+
+
+$conteudo = "
+	<html xmlns:o='urn:schemas-microsoft-com:office:office'
+	xmlns:w='urn:schemas-microsoft-com:office:word'
+	xmlns:st1='urn:schemas-microsoft-com:office:smarttags'
+	xmlns='http://www.w3.org/TR/REC-html40'>
+
+	<head>
+	<meta http-equiv=Content-Type content='text/html; charset=windows-1252'>
+	<meta name=ProgId content=Word.Document>
+	<meta name=Generator content='Microsoft Word 11'>
+	<meta name=Originator content='Microsoft Word 11'>
+	<link rel=File-List
+	href='Contrato%20Credenciamento%20Postos_arquivos/filelist.xml'>
+	<link rel=Preview href='Contrato%20Credenciamento%20Postos_arquivos/preview.wmf'>
+	<title>CONTRATO DE CREDENCIAMENTO DE ASSISTÊNCIA TÉCNICA</title>
+	<o:SmartTagType namespaceuri='urn:schemas-microsoft-com:office:smarttags'
+	 name='PersonName'/>
+	<!--[if gte mso 9]><xml>
+	 <o:DocumentProperties>
+	  <o:Author>Luís Rodolfo Creuz</o:Author>
+	  <o:LastAuthor>Túlio Oliveira</o:LastAuthor>
+	  <o:Revision>2</o:Revision>
+	  <o:TotalTime>2</o:TotalTime>
+	  <o:LastPrinted>2113-01-01T03:00:00Z</o:LastPrinted>
+	  <o:Created>2007-12-03T19:34:00Z</o:Created>
+	  <o:LastSaved>2007-12-03T19:34:00Z</o:LastSaved>
+	  <o:Pages>1</o:Pages>
+	  <o:Words>3941</o:Words>
+	  <o:Characters>21282</o:Characters>
+	  <o:Company>Telecontrol</o:Company>
+	  <o:Lines>177</o:Lines>
+	  <o:Paragraphs>50</o:Paragraphs>
+	  <o:CharactersWithSpaces>25173</o:CharactersWithSpaces>
+	  <o:Version>11.5606</o:Version>
+	 </o:DocumentProperties>
+	</xml><![endif]--><!--[if gte mso 9]><xml>
+	 <w:WordDocument>
+	  <w:PunctuationKerning/>
+	  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+	  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+	  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+	  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+	  <w:UseMarginsForDrawingGridOrigin/>
+	  <w:ValidateAgainstSchemas/>
+	  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+	  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+	  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+	  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+	  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+	  <w:Compatibility>
+	   <w:SpaceForUL/>
+	   <w:BalanceSingleByteDoubleByteWidth/>
+	   <w:DoNotLeaveBackslashAlone/>
+	   <w:ULTrailSpace/>
+	   <w:DoNotExpandShiftReturn/>
+	   <w:AdjustLineHeightInTable/>
+	   <w:SelectEntireFieldWithStartOrEnd/>
+	   <w:UseWord2002TableStyleRules/>
+	  </w:Compatibility>
+	  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+	 </w:WordDocument>
+	</xml><![endif]--><!--[if gte mso 9]><xml>
+	 <w:LatentStyles DefLockedState='false' LatentStyleCount='156'>
+	 </w:LatentStyles>
+	</xml><![endif]--><!--[if !mso]><object
+	 classid='clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D' id=ieooui></object>
+	<style>
+	st1\:*{behavior:url(\#ieooui) }
+	</style>
+	<![endif]-->
+	<style>
+	<!--
+	 /* Font Definitions */
+	 @font-face
+		{font-family:'New York';
+		panose-1:2 4 5 3 6 5 6 2 3 4;
+		mso-font-charset:0;
+		mso-generic-font-family:roman;
+		mso-font-format:other;
+		mso-font-pitch:variable;
+		mso-font-signature:3 0 0 0 1 0;}
+	@font-face
+		{font-family:Tahoma;
+		panose-1:2 11 6 4 3 5 4 4 2 4;
+		mso-font-charset:0;
+		mso-generic-font-family:swiss;
+		mso-font-pitch:variable;
+		mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+	@font-face
+		{font-family:Verdana;
+		panose-1:2 11 6 4 3 5 4 4 2 4;
+		mso-font-charset:0;
+		mso-generic-font-family:swiss;
+		mso-font-pitch:variable;
+		mso-font-signature:536871559 0 0 0 415 0;}
+	@font-face
+		{font-family:'DejaVu Sans';
+		mso-font-charset:0;
+		mso-generic-font-family:auto;
+		mso-font-pitch:variable;
+		mso-font-signature:0 0 0 0 0 0;}
+	@font-face
+		{font-family:'Lucida Sans Unicode';
+		panose-1:2 11 6 2 3 5 4 2 2 4;
+		mso-font-charset:0;
+		mso-generic-font-family:swiss;
+		mso-font-pitch:variable;
+		mso-font-signature:-2147476737 14699 0 0 63 0;}
+	@font-face
+		{font-family:StarSymbol;
+		mso-font-alt:'Arial Unicode MS';
+		mso-font-charset:128;
+		mso-generic-font-family:auto;
+		mso-font-pitch:auto;
+		mso-font-signature:0 0 0 0 0 0;}
+	@font-face
+		{font-family:'\@StarSymbol';
+		mso-font-charset:128;
+		mso-generic-font-family:auto;
+		mso-font-pitch:auto;
+		mso-font-signature:0 0 0 0 0 0;}
+	 /* Style Definitions */
+	 p.MsoNormal, li.MsoNormal, div.MsoNormal
+		{mso-style-parent:;
+		margin:0cm;
+		margin-bottom:.0001pt;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	h1
+		{mso-style-next:Normal;
+		margin:0cm;
+		margin-bottom:.0001pt;
+		text-indent:0cm;
+		mso-pagination:widow-orphan;
+		page-break-after:avoid;
+		mso-outline-level:1;
+		mso-list:l0 level1 lfo1;
+		mso-hyphenate:none;
+		tab-stops:list 0cm;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-font-kerning:0pt;
+		mso-fareast-language:AR-SA;
+		font-weight:bold;
+		mso-bidi-font-weight:normal;
+		font-style:italic;
+		mso-bidi-font-style:normal;}
+	h3
+		{mso-style-next:Normal;
+		margin-top:12.0pt;
+		margin-right:0cm;
+		margin-bottom:3.0pt;
+		margin-left:0cm;
+		text-indent:0cm;
+		mso-pagination:widow-orphan;
+		page-break-after:avoid;
+		mso-outline-level:3;
+		mso-list:l0 level3 lfo1;
+		mso-hyphenate:none;
+		tab-stops:list 0cm;
+		font-size:13.0pt;
+		font-family:Arial;
+		mso-fareast-language:AR-SA;
+		font-weight:bold;}
+	p.MsoHeader, li.MsoHeader, div.MsoHeader
+		{margin:0cm;
+		margin-bottom:.0001pt;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		tab-stops:center 212.6pt right 425.2pt;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	p.MsoFooter, li.MsoFooter, div.MsoFooter
+		{margin:0cm;
+		margin-bottom:.0001pt;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		tab-stops:center 212.6pt right 425.2pt;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	p.MsoList, li.MsoList, div.MsoList
+		{mso-style-parent:'Corpo de texto';
+		margin-top:0cm;
+		margin-right:0cm;
+		margin-bottom:6.0pt;
+		margin-left:0cm;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-bidi-font-family:Tahoma;
+		mso-fareast-language:AR-SA;}
+	p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+		{margin-top:0cm;
+		margin-right:0cm;
+		margin-bottom:6.0pt;
+		margin-left:0cm;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+		{margin-top:0cm;
+		margin-right:0cm;
+		margin-bottom:0cm;
+		margin-left:35.4pt;
+		margin-bottom:.0001pt;
+		text-align:justify;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:Verdana;
+		mso-fareast-font-family:'Times New Roman';
+		mso-bidi-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	a:link, span.MsoHyperlink
+		{mso-style-parent:;
+		color:navy;
+		text-decoration:underline;
+		text-underline:single;}
+	a:visited, span.MsoHyperlinkFollowed
+		{color:purple;
+		text-decoration:underline;
+		text-underline:single;}
+	p
+		{margin-top:14.0pt;
+		margin-right:0cm;
+		margin-bottom:14.0pt;
+		margin-left:0cm;
+		mso-pagination:widow-orphan;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	span.Absatz-Standardschriftart
+		{mso-style-name:Absatz-Standardschriftart;
+		mso-style-parent:;}
+	span.WW-Absatz-Standardschriftart
+		{mso-style-name:WW-Absatz-Standardschriftart;
+		mso-style-parent:;}
+	span.WW-Absatz-Standardschriftart1
+		{mso-style-name:WW-Absatz-Standardschriftart1;
+		mso-style-parent:;}
+	span.Fontepargpadro1
+		{mso-style-name:'Fonte parág\. padrão1';
+		mso-style-parent:;}
+	span.NumberingSymbols
+		{mso-style-name:'Numbering Symbols';
+		mso-style-parent:;}
+	span.Bullets
+		{mso-style-name:Bullets;
+		mso-style-parent:;
+		mso-ansi-font-size:9.0pt;
+		mso-bidi-font-size:9.0pt;
+		font-family:StarSymbol;
+		mso-ascii-font-family:StarSymbol;
+		mso-fareast-font-family:StarSymbol;
+		mso-hansi-font-family:StarSymbol;
+		mso-bidi-font-family:StarSymbol;}
+	p.Heading, li.Heading, div.Heading
+		{mso-style-name:Heading;
+		mso-style-next:'Corpo de texto';
+		margin-top:12.0pt;
+		margin-right:0cm;
+		margin-bottom:6.0pt;
+		margin-left:0cm;
+		mso-pagination:widow-orphan;
+		page-break-after:avoid;
+		mso-hyphenate:none;
+		font-size:14.0pt;
+		font-family:Arial;
+		mso-fareast-font-family:'Lucida Sans Unicode';
+		mso-bidi-font-family:Tahoma;
+		mso-fareast-language:AR-SA;}
+	p.Caption, li.Caption, div.Caption
+		{mso-style-name:Caption;
+		margin-top:6.0pt;
+		margin-right:0cm;
+		margin-bottom:6.0pt;
+		margin-left:0cm;
+		mso-pagination:widow-orphan no-line-numbers;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-bidi-font-family:Tahoma;
+		mso-fareast-language:AR-SA;
+		font-style:italic;}
+	p.Index, li.Index, div.Index
+		{mso-style-name:Index;
+		margin:0cm;
+		margin-bottom:.0001pt;
+		mso-pagination:widow-orphan no-line-numbers;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-bidi-font-family:Tahoma;
+		mso-fareast-language:AR-SA;}
+	p.TableContents, li.TableContents, div.TableContents
+		{mso-style-name:'Table Contents';
+		margin:0cm;
+		margin-bottom:.0001pt;
+		mso-pagination:widow-orphan no-line-numbers;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;}
+	p.TableHeading, li.TableHeading, div.TableHeading
+		{mso-style-name:'Table Heading';
+		mso-style-parent:'Table Contents';
+		margin:0cm;
+		margin-bottom:.0001pt;
+		text-align:center;
+		mso-pagination:widow-orphan no-line-numbers;
+		mso-hyphenate:none;
+		font-size:12.0pt;
+		font-family:'Times New Roman';
+		mso-fareast-font-family:'Times New Roman';
+		mso-fareast-language:AR-SA;
+		font-weight:bold;}
+	 /* Page Definitions */
+	 @page
+		{mso-footnote-position:beneath-text;}
+	@page Section1
+		{size:595.25pt 841.85pt;
+		margin:70.85pt 3.0cm 70.85pt 3.0cm;
+		mso-header-margin:36.0pt;
+		mso-footer-margin:36.0pt;
+		mso-paper-source:0;}
+	div.Section1
+		{page:Section1;
+		mso-footnote-position:beneath-text;}
+	 /* List Definitions */
+	 @list l0
+		{mso-list-id:1;
+		mso-list-template-ids:1;}
+	@list l0:level1
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level2
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level3
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level4
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level5
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level6
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level7
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level8
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	@list l0:level9
+		{mso-level-number-format:none;
+		mso-level-suffix:none;
+		mso-level-text:;
+		mso-level-tab-stop:0cm;
+		mso-level-number-position:left;
+		margin-left:0cm;
+		text-indent:0cm;}
+	ol
+		{margin-bottom:0cm;}
+	ul
+		{margin-bottom:0cm;}
+	-->
+	</style>
+	<!--[if gte mso 10]>
+	<style>
+	 /* Style Definitions */
+	 table.MsoNormalTable
+		{mso-style-name:'Tabela normal';
+		mso-tstyle-rowband-size:0;
+		mso-tstyle-colband-size:0;
+		mso-style-noshow:yes;
+		mso-style-parent:;
+		mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+		mso-para-margin:0cm;
+		mso-para-margin-bottom:.0001pt;
+		mso-pagination:widow-orphan;
+		font-size:10.0pt;
+		font-family:'Times New Roman';
+		mso-ansi-language:#0400;
+		mso-fareast-language:#0400;
+		mso-bidi-language:#0400;}
+	</style>
+	<![endif]-->
+	</head>
+
+	<body lang=PT-BR link=navy vlink=purple style='tab-interval:35.4pt'>
+
+	<div class=Section1>
+
+	<p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+	10.0pt'><b>CONTRATO DE CREDENCIAMENTO DE ASSISTÊNCIA TÉCNICA<o:p></o:p></b></p>
+
+	<p class=MsoNormal style='mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'>Pelo
+	presente instrumento particular,</p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b>HB
+	ASSISTÊNCIA TÉCNICA LTDA</b>., sociedade empresarial com escritório
+	administrativo na Av. Yojiro Takaoka, 4.384 - Loja 17 - Conj. 2083 - Alphaville
+	- Santana de Parnaíba, SP, CEP 06.541-038, inscrita no CNPJ sob nº
+	08.326.458/0001-47, neste ato representada por seu diretor ao final assinado,
+	doravante denominada<span style='mso-spacerun:yes'> 
+	</span>&quot;HB-TECH&quot;, e</p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b>$posto_nome.</b>, sociedade empresarial com sede na $endereco,
+	$numero $complemento, na cidade de $cidade, $estado, CEP $cep, inscrita no CNPJ sob nº
+	$cnpj, neste ato representada por seu administrador, ao final
+	assinado, doravante denominada &quot;AUTORIZADA&quot;,</p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b
+	style='mso-bidi-font-weight:normal'><span style='mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>Considerando que:<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.45pt;text-align:justify;mso-line-height-alt:
+	10.0pt;mso-pagination:none'><b><span style='mso-fareast-language:\#00FF;
+	mso-bidi-language:#00FF'>(i) </span></b><span style='mso-fareast-language:\#00FF;
+	mso-bidi-language:#00FF'><span style='mso-tab-count:1'>       </span>a HB TECH
+	desenvolveu uma metodologia comercial e novo negócio através da marca HBFLEX,
+	ou HBTECH, dentre outras possíveis, sob a qual venderá produtos
+	eletro-eletrônicos (doravante denominados produtos);<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><b><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>(ii)
+	</span></b><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><span
+	style='mso-tab-count:1'>      </span>sem prejuízo de outros produtos possíveis,
+	integram a presente contratação: i. DVD Players; ii. DVR Players; iii. MP4; iv.
+	Maquinas de Lavar Roupas residenciais; v. Notebooks; vi. Desktops; vii. Ar
+	Condicionados Splits; viii. TVs LCD; e ix. Monitores LC;<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><b style='mso-bidi-font-weight:normal'><span style='mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(iii) </span></b><span style='mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>a AUTORIZADA possui a tecnologia e o <i>know how</i>
+	de manutenção e assistência técnica dos referidos produtos;<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'>têm
+	entre si, justo e contratado, o seguinte:</p>
+
+	<p class=MsoNormal style='mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>1- OBJETIVO<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>1.1. O objetivo do presente contrato é a prestação,
+	pela AUTORIZADA, em sua sede social, do serviço de assistência técnica aos
+	produtos comercializados pela HB-TECH, cuja relação consta na tabela de mão de
+	obra, fornecida em anexo e faz parte integrante deste contrato.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>1.2. Os serviços que serão prestados pela AUTORIZADA,
+	junto aos clientes usuários dos produtos comercializados através da HB-TECH
+	consistem em manutenção corretiva e preventiva, seja através de reparações a
+	domicilio cujos custos serão por conta do consumidor, ou em sua oficina, quando
+	os custos serão cobertos pela HB-TECH através de taxas de garantia.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>1.3. A HB-TECH</span><span style='mso-fareast-font-family:
+	'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'> fornecerá à AUTORIZADA todos os elementos necessários
+	e indispensáveis à boa prestação dos serviços em alusão, desde que sejam de sua
+	responsabilidade, especialmente no tocante à qualificações e especificações
+	técnicas dos produtos, quando for o caso, tudo previamente autorizado (p.ex.
+	desenhos técnicos, peças de reposição para produtos em garantia, treinamento,
+	quando necessários, dentre outras hipóteses) .<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>2- DA EXECUÇÃO DOS SERVIÇOS DURANTE A GARANTIA<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>2.1. O prazo e condições de garantia dos produtos
+	comercializados pela HB-TECH, são especificados no certificado de garantia,
+	cujo início é contado a partir da data emissão da nota fiscal de compra do
+	produto pelo primeiro usuário.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>2.2. Se no período de garantia os equipamentos
+	apresentarem defeitos de fabricação, a AUTORIZADA providenciará o reparo
+	utilizando exclusivamente peças originais sem qualquer ônus.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>2.3. Para atendimento <st1:PersonName
+	ProductID='em garantia a AUTORIZADA' w:st='on'>em garantia a AUTORIZADA</st1:PersonName>
+	exigirá, do cliente usuário, a apresentação da NOTA FISCAL DE COMPRA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>2.4. A ordem de serviço utilizada pela AUTORIZADA para
+	consumidores, deverá ser individual e conter:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- NÚMERO DE SÉRIE<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- DATA DA CHEGADA NA AUTORIZADA<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- NÚMERO DA NOTA FISCAL<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- DATA DA COMPRA<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- NOME DO CLIENTE<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- NOME DO REVENDEDOR – TELEFONE.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- COMPONENTES TROCADOS<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- ENDEREÇO COMPLETO DO CLIENTE<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- MODELO DO EQUIPAMENTO<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>- DATA DA RETIRADA DO APARELHO<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>-DEFEITO CONSTATADO DE ACORDO COM TABELA FORNECIDA
+	PARA TAL.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>3- PREÇO E CONDIÇÕES DE PAGAMENTO<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>3.1. Para consertos efetuados em aparelhos no período
+	de garantia, a HB-TECH pagará à AUTORIZADA os valores de taxas de acordo com a
+	tabela fornecida em anexo, a qual faz parte integrante deste contrato.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>3.2. O pagamento dos serviços prestados em garantia
+	será efetuado da seguinte forma:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>A) A AUTORIZADA deverá encaminhar até o dia 07 (sete)
+	de cada mês subseqüente ao atendimento: <o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(i) Ordens de serviço individuais devidamente
+	preenchidas (item 4.7), ACOMPANHADAS DAS RESPECTIVAS CÓPIAS DA N.F. DE VENDA AO
+	CONSUMIDOR.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(ii) Ordens de serviço coletivas devidamente
+	preenchidas ACOMPANHADAS DAS RESPECTIVAS CÓPIAS DAS NOTAS FISCAIS DE ENTRADA E SAÍDA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>B) Depois de efetuado o cálculo pela HB-TECH, será
+	solicitada a Nota fiscal de serviços, (original) emitida contra:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>HB ASSISTÊNCIA TÉCNICA LTDA.</p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>Av. Yojiro Takaoka, 4.384 - Loja 17 - Conj. 2083 - Alphaville – </p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>Santana de Parnaíba, SP, CEP 06.541-038</p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>CNPJ 08.326.458/0001-47</p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>E DEVERÁ ENVIAR A MESMA PARA O ENDEREÇO ABAIXO:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>HB ASSISTÊNCIA TÉCNICA LTDA.</p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>Av. Yojiro Takaoka, 4.384 - Loja 17 - Conj. 2083 - Alphaville – </p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'>Santana de Parnaíba, SP, CEP 06.541-038</p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>C) A nota fiscal deverá estar na filial HB-TECH até o
+	último útil dia do mês em curso e discriminar no corpo da mesma o seguinte:
+	“SERVIÇOS PRESTADOS <st1:PersonName
+	ProductID='EM APARELHOS DE SUA COMERCIALIZAÇÃO' w:st='on'>EM APARELHOS DE SUA
+	 COMERCIALIZAÇÃO</st1:PersonName>, SOB GARANTIA DURANTE O MÊS DE” (AS NOTAS
+	FISCAIS RECEBIDAS APÓS 90 (NOVENTA) DIAS NÃO SERÃO PAGAS).<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>D) De posse da documentação a HB-TECH fará conferência
+	para averiguar possíveis distorções:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(i) Pagamento das taxas de garantia será
+	efetuado no quinto dia útil do mês subseqüente, para as NF recebidas até o
+	último dia útil do mês anterior, em forma de crédito em conta corrente da
+	pessoa jurídica. Qualquer alteração na conta corrente do serviço autorizado deve
+	ser comunicado previamente à HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(ii) HB-TECH reserva-se o direito de efetuar
+	deduções de débitos pendentes, duplicatas, despesas bancárias e de protesto referentes
+	a títulos não quitados, ordens de serviço irregulares, peças trocadas em
+	garantia e não devolvidas no prazo máximo de 60 (sessenta) dias, sem prévia
+	consulta ou permissão da AUTORIZADA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>E) Valores inferiores a R\$ 20,00 (vinte Reais), serão
+	acumulados até o próximo crédito e assim sucessivamente, até que o valor
+	acumulado ultrapasse o disposto nesta cláusula.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>(i) Apenas serão aceitas ordens de serviço do mesmo
+	cliente cujo prazo entre atendimentos, para o mesmo defeito, for superior a 60
+	(sessenta) dias, após a retirada do produto.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(ii) Ordens de serviço incompletas não serão
+	aceitas.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'>(iii) A HB-TECH não se responsabiliza por
+	atrasos de pagamento cuja causa seja de responsabilidade da AUTORIZADA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>F) O PRAZO MÁXIMO QUE A AUTORIZADA PODERÁ RETER AS
+	ORDENS DE SERVIÇO, APÓS A SAÍDA DO PRODUTO, DE SUA EMPRESA, SERÁ DE 90 DIAS,
+	EXCETUANDO-SE O MÊS DESSA SAÍDA. APÓS ESSE PRAZO, AS ORDENS DE SERVIÇO NELE
+	ENQUADRADAS PERDERÃO O DIREITO AO CRÉDITO DE TAXAS DE GARANTIA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>G) A AUTORIZADA enviará, quando solicitado, os
+	componentes substituídos em garantia, devidamente identificados com as
+	etiquetas fornecidas pela HB-TECH, para que seja efetuada a inspeção do
+	controle de qualidade e a devida reposição quando for o caso. O frete desta
+	operação será por conta da HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>H) Os comprovantes de pagamento de sedex, quando
+	antecipados pela AUTORIZADA, deverão ser enviados à HB-TECH, juntamente com o
+	movimento de O. S., em prazo não superior a 90 dias da data da emissão do
+	mesmo. Comprovantes recebidos após o período retro citado não serão
+	reembolsados.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4 - DURAÇÃO DO CONTRATO<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.1. A validade do presente contrato é por tempo
+	indeterminado e poderá ser rescindido por qualquer das partes, mediante um
+	aviso prévio de 30 (trinta) dias, por escrito e protocolado. A autorizada
+	obriga-se, neste prazo do aviso, a dar continuidade aos atendimentos dos
+	produtos em seu poder.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.2. O cancelamento deste contrato com fulcro na
+	cláusula anterior não dará direito a nenhuma das partes a indenização, crédito
+	ou reembolso, seja a que título, forma ou hipótese for.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.3. O contrato será imediatamente rescindido caso
+	seja constatada e comprovada irregularidade na cobrança dos serviços e peças
+	prestados em equipamentos sob garantia da HB-TECH, transferência da empresa
+	para novos sócios, mudança de endereço para área fora do interesse da HB-TECH,
+	concordata, falência, liquidação judicial ou extrajudicial.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.4. Observada qualquer situação prevista nesta
+	cláusula, o representante indicado pela HB-TECH terá plena autonomia para
+	interceder junto à AUTORIZADA, no sentido de recolher incontinenti, as
+	documentações, materiais, luminosos e tudo aquilo que de qualquer forma, for de
+	origem, relacionar ou pertencer ao patrimônio da HB-TECH e em perfeito estado
+	de conservação e uso, sob pena de submeter a então AUTORIZADA ao processo de
+	indenização na forma da lei.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.5. No caso de rescisão contratual, a AUTORIZADA se
+	obriga a devolver à HB-TECH toda documentação técnica e administrativa cedida
+	para seu uso enquanto CREDENCIADA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>4.6. Fica expressamente estipulado que este contrato
+	não cria, sob hipótese alguma, vinculo empregatício, direitos ou obrigações
+	previdenciárias ou secundárias entre as partes, ficando a cargo exclusivo da
+	AUTORIZADA todos impostos taxas e encargos de qualquer natureza, incidentes
+	sobre suas atividades.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>5 - ÁREA DE ATUAÇÃO DA AUTORIZADA<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>5.1. A prestação de serviços será exercida pela
+	AUTORIZADA na área que lhe for destinada, cujos limites poderão ser modificados
+	com o tempo, desde que tal medida se faça necessária para melhorar o
+	atendimento aos consumidores de aparelhos comercializados pela HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>6 – MARCAS E PROPRIEDADE INDUSTRIAL<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'>6.1.
+	As marcas, símbolos, nomes, identificação visual e direitos autorais que são de
+	titularidade exclusiva da HB-TECH deverão ser preservados, sendo que a
+	AUTORIZADA reconhece e aceita a propriedade das mesmas, comprometendo-se e
+	obrigando-se a preservar todas as suas características e reputação.</p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.2. A reputação das marcas e produtos da
+	HB-TECH deverão ser preservadas, <u>constituindo-se infração gravíssima ao
+	presente contrato, bem como à legislação de propriedade industrial e penal
+	brasileira vigente</u>, a ofensa à integridade, qualidade, conformidade,
+	estabilidade e reputação, dentre outros quesitos, por parte da AUTORIZADA, seus
+	sócios e/ou funcionários e colaboradores.<o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.2.1. Considera-se, igualmente, como
+	infrações nos termos do item 6.2. acima, difamações e outras práticas
+	envolvendo marcas e produtos da HB-TECH por parte<span
+	style='mso-spacerun:yes'>  </span>da AUTORIZADA, seus sócios e/ou funcionários
+	e colaboradores, seja perante outras autorizadas, outros fabricantes,
+	representantes e inclusive, o público consumidor. <o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.2.2. Nestes termos do item 6.2.1. A
+	HB-TECH poderá ter consultores de campo e auditores para averiguar e apurar
+	eventuais irregularidades, enviando aos postos autorizados profissionais com ou
+	sem identificação, que serão posteriormente alocados como testemunhas para
+	todos os efeitos civis e criminais.<o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.3. <span style='mso-tab-count:1'>     </span>Os
+	sinais distintivos da HB-TECH não poderão ser livremente utilizados pela
+	AUTORIZADA, mas tão somente no que diga respeito, estritamente, ao desempenho
+	de suas atividades aqui ajustadas. <o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.4. As marcas, desenhos ou quaisquer
+	sinais distintivos não poderão sofrer qualquer alteração da AUTORIZADA,
+	inclusive quanto a cores, proporções dos traços, sonoridade etc.<o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman'>6.5. É vedado o uso de qualquer sinal
+	distintivo ou referência ao nome da HB-TECH quando não expressamente autorizado
+	ou determinado por esta última. <o:p></o:p></span></p>
+
+	<h3 style='margin:0cm;margin-bottom:.0001pt;text-align:justify;mso-line-height-alt:
+	10.0pt;mso-list:none;tab-stops:0cm'><span style='font-size:12.0pt;font-family:
+	Times New Roman;mso-bidi-font-family:Arial;font-weight:normal'><o:p>&nbsp;</o:p></span></h3>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'>6.6.
+	Além das obrigações já assumidas, a AUTORIZADA se compromete e se obriga,
+	durante o prazo do presente Contrato, e mesmo após seu término ou rescisão, a:
+	(i) não utilizar, manusear ou possuir de qualquer forma, direta ou
+	indiretamente, a marca, ou qualquer outro termo, expressão ou símbolo com o
+	mesmo significado, que seja semelhante, ou que possa confundir o consumidor com
+	as marcas da HBTECH; (ii) não utilizar a marca como parte da razão social de
+	qualquer empresa que detenha qualquer participação, atualmente ou no futuro,
+	ainda que como nome fantasia, no Cadastro Nacional de Pessoas Jurídicas – CNPJ
+	– do Ministério da Fazenda – Secretaria da Receita Federal; (iii)<span
+	style='mso-tab-count:1'>        </span>não registrar ou tentar registrar marca
+	idêntica ou semelhante, quer direta ou indiretamente, seja no Brasil ou <st1:PersonName
+	ProductID='em qualquer outro País' w:st='on'>em qualquer outro País</st1:PersonName>
+	ou território.</p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='font-family: Times New Roman'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='font-family: Times New Roman;mso-bidi-font-family:
+	Arial'>6.7.<b> </b><span style='mso-bidi-font-weight:bold'><span
+	style='mso-tab-count:1'></span></span></span><span style='font-family:
+	Times New Roman'>Igualmente integram as obrigações assumidas pela AUTORIZADA
+	todas as obrigações de sigilo, confidencialidade, não transmissão, cessão ou
+	outras formas de proteção da tecnologia, <i>know-how</i>, desenvolvimentos, </span><span
+	style='font-family: Times New Roman ;mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'>desenhos técnicos, dados técnicos da HB-TECH. Nestas obrigações
+	incluem-se todas as proteções da legislação brasileira vigente, especialmente
+	as da Lei de Propriedade Industrial.<o:p></o:p></span></p>
+
+	<p class=MsoBodyTextIndent style='margin-left:0cm;mso-line-height-alt:10.0pt'><span
+	style='font-family: Times New Roman;mso-bidi-font-family:'DejaVu Sans';
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'>6.8. <span style='mso-tab-count:1'>     </span><span
+	style='mso-bidi-font-family:Arial;mso-bidi-font-weight:bold'>Qualquer
+	transgressão das normas aqui estabelecidas acarretará à AUTORIZAD</span><span
+	style='mso-bidi-font-family:Arial'>A e seus sócios<span style='mso-bidi-font-weight:
+	bold'>, não obstante a responsabilidade de seus funcionários, além da rescisão
+	deste instrumento e pagamento de perdas e danos, as sanções previstas na
+	legislação especial de marcas e patentes, e legislação penal vigente.<o:p></o:p></span></span></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'><b><o:p>&nbsp;</o:p></b></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'><b><o:p>&nbsp;</o:p></b></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'><b>7 - SIGILO E NÃO-CONCORRÊNCIA<o:p></o:p></b></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'>7.1.<b> </b><span style='mso-tab-count:
+	1'>     </span>Obriga-se a AUTORIZADA a manter sigilo quanto ao conteúdo dos
+	manuais,<span style='mso-spacerun:yes'>  </span>treinamentos, tecnologia ou de
+	quaisquer outras informações que vier a receber da HB-TECH, ou que tomar
+	conhecimento, em virtude da presente contratação, devendo no caso de término ou
+	rescisão da mesma, ser efetuada inspeção e inventário sob supervisão da HBTECH
+	e/ou empresa parceira ou indicada para tal, ficando a AUTORIZADA, neste caso,
+	obrigado a devolver imediatamente todo o material recebido e em seu poder.</p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;mso-line-height-alt:
+	10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>7.1.1.<b> </b>São
+	consideradas confidenciais, para fins desta cláusula, todas e quaisquer informações
+	que digam respeito aos negócios, desenhos técnicos, treinamentos, estratégia de
+	negócios, fórmulas, marcas, registros, dados comerciais, financeiros e
+	estratégicos, bem como todos e quaisquer dados relativos às atividades externas
+	e internas das partes, sobre os produtos e marcas, informações estas
+	fornecidas, a respeito das quais as partes venham a tomar conhecimento em
+	virtude do presente contrato.<o:p></o:p></span></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'>7.2. <span style='mso-tab-count:1'>     </span>A
+	AUTORIZADA,<b> </b>seus sócios, diretores, prepostos, colaboradores ou
+	empregados, não poderão fazer ou permitir que se façam cópias dos manuais,
+	sistema informatizado, material promocional ou qualquer outra informação
+	caracterizada como confidencial fornecida pela HB-TECH. Qualquer comprovada
+	violação ao sigilo ora pactuado, a qualquer tempo, por parte da AUTORIZADA,<b> </b>seus
+	sócios, diretores, prepostos, colaboradores, ou empregados, acarretará o
+	pagamento da indenização prevista neste instrumento, sem prejuízo das demais
+	disposições legais ou contratuais cabíveis.</p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;mso-line-height-alt:
+	10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'>7.3. <span style='mso-bidi-font-family:
+	Tahoma'>Considerando as negociações efetuadas entre as partes, na fase
+	pré-contratual, é motivo de rescisão imediata do presente contrato, com o
+	imediato fechamento da “unidade autorizada”, qualquer violação de sigilo deste
+	contrato e da negociação efetuada, tendo em vista princípios de probidade e de
+	boa-fé. Qualquer vazamento de informação será compreendido como ato de
+	irresponsabilidade e má-fé, acarretando os efeitos da responsabilidade por
+	quebra de obrigações contratuais e falta grave de violação de dever de sigilo,
+	rescindindo este contrato, independentemente, da cobrança de quaisquer
+	indenizações por perdas e danos.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='margin-right:.75pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:
+	Tahoma;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>7.4. A AUTORIZADA, </span>seus
+	sócios, diretores, prepostos, colaboradores ou empregados <span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>considerando este contrato,
+	a negociação realizada e o disposto no item k) anterior, obrigam-se a: (i) não
+	copiar, reproduzir, transferir, ceder, divulgar ou transmitir as informações
+	confidenciais e dados da presente negociação, seja a que título for; (ii)
+	abster-se de falar, comentar, expor ou induzir observações ou assuntos que
+	possam fazer referência aos negócios da franquia, fora do âmbito do
+	desenvolvimento de suas atividades envolvendo os negócios da empresa,
+	incluindo-se conversas externas às dependências da </span><span
+	style='mso-bidi-font-family:Tahoma'>“unidade autorizada”</span><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>, escritórios de advogados
+	da HB-TECH e/ou da AUTORIZADA, tais como elevadores, escadas, halls, banheiros,
+	restaurantes, bares, festas, dentre outros; (iii) abster-se de tratar de
+	assuntos da Franquia com terceiros, amigos ou parceiros de outros negócios, em
+	quaisquer locais privados e/ou públicos quando não na consecução de suas
+	atividades, dentre eles saguões de aeroportos, rodoviárias ou no interior de
+	transportes públicos; (iv)<span style='mso-spacerun:yes'>  </span>não entregar
+	por qualquer meio, dentre eles, fax, <i style='mso-bidi-font-style:normal'>email</i>,
+	correio, qualquer material referente aos negócios da franquia, salvo com expressa
+	autorização por escrito da HB-TECH, com qualquer tipo de processo ou informação
+	dos referidos negócios.<o:p></o:p></span></p>
+
+	<p class=MsoBodyText style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+	justify;mso-line-height-alt:10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8 - RESPONSABILIDADES<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='margin-right:2.15pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>8.1.<b> </b>A AUTORIZADA assume integral
+	responsabilidade pelo pagamento das remunerações devidas a seus funcionários,
+	pelo recolhimento de todas as contribuições e tributos incidentes, bem como
+	pelo cumprimento da legislação social, trabalhista, previdenciária e
+	securitária aplicável. Igualmente, a HB-TECH assume integral responsabilidade
+	pelo pagamento das remunerações devidas a seus funcionários, pelo recolhimento
+	de todas as contribuições e tributos incidentes, bem como pelo cumprimento da
+	legislação social, trabalhista, previdenciária e securitária aplicável.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.2.<b> </b>As
+	partes responderão, individualmente, por reivindicações de seus funcionários
+	que sejam indevidamente endereçados à outra. A parte que der causa à
+	reivindicação deverá<span style='mso-spacerun:yes'>  </span>assumir ao ações de
+	defesa necessárias, e, em última instância, indenizará a parte reclamada das
+	eventuais condenações que lhe venham a ser imputadas, inclusive das despesas e
+	honorários advocatícios.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.45pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.3.<b> </b>É
+	expressamente vedado às partes, sem que para tanto esteja previamente
+	autorizada por escrito, contrair em nome da outra qualquer tipo empréstimo ou
+	assumir em seu nome qualquer obrigação que implique na outorga de garantias.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:35.45pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.4.<b> </b>As
+	partes não assumem qualquer vínculo, exceto aqueles expressamente acordados
+	através do presente instrumento, obrigando-se ao cumprimento da legislação
+	social, trabalhista, previdenciária e securitária aplicável.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.5. As obrigações e
+	responsabilidades aqui assumidas pelas partes tem início a partir da data da
+	assinatura do presente instrumento, não se responsabilizando reciprocamente, em
+	hipótese alguma por erros, dolo, e qualquer outro motivo que possa recair sobre
+	a administração das partes contratantes.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.6.<b> </b><span
+	style='mso-tab-count:1'>     </span>Em caso de quaisquer infrações ao presente
+	contrato, que possam implicar em perda de crédito,<span
+	style='mso-spacerun:yes'>  </span>ou de alguma forma atingir a imagem da
+	HB-TECH junto ao público consumidor, a AUTORIZADA</span>,<b> </b>seus sócios,
+	diretores, prepostos, colaboradores ou empregados,<span style='mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'> poderá ser responsabilizada por meio de
+	procedimento judicial próprio, inclusive podendo ser condenada em perdas e
+	danos.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>8.7.<b> </b><span
+	style='mso-tab-count:1'>     </span>Em caso de ações propostas por
+	consumidores, que reste provada a culpa ou dolo da AUTORIZADA, </span>seus
+	sócios, diretores, prepostos, colaboradores ou empregados, <span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>esta concorda desde já que
+	deverá assumir e integrar o polo passivo das ações judiciais que venham a ser
+	demandadas contra a HB-TECH, isentando a mesma, e ressarcindo quaisquer valores
+	que ela venha a ser condenada a pagar e/ou tenha pago.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9- DISPOSIÇÕES GERAIS<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.1. A AUTORIZADA, após a regular aprovação de seu
+	credenciamento, passará à condição de CREDENCIADA para prestação de serviços de
+	assistência técnica aos produtos comercializados pela HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.2. A AUTORIZADA declara neste ato, estar ciente que
+	deverá manter, por sua conta e risco, seguro contra roubo e incêndio cujo valor
+	da apólice seja suficiente para cobrir sinistro que possa ocorrer em seu
+	estabelecimento, envolvendo patrimônio próprio e/ou de terceiros. Caso não o
+	faça assume total responsabilidade e responderá civil e criminalmente pela
+	omissão, perante terceiros e a HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.3. A AUTORIZADA - Declara conhecer e se compromete a
+	cumprir o disposto no Código de Defesa do Consumidor e assume a
+	responsabilidade de “in vigilando” por seus funcionários para esta finalidade.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.4. A AUTORIZADA responderá por seus atos, caso
+	terceiros prejudicados vierem a reclamar diretamente à HB-TECH. Esta exercerá o
+	direito de regresso acrescido de custas, honorários advocatícios, além de
+	perdas e danos incidentes, inclusive danos punitivos.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.5. A HB-TECH fornecerá apoio técnico/administrativo,
+	além de documentação e treinamento. Fica estabelecido para a AUTORIZADA o
+	compromisso de sigilo referente à documentação recebida, ficando reservado
+	única e exclusivamente à AUTORIZADA o uso da documentação técnica. Caso seja
+	comprovada a quebra do sigilo ou a utilização dos componentes fornecidos em
+	garantia em outros equipamentos, não comercializados pela HB-TECH, esta terá o
+	direito de tomar as providências legais, podendo exigir reparação por perdas e
+	danos que vier a sofrer.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.6. Toda correspondência (documentação, notas
+	fiscais, comunicados, etc.) deverá ser enviada para o endereço especificado no
+	preâmbulo deste contrato.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.7. Caso a AUTORIZADA tenha necessidade de enviar à
+	HB-TECH placas, módulos ou equipamentos para conserto, deverá obter uma senha
+	com o inspetor ou técnico de plantão. O aparelho deverá estar acompanhado de
+	nota fiscal de remessa para conserto, e da ficha técnica e em especial da cópia
+	da O.S., devidamente preenchidas.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.8. Os componentes solicitados para uma determinada
+	O. S. só poderão ser usados para ela e deverão constar na mesma. A ausência
+	dessa O. S. na HB-TECH, decorrido o prazo descrito no item 3.2 - 2 E, dará
+	direito à HB-TECH de faturá-los contra a AUTORIZADA.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.9. A HB-TECH fornecerá à AUTORIZADA, tabela de
+	preços de componentes com valores à vista.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.10. A HB-TECH fornecerá, como antecipação, os
+	componentes para atender aparelhos na garantia, comercializados por ela, desde
+	que seja mencionado, em pedido próprio, o número da respectiva O.S.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.11. O atendimento descrito no item anterior será
+	suspenso quando a AUTORIZADA, por falta de devolução de componentes defeituosos,
+	ou causas correlatas, acumular um valor superior ao seu limite de crédito.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.12. Os Pedidos de venda serão atendidos, com
+	desconto de 20% e frete por conta do comprador. Os itens que não estiverem
+	disponíveis em estoque serão cancelados. Este desconto é válido especificamente
+	para os pedidos de venda, não sendo aplicável ao valor de peças não devolvidas.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.13. Os débitos não quitados no vencimento, serão
+	descontados do primeiro movimento de ORDENS DE SERVIÇO, após esse vencimento,
+	acrescidos de juros de mercado proporcionalmente aos dias de atraso. A HB-TECH
+	poderá optar por outra forma de cobrança que melhor lhe convier.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;mso-line-height-alt:
+	10.0pt'><span style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:
+	#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>9.14. </span><span style='mso-bidi-font-family:'New York';
+	letter-spacing:-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>As
+	partes declaram ter recebido o presente instrumento com antecedência necessária
+	para a correta e atenta leitura e compreensão de todos os seus termos, direitos
+	e obrigações, bem como foram prestados mutuamente todos os esclarecimentos
+	necessários e obrigatórios, e a inda que entendem, reconhecem e concordam com
+	os termos e condições aqui ajustadas, ficando assim caracterizada a probidade e
+	boa-fé de todas as partes contratantes.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>9.15.<span
+	style='mso-tab-count:1'>    </span>A eventual declaração judicial de nulidade
+	ou ineficácia de qualquer das disposições deste contrato não prejudicará a
+	validade e eficácia das demais cláusulas, que serão integralmente cumpridas,
+	obrigando-se as partes a envidar seus melhores esforços de modo a validamente
+	alcançarem os mesmos efeitos da disposição que tiver sido anulada ou tiver se
+	tornado ineficaz.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>9.16. <span
+	style='mso-tab-count:1'>   </span>O não exercício ou a renúncia, por qualquer
+	das partes, de direito, termo ou disposição previstos ou assegurados neste
+	contrato, não significará alteração ou novação de suas disposições e condições,
+	nem prejudicará ou restringirá os direitos de tal parte, não impedindo o
+	exercício do mesmo direito em época subseqüente ou em idêntica ou análoga
+	ocorrência posterior, nem isentando as demais partes do integral cumprimento de
+	suas obrigações conforme aqui previstas.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt;
+	tab-stops:0cm'><span style='mso-bidi-font-family:'New York';letter-spacing:
+	-.15pt;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>9.17. <span
+	style='mso-tab-count:1'>   </span>Este contrato contém o acordo integral e
+	final das partes, com respeito às matérias aqui tratadas, substituindo todos os
+	entendimentos verbais e/ou escrito entre elas, com respeito às operações aqui
+	contempladas. Nenhuma alteração ou modificação deste contrato tornar-se-á
+	efetiva, saldo se for por escrito e assinada pelas partes.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'>9.18. <span style='mso-tab-count:1'>   </span>Este contrato obriga e beneficia
+	as partes signatárias e seus respectivos sucessores e representantes a qualquer
+	título. A AUTORIZADA não pode transferir ou ceder qualquer dos direitos ou
+	obrigações aqui estabelecidas sem o prévio consentimento por escrito da
+	HB-TECH.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'>9.19. <span style='mso-tab-count:1'>   </span>Este contrato é celebrado
+	com a intenção única e exclusiva de benefício das partes signatárias e seus
+	respectivos sucessores e representantes, e nenhuma outra pessoa ou entidade
+	deve ter qualquer direito de se basear neste contrato para reivindicar ou adquirir
+	qualquer benefício aqui previsto.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'New York';mso-fareast-language:#00FF;mso-bidi-language:
+	#00FF'>9.20. <span style='mso-tab-count:1'>   </span>As disposições constantes
+	no preâmbulo deste contrato constituem parte integrante e inseparável do mesmo
+	para todo os fins de direito, devendo subsidiar e orientar, seja na esfera
+	judicial ou extrajudicial, qualquer divergência ou porventura venha a existir
+	com relação ao aqui pactuado.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>7 - FORO<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>Estando de pleno acordo com todas as cláusulas e
+	condições aqui expostas, elegem as partes contratantes o Foro da Comarca da
+	Cidade de São Paulo, para dirimir e resolver toda e qualquer questão,
+	proveniente do presente contrato, com expressa renuncia de qualquer outro, por
+	mais privilegiado que seja. E por estarem assim contratados, firmam o presente
+	em duas vias do mesmo teor e para um só efeito, na presença de duas testemunhas.
+	São Paulo.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify'><span style='mso-fareast-font-family:
+	'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'>E, por estarem assim justas e acertadas, firmam o
+	presente instrumento, em duas vias de igual teor e forma, juntamente com as
+	testemunhas abaixo indicadas.<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify'><span style='mso-fareast-font-family:
+	'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+	10.0pt'><span style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:
+	Tahoma;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>São Paulo, $data_contrato <o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+	 style='margin-left:2.75pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt'>
+	 <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+	  <td width=265 valign=top style='width:198.8pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+	  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+	  10.0pt;layout-grid-mode:char'>HB ASSISTÊNCIA TÉCNICA LTDA.</p>
+	  </td>
+	  <td width=302 valign=top style='width:226.3pt;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+	  <p class=MsoNormal align=center style='text-align:center;mso-line-height-alt:
+	  10.0pt;layout-grid-mode:char'>$posto_nome.</p>
+	  </td>
+	 </tr>
+	</table>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><o:p>&nbsp;</o:p></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-bidi-font-family:'DejaVu Sans';mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><b
+	style='mso-bidi-font-weight:normal'><span style='mso-fareast-font-family:'Lucida Sans Unicode';
+	mso-bidi-font-family:Tahoma;mso-fareast-language:#00FF;mso-bidi-language:#00FF'>Testemunhas:<o:p></o:p></span></b></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'><o:p>&nbsp;</o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>________________________________
+	<span style='mso-tab-count:1'>      </span>_______________________________<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>Nome: <span style='mso-tab-count:
+	6'>                                                                </span>Nome:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>RG: <span style='mso-tab-count:
+	6'>                                                                </span>RG:<o:p></o:p></span></p>
+
+	<p class=MsoNormal style='text-align:justify;mso-line-height-alt:10.0pt'><span
+	style='mso-fareast-font-family:'Lucida Sans Unicode';mso-bidi-font-family:Tahoma;
+	mso-fareast-language:#00FF;mso-bidi-language:#00FF'>CPF: <span
+	style='mso-tab-count:6'>                                                              </span>CPF:<o:p></o:p></span></p>
+
+	</div>
+
+	</body>
+
+	</html>
+	";
+
+if(strlen($msg_erro) == 0){
+	$abrir = fopen("/www/assist/www/credenciamento/contrato_hbtech.htm", "w+");
+	if (!fwrite($abrir, $conteudo)) {
+		$msg_erro = "Erro escrevendo no arquivo ($filename)";
+	}
+	fclose($abrir); 
+}
+
+echo "Contrato criado";
+
+exit 0;

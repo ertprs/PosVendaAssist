@@ -1,0 +1,101 @@
+/*! Rappid v2.1.0 - HTML5 Diagramming Framework - TRIAL VERSION
+
+Copyright (c) 2015 client IO
+
+ 2017-05-17
+
+
+This Source Code Form is subject to the terms of the Rappid Trial License
+, v. 2.0. If a copy of the Rappid License was not distributed with this
+file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
+ or from the Rappid archive as was distributed by client IO. See the LICENSE file.*/
+
+
+#toolbar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /*padding-bottom: 25px; (Padrão do plugin)*/
+    text-align: center;
+    /*background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 7%, #e0e0e0 100%); (Padrão do plugin) */
+    background: #596d9b;
+    box-shadow: 0 2px 5px rgba(106, 108, 138, .49); /*#6a6c8a*/
+    border-top: 1px solid #DCDDEE;
+}
+#toolbar .btn {
+    /* Padrão do plugin
+    border: 1px solid #6A6C8B;
+    color: #6A6C8B;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-right: 14px;
+    font-size: 10pt;
+    font-family: Helvetica Neue;
+    cursor: pointer;
+    outline: none;
+    */
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #bbbbbb;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #a2a2a2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#toolbar .btn:hover {
+    /* Padrão do plugin
+    background-color: #6A6C8B;
+    color: white;
+    */
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+#toolbar .inp {
+    vertical-align: top;
+    border: 1px solid #6A6C8B;
+    color: #6A6C8B;
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-right: 14px;
+    font-size: 10pt;
+    font-family: Helvetica Neue;
+    line-height: 28px;
+    border-bottom-right-radius: 0;
+}

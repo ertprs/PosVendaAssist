@@ -1,0 +1,99 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	font-family : Arial, Helvetica, sans-serif;
+	background:url(imgs/bg.gif) repeat-x;
+}
+
+td {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #333;
+}
+
+.td2 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #666;
+}
+
+.td3 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #003C68;
+}
+
+.erro {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 9px;
+	color: #ff0000
+}
+
+.tdmen {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color: #666;
+	padding-left: 8px;
+	padding-right: 8px
+}
+
+
+.tit {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	color: #333;
+}
+
+.pic {
+	BORDER-RIGHT: 4px solid #fff;
+	BORDER-TOP: 4px solid #fff;
+	BORDER-LEFT: 4px solid #fff;
+	BORDER-BOTTOM: 4px solid #fff;
+}
+
+.menu:link {COLOR: #333;TEXT-DECORATION: none}
+.menu:active {COLOR: #333;TEXT-DECORATION: none}
+.menu:visited {COLOR: #333;TEXT-DECORATION: none}
+.menu:hover {COLOR: #003C68; TEXT-DECORATION: none}
+
+.link1:link {COLOR: #333;TEXT-DECORATION: none}
+.link1:active {COLOR: #333;TEXT-DECORATION: none}
+.link1:visited {COLOR: #333;TEXT-DECORATION: none}
+.link1:hover {COLOR: #006699; TEXT-DECORATION: none}
+
+
+.in {
+	font-size: 10;
+	font-family: Arial,verdana;
+	BORDER-RIGHT: #000000 0px solid;
+	BORDER-TOP: #000000 0px solid;
+	BORDER-LEFT: #000000 0px solid;
+	BORDER-BOTTOM: 0px solid #000000;
+	BACKGROUND-COLOR: #E0EBEF;
+}
+	
+.in2 {
+	font-size: 10;
+	font-family: Arial,verdana;
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	BORDER-LEFT: #000000 1px solid;
+	BORDER-BOTTOM: 1px solid #000000;
+	BACKGROUND-COLOR: #F6F7F8;
+}
+
+.top {
+		background:url(imgs/top.gif) no-repeat;
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11px;
+		color: #175682;
+		}
+
+.rodape {
+		background:url(imgs/base.gif);
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 11px;
+		color: #175682;
+		}

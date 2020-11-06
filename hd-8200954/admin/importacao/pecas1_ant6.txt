@@ -1,0 +1,161 @@
+185048-05         CABO ELETRICO IB910                             SPPCN    SPHH                                    05.00 00000001.69 00001,00
+185446-03         JARRA SAN FUME BLENDER                          SPPCF    SPHH                                    10.00 00000005.28 00001,00
+185451-03         TAMPA DOSADORA LF910                            SPPCF    SPHH                                    10.00 00000000.35 00001,00
+185452-01         TAMPA JARRA BLENDERPRETA                        SPPCF    SPHH                                    10.00 00000000.71 00001,00
+185462-02         BASE INFERIOR BLENDERPRETA                      SPPCF    SPHH                                    10.00 00000001.60 00001,00
+185467-01         CUPULA PRETA PINTADALF910                       SPBEN    SPHH                                    10.00 00000001.01 00001,00
+185493-01         PE BLENDER LF910                                SPPCF    SPHH                                    10.00 00000000.23 00001,00
+185572-01         BOTAO PRATA STOP IB910                          SPBEN    SPHH                                    10.00 00000000.17 00001,00
+185573-01         BOTAO PRATA VEL.1 IB910                         SPBEN    SPHH                                    10.00 00000000.17 00001,00
+185574-01         BOTAO PRATA VEL.2 IB910                         SPBEN    SPHH                                    10.00 00000000.17 00001,00
+185575-01         BOTAO PRATA VEL.3 IB910                         SPBEN    SPHH                                    10.00 00000000.17 00001,00
+185576-01         BOTAO PRATA PULSE IB910                         SPBEN    SPHH                                    10.00 00000000.17 00001,00
+185685-01         BUCHA CINZA DO CABOELETR.OSF                    SPPCN    SPHH                                    00.00 00000000.41 00010,00
+186201-15         BOTAO TEMPERATURA X60PF                         SPPCF    SPHH                                    10.00 00000000.11 00001,00
+186202-02         CABO FECHADO PRETO OSF                          SPPCF    SPHH                                    10.00 00000001.28 00001,00
+186225-11         CABO ELETRICO LAG OPP                           SPPCN    SPPPT                                   05.00 00000004.39 00001,00
+187370-00         KIT ROTOR 60mm 220V SSPNOVA LAG                 SPCJF    SPPPT         SUBST   647714-01         10.00 00000055.23 00001,00
+187411-00         CONJ.ROTOR 127V LAGP.BULL                       SPCJF    SPPPT                                   10.00 00000046.43 00001,00
+187411-01         CONJ.ROTOR 220V LAGP.BULL                       SPCJF    SPPPT                                   10.00 00000046.43 00001,00
+187412-00         CONJ.ESTATOR 127V LAGP.BULL                     SPCJF    SPPPT                                   10.00 00000029.70 00001,00
+187412-01         CONJ.ESTATOR 220VP.BULL                         SPCJF    SPPPT                                   10.00 00000029.70 00001,00
+187901-00         FRONTAL PRETO LF910                             SPPCF    SPHH                                    10.00 00000000.41 00001,00
+330003-05         ROLAMENTO PRO10 / PRO13                         SPPCN    SPCPT         SUBST   330003-04         12.00 00000001.76 00001,00
+389745-00         ACOPLAMENTO                                     SPI      SPPPT                                   08.00 00000009.81 00001,00
+393749-01         ANEL O RING                                     SPI      SPPPT                                   08.00 00000002.61 00001,00
+402649-00         PRESILHA DO CABO ELETR.                         SPI      SPPPT                                   10.00 00000000.15 00001,00
+402760-01         LIMITADOR                                       SPI      SPPPT                                   08.00 00000000.20 00001,00
+448172-00         TERMINAL                                        SPI      SPPPT                                   08.00 00000000.17 00005,00
+577058-00         BLOQUEADOR                                      SPI      SPPPT                                   08.00 00000000.89 00001,00
+578493-00         CONJ. TAMPA INFERIOR                            SPI      SPPPT                                   08.00 00000011.23 00001,00
+578984-00         CONJ. CONDUTOR                                  SPI      SPPPT                                   05.00 00000000.92 00001,00
+578984-02         CONJ. CONDUTOR                                  SPI      SPPPT                                   05.00 00000000.72 00001,00
+579473-36         ETIQ. ESPECIF D25003K-B2TIPO 1                  SPI      SPPPT                                   15.00 00000000.25 00001,00
+579473-38         ETIQ. ESPECIF D25003K-BRTIPO 1                  SPI      SPPPT                                   15.00 00000000.25 00001,00
+582573-02         CABO ELETRICO                                   SPI      SPPPT                                   05.00 00000009.97 00001,00
+604903-03         ETIQ.ESPECIF.D28490B2                           SPPCN    SPPPT                                   15.00 00000000.25 00001,00
+604903-05         ETIQ.ESPECIF.D28491B2                           SPPCN    SPPPT                                   15.00 00000000.25 00001,00
+604903-06         ETIQ.ESPECIF.D28490BR                           SPPCN    SPPPT                                   15.00 00000000.25 00001,00
+604903-07         ETIQ.ESPECIF.D28491BR                           SPPCN    SPPPT                                   15.00 00000000.25 00001,00
+605040-18         ROLAMENTO CW MFG LAGP.BULL                      SPPCI    SPPPT                                   12.00 00000003.21 00001,00
+606308-00         TERMINAL FEMEA                                  SPPCI    SPPPT                                   10.00 00000000.36 00001,00
+606308-01         TERMINAL                                        SPPCI    SPPPT                                   10.00 00000000.36 00001,00
+610057-00         TERMINAL                                        SPPCN    SPPPT                                   00.00 00000000.36 00001,00
+627378-00         GUARDA 9" P.BULL                                SPPCI    SPPPT                                   08.00 00000010.04 00001,00
+627378-01         GUARDA 7" P.BULL                                SPPCI    SPPPT                                   08.00 00000009.11 00001,00
+629729-00         PINHAO 6K LAG P.BULL                            SPPCI    SPPPT                                   10.00 00000008.28 00001,00
+630553-00         BOTAO DO PINO TRAVALAG P.BULL                   SPPCI    SPPPT                                   08.00 00000000.28 00001,00
+632702-00         COLAR TRAVA LAG P.BULL                          SPPCI    SPPPT                                   12.00 00000001.32 00001,00
+632710-00         PINHAO 8K P.BULL                                SPPCI    SPPPT                                   10.00 00000010.78 00001,00
+634589-00         PINO TRAVA LAG P.BULL                           SPPCN    SPPPT                                   10.00 00000000.87 00001,00
+635908-00         RETENTOR DO PINO TRAVALAG P.BULL                SPPCI    SPPPT                                   08.00 00000000.20 00001,00
+638328-00         MOLA DO PINO TRAVA LAGP.BULL                    SPPCN    SPPPT                                   15.00 00000000.41 00001,00
+639444-00         FILTRO DE FRUTA IB910                           SPPCI    SPHH                                    10.00 00000003.49 00001,00
+639681-00         ARRUELA DO PINHAO LAGP.BULL                     SPPCN    SPPPT                                   10.00 00000000.17 00001,00
+640591-00         ARRUELA PLANA LAG P.BULL                        SPPCI    SPPPT                                   10.00 00000000.08 00001,00
+643295-00         HOUSING LF910                                   SPBEN    SPHH                                    10.00 00000003.39 00001,00
+649167-01         BASE 120V                                       SPI      SPHH                                    10.00 00000013.18 00001,00
+649167-05         ISOLADOR CERAMICO                               SPI      SPHH                                    15.00 00000000.13 00001,00
+649167-06         DEFLETOR DE CALOR                               SPI      SPHH                                    10.00 00000000.65 00001,00
+649167-07         ISOLADOR CERAMICO                               SPI      SPHH                                    15.00 00000000.20 00001,00
+649167-08         GAXETA DE VAPOR                                 SPI      SPHH                                    08.00 00000001.29 00001,00
+649167-09         GAXETA DE VAPOR                                 SPI      SPHH                                    08.00 00000001.29 00001,00
+649167-10         SAIA                                            SPI      SPHH                                    10.00 00000004.87 00001,00
+649167-11         APOIO                                           SPI      SPHH                                    10.00 00000000.20 00001,00
+649167-12         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-13         CONJ. RESERVATORIO AGUA                         SPI      SPHH                                    10.00 00000007.79 00001,00
+649167-14         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-15         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.03 00001,00
+649167-16         VEDACAO DE BORRACHA                             SPI      SPHH                                    08.00 00000000.63 00001,00
+649167-17         GAXETA ENTRADA RESERV.                          SPI      SPHH                                    08.00 00000000.63 00001,00
+649167-18         CABO                                            SPI      SPHH                                    05.00 00000003.89 00001,00
+649167-19         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-20         CONJ. REGULADOR DE VAPOR                        SPI      SPHH                                    10.00 00000001.95 00001,00
+649167-21         BOTAO DO VAPOR EXTRA                            SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-22         BOTAO DO SPRAY                                  SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-23         CAPA DO CABO                                    SPI      SPHH                                    10.00 00000002.60 00001,00
+649167-24         INSERTO DE BORRACHA                             SPI      SPHH                                    10.00 00000000.20 00001,00
+649167-25         TAMPA DO RESERVATORIO                           SPI      SPHH                                    10.00 00000000.82 00001,00
+649167-26         TAMPA DO LED                                    SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-27         CABO ELETRICO                                   SPI      SPHH                                    05.00 00000005.84 00001,00
+649167-28         MODULO ELETRONICO 120V                          SPI      SPHH                                    10.00 00000012.72 00001,00
+649167-29         PROTETOR DO CABO ELETR.                         SPI      SPHH                                    10.00 00000000.98 00001,00
+649167-30         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-31         TAMPA TRASEIRA                                  SPI      SPHH                                    10.00 00000002.92 00001,00
+649167-32         PRESILHA DO CABO ELETR.                         SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-33         TAMPA DO PROTETOR                               SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-35         BLOCO TERMINAL                                  SPI      SPHH                                    15.00 00000000.40 00001,00
+649167-36         BLOCO TERMINAL TRIPLO                           SPI      SPHH                                    15.00 00000000.75 00001,00
+649167-37         BOTAO CONTROLE TEMPERAT.                        SPI      SPHH                                    10.00 00000001.76 00001,00
+649167-38         MOLA                                            SPI      SPHH                                    15.00 00000000.04 00001,00
+649167-39         ADAPTADOR DO TERMOSTATO                         SPI      SPHH                                    10.00 00000000.32 00001,00
+649167-40         BOTAO AUTO LIMPEZA                              SPI      SPHH                                    10.00 00000000.07 00001,00
+649167-41         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-43         CONJ. CONDUTOR                                  SPI      SPHH                                    05.00 00000000.32 00001,00
+649167-44         CONJ. TERMOFUSIVEL                              SPI      SPHH                                    05.00 00000002.44 00001,00
+649167-45         TERMOSTATO                                      SPI      SPHH                                    15.00 00000004.55 00001,00
+649167-46         FIXADOR DO TERMOFUSIVEL                         SPI      SPHH                                    10.00 00000000.07 00001,00
+649167-47         CONJ. CONDUTOR                                  SPI      SPHH                                    05.00 00000000.32 00001,00
+649167-48         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-50         ARRUELA                                         SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-52         PRESILHA DE NYLON                               SPI      SPHH                                    10.00 00000000.65 00001,00
+649167-53         ARRUELA                                         SPI      SPHH                                    10.00 00000000.01 00001,00
+649167-54         MOLA SUPERIOR                                   SPI      SPHH                                    15.00 00000000.03 00001,00
+649167-55         ARRUELA TRAVA                                   SPI      SPHH                                    10.00 00000000.03 00001,00
+649167-56         MOLA INFERIOR                                   SPI      SPHH                                    15.00 00000000.03 00001,00
+649167-57         ANEL DE BORRACHA                                SPI      SPHH                                    08.00 00000000.65 00001,00
+649167-60         ARRUELA DE MICA                                 SPI      SPHH                                    10.00 00000000.09 00001,00
+649167-61         COPO MEDIDOR                                    SPI      SPHH                                    10.00 00000001.56 00001,00
+649167-62         ETIQ. ESPECIF. XT2020120V                       SPI      SPHH                                    15.00 00000000.30 00001,00
+649168-01         BASE 220V                                       SPI      SPHH                                    10.00 00000013.18 00001,00
+649168-27         CABO ELETRICO                                   SPI      SPHH                                    05.00 00000005.84 00001,00
+649168-28         MODULO ELETRONICO 220V                          SPI      SPHH                                    10.00 00000012.72 00001,00
+649168-62         ETIQ. ESPECIF. XT2020220V                       SPI      SPHH                                    15.00 00000000.30 00001,00
+649403-01         BASE 220V                                       SPI      SPHH                                    10.00 00000005.75 00001,00
+649403-02         CAPA DE SILICONE                                SPI      SPHH                                    12.00 00000000.10 00001,00
+649403-03         TERMINAL                                        SPI      SPHH                                    08.00 00000000.10 00001,00
+649403-04         ARRUELA MOLA                                    SPI      SPHH                                    10.00 00000000.03 00001,00
+649403-05         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.65 00001,00
+649403-06         FIXADOR DO TERMOFUSIVEL                         SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-07         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-08         CONJ. TERMOFUSIVEL                              SPI      SPHH                                    05.00 00000001.67 00001,00
+649403-09         ARRUELA MOLA                                    SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-10         CONJ. CONDUTOR                                  SPI      SPHH                                    05.00 00000000.97 00001,00
+649403-11         CONJ. CONDUTOR                                  SPI      SPHH                                    05.00 00000000.97 00001,00
+649403-12         CONJ. LAMPADA PILOTO                            SPI      SPHH                                    10.00 00000001.00 00001,00
+649403-13         SAIA                                            SPI      SPHH                                    10.00 00000001.75 00001,00
+649403-14         BLOCO TERMINAL                                  SPI      SPHH                                    15.00 00000000.76 00001,00
+649403-15         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-16         LENTE                                           SPI      SPHH                                    08.00 00000000.03 00001,00
+649403-17         COBERTURA                                       SPI      SPHH                                    10.00 00000001.81 00001,00
+649403-18         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.04 00001,00
+649403-19         PRESILHA DO CABO ELETR.                         SPI      SPHH                                    10.00 00000000.03 00001,00
+649403-20         TAMPA TRASEIRA                                  SPI      SPHH                                    10.00 00000000.98 00001,00
+649403-21         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-22         TUBO DE FIBRA                                   SPI      SPHH                                    15.00 00000000.01 00001,00
+649403-23         PROTETOR DO CABO ELETR.                         SPI      SPHH                                    18.00 00000000.67 00001,00
+649403-24         CABO ELETRICO                                   SPI      SPHH                                    05.00 00000003.44 00001,00
+649403-25         CAPA DO CABO                                    SPI      SPHH                                    10.00 00000000.68 00001,00
+649403-26         BOTAO CONTROLE TEMPERAT.                        SPI      SPHH                                    10.00 00000000.40 00001,00
+649403-27         ADAPTADOR DO TERMOSTATO                         SPI      SPHH                                    10.00 00000000.03 00001,00
+649403-28         MOLA                                            SPI      SPHH                                    15.00 00000000.01 00001,00
+649403-29         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-30         ARRUELA DE FIBRA                                SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-31         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.03 00001,00
+649403-32         ARRUELA DE FIBRA                                SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-33         ISOLADOR CERAMICO                               SPI      SPHH                                    15.00 00000000.07 00001,00
+649403-34         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-35         TERMOSTATO                                      SPI      SPHH                                    15.00 00000003.23 00001,00
+649403-36         SUPORTE                                         SPI      SPHH                                    10.00 00000000.01 00001,00
+649403-38         ETIQ. ESPECIF. F215-B2                          SPI      SPHH                                    15.00 00000000.29 00001,00
+649403-40         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.04 00001,00
+649403-41         PARAFUSO                                        SPI      SPHH                                    10.00 00000000.04 00001,00
+649403-42         ARRUELA MOLA                                    SPI      SPHH                                    10.00 00000000.01 00001,00
+649404-01         BASE 120V                                       SPI      SPHH                                    10.00 00000005.75 00001,00
+649404-12         CONJ. LAMPADA PILOTO                            SPI      SPHH                                    10.00 00000001.00 00001,00
+649404-24         CABO ELETRICO                                   SPI      SPHH                                    05.00 00000003.44 00001,00
+649404-38         ETIQ. ESPECIF. F215-BR                          SPI      SPHH                                    15.00 00000000.29 00001,00
+750831            ANEL O RING 4x1.5 LAGP.BULL                     SPPCI    SPPPT                                   08.00 00000000.09 00001,00
+930553            PARAFUSO                                        SPI      SPPPT                                   10.00 00000000.03 00001,00
+949801-85         CONJ. CONDUTOR                                  SPI      SPPPT                                   05.00 00000000.41 00001,00
+949801-86         CONJ. CONDUTOR                                  SPI      SPPPT                                   05.00 00000000.44 00001,00

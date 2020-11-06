@@ -1,0 +1,179 @@
+#id_tc_container {
+    width: 1330px;
+}
+
+#menu_sidebar, #menu_sidebar2 {
+    margin-left: 1100px !important;
+}
+
+input[type=radio], 
+input[type=checkbox] {
+    margin-top: 0 !important;
+}
+
+li[role=presentation] a:last-of-type {
+    margin-right: 0 !important;
+}
+
+li[role=presentation] {
+    width: 12.55%;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: -1px;
+}
+
+hr {
+    border-top: solid 1px darkblue;
+}
+
+div[id^=cke_ri] {
+    width: 100% !important;
+}
+
+li[role=presentation] a {
+    height: 60px;
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+    border: #bfbcbb 1px solid;
+}
+
+li[role=presentation]:not(.active) a {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+
+li[role=presentation].active a {
+    color: white !important;
+    background-color: #2b2c50 !important;
+}
+
+
+li[role=presentation]:not(.disabled) a:hover {
+    color: white !important;
+    background-color: #2b2c50 !important;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+[role=tabpanel]#posvenda form {
+    height: auto;
+}
+
+.titulo_tabela {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #2b2c50;
+}
+
+.legenda-verde {
+    height: 50px;
+    width: 60px;
+    background-color: #c2e3b6;
+}
+
+.row-relatorio {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-bottom: 12.5px;
+}
+
+.linha-produto .form-group {
+    padding: 5px;
+}
+
+.input-append {
+    white-space: normal !important;
+}
+
+.add-on {
+    height: 30px !important;
+    cursor: pointer;
+}
+
+.linha-produto {
+    padding-top: 10px;
+    width: 95%;
+    margin-left: 2.5% !important;
+}
+
+.linha-produto:nth-child(odd) {
+    background-color: #bcc6d4;
+}
+
+.linha-produto:nth-child(even) {
+    background-color: #cad2de;
+}
+
+textarea {
+    resize: none;
+}
+
+.titulo-produtos {
+    background-color: #72849e;
+    width: 95%;
+    margin-left: 2.5% !important;
+    font-size: 17px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.linha-produto .control-label {
+    text-align: left;
+}
+
+.alinhar-esquerda {
+    text-align: left !important;
+}
+
+.textarea-causa-efeito {
+    font-size: 11px;
+}
+
+.div-causa-textarea {
+    margin-left: 20px;
+}
+
+.linha-vertical {
+    height: 20px;
+    width: 1px;
+    border: 0.5px solid darkblue;
+}
+
+.tabela-identificacao-acoes th {
+    background-color: darkblue;
+    color: white;
+}
+
+.tabela-identificacao-acoes td {
+    padding: 0px !important;
+}
+
+.tabela-identificacao-acoes tfoot td {
+    text-align: center;
+    background-color: lightgray;
+}
+
+
+.tabela-identificacao-acoes .form-group {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+}
+
+.quantificar-problema li {
+    padding-left: 25px;
+}
+
+.quantificar-problema {
+    margin-left: 50px;
+}
+
+.obrigatorio {
+    border-color: #a94442;
+}

@@ -1,0 +1,4284 @@
+/******************** CSS Reset *******************************/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,caption, tbody, tfoot, thead
+{
+    margin: 0;	padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+ol, ul, dt, dl {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+fieldset,img {
+    border: none;
+}
+legend {
+    display: none;
+}
+input[type=text], textarea {
+    padding: 0;
+    border:1px solid #555;
+}
+a, a:link a:active a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+caption,cite,code,dfn,em,th,var {
+    font-style: normal;
+    font-weight: normal;
+}
+input, textarea, select{
+    outline:none; /*tira a borda dourada do chrome*/
+}
+textarea{
+    resize:none; /*nÃ£o deixa redimensionar o textarea no chrome*/
+}
+a img {
+    border: 0px;
+    margin: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    color: inherit;
+    margin: 0
+}
+
+/**
+ * TOOLS
+ **/
+* html>body .clearfix {
+    display: inline-block;
+    width: 100%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clear {
+    clear:both;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    line-height: 1px;
+}
+.replace {
+    background-color:transparent;
+    text-indent:-50000px;
+    overflow:hidden;
+    display:block;
+}
+.replace-bt {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: transparent;
+    text-indent: -50000px;
+    line-height:999999px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    border:none;
+}
+.replace-txt{
+    text-indent: -999999px;
+}
+
+
+/**
+ *	Classes Helpers
+*/
+
+/*Posicionamento*/
+.relative{
+    position: relative;
+}
+.floatLeft{
+    float: left!important;
+}
+.floatRight{
+    float: right!important;
+}
+
+/*TOP*/
+.top5{
+    margin-top: 5px;
+}
+.top10{
+    margin-top: 10px;
+}
+.top15{
+    margin-top: 15px;
+}
+.top20{
+    margin-top: 20px;
+}
+.top25{
+    margin-top: 25px;
+}
+.top30{
+    margin-top: 30px;
+}
+.top35{
+    margin-top: 35px;
+}
+.top40{
+    margin-top: 40px;
+}
+.top50{
+    margin-top: 50px;
+}
+.top60{
+    margin-top: 60px;
+}
+.top70{
+    margin-top: 70px;
+}
+.top80{
+    margin-top: 80px;
+}
+.top90{
+    margin-top: 90px;
+}
+.top100{
+    margin-top: 100px;
+}
+.top120{
+    margin-top: 120px;
+}
+.top200{
+    margin-top: 200px;
+}
+.top230{
+    margin-top: 230px;
+}
+.top250{
+    margin-top: 250px;
+}
+.top300{
+    margin-top: 300px;
+}
+.top400{
+    margin-top: 400px;
+}
+.top500{
+    margin-top: 500px;
+}
+
+/*LEFT*/
+.left10{
+    margin-left: 10px;
+}
+.left20{
+    margin-left: 20px;
+}
+.left24{
+    margin-left: 24px;
+}
+.left30{
+    margin-left: 30px;
+}
+.left40{
+    margin-left: 40px;
+}
+.left50{
+    margin-left: 50px;
+}
+.left60{
+    margin-left: 60px;
+}
+.left70{
+    margin-left: 70px;
+}
+.left80{
+    margin-left: 80px;
+}
+.left90{
+    margin-left: 90px;
+}
+.left100{
+    margin-left: 100px;
+}
+.left120{
+    margin-left: 120px;
+}
+.left130{
+    margin-left: 130px;
+}
+
+/*RIGHT*/
+.right10{
+    margin-right: 10px;
+}
+.right20{
+    margin-right: 20px;
+}
+.right30{
+    margin-right: 30px;
+}
+.right40{
+    margin-right: 40px;
+}
+.right50{
+    margin-right: 50px;
+}
+.right60{
+    margin-right: 60px;
+}
+.right70{
+    margin-right: 70px;
+}
+.right80{
+    margin-right: 80px;
+}
+.right90{
+    margin-right: 90px;
+}
+.right100{
+    margin-right: 100px;
+}
+.right120{
+    margin-right: 120px;
+}
+
+.width80 {width: 80px;}
+.width90 {width: 90px;}
+.width100 {width: 100px;}
+.width105 {width: 105px;}
+.width110 {width: 110px;}
+.width120 {width: 120px;}
+.width144 {width: 144px;}
+.width150 {width: 150px;}
+.width130 {width: 130px;}
+.width200 {width: 200px;}
+.width240 {width: 240px;}
+.width235 {width: 235px;}
+.width250 {width: 250px;}
+.width300 {width: 300px;}
+.width410 {width: 410px;}
+
+
+/**
+ *	Inicio de suas regras
+*/
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #FAFAFA;
+    font-family: 'neuronregular';
+    font-size: 14px;
+    color: #444444;
+    width: 100%;
+    *overflow-x: hidden;
+    *overflow-y: auto;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+
+
+/**
+ *	Linha para cada bloco de conteudo
+*/
+
+
+/**
+ *	Bloco interno de conteudo fixo
+*/
+.content{
+    display: block;
+    width: 994px;
+    margin: 0 auto;
+}
+
+.topo {position: relative; z-index: 100; background: white; height: 80px;    border-bottom: 1px solid #eee;}
+.topo > .content{ height:80px; position:relative; }
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 99;
+    background: url('../img/site/common/bg/overlay.png') 0 0 repeat;
+    left: 0;
+    top: 0;
+    display: none;
+
+}
+
+.logo {float: left; height: 95px;}
+
+.menu {float: left; margin: 0 0 0 25px; padding: 0;}
+.menu > li {display: inline-block; float: left; margin-left:30px; }
+.menu > li > a {font-family: 'neuron_demiboldregular'; font-size: 20px; color: #00AFF3; float: left; padding:29px 0; position: relative;}
+
+
+.menu > li > a:hover .arrow-menu {background-position: 0 -3px;}
+.menu > li > a:hover, .menu > li > a.Sel {text-decoration: none; color: #065492;}
+
+
+.overlayLinhas {
+    height: 296px;
+    width: 7px;
+    background: url('../img/site/common/bg/overlay-menu.png') 0 0 no-repeat;
+    position: absolute;
+    float: left;
+    top: 1px;
+    left: 0;
+    z-index: 0;
+}
+
+.menuPractia {background: url('../img/site/common/bg/menu-practia.png') 0 0 no-repeat; color: white!important; font-size: 12px!important;  padding-top: 30px;  }
+.menuLiva {background: url('../img/site/common/bg/menu-liva.png') 0 0 no-repeat; color: white!important; font-size: 12px!important;  padding-top: 30px;  }
+.menuSensia {background: url('../img/site/common/bg/menu-sensia.png') 0 0 no-repeat; color: white!important; font-size: 12px!important;  padding-top: 30px;  }
+.menuDesea {background: url('../img/site/common/bg/menu-desea.png') 0 0 no-repeat; color: white!important; font-size: 12px!important;  padding-top: 30px;  }
+
+
+
+.arrow-menu {
+    width: 5px;
+    height: 3px;
+    float: right;
+    background: url('../img/site/common/bg/arrow-menu.jpg') 0 0 no-repeat;
+    position: absolute;
+    top: 40px;
+    right: -11px;
+}
+
+.submenuPrincipal {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    z-index: 99;
+	background:#FFFFFF;
+    display: none;
+	-webkit-box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+	-moz-box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+	box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+}
+
+.seta-cima:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid #FFFFFF;
+  position:absolute;
+  top:-6px;
+  left:70px;
+}
+
+.abrirSubmenuProdutos .submenuPrincipal { left:170px; }
+.linksProdutos {float: left; background: #FFFFFF; }
+.linksProdutos > div{ width:115px; float: left; padding:0 18px; }
+.linksProdutos a {
+    display:block;
+    line-height: 35px;
+    font-family: 'neuron_boldregular'!important;
+    font-size: 16px;
+    white-space: nowrap;
+	color:#00aef3;
+}
+
+.linksLinhasProdutos {float: right; background: white; width: 228px; position: relative;}
+.linksLinhasProdutos h1 {float: left; font-size: 16px; height: 35px; line-height: 35px; color: #d2d2d2; padding-left: 20px;}
+.linksLinhasProdutos a {float: left; color: white; height: 35px; padding-left: 20px; width: 208px; cursor: pointer;}
+
+.linksLinhasProdutos a:hover .bgLinhaMenu {display: block;}
+
+.produtosComerciais {float: left; clear:both; background: #00ACF5; margin-top: -1px; height: 84px; width:100%; }
+.produtosComerciais a{ padding:0 18px; display:block; overflow:hidden; margin-right:25px; background: url('../img/site/common/bg/lk-produto-menu.png') no-repeat right center; }
+.produtosComerciais span {font-family: 'neuron_boldregular'; font-size: 16px; color: #FFFFFF; float: left; position: relative; margin-top: 15px;}
+.produtosComerciais p { font-size: 13px; color: #FFFFFF; float: left; margin: 5px 0 0 0; clear:both; }
+.produtosComerciais a:hover span {color: #065492; }
+
+.abrirSubmenu { position:relative; }
+.submenu {
+    float: left;
+    position: absolute;
+    top: 72px;
+    left: -23px;
+    z-index: 99;
+    display: none;
+    margin: 0;
+    padding: 0 18px;
+    background: #FFFFFF;
+	-webkit-box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+	-moz-box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+	box-shadow: 3px -5px 4px 0px rgba(199,197,199,0.6);
+}
+
+/* .submenu li {
+        float: left;
+        width: 100%;
+        margin-left: 25px;
+ }*/
+
+.submenu a {
+    display:block;
+    line-height: 35px;
+    font-family: 'neuron_boldregular'!important;
+    font-size: 16px;
+    white-space: nowrap;
+	color:#00aef3;
+}
+
+.topo .lk-selecionar-regiao{
+	background:url(../img/site/common/bg/lk-selecionar-regiao.gif) no-repeat;
+	width:25px;
+	height:25px;
+	position:absolute;
+	top:26px; right:12px;
+	text-indent:-999px;
+	overflow:hidden;
+	line-height:999px;
+	font-size:0;
+}
+
+
+.lupa {
+    float:right;
+    background:url('../img/site/common/bg/lupa.jpg') 0 0 no-repeat;
+    width:30px;
+    height:60px;
+    margin-right:61px;
+    margin-top:23px;
+    position:relative;
+}
+
+
+.containerBtnBusca {
+    position: relative;
+}
+
+.containerBusca {
+    float: left;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: white;
+    width: 330px;
+    height: 45px;
+    z-index: 10;
+    border-top: 1px solid #e5e5e5;
+    cursor: default;
+    display: none;
+}
+.campoBusca {
+    float: left;
+    width: 242px;
+    height: 46px;
+}
+.campoBusca input {
+    float: left;
+    margin-top: 14px;
+    margin-left: 2%;
+    width: 96%;
+    border: none;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    font-size: 12px;
+    color: #9B9B9B;
+    line-height: 18px;
+    text-indent: 10px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.btnBusca {float: right; width: 85px; height: 45px; border-left: 1px solid #e5e5e5; background: #00acf9; }
+.btnBusca input {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'neuron_demiboldregular';
+    font-size: 20px;
+    *line-height: 38px;
+    text-align: center;
+}
+
+.btnBusca:hover {background: #01539C;}
+
+.cabecalhoPadrao {
+    float: left;
+    width: 100%;
+    height: 81px;
+    background: url('../img/site/common/bg/bg-cabecalho-padrao.jpg') top center no-repeat;
+    color: white;
+    position: relative;
+    z-index: 5
+}
+
+.cabecalhoPadrao h1 {
+    font-family: 'neuron_boldregular';
+    font-size: 33px;
+    float: left;
+    width: 100%;
+    margin-top: -3px;
+    color: white;
+}
+
+
+.cabecalhoPadraoAbsolute {
+    /*float: left;
+    width: 100%;*/
+    float: right;
+    width: 45%;
+    /*height: 81px;*/
+    color: white;
+    /*position: absolute;*/
+    position: relative;
+    z-index: 95;
+    top: 0;
+    left: 0;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.cabecalhoPadraoAbsolute h1 {
+    font-family: 'neuron_boldregular';
+    font-size: 33px;
+    float: left;
+    /*width: 100%;*/
+    width: 44%;
+    margin-top: -3px;
+    color: #999;
+}
+
+.cabecalhoPadraoAbsolute  .mapaSite {
+    margin-top: 22px;
+    color: #999;
+}
+
+.cabecalhoPadraoAbsolute .mapaSite a {
+    color: #999;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.mapaSite {
+    margin-top: 22px;
+    color: #96C8E9;
+}
+.mapaSite a {
+    color: #96C8E9;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.campoPadrao {
+    float: left;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #DEDEDE;
+}
+
+.campoPadrao input {
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 12px;
+    font-size: 11px;
+    border: none;
+    padding-left: 12px;
+    float: left;
+    width: 85%;
+    color: #9B9B9B
+}
+
+
+.ateData {font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 14px;  font-size: 12px; float: left; margin-left: 7px; color: #999;}
+
+.textareaPadrao {
+    float: left;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #DEDEDE;
+    width: 635px;
+    padding-left: 12px;
+}
+.textareaPadrao textarea {
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: #9B9B9B;
+    margin-top: 12px;
+    border: none;
+    float: left;
+    width: 100%;
+    height: 81%;
+    *height: 86px;
+
+}
+
+
+.selectPadrao{ float:left; }
+.selectPadrao.errorValidate .ui-selectmenu{ border-color:#EE7272; }
+
+
+.barraHorizontal {
+    float: left;
+    height: 1px;
+    width: 100%;
+    background: #E5E5E5;
+    border-top: 1px solid #FEFEFE;
+    border-bottom: 1px solid #FEFEFE;
+}
+
+
+.barraVertical {
+    float: left;
+    height: 211px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    top: 0;
+    left: 185px;
+    position: absolute;
+    z-index: 999
+}
+
+
+
+
+
+
+/********************* configuraÃ§Ãµes carrosel banner home *********************/
+.containerBanner {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: 540px;
+}
+
+.banner {
+    position: absolute;
+    left: 50%;
+    width: 2000px;
+    margin-left: -1000px;
+    top: 0;
+    float: left;
+    text-align: center;
+}
+
+
+.banner img {max-width: 994px; display: inline-block;}
+
+
+
+.bxslider {
+    padding: 0;
+    float: left;
+    padding: 0;
+    left: 0;
+    opacity: 0
+}
+
+.bx-controls-direction {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 43%;
+    width: 100%;
+    z-index: 80
+}
+
+.bx-prev {
+    /*margin-right: 450px; */
+    background: url('../img/site/common/misc/misc.png') -1px -30px no-repeat;
+    width: 48px;
+    height: 90px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+}
+.bx-prev:hover {background-position: -151px -30px}
+
+.bx-next {
+    /*margin-left: 450px;*/
+    background: url('../img/site/common/misc/misc.png') -61px -30px no-repeat;
+    width: 48px;
+    height: 90px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    right: 500px;
+}
+.bx-next:hover {background-position: -211px -30px}
+
+.bx-pager {text-align: center; margin-top: -43px; position: relative; z-index: 80;}
+
+.bx-pager a {
+    background: url('../img/site/common/misc/misc.png') -283px -1px no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: inline-block;
+    font-size: 0
+}
+
+a.active {background: url('../img/site/common/misc/misc.png') -261px -1px no-repeat; }
+
+/*banner produto*/
+.banner-produto{ 
+    width: 50%;
+    float: left;
+    /*width:900px;
+    padding-right:100px;*/
+    position:relative;
+    margin: 80px auto 0; }
+.bx-pager-produto {
+	/*width:98px;
+	height:309px;*/
+	/*position:absolute;*/
+	top:0px;
+	right:0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.bx-pager-produto .pag-itens {
+	width:100%;
+	/*height:309px;*/
+    height: 115px;
+	overflow:hidden;
+	position:relative;
+}
+.bx-pager-produto .pag-itens > div{
+	position:absolute;
+	left:0;
+    top: 0;
+    width: auto;
+    float: left;
+}
+
+.bx-pager-produto .pag-itens a {
+    width: 95px;
+    height: 95px;
+	overflow:hidden;
+    margin-bottom: 7px;
+    /*display: block;*/
+    display: inline-block;
+    font-size: 0;
+	border:none;
+	/*-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;*/
+    border: 1px solid #eee;
+	z-index:5;
+	position:relative;
+    float: left;
+    margin: 6px;
+}
+.bx-pager-produto .pag-itens a.active { /*width:88px; height:88px; background: none; border:5px solid #FFFFFF;*/ }
+.bx-pager-produto .pag-itens a img{ 
+    /*position:absolute;
+    top:-110px; left:-215px;*/ 
+    margin-left: 5%;
+    width: 80%;
+    margin-top: 25%;}
+.bx-pager-produto .pag-itens a.active img{ top:-115px; left:-220px; }
+
+.banner-produto .prev,
+.banner-produto .next{
+	width:41px;
+	height:22px;
+	position:absolute;
+	/*left:29px;
+	z-index:100;*/
+	display:block;
+}
+.banner-produto .prev{ /*top:-50px;*/ 
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-top: 45px;
+    left: -8px;
+    }
+.banner-produto .next{ /*bottom:-50px;*/
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    right:0px;
+    margin-top: -70px;
+    right:-5px;}
+.banner-produto .prev a,
+.banner-produto .next a{
+	width:41px;
+	height:22px;
+	background: url(../img/site/common/bg/bg-seta-produto.png) no-repeat;
+	top:0;
+	left:0;
+}
+.banner-produto .next a{ background-position:0 -22px; }
+.banner-produto .next a:hover{ background-position:-41px -22px; }
+.banner-produto .prev a:hover{ background-position:-41px 0; }
+
+.bxslider .content img {
+    /*max-height: 350px;*/
+    max-height: 250px;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* CHAMADAS HOME */
+.chamadasHome {float: left; width: 100%; margin-top: 30px;}
+
+.chamada {
+    float: left;
+    width: 228px;
+    height: 172px;
+    overflow: hidden;
+    background: silver;
+    margin-left: 22px;
+    position: relative;
+    border: 2px solid #FAFAFA;
+    color: white;
+}
+
+.chamada:first-child {margin-left: 0;}
+
+.hoverChamada {
+    float: left;
+    width: 215px;
+    position: absolute;
+    left: 0;
+    bottom: -37px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+}
+
+.hoverChamada span {font-size: 20px; font-family: 'neuron_demiboldregular';}
+.hoverChamada p {float: left; margin: 0; padding-top: 4px; min-height: 32px; width: 100%; }
+
+.capaPractia {background: url('../img/site/common/bg/practia-opaco.png') 0 0 no-repeat;}
+.capaLiva {background: url('../img/site/common/bg/liva-opaco.png') 0 0 no-repeat;}
+.capaSensia {background: url('../img/site/common/bg/sensia-opaco.png') 0 0 no-repeat;}
+.capaDesea {background: url('../img/site/common/bg/desea-opaco.png') 0 0 no-repeat;}
+.capaPadrao {background: url('../img/site/common/bg/padrao-opaco.png') 0 0 no-repeat;}
+
+.borderPractia:hover {border-color: #4cab66; }
+.borderLiva:hover {border-color: #cb3a89; }
+.borderSensia:hover {border-color: #075972; }
+.borderDesea:hover {border-color: #3a2868; }
+.borderPadrao:hover {border-color: #0089cb; }
+
+
+.containerDimensionador {
+    float: left;
+    background: url('../img/site/common/bg/bg_content_dimensionador.jpg') top center no-repeat;
+    width: 100%;
+    /*height: 240px;
+    margin-top: 30px;*/
+}
+
+
+.chamadaDimensionador {float: left; width: 480px; margin: 30px 0;}
+.chamadaDimensionador img {float: left; margin-left: 14px;}
+.chamadaDimensionador .conteudo {float: left; margin-left: 30px; width: 310px;}
+.chamadaDimensionador h2 {float: left; font-family: 'neuron_boldregular'; font-size: 40px; color: #444444;}
+.chamadaDimensionador p {float: left; width: 100%; font-size: 20px; line-height: 20px; font-family: 'neuronitalic'; margin: 0}
+.chamadaDimensionador span {float: left; font-size: 16px; color: #999;}
+.chamadaDimensionador a {
+    float: left;
+    color: #01AEF3;
+    margin-top: 8px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: both;
+    background: url('../img/site/common/bg/arrow-right.png') right 5px no-repeat;
+    padding-right: 10px;
+}
+
+.chamadaDimensionador a:hover {text-decoration: none; color: #065492; background-position: right -9px}
+
+.chamadaDimensionador > a {background: none;}
+
+.containerDimensionador {/*background: #eee; border-top: 1px solid #E5E5E5;*/ background: none;}
+.containerDimensionador .chamadaDimensionador {width: 100%;}
+.containerDimensionador .chamadaDimensionador .dim-float {float:left; width: 484px; padding-left:20px;}
+.containerDimensionador .chamadaDimensionador .conteudo {width: 550px;}
+.containerDimensionador .chamadaDimensionador .conteudo-home {width:auto;}
+.s-wid{
+    width:auto !important;
+}
+.row-dim{
+        display: block;
+        float: left;
+        width: 100%;
+        padding-left: 130px;
+    }
+.dim-float-1{
+    float:left;
+    width: 484px;
+    padding-left: 0;
+    }
+.row-dim-p{
+        display: block;
+        float: left;
+        width: 100%;
+        padding-left: 97px;
+    }
+.rem-background a{
+    background :none;
+}
+.containerDimensionador .chamadaOndeComprar {display: none;}
+
+.chamadaOndeComprar {float: right; width: 480px; margin-top: 30px;}
+.chamadaOndeComprar img {float: left; margin-left: 5px;}
+.chamadaOndeComprar .conteudo {float: left; margin-left: 25px; width: 340px;}
+.chamadaOndeComprar h2 {float: left; font-family: 'neuron_boldregular'; font-size: 40px; color: #444444;}
+.chamadaOndeComprar p {float: left; width: 100%; font-size: 20px; line-height: 20px; font-family: 'neuronitalic'; margin: 0}
+.linkVerTodasLojas {
+    float: left;
+    color: #01AEF3;
+    margin-top: 8px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: both;
+    background: url('../img/site/common/bg/arrow-right.png') right 5px no-repeat;
+    padding-right: 10px;
+}
+
+.linkVerTodasLojas:hover {text-decoration: none; color: #065492; background-position: right -9px}
+
+
+.checkLeft {float: left; width: 160px; margin-top: 8px;}
+
+.checkRight {float: left; width: 160px; margin-top: 8px;}
+
+.checkLeft label, .checkRight  label {float: left;  color: #9A9A9A;}
+
+.wtCheck{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/site/common/bg/check.jpg') 0 0 no-repeat;
+    float: left;
+    margin-right: 9px;
+}
+.wtCheckActive{
+    background-position: 0 -16px;
+}
+
+.checkHide input{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.selectEstadoComprar {float: left;}
+.selectCidadeComprar {float: left;}
+
+
+.btnLupaComprar {
+    float: left;
+    background: url('../img/site/common/bg/btn_buscar.jpg') 0 0 no-repeat;
+    width: 60px;
+    height: 44px;
+}
+
+.btnLupaComprar input {float: left; width: 100%; height: 100%; cursor: pointer; background: transparent; border: none;}
+
+.ui-selectmenu-menu-dropdown li:first-child {display: none}
+
+
+
+
+
+
+
+
+
+
+
+/* ******************** MODELO ******************** */
+.containerBannerModelo {
+    /*background: url('../img/site/common/bg/bg-geral.jpg') center top  no-repeat;*/
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    /*height: 471px;*/
+}
+
+.sliderModelo .bx-pager {
+    margin-top: 0;
+    position: absolute;
+    float: left;
+    width: 980px;
+    top: 36px;
+    right: 56px;
+    z-index: 96;
+}
+
+.containerMenuModelo {background: white; float: left; width: 100%;}
+.menuModelo {float: left; width: 70%; margin-bottom: -1px; position: relative; }
+.menuModelo a {font-size: 20px; font-family: 'neuronitalic'; float: left; line-height: 51px; padding-left: 14px; padding-right: 14px;}
+.menuModelo a:hover {text-decoration: none; }
+
+
+.menuModelo a.colorLiva:hover, .menuModelo a.colorLiva.active {background: #F99A3E; color: white;}
+.menuModelo a.colorPractia:hover, .menuModelo a.colorPractia.active {background: #4cab66; color: white;}
+.menuModelo a.colorSensia:hover, .menuModelo a.colorSensia.active {background: #26BFAF; color: white;}
+.menuModelo a.colorDesea:hover, .menuModelo a.colorDesea.active {background: #922193; color: white;}
+.menuModelo a.colorInstitucional:hover, .menuModelo a.colorInstitucional.active {background: #00AFF3; color: white;}
+
+.socialModelo {float: right; width: 25%; margin-top: 16px;}
+.twitter iframe {width: 96px!important; float: right;}
+.facebook iframe {width: 96px!important; float: right;}
+
+
+.barraVerticalMenuModelo {
+    float: left;
+    height: 51px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    z-index: 999;
+    float: left;
+}
+
+
+.chamadaModeloInterna {
+    /*float: left; width: 100%;*/
+    float: right;
+    width: 45%;
+    text-align: left;
+    padding-top: 30px;
+}
+.chamadaModeloInterna p {font-size: 16px; color: #999; }
+.chamadaModeloInterna p:first-child {margin-top: 5px}
+.videoModelo {/*float: right; width: 50%; margin-left: 30px;*/
+float:left;
+width: 100%;}
+
+.tresCaracteristicasModelo{
+    display: table;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.tresCaracteristicasModelo p {float: left; width: 100%; margin-top: 30px; font-size: 12px; color: #999;}
+
+.caracteristicaBig {float: left; width: 32%; margin-left: 2%}
+.caracteristicaBig b {font-family: 'neuron_boldregular'; font-size: 23px; float: left; width: 100%; margin-top: 3px;}
+.caracteristicaBig span {color: #999; font-size: 16px;}
+.caracteristicaBig img {width: 100%;/*height: 318px;*/}
+.caracteristicaBig:first-child {margin-left: 0}
+
+.caracteristicasModelo{
+    display: table;
+    margin-bottom: 15px;
+    width: 100%
+}
+.caracteristicasModelo p {float: left; width: 100%; margin-top: 15px; font-size: 12px; color: #999;}
+.caracteristica {float: left; padding-bottom: 15px; width: 25%; *width: 24.9%; margin-top: 15px;}
+.caracteristica h2 {font-size: 20px;width: 170px; font-family: 'neuronitalic'; float: left; /*margin-top: 9px;*/; float: right;}
+.caracteristica span {color: #999; width: 170px; float: right; }
+
+/*.imgCaracteristica > img {background: #00AFF3;}*/
+
+.imgCaracteristica {float: left; margin-right: 10px; width: 63px; height: 63px; text-align: center; overflow: hidden;}
+
+.imgCaracteristica > img {background: #00AFF3 !important;}
+
+.imgCaracteristicaLiva > img {background: #F99A3E;}
+.imgCaracteristicaPractia > img {background: #4cab66;}
+.imgCaracteristicaSensia > img {background: #26BFAF;}
+.imgCaracteristicaDesea > img {background: #922193;}
+
+/***box orientacoes***/
+.box-orientacoes {
+	/*background-color:#E9E6E6;*/
+	padding-top:30px;
+	padding-bottom:60px;
+}
+.box-orientacoes .content .titModelo{ padding-bottom:20px; }
+.box-orientacoes .orientacoes-left{ width:540px; float:left; }
+.box-orientacoes .orientacoes-left a{ color:#00ADF6; }
+.box-orientacoes .orientacoes-left > div{ padding:0 85px 0 60px; text-align:center; }
+.box-orientacoes .orientacoes-left h3{ font-family:neuron_bolditalic; font-size:24px; padding-bottom:10px; }
+.box-orientacoes .orientacoes-left .tt-fone{ padding-bottom:15px; }
+.box-orientacoes .orientacoes-left .tt-fone span{ font-family:neuron_bolditalic; font-size:23px; display:block; }
+.box-orientacoes .orientacoes-left h3.icone-book{
+	padding-top:70px;
+	background: url(../img/site/common/bg/bg-book.png) no-repeat center top;
+}
+
+.box-orientacoes .lista-orientacoes{ width:430px; float:left; display:none; }
+.box-orientacoes .lista-orientacoes p{
+	padding-left:30px;
+	padding-bottom:30px;
+	border-left:1px solid #00ADF6;
+	position:relative;
+}
+.box-orientacoes .lista-orientacoes p.ultimo{ border:none; }
+.box-orientacoes .lista-orientacoes p h4{ font-family:neuron_bolditalic; font-size:19px; padding-bottom:3px; }
+.box-orientacoes .lista-orientacoes p .marcador{
+	background: url(../img/site/common/bg/bg-lista-orientacoes.png) no-repeat;
+	width:16px;
+	height:17px;
+	position:absolute;
+	top:0;
+	left:-8px;
+}
+
+.box-produtos-relacionados ul li{
+	width:32%;
+	height:276px;
+	float:left;
+	/*border:1px solid #FFFFFF;*/
+	margin-right:1px;
+	background:#FAFAFA;
+	text-align:center;
+}
+.box-produtos-relacionados ul li a{ display:block; }
+
+.box-perguntas-frequentes{ padding:30px 0; overflow:hidden; }
+.box-downloads{ padding:30px 0 0; }
+.box-downloads li{ width:39%; float:left; padding-right:5%; margin-right:5%; /*border-right:1px solid #e5e5e5;*/ }
+
+.box-onde-comprar > div{
+	background: url(../img/site/common/bg/bg-onde-comprar-pin.png) no-repeat;
+	padding-left:80px;
+	margin:10px 0 20px;
+	overflow:hidden;
+}
+
+.box-onde-comprar > div.bg-off{
+	background: none;
+	padding-left: 0;
+}
+
+.linksProdutosEspecificacoes {
+    border-top: 1px solid #EEEEEE;
+    float: left;
+    margin-top: 8px;
+}
+
+
+
+.btnEspecificacoesProduto {float: right; position: absolute; top: 0; right: 0;}
+
+.btnEspecificacoesProduto a {background: #00AFF3; color: white; text-decoration: none; padding: 7px 22px 7px 22px; float: right;}
+.btnEspecificacoesProduto a:hover {background: #065492;}
+
+.btnEspecificacoesLiva a  {background-color: #F99A3E; }
+.btnEspecificacoesLiva a:hover  {background-color: #E67606; }
+
+.btnEspecificacoesPractia a  {background-color: #4cab66; }
+.btnEspecificacoesPractia a:hover  {background-color: #3D8952; }
+
+.btnEspecificacoesSensia a  {background-color: #26BFAF; }
+.btnEspecificacoesSensia a:hover  {background-color: #21A396; }
+
+.btnEspecificacoesDesea a  {background-color: #922193; }
+.btnEspecificacoesDesea a:hover  {background-color: #761B76; }
+
+
+.linksProdutosEspecificacoes a {
+    float: left;
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    line-height: 40px;
+    background: white;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    white-space: nowrap;
+    clear: both;
+    height: 40px;
+}
+.linksProdutosEspecificacoes a:hover{
+   height: 37px;
+   line-height: 36px;
+}
+.linksProdutosEspecificacoes a:hover .col10 {width: 18px;}
+
+.linhaTabelaGeral{
+    display: block;
+    float: left;
+    position: relative;
+    padding-right: 40px;
+    background: red;
+    padding-left: 1px;
+    overflow: hidden;
+}
+.linhaTabelaGeral:hover {
+    border: 2px solid #00AFF3;
+    text-decoration: none;
+    height: 38px;
+    padding-left: 0px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+a.linhaTabelaLiva:hover {border: 2px solid #F99A3E;}
+a.linhaTabelaPractia:hover {border: 2px solid #4cab66;}
+a.linhaTabelaSensia:hover {border: 2px solid #26BFAF;}
+a.linhaTabelaDesea:hover {border: 2px solid #922193;}
+
+
+a.linhaTabelaGeral:hover .flechaGeral{background-color: #00AFF3; background-position: -115px -275px}
+a.linhaTabelaLiva:hover .flechaLiva{background-color: #F99A3E; background-position: -115px -276px}
+a.linhaTabelaPractia:hover .flechaPractia{background-color: #4cab66; background-position: -115px -276px}
+a.linhaTabelaSensia:hover .flechaSensia{background-color: #26BFAF; background-position: -115px -276px}
+a.linhaTabelaDesea:hover .flechaDesea{background-color: #922193; background-position: -115px -276px}
+
+.flechaGeral {
+    float: none;
+    display: block;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 42px;
+    line-height: 40px;
+    background: url('../img/site/common/misc/misc.png') -56px -244px no-repeat;
+    font-size: 0;
+    background-color: #fff;
+    border-left: 1px solid #eee;
+}
+
+.especificoesPorProduto {position: relative; font-size: 18px; font-family: 'neuron_demiboldregular';}
+
+
+.especificoesPorProduto h1 {font-family: 'neuron_boldregular'; font-size: 26px;}
+
+
+.cabecalhoTabela {
+    font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #999;
+    width: 100%;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+.cabecalhoTabela .col1,
+.cabecalhoTabela .col2,
+.cabecalhoTabela .col3,
+.cabecalhoTabela .col4,
+.cabecalhoTabela .col5,
+.cabecalhoTabela .col6,
+.cabecalhoTabela .col7,
+.cabecalhoTabela .col8,
+.cabecalhoTabela .col9,
+.cabecalhoTabela .col10 {position: relative; height: 30px; text-align: center;}
+
+.cabecalhoTabela span {position: absolute; float: left; left: 0; bottom: 0; width: 100%; text-align: center;}
+
+
+
+
+
+.flechaLiva {background: url('../img/site/common/misc/misc.png') 5px -276px no-repeat; font-size: 0;}
+.flechaPractia {background: url('../img/site/common/misc/misc.png') -25px -276px no-repeat; font-size: 0;}
+.flechaSensia {background: url('../img/site/common/misc/misc.png') -55px -276px no-repeat; font-size: 0;}
+.flechaDesea {background: url('../img/site/common/misc/misc.png') -85px -276px no-repeat; font-size: 0;}
+
+
+
+
+.precisaSaberAntes h2 {font-family: 'neuron_boldregular'; font-size: 26px;}
+
+.itemAntesComprar {float: left; width: 200px; text-align: center; margin-right: 20px; margin-top: 15px;}
+.itemAntesComprar span {float: left; width: 100%; font-family: 'neuronitalic'; font-size: 20px;}
+.itemAntesComprar p {float: left; width: 100%; margin: 0; color: #999999;}
+
+.imgItemAntesComprar { width: auto; display: inline-block; font-size: 0;}
+.imgItemAntesComprar img {background: #00AFF3; max-width: 100%;}
+.imgItemAntesComprarInstitucional img {max-width: 100%;}
+
+.imgItemAntesComprarLiva>img{
+    max-width: 100%;
+    background-color: #F99A3E;
+}
+.imgItemAntesComprarPractia>img{
+    max-width: 100%;
+    background-color: #4cab66;
+}
+.imgItemAntesComprarSensia>img{
+    max-width: 100%;
+    background-color: #26BFAF;
+}
+.imgItemAntesComprarDesea>img{
+    max-width: 100%;
+    background-color: #922193;
+}
+
+
+
+
+
+/* MODELO ONDE COMPRAR */
+.containerMapa {width: 100%; overflow: hidden; position: relative; height: 600px; margin-top: -1px}
+.mapa {position: absolute; float: left; top: 0; left: 50%; margin-left: -1000px;}
+.buscadorMapa {position: relative; background: white; float: left; padding: 16px 23px 24px 23px; margin-top: 45px;}
+.buscadorMapa p {margin: 0; color: #999; font-size: 16px; }
+
+
+.btnLupaPadrao {float: left; width: 60px; height: 44px; background: #00AFF3 url('../img/site/common/misc/misc.png') 17px -229px no-repeat; display: none;}
+.btnLupaPadrao:hover {background-color: #00549A;}
+.btnLupaPadrao input {float: left; width: 100%; height: 44px; cursor: pointer; background: transparent; border: none;}
+
+
+.lupaLiva {background-color: #F99A3E;}
+.lupaLiva:hover {background-color: #E67606;}
+.lupaPractia {background-color: #4cab66;}
+.lupaPractia:hover {background-color: #3D8952;}
+.lupaSensia {background-color: #26BFAF;}
+.lupaSensia:hover {background-color: #21A396;}
+.lupaDesea {background-color: #922193;}
+.lupaDesea:hover {background-color: #761B76;}
+
+
+.ondeComprarProduto{ padding-top:46px; }
+.ondeComprarProduto > div{ float:left; width:470px; margin-right:39px; }
+.ondeComprarProduto > div p{ font-size:16px; line-height:19px; color:#999999; margin-bottom:20px; }
+
+.clear { clear:both; }
+.ondeComprarProduto > form{ float:left; width:485px; padding-top:5px; position:relative; }
+.ondeComprarProduto .inputPadrao input{ width:194px; }
+.ondeComprarProduto .inputPadrao input.w448{ width:448px; }
+.lblInputOpcional{ position:absolute; top:0; right:10px; font:italic 12px/44px Verdana,Geneva,sans-serif; color:#c9c9c9; }
+
+.ondeComprarProduto .txtMsgErro{ font-weight:700; font-size:16px; color:#EE7272; float:left; padding:36px 0 14px; display:none; }
+
+.ondeComprarProduto .btnOndeComprarProduto{ padding-top:28px; float:right; }
+.ondeComprarProduto .btnOndeComprarProduto input{
+	background-color:#00ACF9;
+	width:85px;
+	height:40px;
+	border:none;
+	font:700 14px Verdana, Geneva, sans-serif;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+
+.ondeComprarProduto .msgForm{
+	position:absolute;
+	top:0; left:0;
+	background-color:#01ADF7;
+	width:100%;
+	padding:80px 0;
+	display:none;
+}
+.ondeComprarProduto .msgForm span{ font-weight:700; font-size:16px; color:#FFFFFF; text-align:center; display:block; }
+
+.inputPadrao{ float:left; position:relative; }
+.inputPadrao label{ font:italic 12px/44px Verdana, Geneva, sans-serif; color:#999999; position:absolute; top:0; left:0; padding:0 16px; }
+.inputPadrao input{
+	background-color:#FFFFFF;
+	display:block;
+	height:40px;
+	border:2px solid #DEDEDE;
+	font:11px/40px Verdana, Geneva, sans-serif;
+	color:#9B9B9B;
+	margin:0;
+	padding:0 16px;
+}
+.inputPadrao.errorValidate input{ border-color:#EE7272; }
+
+.ondeComprarProduto h2{
+	font-size:28px;
+	font-family: 'neuron_boldregular';
+	margin:0 0 20px;
+	border-bottom:1px solid #E5E5E5;
+	padding-bottom:10px;
+}
+
+.ondeComprarProduto .lista-lojas-fisicas{ margin:0 0 25px -24px; overflow:hidden; }
+.ondeComprarProduto .lista-lojas-fisicas li{
+    float: left;
+    width: 214px;
+    height: 85px;
+    background: white;
+    margin-left: 24px;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 10px 0 65px 14px;
+}
+.ondeComprarProduto .lista-lojas-fisicas strong{ font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; font-weight: 700;}
+.ondeComprarProduto .lista-lojas-fisicas address{
+	background: url(../img/site/common/bg/endereco-loja.jpg) no-repeat;
+	padding-left: 28px;
+	margin-top: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 11px;
+	padding-right: 20px;
+	color: #999;
+}
+.ondeComprarProduto .lista-lojas-fisicas address span{ display:block; }
+.ondeComprarProduto .lista-lojas-fisicas .foneLoja{ bottom:15px; padding:0 40px 0 28px; }
+
+.ondeComprarProduto .lista-lojas-online{ font-size:0; word-spacing:-0.15em; letter-spacing:-0.1em; }
+.ondeComprarProduto .lista-lojas-online li{
+	width:497px;
+	margin-bottom:25px;
+	word-spacing:normal;
+	letter-spacing:normal;
+	display:inline-block;
+	vertical-align:top;
+	zoom:1;
+}
+.ondeComprarProduto .lista-lojas-online div{ float:left; width:257px; }
+
+.ondeComprarProduto .lista-lojas-online strong{ font-size:20px; display:block; }
+.ondeComprarProduto .lista-lojas-online span{ font-size:16px; color:#999999; display:block; }
+
+.ondeComprarProduto .lista-lojas-online .imagem{
+	background-color:#FFFFFF;
+	width:200px;
+	height:110px;
+	margin-right:20px;
+}
+.ondeComprarProduto .lista-lojas-online .imagem a{
+	border:1px solid #EEEEEE;
+	display:block;
+	width:198px;
+	height:108px;
+	overflow:hidden;
+}
+.ondeComprarProduto .lista-lojas-online .imagem img{ margin:-1px; display:block; }
+
+.ondeComprarProduto .lista-lojas-online .imagem a:hover{ border:2px solid #00AFF0; width:196px; height:106px; }
+.ondeComprarProduto .lista-lojas-online .imagem a:hover img{ margin:-2px; }
+
+
+/* MODELO interno PERGUNTAS */
+.tituloPerguntaModelo {float: left; width: 100%; cursor: pointer; line-height: 50px; }
+.tituloPerguntaModelo span {float: left; font-family: 'neuron_demiboldregular'; font-size: 20px;}
+.tituloPerguntaModelo i {
+    width: 9px;
+    height: 5px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 23px;
+}
+
+.perguntaGeral i {background: url('../img/site/common/bg/arrow-mensagem.jpg') 0 -5px no-repeat;}
+.perguntaLiva i {background: url('../img/site/common/bg/pergunta-liva.png') 0 0 no-repeat; }
+.perguntaPractia i {background: url('../img/site/common/bg/pergunta-practia.png') 0 0 no-repeat; }
+.perguntaSensia i {background: url('../img/site/common/bg/pergunta-sensia.png') 0 0 no-repeat; }
+.perguntaInstitucional i {background: url('../img/site/common/bg/pergunta-institucional.png') 0 0 no-repeat; }
+
+
+.perguntaGeral .aberto i {background-position: 0 0}
+.perguntaLiva .aberto i {background-position: 0 -5px}
+.perguntaPractia .aberto i {background-position: 0 -5px}
+.perguntaSensia .aberto i {background-position: 0 -5px}
+.perguntaDesea .aberto i {background-position: 0 -5px}
+.perguntaInstitucional .aberto i {background-position: 0 -5px}
+
+
+.perguntaGeral .tituloPerguntaModelo {color: #00AFF3;}
+.perguntaLiva .tituloPerguntaModelo {color: #F99A3E;}
+.perguntaPractia .tituloPerguntaModelo {color: #4cab66;}
+.perguntaSensia .tituloPerguntaModelo {color: #26BFAF;}
+.perguntaDesea .tituloPerguntaModelo {color: #922193;}
+.perguntaInstitucional .tituloPerguntaModelo {color: #00AFF3!important;}
+
+
+.perguntaGeral:hover .tituloPerguntaModelo {color: #065492;}
+.perguntaLiva:hover .tituloPerguntaModelo {color: #E67606;}
+.perguntaPractia:hover .tituloPerguntaModelo {color: #3D8952;}
+.perguntaSensia:hover .tituloPerguntaModelo {color: #21A396;}
+.perguntaDesea:hover .tituloPerguntaModelo {color: #761B76;}
+.perguntaInstitucional:hover .tituloPerguntaModelo {color: #065492;}
+
+
+
+
+.respostaPerguntaModelo {display: none; width: 100%; float: left; font-size: 16px; color: #999;}
+.respostaPerguntaModelo p {margin: -5px 0 0 0; float: left; width: 70%; padding-bottom: 27px;}
+
+
+
+
+
+/* MODELO interno DOWNLOADS */
+.downloadsModelo {float: left; width: 100%; padding-bottom: 20px;}
+.downloadsModelo h2 {font-size: 16px; color: #999}
+
+.downloadsModelo a {float: left; width: 100%; font-family: 'neuron_boldregular'; color: #00AFF3; font-size: 20px; margin-top: 10px;}
+.downloadsModelo a:hover {color: #065492; text-decoration: none;}
+.downloadsModelo a:hover span {color: #999; text-decoration: none;}
+.downloadsModelo span {
+    float: left;
+    width: 100%;
+    background: url('../img/site/common/misc/misc.png') -291px -260px no-repeat;
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    padding-left: 12px;
+    margin-top: 3px
+}
+
+
+.downloadsModelo .colorLiva {color: #F99A3E;}
+.downloadsModelo .colorPractia {color: #4cab66;}
+.downloadsModelo .colorSensia {color: #26BFAF;}
+.downloadsModelo .colorDesea {color: #922193;}
+.downloadsModelo .colorInstitucional {color: #00AFF3;}
+
+.downloadsModelo .colorLiva span {background-position: -291px -207px}
+.downloadsModelo .colorPractia span {background-position: -291px -220px}
+.downloadsModelo .colorSensia span {background-position: -291px -233px}
+.downloadsModelo .colorDesea span {background-position: -291px -246px}
+.downloadsModelo .colorInstitucional span {background-position: -291px -261px}
+
+
+
+
+
+
+
+/* ******************** ONDE COMPRAR ******************** */
+.tituloRevendas {
+    float: left; padding-bottom: 2px;
+    width: 100%;
+    font-size: 28px;
+    font-family: 'neuron_boldregular';
+}
+
+.chamadaRevenda {float: left; font-family: 'neuronitalic'; width: 100%; font-size: 20px;}
+
+.revendaExclusiva {float: left; width: 480px; margin-left: 30px; margin-top: 18px; cursor: pointer;}
+
+.containerImgRevenda {float: left; margin-right: 11px;}
+
+.imgRevenda {
+    border: 1px solid #EEEEEE;
+    width: 230px;
+    height: 140px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: white;
+}
+
+.revendaExclusiva * {vertical-align: middle;}
+
+.imgRevenda:hover {border: 2px solid #00AFF0; width: 228px; height: 138px;}
+
+.revendaExclusiva p {font-size: 16px; color: #999; margin-top: 20px; margin-bottom: 10px;}
+
+.revendaExclusiva > span {
+    color: #00AFF3;
+    background: url('../img/site/common/bg/arrow-right.png') right 5px no-repeat;
+    padding-right: 10px;
+}
+
+.revendaExclusiva:hover span {color: #065492;}
+
+.revendaExclusiva:hover {text-decoration: none;}
+
+.listaImgLojas {float: left; margin-left: -22px; margin-bottom: 50px; margin-top: 50px;}
+.englobaImgLoja {float: left; margin-left: 22px; margin-top: 24px; }
+.englobaImgLoja a{ display:block; }
+.imgLoja {
+    width: 230px;
+    height: 138px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+}
+
+.imgLojaPadding {
+    padding: 20px;
+}
+
+.imgLoja * {vertical-align: middle;max-width: 225px; max-height:133px;}
+
+.imgLoja:hover {border: 2px solid #00AFF0; width: 228px; height: 136px;}
+
+.listaLojasOnline {float: left; margin-left: -24px; *margin-top: 22px; margin-top: 30px;}
+.lojaOnline {
+    float: left;
+    width: 214px;
+    height: auto;
+    background: white;
+    margin-left: 24px;
+    border: 1px solid #eee;
+    margin-bottom: 75px;
+    position: relative;
+    padding: 10px 0 80px 14px;
+}
+
+.lojaOnline span {color: #00aef3; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; font-weight: 700;}
+
+.tagLoja {position: absolute; top: -11px; right: 11px; float: left; background: #eee; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 11px; padding: 3px 9px}
+
+.enderecoLoja {
+    background: url('../img/site/common/bg/endereco-loja.jpg') 0 0 no-repeat;
+    padding-left: 28px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    padding-right: 20px;
+    color: #999;
+}
+
+.foneLoja {
+    background: url('../img/site/common/bg/fone-loja.jpg') 0 0 no-repeat;
+    padding-left: 28px;
+    height: 30px;
+    line-height: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: #999;
+    position: absolute;
+    bottom: 30px;
+    left: 14px;
+    vertical-align: middle;
+}
+
+
+.lojaOnline a {
+    position: absolute;
+    /* left: 14px; */
+    /* bottom: 10px; */
+    /* color: #00AFF3; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-size: 11px; */
+    /* background: url(../img/site/common/bg/arrow-right.png) right 5px no-repeat; */
+    /* padding-right: 10px; */
+    bottom: -20px;
+    left: 0;
+    width: 169px;
+    text-align: center;
+}
+
+.lojaOnline a:hover {color: #065492; text-decoration: none; }
+
+
+
+
+
+/* ******************** PÃ�GINA PRODUTO INTERNA ******************** */
+.containerBannerProdutoInterna, .containerBannerModelo {
+    /*background: url('../img/site/common/bg/bg-geral.jpg') center top  no-repeat;*/
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    /*height: 500px;*/
+    height: auto;
+}
+
+.bg-liva {background: url('../img/site/common/bg/bg-liva.jpg') center top  no-repeat;}
+.bg-practia {background: url('../img/site/common/bg/bg-practia.jpg') center top  no-repeat;}
+.bg-sensia {background: url('../img/site/common/bg/bg-sensia.jpg') center top  no-repeat;}
+.bg-desea {background: url('../img/site/common/bg/bg-desea.jpg') center top  no-repeat;}
+
+.socialBanner {position: absolute; float: left; top: 88px; left: 0; z-index: 98; width: 260px;}
+.socialBanner .twitter iframe {width: 96px!important; float: left;}
+.socialBanner .facebook iframe {width: 96px!important; float: left;}
+
+
+.titModelo {
+    font-family: 'neuron_boldregular';
+    font-size: 26px;
+}
+
+.ondeComprarInternaProduto h4 {line-height: 56px;}
+
+.ondeComprarInternaProduto span.carrinho {background: url('../img/site/common/bg/carrinho.png') center top  no-repeat; width: 58px; height:56px; display: inline-block; margin: 15px 20px -17px 0;}
+
+.ondeComprarInternaProduto .neuronregular {font-size: 22px; font-family: "neuron_boldregular", sans serif; color: #00AFF3;}
+
+.ondeComprarInternaProduto p {font-size: 16px; color: #999; margin: 3px 0}
+
+.containerPerguntasInterna {width: 68%; float: left; position: relative; overflow: hidden; padding-top: 35px; padding-bottom: 35px;}
+
+.containerDownloadsProdutoInterna {float: right; width: 29%; padding-top: 35px; }
+
+.barraPerguntasProduto {
+    float: left;
+    height: 2000px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/* ******************** LINHAS ******************** */
+.containerBannerLinhas {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: 430px;
+}
+
+.bannerLinhas {
+    position: absolute;
+    left: 50%;
+    width: 2000px;
+    margin-left: -1000px;
+    top: 0;
+    float: left;
+}
+
+.chamadaLeftLinha {
+    float: left;
+    width: 560px;
+}
+
+.chamadaLeftLinha p {
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 0
+}
+
+
+.chamadaRightLinha {
+    float: right;
+    width: 400px;
+    margin-top: 38px;
+    color: #065492;
+}
+
+.chamadaRightLinha p {margin: 0; font-size: 32px; font-family: 'neuronitalic'; float: left; width: 80%; }
+
+
+
+.chamadaRightLinhaLiva {color: #D03E7D;}
+.chamadaRightLinhaPractia {color: #3D8952;}
+.chamadaRightLinhaSensia {color: #21A396;}
+.chamadaRightLinhaDesea {color: #761B76;}
+
+
+.containerCabecalhoLinha {background: white; color: #979797; padding-bottom: 30px;}
+
+
+.barraHorizontalLiva {
+    float: left;
+    height: 1px;
+    width: 100%;
+    background: #DF7E1F;
+    border-top: 1px solid #F99839;
+    border-bottom: 1px solid #F99839;
+}
+
+
+
+
+.btnFiltroLinha {
+    float: left;
+    padding: 5px 26px 5px 15px;
+    font-family: 'neuron_boldregular';
+    font-size: 16px; margin-top: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.filtroLinha {float: left;}
+
+/* personalizaÃ§Ãµes de cada LINHA */
+.btnFiltroLinhaLiva  {border: 2px solid #DEDEDE; background: white; }
+.btnFiltroLinhaLiva:hover, .filtroLinha:hover .btnFiltroLinhaLiva  {border-color: #F99A3E; border-bottom: none; height: 20px; text-decoration: none; color: #9A9A9A;}
+.filtroLinha:hover .arrowLiva {background-position: 0 -8px;}
+.filtroLinha:hover .listaProdutosLiva {display: block;}
+
+
+.btnFiltroLinhaPractia  {border: 2px solid #DEDEDE; background: white; }
+.btnFiltroLinhaPractia:hover, .filtroLinha:hover .btnFiltroLinhaPractia  {border-color: #4cab66; border-bottom: none; height: 20px; text-decoration: none; color: #9A9A9A;}
+.filtroLinha:hover .arrowPractia {background-position: 0 -8px;}
+.filtroLinha:hover .listaProdutosPractia {display: block;}
+
+
+.btnFiltroLinhaSensia  {border: 2px solid #DEDEDE; background: white; }
+.btnFiltroLinhaSensia:hover, .filtroLinha:hover .btnFiltroLinhaSensia  {border-color: #26BFAF; border-bottom: none; height: 20px; text-decoration: none; color: #9A9A9A;}
+.filtroLinha:hover .arrowSensia {background-position: 0 -8px;}
+.filtroLinha:hover .listaProdutosSensia {display: block;}
+
+
+.btnFiltroLinhaDesea  {border: 2px solid #DEDEDE; background: white; }
+.btnFiltroLinhaDesea:hover, .filtroLinha:hover .btnFiltroLinhaDesea  {border-color: #922193; border-bottom: none; height: 20px; text-decoration: none; color: #9A9A9A;}
+.filtroLinha:hover .arrowDesea {background-position: 0 -8px;}
+.filtroLinha:hover .listaProdutosDesea {display: block;}
+
+.btnFiltroLinhaInstitucional  {border: 2px solid #00AFF3; background: white; color: #00AFF3 }
+.btnFiltroLinhaInstitucional:hover, .filtroLinha:hover .btnFiltroLinhaInstitucional  {border-color: #00AFF3; border-bottom: none; height: 20px; text-decoration: none; color: #00AFF3;}
+.filtroLinha:hover .arrowInstitucional {background-position: 0 -8px;}
+.filtroLinha:hover .listaProdutosInstitucional {display: block;}
+
+
+
+
+
+
+.arrowLiva {
+    background: url('../img/site/common/misc/misc.png') 0 0 no-repeat;
+    float: right;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+}
+
+
+.arrowPractia {
+    background: url('../img/site/common/misc/misc.png') -12px 0 no-repeat;
+    float: right;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+}
+
+.arrowInstitucional {
+    background: url('../img/site/common/misc/misc.png') -46px 0 no-repeat;
+    float: right;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+}
+
+.arrowSensia {
+    background: url('../img/site/common/misc/misc.png') -24px 0 no-repeat;
+    float: right;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+}
+
+.arrowDesea {
+    background: url('../img/site/common/misc/misc.png') -35px 0 no-repeat;
+    float: right;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+}
+
+
+
+.listaProdutosLiva {z-index: 1; float: left; margin: 0; padding: 0; border: 2px solid #F99A3E; margin-top: -2px; width: 380px; background: #FAFAFA; position: absolute; display: none;}
+.listaProdutosLiva li {float: left;}
+.listaProdutosLiva li a {width: 190px; text-align: center; float: left; line-height: 44px; font-family: 'neuronitalic'; font-size: 20px;}
+.listaProdutosLiva li a:hover {color: #454545; text-decoration: none; background: #EEEEEE;}
+.listaProdutosLiva li .sel {color: #454545; text-decoration: none; background: #EEEEEE;}
+
+.listaProdutosPractia {z-index: 1; float: left; margin: 0; padding: 0; border: 2px solid #4cab66; margin-top: -2px; width: 380px; background: #FAFAFA; position: absolute; display: none;}
+.listaProdutosPractia li {float: left;}
+.listaProdutosPractia li a {width: 190px; text-align: center; float: left; line-height: 44px; font-family: 'neuronitalic'; font-size: 20px;}
+.listaProdutosPractia li a:hover {color: #454545; text-decoration: none; background: #EEEEEE;}
+.listaProdutosPractia li .sel {color: #454545; text-decoration: none; background: #EEEEEE;}
+
+.listaProdutosSensia {z-index: 1; float: left; margin: 0; padding: 0; border: 2px solid #26BFAF; margin-top: -2px; width: 380px; background: #FAFAFA; position: absolute; display: none;}
+.listaProdutosSensia li {float: left;}
+.listaProdutosSensia li a {width: 190px; text-align: center; float: left; line-height: 44px; font-family: 'neuronitalic'; font-size: 20px;}
+.listaProdutosSensia li a:hover {color: #454545; text-decoration: none; background: #EEEEEE;}
+.listaProdutosSensia li .sel {color: #454545; text-decoration: none; background: #EEEEEE;}
+
+.listaProdutosDesea {z-index: 1; float: left; margin: 0; padding: 0; border: 2px solid #922193; margin-top: -2px; width: 380px; background: #FAFAFA; position: absolute; display: none;}
+.listaProdutosDesea li {float: left;}
+.listaProdutosDesea li a {width: 190px; text-align: center; float: left; line-height: 44px; font-family: 'neuronitalic'; font-size: 20px;}
+.listaProdutosDesea li a:hover {color: #454545; text-decoration: none; background: #EEEEEE;}
+.listaProdutosDesea li .sel {color: #454545; text-decoration: none; background: #EEEEEE;}
+
+
+.listaProdutosInstitucional {z-index: 1; float: left; margin: 0; padding: 0; border: 2px solid #00AFF3; margin-top: -2px; width: 380px; background: #FAFAFA; position: absolute; display: none;}
+.listaProdutosInstitucional li {float: left;}
+.listaProdutosInstitucional li a {width: 190px; text-align: center; float: left; line-height: 44px; font-family: 'neuronitalic'; font-size: 20px;}
+.listaProdutosInstitucional li a:hover {color: #454545; text-decoration: none; background: #EEEEEE;}
+.listaProdutosInstitucional li .sel {color: #454545; text-decoration: none; background: #EEEEEE;}
+
+
+
+
+
+
+
+.barraVerticalListaLinha {
+    float: left;
+    height: 100%;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    top: 0;
+    left: 190px;
+    position: absolute;
+    z-index: 999
+}
+
+
+
+
+
+
+
+
+
+.containerProdutos {background: #FAFAFA; width: 100%; float: left;}
+.centroProdutos {margin: 0 auto; width: 994px; /*overflow: hidden;*/}
+
+.produto {
+    width: 330px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.produto:hover .nomeProduto {text-decoration: none; cursor: pointer;}
+
+.thumbProduto {
+    height: 190px;
+    width: 330px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.thumbProduto img {max-width: 100%;}
+
+.thumbProduto * {vertical-align: middle;}
+
+.nomeProduto {
+    float: left;
+    width: 100%;
+    font-family: 'neuronitalic';
+    font-size: 24px;
+    line-height: 22px;
+    color: #00AFF3;
+}
+
+.nomeProduto:hover {color: #065492;}
+
+
+.descricaoProduto {
+    float: left;
+    width: 88%;
+    margin-left: 6%;
+    color: #979797;
+    margin-top: 5px
+}
+
+
+.produtoLiva:hover .nomeProduto {color: #E67606; text-decoration: none;}
+.produtoPractia:hover .nomeProduto {color: #3D8952; text-decoration: none;}
+.produtoSensia:hover .nomeProduto {color: #21A396; text-decoration: none;}
+.produtoDesea:hover .nomeProduto {color: #761B76; text-decoration: none;}
+
+
+
+
+.barraProdutos {
+    float: left;
+    height: 280px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    margin-left: -2px;
+}
+
+/*.barraProdutos:first-child {display: none;}*/
+
+.barraUltimaLinha {
+    height: 310px;
+}
+
+/* container Opcoes Comparador */
+.containerOpcoesComparador {
+    width: 100%;
+     background: #EEEEEE;
+     margin-bottom: -1px;
+     position: relative;
+     z-index: 50;
+     height: auto;
+     padding-bottom: 20px;
+ }
+
+
+.contentSelectFake {
+    float: left;
+    height: 40px;
+    background: white;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-right: 15px;
+    min-width: 120px;
+    *width: 100%;
+    *max-width: 180px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+.selectFake {
+    width: 100%;
+    border: 2px solid #DEDEDE;
+    cursor: pointer;
+    background: white;
+    position: relative;
+}
+
+.contentSelectFake:hover .selectFake, .contentSelectFake:hover .listaSelectFake {border-color: #01539C}
+
+.selectFake i {
+    position: absolute;
+    z-index: 999;
+    background: white url('../img/site/common/bg/arrow-select.jpg') 0 0 no-repeat;
+    width: 9px;
+    height: 5px;
+    top: 18px;
+    right: 9px;
+}
+
+.selectAberto {background: white url('../img/site/common/bg/arrow-select.jpg') 0 -5px no-repeat!important; }
+
+.selectFake b {
+    display: block;
+    float: left;
+    margin-left: 11px;
+    font-weight: normal;
+    color: #999
+}
+.selectFake span {
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-left: 5px;
+    color: #999;
+    padding-right: 16px;
+}
+
+.listaSelectFake {
+    float: left;
+    width: 100%;
+    background: white;
+    border: 2px solid #DEDEDE;
+    border-top: none;
+    margin-top: -2px;
+    visibility: hidden;
+    z-index: 80;
+    position: relative;
+}
+
+.listaAberto b, .listaAberto span{
+    color: #005898;
+}
+
+.linhaListaSelectFake {
+    border-top: 1px solid silver;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.linhaListaSelectFake:hover {background: #EAF7FF;}
+
+
+
+.listaSelectFake label {
+    float: left;
+    z-index: 1000;
+    line-height: 34px;
+    padding-left: 11px;
+    padding-right: 11px;
+    width: 100%;
+
+}
+
+.listaSelectFake .wtCheck {margin-top: 8px;}
+
+
+.btnFiltrar {float: left; background: #01ADF7; height: 44px; margin-top: 26px; width: 82px;}
+.btnFiltrar input {
+    width: 100%;
+    line-height: 42px;
+    float: left;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-family: 'neuron_demiboldregular';
+    font-size: 20px;
+}
+
+.btnFiltrar:hover {background: #01539C;}
+.disabled{
+    opacity: 0.2;
+    -moz-opacity: 0.2;
+    filtet:alpha(opacity=20);
+    cursor: default;
+}
+
+.containerBtnComparar {
+    float: right;
+    position: fixed;
+    top: 160px;
+    right: 20px;
+    height: 92px;
+    width: 156px;
+    z-index: 99;
+}
+
+.btnComparar {
+    float: left;
+    background: white;
+    width: 160px;
+    height: 40px;
+    margin-top: 25px;
+    position: relative;
+    border-top: 2px solid #b9e6fa;
+    border-bottom: 2px solid #b9e6fa;
+    border-left: 2px solid #b9e6fa;
+}
+.btnComparar input {
+    line-height: 35px;
+    color: #00aff0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'neuron_demiboldregular';
+    font-size: 22px;
+    position: relative;
+    z-index: 50;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.btnComparar:hover {border-color: #01539C;}
+.btnComparar:hover input {color: #01539C;}
+.btnComparar:hover span {background: #01539C;}
+
+.btnComparar span {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    height: 34px;
+    width: 14px;
+    font-family: Verdana, Arial;
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    background: #00aff0
+}
+
+
+
+
+
+
+
+
+
+
+/* LISTA OPÃ‡Ã•ES PRODUTO */
+.opcoesProduto {
+    width: 100%;
+    float: left;
+    display: none;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    color: white;
+
+}
+
+.opcoesProduto a {
+    color: white;
+    line-height: 40px;
+    height: 40px;
+    /*padding: 15px 22px;*/
+    *float: left;
+}
+
+.opcoesProduto .wtCheck {margin-top: 11px;}
+
+.conhecaProduto {padding-left: 15px; line-height: 40px; height: 40px; float: left; width: 100%}
+
+.linkOutroProduto {padding-left: 22px; line-height: 40px; height: 40px; font-size: 16px;}
+
+.comparar {
+    float: right;
+    padding-right: 2px;
+    line-height: 40px;
+    height: 40px;
+}
+
+
+.comparar label{
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    float: right;
+}
+.comparar label p{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding-right: 8px;
+    margin-top: 12px;
+    *margin-top: -1px;
+}
+
+
+
+.comparar label p {opacity: 0.5; filter:alpha(opacity=50)}
+
+
+
+.backgroundLiva {
+    background: #F78D20;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: -1px;
+    *margin-top: -1px;
+}
+
+
+
+/* *************** DÃšVIDAS FREQUENTES *************** */
+.containerDuvidas {
+    float: left;
+    width: 100%;
+    margin-top: -3px;
+    overflow: hidden;
+}
+
+
+.linhaDuvidas {position: relative; *overflow: hidden;}
+
+.duvida {
+    float: left;
+    width: 485px;
+    height: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.duvida h3 {font-family: 'neuron_extraboldregular'; font-size: 28px; color: #00AFF3; float: left}
+.duvida span {float: right; margin: 11px 26px 0 0; color: #ccc;}
+.duvida p {float: left; width: 95%; padding: 0; margin: 3px 0 0 0; color: #999;}
+
+.duvida:hover {text-decoration: none;}
+
+.duvida:hover h3 {color: #065492; }
+
+.duvida:first-child {padding-left: 0; }
+.duvida:first-child .barraDuvidas {display: none;}
+
+
+
+.barraDuvidas {
+    float: left;
+    height: 500px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    margin-left: -2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*.barraDuvidas:first-child {display: none;}*/
+
+.tituloDuvidaInterna {padding-top: 7px; padding-bottom: 10px; float: left; width: 100%;}
+
+.tituloDuvidaInterna h1 {font-family: 'neuron_extraboldregular'; width: 100%; float: left; padding-bottom: 7px;}
+
+.tituloDuvidaInterna .tagInterna {
+    float: left;
+    font-size: 11px;
+    color: #00AFF3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #dfdddf;
+    padding: 4px 7px 4px 7px;
+    margin-top: 3px;
+    margin-left: 10px;
+    color: #999999;
+}
+
+.tituloDuvidaInterna .tagInterna:hover { text-decoration: none;}
+
+.tituloDuvidaInterna span {float: left; color: #cfcfcf; font-size: 11px; font-family: Verdana, Geneva, Tahoma, sans-serif; line-height: 25px; padding-bottom: 8px;}
+
+
+.tituloDuvidaInterna a {
+    background: url('../img/site/common/bg/arrow-left.png') left 5px no-repeat;
+    padding-left: 10px;
+    float: left;
+    margin-top: 12px;
+    color: #00AFF3;
+}
+
+.tituloDuvidaInterna a:hover {
+    color: #065492;
+}
+
+
+.dicaInterna {float: left; width: 100%; margin-top: 21px; padding-bottom: 21px; cursor: pointer;}
+.dicaInterna h1 {font-family: 'neuronitalic'; font-size: 20px;}
+.dicaInterna p {display:none; float: left; width: 75%; margin: 5px 0 0 0; font-size: 16px; line-height: 20px; color: #999;}
+
+.containerDuvidaNaoRespondida {float: left; width: 100%; background: #eee; border-top: 1px solid #e5e5e5; height: 155px;}
+.containerDuvidaNaoRespondida img {float: left; margin-left: 15px; margin-top: 29px; margin-right: 28px;}
+.containerDuvidaNaoRespondida b {float: left; font-family: 'neuron_extraboldregular'; width: 770px; margin-top: 33px; font-size: 28px; font-weight: normal}
+.containerDuvidaNaoRespondida span {float: left; font-family: 'neuronitalic'; font-size: 20px; width: 770px; margin-top: 3px;}
+.containerDuvidaNaoRespondida p {float: left; width: 770px; margin: 4px 0 0 0; font-size: 16px; color: #999}
+
+
+/* configura PAGINAÃ‡ÃƒO */
+.paginacao {*margin-top: 30px }
+.paginacao a {float: left; color: #00AFF3; margin-top: 12px;}
+.paginacao a:hover {color: #065492; text-decoration: none;}
+.xDe {float: left; padding: 12px 24px; border: 2px solid #DFDDE0; font-family: 'neuron_extraboldregular'; color: #999; margin-left: 10px; margin-right: 10px;}
+.paginacao span {float: left; color: #999; margin-top: 13px; }
+.totalPaginas {float: left; color: #999; margin-top: 13px; margin-left: 5px; margin-right: 15px;}
+
+.prevPage {
+    background: url('../img/site/common/bg/arrow-left.png') left 5px no-repeat;
+    padding-left: 10px;
+}
+
+.nextPage {
+    background: url('../img/site/common/bg/arrow-right.png') right 5px no-repeat;
+    padding-right: 10px;
+}
+
+
+/*color: #00AFF3; color: #065492;*/
+
+
+
+
+
+/* *************** DOWNLODS *************** */
+.chamadaDownloads h2{
+    float: left;
+    width: 100%;
+    font-size: 28px;
+    margin: 33px 0 2px 0;
+    font-family: 'neuron_boldregular';
+}
+
+
+
+.chamadaDownloads span {
+    float: left;
+    font-family: 'neuronitalic';
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.titulo {
+    float: left;
+    width: 100%;
+    font-size: 28px;
+    font-family: 'neuron_boldregular';
+}
+
+.downloads {float: left; width: 655px;}
+.downloads a {float: left; width: 100%; color: #00ACF6; font-size: 18px; font-family: 'neuron_demibolditalic'; margin-top: 10px;}
+.downloads span,
+.lk-seta-download {
+    float: left;
+    width: 100%;
+    color: #9A9A9A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-top: 2px;
+    background: url('../img/site/common/misc/misc.png') -291px -260px no-repeat;
+    padding-left: 12px;
+}
+
+.aside{
+	width: 338px;
+	background-color: #eee;
+	float: right;
+}
+.aside > div{ padding:25px; overflow:hidden; }
+.aside > div.mais-videos{ border-top:1px solid #FFFFFF; }
+
+.aside .tt-aside{
+	font-family: "neuron_boldregular";
+	font-size: 28px;
+	color: #00AAFC;
+	text-transform: uppercase;
+	line-height: 100%;
+	margin-bottom: 10px;
+	clear:both;
+}
+.data-atualizacao{
+	font-size: 12px;
+	font-weight: bold;
+	color: #1244A0;
+	margin-bottom: 10px;
+	display: block;
+}
+.lista-atualizacao{	margin-bottom: 50px; }
+.lista-atualizacao-item{ margin-bottom: 20px; }
+.lista-bloco-downloads-item{ margin-bottom: 15px; }
+.lk-lista-atualizacao{
+	font-size: 18px;
+	color: #444444;
+	text-decoration: none;
+	display: block;
+	line-height: 100%;
+	font-family:"neuron_demibolditalic";
+	margin-bottom:15px;
+	overflow:hidden;
+}
+.lk-lista-atualizacao span{ line-height:14px; }
+
+/*video*/
+.item-video{
+	width:256px;
+	display:inline-block;
+	margin-right:60px;
+	*zoom: 1;
+	*display: inline;
+}
+.item-video img{ display:block; margin-bottom:5px; }
+.lista-bloco-downloads{ clear:both; }
+
+.downloads .item-video a{ color:#00ACF6; font:22px/100% neuron_boldregular; margin-bottom:20px; }
+
+/**mais video**/
+.lista-mais-videos .lk-lista-bloco-downloads{
+	font-size: 12px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:150%;
+}
+.lista-mais-videos .lk-lista-bloco-downloads img{ float:left; margin-right:15px; }
+.lista-mais-videos .item-video{ padding-bottom:15px; }
+.downloads .mb-10{ margin-bottom:10px; }
+.lk-mais-videos{ color:#00AAFC; font:20px/120% neuron_boldregular, Arial, Helvetica, sans-serif; text-decoration:none; }
+.lk-mais-videos:hover{ text-decoration:underline; }
+
+
+
+
+.quantidadeResultados {float: left; margin-top: 17px; font-family: 'neuronitalic'; font-size: 19px; color: #999; width: 100%;}
+.quantidadeResultados b {font-style: normal; font-weight: normal; font-family: 'neuron_demiboldregular'; color: #444}
+.quantidadeResultados i {font-style: normal; font-weight: normal; font-family: 'neuron_demiboldregular'; color: #B50000}
+
+
+
+
+
+
+
+
+
+
+
+/* *************** SOBRE A MIDEA *************** */
+.imgSobreMidea {position: absolute; float: left; top: -40px; right: 50.7%; width: 988px;}
+
+.sobre {float: right; width: 483px; min-height: 959px; margin-top: 12px;}
+.sobre h2 {font-family: 'neuron_boldregular'; font-size: 28px; margin-top: 25px; width: 100%; float: left; color: #444444;}
+.sobre span {font-family: 'neuronitalic'; font-size: 18px; margin-top: 3px; width: 100%; float: left;}
+.sobre p {float: left; width: 100%; font-size: 16px; margin: 21px 0 0 0; line-height: 19px; color: #999999; }
+.sobre a {float: left; color: #00AFF3; margin-top: 19px; float: left; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 11px; font-weight: 700}
+.sobre a:hover {float: left; color: #065492; text-decoration: none;  }
+.sobre b {font-family: 'neuron_demiboldregular'; color: #888888;}
+
+
+
+
+
+
+/* *************** RELEASES *************** */
+.listaReleases {float: left; margin-left: -24px; *margin-top: 22px;}
+
+.release {
+    float: left;
+    width: 214px;
+    min-height: 275px;
+    padding-bottom: 10px;
+    background: white;
+    margin-left: 24px;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+    position: relative;
+    /*padding: 10px 0 0 14px;*/
+
+}
+
+.thumbRelease {
+    overflow: hidden;
+    /*position: absolute; */
+    float: left;
+    /*top: 0; */
+    /*left: 0; */
+    width: 100%;
+    /*height: 100%; */
+    z-index: 0;
+    max-height: 140px;
+}
+
+
+
+
+.listaReleases a:hover {text-decoration: none;}
+.listaReleases a:hover b {color: #065492;}
+
+.tagRelease {position: absolute; top: -11px; right: 11px; float: left; background: #DFDDE0; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 11px; padding: 3px 9px; color: #999;}
+
+.release span {font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 10px; color: #C5C5C5; position: relative; padding-left: 15px;}
+.release b {font-size: 18px; font-family: 'neuron_demiboldregular'; color: #00AFF3; float: left; width: 88%; margin-top: 10px; position: relative; padding-left: 15px;}
+.release p {color: #999; width: 88%; float: left; position: relative; padding-left: 15px; }
+
+
+
+
+.btnCarregarMaisReleases {float: left; width: 100%; text-align: center; margin-top: 22px; padding-bottom: 65px;}
+.btnCarregarMaisReleases a {background: #00AFF3; color: white; padding: 9px 17px 9px 17px; font-size: 22px; display: inline-block;}
+.btnCarregarMaisReleases a:hover {background: #065492; text-decoration: none;}
+
+
+.containerReleaseInterna {float: left; width: 739px; position: relative; overflow: hidden; line-height: 22px;}
+.containerReleaseInterna h2 {font-family: 'neuronitalic'; font-size: 20px; color: #444; float: left;}
+.containerReleaseInterna p {font-size: 16px; color: #999; float: left; width: 95%; *margin: 20px 0}
+
+
+
+.fonteRelease a {
+    color: #00AFF3;
+    font-size: 18px;
+    font-family: 'neuron_boldregular';
+    background: url('../img/site/common/misc/misc.png') -287px -282px no-repeat;
+    padding-left: 20px;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+}
+
+
+.fonteRelease a:hover {color: #065492; text-decoration: none;}
+
+
+.arquivosRelacionados {float: left; width: 100%; padding-bottom: 20px;}
+.arquivosRelacionados h1 {font-size: 16px; color: #999}
+.arquivosRelacionados h1 b {color: #666;}
+
+.arquivosRelacionados a {float: left; width: 100%; font-family: 'neuron_boldregular'; font-size: 20px;  color: #00AFF3; margin-top: 10px;}
+.arquivosRelacionados a:hover {color: #065492; text-decoration: none;}
+.arquivosRelacionados a:hover span {color: #999; text-decoration: none;}
+.arquivosRelacionados span {
+    float: left;
+    width: 100%;
+    background: url('../img/site/common/misc/misc.png') -291px -260px no-repeat;
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    padding-left: 12px;
+    margin-top: 3px
+}
+
+
+
+
+.releasesRelacionados {float: right; width: 254px; }
+
+.releasesRelacionados h3 {float: left; width: 100%; margin-top: 25px; margin-left: 24px; font-size: 20px; font-family: 'neuron_boldregular'; padding-bottom: 20px;}
+
+.releasesRelacionados a {margin-top: 35px}
+.releasesRelacionados a:hover {text-decoration: none;}
+.releasesRelacionados a:hover b {color: #065492}
+
+.barraReleases {
+    float: left;
+    height: 2000px;
+    width: 1px;
+    background: #E5E5E5;
+    border-left: 1px solid #FEFEFE;
+    border-right: 1px solid #FEFEFE;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.socialRelease {float: left; width: 100%; margin-top: 22px; padding-bottom: 22px;}
+.socialRelease .twitter iframe {width: 110px!important; float: left;}
+.socialRelease .facebook iframe {width: 110px!important; float: left;}
+
+
+/* configura carrossel */
+.containerCarrosselRelease {float: left; width: 95%; position: relative; margin-bottom: 35px; }
+
+.bxsliderRelease {margin: 0; padding: 0}
+.bxsliderRelease img {max-width: 562px;}
+.bx-caption {font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin-top: 5px; color: #999;}
+
+.containerPagerRelease { position: absolute; float: right; top: 0; right: 12px; height: 372px; width: 100px;}
+.containerPagerRelease .bx-viewport{
+    /*height: 310px!important; */
+    /*margin-top: 32px;*/
+    margin-top: 23px;
+}
+
+.containerCarrosselRelease .bx-controls-direction {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    width: 100px;
+    z-index: 90;
+}
+
+.containerCarrosselRelease .bx-prev {
+    background: url('../img/site/common/misc/misc.png') 0 -163px no-repeat;
+    width: 17px;
+    height: 15px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 41px;
+    margin-top: 5px
+}
+
+
+.containerCarrosselRelease .bx-next {
+    background: url('../img/site/common/misc/misc.png') 0 -183px no-repeat;
+    width: 17px;
+    height: 15px;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 41px;
+    margin-top: 376px;
+}
+
+
+.containerCarrosselRelease #bx-pagerRelease {position: absolute; float: right; top: 0; right: 0}
+
+
+.containerCarrosselRelease #bx-pagerRelease a {
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    font-size: 0;
+    float: left;
+    /*height: 68px;*/
+}
+
+/*#bx-pagerRelease img {
+    width: 100px;
+}*/
+
+.containerCarrosselRelease a.active {background: none; }
+
+.voltarRelease {
+    float: left;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #00AFF3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('../img/site/common/bg/arrow-left.png') left 5px no-repeat;
+    padding-left: 10px;
+}
+.voltarRelease:hover { text-decoration: none; color: #065492;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************** FALE CONOSCO *************** */
+.faleConosco {float: left; width: 100%; margin-top: 41px; margin-left: 11px;}
+.img0800 {float: left; margin-right: 20px;}
+.fone-atendimento {float: left; font-size: 40px; margin: 7px 0 0; font-family: 'neuron_demiboldregular'; line-height:100%; width: 830px;}
+.fone0800 {float: left; font-size: 40px; margin: 7px 0 0; font-family: 'neuron_demiboldregular'; line-height:100%; width: 300px;}
+.chamada0800 {float: left; font-size: 18px; width: 830px; margin-left: 2px; color: #999;}
+.chamada0800Fora {font-size: 18px; width: 830px; margin-left: 2px; color: #999; padding-top: 25px}
+.texto-chamada0800 {float: left; font-size: 14px; width: 296px; margin-left: 2px; color: #999;}
+.txt-atendimento-online{ float: left; font-size: 18px; width: 710px; margin-top: 0; margin-left: 2px; color: #999; }
+.chamadaIndisponivel { padding-top:40px; }
+.linkAtendimentoOnline { color: #01ADF7; font-size: 18px; font-family: 'neuronitalic';}
+.linkEnviarMensagem {float: left; margin: 10px 0 0 0; width:75px; color: #01ADF7; font-size: 18px; font-family: 'neuronitalic';}
+.box-fone-atendimento { display:none; clear:both; width:710px; margin-left:130px; }
+
+
+.formularioContato {float: left; margin-top: 30px;  width: 412px; margin-left:150px; clear: both; }
+.formularioContato > div{ border:1px solid #AAAAAA; border-bottom:7px solid #00AEF3; }
+.img-direct{ float:right; margin-top:5px; }
+
+.btnEnviar {float: right; background: #01ADF7; width: 145px; height: 50px; }
+.btnEnviar input {
+    width: 100%;
+    line-height: 50px;
+    float: left;
+    height: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-family: 'neuron_demiboldregular';
+    font-size: 32px;
+}
+
+.btnEnviar:hover {background: #01539C;}
+
+.camposObrigatorios {
+    float: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #999;
+    margin-top: 40px;
+}
+
+.mensagemFechada {
+    width: 9px;
+    height: 5px;
+    background: url('../img/site/common/bg/arrow-mensagem.jpg') 0 -5px no-repeat;
+    float: right;
+    margin-top: 8px;
+    *margin-top: -11px;
+}
+
+.mensagemAberta {background-position: 0 0;}
+
+
+.formasAtendimento {
+    float: left;
+    background: url('../img/site/common/bg/bg_content-atendimento.jpg') top center no-repeat;
+    width: 100%;
+    height: 249px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.minHeight {min-height: 135px}
+
+
+
+.atendimento {float: left; width: 220px; margin-left: 35px; margin-top: 130px; position: relative;}
+.atendimento:first-child {margin-left: 5px;}
+.atendimento span {font-size: 18px; font-family: 'neuron_demiboldregular'; color: #535353;}
+.atendimento p {margin: 2px 0 11px 0; color: #999999;}
+.atendimento a {
+    font-size: 11px;
+    color: #00AFF3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('../img/site/common/bg/arrow-right.png') right 5px no-repeat;
+    padding-right: 10px;
+
+}
+.atendimento a:hover {text-decoration: none; color: #065492; background-position: right -9px}
+
+
+.linkFakeAtendimento {
+    position: absolute;
+    top: -100px;
+    left: 23%;
+    width: 50%;
+    height: 90px;
+    background: none!important;
+}
+
+
+
+
+
+
+
+/* *************** ASSISTENCIA TÃ‰CNICA *************** */
+.linkProdutoGarantia {
+    float: left;
+    padding: 22px 70px 27px 70px;
+    font-family: 'neuron_demiboldregular';
+    font-size: 40px;
+    color: #00AFF3;
+    background: white;
+    border: 1px solid #E5E5E5;
+    position: relative;
+}
+
+.linkProdutoForaGarantia {
+    float: left;
+    padding: 22px 70px 27px 70px;
+    font-family: 'neuron_demiboldregular';
+    font-size: 40px;
+    color: #00AFF3;
+    background: white;
+    border: 1px solid #E5E5E5;
+    border-left: 0;
+    position: relative;
+}
+
+.linkProdutoGarantia:hover, .linkProdutoForaGarantia:hover {color: #ccc; text-decoration: none;}
+
+.linkGarantiaCLicado {
+    background: url('../img/site/common/bg/link-garantia-clicado.jpg') bottom center no-repeat;
+    width: 42px;
+    height: 22px;
+    width: 100%;
+    height: 22px;
+    float: left;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+.displayBlock {display: block;}
+.colorCCC {color: #ccc;}
+
+
+
+.garantia0800 {float: left; width: 994px; margin-top: 46px; padding-left: 11px; display: none;}
+.garantia0800 img {float: left; margin-right: 20px;}
+.garantia0800 span {float: left; width: 840px; margin-top: 2px; font-size: 16px; color: #999;}
+.garantia0800 b {font-weight: normal; font-size: 64px; font-family: 'neuron_boldregular'; margin-top: 20px; float: left;}
+
+.containerMaisBuscados {float: left; width: 100%; margin-top: 5px;}
+.maisBuscado {
+    color: #00AFF3;
+    border: 2px solid #00AFF3;
+    float: left;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+.maisBuscado:hover {color: #065492; text-decoration: none; border-color: #065492 }
+
+
+
+
+
+
+
+
+
+/* *************** RODAPÃ‰ *************** */
+.contentRodape {float: left; width: 100%; /*height: 286px;*/ background: #01ADF7; color: white; position: relative;
+    bottom: 0px;}
+.contentRodape a {color: white;}
+
+.meioRodape {border-left: 1px solid #30BCF7; border-right: 1px solid #30BCF7; height: 100%; width: 989px; background: #01ADF7;}
+
+.linksProdutosRodape {border-bottom: 1px solid #30BCF7; line-height: 45px; float: left; width: 100%; position: relative; white-space: nowrap;}
+.linksProdutosRodape span {float: left; margin-left: 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+.linksProdutosRodape a {
+    float: left;
+    margin-left: 16px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    white-space: nowrap;
+}
+.linksProdutosRodape a:hover {
+    text-decoration: none;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+
+.linksLinhasRodape {float: left; line-height: 45px; padding-right: 20px;}
+.linksLinhasRodape span {float: left; margin-left: 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+.linksLinhasRodape a {
+    float: left;
+    margin-left: 16px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+.linksLinhasRodape a:hover {
+    text-decoration: none;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+
+.linkDownloadsRodape {float: right; line-height: 45px; border-left: 1px solid #30BCF7; border-right: 1px solid #30BCF7; padding: 0 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+
+.linkSobreRodape {float: right; line-height: 45px; border-right: 1px solid #30BCF7; padding: 0 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+
+.linkAssistenciaRodape {float: right; line-height: 45px; border-right: 1px solid #30BCF7; padding: 0 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+
+.linkRevendedorRodape {float: right; line-height: 45px; padding: 0 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+
+.linksAtendimentoRodape {float: left; border-top: 1px solid #30BCF7; line-height: 45px; width: 100%;}
+.linksAtendimentoRodape span {float: left; margin-left: 20px; font-family: 'neuron_demiboldregular'; font-size: 16px; line-height: 43px;}
+.linksAtendimentoRodape a {
+    float: left;
+    margin-left: 16px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+.linksAtendimentoRodape a:hover {
+    text-decoration: none;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.zero800Rodape {
+    float: left;
+    margin-left: 20px;
+    background: url('../img/site/common/bg/fone-rodape.png') 0 0 no-repeat;
+    padding-left: 67px;
+    height: 50px;
+}
+
+.zero800Rodape b {
+    color: #B8E6FB;
+    font-size: 34px;
+    line-height: 28px;
+    font-family: 'neuron_boldregular';
+    float: left;
+    width: 304px;
+}
+
+.zero800Rodape span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: #B8E6FB;
+    float: left;
+	width: 304px;
+}
+.zero800Rodape span.txt-quando {
+	width: 380px;
+}
+
+
+
+.socialRodape {float: right; margin-right: 15px;}
+
+/*.faceRodape {background: url('../img/site/common/misc/misc.png') -113px -142px no-repeat; width: 30px; height: 30px; float: left; margin-right: 10px;}
+*/
+
+
+.linkedinRodape {
+    background: url('../img/site/common/misc/linkedin.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px !important;
+    float: left;
+    background-size: 30px;
+}
+
+.faceRodape {
+    background: url('../img/site/common/misc/facebook_midea.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+    background-size: 30px;
+}
+
+.twitterRodape {
+    background: url('../img/site/common/misc/twitter_midea.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+    background-size: 30px;
+}
+
+.instagramRodape {
+    background: url('../img/site/common/misc/instagram_midea.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+    background-size: 30px;
+}
+.youtubeRodape {
+    background: url('../img/site/common/misc/youtube_midea.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+    background-size: 30px;
+}
+/*.youtubeRodape {background: url('../img/site/common/misc/misc.png') -183px -142px no-repeat; width: 30px; height: 30px; float: left;}
+*/
+.faceRodape:hover, .linkedinRodape:hover, .youtubeRodape:hover {opacity: 0.6; filter:alpha(opacity= 60);}
+
+.brivia {float: right; clear: right; margin-top: 10px; margin-right: 13px;}
+.brivia a {color: #00569a; font-size: 12px; letter-spacing: 1px;}
+.brivia a:hover {text-decoration: none; color: white;}
+
+.placeholder {
+    color: #9B9B9B;
+}
+
+.itemProduto{
+    float: left;
+    position: relative;
+    padding-bottom: 26px;
+    min-height: 250px;
+}
+.itemProduto:first-child .barraProdutos{
+    display: none;
+}
+
+.itemProduto .lancamento{
+	position:absolute;
+	top:25px; right:25px;
+	background:url(../img/site/common/img/img-selo-lancamento.png) no-repeat;
+	width:84px;
+	height:24px;
+	text-indent:-50000px;
+	overflow:hidden;
+	display:block;
+	cursor:pointer;
+}
+
+.itemProduto .pre_lancamento{
+	position:absolute;
+	top:25px; right:25px;
+	background:url(../img/site/common/img/img-selo-pre-lancamento.png) no-repeat;
+	width:129px;
+	height:24px;
+	text-indent:-50000px;
+	overflow:hidden;
+	display:block;
+	cursor:pointer;
+}
+
+
+.barraProdutos{
+    height: 600px!important;
+    position: absolute;
+    left: 2px;
+}
+
+.containerProdutos{
+    position: relative;
+    overflow: hidden;
+}
+.wtCheckColors{
+    display: block;
+    background: url('../img/site/common/misc/misc.png') no-repeat -236px -284px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.wtCheckActiveColors{
+    background-color: transparent;
+}
+.barraHorizontalTable{
+    float: left;
+    height: 1px;
+    width: 100%;
+    background: #553939;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    opacity: 0.1;
+    -moz-opcaity:0.1;
+    filter: alpha(opacity=10);
+}
+.comparar{
+    float: right;
+    padding-right: 2px;
+    line-height: 40px;
+}
+.comparar label{
+    float: left;
+    display: block;
+    color: #fff;
+    opacity: 0.9;
+    -moz-opcaity:0.9;
+    filter: alpha(opacity=90);
+    cursor: pointer;
+}
+.comparar label p{
+    display: block;
+    float: left;
+    padding-right: 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    *line-height: 38px;
+}
+.produtoLiva{
+
+}
+.setaProduto{
+    display: none;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 95;
+    background: #00AFF3 url('../img/site/common/misc/misc.png') no-repeat -254px -284px;
+    width: 31px;
+    height: 15px;
+}
+
+.chamadaModelo{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-left: 20px;
+    font-weight: 700
+}
+
+.bgTableInfo {background: #00AFF3;}
+
+.produtoPractia .bgTableInfo, .produtoPractia .setaProduto{
+    background-color: #50aa69;
+}
+.produtoLiva .bgTableInfo, .produtoLiva .setaProduto{
+    background-color: #f78c20;
+}
+.produtoSensia .bgTableInfo, .produtoSensia .setaProduto{
+    background-color: #26BFAF;
+}
+.produtoDesea .bgTableInfo, .produtoDesea .setaProduto{
+    background-color: #922193;
+}
+.produtoPractia .nomeProduto{
+    color: #50aa69;
+}
+.produtoLiva .nomeProduto{
+    color: #f78c20;
+}
+.produtoSensia .nomeProduto{
+    color: #26BFAF;
+}
+.produtoDesea .nomeProduto{
+    color: #922193;
+}
+.linhaFiltros{
+    display: block;
+    float: left;
+    padding-bottom: 24px;
+    padding-right: 20px;
+    border-right: 1px solid #dfdddf;
+    margin-right: 20px;
+}
+.rotuloFilter i {
+    position: absolute;
+    z-index: 999;
+    background: white url('../img/site/common/bg/arrow-select.jpg') 0 0 no-repeat;
+    width: 9px;
+    height: 5px;
+    top: 18px;
+    right: 9px;
+}
+.selectAberto {
+    background: white url('../img/site/common/bg/arrow-select.jpg') 0 -5px no-repeat;
+}
+.rotuloFilter{
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+}
+.rotuloFilter b {
+    display: block;
+    float: left;
+    margin-left: 11px;
+    font-weight: normal;
+    color: #999
+}
+.rotuloFilter span {
+    font-weight: 700;
+    /*letter-spacing: 3px;*/
+    margin-left: 5px;
+    color: #999;
+    padding-right: 26px;
+    float: left;
+}
+.filter{
+    display: block;
+    float: left;
+    border: 2px solid #DEDEDE;
+    background: #fff;
+    position: relative;
+    margin-top: 26px;
+    cursor: pointer;
+    margin-right: 10px;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    min-width: 154px;
+}
+.filter:hover, .filter.Sel{
+    border: 2px solid #005a96;
+}
+.filter:hover b, .filter:hover span, .filter.Sel b, .filter.Sel span{
+    color: #005a96;
+    cursor: pointer;
+}
+.rotuloFilter:hover i, .filter.Sel .rotuloFilter i{
+    background: url('../img/site/common/bg/arrow-select.jpg') 0 -5px no-repeat;
+}
+.listaFilter{
+    display: none;
+    float: left;
+    clear: both;
+    text-align: left;
+    background: #fff;
+    padding: 0;
+    margin: 0 ;
+    border-right: 2px solid #005a96;
+    border-bottom: 2px solid #005a96;
+    border-left: 2px solid #005a96;
+    position: absolute;
+    top: 40px;
+    left: -2px;
+    width: 100%;
+}
+.listaFilter li{
+    width: 100%;
+    display: block;
+    float: left;
+    clear: both;
+    z-index: 1000;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+.listaFilter li label{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 9px 0;
+    position: relative;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    color: #999;
+    font-size: 10px;
+    line-height: 16px;
+}
+.listaFilter li label:hover{
+    background: #eaf7fe;
+}
+.listaFilter .wtCheck{
+    margin-left: 12px;
+}
+
+
+.topoComparador{
+    background: #EEEEEE;
+    padding-top: 30px;
+    border-bottom: 2px solid #00aff0;
+}
+.abaComparador{
+    display: block;
+    float: left;
+    padding: 14px 14px;
+    background: #fff;
+    border-top: 2px solid #dfdddf;
+    border-right: 2px solid #dfdddf;
+    border-left: 2px solid #dfdddf;
+    font-family: "Verdana";
+    font-size: 11px;
+    color: #999999;
+    margin-right: 10px;
+}
+.abaComparador:hover, .abaComparador.Sel{
+    background: #00aff0;
+    border-top: 2px solid #00aff0;
+    border-right: 2px solid #00aff0;
+    border-left: 2px solid #00aff0;
+    color: #fff;
+    text-decoration: none;
+}
+.linkAdd{
+    display: block;
+    float: left;
+    padding: 22px 0;
+    color: #00aff0;
+    font-family: 'Verdana';
+    font-size: 11px;
+}
+.iadd{
+    display: block;
+    float: left;
+    background: url('../img/site/common/misc/misc.png') no-repeat -147px -292px;
+    width: 5px;
+    height: 8px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.carouselComparar{
+    display: block;
+    position: relative;
+    height: auto;
+    overflow: visible!important;
+    width: 880px;
+}
+.listaCarousel{
+    display: block;
+    margin: 0 auto;
+    width: 880px;
+    margin-top: -10px;
+}
+.nextComparar{
+    position: absolute;
+    top: 45%;
+    right: -35px;
+    background: url('../img/site/common/misc/misc.png') no-repeat -232px -238px;
+    width: 19px;
+    height: 35px;
+}
+.nextComparar:hover{
+    background-position: -179px -238px;
+}
+.prevComparar{
+    position: absolute;
+    top: 45%;
+    left: -35px;
+    background: url('../img/site/common/misc/misc.png') no-repeat -258px -238px;
+    width: 19px;
+    height: 35px;
+}
+.prevComparar:hover{
+    background-position: -205px -238px;
+}
+.itemProdutoComparar{
+    display: block;
+    float: left;
+    width: 290px;
+    position: relative;
+}
+.txtCompare{
+    width: 240px;
+    margin: 0 auto;
+    float: none;
+    font-family: "neuron_extralightitalic";
+    font-size: 18px;
+    line-height: 18px;
+}
+.txtCompareSub{
+    width: 260px;
+    margin: 0 auto;
+    float: none;
+    font-family: "Verdana";
+    font-size: 11px;
+    padding: 10px 0;
+}
+.thumbProdutoCompare{
+    width: 290px;
+}
+.produtoCompare{
+    width: 290px;
+    padding-bottom: 20px;
+}
+.tagRemover{
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 0px;
+    background: #f07777;
+    width: 71px;
+    height: 17px;
+    padding-top: 3px;
+    font-family: "Verdana";
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    overflow: visible;
+}
+.tagRemover:hover{
+    text-decoration: none;
+    background: #dc6e6e
+}
+.listaCarousel .barraProdutos{
+    margin-top: 9px;
+}
+
+.titInfo{
+    display: block;
+    background: #00aff0;
+    height: 36px;
+    cursor: pointer;
+}
+.titInfo h3{
+    font-family: "Verdana";
+    color: #fff;
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.menos{
+    display: block;
+    float: right;
+    margin-top: -11px;
+    margin-right: 18px;
+    width: 13px;
+    height: 13px;
+    background: url('../img/site/common/misc/misc.png') no-repeat -145px -272px;
+    padding: 2px;
+}
+
+.infoTable{
+    display: block;
+    float: left;
+    /*width: 226px;*/
+    width: 270px;
+    height: auto;
+}
+.rowChamadaInfo{
+    width: 96%;
+    color: #77797d;
+    text-align: right;
+    background: #dadada;
+    border-bottom: 1px solid #fff;
+    padding: 8px 4% 8px 0;
+    font-family: "Verdana";
+    font-size: 12px;
+}
+.rowChamadaInfo p{
+    color: #00aff0;
+    display: inline;
+}
+.contentInfo{
+    display: block;
+    float: left;
+    margin-left: 12px;
+    /*width: 244px;*/
+    width: 229px;
+}
+.rowInfo{
+    display: block;
+    width: 244px;
+    float: left;
+    background-color: #fff;
+    padding: 8px 0;
+    height: 14px;
+    margin-bottom: 1px;
+    font-family: "Verdana";
+    font-size: 12px;
+    text-align: center;
+    color: #77797d
+}
+.inicioCarousel{
+    display: block;
+}
+.tableInformacoes{
+    overflow: hidden;
+    position: relative;
+}
+.mais{
+    background: url('../img/site/common/misc/misc.png') no-repeat -145px -251px;
+    width: 13px;
+    height: 13px;
+    margin-top: -16px;
+}
+.notOk{
+    visibility: hidden;
+}
+.isOk{
+    background: url('../img/site/common/bg/ok.png')  #fff  50% 50% no-repeat;
+}
+
+.menuModelo a{
+    border-right: 1px solid #e5e5e5;
+}
+.menuModelo a:first-child{
+    border-left: 1px solid #e5e5e5;
+    /*border-right: none; */
+}
+
+
+
+
+
+.colorGeral {color: #00AFF3;}
+.colorLiva {color: #F99A3E;}
+.colorPractia {color: #4cab66;}
+.colorSensia {color: #26BFAF;}
+.colorDesea {color: #922193;}
+.colorInstitucional {color: #00AFF3;}
+
+
+.colorGeral h1 {color: #00AFF3;}
+
+
+
+.colorGeral:hover {color: #065492;}
+.colorLiva:hover {color: #E67606;}
+.colorPractia:hover {color: #3D8952;}
+.colorSensia:hover {color: #21A396;}
+.colorDesea:hover {color: #761B76;}
+.colorInstitucional:hover {color: #00AFF3;}
+
+.filtroSel {background: #EEEEEE; color: #454545;}
+
+.bgLinhaMenu {
+    float: left;
+    width: 228px;
+    height: 65px;
+    background: url('../img/site/common/bg/bg-linha-menu.png')  0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.produtoFora{
+    /*display: none;*/
+}
+.produtoGarantia{
+    /*display: none;*/
+}
+.filtrosAssistencia{
+    display: none;
+}
+address {font-style: normal;}
+
+
+/*EDIÃ‡Ã•ES LINHAS - INICIO*/
+
+#linhaPractia{
+
+}
+
+/*EDIÃ‡Ã•ES LINHAS - FIM*/
+
+
+.input_hide{
+    position: absolute;
+    opacity: 0;
+    visibility: n hidden;
+    margin-bottom: -5px;
+    display: block;
+    float: left;
+}
+
+.hide_number{
+    display: none;
+}
+
+.show_number a{
+    display: block!important;
+}
+
+#next a{
+    margin-top: -2px;
+}
+
+.caracteristicaExcetoProd {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+
+.caracteristicaExcetoProd p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+/**
+ * ajustes
+ */
+
+
+#scrollbarTabela { width: 992px; clear: both; margin: 20px 0 30px; position: relative;}
+#scrollbarTabela .viewport { width: 992px; height: auto; overflow: hidden; position: relative; padding-left: 1px;}
+#scrollbarTabela .overview { list-style: none; position: relative; left: 0; top: 0; }
+#scrollbarTabela .thumb .end,
+#scrollbarTabela .thumb { background-color: #01AEF3; }
+#scrollbarTabela .scrollbar { position: relative; float: right; width: 15px; position:absolute; bottom: -20px; }
+#scrollbarTabela .track { background-color: #ACE6FE; width:6px; height:6px; position: relative; padding: 0 1px; }
+#scrollbarTabela .thumb { height: 6px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbarTabela .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbarTabela .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+
+#scrollbarTabela2 { width: 992px; clear: both; margin: 20px 0 30px; position: relative;}
+#scrollbarTabela2 .viewport { width: 992px; height: auto; overflow: hidden; position: relative; padding-left: 1px;}
+#scrollbarTabela2 .overview { list-style: none; position: relative; left: 0; top: 0; }
+#scrollbarTabela2 .thumb .end,
+#scrollbarTabela2 .thumb { background-color: #01AEF3; }
+#scrollbarTabela2 .scrollbar { position: relative; float: right; width: 15px; position:absolute; bottom: -20px; }
+#scrollbarTabela2 .track { background-color: #ACE6FE; width:6px; height:6px; position: relative; padding: 0 1px; }
+#scrollbarTabela2 .thumb { height: 6px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbarTabela2 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbarTabela2 .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+
+.colunasIntro{
+    white-space: nowrap;
+    float:none!important;
+    display: inline-block;
+    text-align: center;
+}
+.borderColunas{
+    border-left: 1px solid lime
+}
+.rowTable{
+    display: block;
+    width: auto;
+    white-space: nowrap;
+}
+.headTable{
+    display: block;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+}
+.colunas{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    padding: 0 12px;
+    width: 120px;
+    border-left: 1px solid transparent;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Verdana";
+    color: #999
+}
+.colunasDescricao{
+    border-left: 1px solid #EEEEEE;
+}
+.colunas:first-child{
+    border:none;
+}
+.colunas span{
+    white-space: normal;
+}
+.linhaTabelaInstitucional{
+    height: 39px;
+}
+.newcol1,
+.newcol2,
+.newcol3,
+.newcol4,
+.newcol5,
+.newcol6,
+.newcol7,
+.newcol8,
+.newcol9,
+.newcol10 {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    padding:0 6px;
+    float: none;
+    display: inline-block;
+}
+
+.notFound{
+    font-family: "neuron_boldregular";
+    font-size: 64px;
+    color: #00ACF6;
+    float: left;
+}
+.txtNotFound{
+    display: block;
+    /*float: left; */
+    clear: both;
+    font-size: 20px;
+    color: #333;
+    font-family: "neuronitalic";
+    margin-top: -50px;
+}
+.bntErro{
+    display: block;
+    margin-top:16px;
+    float: left;
+    clear: both;
+     font-size: 20px;
+    color: #333;
+    font-family: "neuron_demibolditalic";
+    text-align: center;
+    text-indent: 12px;
+    background: url('../img/site/common/misc/misc.png') no-repeat -8px -315px;
+    width: 285px;
+    height: 42px;
+    line-height: 42px;
+}
+.bntErro:hover{
+    text-decoration: none;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter:alpha(opacity= 80);
+}
+.top8p{
+    margin-top: 8%
+}
+.top10p{
+    margin-top: 10%
+}
+.hoverBlockedMap{
+    margin-top: 0;
+    padding-top: 30px
+}
+.blockedMap{
+    width: 1700px; height: 600px; position: absolute;top: 0; left: 0; z-index: 100
+}
+iframe[name=google_conversion_frame]
+{
+    display: none !important;
+}
+
+/*- LOCATION -*/
+.location{ width:705px; margin:0 auto; overflow:hidden; }
+.location .header-location{ background:url(../img/site/common/bg/bg-header-location.gif) no-repeat; height:80px; }
+.location .header-location h1{ font:34px neuron_boldregular, Arial, sans-serif; color:#FFFFFF; padding:21px 60px; }
+
+.location .blocos-location{ background-color:#E5E5E5; height:304px; width:706px; }
+.location .blocos-location > div{
+	background-color:#FAFAFA;
+	float:left;
+	border-right:1px solid #FFFFFF;
+	border-left:1px solid #FFFFFF;
+	margin-left:1px;
+	height:214px;
+	padding-top:90px;
+	position:relative;
+}
+.location .blocos-location > div:first-child{ border-left:none; margin-left:0; }
+.location .blocos-location > div.hover{ background-color:#FFFFFF; }
+
+.location .blocos-location .w135{ width:134px; }
+.location .blocos-location .w149{ width:147px; }
+.location .blocos-location .w173{ width:171px; }
+.location .blocos-location .w245{ width:244px; }
+.location .blocos-location .w245 ul{ width:50%; float:left; }
+
+.location .blocos-location .icon{
+	background:url(../img/site/common/bg/icons-localizacao.gif) no-repeat;
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:25px; left:50%;
+	margin-left:-30px;
+}
+.location .blocos-location strong{ font:22px neuron_boldregular, Arial, sans-serif; color:#444444; text-align:center; display:block; margin-bottom:16px; }
+.location .blocos-location ul li{ font:18px neuron_lightitalic, Arial, sans-serif; color:#00ACF6; text-align:center; margin-bottom:10px; }
+.location .blocos-location li a{ color:#00ACF6; }
+.location .blocos-location li a:hover{ color:#005599; text-decoration:none; }
+
+
+/*- MODAL -*/
+#overlayModal{ position:fixed; top:0; left:0; z-index:103; background-color:#000000; width:100%; height:100%; opacity:0.5; filter:alpha(opacity=50); }
+#modalPadrao{ position:absolute; top:180px; left:50%; z-index:104; margin-left:-50px; }
+#modalPadrao .wrapperModalPadrao{
+	position:relative;
+	z-index:1;
+	min-width:155px;
+	min-height:155px;
+}
+#modalPadrao .loader{
+	background:url(../img/site/common/img/loaderModal.gif) no-repeat;
+	width:32px;
+	height:32px;
+	position:absolute;
+	top:50%; left:50%;
+	z-index:2;
+	margin:-16px 0 0 -16px; }
+
+#modalPadrao .lk-fechar-modal{
+    position: absolute;
+    right: 275px;
+    z-index: 2;
+    background: url(../img/site/common/bg/lk-fechar-modal.png) no-repeat;
+    width: 54px;
+    height: 54px;
+}
+
+/*- Modal viva mais -*/
+.modal-viva-mais{ width:920px; margin:0 auto; }
+#modalPadrao.modal-viva-mais .lk-fechar-modal{ top:-25px; right:-25px; }
+
+/*-Modal Instagram -*/
+.img-modal {
+    width: 342px;
+    margin: 0 auto;
+}
+
+.link-modal {
+    position: absolute;
+    top: 242px;
+    left: 387px;
+}
+
+/*- corrigindo rolagem horizontal -*/
+#twttrHubFrame,
+#twttrHubFrameSecure{ display:none; }
+
+
+.containerOpcoesComparador{display:none}
+
+/*- BOX AJUDA -*/
+.boxAjudaFlutuante{
+	position:fixed;
+	bottom:-60px; right:10px;
+	background-color:#00AEF3;
+	width:150px;
+	height:45px;
+	max-height:90%;
+	z-index:1001;
+	overflow:visible !important;
+	-webkit-box-shadow:0 5px 15px rgba(0, 0, 0, .15);
+	-moz-box-shadow:0 5px 15px rgba(0, 0, 0, .15);
+	box-shadow:0 5px 15px rgba(0, 0, 0, .15);
+}
+.boxAjudaFlutuante:before{
+	content:'';
+	border-width:4px 4px 0;
+	border-style:solid;
+	border-color:#00AEF3 transparent;
+	position:absolute;
+	bottom:-4px; right:13px;
+}
+
+.boxAjudaFlutuante ::-webkit-scrollbar{ width:12px; }
+.boxAjudaFlutuante ::-webkit-scrollbar-track { background-color:#FAFAFA; border-radius:10px; }
+.boxAjudaFlutuante ::-webkit-scrollbar-thumb{ background:#00AEF3; border-radius:10px; }
+
+.boxAjudaFlutuante .lkFecharAjuda{
+	position:absolute;
+	top:-12px; left:-12px;
+	z-index:3;
+	background:url(../img/site/common/img/lkFecharAjuda.png) no-repeat;
+	width:24px;
+	height:24px;
+	text-indent:-99999px;
+	line-height:99999px;
+	font-size:0;
+	overflow:hidden;
+}
+.boxAjudaFlutuante .lkAlgumaDuvida{
+	font:16px/45px 'neuron_extraboldregular', Arial, sans-serif;
+	color:#FFFFFF;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	z-index:2;
+	background-color:#00AEF3;
+	width:100%;
+	height:45px;
+}
+.boxAjudaFlutuante > div{
+	position:relative;
+	z-index:1;
+	display:none;
+	width:250px;
+}
+.boxAjudaFlutuante > div > span{
+	font:16px/45px 'neuron_extraboldregular', Arial, sans-serif;
+	color:#FFFFFF;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	position:relative;
+}
+.boxAjudaFlutuante > div > span:before{
+	content:'';
+	border-width:0 6px 6px;
+	border-style:solid;
+	border-color:#FFFFFF transparent;
+	position:absolute;
+	bottom:0; left:50%;
+	margin-left:-6px;
+}
+.boxAjudaFlutuante > div ul{
+	background-color:#FFFFFF;
+	padding:17px 20px 8px;
+	max-height:300px;
+	overflow:auto;
+}
+.boxAjudaFlutuante > div li{ margin-bottom:8px; }
+.boxAjudaFlutuante > div li a{ font:16px/120% 'neuron_extraboldregular', Arial, sans-serif; color:#00aef3; }
+.boxAjudaFlutuante > div li span{ font-family:'neuronregular', Arial, sans-serif; color:#999999; margin-left:5px; }
+
+.boxAjudaFlutuante > div a{
+	font:16px/60px 'neuron_extraboldregular', Arial, sans-serif;
+	color:#FFFFFF;
+	text-decoration:none;
+	display:block;
+	vertical-align:middle;
+	width:170px;
+	padding-left:80px;
+}
+.boxAjudaFlutuante > div a.lkAtendimentoAjuda{
+	line-height:54px;
+	background:url(../img/site/common/img/icoAtendimentoAjuda.png) no-repeat 26px center;
+	border-top:1px solid #45C5F9;
+}
+.boxAjudaFlutuante a.lkPerguntaAjuda{
+	background:url(../img/site/common/img/icoPerguntaAjuda.png) no-repeat 32px center;
+}
+
+/** NOVA AREA PRODUTOS **/
+#lightComprarOnline .listaImgLojas {
+    margin-top: 15px !important;
+}
+
+.ondeComprarInternaProduto.box-onde-comprar {
+    margin-top: 40px;
+}
+
+#lightLojasFisicas .menu-produto{
+    margin: 0;
+    position: fixed;
+    width: 80%;
+    margin-top: -1px;
+}
+
+#lightComprarOnline .menu-produto {
+    margin-top: -1px;
+}
+
+.row .top30 .menu-produto{
+    margin: 0px;
+}
+.menu-produto{
+    background-color: #00aef3;
+    height: 50px;
+}
+a.menu-item-produto.selected {
+    color: #FFF !important;
+}
+a.menu-item-produto {
+    color: #EEE;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px 15px 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.row.top40 {
+    margin-top: 0px;
+}
+.row.preenchimento {
+    width: 100%;
+    /*min-height: 1200px;*/
+}
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #065492;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+#lightLojasFisicas.white_content {
+    overflow: hidden;
+}
+
+.tituloRevendas.menu-lojas h2 {
+    font-size: 28px;
+    line-height: 50px;
+    color: #fff;
+    float: left;
+}
+
+.tituloRevendas a {
+    float: right;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.btnProduto{
+    background-color: #00aef3;
+    border-bottom: 4px solid #0099d7;
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    margin: 40px 20px 0px 0px;
+}
+
+.p-btnProduto{
+    display: inline;
+}
+.hidden-produto{
+    display: none;
+}
+
+#produto-topo{
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.compartilhar-facebook, .compartilhar-twitter, .compartilhar-gplus{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.compartilhar p {
+    float: left;
+    padding: 5px 20px 0px 0px;
+    font-size: 20px;
+    color: #00aef3;
+    font-weight: 600;
+}
+
+.compartilhar {
+    padding-top: 50px;
+}
+
+.compartilhar-facebook{
+    background-image: url("../img/site/common/img/facebook.png");
+}
+.compartilhar-twitter{
+    background-image: url("../img/site/common/img/twitter.png");
+}
+.compartilhar-gplus{
+    background-image: url("../img/site/common/img/gplus.png");
+}
+
+
+/**Scrollbar Onde Comprar**/
+#lojasFisicas::-webkit-scrollbar, #lightComprarOnline::-webkit-scrollbar
+{
+  width: 8px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+#lojasFisicas::-webkit-scrollbar-track, #lightComprarOnline::-webkit-scrollbar-track
+{
+  background: #b2e6fb;
+}
+
+#lojasFisicas::-webkit-scrollbar-thumb, #lightComprarOnline::-webkit-scrollbar-thumb
+{
+  background: #00aef3;
+}
+
+.lightLojasFisicas-absolute{
+    position: absolute;
+    top:-1px;
+}
+
+.especificacoesdireita{
+    float:right;
+    text-align: right;
+    width: 50%;
+}
+.especificacoesesquerda{
+    float:left;
+    width: 50%;
+}
+
+.interna-produto #scrollbarTabela .viewport{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.interna-produto .especificoesPorProduto p, p.asterisco {
+    clear: both;
+    font-size: 14px;
+    padding-top: 30px;
+    color: #999;
+}
+
+.asterisco {
+    margin-bottom: 60px;
+}
+
+.especificacoes-produto li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0px 5px 0px;
+    color: #000;
+}
+
+.especificacoes-produto .especificacoesdireita li{
+    color: #999;
+}
+
+.selected:after {
+    content: '';
+    top: 10px;
+    left: 0px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #00aef3;
+    display: block;
+}
+
+.apoio-download {
+    padding: 0px 0px 0px 35px;
+    display: inline-block;
+}
+
+.apoio-download .box-downloads.downloadsModelo {
+    padding-top: 0px;
+}
+
+#lojasOnline {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    overflow: hidden;
+}
+.oos {
+    display: none;
+}
+.ondeComprarInternaProduto.box-onde-comprar {
+    margin-top: 30px;
+}
+
+.obrigatorio{
+    color: #ff0000;
+}
+
+.asterisco{
+    color: #ff0000;
+    position: absolute;
+    z-index: 1000;
+    margin-left: -12px;
+    margin-top: 10px;
+}
+.glyphicon{
+    top: 2px;
+}
+
+/* Bootstrap 3 seta o box-sizing para border-box, isso desloca e corta os objetos do mapa */
+.brazil * {box-sizing: content-box!important}
+
+#map-brazil {
+    left: -23px;
+}
+
+#reCaptcha{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"] {
+    width: 100% !important;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+select, input[type="text"] {
+    height: 30px;
+    line-height: 30px;
+}

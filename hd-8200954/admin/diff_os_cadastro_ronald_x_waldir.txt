@@ -1,0 +1,1205 @@
+452c452
+< 				$msg_erro .= "Foi definido no callcenter que esta Ordem de Serviço é um ressarcimento, por favor escolha a opção ressarcimento";
+---
+> 				$msg_erro .= "Foi definido no callcenter que esta Ordem de Serviço é um ressarcimento, por favor escolha a opção ressarcimento<br>";
+479c479
+< 		$msg_erro .= "Este posto está DESCREDENCIADO. Não é possível efetuar a troca do produto.";
+---
+> 		$msg_erro .= "Este posto está DESCREDENCIADO. Não é possível efetuar a troca do produto.<br>";
+870d869
+< 						<b>Tipo Conta</b>: $tipo_conta<br>
+871a871
+> 						<b>Tipo Conta</b>: $tipo_conta<br>
+950c950
+< 		if( strlen($_POST["causa_troca"])          == 0 ) $msg_erro .= "Escolha a causa da troca";
+---
+> 		if( strlen($_POST["causa_troca"])          == 0 ) $msg_erro .= "Escolha a causa da troca<br>";
+952c952
+< 		if( strlen($_POST["setor"])                == 0 ) $msg_erro .= "Selecione o setor responsável";
+---
+> 		if( strlen($_POST["setor"])                == 0 ) $msg_erro .= "Selecione o setor responsável<br>";
+972c972
+< 			if(strlen($modalidade_transporte)==0) $msg_erro .= "É obrigatório a escolha da modalidade de transporte";
+---
+> 			if(strlen($modalidade_transporte)==0) $msg_erro .= "É obrigatório a escolha da modalidade de transporte<br>";
+1163c1163
+< 			$msg_erro .= "Produto informado não encontrado";
+---
+> 			$msg_erro .= "Produto informado não encontrado<br>";
+1341c1341
+< 			if(strlen($servico_realizado)==0) $msg_erro .= "Não existe Serviço Realizado de Troca de Produto, favor cadastrar!";
+---
+> 			if(strlen($servico_realizado)==0) $msg_erro .= "Não existe Serviço Realizado de Troca de Produto, favor cadastrar!<br>";
+1428c1428
+< 				if( strlen($_POST["causa_troca"])          == 0 ) $msg_erro .= "Escolha a causa da troca";
+---
+> 				if( strlen($_POST["causa_troca"])          == 0 ) $msg_erro .= "Escolha a causa da troca<br>";
+1430c1430
+< 				if( strlen($_POST["setor"])                == 0 ) $msg_erro .= "Selecione o setor responsável";
+---
+> 				if( strlen($_POST["setor"])                == 0 ) $msg_erro .= "Selecione o setor responsável<br>";
+1465c1465
+< 					if(strlen($modalidade_transporte)==0) $msg_erro .= "É obrigatório a escolha da modalidade de transporte";
+---
+> 					if(strlen($modalidade_transporte)==0) $msg_erro .= "É obrigatório a escolha da modalidade de transporte<br>";
+1609c1609
+< 							$msg_erro .= "Para essa causa, deve informar a peça que gerou a troca.";
+---
+> 							$msg_erro .= "Para essa causa, deve informar a peça que gerou a troca.<br>";
+1714c1714
+< 			$msg_erro .= " Digite o número da OS Fabricante.";
+---
+> 			$msg_erro .= " Digite o número da OS Fabricante.<br>";
+1849c1849
+< 			$msg_erro .= " Classificação da OS é obrigatória.";
+---
+> 			$msg_erro .= " Classificação da OS é obrigatória. <br>";
+1858c1858
+< 			$msg_erro .= " A natureza é obrigatória.";
+---
+> 			$msg_erro .= " A natureza é obrigatória. <br>";
+1867c1867
+< 		if (strlen(trim($_POST['autorizacao_cortesia'])) == 0) $msg_erro .= 'Digite autorização cortesia.';
+---
+> 		if (strlen(trim($_POST['autorizacao_cortesia'])) == 0) $msg_erro .= 'Digite autorização cortesia. <br>';
+1921c1921
+< 		$msg_erro .= " Digite a hora de abertura da OS.";
+---
+> 		$msg_erro .= " Digite a hora de abertura da OS. <br>";
+1931c1931
+< 			$msg_erro .= "Este posto está DESCREDENCIADO. Não é possível cadastrar OS.";
+---
+> 			$msg_erro .= "Este posto está DESCREDENCIADO. Não é possível cadastrar OS. <br>";
+1960c1960
+< 			$msg_erro .= "CPF do consumidor inválido";
+---
+> 			$msg_erro .= "CPF do consumidor inválido <br>";
+1980c1980
+< 			$msg_erro .="CNPJ da Revenda inválida";
+---
+> 			$msg_erro .="CNPJ da Revenda inválido <br>";
+2010c2010
+< 		$msg_erro .= " Digite a data de compra.";
+---
+> 		$msg_erro .= " Digite a data de compra. <br>";
+2057c2057
+< 		if (strlen ($revenda_cnpj)   <> 0 and strlen ($revenda_cnpj)   <> 14) $msg_erro .= "Tamanho do CNPJ da revenda inválido.";
+---
+> 		if (strlen ($revenda_cnpj)   <> 0 and strlen ($revenda_cnpj)   <> 14) $msg_erro .= "Tamanho do CNPJ da revenda inválido. <br>";
+2060c2060
+< 			$msg_erro .= "Tamanho do CNPJ da revenda inválido.";
+---
+> 			$msg_erro .= "Tamanho do CNPJ da revenda inválido. <br>";
+2065c2065
+< 			$msg_erro .= " Digite o produto.";
+---
+> 			$msg_erro .= " Digite o produto. <br>";
+2074c2074
+< 			$msg_erro .= "Digite quem abriu o Chamado.";
+---
+> 			$msg_erro .= "Digite quem abriu o Chamado. <br>";
+2096c2096
+< 			$msg_erro .= " Digite o Laudo Técnico.";
+---
+> 			$msg_erro .= " Digite o Laudo Técnico. <br>";
+2154c2154
+< 		$msg_erro .= " Digite a data de compra.";
+---
+> 		$msg_erro .= " Digite a data de compra. <br>";
+2158c2158
+< 		$msg_erro .= " Digite a data de abertura da OS.";
+---
+> 		$msg_erro .= " Digite a data de abertura da OS. <br>";
+2170c2170
+< 			$msg_erro .= "OS Revendedor deve ter no mínimo 8 dígitos.";
+---
+> 			$msg_erro .= "OS Revendedor deve ter no mínimo 8 dígitos. <br>";
+2194c2194
+< 			$msg_erro .= " Selecione consumidor ou revenda.";
+---
+> 			$msg_erro .= " Selecione consumidor ou revenda. <br>";
+2207c2207
+< 			$msg_erro .= "Entre com o número da Nota Fiscal";
+---
+> 			$msg_erro .= "Entre com o número da Nota Fiscal <br>";
+2229c2229
+< 			$msg_erro .= " Selecione consumidor ou revenda.";
+---
+> 			$msg_erro .= " Selecione consumidor ou revenda. <br>";
+2266c2266
+< 					$msg_erro .= "Produto $produto_referencia não cadastrado";
+---
+> 					$msg_erro .= "Produto $produto_referencia não cadastrado <br>";
+2293c2293
+< 						$msg_erro .= "Produto $produto_referencia sem garantia";
+---
+> 						$msg_erro .= "Produto $produto_referencia sem garantia <br>";
+2740c2740
+< 							$msg_erro .= "Quando lançar o defeito reclamado é necessário clicar em adicionar defeito.";
+---
+> 							$msg_erro .= "Quando lançar o defeito reclamado é necessário clicar em adicionar defeito. <br>";
+2792c2792
+< 							$msg_erro .= "Quando lançar o defeito reclamado é necessário clicar em adicionar defeito.";
+---
+> 							$msg_erro .= "Quando lançar o defeito reclamado é necessário clicar em adicionar defeito. <br>";
+3222c3222
+< 
+---
+> 	
+3223a3224
+> 	
+3257c3258
+< 				$msg_erro .= "Informe o motivo da exclusão da OS.";
+---
+> 				$msg_erro .= "Informe o motivo da exclusão da OS. <br>";
+3815c3816
+< $title = "Cadastro de Ordem de Serviço - ADMIN";
+---
+> $title = "CADASTRO DE ORDEM DE SERVIÇO - ADMIN";
+3984a3986,3989
+> 
+> 	else{
+> 		alert("Informar toda ou parte da informação para realizar a pesquisa!");
+> 	}
+4022a4028,4031
+> 
+> 	else{
+> 		alert("Informar toda ou parte da informação para realizar a pesquisa!");
+> 	}
+4048a4058,4061
+> 
+> 	else{
+> 		alert("Informar toda ou parte da informação para realizar a pesquisa!");
+> 	}
+4061c4074
+< 	if (campo.value != "") {
+---
+> 	if (campo.value == "") {
+4079c4092
+< 			alert("Digite pelo menos 3 caracteres para efetuar a pesquisa");
+---
+> 			alert("Digite pelo menos 3 caracteres para efetuar a pesquisa!");
+4081a4095
+> 
+4111c4125
+< 			alert("Digite pelo menos 3 caracteres para efetuar a pesquisa");
+---
+> 			alert("Digite pelo menos 3 caracteres para efetuar a pesquisa!");
+4467a4482,4483
+> 		$("#data_nf").maskedinput("99/99/9999");
+> 		$("#consumidor_cep").maskedinput("99.999-999");
+4733c4749
+< 			document.getElementById('autorizacao_cortesia').style.display='inline';
+---
+> 			document.getElementById('autorizacao_cortesia').style.display='block';
+4835a4852,4868
+> 
+> function BloqueiaNumeros(e)
+> {
+>     var tecla=new Number();
+>         if(window.event) {
+>                 tecla = e.keyCode;
+>         }
+>         else if(e.which) {
+>                 tecla = e.which;
+>         }
+>         else {
+>                 return true;
+>         }
+>         if((tecla >= "48") && (tecla <= "57")){
+>                 return false;
+>         }
+> }
+4849c4882
+< <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" width = '730'>
+---
+> <table border="0" cellpadding="1" cellspacing="1" align="center"  width = '700'>
+4898c4931
+< 	width:225px;
+---
+> 	width:200px;
+4916a4950,5002
+> 
+> .titulo_tabela{
+> 	background-color:#596d9b;
+> 	font: bold 14px "Arial";
+> 	color:#FFFFFF;
+> 	text-align:center;
+> }
+> 
+> 
+> .titulo_coluna{
+> 	background-color:#596d9b;
+> 	font: bold 11px "Arial";
+> 	color:#FFFFFF;
+> 	text-align:center;
+> }
+> 
+> /*table tr td{
+> 	font-family: verdana; 
+> 	font-size: 11px; 
+> 	border-collapse: collapse;
+> 	border:1px solid #FFFFFF;
+> }*/
+> 
+> .msg_erro{
+> 	background-color:#FF0000;
+> 	font: bold 16px "Arial";
+> 	color:#FFFFFF;
+> 	text-align:center;
+> }
+> 
+> .sucesso{
+> 	background-color:green;
+> 	font: bold 16px "Arial";
+> 	color:#FFFFFF;
+> 	text-align:center;
+> }
+> 
+> .formulario{
+> 	background-color:#D9E2EF;
+> 	font:11px Arial;
+> 	text-align:left;
+> 	
+> 	
+> }
+> 
+> .subtitulo{
+> 
+> 	background-color: #7092BE;
+> 	font: bold 13px "Arial";
+> 	color:#FFFFFF;
+> 	text-align:center;
+> }
+> 
+4919c5005,5006
+< <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff">
+---
+> <table border="0"  class="formulario" cellpadding="1" cellspacing="1" align="center" width="700" >
+> 	<tr class="titulo_tabela"><td>Cadastrar Ordem de Serviço</td></tr>
+4934,4937c5021,5026
+< <tr><td><table style="display: <? echo $display_frm_os; ?>">
+< 	<td><img height="1" width="20" src="imagens/spacer.gif"></td>
+< 
+< 	<td valign="top" align="left">
+---
+> 	<tr>
+> 		<td>
+> 			<table style="display: <? echo $display_frm_os; ?>" border="0" width="650" align="center" >
+> 				
+> 				<tr>
+> 					<td valign="top" align="left" colspan="3">
+4939,4940c5028,5029
+< 		<?
+< 		if (strlen ($msg_erro) > 0) {
+---
+> 						<?
+> 						if (strlen ($msg_erro) > 0) {
+4942,4952c5031,5041
+< 			$consumidor_cidade		= $_POST['consumidor_cidade'];
+< 			$consumidor_estado		= $_POST['consumidor_estado'];
+< 			$consumidor_email		= trim ($_POST['consumidor_email']) ;
+< 			$consumidor_nome		= trim ($_POST['consumidor_nome']) ;
+< 			$consumidor_fone		= trim ($_POST['consumidor_fone']) ;
+< 			$consumidor_endereco	= trim ($_POST['consumidor_endereco']) ;
+< 			$consumidor_numero		= trim ($_POST['consumidor_numero']) ;
+< 			$consumidor_complemento	= trim ($_POST['consumidor_complemento']) ;
+< 			$consumidor_bairro		= trim ($_POST['consumidor_bairro']) ;
+< 			$consumidor_cep			= trim ($_POST['consumidor_cep']) ;
+< 			$consumidor_rg			= trim ($_POST['consumidor_rg']) ;
+---
+> 							$consumidor_cidade		= $_POST['consumidor_cidade'];
+> 							$consumidor_estado		= $_POST['consumidor_estado'];
+> 							$consumidor_email		= trim ($_POST['consumidor_email']) ;
+> 							$consumidor_nome		= trim ($_POST['consumidor_nome']) ;
+> 							$consumidor_fone		= trim ($_POST['consumidor_fone']) ;
+> 							$consumidor_endereco	= trim ($_POST['consumidor_endereco']) ;
+> 							$consumidor_numero		= trim ($_POST['consumidor_numero']) ;
+> 							$consumidor_complemento	= trim ($_POST['consumidor_complemento']) ;
+> 							$consumidor_bairro		= trim ($_POST['consumidor_bairro']) ;
+> 							$consumidor_cep			= trim ($_POST['consumidor_cep']) ;
+> 							$consumidor_rg			= trim ($_POST['consumidor_rg']) ;
+4954,4955c5043,5044
+< 		}
+< 		?>
+---
+> 						}
+> 						?>
+4958,4963c5047,5052
+< 		<form style="MARGIN: 0px; WORD-SPACING: 0px" name="frm_os" method="post" action="<? echo $PHP_SELF ?>">
+< 		<input class="frm" type="hidden" name="os" value="<? echo $os ?>">
+< 		<? if (strlen($pedido) > 0) { ?>
+< 			<input class="frm" type="hidden" name="produto_referencia" id="produto_referencia" value="<? echo $produto_referencia ?>">
+< 			<input class="frm" type="hidden" name="produto_descricao"  id="produto_descricao" value="<? echo $produto_descricao ?>">
+< 		<?}?>
+---
+> 						<form style="MARGIN: 0px; WORD-SPACING: 0px" name="frm_os" method="post" action="<? echo $PHP_SELF ?>">
+> 						<input class="frm" type="hidden" name="os" value="<? echo $os ?>">
+> 						<? if (strlen($pedido) > 0) { ?>
+> 							<input class="frm" type="hidden" name="produto_referencia" id="produto_referencia" value="<? echo $produto_referencia ?>">
+> 							<input class="frm" type="hidden" name="produto_descricao"  id="produto_descricao" value="<? echo $produto_descricao ?>">
+> 						<?}?>
+4965c5054,5095
+< 		<p>
+---
+> 						<p>
+> 					</td>
+> 				</tr>
+> 				<? if ($login_fabrica == 19 OR $login_fabrica == 20 OR $login_fabrica == 30 OR $login_fabrica == 50 OR $login_fabrica == 7) { ?>
+> 						
+> 						<tr class="subtitulo">
+> 							<td colspan="1">Informações do Atendimento</td>
+> 						</tr>
+> 				<? } ?>
+> 				<? if ($login_fabrica==7) { // HD 75762 para Filizola ?>
+> 					<tr>
+> 						<td>
+> 							<div style='font: 11px; Arial;
+> 								color:#333333; width:650px;' class='CaixaMensagem' >
+> 								Classificação da OS
+> 								<select name='classificacao_os' id='classificacao_os' class="frm">
+> 									<option <? if (strlen($classificacao_os)==0) {echo "selected";} ?>></option>
+> 									<?
+> 
+> 										$sql = "SELECT	*
+> 												FROM	tbl_classificacao_os
+> 												WHERE	fabrica = $login_fabrica
+> 												AND		ativo IS TRUE
+> 												ORDER BY descricao";
+> 										$res = @pg_query ($con,$sql);
+> 										if(pg_num_rows($res) > 0){
+> 											for($i=0; $i < pg_num_rows($res); $i++){
+> 												$xclassificacao_os=pg_fetch_result($res,$i,classificacao_os);
+> 												if($xclassificacao_os==5 and $classificacao_os!=5){
+> 													continue;
+> 												}
+> 												echo "<option value='$xclassificacao_os'";
+> 												if ($classificacao_os == $xclassificacao_os) echo " selected";
+> 												echo ">".pg_fetch_result($res,$i,descricao)."</option>\n";
+> 											}
+> 										}
+> 									?>
+> 								</select>
+> 							</div>
+> 							</td>
+> 						</tr>
+> 				<? } ?>
+4967,4999c5097,5123
+< 		<? if ($login_fabrica==7) { // HD 75762 para Filizola ?>
+< 			<div style='border: #D3BE96 1px solid;
+< 					background-color: #FCF0D8;
+< 					font-family: Arial;
+< 					font-size:   9pt;
+< 					color:#333333;' class='CaixaMensagem' width='400'>
+< 				<center>
+< 				<font size="2" face="Geneva, Arial, Helvetica, san-serif">Classificação da OS</font>
+< 				<select name='classificacao_os' id='classificacao_os' size="1" class="frm">
+< 					<option <? if (strlen($classificacao_os)==0) {echo "selected";} ?>></option>
+< 					<?
+< 
+< 						$sql = "SELECT	*
+< 								FROM	tbl_classificacao_os
+< 								WHERE	fabrica = $login_fabrica
+< 								AND		ativo IS TRUE
+< 								ORDER BY descricao";
+< 						$res = @pg_query ($con,$sql);
+< 						if(pg_num_rows($res) > 0){
+< 							for($i=0; $i < pg_num_rows($res); $i++){
+< 								$xclassificacao_os=pg_fetch_result($res,$i,classificacao_os);
+< 								if($xclassificacao_os==5 and $classificacao_os!=5){
+< 									continue;
+< 								}
+< 								echo "<option value='$xclassificacao_os'";
+< 								if ($classificacao_os == $xclassificacao_os) echo " selected";
+< 								echo ">".pg_fetch_result($res,$i,descricao)."</option>\n";
+< 							}
+< 						}
+< 					?>
+< 				</select>
+< 			</div>
+< 		<? } ?>
+---
+> 				<? if ($login_fabrica == 19 OR $login_fabrica == 20 OR $login_fabrica == 30 OR $login_fabrica == 50 OR $login_fabrica == 7) { ?>
+> 						<tr><td colspan="1">
+> 						
+> 						
+> 						<? if ($login_fabrica==7) { ?>
+> 							Natureza
+> 						<?}else{?>
+> 							Tipo de Atendimento
+> 						<?}?>
+> 						<select name="tipo_atendimento" id="tipo_atendimento" size="1" class="frm"
+> 							<? if ($login_fabrica==20) {
+> 									echo "onChange='MudaCampo(this)'";
+> 								}else{
+> 									if ($login_fabrica==30 OR $login_fabrica==50) {
+> 										?> onchange="javascript:verifica_atendimento('tipo_atendimento')"; <?
+> 									}
+> 								};?>>
+> 							<option selected></option>
+> 							<?
+> 
+> 							//IGOR  - HD 2909  | Garantía de repuesto - Não tem | Garantía de accesorios - Não tem | Garantía de reparación - Não tem
+> 							$wr = "";
+> 							if($login_fabrica == 20 ){
+> 								if(strlen($posto)>0){
+> 									$sql = "select pais from tbl_posto where posto =$posto";
+> 									$res = pg_query ($con,$sql) ;
+> 									$pais = pg_fetch_result ($res, 0, pais);
+5001,5023c5125,5126
+< 		<? if ($login_fabrica == 19 OR $login_fabrica == 20 OR $login_fabrica == 30 OR $login_fabrica == 50 OR $login_fabrica == 7) { ?>
+< 		<div style='border: #D3BE96 1px solid;
+< 				background-color: #FCF0D8;
+< 				font-family: Arial;
+< 				font-size:   9pt;
+< 				color:#333333;' class='CaixaMensagem' width='400'>
+< 		<center>
+< 		<font size="2" face="Geneva, Arial, Helvetica, san-serif">
+< 		<? if ($login_fabrica==7) { ?>
+< 			Natureza
+< 		<?}else{?>
+< 			Tipo de Atendimento
+< 		<?}?>
+< 		<select name="tipo_atendimento" id="tipo_atendimento" size="1" class="frm"
+< 			<? if ($login_fabrica==20) {
+< 					echo "onChange='MudaCampo(this)'";
+< 				}else{
+< 					if ($login_fabrica==30 OR $login_fabrica==50) {
+< 						?> onchange="javascript:verifica_atendimento('tipo_atendimento')"; <?
+< 					}
+< 				};?>>
+< 			<option selected></option>
+< 			<?
+---
+> 									if($pais == "PE"){
+> 										$wr = "AND tbl_tipo_atendimento.tipo_atendimento NOT IN(11, 12, 14) ";
+5025,5031c5128,5130
+< 			//IGOR  - HD 2909  | Garantía de repuesto - Não tem | Garantía de accesorios - Não tem | Garantía de reparación - Não tem
+< 			$wr = "";
+< 			if($login_fabrica == 20 ){
+< 				if(strlen($posto)>0){
+< 					$sql = "select pais from tbl_posto where posto =$posto";
+< 					$res = pg_query ($con,$sql) ;
+< 					$pais = pg_fetch_result ($res, 0, pais);
+---
+> 									}
+> 								}
+> 							}
+5033,5034c5132,5145
+< 					if($pais == "PE"){
+< 						$wr = "AND tbl_tipo_atendimento.tipo_atendimento NOT IN(11, 12, 14) ";
+---
+> 							/*HD:22505- COLORMAQ - Tipo atendimento de deslocamento só aparece se o posto tem km cadastrado(maior que 0)*/
+> 							$sql_deslocamento = " ";
+> 							if($login_fabrica==50){
+> 								/*$sql_deslocamento = " 	AND tipo_atendimento NOT IN (
+> 															SELECT
+> 																CASE WHEN valor_km > 0
+> 																	Then 0
+> 																	Else 55
+> 															END as tipo_atendimento
+> 															FROM tbl_posto_fabrica
+> 															WHERE fabrica = $login_fabrica
+> 																AND posto = $posto
+> 														) ";*/
+> 							}
+5036,5038c5147,5171
+< 					}
+< 				}
+< 			}
+---
+> 							$sql = "SELECT *
+> 									FROM tbl_tipo_atendimento
+> 									WHERE fabrica = $login_fabrica
+> 									AND   ativo IS TRUE
+> 									$wr
+> 									$sql_deslocamento
+> 									ORDER BY tipo_atendimento";
+> 							$res = pg_query ($con,$sql) ;
+> 
+> 
+> 							for ($i = 0 ; $i < pg_num_rows ($res) ; $i++ ) {
+> 								echo "<option ";
+> 								if ($tipo_atendimento == pg_fetch_result ($res,$i,tipo_atendimento) ) echo " selected ";
+> 								echo " value='" . pg_fetch_result ($res,$i,tipo_atendimento) . "'" ;
+> 								echo " > ";
+> 								echo pg_fetch_result ($res,$i,codigo) . " - " . pg_fetch_result ($res,$i,descricao) ;
+> 								echo "</option>\n";
+> 							}
+> 							?>
+> 						</select>
+> 						<?
+> 						if($login_fabrica == 20){
+> 				/*
+> 							echo "&nbsp;&nbsp;&nbsp;&nbsp;Segmento de atuação <select name='segmento_atuacao' size='1' class='frm'>";
+> 							echo "<option selected></option>";
+5040,5079c5173,5177
+< 			/*HD:22505- COLORMAQ - Tipo atendimento de deslocamento só aparece se o posto tem km cadastrado(maior que 0)*/
+< 			$sql_deslocamento = " ";
+< 			if($login_fabrica==50){
+< 				/*$sql_deslocamento = " 	AND tipo_atendimento NOT IN (
+< 											SELECT
+< 												CASE WHEN valor_km > 0
+< 													Then 0
+< 													Else 55
+< 											END as tipo_atendimento
+< 											FROM tbl_posto_fabrica
+< 											WHERE fabrica = $login_fabrica
+< 												AND posto = $posto
+< 										) ";*/
+< 			}
+< 
+< 			$sql = "SELECT *
+< 					FROM tbl_tipo_atendimento
+< 					WHERE fabrica = $login_fabrica
+< 					AND   ativo IS TRUE
+< 					$wr
+< 					$sql_deslocamento
+< 					ORDER BY tipo_atendimento";
+< 			$res = pg_query ($con,$sql) ;
+< 
+< 
+< 			for ($i = 0 ; $i < pg_num_rows ($res) ; $i++ ) {
+< 				echo "<option ";
+< 				if ($tipo_atendimento == pg_fetch_result ($res,$i,tipo_atendimento) ) echo " selected ";
+< 				echo " value='" . pg_fetch_result ($res,$i,tipo_atendimento) . "'" ;
+< 				echo " > ";
+< 				echo pg_fetch_result ($res,$i,codigo) . " - " . pg_fetch_result ($res,$i,descricao) ;
+< 				echo "</option>\n";
+< 			}
+< 			?>
+< 		</select>
+< 		<?
+< 		if($login_fabrica == 20){
+< /*
+< 			echo "&nbsp;&nbsp;&nbsp;&nbsp;Segmento de atuação <select name='segmento_atuacao' size='1' class='frm'>";
+< 			echo "<option selected></option>";
+---
+> 							$sql = "SELECT *
+> 								FROM tbl_segmento_atuacao
+> 								WHERE fabrica = $login_fabrica
+> 								ORDER BY descricao";
+> 							$res = pg_query ($con,$sql) ;
+5081,5085c5179,5181
+< 			$sql = "SELECT *
+< 				FROM tbl_segmento_atuacao
+< 				WHERE fabrica = $login_fabrica
+< 				ORDER BY descricao";
+< 			$res = pg_query ($con,$sql) ;
+---
+> 							for ($i = 0 ; $i < pg_num_rows ($res) ; $i++ ) {
+> 								$descricao_segmento = pg_fetch_result ($res,$i,descricao);
+> 								$x_segmento_atuacao = pg_fetch_result ($res,$i,segmento_atuacao);
+5087,5089c5183
+< 			for ($i = 0 ; $i < pg_num_rows ($res) ; $i++ ) {
+< 				$descricao_segmento = pg_fetch_result ($res,$i,descricao);
+< 				$x_segmento_atuacao = pg_fetch_result ($res,$i,segmento_atuacao);
+---
+> 								//--=== Tradução para outras linguas ============================= Raphael HD:1356
+5091c5185
+< 				//--=== Tradução para outras linguas ============================= Raphael HD:1356
+---
+> 								$sql_idioma = "SELECT * FROM tbl_segmento_atuacao_idioma WHERE segmento_atuacao = $x_segmento_atuacao AND upper(idioma) = '$sistema_lingua'";
+5093c5187
+< 				$sql_idioma = "SELECT * FROM tbl_segmento_atuacao_idioma WHERE segmento_atuacao = $x_segmento_atuacao AND upper(idioma) = '$sistema_lingua'";
+---
+> 								$res_idioma = @pg_query($con,$sql_idioma);
+5095c5189
+< 				$res_idioma = @pg_query($con,$sql_idioma);
+---
+> 								if (@pg_num_rows($res_idioma) >0) $descricao_segmento  = trim(@pg_fetch_result($res_idioma,0,descricao));
+5097d5190
+< 				if (@pg_num_rows($res_idioma) >0) $descricao_segmento  = trim(@pg_fetch_result($res_idioma,0,descricao));
+5098a5192
+> 								//--=== Tradução para outras linguas ================================================
+5100c5194,5201
+< 				//--=== Tradução para outras linguas ================================================
+---
+> 								echo "<option ";
+> 								if ($segmento_atuacao == $x_segmento_atuacao ) echo " selected ";
+> 								echo " value='$x_segmento_atuacao'>" ;
+> 								echo $descricao_segmento  ;
+> 								echo "</option>\n";
+> 							}
+> 							echo "</select>";
+> 				*/
+5102,5109c5203,5215
+< 				echo "<option ";
+< 				if ($segmento_atuacao == $x_segmento_atuacao ) echo " selected ";
+< 				echo " value='$x_segmento_atuacao'>" ;
+< 				echo $descricao_segmento  ;
+< 				echo "</option>\n";
+< 			}
+< 			echo "</select>";
+< */
+---
+> 							echo "<br><font style='color:#FF0000;'>";
+> 							if($sistema_lingua) 
+> 								echo "En caso de garantía  de piezas o acesorios no es necesario inserir el producto en la OS";
+> 							else 
+> 								echo "Garantia de Peças ou Acessórios não necessita de Produto na OS";
+> 							echo "</FONT><br>";
+> 						}
+> 						?>
+> 						</font>
+> 						</td></tr>
+> 					<? 
+> 						
+> 					}
+5111,5114c5217,5222
+< 			echo "<br><b><FONT SIZE='' COLOR='#FF9900'>";
+< 			if($sistema_lingua) echo "En caso de garantía  de piezas o acesorios no es necesario inserir el producto en la OS";else echo "Nos casos de Garantia de Peças ou  Acessórios não é necessário lançar o Produto na OS.";
+< 			echo "</FONT></b><br>";
+< 		}
+---
+> 		echo "<tr><td colspan='1'>";
+> 		if ($login_fabrica == 20) {
+> 			//alterado gustavo HD 5909
+> 			/*#####################################*/
+> 			if($tipo_atendimento==15 or $tipo_atendimento==16) $mostrar = "display:block";
+> 			else                                               $mostrar = "display:none";
+5116,5152c5224,5252
+< 		</font>
+< 		<? }
+< 
+< 		echo "</div>";
+< 
+< 		if($login_fabrica == 20){
+< 		//alterado gustavo HD 5909
+< 		/*#####################################*/
+< 		if($tipo_atendimento==15 or $tipo_atendimento==16) $mostrar = "display:inline";
+< 		else                                               $mostrar = "display:none";
+< 
+< 		echo "<div id='autorizacao_cortesia'
+< 				style='$mostrar;
+< 				border: #D3BE96 1px solid;
+< 				background-color: #FCF0D8;
+< 				font-family: Arial;
+< 				font-size:   9pt;
+< 				text-align: left;
+< 				color:#333333;' class='CaixaMensagem' width='400'>";
+< 			echo "<TABLE  width='710'>";
+< 				echo "<TR>";
+< 					echo "<TD>";
+< 					echo "<b><FONT SIZE='' COLOR='#FF9900'>";
+< 					if($sistema_lingua) echo "En el caso de comerciales o técnicos cortesía está obligado a informar el nombre de la persona que aprobó y la fecha de su aprobación.";else echo "Nos casos de Cortesia comercial ou técnica é obrigatório informar o nome da pessoa que a aprovou e data da aprovação.";
+< 					echo "</FONT></b><br>";
+< 					echo "</TD>";
+< 				echo "</TR>";
+< 				echo "<TR>";
+< 					echo "<TD>";echo "<font size='2' face='Geneva, Arial, Helvetica, san-serif'>";
+< 					if($sistema_lingua) echo "Autorización Cortesía";else echo "Autorização Cortesia";
+< 					echo "&nbsp;<INPUT TYPE='text' NAME='autorizacao_cortesia' value='$autorizacao_cortesia' size='40'>";
+< 					echo "</font>";
+< 					echo "</TD>";
+< 				echo "</TR>";
+< 			echo "</TABLE>";
+< 		echo "</div>";
+< 		/*#####################################*/
+---
+> 		<div id='autorizacao_cortesia' style="<?echo $mostrar;?>; width:600px;" >
+> 			
+> 			
+> 				<? 
+> 					if($sistema_lingua) 
+> 						echo "Autorización Cortesía";
+> 					else 
+> 						echo "Autorização Cortesia"; 
+> 				?>
+> 				&nbsp;<INPUT TYPE='text' NAME='autorizacao_cortesia' value='<? echo $autorizacao_cortesia; ?>' size='40' class="frm">
+> 			
+> 			<br />
+> 			<font style="color:#FF0000;">
+> 			<?
+> 				if ($sistema_lingua) 
+> 					echo "En el caso de comerciales o técnicos cortesía está obligado a informar el nombre de la persona que aprobó y la fecha de su aprobación"; 
+> 				else 
+> 					echo 'Cortesia Comercial ou Técnica, é obrigatório informar o aprovante e a "data de aprovação"';
+> 			?>
+> 			</FONT>
+> 			
+> 			
+> 	
+> 			
+> 			
+> 		
+> 		</div>
+> 		
+> 		<?
+5155,5157c5255,5258
+< 
+< 
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 		</td></tr>
+> 	</table>
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+> 		<tr class="subtitulo"><td colspan="6">Informações do Posto</td></tr>
+5160,5161c5261,5262
+< 			<td nowrap>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">N. Série</font>
+---
+> 			<td nowrap colspan="2">
+> 				Número Série
+5164c5265
+< 				&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick="javascript: fnc_pesquisa_produto_serie (document.frm_os.produto_serie,'frm_os')"  style='cursor: pointer'>
+---
+> 				&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' onclick="javascript: fnc_pesquisa_produto_serie (document.frm_os.produto_serie,'frm_os')"  style='cursor: pointer'>
+5173a5275,5278
+> 
+> 					else{
+> 						alert("Informe toda ou parte da informação para realizar a pesquisa!");
+> 					}
+5177a5283,5284
+> 			</tr>
+> 			<tr>
+5189c5296
+< 					<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle'
+---
+> 					<img src='imagens/lupa.png' border='0' align='absmiddle'
+5213c5320
+< 					<img src='imagens/btn_buscar5.gif' style="cursor:pointer" border='0' align='absmiddle'
+---
+> 					<img src='imagens/lupa.png' style="cursor:pointer" border='0' align='absmiddle'
+5227c5334
+< 		<hr>
+---
+> 		
+5229c5336,5337
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+> 		<tr class="subtitulo"><td colspan="4">Informações do Fabricante</td></tr>
+5230a5339,5359
+> 			<td nowrap width="170" >
+> 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Data Abertura</font>
+> 				<br>
+> 				<input name="data_abertura" id='data_abertura' size="12" maxlength="10" value="<? echo $data_abertura ?>" type="text" class="frm" tabindex="0" ><br><font face='arial' size='1'>Ex.: 25/11/2007</font><br>
+> 			</td>
+> 			
+> 			<? if ($login_fabrica == 7){ #HD 49336 ?>
+> 			<td nowrap>
+> 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Hora Abertura</font>
+> 				<br>
+> 				<?
+> 				if (strlen($hora_abertura)==0){
+> 					#$hora_abertura = date("H:i"); //Vazio para forçar o preenchimento
+> 				}else{
+> 					$hora_abertura = substr($hora_abertura,0,5);
+> 				}
+> 				?>
+> 				<input name="hora_abertura" size="7" maxlength="5" id='hora' value="<? echo $hora_abertura ?>" type="text" class="frm" tabindex="0" >
+> 			</td>
+> 			<?}?>
+> 
+5266c5395
+< 				N. Série.
+---
+> 				Número Série
+5269c5398
+< 				<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_numero_serie (document.frm_os.produto_serie, "produto_serie")' style='cursor: pointer'>
+---
+> 				<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_numero_serie (document.frm_os.produto_serie, "produto_serie")' style='cursor: pointer'>
+5271c5400,5402
+< 			<? }?>
+---
+> 			<? }
+> 				else{ ?>
+> 				<td>&nbsp;</td>
+5272a5404,5405
+> 			<? } ?>
+> 			
+5274,5293d5406
+< 			<td nowrap>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Data Abertura</font>
+< 				<br>
+< 				<input name="data_abertura" id='data_abertura' size="12" maxlength="10" value="<? echo $data_abertura ?>" type="text" class="frm" tabindex="0" ><br><font face='arial' size='1'>Ex.: 25/11/2007</font><br>
+< 			</td>
+< 
+< <? if ($login_fabrica == 7){ #HD 49336 ?>
+< 			<td nowrap>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Hora Abertura</font>
+< 				<br>
+< 				<?
+< 				if (strlen($hora_abertura)==0){
+< 					#$hora_abertura = date("H:i"); //Vazio para forçar o preenchimento
+< 				}else{
+< 					$hora_abertura = substr($hora_abertura,0,5);
+< 				}
+< 				?>
+< 				<input name="hora_abertura" size="7" maxlength="5" id='hora' value="<? echo $hora_abertura ?>" type="text" class="frm" tabindex="0" >
+< 			</td>
+< <?}?>
+5303c5416,5417
+< 
+---
+> 			</tr>
+> 			<tr>
+5323c5437
+< 				>&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' style="cursor:pointer" onclick="javascript: fnc_pesquisa_produto2 (document.frm_os.produto_referencia,document.frm_os.produto_descricao,'referencia')">
+---
+> 				>&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' style="cursor:pointer" onclick="javascript: fnc_pesquisa_produto2 (document.frm_os.produto_referencia,document.frm_os.produto_descricao,'referencia')">
+5326c5440
+< 			<td nowrap>
+---
+> 			<td nowrap width="260">
+5344c5458
+< 				>&nbsp;<img src='imagens/btn_buscar5.gif'  style="cursor:pointer" border='0' align='absmiddle' onclick="javascript:fnc_pesquisa_produto2 (document.frm_os.produto_referencia,document.frm_os.produto_descricao,'descricao')"></A>
+---
+> 				>&nbsp;<img src='imagens/lupa.png'  style="cursor:pointer" border='0' align='absmiddle' onclick="javascript:fnc_pesquisa_produto2 (document.frm_os.produto_referencia,document.frm_os.produto_descricao,'descricao')"></A>
+5353c5467
+< 					N. Série.
+---
+> 					Número Série
+5361c5475
+< 					<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_numero_serie (document.frm_os.produto_serie, "produto_serie")' style='cursor: pointer'>
+---
+> 					<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_numero_serie (document.frm_os.produto_serie, "produto_serie")' style='cursor: pointer'>
+5381,5382c5495,5496
+< 
+< 						echo "<font size='1' face='Geneva, Arial, Helvetica, san-serif'>Pagar Mão-de-Obra</font>";
+---
+> 						
+> 						echo "<br><font size='1' face='Geneva, Arial, Helvetica, san-serif'>Pagar Mão-de-Obra</font>";
+5389,5390c5503
+< 			<td nowrap>
+< 			</td>
+---
+> 			
+5410a5524,5525
+> 			<td nowrap>
+> 			</td>
+5456c5571
+< 			<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 			<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+5470c5585
+< 					echo "<select name='defeito_reclamado' id='defeito_reclamado' style='width: 220px;' onfocus='listaDefeitos(document.frm_os.produto_referencia.value);' $defeito_reclamado_onchange >";
+---
+> 					echo "<select name='defeito_reclamado' class='frm' id='defeito_reclamado' style='width: 220px;' onfocus='listaDefeitos(document.frm_os.produto_referencia.value);' $defeito_reclamado_onchange >";
+5495c5610
+< 					echo "<td style='display:none;' nowrap valign='top' id='td_defeito_reclamado_descricao'><font size='1' face='Geneva, Arial, Helvetica, san-serif'>Defeito Reclamado Adicional</font><br><INPUT TYPE='text' name='defeito_reclamado_descricao' class='frm' value='$defeito_reclamado_descricao' size='30'></td>
+---
+> 					echo "<td style='display:none;' nowrap valign='top' id='td_defeito_reclamado_descricao'>Defeito Reclamado Adicional<br><INPUT TYPE='text' name='defeito_reclamado_descricao' class='frm' value='$defeito_reclamado_descricao' size='30' class='frm'></td>
+5504c5619
+< 						<font size='1' face='Geneva, Arial, Helvetica, san-serif'>Motivo</font>";
+---
+> 						Motivo";
+5506c5621
+< 					echo "<SELECT NAME='tipo_os' style='width:150px'>";
+---
+> 					echo "<SELECT NAME='tipo_os' style='width:150px' class='frm'>";
+5612c5727
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0">
+5614c5729
+< 			<td nowrap>
+---
+> 			<td nowrap width="170">
+5617c5732
+< 				<input  name ="codigo_fabricacao" class ="frm" type ="text" size ="13" maxlength="20" value ="<? echo $codigo_fabricacao ?>" onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';displayText('&nbsp;Digite aqui o número do Código de FabricaÃ§Ã£o.');">
+---
+> 				<input  name ="codigo_fabricacao" class ="frm" type ="text" size ="15" maxlength="20" value ="<? echo $codigo_fabricacao ?>" onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';displayText('&nbsp;Digite aqui o número do Código de FabricaÃ§Ã£o.');">
+5619,5620c5734
+< 			<td nowrap><?// HD15589?>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">30 dias Satisfação DeWALT/Porter Cable</font>
+---
+> 			<td nowrap width="260"><?// HD15589?>
+5622c5736,5737
+< 				<input name ="satisfacao" class ="frm" type ="checkbox" value="t" <? if ($satisfacao == 't') echo "checked"; ?>>
+---
+> 				<input name ="satisfacao" class ="frm" type ="checkbox" value="t" <? if ($satisfacao == 't') echo "checked"; ?>>&nbsp;
+> 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">30 dias Satisfação DeWALT/Porter Cable</font>
+5633c5748
+< 		<hr>
+---
+> 		
+5641c5756,5757
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+> 		<tr class="subtitulo"><td colspan="3">Informações do Consumidor</td></tr>
+5643c5759
+< 			<td>
+---
+> 			<td width="300">
+5646c5762
+< 				<input class="frm" type="text" name="consumidor_nome" size="40" maxlength="50" value="<? echo $consumidor_nome ?>" onkeyup="somenteMaiusculaSemAcento(this)" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?>  <? if ($login_fabrica == 5) { ?> onblur=" fnc_pesquisa_consumidor (document.frm_os.consumidor_nome, 'nome'); displayText('&nbsp;');" <? } ?> onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';  displayText('&nbsp;Insira aqui o nome do Cliente.');">&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_consumidor (document.frm_os.consumidor_nome, "nome")'  style='cursor: pointer'>
+---
+> 				<input class="frm" type="text" name="consumidor_nome" size="40" maxlength="50" value="<? echo $consumidor_nome ?>" onkeyup="somenteMaiusculaSemAcento(this)" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?>  <? if ($login_fabrica == 5) { ?> onblur=" fnc_pesquisa_consumidor (document.frm_os.consumidor_nome, 'nome'); displayText('&nbsp;');" <? } ?> onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';  displayText('&nbsp;Insira aqui o nome do Cliente.');">&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_consumidor (document.frm_os.consumidor_nome, "nome")'  style='cursor: pointer'>
+5648c5764
+< 			<? if($login_fabrica == 1){?>
+---
+> 			
+5649a5766,5772
+> 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">CPF</font>
+> 				<br>
+> 				<input class="frm" type="text" name="consumidor_cpf"   size="17" maxlength="18" value="<? echo $consumidor_cpf ?>" <? if ($login_fabrica == 5) { ?> onblur="fnc_pesquisa_consumidor (document.frm_os.consumidor_cpf,'cpf'); this.className='frm'; displayText('&nbsp;');" <? } ?> onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';  displayText('&nbsp;Digite o CPF do consumidor. Pode ser digitado diretamente, ou separado com pontos e tra?os.');">&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_consumidor (document.frm_os.consumidor_cpf,"cpf")'  style='cursor: pointer'>
+> 			</td>
+> 
+> 			<? if($login_fabrica == 1){?>
+> 			<td width="170">
+5652c5775
+< 				<SELECT NAME="fisica_juridica">
+---
+> 				<SELECT NAME="fisica_juridica" class="frm">
+5659,5663c5782,5786
+< 			<td>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">C.P.F. Consumidor</font>
+< 				<br>
+< 				<input class="frm" type="text" name="consumidor_cpf"   size="17" maxlength="18" value="<? echo $consumidor_cpf ?>" <? if ($login_fabrica == 5) { ?> onblur="fnc_pesquisa_consumidor (document.frm_os.consumidor_cpf,'cpf'); this.className='frm'; displayText('&nbsp;');" <? } ?> onblur = "this.className='frm'; displayText('&nbsp;');" onfocus ="this.className='frm-on';  displayText('&nbsp;Digite o CPF do consumidor. Pode ser digitado diretamente, ou separado com pontos e tra?os.');">&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_consumidor (document.frm_os.consumidor_cpf,"cpf")'  style='cursor: pointer'>
+< 			</td>
+---
+> 			<? if($login_fabrica <> 1){?>
+> 				<td width="170">&nbsp;</td>
+> 			<? } ?>
+> 			</tr>
+> 			<tr>
+5674a5798,5799
+> 			<td>&nbsp;</td>
+> 			
+5678c5803
+< 		<table width='700' align='center' border='0' cellspacing='2' cellpadding='2'>
+---
+> 		<table width='650' align='center' border='0' cellspacing='2' cellpadding='2'>
+5680,5684c5805
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Endereço</font></td>
+< 
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Número</font></td>
+< 
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Compl.</font></td>
+---
+> 	<td width="300"><font size="1" face="Geneva, Arial, Helvetica, san-serif">Endereço</font></td>
+5686c5807
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Bairro</font></td>
+---
+> 	<td width="170"><font size="1" face="Geneva, Arial, Helvetica, san-serif">Número</font></td>
+5688c5809
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Cidade</font></td>
+---
+> 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Complemento</font></td>
+5690d5810
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Estado</font></td>
+5694c5814
+< 	<td>
+---
+> 	<td width="300">
+5698c5818
+< 	<td>
+---
+> 	<td width="69">
+5705a5826,5837
+> 	
+> </tr>
+> 
+> <tr>
+> 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Bairro</font></td>
+> 
+> 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Cidade</font></td>
+> 
+> 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Estado</font></td>
+> </tr>
+> 
+> <tr>
+5711c5843
+< 		<input class="frm" type="text" name="consumidor_cidade" id="consumidor_cidade"  size="15" maxlength="50" value="<? echo $consumidor_cidade ?>" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite a cidade do consumidor.');">
+---
+> 		<input class="frm" type="text" name="consumidor_cidade" id="consumidor_cidade"  size="15" maxlength="50" value="<? echo $consumidor_cidade ?>" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite a cidade do consumidor.');" onkeypress="return  BloqueiaNumeros(event)">
+5715c5847,5878
+< 		<input class="frm" type="text" name="consumidor_estado" id="consumidor_estado"  size="2" maxlength="2" value="<? echo $consumidor_estado ?>" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite o estado do consumidor.');">
+---
+> 		<!--<input class="frm" type="text" name="consumidor_estado" id="consumidor_estado"  size="2" maxlength="2" value="<? echo $consumidor_estado ?>" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite o estado do consumidor.');" onkeypress="return  BloqueiaNumeros(event)"> -->
+> 
+> 		<select name="consumidor_estado" class='frm'>
+> 			<option value=""   <? if (strlen($consumidor_estado) == 0)    echo " selected "; ?>></option>
+> 			<option value="AC" <? if ($estado == "AC") echo " selected "; ?>>AC</option>
+> 			<option value="AL" <? if ($estado == "AL") echo " selected "; ?>>AL</option>
+> 			<option value="AM" <? if ($estado == "AM") echo " selected "; ?>>AM</option>
+> 			<option value="AP" <? if ($estado == "AP") echo " selected "; ?>>AP</option>
+> 			<option value="BA" <? if ($estado == "BA") echo " selected "; ?>>BA</option>
+> 			<option value="CE" <? if ($estado == "CE") echo " selected "; ?>>CE</option>
+> 			<option value="DF" <? if ($estado == "DF") echo " selected "; ?>>DF</option>
+> 			<option value="ES" <? if ($estado == "ES") echo " selected "; ?>>ES</option>
+> 			<option value="GO" <? if ($estado == "GO") echo " selected "; ?>>GO</option>
+> 			<option value="MA" <? if ($estado == "MA") echo " selected "; ?>>MA</option>
+> 			<option value="MG" <? if ($estado == "MG") echo " selected "; ?>>MG</option>
+> 			<option value="MS" <? if ($estado == "MS") echo " selected "; ?>>MS</option>
+> 			<option value="MT" <? if ($estado == "MT") echo " selected "; ?>>MT</option>
+> 			<option value="PA" <? if ($estado == "PA") echo " selected "; ?>>PA </option>
+> 			<option value="PB" <? if ($estado == "PB") echo " selected "; ?>>PB</option>
+> 			<option value="PE" <? if ($estado == "PE") echo " selected "; ?>>PE</option>
+> 			<option value="PI" <? if ($estado == "PI") echo " selected "; ?>>PIí</option>
+> 			<option value="PR" <? if ($estado == "PR") echo " selected "; ?>>PR</option>
+> 			<option value="RJ" <? if ($estado == "RJ") echo " selected "; ?>>RJ</option>
+> 			<option value="RN" <? if ($estado == "RN") echo " selected "; ?>>RN</option>
+> 			<option value="RO" <? if ($estado == "RO") echo " selected "; ?>>RO</option>
+> 			<option value="RR" <? if ($estado == "RR") echo " selected "; ?>>RR</option>
+> 			<option value="RS" <? if ($estado == "RS") echo " selected "; ?>>RS</option>
+> 			<option value="SC" <? if ($estado == "SC") echo " selected "; ?>>SC</option>
+> 			<option value="SE" <? if ($estado == "SE") echo " selected "; ?>>SE</option>
+> 			<option value="SP" <? if ($estado == "SP") echo " selected "; ?>>SP</option>
+> 			<option value="TO" <? if ($estado == "TO") echo " selected "; ?>>TO</option>
+> 		</select>
+5717a5881
+> 
+5719c5883
+< 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Email</font>
+---
+> 	<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">E-mail</font>
+5724,5725c5888
+< 	<td>
+< 	</td>
+---
+> 	
+5730a5894,5895
+> 	<td>
+> 	</td>
+5909,5916d6073
+< <table width='700' align='center' border='0' cellspacing='2' cellpadding='2'>
+< <tr class="top">
+< 	<td  class="top">Informações sobre a Revenda</td>
+< </tr>
+< </table>
+< 
+< 		<hr>
+< 
+5921,5922c6078,6080
+< 		<div id='revenda_fixo' style='display:none; background:#efefef; border:#999999 1px solid;'>
+< 		<table  width='700' border="0" cellspacing="5" cellpadding="0">
+---
+> 		<div id='revenda_fixo' style='display:none; background:#efefef; border:#999999 1px solid; width:700px;'>
+> 		<table  width="650' border="0" cellspacing="5" cellpadding="0" align="center">
+> 		<tr class="subtitulo"><td colspan="4">Informações sobre a Revenda</td></tr>
+5924c6082
+< 				<td>
+---
+> 				<td width="300">
+5932c6090,6091
+< 					<input class="frm" type="text" name="txt_revenda_cnpj" id="txt_revenda_cnpj" size="20" maxlength="18" id="txt_revenda_cnpj" value="" readonly>
+---
+> 					<input class="frm" type="text" name="txt_revenda_cnpj" id="txt_revenda_cnpj" size="20" maxlength="18" id="txt_revenda_cnpj" value="" onkeyup="re = /\D/g; this.value
+> 					= this.value.replace(re, '');" readonly>
+5947c6106
+< 		<table  width='700'  border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table  width="650'  border="0" cellspacing="5" cellpadding="0">
+5973c6132
+< 		<table  width='700'  border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table  width="650'  border="0" cellspacing="5" cellpadding="0">
+5995c6154,6155
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+> 			<tr class="subtitulo"><td colspan="4">Informações sobre a Revenda</td></tr>
+5997c6157
+< 			<td>
+---
+> 			<td width="300">
+6000c6160
+< 				<input class="frm" type="text" name="revenda_nome" id="revenda_nome" size="30" maxlength="50" value="<? echo $revenda_nome ?>" onkeyup="somenteMaiusculaSemAcento(this)" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite o nome da REVENDA onde foi adquirido o produto.');">&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_revenda (document.frm_os.revenda_nome, "nome")' style='cursor: pointer'>
+---
+> 				<input class="frm" type="text" name="revenda_nome" id="revenda_nome" size="30" maxlength="50" value="<? echo $revenda_nome ?>" onkeyup="somenteMaiusculaSemAcento(this)" <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?> onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Digite o nome da REVENDA onde foi adquirido o produto.');">&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_revenda (document.frm_os.revenda_nome, "nome")' style='cursor: pointer' >
+6005c6165
+< 				<input class="frm" type="text" name="revenda_cnpj" size="20" maxlength="18" id="revenda_cnpj" value="<? echo $revenda_cnpj ?>" onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Insira o número no Cadastro Nacional de Pessoa Jurídica.'); " onKeyUp="formata_cnpj(this.value, 'frm_os')">&nbsp;<img src='imagens/btn_buscar5.gif' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_revenda (document.frm_os.revenda_cnpj, "cnpj")' style='cursor: pointer'>
+---
+> 				<input class="frm" type="text" name="revenda_cnpj" size="20" maxlength="18" id="revenda_cnpj" value="<? echo $revenda_cnpj ?>" onblur="this.className='frm'; displayText('&nbsp;');" onfocus="this.className='frm-on'; displayText('&nbsp;Insira o número no Cadastro Nacional de Pessoa Jurídica.'); " onKeyUp="formata_cnpj(this.value, 'frm_os');re = /\D/g; this.value= this.value.replace(re, ''); ">&nbsp;<img src='imagens/lupa.png' border='0' align='absmiddle' onclick='javascript: fnc_pesquisa_revenda (document.frm_os.revenda_cnpj, "cnpj")' style='cursor: pointer'>
+6006a6167,6169
+> 		</tr>
+> 
+> 		<tr>
+6025c6188
+< 				<input class="frm" type="text" name="data_nf"    size="12" maxlength="10" value="<? echo $data_nf ?>" tabindex="0" ><br><font face='arial' size='1'>Ex.: 25/11/2007</font>
+---
+> 				<input class="frm" type="text" name="data_nf"  id="data_nf"  size="12" maxlength="10" value="<? echo $data_nf ?>" tabindex="0" ><br><font face='arial' size='1'>Ex.: 25/11/2007</font>
+6045,6054c6208,6209
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="2">
+< 		<tr>
+< 			<? if ($login_fabrica == 7) { # HD 32143 ?>
+< 					<input type='hidden' name="consumidor_revenda" value='<? if (strlen($consumidor_revenda)==0 or strlen($os)==0) {echo 'C';}else{echo $consumidor_revenda;}?>'>
+< 			<?}else{?>
+< 			<td>
+< 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Consumidor</font>&nbsp;<input type="radio" name="consumidor_revenda" value='C' <? if (strlen($consumidor_revenda) == 0 OR $consumidor_revenda == 'C') echo "checked"; ?> <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?>>
+< 			</td>
+< 
+< 			<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">ou</font></td>
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="2" align="center">
+> 		
+6056,6058c6211,6212
+< 			<td><font size="1" face="Geneva, Arial, Helvetica, san-serif">Revenda</font>&nbsp;<input type="radio" name="consumidor_revenda" value='R' <? if ($consumidor_revenda == 'R') echo " checked"; ?>>&nbsp;&nbsp;</td>
+< 			<? } ?>
+< 			<td>
+---
+> 		<tr>
+> 			<td width="295">
+6112a6267,6280
+> 		
+> 		<tr>
+> 			<? if ($login_fabrica == 7) { # HD 32143 ?>
+> 					<input type='hidden' name="consumidor_revenda" value='<? if (strlen($consumidor_revenda)==0 or strlen($os)==0) {echo 'C';}else{echo $consumidor_revenda;}?>'>
+> 			<?}else{?>
+> 			<td COLSPAN="2">
+> 				<font size="1" face="Geneva, Arial, Helvetica, san-serif">Consumidor</font>&nbsp;<input type="radio" name="consumidor_revenda" value='C' <? if (strlen($consumidor_revenda) == 0 OR $consumidor_revenda == 'C') echo "checked"; ?> <? if($login_fabrica==50){?>onChange="javascript: this.value=this.value.toUpperCase();"<?}?>>
+> 			
+> 
+> 			
+> 
+> 			<font size="1" face="Geneva, Arial, Helvetica, san-serif">Revenda</font>&nbsp;<input type="radio" name="consumidor_revenda" value='R' <? if ($consumidor_revenda == 'R') echo " checked"; ?>>&nbsp;&nbsp;</td>
+> 			<? } ?>
+> 		</tr>
+6178c6346
+< 		<table width='700' align='center' border='0' cellspacing='2' cellpadding='2'>
+---
+> 		<table width="650' align='center' border='0' cellspacing='2' cellpadding='2'>
+6183,6185c6351,6352
+< 		<hr>
+< 
+< 		<table  width='700' border="1" cellspacing="5" cellpadding="3" bgcolor='#CCCCCC' class="bordasimples">
+---
+> 		
+> 		<table  width="650' border="0" cellspacing="5" cellpadding="3" bgcolor='#CCCCCC' class="bordasimples">
+6217c6384,6385
+< 			<table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> 			<table width="650" border="0" cellspacing="5" cellpadding="0" align="center">
+> 			<tr class="subtitulo"><td colspan="3">Informações do Chamado</td></tr>
+6219c6387
+< 		<hr>
+---
+> 		
+6234,6235c6402,6403
+< 		<table width="100%" border="0" cellspacing="5" cellpadding="0">
+< 		<tr style='font-size:10px' valign='top'>
+---
+> 		<table width="650" border="0" cellspacing="5" cellpadding="0" align="center" class="formulario">
+> 		<tr valign='top'>
+6382c6550
+< 	<td><img height="1" width="16" src="imagens/spacer.gif"></td>
+---
+> 	
+6386c6554
+< <table width="100%" border="0" cellspacing="5" cellpadding="0">
+---
+> <table width="700" border="0" class="formulario" cellspacing="5" cellpadding="0" align="center">
+6388c6556
+< 	<td height="27" valign="middle" align="center" bgcolor="#FFFFFF">
+---
+> 	<td height="27" valign="middle" align="center" >
+6462c6630
+< 		<img src='imagens/btn_continuar.gif' style="cursor:pointer" onclick="javascript: if (document.frm_os.btn_acao.value == '' ) { document.frm_os.btn_acao.value='continuar' ; document.frm_os.submit() } else { alert ('Dados já gravados. Se você clicou em Voltar no seu browser ou clicou mais de uma vez no botão, acesse novamente a tela pelos Menus do sistema.') }" ALT="Continuar com Ordem de Serviço" border='0'>
+---
+> 		<input type="image" src='imagens/btn_continuar.gif' style="cursor:pointer" onclick="javascript: if (document.frm_os.btn_acao.value == '' ) { document.frm_os.btn_acao.value='continuar' ; document.frm_os.submit() } else { alert ('Dados já gravados. Se você clicou em Voltar no seu browser ou clicou mais de uma vez no botão, acesse novamente a tela pelos Menus do sistema.') } return false;" ALT="Continuar com Ordem de Serviço" border='0'>
+6471c6639
+< 	<table width='500' align='center' border='2' cellspacing='0' bgcolor='#9DB6FF' style='' class=''>
+---
+> 	<table width='100%' align='center' border='2' cellspacing='0' style='' class='formulario'>
+6746c6914
+< 		if (in_array($login_fabrica,array(3,45,35,11,25,51,14,66,24,19,81,40,80,72)) or $login_fabrica > 80) {
+---
+> 		if (in_array($login_fabrica,array(3,45,35,11,25,51,14,66,24,19,81,40,80)) or $login_fabrica > 80) {
+7181c7349
+< 								<td>CPF do Titular</td>
+---
+> 								<td>CPF/CNPJ do Titular</td>

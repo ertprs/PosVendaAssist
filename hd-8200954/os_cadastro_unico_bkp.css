@@ -1,0 +1,340 @@
+div {
+color: #333333;
+}
+
+select {
+margin: 0px;
+font: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+height: 17px;
+background-color: #F0F0F0;
+border: 1px solid #888888;
+}
+
+input {
+margin: 0px;
+}
+
+input[type="text"] {
+}
+
+label{
+background-color:#D9E2EF;
+display: block;
+margin-bottom: 2px;
+}
+
+label.ajuda{
+display: none;
+}
+
+label.obrigatorio {
+color: #CC0000;
+}
+
+.msg_erro{
+    background-color:#FF0000;
+    font: bold 16px "Arial";
+    color:#FFFFFF;
+    text-align:center;
+	width: 700px;
+}
+
+.msg_erro > a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.div_grupo {
+width: 690px;
+text-align: left;
+background-color: #D9E2EF;
+margin-bottom: 10px;
+border-bottom: 1px solid #7092BE;
+padding: 5px;
+}
+
+div#dados_km {
+text-align: center;
+}
+
+.div_mostra_imagem {
+width: 100%;
+padding: 10px;
+text-align: center;
+display: none;
+}
+
+.div_campo{
+display: inline-block;
+height: 35px;
+padding: 2px;
+}
+
+.div_textarea{
+height: 100%;
+}
+
+.label_grupo{
+font-size: 11px;
+background-color: #7092BE;
+padding: 3px;
+color: #FFFFFF;
+font-weight : bold;
+text-align:center ;
+}
+
+.div_text_date {
+	min-width: 100px;
+}
+
+.input_text_date {
+	width: 85px;
+}
+
+.div_input_hidden{
+display:none;
+}
+
+.header_label {
+	display: inline-block;
+	padding: 4px;
+}
+
+/* INÍCIO: Correções no datepicker */
+a.dp-choose-date {
+	float: right;
+}
+
+input.dp-applied {
+	float: none;
+}
+/* FIM: Correções no datepicker */
+
+.toolbar {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+.orientacao {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: left;
+}
+
+#analise_os_header_label_0 {
+	width: 336px;
+}
+
+#analise_os_header_label_1 {
+	width: 336px;
+}
+
+#itens_os_header_label_0 {
+	width: 340px;
+}
+
+#itens_os_header_label_1 {
+	width: 40px;
+}
+
+#itens_os_header_label_2 {
+	width: 130px;
+}
+
+#itens_os_header_label_3 {
+	width: 130px;
+}
+
+#data_abertura{
+
+}
+
+#consumidor_revenda{
+
+}
+
+#tipo_atendimento{
+
+}
+
+#produto{
+	width: 370px;
+}
+
+#serie{
+	width: 166px;
+}
+
+#nota_fiscal{
+	width: 130px;
+}
+
+#data_nf{
+	width: 85px;
+}
+
+#prateleira_box{
+	width: 75px;
+}
+
+#defeito_reclamado_descricao{
+	width: 196px;
+}
+
+#aparencia_produto{
+	width: 142px;
+}
+
+#acessorios{
+	width: 130px;
+}
+
+#consumidor_nome{
+	width: 370px;
+}
+
+#consumidor_cpf{
+	width: 166px;
+}
+
+#consumidor_fone{
+	width: 130px;
+}
+
+#consumidor_cep{
+	width: 80px;
+}
+
+#consumidor_endereco{
+	width: 313px;
+}
+
+#consumidor_numero{
+	width: 135px;
+}
+
+#consumidor_complemento{
+	width: 130px;
+}
+
+#consumidor_bairro{
+	width: 268px;
+}
+
+#consumidor_cidade{
+	width: 268px;
+}
+
+#consumidor_estado{
+	width: 130px;
+}
+
+#consumidor_email{
+	width: 682px;
+}
+
+#revenda_nome{
+	width: 370px;
+}
+
+#revenda_cnpj{
+	width: 166px;
+}
+
+#revenda_fone{
+	width: 130px;
+}
+
+#revenda_cep{
+	width: 80px;
+}
+
+#revenda_endereco{
+	width: 313px;
+}
+
+#revenda_numero{
+	width: 135px;
+}
+
+#revenda_complemento{
+	width: 130px;
+}
+
+#revenda_bairro{
+	width: 268px;
+}
+
+#revenda_cidade{
+	width: 268px;
+}
+
+#revenda_estado{
+	width: 130px;
+}
+
+#defeito_constatado_descricao{
+	width: 336px;
+}
+
+#btn_ver_mapa {
+	display: none;
+}
+
+#obs {
+	width: 680px;
+	height: 100px;
+}
+
+#btn_obs_help{
+	cursor: pointer;
+}
+
+.defeito_constatado_analise{
+	width: 336px;
+}
+
+.solucao_os_analise{
+	width: 336px;
+}
+
+.peca_itens {
+	width: 340px;
+}
+
+.qtde_itens{
+	width: 45px;
+}
+
+.defeito_itens{
+	width: 140px;
+}
+
+.servico_itens{
+	width: 140px;
+}
+
+.campos_itens {
+	height: 20px;
+}
+
+.campos_analise{
+	height: 20px;
+}
+
+.__modelo__ {
+display: none;
+}
+
+#div_mapa_msg {
+display: inline;
+}
+
+.bloqueado {
+color: #555555;
+}

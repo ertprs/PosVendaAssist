@@ -1,0 +1,295 @@
+14a15
+> 
+34a36,269
+> 
+> if ($_GET["continuar_chamado"] && $_GET["Id"]) {
+> 	$hd_chamado = $_GET["Id"];
+> 
+> 	$sql = "
+> 	SELECT
+> 	hd_chamado
+> 
+> 	FROM
+> 	tbl_hd_chamado
+> 
+> 	WHERE
+> 	hd_chamado=$hd_chamado
+> 	AND fabrica=$login_fabrica
+> 	AND fabrica_responsavel=$login_fabrica
+> 	";
+> 	$res = pg_query($con, $sql);
+> 
+> 	if (pg_num_rows($res)) {
+> 		$msg_erro = array();
+> 
+> 		$sql = "BEGIN TRANSACTION";
+> 		$res = pg_query($con, $sql);
+> 		$msg_erro[] = pg_errormessage($con);
+> 
+> 		$sql = "
+> 		INSERT INTO tbl_hd_chamado (
+> 		admin,
+> 		posto,
+> 		titulo,
+> 		status,
+> 		atendente,
+> 		fabrica_responsavel,
+> 		categoria,
+> 		duracao,
+> 		exigir_resposta,
+> 		fabrica,
+> 		empregado,
+> 		orcamento,
+> 		pessoa,
+> 		sequencia_atendimento,
+> 		tipo_chamado,
+> 		cliente,
+> 		cliente_admin
+> 		)
+> 
+> 		SELECT
+> 		admin,
+> 		posto,
+> 		titulo,
+> 		'Aberto',
+> 		$login_admin,
+> 		fabrica_responsavel,
+> 		categoria,
+> 		duracao,
+> 		exigir_resposta,
+> 		fabrica,
+> 		empregado,
+> 		orcamento,
+> 		pessoa,
+> 		sequencia_atendimento,
+> 		tipo_chamado,
+> 		cliente,
+> 		cliente_admin
+> 
+> 		FROM
+> 		tbl_hd_chamado
+> 
+> 		WHERE
+> 		hd_chamado=$hd_chamado
+> 		";
+> 		$res = pg_query($con, $sql);
+> 		$msg_erro[] = pg_errormessage($con);
+> 
+> 		$res = pg_query($con, "SELECT CURRVAL('seq_hd_chamado')");
+> 		$hd_chamado_novo = pg_result($res, 0, 0);
+> 		$msg_erro[] = pg_errormessage($con);
+> 
+> 		$sql = "
+> 		INSERT INTO tbl_hd_chamado_extra (
+> 		hd_chamado,
+> 		reclamado,
+> 		defeito_reclamado,
+> 		serie,
+> 		hora_ligacao,
+> 		produto,
+> 		posto,
+> 		os,
+> 		receber_info_fabrica,
+> 		consumidor_revenda,
+> 		origem,
+> 		revenda,
+> 		revenda_nome,
+> 		data_nf,
+> 		nota_fiscal,
+> 		nome,
+> 		endereco,
+> 		numero,
+> 		complemento,
+> 		bairro,
+> 		cep,
+> 		fone,
+> 		fone2,
+> 		email,
+> 		cpf,
+> 		rg,
+> 		cidade,
+> 		qtde_km,
+> 		abre_os,
+> 		defeito_reclamado_descricao,
+> 		numero_processo,
+> 		tipo_registro,
+> 		celular,
+> 		revenda_cnpj,
+> 		atendimento_callcenter
+> 		)
+> 
+> 		SELECT
+> 		$hd_chamado_novo,
+> 		reclamado,
+> 		defeito_reclamado,
+> 		serie,
+> 		hora_ligacao,
+> 		produto,
+> 		posto,
+> 		os,
+> 		receber_info_fabrica,
+> 		consumidor_revenda,
+> 		origem,
+> 		revenda,
+> 		revenda_nome,
+> 		data_nf,
+> 		nota_fiscal,
+> 		nome,
+> 		endereco,
+> 		numero,
+> 		complemento,
+> 		bairro,
+> 		cep,
+> 		fone,
+> 		fone2,
+> 		email,
+> 		cpf,
+> 		rg,
+> 		cidade,
+> 		qtde_km,
+> 		'f',
+> 		defeito_reclamado_descricao,
+> 		numero_processo,
+> 		tipo_registro,
+> 		celular,
+> 		revenda_cnpj,
+> 		atendimento_callcenter
+> 
+> 		FROM
+> 		tbl_hd_chamado_extra
+> 
+> 		WHERE
+> 		hd_chamado=$hd_chamado
+> 		";
+> 		$res = pg_query($con, $sql);
+> 		$msg_erro[] = pg_errormessage($con);
+> 
+> 		$sql = "
+> 		INSERT INTO
+> 		tbl_hd_chamado_item (
+> 		hd_chamado,
+> 		data,
+> 		comentario,
+> 		admin,
+> 		posto,
+> 		interno,
+> 		status_item,
+> 		empregado,
+> 		pessoa,
+> 		termino,
+> 		tempo_interacao,
+> 		enviar_email,
+> 		atendimento_telefone,
+> 		produto,
+> 		serie,
+> 		defeito_reclamado,
+> 		os
+> 		)
+> 
+> 		SELECT
+> 		$hd_chamado_novo,
+> 		data,
+> 		comentario,
+> 		admin,
+> 		posto,
+> 		interno,
+> 		'Aberto',
+> 		empregado,
+> 		pessoa,
+> 		termino,
+> 		tempo_interacao,
+> 		enviar_email,
+> 		atendimento_telefone,
+> 		produto,
+> 		serie,
+> 		defeito_reclamado,
+> 		os
+> 
+> 		FROM
+> 		tbl_hd_chamado_item
+> 
+> 		WHERE
+> 		hd_chamado=$hd_chamado
+> 		";
+> 		$res = pg_query($con, $sql);
+> 		$msg_erro[] = pg_errormessage($con);
+> 
+> 		$msg_erro = implode("", $msg_erro);
+> 
+> 		if (strlen($msg_erro)) {
+> 			$sql = "ROLLBACK TRANSACTION";
+> 			$res = pg_query($con, $sql);
+> 			header("location:" . $PHP_SELF);
+> 			die;
+> 		}
+> 		else {
+> 			$sql = "COMMIT TRANSACTION";
+> 			$res = pg_query($con, $sql);
+> 			header("location:" . $PHP_SELF . "?callcenter=$hd_chamado_novo");
+> 			die;
+> 		}
+> 	}
+> 	else {
+> 		header("location:" . $PHP_SELF);
+> 		die;
+> 	}
+> }
+> 
+1009c1244
+< 					$xbanco = $banco;
+---
+> 					$xbanco = "'".$banco."'";
+1023c1258
+< 				}else {
+---
+> 				}else{
+1810d2044
+< 					
+2551d2784
+< 
+4107,4117d4339
+< function validaOsRessarcimento() {
+< 	
+< 	var os = $('#os').val();
+< 
+< 	if (os.length == 0) {
+< 		alert('Para fazer o ressarcimento é necessario escolher a Ordem de serviço no cabeçalho do programa');		
+< 	} else {
+< 		$('#os_ressarcimento').val(os);
+< 	}
+< }
+< 
+4122c4344
+< <link rel="stylesheet" href="js/thickbox.css" type="text/css" media="screen"/>
+---
+> <link rel="stylesheet" href="js/thickbox.css" type="text/css" media="screen" />
+5883c6105
+< 			<a href="#ressarcimento" onclick="javascript:$('#tab_atual').val('ressarcimento');validaOsRessarcimento();">
+---
+> 			<a href="#ressarcimento" onclick="javascript:$('#tab_atual').val('ressarcimento')">
+7052d7273
+< 
+7054d7274
+< 									$selected = '';
+7634a7855,7875
+> 					}elseif($login_fabrica==24){
+> 				?>
+> 						<script>
+> 							function questiona(){
+> 								{
+> 									var name=confirm("Dar continuidade neste chamado, transportando todas as informações para o novo chamado?")
+> 									if (name==true)
+> 									{
+> 										document.forms['frm_callcenter'].submit();
+> 										window.location='<?=$PHP_SELF?>?Id=<?echo $callcenter;?>&continuar_chamado=sim';
+> 									}
+> 									else
+> 									{
+> 										window.location='<?=$PHP_SELF?>?Id=<?echo $callcenter;?>';
+> 									}
+> 								}
+> 							}
+> 						</script>
+> 						<input  class="input"  type="button" name="bt" value='Sim' onclick="javascript:questiona();">
+> 
+> 				<?

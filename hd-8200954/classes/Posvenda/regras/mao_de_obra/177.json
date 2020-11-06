@@ -1,0 +1,5 @@
+{
+    "nao_calcula_peca": true,
+    "nao_calcula_km": true,
+    "calcula_mo_tipo_atendimento":["349","353"]
+}

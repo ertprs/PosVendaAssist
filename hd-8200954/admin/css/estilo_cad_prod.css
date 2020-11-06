@@ -1,0 +1,30 @@
+/* on IE5.x dotted lines only show if they are 2px. using box model hack to get round this */
+
+.contentBlockLeft, .contentBlockRight, {
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 2px;	
+
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+
+}
+
+html>body contentBlockLeft,  .contentBlockRight {
+	border: 1px dotted #97D0EC;
+} 
+
+.contentBlockRight, .contentBlockBig {
+	margin-right: 0px;
+}
+
+
+/*
+handle to footer stuff. using box model hack for outline again to deal with outline on IE5
+*/
+
+
+
+html>body #footer {
+	border-style: dotted;
+}

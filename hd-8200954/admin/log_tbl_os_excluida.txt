@@ -1,0 +1,351 @@
+aprova_exclusao.php:				$sqly = " SELECT DISTINCT tbl_os_excluida.os ,
+aprova_exclusao.php:						tbl_os_excluida.sua_os ,
+aprova_exclusao.php:						tbl_os_excluida.consumidor_nome ,
+aprova_exclusao.php:						TO_CHAR(tbl_os_excluida.data_abertura,'DD/MM/YYYY') AS data_abertura,
+aprova_exclusao.php:						TO_CHAR(tbl_os_excluida.data_digitacao,'DD/MM/YYYY') AS data_digitacao,
+aprova_exclusao.php:						tbl_os_excluida.fabrica ,
+aprova_exclusao.php:						tbl_os_excluida.consumidor_nome ,
+aprova_exclusao.php:						tbl_os_excluida.serie AS produto_serie ,
+aprova_exclusao.php:						(SELECT status_os FROM tbl_os_status WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_os ,
+aprova_exclusao.php:						(SELECT observacao FROM tbl_os_status WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_observacao,
+aprova_exclusao.php:						(SELECT tbl_status_os.descricao FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_descricao,
+aprova_exclusao.php:						(SELECT tbl_admin.login FROM tbl_os_status JOIN tbl_admin USING(admin) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS admin_exclusao,
+aprova_exclusao.php:						(SELECT TO_CHAR(tbl_os_status.data,'DD/MM/YYYY') FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data,
+aprova_exclusao.php:						(SELECT tbl_os_status.data FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data2
+aprova_exclusao.php:					JOIN tbl_os_excluida ON tbl_os_excluida.os = X.os
+aprova_exclusao.php:					JOIN tbl_produto ON tbl_produto.produto = tbl_os_excluida.produto
+aprova_exclusao.php:					JOIN tbl_posto ON tbl_os_excluida.posto = tbl_posto.posto
+aprova_exclusao.php:					WHERE tbl_os_excluida.fabrica = $login_fabrica
+aprova_exclusao.php:						$sqly .= " AND tbl_os_excluida.data_digitacao BETWEEN '$xdata_inicial' AND '$xdata_final' ";
+aprova_exclusao.php:						(SELECT tbl_os_status.data FROM tbl_os_status JOIN tbl_status_os USING(status_os) WHERE tbl_os_excluida.os = tbl_os_status.os AND status_os IN (110,111,112) ORDER BY data DESC LIMIT 1) AS status_data2
+_data_fechamento.txt:defeito_os_consulta-2008-03-26.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta-2008-03-26.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-2008-03-26.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-v1.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta-v1.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-v1.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-xls_20080610.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta-xls_20080610.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-xls_20080610.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-xls_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-xls.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-xls.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-xls-V1.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-xls-V1.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:defeito_os_consulta-xls-v2.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+_data_fechamento.txt:defeito_os_consulta-xls-v2.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+_data_fechamento.txt:defeito_os_consulta-xls-v2.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+_data_fechamento.txt:os_consulta_blackedecker.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:os_consulta-error.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento,
+_data_fechamento.txt:os_consulta-error.php:							tbl_os_excluida.data_fechamento                                     ,
+_data_fechamento.txt:os_consulta_excluida_20080911.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+_data_fechamento.txt:os_consulta_excluida_20080911.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+_data_fechamento.txt:os_consulta_excluida_20081027-sono.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+_data_fechamento.txt:os_consulta_excluida_20081027-sono.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+_data_fechamento.txt:os_consulta_excluida.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+_data_fechamento.txt:os_consulta_excluida.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+_data_fechamento.txt:os_consulta_excluida_teste.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+_data_fechamento.txt:os_consulta_excluida_teste.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+_data_fechamento.txt:os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+_data_fechamento.txt:os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+_data_fechamento.txt:os_consulta.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+_data_fechamento.txt:os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+_data_fechamento.txt:os_cortesia_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+_data_fechamento.txt:os_cortesia_consulta_ant.php:		$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date < '$dia_inicial' AND data_fechamento IS NULL) ";
+_data_fechamento.txt:os_cortesia_consulta_ant.php:	$monta_sql .= " and tbl_os_excluida.data_fechamento $situacao ";
+defeito_os_consulta_ant.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta_ant.php:				FROM		tbl_os_excluida
+defeito_os_consulta_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+defeito_os_consulta.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";	
+defeito_os_consulta.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR 
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta.php:				FROM		tbl_os_excluida
+defeito_os_consulta.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+defeito_os_consulta-xls_ant.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls_ant.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls_ant.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+defeito_os_consulta-xls.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_hoje_inicio 00:00:00' AND '$dia_hoje_final 23:59:59') ";	
+defeito_os_consulta-xls.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_ontem_inicial 00:00:00' AND '$dia_ontem_final 23:59:59') ";
+defeito_os_consulta-xls.php:	$monta_sql2 .=" AND (tbl_os_excluida.data_digitacao BETWEEN '$dia_semana_inicial 00:00:00' AND '$dia_semana_final 23:59:59') ";
+defeito_os_consulta-xls.php:	$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao < '$dia_aberto 00:00:00' AND tbl_os_excluida.data_fechamento IS NULL) ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " AND (tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial 00:00:00' AND '$x_data_final 23:59:59') ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " $xsql tbl_os_excluida.codigo_posto = '$codigo_posto' ";
+defeito_os_consulta-xls.php:		$monta_sql2 .= " $xsql (tbl_os_excluida.sua_os = '$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00000$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000000$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000000$numero_os' OR 
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '00000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '000000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '0000000000$numero_os' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-01' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-02' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-03' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-04' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-05' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-06' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-07' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-08' OR
+defeito_os_consulta-xls.php:								tbl_os_excluida.sua_os = '$numero_os-09') ";
+defeito_os_consulta-xls.php:				SELECT      lpad(tbl_os_excluida.sua_os,10,'0')                   AS ordem              ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.os                                                          ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.sua_os                                                      ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data               ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura           ,
+defeito_os_consulta-xls.php:							to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento         ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.data_digitacao                        AS data_consulta      ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.serie                                                       ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.consumidor_nome                                             ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.data_fechamento                                             ,
+defeito_os_consulta-xls.php:							tbl_os_excluida.nota_fiscal                                                 ,
+defeito_os_consulta-xls.php:				FROM		tbl_os_excluida
+defeito_os_consulta-xls.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica";
+extrato_consulta_os_20090416gustavo.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os.php:				$sql = "insert into tbl_os_excluida (
+extrato_consulta_os_teste.php:				$sql = "insert into tbl_os_excluida (
+os_consulta_blackedecker.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.os                                                          ,
+os_consulta_blackedecker.php:							tbl_os_excluida.sua_os                                                      ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_consulta_blackedecker.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_consulta_blackedecker.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_consulta_blackedecker.php:							tbl_os_excluida.serie                                                       ,
+os_consulta_blackedecker.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.data_fechamento                                             ,
+os_consulta_blackedecker.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_consulta_blackedecker.php:				FROM		tbl_os_excluida
+os_consulta_blackedecker.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+os_consulta-error.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                  AS ordem      ,
+os_consulta-error.php:							tbl_os_excluida.os                                                  ,
+os_consulta-error.php:							tbl_os_excluida.sua_os                                              ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data      ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura  ,
+os_consulta-error.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento,
+os_consulta-error.php:							tbl_os_excluida.serie                                               ,
+os_consulta-error.php:							tbl_os_excluida.consumidor_nome                                     ,
+os_consulta-error.php:							tbl_os_excluida.data_fechamento                                     ,
+os_consulta-error.php:				FROM		tbl_os_excluida
+os_consulta-error.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta_excluida.php:				tbl_os_excluida.os                                                        ,
+os_consulta_excluida.php:				tbl_os_excluida.sua_os                                                    ,
+os_consulta_excluida.php:				tbl_os_excluida.codigo_posto                                              ,
+os_consulta_excluida.php:				tbl_os_excluida.referencia_produto                                        ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao   ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura    ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+os_consulta_excluida.php:				tbl_os_excluida.serie                                                     ,
+os_consulta_excluida.php:				tbl_os_excluida.nota_fiscal                                               ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf          ,
+os_consulta_excluida.php:				tbl_os_excluida.consumidor_nome                                           ,
+os_consulta_excluida.php:				to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao
+os_consulta_excluida.php:		FROM 	tbl_os_excluida
+os_consulta_excluida.php:		LEFT JOIN tbl_produto ON tbl_produto.referencia = tbl_os_excluida.referencia_produto
+os_consulta_excluida.php:		WHERE	tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta_excluida.php:					tbl_os_excluida.fabrica                                                    ,
+os_consulta_excluida.php:					tbl_os_excluida.os                                                         ,
+os_consulta_excluida.php:					tbl_os_excluida.sua_os                                                     ,
+os_consulta_excluida.php:					tbl_os_excluida.codigo_posto                                               ,
+os_consulta_excluida.php:					tbl_os_excluida.referencia_produto                                         ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao    ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura     ,
+os_consulta_excluida.php:					tbl_os_excluida.data_abertura                         AS data_consulta     ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+os_consulta_excluida.php:					tbl_os_excluida.serie                                                      ,
+os_consulta_excluida.php:					tbl_os_excluida.nota_fiscal                                                ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf           ,
+os_consulta_excluida.php:					tbl_os_excluida.consumidor_nome                                            ,
+os_consulta_excluida.php:					to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao     ,
+os_consulta_excluida.php:					(SELECT status_os FROM tbl_os_status WHERE tbl_os_status.os = tbl_os_excluida.os ORDER BY data DESC LIMIT 1) AS status,
+os_consulta_excluida.php:						where os        = tbl_os_excluida.os 
+os_consulta_excluida.php:			FROM      tbl_os_excluida
+os_consulta_excluida.php:			JOIN      tbl_produto       ON  tbl_produto.referencia    = tbl_os_excluida.referencia_produto
+os_consulta_excluida.php:			LEFT JOIN tbl_admin         ON  tbl_admin.admin           = tbl_os_excluida.admin
+os_consulta_excluida.php:			WHERE tbl_os_excluida.fabrica =  $login_fabrica ";
+os_consulta_excluida.php:						$sql .= " AND (tbl_os_excluida.data_abertura BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida.php:					$sql .= " and tbl_os_excluida.serie = '". $numero_serie."' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.consumidor_nome ILIKE '%".$nome_consumidor."%' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.sua_os ilike '%".$sua_os."%' ";
+os_consulta_excluida.php:					$sql .= " AND tbl_os_excluida.nota_fiscal ilike '%".$nota_fiscal."%' ";
+os_consulta_excluida.php:	$monta_sql .= "OR (tbl_os_excluida.data_exclusao BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida.php:	$sql .= " ORDER BY $order_by lpad (tbl_os_excluida.sua_os,10,'0') DESC";
+os_consulta_excluida_tk.php:				tbl_os_excluida.sua_os                                                    ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.codigo_posto                                              ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.referencia_produto                                        ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao   ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura    ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento  ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.serie                                                     ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.nota_fiscal                                               ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf          ,
+os_consulta_excluida_tk.php:				tbl_os_excluida.consumidor_nome                                           ,
+os_consulta_excluida_tk.php:				to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao
+os_consulta_excluida_tk.php:		FROM 	tbl_os_excluida
+os_consulta_excluida_tk.php:		LEFT JOIN tbl_produto ON tbl_produto.referencia = tbl_os_excluida.referencia_produto
+os_consulta_excluida_tk.php:		WHERE	tbl_os_excluida.fabrica = $login_fabrica 
+os_consulta_excluida_tk.php:					tbl_os_excluida.fabrica                                                    ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.sua_os                                                     ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.codigo_posto                                               ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.referencia_produto                                         ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_digitacao,'DD/MM/YYYY')  AS data_digitacao    ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_abertura,'DD/MM/YYYY')   AS data_abertura     ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.data_abertura                         AS data_consulta     ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS data_fechamento   ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.serie                                                      ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.nota_fiscal                                                ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')         AS data_nf           ,
+os_consulta_excluida_tk.php:					tbl_os_excluida.consumidor_nome                                            ,
+os_consulta_excluida_tk.php:					to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY')   AS data_exclusao     
+os_consulta_excluida_tk.php:			FROM      tbl_os_excluida
+os_consulta_excluida_tk.php:			JOIN      tbl_produto       ON  tbl_produto.referencia    = tbl_os_excluida.referencia_produto
+os_consulta_excluida_tk.php:			LEFT JOIN tbl_admin         ON  tbl_admin.admin           = tbl_os_excluida.admin
+os_consulta_excluida_tk.php:			WHERE tbl_os_excluida.fabrica =  $login_fabrica
+os_consulta_excluida_tk.php:	$monta_sql .= "OR (tbl_os_excluida.data_exclusao BETWEEN '$data_inicial 00:00:00'  AND '$data_final 23:59:59') ";
+os_consulta_excluida_tk.php:	$sql .= " ORDER BY $order_by lpad (tbl_os_excluida.sua_os,10,'0') DESC";
+os_consulta.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_consulta.php:							tbl_os_excluida.os                                                          ,
+os_consulta.php:							tbl_os_excluida.sua_os                                                      ,
+os_consulta.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_consulta.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_consulta.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_consulta.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_consulta.php:							tbl_os_excluida.serie                                                       ,
+os_consulta.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_consulta.php:							tbl_os_excluida.data_fechamento                                             ,
+os_consulta.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_consulta.php:				FROM		tbl_os_excluida
+os_consulta.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica
+os_cortesia_consulta_ant.php:				SELECT      lpad (tbl_os_excluida.sua_os,10,'0')                   AS ordem             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.os                                                          ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.sua_os                                                      ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_digitacao ,'DD/MM/YYYY') AS data              ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_abertura  ,'DD/MM/YYYY') AS abertura          ,
+os_cortesia_consulta_ant.php:							to_char (tbl_os_excluida.data_fechamento,'DD/MM/YYYY') AS fechamento        ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.data_digitacao                         AS data_consulta     ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.serie                                                       ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.consumidor_nome                                             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.data_fechamento                                             ,
+os_cortesia_consulta_ant.php:							tbl_os_excluida.nota_fiscal                                                 ,
+os_cortesia_consulta_ant.php:				FROM		tbl_os_excluida
+os_cortesia_consulta_ant.php:				LEFT JOIN	tbl_produto       ON tbl_os_excluida.produto = tbl_produto.produto
+os_cortesia_consulta_ant.php:				WHERE		tbl_os_excluida.fabrica = $login_fabrica 
+os_cortesia_consulta_ant.php:				AND         tbl_os_excluida.fabrica <> 1 ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_hoje_inicio' AND '$dia_hoje_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .=" and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_ontem_inicial' AND '$dia_ontem_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .=" and ( tbl_os_excluida.data_digitacao::date BETWEEN '$dia_semana_inicial' AND '$dia_semana_final') ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN '$mes_inicial 00:00:00' AND '$mes_final 23:59:59') ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date < '$dia_inicial' AND data_fechamento IS NULL) ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and ( tbl_os_excluida.data_digitacao::date BETWEEN $data_inicial AND $data_final) ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.posto=$posto";
+os_cortesia_consulta_ant.php:	//	$monta_sql .= " and tbl_os_excluida.codigo_posto = '". $codigo_posto."' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.serie = '". $numero_serie."' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.consumidor_nome ILIKE '%".$nome_consumidor."%' ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and (tbl_os_excluida.sua_os = '$numero_os' OR ";
+os_cortesia_consulta_ant.php:						$monta_sql .= " tbl_os_excluida.sua_os = '$numero_os-$x' OR ";
+os_cortesia_consulta_ant.php:		$monta_sql .= " and tbl_os_excluida.nota_fiscal = '".$numero_nf."' ";
+os_cortesia_consulta_ant.php:	$monta_sql .= " and tbl_os_excluida.data_fechamento $situacao ";
+os_mensalidade_consulta.php:		$sql = "SELECT    count(tbl_os_excluida.os) as total     ,
+os_mensalidade_consulta.php:				FROM      tbl_os_excluida
+os_mensalidade_consulta.php:				JOIN      tbl_posto         ON  tbl_posto.posto           = tbl_os_excluida.posto
+os_mensalidade_consulta.php:				JOIN      tbl_produto       ON  tbl_produto.produto       = tbl_os_excluida.produto
+os_mensalidade_consulta.php:				LEFT JOIN tbl_posto_linha   ON  tbl_posto_linha.linha = tbl_produto.linha AND tbl_posto_linha.posto = tbl_os_excluida.posto
+os_mensalidade_consulta.php:				WHERE     tbl_os_excluida.fabrica = $login_fabrica
+os_mensalidade_consulta.php:				AND       tbl_os_excluida.data_digitacao::date BETWEEN $data_inicial AND $data_final 
+os_mensalidade_consulta.php:				ORDER BY  count(tbl_os_excluida.os) ";
+os_relatorio.php:		$sql = "SELECT  tbl_os_excluida.codigo_posto                                        ,
+os_relatorio.php:						tbl_os_excluida.admin                                               ,
+os_relatorio.php:						tbl_os_excluida.sua_os                                              ,
+os_relatorio.php:						tbl_os_excluida.referencia_produto                                  ,
+os_relatorio.php:						tbl_os_excluida.serie                                               ,
+os_relatorio.php:						tbl_os_excluida.nota_fiscal                                         ,
+os_relatorio.php:						to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')       AS data_nf      ,
+os_relatorio.php:						to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY') AS data_exclusao,
+os_relatorio.php:							where tbl_os_status.os = tbl_os_excluida.os
+os_relatorio.php:				FROM    tbl_os_excluida
+os_relatorio.php:				JOIN    tbl_posto_fabrica    ON tbl_posto_fabrica.codigo_posto = tbl_os_excluida.codigo_posto
+os_relatorio.php:				JOIN    tbl_posto            ON tbl_posto.posto                = tbl_os_excluida.posto
+os_relatorio.php:				WHERE   tbl_os_excluida.fabrica = $login_fabrica
+os_relatorio.php:				AND     tbl_os_excluida.posto   = $posto";
+os_relatorio.php:		$sql .= "ORDER BY tbl_os_excluida.data_exclusao;";
+os_relatorio-sonoadm.php:		$sql = "SELECT  tbl_os_excluida.codigo_posto                                        ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.sua_os                                              ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.referencia_produto                                  ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.serie                                               ,
+os_relatorio-sonoadm.php:						tbl_os_excluida.nota_fiscal                                         ,
+os_relatorio-sonoadm.php:						to_char(tbl_os_excluida.data_nf,'DD/MM/YYYY')       AS data_nf      ,
+os_relatorio-sonoadm.php:						to_char(tbl_os_excluida.data_exclusao,'DD/MM/YYYY') AS data_exclusao
+os_relatorio-sonoadm.php:				FROM    tbl_os_excluida
+os_relatorio-sonoadm.php:				JOIN    tbl_posto_fabrica    ON tbl_posto_fabrica.codigo_posto = tbl_os_excluida.codigo_posto
+os_relatorio-sonoadm.php:				JOIN    tbl_posto            ON tbl_posto.posto                = tbl_os_excluida.posto
+os_relatorio-sonoadm.php:				WHERE   tbl_os_excluida.fabrica = $login_fabrica ";
+os_relatorio-sonoadm.php:			$sql .= "AND tbl_os_excluida.codigo_posto = '$posto' ";
+os_relatorio-sonoadm.php:		$sql .= "ORDER BY tbl_os_excluida.data_exclusao;";
+relatorio_field_call_rate_produto3_britania_teste_flavio.php:	$sql = "SELECT sua_os FROM tbl_os_excluida WHERE tbl_os_excluida.fabrica =  $login_fabrica and tbl_os_excluida.data_digitacao BETWEEN '$x_data_inicial' AND '$x_data_final'";

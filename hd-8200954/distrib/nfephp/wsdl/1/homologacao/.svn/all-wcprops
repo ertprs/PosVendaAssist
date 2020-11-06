@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao
+END
+SCAN_NfeInutilizacao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeInutilizacao.asmx
+END
+SVAN_nfeconsulta.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_nfeconsulta.asmx
+END
+SCAN_NfeRetRecepcao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeRetRecepcao.asmx
+END
+SVAN_NFeCancelamento.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_NFeCancelamento.asmx
+END
+SCAN_NfeStatusServico.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeStatusServico.asmx
+END
+SVAN_NFeInutilizacao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_NFeInutilizacao.asmx
+END
+SVAN_NFeRetRecepcao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_NFeRetRecepcao.asmx
+END
+SCAN_NfeRecepcao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeRecepcao.asmx
+END
+SVAN_NFeStatusServico.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_NFeStatusServico.asmx
+END
+SVAN_NfeRecepcao.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SVAN_NfeRecepcao.asmx
+END
+SCAN_NfeConsulta.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeConsulta.asmx
+END
+SCAN_NfeCancelamento.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/1/homologacao/SCAN_NfeCancelamento.asmx
+END

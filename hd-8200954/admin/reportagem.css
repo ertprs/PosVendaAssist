@@ -1,0 +1,29 @@
+#titulo {
+width: 680px;
+}
+
+#texto {
+width: 680px;
+height: 200px;
+}
+
+.reportagem_foto_fotos {
+width: 100px;
+}
+
+.posicao_fotos {
+width: 100px;
+}
+
+.legenda_fotos {
+width: 470px;
+}
+
+.div_ajax_upload_miniatura {
+width: 680px;
+background-repeat: no-repeat;
+}
+
+.qq-upload-button {
+width: 680px;
+}

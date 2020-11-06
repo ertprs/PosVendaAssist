@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" >
+    <head>
+        <meta charset="iso-8859-1" />
+        <!--[if lte IE 8]>
+        <script>
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+
+            // Optionally these for CSS
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+        </script>
+        <![endif]-->
+        <!--[if lte IE 9]>
+        <script>
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+
+            // Optionally these for CSS
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+        </script>
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <script>
+            // needed to make ng-include parse properly
+            document.createElement('ng-include');
+
+            // needed to enable CSS reference
+            document.createElement('ng:view');
+        </script>
+        <![endif]-->
+
+        <!--[if lte IE 9]>
+        <script>
+            // needed to make ng-include parse properly
+            document.createElement('ng-include');
+
+            // needed to enable CSS reference
+            document.createElement('ng:view');
+        </script>
+        <![endif]-->
+        <title>Telecontrol Institucional</title>
+        <!-- jQuery -->
+        <script type="text/javascript"  src="lib/jquery/jquery.min.js"></script>
+
+        <!-- Angular JS -->
+        <script src="lib/bower_components/angular/angular.min.js"></script>
+
+        <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+        <script src="lib/bower_components/angular-resource/angular-resource.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- Google maps-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensors=true&key=AIzaSyC5AsH3NU-IwraXqLAa1qbXxyjklSVP-cQ"></script>
+        <!-- CSS -->
+        <style>
+            #loading{
+               height: 35px;
+               width: 200px;
+            }
+            #spanContainer{
+                width:100px;
+                height: 40px;
+                display:none;
+            }
+            #map {
+                height:600px;
+                width:600px;
+            }
+            .infoWindowContent {
+                font-size:  14px !important;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+            }
+            h2 {
+                margin-bottom:0;
+                margin-top: 0;
+            }
+            ng\:view {
+                display: block;
+                border: 1px solid red;
+            }
+
+            ng-include {
+                display: block;
+                border: 1px solid blue;
+            }
+        </style>
+
+        <!-- Javascript -->
+
+        <script src="js/app.js"></script>
+
+        <script src="js/auth.js"></script>
+
+        <script src="js/TreinamentoPostosController.js"></script>
+        <script src="js/ModalLoading.js"></script>
+        <script src="js/RequestInterceptors.js"></script>
+        <script src="js/RestClientProvider.js"></script>
+        <script src="js/googleMaps.js"></script>
+        
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <div class="container" id="ng-app" ng-app="Institucional" >
+
+            <div id="msgErro" class="alert alert-danger" style="display: none;" ></div>
+            <div id="alertas"></div>
+            <div id="alert-messages"></div>
+           <div ng-view></div>
+        </div>
+
+        </body>
+</html>

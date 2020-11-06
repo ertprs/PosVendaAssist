@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD attrname="fabrica" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="produto" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="linha" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="familia" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="referencia" fieldtype="string" WIDTH="20"/>
+<FIELD attrname="descricao" fieldtype="string" WIDTH="50"/>
+<FIELD attrname="voltagem" fieldtype="string" WIDTH="20"/>
+<FIELD attrname="garantia" fieldtype="string" WIDTH="15"/>
+<FIELD attrname="radical_serie" fieldtype="string" WIDTH="10"/>
+<FIELD attrname="numero_serie_obrigatorio" fieldtype="string" WIDTH="1"/>
+<FIELD attrname="abre_os" fieldtype="string" WIDTH="1"/>
+</FIELDS>
+</METADATA>
+<ROWDATA>
+<ROW RowState="4" fabrica="" produto="" linha="" familia="" referencia="" descricao="" voltagem="" garantia="" radical_serie="" numero_serie_obrigatorio="" abre_os=""/>
+</ROWDATA>
+</DATAPACKET>

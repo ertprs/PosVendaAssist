@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" >
+    <head>
+        <meta charset="iso-8859-1" />
+        <title>Telecontrol Institucional</title>
+        <!-- jQuery -->
+        <script type="text/javascript"  src="lib/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <style>
+            #loading{
+               height: 35px;
+               width: 200px;
+            }
+            #spanContainer{
+                width:100px;
+                height: 40px;
+                display:none;
+            }
+            #map {
+                height:600px;
+                width:600px;
+            }
+            .infoWindowContent {
+                font-size:  14px !important;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+            }
+            h2 {
+                margin-bottom:0;
+                margin-top: 0;
+            }
+            #link, #link a{
+                color:#ffffff;
+            }
+        </style>
+
+        <!-- Javascript -->
+
+        <script src="js/auth.js"></script>
+        
+    </head>
+    <body>
+        <div class="container" id="ng-app"  >
+
+            <div id="msgErro" class="alert alert-danger" style="display: none;" ></div>
+            <div id="alertas"></div>
+            <div id="alert-messages"></div>
+            <div>
+
+                <link href="elgin_source/css/externo.css" rel="stylesheet" type="text/css" />
+                <script src="elgin_source/js/cufon-yui.js" type="text/javascript" ></script>
+                <script src="elgin_source/js/Museo_300_300-Museo_500_500.font.js" type="text/javascript" ></script>
+                <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR&onload=showRecaptcha&render=explicit" async defer></script>
+                <script src="lib/mask/mask.min.js" ></script>
+
+                <script type="text/javascript">
+                    var showRecaptcha= function() {
+                        grecaptcha.render('reCaptcha', {
+                          'sitekey' : '6LckVVIUAAAAAEQpRdiIbRSbs_ePTTrQY0L4959J'
+                        });
+                    };
+
+
+                    $(function () {
+
+                        $("#cpf_cnpj").focus(function(){
+
+                            $(this).unmask();
+                            $(this).mask("99999999999999");
+                        });
+                        $("#cpf_cnpj").blur(function(){
+                            var el = $(this);
+                            el.unmask();
+                            if(el.val().length > 11){
+                                el.mask("99.999.999/9999-99");
+                            }
+
+
+                            if(el.val().length <= 11){
+                                el.mask("999.999.999-99");
+                            }
+                        });
+
+                        Cufon.replace('.museo', {hover: true});
+                    });
+
+
+                    function pegaIp(){
+                        var ip = '';
+                        $.ajax({
+                            url : "./pega_ip.php",
+                            async:false,
+                            dataType : "json",
+                            success : function(data){
+                                ip = data.ip;
+                           }
+                        });
+                        return ip;
+                    }
+
+                    var consulta = function(){
+                        var msgErro = [];
+                        var data = {};
+                        var inputOS = $('#os');
+                        var inputCpfCnpj = $('#cpf_cnpj');
+                        var ip = pegaIp();
+                        data.userIpAddress = ip;
+                        data.os = inputOS.val();
+                        data.cpf_cnpj = inputCpfCnpj.val();
+                        data.recaptcha_response_field = grecaptcha.getResponse();
+                        //data.token = window.telecontrol.token;
+                        if (data.os.length == 0) {
+                            msgErro.push("Informe o número da ordem de serviço");
+                        }
+                        if (data.cpf_cnpj.length == 0){
+                            msgErro.push("Informe o CPF/CNPJ ");
+                        }
+                        if (data.recaptcha_response_field.length == 0){
+                            msgErro.push("Preencha o ReCaptcha");
+                        }
+                        if( data.cpf_cnpj.length > 0 &&
+                            !data.cpf_cnpj.match(/^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/) &&
+                            !data.cpf_cnpj.match(/^[0-9]{2}\.[0-9]{3}\.[0-9]{3}\/[0-9]{4}-[0-9]{2}$/)){
+                            msgErro.push('CPF/CNPJ Inválido');
+                        }
+                        if(msgErro.length > 0){
+                            $("#msgErro").html(msgErro.join("<br />")).show().focus();
+                            return;
+                        }
+                        data.cpf_cnpj = data.cpf_cnpj.replace(/[./-]+/gi,'');
+                        var urlSuffix = '';
+                        for(var index in data){
+                            var value = data[index];
+                            if(value == undefined || value.length == 0)
+                                continue;
+                            urlSuffix += index +'/'+data[index]+'/';
+                        }
+                        var apiLink = 'https://api2.telecontrol.com.br/institucional/statusos/';
+                        var url = apiLink + urlSuffix;
+                        $("button").button("loading");
+                        $("#msgErro").html("").hide();
+                        $("#result").hide();
+
+                        $.ajax({
+                            url : 'crossDomainProxy.php',
+                            data : {
+                                'apiLink' : url
+                            },
+                            method : 'POST',
+                            success : function(data){
+                                if(data.exception){
+                                    $("#msgErro").text(data.message).show();
+                                    return;
+                                }
+                                showOs(data);
+                            },
+                            error : function(response){
+                                response = response.responseText;
+                                $("#msgErro").text(response.message).show();
+                            },
+                            complete : function(data){
+                                $("button").button("reset");
+                                grecaptcha.reset();
+                            }
+                        });
+                    };
+
+                    var showOs = function(data){
+
+						var status;
+						switch(data.entity.status_checkpoint) {
+							case 1:
+							default:
+								status = 'Aguardando Análise';
+								break;
+							case 2:
+							case 3:
+								status = 'Em Laboratório';
+								break;
+							case 4:
+								status = 'Concluído';
+								break;
+							case 9:
+								status= 'Entregue';
+								break;
+						}
+
+                        $("#result").find("h3").text("Ordem de serviço: "+ data.os);
+                        $("#link").attr('rel',data.os);
+                        $("#result").find("li[rel=status]").html("<b>Status</b>: "+ status);
+                        $("#result").find("li[rel=posto]").html("<b>Posto autorizado</b>: "+data.entity.posto_autorizado);
+                        $("#result").find("li[rel=consumidor_revenda]").html(((data.entity.consumidor_revenda == "R") ? "<b>Revenda</b>" : "<b>Consumidor</b>")+": "+((data.entity.consumidor_revenda == "R") ? data.entity.revenda_nome : data.entity.consumidor_nome));
+                        $("#result").find("li[rel=produto]").html("<b>Produto</b>: "+data.entity.descricao_produto);
+                        $("#result").show();
+                    };
+
+                </script>
+
+                <div style="width: 100%; height: auto; display: block;">
+
+                    <div id="tit_princ" class="museo museo300">CONSULTAR ORDEM DE SERVIÇO</div><br />
+                    <div id="txt_conteudo" class="museo300">Para encontrar a situação de sua Ordem de Serviço, preencha os dados abaixo.</div>
+                    <div id="txt_conteudo_menor" class="museo300" style="font-size:14px;margin-bottom:24px">Insira o número da Ordem de Serviço e CPF/CNPJ</div>
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="position:relative; float:left; width: 40%; height: auto; display: block;">
+                                    <form name="statusos_form"    role="form" novalidate >
+                                        <div class="row">
+                                            <label for="os" class="col-xs-12" >Número da Ordem de Serviço</label>
+                                            <div class="col-xs-5">
+                                                <input type="text"  id="os" name="os" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label class="col-md-12" for="cpf_cnpj" >
+                                                    CPF / CNPJ
+                                                </label>
+                                            <div class="col-xs-7">
+                                                <input type="text"  name="cpf_cnpj" id="cpf_cnpj" class="form-control"  style="width:200px"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="reCaptcha">
+                                            Carrengado reCaptcha
+                                        </div>
+
+                                        <br /><br />
+                                        <button onClick="consulta()" class="submit_envia" type="button" data-loading-text="Consultando..." style="margin-left:0; padding-left:0;" >
+                                            Consultar
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" >
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="resultado"></div>
+                                <div id="result" class="panel panel-primary" style="display: none; margin-top: 10px; margin-bottom:  0px;">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"></h3>
+                                    </div>
+                                    <div class="panel-body" style="padding: 0px;">
+                                        <ul class="list-group" style="margin-bottom: 0px;">
+                                            <li class="list-group-item" rel="status"></li>
+                                            <li class="list-group-item" rel="posto"></li>
+                                            <li class="list-group-item" rel="consumidor_revenda"></li>
+                                            <li class="list-group-item" rel="produto"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </body>
+</html>

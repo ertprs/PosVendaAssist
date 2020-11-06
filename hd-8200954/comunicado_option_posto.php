@@ -1,0 +1,32 @@
+<?php
+$isFabrica = function($arr) use ($login_fabrica) {
+    if (!is_array($arr))
+        $arr = explode(',', $arr);
+    return in_array($login_fabrica, $arr);
+};
+
+$comunicado_options = '';
+
+if ($isFabrica('42')) {
+    $comunicado_options = include('admin/menus/comunicado_option_array.php');
+    $comunicado_options['Alterações Técnicas'] = traduz('Alterações.Técnicas',$con,$cook_idioma);
+    $comunicado_options['Esquema Elétrico'] = traduz('Esquema.Elétrico',$con,$cook_idioma);
+    $comunicado_options['Manual Técnico'] = traduz('Manual.Técnico',$con,$cook_idioma);
+    $comunicado_options['Vista Explodida'] = traduz('Vista.Explodida',$con,$cook_idioma);
+}
+
+if($isFabrica('117')){
+	$comunicado_options = include('admin/menus/comunicado_option_array.php');
+	unset($comunicado_options['Apresentação do Produto']);
+	unset($comunicado_options['Com. Unico Posto']);
+	unset($comunicado_options['Estrutura do Produto']);
+	unset($comunicado_options['Foto']);
+	unset($comunicado_options['Manual']);
+	unset($comunicado_options['Orientação de Serviço']);
+	unset($comunicado_options['Procedimentos']);
+	unset($comunicado_options['Promocao']);
+	unset($comunicado_options['Comunicado']);
+}
+
+ksort($comunicado_options);
+return $comunicado_options;

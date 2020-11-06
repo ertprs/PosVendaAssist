@@ -1,0 +1,81 @@
+#geral .contactenos h1
+{
+    background-image: url('titu_contactanos.gif');    
+}
+
+#geral .contactenos .envia-tu-mensaje h2
+{
+    background-image: url('tit_envia_tu_mensaje.gif');    
+}
+
+#geral .contactenos .envia-tu-mensaje .txb-nome, #geral .contactenos .envia-tu-mensaje .txb-email
+{
+    background: url('campo_input_mensaje.gif') 0 7px no-repeat;
+}
+#geral .contactenos .envia-tu-mensaje .txb-messaje1
+{
+	box-shadow: -1px 0 6px #B5C6D7 inset;
+}
+#geral .contactenos .envia-tu-mensaje .txb-messaje2
+{
+    background-image: url('campo_textarea2_mensaje.gif');
+}
+
+
+#geral .contactenos .sifuenos-aqui h2
+{
+    background-image: url('tit_sifueno_aqui.gif');    
+}
+
+
+#geral .contactenos .sifuenos-aqui .icones a.facebook
+{
+    background-image: url('ico_facebook.jpg');    
+}
+
+#geral .contactenos .sifuenos-aqui .icones a.youtube
+{
+    background-image: url('ico_youtube.jpg');    
+}
+
+#geral .contactenos .sifuenos-aqui .icones a.twitter
+{
+    background-image: url('ico_twitter.jpg');    
+}
+
+#geral .contactenos .telefonos h2
+{
+    background-image: url('tit_telefonos.gif');    
+}
+
+#geral .contactenos .telefonos .prev a
+{
+    background-image: url('seta_prev.gif');    
+}
+
+#geral .contactenos .telefonos .next a
+{
+    background-image: url('seta_next.gif');    
+}
+
+
+#geral .contactenos .emails input.text-emails
+{
+    background-image: url('campo_text1_emails.gif');    
+}
+
+
+#geral .contactenos .emails h2
+{
+    background-image: url('tit_emails.gif');    
+}
+
+#geral .contactenos .contacto-clientes h2
+{
+    background-image: url('tit_contacto_para_clientes.gif');    
+}
+
+.btn-contact
+{
+	padding-left:100px;	
+}

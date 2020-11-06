@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+  <Settings>
+    <imageWidth>350</imageWidth>
+    <imageHeight>85</imageHeight>
+    <segments>7</segments>
+    <tweenTime>1.2</tweenTime>
+    <tweenDelay>0.2</tweenDelay>
+    <tweenType>easeInOutBack</tweenType>
+    <zDistance>0</zDistance>
+    <expand>20</expand>
+    <innerColor>0</innerColor>
+    <textBackground>0</textBackground>
+    <shadowDarkness>100</shadowDarkness>
+    <textDistance>25</textDistance>
+    <autoplay>4</autoplay>
+  </Settings>
+  <Image Filename="imagem_vermelha1_b288.png">
+    <Text>
+      <headline>Seja Posto Autorizado Telecontrol</headline>
+      <break>Telecontrol</break>
+      <paragraph>Telecontrol</paragraph>
+      <break>Telecontrol</break>
+      <inline>Telecontro</inline>
+      <a href="http://www.modularweb.net/piecemaker" target="_blank">Telecontro</a>
+      <paragraph>Telecontro.</paragraph>
+    </Text>
+  </Image>
+  <Image Filename="imagem_roxo1_a23.png">
+    <Text>
+      <headline>Telecontrolt</headline>
+      <break>Telecontrol</break>
+      <paragraph>Telecontrol</paragraph>
+      <break>Telecontrol</break>
+      <inline>Telecontrol</inline>
+      <a href="http://www.modularweb.net/piecemaker" target="_blank">Telecontrol</a>
+      <paragraph>Telecontrol</paragraph>
+    </Text>
+  </Image>
+   <Image Filename="imagem_vermelha2_ads676gffgytytyt.png">
+    <Text>
+      <headline>Telecontrolt</headline>
+      <break>Telecontrol</break>
+      <paragraph>Telecontrol</paragraph>
+      <break>Telecontrol</break>
+      <inline>Telecontrol</inline>
+      <a href="http://www.modularweb.net/piecemaker" target="_blank">Telecontrol</a>
+      <paragraph>Telecontrol</paragraph>
+    </Text>
+  </Image>
+</Piecemaker>

@@ -1,0 +1,56 @@
+/************************
+ * Tabela de resultados *
+ ***********************/
+.Tabela {
+    border:1px solid #d2e4fc;
+    background-color:#485989;
+}
+
+.titulo_tabela {
+        background-color:#596d9b;
+        font: bold 14px "Arial";
+        color:#FFFFFF;
+        text-align:center;
+}
+
+.titulo_coluna {
+	background-color:#596d9b;
+	font: bold 11px "Arial";
+	color:#FFFFFF;
+	text-align:center;
+}
+
+.subtitulo {
+    font-family: Verdana;
+    FONT-SIZE: 9px;
+    text-align: left;
+    background: #F4F7FB;
+    padding-left:5px
+}
+
+table.tabela tr td {
+        font-family: verdana;
+        font-size: 11px;
+        border-collapse: collapse;
+        border:1px solid #596d9b;
+		background-color: white;
+}
+
+.inicio {
+    font-family: Arial;
+    FONT-SIZE: 8pt;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFFFF;
+    padding-right: 1ex;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    font-family: Arial;
+    FONT-SIZE: 8pt;
+    font-weight: bold;
+    text-align: left;
+    background: #F4F7FB;
+}
+

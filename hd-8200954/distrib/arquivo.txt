@@ -1,0 +1,43 @@
+
+autentica_usuario.php:$fabricas = array('3','10','25','45','51','81','114','122','123', $telecontrol_distrib); ok
+
+cad_fornecedor.php:				$sql = "select fabrica,nome from tbl_fabrica where fabrica in (10,51,81,114,122,123) ok
+
+embarque_nota_fiscal.php:		$sql = "SELECT * FROM tbl_faturamento WHERE nota_fiscal  = '$copia_nota_fiscal' AND distribuidor = $login_posto AND fabrica IN (10, 3,25,45,51, 81,119,114,122)"; ok
+
+embarque_nota_fiscal.php:					WHERE fabrica IN (3,25,51, 81,119,114,122) ok
+
+estoque_consulta_imprimir.php:			WHERE  tbl_peca.fabrica IN (51,81,114,122) ok
+
+estoque_consulta.php:	$fabricas = array(10,51,81,114,119,122); ok
+
+estoque_contagem.php:											fabrica in (51,81,10,114,119,122) ok
+
+estoque_contagem.php:						AND tbl_peca.fabrica IN(10,51,81,114,119,122) ok
+
+lote_conferencia_fecha.php:                WHERE  tbl_distrib_lote.fabrica =114
+
+lote_conferencia.php:                WHERE  tbl_distrib_lote.fabrica =114
+
+nf_cadastro_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+
+nf_cadastro_manual_ajax_busca_nf.php:		$sql .=" AND fabrica in (10,51,81, 114,122) ok
+
+nf_cadastro_manual_ajax_busca_nf.php:			and tbl_icms.estado_destino=tbl_os.consumidor_estado and tbl_os.fabrica in (10,81,51,114,122) LIMIT 1; ok
+
+nf_cadastro_manual_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_manual_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_manual_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+nf_cadastro_manual_ajax.php:				WHERE fabrica in (10,51,81,114,122) "; ok
+
+nf_cadastro_manual.php:		AND  fabrica in (10,51,81,114,122) ok
+nf_cadastro_manual.php:							WHERE  fabrica in (10,51,81,114,122) ok
+nf_cadastro_manual.php:								WHERE  fabrica in (10,51,81,114,122) ok
+
+nf_cadastro.php:							WHERE  fabrica in (10,51,81,114,122,123,125)
+nf_cadastro.php:								WHERE  fabrica IN (10,51,81,114,122,123,125)
+nf_cadastro.php:							}elseif($fornecedor_distrib_fabrica == '114'){
+

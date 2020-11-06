@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao
+END
+SVAN_NfeConsulta2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeConsulta2.asmx
+END
+SVAN_NfeCancelamento2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeCancelamento2.asmx
+END
+SVAN_NfeInutilizacao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeInutilizacao2.asmx
+END
+SVAN_NfeRetRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeRetRecepcao2.asmx
+END
+SVAN_NfeStatusServico2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeStatusServico2.asmx
+END
+SVAN_NfeRecepcao2.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nfephp/!svn/ver/127/branches/1.0%20Alpha/wsdl/2/homologacao/SVAN_NfeRecepcao2.asmx
+END

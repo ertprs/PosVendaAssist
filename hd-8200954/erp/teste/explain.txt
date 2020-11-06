@@ -1,0 +1,6 @@
+This class easiely uploads selected files to your selected folder. This class takes the maximum allowed
+file size and the relative path to destination folder and uploads the image and returns the uploaded file name.
+It will return 'NOFILE.jpg' on failure.
+
+Reza Salehi,
+zaalion@yahoo.com

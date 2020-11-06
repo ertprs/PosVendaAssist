@@ -1,0 +1,163 @@
+body{
+   background: url(../imagem/TopoBg.gif) repeat-x
+}
+
+a {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color:#0099FF;
+}
+a:hover{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	color:#0066FF;
+}
+table,body{
+	font-family: Arial;
+}
+
+/*--===========================INFORMAÇÃO===========================--*/
+.info_green{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#006600;
+}
+.info_red{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#FF0000;
+}
+.info_yell{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#FFAA00;
+}
+.info_blue{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:#0033FF;
+}
+
+select{
+	BORDER-RIGHT: #6699CC 1px solid;
+	BORDER-TOP: #6699CC 1px solid;
+	FONT: 8pt Arial ;
+	BORDER-LEFT: #6699CC 1px solid;
+	BORDER-BOTTOM: #6699CC 1px solid;
+
+	BACKGROUND-COLOR: #FFFFFF
+}
+textarea{
+	BORDER-RIGHT: #6699CC 1px solid;
+	BORDER-TOP: #6699CC 1px solid;
+	FONT: 10pt Arial ;
+	BORDER-LEFT: #6699CC 1px solid;
+	BORDER-BOTTOM: #6699CC 1px solid;
+	BACKGROUND-COLOR: #FFFFFF
+}
+.cell_over{
+	border-style: solid;
+	border-color: #aaaaaa;
+	background-color: #dddddd;
+	border-width: 1px;
+}
+
+.cell_out{
+	border-style: solid;
+	border-color: #eeeeee;
+	border-width:1px
+}
+
+.caixa{
+	BORDER-RIGHT: #6699CC 1px solid;
+	BORDER-TOP: #6699CC 1px solid;
+	FONT: 8pt Arial ;
+	BORDER-LEFT: #6699CC 1px solid;
+	BORDER-BOTTOM: #6699CC 1px solid;
+	BACKGROUND-COLOR: #FFFFFF
+}
+.botao{
+	BORDER-RIGHT: #6699CC 1px solid;
+	BORDER-TOP: #6699CC 1px solid;
+	FONT: 8pt Arial ;
+	font-weight: bold;
+	BORDER-LEFT: #6699CC 1px solid;
+	BORDER-BOTTOM: #6699CC 1px solid;
+	BACKGROUND-COLOR: #FFFFFF
+}
+.botao2{
+	FONT: 8pt Arial ;
+	font-weight: bold;
+}
+
+.Erro{
+	FONT-FAMILY:      Arial;
+	COLOR:            #FFFF00;
+	BACKGROUND-COLOR: #FF0000;
+}
+.Chamados2{
+	BORDER-RIGHT: #6699CC 1px solid;
+	BORDER-TOP: #6699CC 1px solid;
+	BORDER-LEFT: #6699CC 1px solid;
+	BORDER-BOTTOM: #6699CC 1px solid;
+	FONT: 10pt Arial ;
+	COLOR:            #6699CC;
+	BACKGROUND-COLOR: #F2F7FF;
+}
+.Chamados{
+	BORDER-RIGHT: #FF0000 1px solid;
+	BORDER-TOP: #FF0000 1px solid;
+	BORDER-LEFT: #FF0000 1px solid;
+	BORDER-BOTTOM: #FF0000 1px solid;
+	FONT: 10pt Arial ;
+	COLOR:            #FF0000;
+	BACKGROUND-COLOR: #F2F7FF;
+}
+.Linha{
+	border-bottom: 1px dotted #666666
+	font-family: arial;
+	font-size:10px;
+}
+#senha1 b{
+	display:block;
+	width:70px;
+	float:left;
+	border-bottom:1px dotted #cccccc;
+	clear:both;
+}
+.Titulo {
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3e83c9;
+}
+.Conteudo {
+	font-family: Arial;
+	font-size: 9px;
+	font-weight: normal;
+}
+.Legenda {
+	font-family: Arial;
+	font-size:   9px;
+	color:       #777777;
+	font-weight: normal;
+}
+
+.BotaoTermino{
+	font-family: Arial;
+	font-size:   9px;
+	color:#0000FF;
+	font-weight: bold;
+}
+.CaixaMensagem{
+	border: #D3BE96 1px solid;
+	background-color: #FCF0D8;
+	font-family: Arial;
+	font-size:   9px;
+	color:#333333;
+
+}

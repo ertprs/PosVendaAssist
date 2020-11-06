@@ -1,0 +1,20 @@
+/* 
+ Arquivo: adm_relatorio_diario.css
+ Autor: pinsard
+ Data: 2018-10-27
+ */
+
+.legendas {
+    position: relative;
+    width: 50%;
+    font-weight: bolder;
+}
+
+.titulo_coluna {
+    font: bold 14px "Arial";
+    background-color: #3d3e71;
+        color:#FFFFFF;
+        text-align:center;
+        padding: 5px 0 0 0;
+}
+

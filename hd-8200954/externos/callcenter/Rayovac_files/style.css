@@ -1,0 +1,425 @@
+@import url("contactanos.css");
+@import url("sac.css");
+
+/********************************/
+/************ HOME **************/
+/********************************/
+h1,h2,h3, h4,h5,h6,strong, th
+{
+    font-weight: bold;    
+}
+
+.destaques_home
+{
+	width:928px;
+	padding:0 16px;
+	height:380px;
+}
+
+.destaques_home .box_maior
+{
+	float:left;
+	width:641px;
+	margin-right:6px;
+	margin-top:15px;
+}
+
+.destaques_home .box_menor
+{
+	float:left;
+	width:279px;
+	margin-top:15px;
+}
+
+.destaques_home .imagem_conselho
+{
+	float:left;
+	margin-top:20px;
+	padding:6px;
+	width:92px; 
+}
+
+.box_maior img
+{
+	display:block;
+}
+
+.destaques_home .conselhosUteis
+{
+
+}
+.destaques_home .dicas .dica
+{
+    display: none;
+}
+.destaques_home .dicas .dica .d
+{
+	vertical-align:middle;
+	height:100px;
+	display: table-cell;
+}
+.destaques_home .dicas
+{
+	float:left;
+	height:90px;
+	font-size:12px;
+	width:470px;
+	line-height:18px;
+	margin-left:17px;
+	margin-top:10px;
+}
+
+.destaques_home .controle_compartilhar_dicas
+{
+	width:482px;
+	margin-left:17px;
+	margin-top:10px;
+	float:left;
+}
+
+.destaques_home .controle_compartilhar_dicas .prevNext
+{
+	float:left;
+	padding-right:15px;
+}
+
+.destaques_home .controle_compartilhar_dicas .redesSociais
+{
+	float:right;
+	padding-left:15px;
+	display: none;
+}
+
+.destaques_home .controle_compartilhar_dicas a:hover
+{
+	opacity:0.5;
+}
+
+
+/********************************/
+/********** FIM HOME ************/
+/********************************/
+
+
+
+/******************************************/
+/************* MEIO AMBIENTE **************/
+/*****************************************/
+.titulo_meioAmbiente
+{
+	padding:78px 0 35px;
+	text-align:right;
+	width:395px;
+}
+
+#menuMeioAmbiente
+{
+	width:330px;
+	float:left;
+}
+
+#menuMeioAmbiente a
+{
+	display:block;
+	height:35px;
+	width:331px;
+	margin-bottom:20px;
+}
+
+
+
+#conteudo_meioAmbiente
+{
+	width:615px;
+	float:left;
+	margin-left:15px;
+	height:695px;
+	overflow:hidden;
+}
+
+#conteudo_meioAmbiente #wrap
+{
+	width:3690px;
+}
+
+#conteudo_meioAmbiente #wrap .content
+{
+	width:534px;
+	height:620px;
+	float:left;
+	margin-top:40px;
+	margin-left:40px;
+}
+
+#conteudo_meioAmbiente #wrap  h1
+{
+	padding-bottom:15px;
+	margin-left:35px;
+}
+
+#conteudo_meioAmbiente #wrap  h2
+{
+	padding-bottom:15px;
+	width:455px;
+	margin-left:35px;
+}
+
+#conteudo_meioAmbiente #wrap p
+{
+	width:455px;
+	padding-bottom:20px;
+	margin-left:35px;
+}
+
+
+#conteudo_meioAmbiente #wrap h1
+{
+	padding-top:130px;
+}
+/******************************************/
+/********* FIM MEIO AMBIENTE **************/
+/*****************************************/
+
+
+
+
+/******************************/
+/********** PRODUTOS **********/
+/******************************/
+#descricoes
+{
+	float:left;
+	padding-left:30px;
+	padding-top:25px;
+	width:454px;
+	height:337px;
+}
+
+#descricoes .titulo
+{
+	margin-bottom:30px;
+}
+
+#descricoes .produto
+{
+	width:200px;
+	margin-top:30px;
+	text-align:center;
+	float:left;
+}
+
+#descricoes .texto
+{
+	float:left;
+	margin-top:30px;
+	width:245px;
+}
+
+#descricoes .leiaMais
+{
+	display:block;
+	margin-top:10px;
+}
+
+
+#telao_produtos
+{
+	width:960px;
+	height:361px;
+	position:absolute;
+	z-index:100;
+	padding-top:1px;
+}
+
+
+.produtos
+{
+	width:100%;
+	float:left;
+}
+
+.produtos .boxes
+{
+	width:319px;
+	height:135px;
+	border-bottom:1px #FFFFFF solid;
+	border-right:1px #FFFFFF solid;
+	float:left;
+
+}
+
+.produtos .Varta
+{
+	width:479px;
+}
+
+.produtos .boxes h2
+{
+	float:left;
+	width:114px;
+	padding-top:28px;
+	padding-left:5px;
+}
+
+.produtos .boxes .imagem
+{
+	float:left;
+	text-align:center;
+	height:125px;
+	padding-top:8px;
+	width:200px;
+}
+
+
+.produtos .sombra
+{
+	height:12px;
+	position:relative;
+	width:100%;
+	z-index:100;
+}
+/******************************/
+/****** FIM PRODUTOS **********/
+/******************************/
+
+
+
+/******************************/
+/****** INTERNA PRODUTOS ******/
+/******************************/
+#interna_produtos
+{
+	/*background:url(
+}
+
+#interna_produtos .conteudo , #interna_produtos .menu 
+{
+	margin-top:35px;
+}
+
+
+#interna_produtos p, #interna_produtos .conteudo h1
+{
+	margin:20px 0;
+	clear:left;
+}
+
+.conteudo h1
+{
+	background-color:#01407A;
+	display:inline;
+	padding:15px;
+}
+
+#interna_produtos .conteudo h2
+{
+	margin-bottom:20px;
+	font-size:15px;
+	color:#FF0000;
+	font-weight:bold;
+	clear:left;
+}
+
+#interna_produtos .telao
+{
+	display:block;
+}
+
+
+#interna_produtos .menu
+{
+	width:220px;
+	float:left;
+	padding-left:40px;
+	line-height:20px;
+}
+
+#interna_produtos .menu a
+{
+	display:block;
+	padding-left:13px;
+	color:#5981A3;
+	font-size:12px;
+	margin-left:10px;
+	background:url(arrows.gif) no-repeat left 5px;
+}
+
+#interna_produtos .menu .btn_voltar
+{
+	padding-left:0px;
+	margin-left:0px;
+	margin-top:10px;
+	background:none;
+}
+
+#interna_produtos .menu a:hover
+{
+	color:#1C86D7;
+	background:url(arrows_on.gif) no-repeat left 5px;
+}
+
+#interna_produtos .menu h1
+{
+	padding-left:10px;
+	margin-bottom: 15px;
+	border-bottom:1px dotted #BDCDDA;
+	padding-bottom:2px;
+}
+
+#interna_produtos .menu a:hover
+{
+	text-decoration:underline;
+}
+
+#interna_produtos .conteudo
+{
+	float: left;
+	padding-left:30px;
+	width:405px;
+}
+
+#interna_produtos .imagem_destaque
+{
+	width: 265px;
+	text-align: center;
+	position: relative;
+	top: -50px;
+	z-index: 501;
+	float: left;
+}
+
+#interna_produtos .imagem_destaque .btn-mas-empaques
+{ 
+    display: none;
+    width: 141px;
+    height: 39px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 10px auto 0 auto;
+}
+
+#interna_produtos .icon
+{
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+#interna_produtos  #b_produtos
+{
+	width:960px;
+	float:left;
+}
+
+.interruptor
+{
+	margin-left:201px;
+    margin-top:290px;
+    position:absolute;
+    z-index:100;
+}
+
+/******************************/
+/**** FIM INTERNA PRODUTOS ****/
+/******************************/
+
+

@@ -1,0 +1,158 @@
+BODY {
+	margin: 0px;
+	BORDER: 0px solid;
+}
+.tabela_esp {
+	font: 12px Tahoma;
+	color:#000000;
+	}
+
+.tira_topo {
+}
+
+.tabela_miolo
+{
+	BORDER: #6c6c6c 1px solid;
+	background-color: #f7f3f3;
+	font: 11px Tahoma;
+	color: #555555;	
+	text-align:justify;
+}
+
+.tabela_lista
+{
+	BORDER: #928569 1px solid;
+	background-color: #ffffff;
+	font: 11px Tahoma;
+	color: #555555;	
+	text-align:justify;
+}
+
+.tabela_produtos
+{
+	BORDER: #928569 1px solid;
+	background-color: #eaeaea;
+	font: 11px Tahoma;
+	color: #555555;	
+	text-align:justify;
+}
+
+.texto_destaque
+{
+	font: bold 12px Tahoma;
+	color: #152d65;	
+}
+
+.texto_destaque2
+{
+	font: bold 12px Tahoma;
+	color: #cf7e00;	
+}
+
+.tabela_destaque2
+{
+	BORDER: 0px solid;
+	background-color: #e3e8e3;
+	font: 11px Tahoma;
+	color: #19480a;	
+}
+
+.texto_rodape
+{
+	font: bold 11px Tahoma;
+	color: #555555;	
+}
+
+a:link {
+	font: bold 11px Tahoma;
+	color: #656761;	
+	text-decoration: none;
+}
+
+a:hover{
+	font: bold 11px Tahoma;
+	color: #c81b1c;	
+	text-decoration: none;
+}
+
+a:visited {
+	font: bold 11px Tahoma;
+	color: #656761;	
+	text-decoration: none;
+}
+
+a:active {
+	font: bold 11px Tahoma;
+	color: #656761;	
+	text-decoration: none;
+}
+
+.texto
+{
+	font: 11px Tahoma;
+	color: #555555;	
+	text-align:justify;
+}
+.label
+{
+	BORDER: #959900 1px solid;
+	background-color: #ffffff;
+	font: 11px Tahoma;
+	color: #555555;	
+	text-align:justify;
+}
+a.link01:link{
+	font-family: Calibri; 
+  font-size: 16px;
+  color: #142D63;
+  text-decoration:none;
+}
+a.link01:visited{
+	font-family: Calibri; 
+  font-size: 16px;
+  color: #142D63;
+  text-decoration:none;
+}
+
+a.link01:active{
+	font-family: Calibri; 
+  font-size: 16px;
+  color: #142D63;
+  text-decoration:none;
+}
+
+a.link01:hover{
+	font-family: Calibri; 
+	font-size: 16px;
+	color: #142D63;
+	text-decoration:none;
+}
+.msg_erro{
+	font-family: Calibri; 
+	font-size: 11px;
+	color: #f00;
+	position:relative;
+	margin: 10px 40px;
+	max-width: 540px;
+	left:0;
+}
+.msg{
+	font-family: Calibri; 
+	font-size: 11px;
+	color: #30f;
+	position:relative;
+	margin: 10px 40px;
+	max-width: 540px;
+	left:0;
+}
+.menu_top{
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	border: 1px solid;
+}
+
+.obrigatorio {
+	color: #DD0000;
+}

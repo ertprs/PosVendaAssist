@@ -1,0 +1,7 @@
+ok aprova_os_troca.php:						$sql = "UPDATE tbl_os SET excluida = true,admin_excluida=$login_admin
+ok extrato_consulta_os_intelbras.php:						$sql = "UPDATE tbl_os SET excluida = true
+ok extrato_consulta_os_novo.php:				$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_os.php:			$sql = "UPDATE tbl_os SET excluida = true
+extrato_consulta_pesquisa_os.php:				$sql = "UPDATE tbl_os SET excluida = true
+os_consulta_lite_test.php:		$sql = "UPDATE tbl_os SET excluida = true
+os_press.php:					excluida = true,

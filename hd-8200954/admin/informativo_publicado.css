@@ -1,0 +1,27 @@
+
+
+table.tabela tr  {
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b; 
+	width: 690px;
+}
+
+.td_titulo{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 560px;
+
+}
+.td_publicado{
+	font-family: verdana;
+    font-size: 11px;
+    border-collapse: collapse;
+    border:1px solid #596d9b;
+	width: 120px;
+
+}
+

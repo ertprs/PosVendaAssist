@@ -1,0 +1,152 @@
+/* CSS Document */
+body {
+	color: black;
+	background: white;
+	font-family: Verdana, Arial, Sans Serif;
+	font-size: 9pt;
+	line-height: 1.5em;
+	text-align: justify;
+	padding: 0 2px;
+	margin:3px;
+}
+
+H1 {
+	background-color: #242946;
+	color: #DADFE8;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 0px solid transparent;
+	line-height: 3em;
+	vertical-align: middle;
+	/* Bordes redondeados, *SOLO CSS3* */
+		border-radius: 8px;
+		-moz-border-radius: 8px;
+behavior: url(/mlg/js/PIE.php);
+}
+
+H2,H3,H4 {
+	background-color: #DADFE8;
+	color: #242946;
+}
+H2 {
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 2.4em;
+	font-weight: bold;
+	/* Bordes redondeados, *SOLO CSS3* */
+        border-radius: 8px 0 8px 0;
+        -moz-border-radius: 8px 0 8px 0;
+behavior: url(/mlg/js/PIE.php);
+}
+H3 {
+	text-align: left;
+	padding-left: 2em;
+	font-size: 1.2em;
+	line-height: 2em;
+	/* Bordes redondeados, *SOLO CSS3* */
+		border-radius: 0 8px 0 8px;
+		-moz-border-radius: 0 8px 0 8px;
+behavior: url(/mlg/js/PIE.php);
+}
+H4 {
+	text-align: left;
+	padding-left: 2em;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	text-decoration: underline;
+	margin-top: 2em;
+	margin-bottom: 0;
+	width: 60%;
+	/* Bordes redondeados, *SOLO CSS3* */
+		border-radius: 5px 5px 0 0;
+		-moz-border-radius: 5px 5px 0 0;
+behavior: url(/mlg/js/PIE.php);
+}
+
+DIV {
+	padding: 0 1ex;
+	margin-top: 0;
+	border: 2px solid #DADFE8;
+	margin-bottom: 1ex;
+	border-radius: 0 4px 4px 4px;
+behavior: url(/mlg/js/PIE.php);
+}
+.botao {
+	border: 2px outset #999;
+	cursor: pointer;
+	background-color: #DDD;
+	color: #333;
+	padding: 0 0.7ex;
+	/* Bordes redondeados, *SOLO CSS3* */
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+behavior: url(/mlg/js/PIE.php);
+}
+.botao:hover {	/* Para navegadores no-IE	*/
+	border: 2px inset #666;
+}
+
+UL#dc LI SPAN {
+	display: inline-block;
+	width: 5em;
+	font-weight: bold;
+}
+ADDRESS {
+	text-indent: -1.8ex;
+	padding: 0 1em 0 3em;
+	font-size: 0.8em;
+}
+
+IMG {
+	border: 4px solid #FC6;
+	margin: 1ex 0px;
+	max-width: 440px;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+	    -moz-box-shadow: 4px 4px 2px #BBB;
+		-webkit-box-shadow: 4px 4px 2px #BBB;
+		box-shadow: 4px 4px 2px #BBB;
+behavior: url(/mlg/js/PIE.php);
+}
+IMG.noborder {
+	border-width: 0;
+	    -moz-box-shadow: 0 0 0 transparent;
+		-webkit-box-shadow: 0 0 0 transparent;
+		box-shadow: 0 0 0 transparent;
+behavior: url(/mlg/js/PIE.php);
+}
+
+A#fechar {
+	background-color: #F99;
+	border: 2px solid #FCC;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 2px;
+	font-size: 0.8em;
+	color: navy;
+/*  Para No-IE  */
+	position: fixed;
+	top: 3px;
+	right: 1em;
+	width: 12ex;
+	height: 1.7em;
+	opacity: 0.8;
+	vertical-align: baseline;
+/* Para IE  */
+	float: right;
+behavior: url(/mlg/js/PIE.php);
+}
+
+SPAN.e {
+    text-decoration: underline;
+	color:blue;
+	cursor:pointer;
+}
+
+SPAN.e:hover { /*	Só No-IE    */
+	color: purple
+}

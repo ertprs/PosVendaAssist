@@ -1,0 +1,8 @@
+{
+	"usa_desconto" : true,
+	"reprocessamento" : true , 
+	"reprocessamento_status" : 19 , 
+	"usa_desconto_tipo_pedido": [299],
+  	"coluna_tabela_preco_pedido_faturado" : "tabela",
+	"uso_consumo_tabela_posto": true
+}

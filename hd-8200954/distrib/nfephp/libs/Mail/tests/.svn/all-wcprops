@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests
+END
+rfc822.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/rfc822.phpt
+END
+rfc822_1.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/rfc822_1.phpt
+END
+smtp_error.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/smtp_error.phpt
+END
+smtp_error_1.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/smtp_error_1.phpt
+END
+validateQuotedString.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/validateQuotedString.php
+END
+validateQuotedString_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/validateQuotedString_1.php
+END
+9137.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/9137.phpt
+END
+9137_1.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/9137_1.phpt
+END
+9137_2.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/9137_2.phpt
+END
+9137_2_1.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nfephp/!svn/ver/101/branches/1.0%20Alpha/libs/Mail/tests/9137_2_1.phpt
+END

@@ -1,0 +1,102 @@
+/* on IE5.x dotted lines only show if they are 2px. using box model hack to get round this */
+
+.contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 10px;	
+	border: 1px solid #CED5DD;	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border: 1px solid #d0d0d0;	
+}
+
+html>body contentBlockLeft, .contentBlockMiddle, .contentBlockRight, .contentBlockMain {
+	border: 1px dotted #97D0EC;
+} 
+
+.contentBlockRight, .contentBlockBig {
+	margin-right: 0px;
+}
+
+
+/* breadcrumbs */
+
+#breadcrumbs {
+	clear: both;
+	padding: 2px;
+	margin-bottom: 5px;
+	line-height: 12px;
+	border: 1px solid #97D0EC;	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border-style: dotted;
+}
+
+html>body #breadcrumbs {
+	border-style: dotted;
+} 
+
+
+#bigCol {
+	clear: both;
+	padding: 10px;
+	margin-bottom: 5px;
+	border: 1px solid #97D0EC;	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border-style: dotted;
+}
+
+html>body #bigCol {
+	border-style: dotted;
+}
+
+/*
+handle to footer stuff. using box model hack for outline again to deal with outline on IE5
+*/
+
+#footer {
+	padding: 2px;
+	line-height: 12px;
+	border: 1px solid #97D0EC;	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	border-style: dotted;
+}
+
+html>body #footer {
+	border-style: dotted;
+}
+
+/* making the bottomNav a list and giving the elemenst a psudo pipe on the right */
+
+#bottomNav li {
+	display: inline;
+	padding: 0px 10px;
+	border-left: 1px solid #63798D;	
+}
+
+
+#bottomNav .first{
+	border-left: none;
+	padding-left: 0px;	
+}
+
+.example {
+	text-align: center;
+	width: 300px;
+	padding: 10px;
+	border: none;
+	color: #4F6171;
+	background: #ECEBE8;
+	margin: 10px auto;
+}
+.unstyledList {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#subNav li, #subNavContact li {
+	margin-bottom: 10px;
+}

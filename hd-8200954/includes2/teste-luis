@@ -1,0 +1,1 @@
+select limpa_email('LUÍS@MARILIA.COM');

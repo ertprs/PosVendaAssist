@@ -1,0 +1,26 @@
+/* CSS for the demo. CSS needed for the scripts are loaded dynamically by the scripts */
+#mainContainer{
+	width:500px;
+	margin:0 auto;
+	margin-top:10px;
+	border:1px double #000;
+	padding:5px;
+	
+}
+
+/* Alternative layout for the message box - used by one of the messages */
+
+.modalDialog_contentDiv_error{
+	border:3px solid #FFF;	
+	padding:2px;
+	z-index:100;/* Always needed	*/
+	position:absolute;	/* Always needed	*/
+	background-color:#F00;	/* White background color for the message */
+	color:#FFF;
+}
+.modalDialog_contentDiv_error a{
+	color:#FFF;
+}
+h1{
+	margin-top:0px;
+}
